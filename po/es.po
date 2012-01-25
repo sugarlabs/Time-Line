@@ -1,45 +1,23 @@
-# #-#-#-#-#  prueba1.po (Timeline 0.4.0)  #-#-#-#-#
 # Spanish translations for the Timeline application.
 # Copyright (C) YEAR Rickard Lindberg
 # This file is distributed under the same license as the Timeline package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-# #-#-#-#-#  prueba2.po (PACKAGE VERSION)  #-#-#-#-#
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
-"#-#-#-#-#  prueba1.po (Timeline 0.4.0)  #-#-#-#-#\n"
 "Project-Id-Version: Timeline 0.4.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-25 05:22-0200\n"
+"Report-Msgid-Bugs-To: <alanjas@hotmail.com>\n"
+"POT-Creation-Date: 2011-04-30 09:15+0200\n"
 "PO-Revision-Date: 2010-05-17 00:14+0000\n"
-"Last-Translator: Leandro Pavón Serrano <Unknown>\n"
+"Last-Translator: Alan Aguiar <alanjas@hotmail.com>\n"
 "Language-Team: native-languaje <elproferoman@gmail.com>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2011-07-26 18:52+0000\n"
 "X-Generator: Launchpad (build 13503)\n"
 "X-Poedit-Language: Spanish\n"
-"X-Poedit-Basepath: /home/roman/traducciones\n"
-"#-#-#-#-#  prueba2.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-25 05:22-0200\n"
-"PO-Revision-Date: 2010-10-23 12:29+0000\n"
-"Last-Translator: DiegoJ <diegojromerolopez@gmail.com>\n"
-"Language-Team: Spanish<Spanish>\n"
-"Language: \n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-12-17 18:37+0000\n"
-"X-Generator: Launchpad (build 14525)\n"
+
 
 #: activity/activity.info:2
 msgid "Time Line"
@@ -75,15 +53,15 @@ msgstr "¿Estás seguro que quieres eliminar la categoría '%s'?"
 #: timelinelib/wxgui/components/cattree.py:232
 #, python-format
 msgid "Events belonging to '%s' will no longer belong to a category."
-msgstr ""
+msgstr "Eventos pertenecientes a '%s' ya no pertenecen a una categoría."
 
 #: timelinelib/wxgui/components/cattree.py:235
 msgid "Events belonging to "
-msgstr ""
+msgstr "Eventos pertenecientes a "
 
 #: timelinelib/wxgui/components/cattree.py:235
 msgid " will now belong to "
-msgstr ""
+msgstr " ya no pertenecen a "
 
 #: specs/MonthNames.py:34 timelinelib/monthnames.py:38
 msgid "Jan"
@@ -95,27 +73,27 @@ msgstr "Dic"
 
 #: specs/TimelineView.py:67 timelinelib/view/zoom.py:29
 msgid "Select region to zoom into"
-msgstr ""
+msgstr "Seleccione una región para hacer zoom en ella "
 
 #: specs/TimelineView.py:75 timelinelib/view/zoom.py:39
 msgid "Region too short"
-msgstr ""
+msgstr "Región demasiado chica"
 
 #: specs/TimelineView.py:91 timelinelib/view/zoom.py:36
 msgid "Region too long"
-msgstr ""
+msgstr "Región demasiado grande"
 
 #: specs/TimelineView.py:191 timelinelib/view/drawingarea.py:169
 msgid "Can't scroll more to the left"
-msgstr ""
+msgstr "No puede desplazarse más a la izquierda"
 
 #: specs/TimelineView.py:198 timelinelib/view/drawingarea.py:171
 msgid "Can't scroll more to the right"
-msgstr ""
+msgstr "No puede desplazarse más a la derecha"
 
 #: specs/EventEditor.py:346 timelinelib/editors/event.py:140
 msgid "You can't change time when the Event is locked"
-msgstr ""
+msgstr "No se puede cambiar el tiempo cuando el Evento está bloqueado"
 
 #: specs/WeekdayNames.py:29 timelinelib/weekdaynames.py:22
 msgid "Mon"
@@ -134,26 +112,26 @@ msgstr "Ago"
 #: specs/WxTimeType.py:171 timelinelib/time/wxtime.py:126
 #: timelinelib/time/pytime.py:123
 msgid "day"
-msgstr ""
+msgstr "día"
 
 #: specs/PyTimeType.py:118 specs/PyTimeType.py:142 specs/PyTimeType.py:162
 #: specs/WxTimeType.py:135 specs/WxTimeType.py:159 specs/WxTimeType.py:179
 #: timelinelib/time/wxtime.py:134 timelinelib/time/pytime.py:131
 msgid "minute"
-msgstr ""
+msgstr "minuto"
 
 #: specs/PyTimeType.py:122 specs/PyTimeType.py:146 specs/PyTimeType.py:166
 #: specs/WxTimeType.py:139 specs/WxTimeType.py:163 specs/WxTimeType.py:183
 #: timelinelib/time/wxtime.py:136 timelinelib/time/pytime.py:133
 msgid "minutes"
-msgstr ""
+msgstr "minutos"
 
 #: specs/PyTimeType.py:126 specs/PyTimeType.py:142 specs/PyTimeType.py:146
 #: specs/PyTimeType.py:150 specs/WxTimeType.py:143 specs/WxTimeType.py:159
 #: specs/WxTimeType.py:163 specs/WxTimeType.py:167
 #: timelinelib/time/wxtime.py:130 timelinelib/time/pytime.py:127
 msgid "hour"
-msgstr ""
+msgstr "hora"
 
 #: specs/PyTimeType.py:130 specs/PyTimeType.py:154 specs/PyTimeType.py:158
 #: specs/PyTimeType.py:162 specs/PyTimeType.py:166 specs/WxTimeType.py:147
@@ -161,7 +139,7 @@ msgstr ""
 #: specs/WxTimeType.py:183 specs/WxTimeType.py:187
 #: timelinelib/time/wxtime.py:132 timelinelib/time/pytime.py:129
 msgid "hours"
-msgstr ""
+msgstr "horas"
 
 #: specs/PyTimeType.py:138 specs/PyTimeType.py:158 specs/PyTimeType.py:162
 #: specs/PyTimeType.py:166 specs/PyTimeType.py:170 specs/PyTimeType.py:176
@@ -169,7 +147,7 @@ msgstr ""
 #: specs/WxTimeType.py:183 specs/WxTimeType.py:187 specs/WxTimeType.py:193
 #: timelinelib/time/wxtime.py:128 timelinelib/time/pytime.py:125
 msgid "days"
-msgstr ""
+msgstr "días"
 
 #: wx/tools/Editra/src/ed_pages.py:162
 #, python-format
@@ -289,7 +267,7 @@ msgstr "Editor de estilos"
 
 #: wx/tools/Editra/src/style_editor.py:132 wx/lib/docview.py:1573
 msgid "Preview"
-msgstr ""
+msgstr "Vista Previa"
 
 #: wx/tools/Editra/src/style_editor.py:139
 msgid "Ok"
@@ -479,7 +457,7 @@ msgstr "Error de reemplazo"
 
 #: wx/tools/Editra/src/ed_search.py:612
 msgid "Sorry will be ready for next version"
-msgstr ""
+msgstr "Perdón, estará listo para la siguiente versión"
 
 #: wx/tools/Editra/src/ed_search.py:613
 msgid "Not implemented"
@@ -1831,7 +1809,7 @@ msgstr "¿Guardar sesión en donde?"
 
 #: wx/tools/Editra/src/ed_main.py:773 wx/tools/Editra/src/ed_main.py:800
 msgid "Session"
-msgstr ""
+msgstr "Sesión"
 
 #: wx/tools/Editra/src/ed_main.py:788
 #, python-format
@@ -2774,7 +2752,7 @@ msgstr "Buscar recursivamente"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:823
 msgid "Enter wildcard shell patterns for matching files (*.txt)."
-msgstr ""
+msgstr "Introduzca los patrones de comodín de la shell para los archivos que coinciden (*. txt)."
 
 #: wx/tools/Editra/src/eclib/finddlg.py:845
 msgid "Count"
@@ -2798,517 +2776,516 @@ msgstr "Introduzca un valor hexadecimal de color"
 
 #: wx/lib/docview.py:385
 msgid "Application"
-msgstr ""
+msgstr "Aplicación"
 
 #: wx/lib/docview.py:386 wx/lib/docview.py:637 wx/lib/docview.py:1897
 msgid " has been modified outside of "
-msgstr ""
+msgstr " ha sido modificada afuera de "
 
 #: wx/lib/docview.py:386 wx/lib/docview.py:637
 msgid ". Overwrite "
-msgstr ""
+msgstr ". Sobreescribir "
 
 #: wx/lib/docview.py:386 wx/lib/docview.py:637
 msgid " with current changes?"
-msgstr ""
+msgstr " con los cambios actuales?"
 
 #: wx/lib/docview.py:453 wx/lib/docview.py:526 wx/lib/docview.py:2449
 #: wx/lib/docview.py:2705 wx/lib/pydocview.py:1076 wx/lib/pydocview.py:2215
 #: wx/lib/pydocview.py:2391
 msgid "File Error"
-msgstr ""
+msgstr "Error de Archivo"
 
 #: wx/lib/docview.py:597
 msgid "Untitled"
-msgstr ""
+msgstr "SinTitulo"
 
 #: wx/lib/docview.py:635 wx/lib/docview.py:652 wx/lib/docview.py:1895
 msgid "Warning"
-msgstr ""
+msgstr "Advertencia"
 
 #: wx/lib/docview.py:654
 #, python-format
 msgid "Save changes to '%s'?"
-msgstr ""
+msgstr "Guardar cambios en '%s'?"
 
 #: wx/lib/docview.py:1567
 msgid "Unable to display print preview."
-msgstr ""
+msgstr "No se puede mostrar la vista preliminar."
 
 #: wx/lib/docview.py:1660 wx/lib/pydocview.py:112
 msgid "&Undo\tCtrl+Z"
-msgstr ""
+msgstr "&Deshacer\tCtrl+Z"
 
 #: wx/lib/docview.py:1672 wx/lib/pydocview.py:113
 msgid "&Redo\tCtrl+Y"
-msgstr ""
+msgstr "&Rehacer\tCtrl+Y"
 
 #: wx/lib/docview.py:1897
 msgid "Reload "
-msgstr ""
+msgstr "Recargar"
 
 #: wx/lib/docview.py:1897
 msgid " from file system?"
-msgstr ""
+msgstr " del archivo del sistema?"
 
 #: wx/lib/docview.py:1903
 msgid "Couldn't reload "
-msgstr ""
+msgstr "No se puede recargar "
 
 #: wx/lib/docview.py:1903
 msgid "Unable to close current "
-msgstr ""
+msgstr "No se puede cerrar actual "
 
 #: wx/lib/docview.py:2006
 #, python-format
 msgid "Untitled %d"
-msgstr ""
+msgstr "SinTitulo %d"
 
 #: wx/lib/docview.py:2175
 #, python-format
 msgid "All|*.*|%s"
-msgstr ""
+msgstr "Todos|*.*|%s"
 
 #: wx/lib/docview.py:2180
 msgid "Select a File"
-msgstr ""
+msgstr "Seleccione un Archivo"
 
 #: wx/lib/docview.py:2243
 msgid "Select a document type:"
-msgstr ""
+msgstr "Seleccione un tipo de documento:"
 
 #: wx/lib/docview.py:2244
 msgid "Documents"
-msgstr ""
+msgstr "Documentos"
 
 #: wx/lib/docview.py:2274
 msgid "Select a document view:"
-msgstr ""
+msgstr "Seleccione una vista de documento:"
 
 #: wx/lib/docview.py:2275
 msgid "Views"
-msgstr ""
+msgstr "Vistas"
 
 #: wx/lib/docview.py:3049
 msgid "Ctrl+Z"
-msgstr ""
+msgstr "Ctrl+Z"
 
 #: wx/lib/docview.py:3050
 msgid "Ctrl+Y"
-msgstr ""
+msgstr "Ctrl+Y"
 
 #: wx/lib/docview.py:3157
 msgid "&Undo "
-msgstr ""
+msgstr "&Deshacer"
 
 #: wx/lib/docview.py:3163
 msgid "&Redo "
-msgstr ""
+msgstr "&Rehacer "
 
 #: wx/lib/docview.py:3165
 msgid "&Redo"
-msgstr ""
+msgstr "&Rehacer"
 
 #: wx/lib/pydocview.py:87
 msgid "&New...\tCtrl+N"
-msgstr ""
+msgstr "&Nuevo...\tCtrl+N"
 
 #: wx/lib/pydocview.py:87 wx/lib/pydocview.py:176
 msgid "Creates a new document"
-msgstr ""
+msgstr "Crea un nuevo documento"
 
 #: wx/lib/pydocview.py:88
 msgid "&Open...\tCtrl+O"
-msgstr ""
+msgstr "&Abrir...\tCtrl+A"
 
 #: wx/lib/pydocview.py:88 wx/lib/pydocview.py:177
 msgid "Opens an existing document"
-msgstr ""
+msgstr "Abre un documento existente"
 
 #: wx/lib/pydocview.py:89 wx/lib/agw/fmcustomizedlg.py:206
 msgid "&Close"
-msgstr ""
+msgstr "&Cerrar"
 
 #: wx/lib/pydocview.py:89
 msgid "Closes the active document"
-msgstr ""
+msgstr "Cierra el documento activo"
 
 #: wx/lib/pydocview.py:91
 msgid "Close A&ll"
-msgstr ""
+msgstr "Cerrar &todo"
 
 #: wx/lib/pydocview.py:91
 msgid "Closes all open documents"
-msgstr ""
+msgstr "Cierra todos los documentos abiertos"
 
 #: wx/lib/pydocview.py:93
 msgid "&Save\tCtrl+S"
-msgstr ""
+msgstr "&Guardar\tCtrl+G"
 
 #: wx/lib/pydocview.py:93 wx/lib/pydocview.py:178
 msgid "Saves the active document"
-msgstr ""
+msgstr "Guarda el documento actual"
 
 #: wx/lib/pydocview.py:94
 msgid "Save &As..."
-msgstr ""
+msgstr "Guardar co&mo..."
 
 #: wx/lib/pydocview.py:94
 msgid "Saves the active document with a new name"
-msgstr ""
+msgstr "Guarda el documento activo con un nuevo nombre"
 
 #: wx/lib/pydocview.py:95
 msgid "Save All\tCtrl+Shift+A"
-msgstr ""
+msgstr "Guardar todo\tCtrl+Shift+T"
 
 #: wx/lib/pydocview.py:95
 msgid "Saves the all active documents"
-msgstr ""
+msgstr "Guarda todos los documentos activos"
 
 #: wx/lib/pydocview.py:99
 msgid "&Print\tCtrl+P"
-msgstr ""
+msgstr "Im&primir\tCtrl+P"
 
 #: wx/lib/pydocview.py:99 wx/lib/pydocview.py:182
 msgid "Prints the active document"
-msgstr ""
+msgstr "Imprime el documento activo"
 
 #: wx/lib/pydocview.py:100 wx/lib/pydocview.py:181
 msgid "Displays full pages"
-msgstr ""
+msgstr "Muestra páginas completas"
 
 #: wx/lib/pydocview.py:101
 msgid "Changes page layout settings"
-msgstr ""
+msgstr "Cambia la configuración de diseño de página"
 
 #: wx/lib/pydocview.py:104
 msgid "&Quit"
-msgstr ""
+msgstr "&Salir"
 
 #: wx/lib/pydocview.py:104 wx/lib/pydocview.py:106
 msgid "Closes this program"
-msgstr ""
+msgstr "Cierra este programa"
 
 #: wx/lib/pydocview.py:112 wx/lib/pydocview.py:187
 msgid "Reverses the last action"
-msgstr ""
+msgstr "Revierte la última acción"
 
 #: wx/lib/pydocview.py:113 wx/lib/pydocview.py:188
 msgid "Reverses the last undo"
-msgstr ""
+msgstr "Revierto el último deshacer"
 
 #: wx/lib/pydocview.py:118
 msgid "Cu&t\tCtrl+X"
-msgstr ""
+msgstr "Cor&tar\tCtrl+X"
 
 #: wx/lib/pydocview.py:118 wx/lib/pydocview.py:184
 msgid "Cuts the selection and puts it on the Clipboard"
-msgstr ""
+msgstr "Corta la selección y la coloca en el Portapapeles"
 
 #: wx/lib/pydocview.py:121
 msgid "&Copy\tCtrl+C"
-msgstr ""
+msgstr "&Copiar\tCtrl+C"
 
 #: wx/lib/pydocview.py:121 wx/lib/pydocview.py:185
 msgid "Copies the selection and puts it on the Clipboard"
-msgstr ""
+msgstr "Copia la selección y la coloca en el Portapapeles"
 
 #: wx/lib/pydocview.py:124
 msgid "&Paste\tCtrl+V"
-msgstr ""
+msgstr "&Pegar\tCtrl+V"
 
 #: wx/lib/pydocview.py:124 wx/lib/pydocview.py:186
 msgid "Inserts Clipboard contents"
-msgstr ""
+msgstr "Inserta el contendio del Portapapeles"
 
 #: wx/lib/pydocview.py:127
 msgid "&Delete"
-msgstr ""
+msgstr "&Borrar"
 
 #: wx/lib/pydocview.py:127
 msgid "Erases the selection"
-msgstr ""
+msgstr "Borra la selección"
 
 #: wx/lib/pydocview.py:131
 msgid "Select A&ll\tCtrl+A"
-msgstr ""
+msgstr "Seleccionar &todo\tCtrl+A"
 
 #: wx/lib/pydocview.py:131
 msgid "Selects all available data"
-msgstr ""
+msgstr "Selecciona toda la información disponible"
 
 #: wx/lib/pydocview.py:140
 msgid "Shows or hides the toolbar"
-msgstr ""
+msgstr "Muestra u oculta la barra"
 
 #: wx/lib/pydocview.py:143
 msgid "&Status Bar"
-msgstr ""
+msgstr "Barra de &Estado"
 
 #: wx/lib/pydocview.py:143
 msgid "Shows or hides the status bar"
-msgstr ""
+msgstr "Muestra u oculta la barra de estado"
 
 #: wx/lib/pydocview.py:149
 msgid "&About"
-msgstr ""
+msgstr "A&cerca"
 
 #: wx/lib/pydocview.py:149
 msgid "Displays program information, version number, and copyright"
-msgstr ""
+msgstr "Muestra información del programa, número de versión y copyright"
 
 #: wx/lib/pydocview.py:179
 msgid "Saves all the active documents"
-msgstr ""
+msgstr "Guarda todos los documentos activos"
 
 #: wx/lib/pydocview.py:251
 msgid "Ready"
-msgstr ""
+msgstr "Listo"
 
 #: wx/lib/pydocview.py:905
 msgid "Close"
-msgstr ""
+msgstr "Cerrar"
 
 #: wx/lib/pydocview.py:911
 #, python-format
 msgid "Close All but \"%s\""
-msgstr ""
+msgstr "Cerrar todo menos \"%s\""
 
 #: wx/lib/pydocview.py:921
 msgid "Select Tab"
-msgstr ""
+msgstr "Seleccionar pestaña"
 
 #: wx/lib/pydocview.py:1414
 msgid "&Format"
-msgstr ""
+msgstr "&Formato"
 
 #: wx/lib/pydocview.py:1419
 msgid "&Options..."
-msgstr ""
+msgstr "&Opciones..."
 
 #: wx/lib/pydocview.py:1419
 msgid "Sets options"
-msgstr ""
+msgstr "Setear opciones"
 
 #: wx/lib/pydocview.py:1491 wx/lib/agw/fmcustomizedlg.py:216
 msgid "Options"
-msgstr ""
+msgstr "Opciones"
 
 #: wx/lib/pydocview.py:1592
 msgid "Show tips at start up"
-msgstr ""
+msgstr "Muestra consejos al inicio"
 
 #: wx/lib/pydocview.py:1597
 msgid "Show each document in its own window"
-msgstr ""
+msgstr "Muestra cada documento en su propia ventana"
 
 #: wx/lib/pydocview.py:1598
 msgid "Show all documents in a single window with tabs"
-msgstr ""
+msgstr "Muestra todos los documentos en una ventana simple con pestañas"
 
 #: wx/lib/pydocview.py:1599
 msgid "Show all documents in a single window with child windows"
-msgstr ""
+msgstr "Muestra todos los documentos en una ventana simple con ventanas hijas"
 
 #: wx/lib/pydocview.py:1605
 msgid "Document Display Style"
-msgstr ""
+msgstr "Estilo de visualización"
 
 #: wx/lib/pydocview.py:1619
 msgid "Document Options"
-msgstr ""
+msgstr "Opciones del documento"
 
 #: wx/lib/pydocview.py:1620
-msgid ""
-"Document interface changes will not appear until the application is "
-"restarted."
-msgstr ""
+msgid "Document interface changes will not appear until the application is restarted."
+msgstr "Los cambios en la interface del documento no aparecerán hasta que la actividad sea reiniciada"
+
 
 #: wx/lib/pydocview.py:2525
 msgid "About "
-msgstr ""
+msgstr "Acerca "
 
 #: wx/lib/pydocview.py:2564
 msgid "&Properties"
-msgstr ""
+msgstr "&Propiedades"
 
 #: wx/lib/pydocview.py:2564
 msgid "Show file properties"
-msgstr ""
+msgstr "Muestra las propiedades de archivo"
 
 #: wx/lib/pydocview.py:2678
 msgid "File Properties"
-msgstr ""
+msgstr "Propiedades de archivo"
 
 #: wx/lib/pydocview.py:2692
 msgid "Filename:"
-msgstr ""
+msgstr "Nombre de archivo:"
 
 #: wx/lib/pydocview.py:2695
 msgid "Location:"
-msgstr ""
+msgstr "Ubicación:"
 
 #: wx/lib/pydocview.py:2698
 msgid "Size:"
-msgstr ""
+msgstr "Tamaño:"
 
 #: wx/lib/pydocview.py:2700
 msgid "bytes"
-msgstr ""
+msgstr "bytes"
 
 #: wx/lib/pydocview.py:2706
 msgid "Created:"
-msgstr ""
+msgstr "Creado:"
 
 #: wx/lib/pydocview.py:2710
 msgid "Modified:"
-msgstr ""
+msgstr "Modificado:"
 
 #: wx/lib/pydocview.py:2714
 msgid "Accessed:"
-msgstr ""
+msgstr "Accedido:"
 
 #: wx/lib/pydocview.py:2890
 msgid "&Arrange All"
-msgstr ""
+msgstr "&Organizar todo"
 
 #: wx/lib/pydocview.py:2890
 msgid "Arrange the open windows"
-msgstr ""
+msgstr "Organiza las ventanas abiertas"
 
 #: wx/lib/pydocview.py:2899
 msgid "Previous Tab"
-msgstr ""
+msgstr "Pestaña anterior"
 
 #: wx/lib/pydocview.py:2902
 msgid "Next Tab"
-msgstr ""
+msgstr "Pestaña siguiente"
 
 #: wx/lib/pydocview.py:2905
 msgid "Close Current\tCtrl+F4"
-msgstr ""
+msgstr "Cerrar actual\tCtrl+F4"
 
 #: wx/lib/pydocview.py:2915 wx/lib/pydocview.py:3017
 #: wx/lib/agw/aui/tabmdi.py:205 wx/lib/agw/aui/tabmdi.py:216
 #: wx/lib/agw/aui/tabmdi.py:218
 msgid "&Window"
-msgstr ""
+msgstr "&Ventana"
 
 #: wx/lib/pydocview.py:3037
 msgid "&More Windows..."
-msgstr ""
+msgstr "&Mas ventanas..."
 
 #: wx/lib/pydocview.py:3163
 msgid "Select a window to show:"
-msgstr ""
+msgstr "Selecciona una ventana a mostrar:"
 
 #: wx/lib/pydocview.py:3164
 msgid "Select Window"
-msgstr ""
+msgstr "Seleccionar Ventana"
 
 #: wx/lib/colourchooser/pycolourchooser.py:120
 msgid "Basic Colours:"
-msgstr ""
+msgstr "Colores Básicos:"
 
 #: wx/lib/colourchooser/pycolourchooser.py:121
 msgid "Custom Colours:"
-msgstr ""
+msgstr "Colores Personalizados:"
 
 #: wx/lib/colourchooser/pycolourchooser.py:122
 msgid "Add to Custom Colours"
-msgstr ""
+msgstr "Agregar un Color Personalizado"
 
 #: wx/lib/colourchooser/pycolourchooser.py:188
 msgid "Solid Colour"
-msgstr ""
+msgstr "Color Sólido"
 
 #: wx/lib/colourchooser/pycolourchooser.py:194
 msgid "H:"
-msgstr ""
+msgstr "H:"
 
 #: wx/lib/colourchooser/pycolourchooser.py:197
 msgid "S:"
-msgstr ""
+msgstr "S:"
 
 #: wx/lib/colourchooser/pycolourchooser.py:200
 msgid "V:"
-msgstr ""
+msgstr "V:"
 
 #: wx/lib/colourchooser/pycolourchooser.py:210
 msgid "R:"
-msgstr ""
+msgstr "R:"
 
 #: wx/lib/colourchooser/pycolourchooser.py:213
 msgid "G:"
-msgstr ""
+msgstr "V:"
 
 #: wx/lib/colourchooser/pycolourchooser.py:216
 msgid "B:"
-msgstr ""
+msgstr "B:"
 
 #: wx/lib/agw/multidirdialog.py:272
 msgid "Choose a directory"
-msgstr ""
+msgstr "Elije un directorio"
 
 #: wx/lib/agw/multidirdialog.py:272
 msgid "Browse For Folders"
-msgstr ""
+msgstr "Navegar por las carpetas"
 
 #: wx/lib/agw/multidirdialog.py:390
 msgid "Choose one or more folders:"
-msgstr ""
+msgstr "Elije una o mas carpetas:"
 
 #: wx/lib/agw/multidirdialog.py:399
 msgid "Folder:"
-msgstr ""
+msgstr "Carpeta:"
 
 #: wx/lib/agw/multidirdialog.py:472
 msgid "Make New Folder"
-msgstr ""
+msgstr "Crear Nueva Carpeta"
 
 #: wx/lib/agw/multidirdialog.py:474 wx/lib/agw/genericmessagedialog.py:821
 msgid "OK"
-msgstr ""
+msgstr "Aceptar"
 
 #: wx/lib/agw/fmcustomizedlg.py:215
 msgid "Menus"
-msgstr ""
+msgstr "Menús"
 
 #: wx/lib/agw/fmcustomizedlg.py:284
 msgid "Select Menu To Add/Remove:"
-msgstr ""
+msgstr "Selecciona menú para agregar/remover"
 
 #: wx/lib/agw/fmcustomizedlg.py:323
 msgid "Default Style"
-msgstr ""
+msgstr "Estilo por defecto"
 
 #: wx/lib/agw/fmcustomizedlg.py:323
 msgid "Metallic"
-msgstr ""
+msgstr "Metálico"
 
 #: wx/lib/agw/fmcustomizedlg.py:324
 msgid "Menu bar style"
-msgstr ""
+msgstr "Estilo de la barra de menú"
 
 #: wx/lib/agw/fmcustomizedlg.py:340
 msgid "Default style settings"
-msgstr ""
+msgstr "Configuración de estilo por defecto"
 
 #: wx/lib/agw/fmcustomizedlg.py:342
 msgid "Draw vertical gradient"
-msgstr ""
+msgstr "dibujar gradiente vertical"
 
 #: wx/lib/agw/fmcustomizedlg.py:348
 msgid "Draw border around menu bar"
-msgstr ""
+msgstr "Dibujar borde alrededor de la barra de menú"
 
 #: wx/lib/agw/fmcustomizedlg.py:354
 msgid "Toolbar float over menu bar"
-msgstr ""
+msgstr "Barra flotante sobre la barra de menú"
 
 #: wx/lib/agw/fmcustomizedlg.py:362
 msgid "Colour Scheme"
-msgstr ""
+msgstr "Esquema de color"
 
 #: wx/lib/agw/fmcustomizedlg.py:506 wx/lib/agw/artmanager.py:620
 #: wx/lib/agw/artmanager.py:1943
@@ -3317,31 +3294,31 @@ msgstr "Predeterminado"
 
 #: wx/lib/agw/artmanager.py:1944
 msgid "Dark"
-msgstr ""
+msgstr "Oscuro"
 
 #: wx/lib/agw/artmanager.py:1945
 msgid "Dark Olive Green"
-msgstr ""
+msgstr "Verde Oliva Oscuro"
 
 #: wx/lib/agw/artmanager.py:1946
 msgid "Generic"
-msgstr ""
+msgstr "Generic"
 
 #: wx/lib/agw/pybusyinfo.py:211
 msgid "Busy"
-msgstr ""
+msgstr "Ocupado"
 
 #: wx/lib/agw/genericmessagedialog.py:473
 msgid "Don't Save"
-msgstr ""
+msgstr "No guardar"
 
 #: wx/lib/agw/genericmessagedialog.py:829
 msgid "Yes"
-msgstr ""
+msgstr "Si"
 
 #: wx/lib/agw/genericmessagedialog.py:833
 msgid "No"
-msgstr ""
+msgstr "No"
 
 #: wx/lib/agw/genericmessagedialog.py:837
 #: timelinelib/wxgui/dialogs/helpbrowser.py:37
@@ -3350,19 +3327,19 @@ msgstr "Ayuda"
 
 #: wx/lib/agw/cubecolourdialog.py:2806
 msgid "CubeColourDialog: Choose Colour"
-msgstr ""
+msgstr "CubeColourDialog: Elije un color"
 
 #: wx/lib/agw/aui/tabmdi.py:34
 msgid "Cl&ose"
-msgstr ""
+msgstr "&Cerrar"
 
 #: wx/lib/agw/aui/tabmdi.py:37
 msgid "&Next"
-msgstr ""
+msgstr "&Siguiente"
 
 #: wx/lib/agw/aui/tabmdi.py:38
 msgid "&Previous"
-msgstr ""
+msgstr "&Anterior"
 
 #: wx/lib/agw/aui/framemanager.py:10214
 msgid "Pane Preview"
@@ -3701,7 +3678,7 @@ msgstr "Páginas relacionadas"
 
 #: timelinelib/view/resize.py:66
 msgid "Period is too long"
-msgstr ""
+msgstr "El período es demasiado largo"
 
 #: timelinelib/view/drawingarea.py:145 timelinelib/view/drawingarea.py:163
 msgid "No timeline set"
@@ -3726,7 +3703,7 @@ msgstr "Centrar"
 #: timelinelib/view/drawingarea.py:401
 #, python-format
 msgid "%s events hidden"
-msgstr ""
+msgstr "%s eventos ocultos"
 
 #: timelinelib/view/drawingarea.py:466
 #, python-format
@@ -3739,7 +3716,7 @@ msgstr "¿Está seguro de querer borrar este evento?"
 
 #: timelinelib/view/move.py:56
 msgid "Can't move locked event"
-msgstr ""
+msgstr "No se puede mover un evento bloqueado"
 
 #: timelinelib/time/numtime.py:50
 msgid "Go to &Zero\tCtrl+Z"
@@ -3900,7 +3877,7 @@ msgstr "Archivos de imagen"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:87
 msgid "SVG files"
-msgstr ""
+msgstr "Archivos SVG"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:138
 msgid "Create a new timeline"
@@ -3971,7 +3948,7 @@ msgstr "&Exportar a SVG..."
 
 #: timelinelib/wxgui/dialogs/mainframe.py:261
 msgid "Export the current view to a SVG image"
-msgstr ""
+msgstr "Exporta la vista actual en una imágen SVG"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:270
 msgid ""
@@ -3985,11 +3962,11 @@ msgstr "Exportar a SVG"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:296
 msgid "Play timeline"
-msgstr ""
+msgstr "Reproducir timeline"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:296
 msgid "Play timeline as movie"
-msgstr ""
+msgstr "Reproduce el timeline como una película"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:304
 msgid "Exit the program"
@@ -4025,7 +4002,7 @@ msgstr "Crear Evento"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:404
 msgid "&Duplicate Selected Event..."
-msgstr ""
+msgstr "Evento Seleccionado &Duplicado..."
 
 #: timelinelib/wxgui/dialogs/mainframe.py:404
 msgid "Duplicate the Selected Event"
@@ -4033,19 +4010,19 @@ msgstr "Duplicar el Evento Seleccionado"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:414
 msgid "&Measure Distance between two Events..."
-msgstr ""
+msgstr "&Mide la distancia entre dos eventos..."
 
 #: timelinelib/wxgui/dialogs/mainframe.py:415
 msgid "Measure the Distance between two Events"
-msgstr ""
+msgstr "Mide la distancia entre dos eventos..."
 
 #: timelinelib/wxgui/dialogs/mainframe.py:461
 msgid "Distance between selected events"
-msgstr ""
+msgstr "Distancia entre eventos seleccionados"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:464
 msgid "Events are overlapping or distance is 0"
-msgstr ""
+msgstr "Los eventos están solapados o la distancia es 0"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:475
 msgid "Edit &Categories"
@@ -4112,7 +4089,7 @@ msgstr "Evento duplicado"
 #: timelinelib/wxgui/dialogs/duplicateevent.py:69
 #, python-format
 msgid "%d Events not duplicated due to missing dates."
-msgstr ""
+msgstr "&d Los eventos no duplicados debido a las fechas que faltan."
 
 #: timelinelib/wxgui/dialogs/duplicateevent.py:89
 msgid "Number of duplicates:"
@@ -4137,7 +4114,7 @@ msgstr "Retroceder"
 
 #: timelinelib/wxgui/dialogs/duplicateevent.py:119
 msgid "Both"
-msgstr ""
+msgstr "Ambos"
 
 #: timelinelib/wxgui/dialogs/categoryeditor.py:88
 #, python-format
@@ -4159,11 +4136,11 @@ msgstr "Color:"
 
 #: timelinelib/wxgui/dialogs/categoryeditor.py:119
 msgid "Font Color:"
-msgstr ""
+msgstr "Color de fuente:"
 
 #: timelinelib/wxgui/dialogs/categoryeditor.py:120
 msgid "Parent:"
-msgstr ""
+msgstr "Padre:"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:64
 msgid "Event Properties"
@@ -4188,11 +4165,11 @@ msgstr ""
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:137
 msgid "Locked"
-msgstr ""
+msgstr "Bloqueado"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:144
 msgid "Ends today"
-msgstr ""
+msgstr "Termina hoy"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:155
 msgid "Text:"
@@ -4222,11 +4199,11 @@ msgstr "Añadir nueva"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:413
 msgid "Images will be scaled to fit inside a "
-msgstr ""
+msgstr "Imágenes serán escaladas para ajustarse dentro de "
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:413
 msgid " box."
-msgstr ""
+msgstr " caja."
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:450
 #: timelinelib/wxgui/dialogs/eventeditor.py:454
@@ -4299,11 +4276,11 @@ msgstr "Abrir la última línea de tiempo al inicio"
 
 #: timelinelib/wxgui/dialogs/preferences.py:117
 msgid "Use inertial scrolling"
-msgstr ""
+msgstr "Usar desplazamiento inercial"
 
 #: timelinelib/wxgui/dialogs/preferences.py:123
 msgid "Use extended date range (before 1 AD)"
-msgstr ""
+msgstr "Usar rango de tiempo extendido (antes de 1 AC)"
 
 #: timelinelib/wxgui/dialogs/preferences.py:134
 msgid "Monday"
@@ -4332,7 +4309,7 @@ msgstr "La fecha de fin debe ser > que la de Inicio"
 
 #: timelinelib/editors/event.py:173
 msgid "Entered period is too long."
-msgstr ""
+msgstr "El período ingresado es demasiado largo."
 
 #: timelinelib/editors/event.py:178
 #, python-format
@@ -4373,7 +4350,7 @@ msgstr "Pasa sobre mi!"
 
 #: timelinelib/db/tutorial.py:39
 msgid "Hovering events with a triangle shows the event description."
-msgstr ""
+msgstr "Pasando el cursor con un triángulo muestran la descripción."
 
 #: timelinelib/db/tutorial.py:41
 msgid "Features"
@@ -4518,7 +4495,7 @@ msgstr "El tiempo mostrado debe ser > 0"
 #: timelinelib/wxgui/dialogs/eventeditor.py:417
 #, python-format
 msgid "Images will be scaled to fit inside a %i x %i box."
-msgstr ""
+msgstr "Las imágenes serán escaladas para ajustarse dentro de una %i x %i caja."
 
 #~ msgid "Images will be scaled to fit inside a %ix%i box."
 #~ msgstr "Las imágenes se escalarán para entrar en %ix%i."
