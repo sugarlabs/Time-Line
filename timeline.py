@@ -17,11 +17,14 @@
 # You should have received a copy of the GNU General Public License
 # along with Timeline.  If not, see <http://www.gnu.org/licenses/>.
 
-import gettext
-import locale
+
+
 import os
-import platform
 import sys
+import gettext
+
+sys.path.insert(0, "libs")
+sys.path.insert(0, "timelinelib")
 
 # Make sure that we can import timelinelib
 sys.path.insert(0, os.path.dirname(__file__))
@@ -32,19 +35,51 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "libs", "dependencies
 # Make sure that we can import markdown
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "libs", "dependencies", "markdown-2.0.3"))
 
+
+import wx
+from timelinelib.paths import LOCALE_DIR
 from timelinelib.about import APPLICATION_NAME
 from timelinelib.arguments import ApplicationArguments
-from timelinelib.wxgui.setup import start_wx_application
-from timelinelib.paths import LOCALE_DIR
+from timelinelib.wxgui.dialogs.mainframe import MainFrame
+from timelinelib.wxgui.dialogs.textdisplay import TextDisplayDialog
+from timelinelib.unhandledex import create_error_message
 
-if platform.system() == "Windows":
-    # The appropriate environment variables are set on other systems
-    language, encoding = locale.getdefaultlocale()
-    os.environ['LANG'] = language
 
 gettext.install(APPLICATION_NAME.lower(), LOCALE_DIR, unicode=True)
 
-application_arguments = ApplicationArguments()
-application_arguments.parse_from(sys.argv[1:])
+from gettext import gettext as _
 
-start_wx_application(application_arguments)
+
+from sugar.activity.activity import Activity
+
+
+class TimeLine(Activity):
+
+    def __init__(self, handle):
+        Activity.__init__(self, handle)
+
+        iniciar_actividad()
+
+
+def iniciar_actividad():
+    application_arguments = ApplicationArguments()
+    #application_arguments.parse_from(sys.argv[1:])
+    application_arguments.parse_from()
+    before_main_loop_hook=None
+    app = wx.PySimpleApp()
+    main_frame = MainFrame(application_arguments)
+    main_frame.Show()
+    sys.excepthook = unhandled_exception_hook
+    if before_main_loop_hook:
+        before_main_loop_hook()
+    app.MainLoop()
+
+
+def unhandled_exception_hook(type, value, tb):
+    title = "Unexpected Error"
+    text = create_error_message(type, value, tb)
+    dialog = TextDisplayDialog(title, text)
+    dialog.ShowModal()
+    dialog.Destroy()
+
+

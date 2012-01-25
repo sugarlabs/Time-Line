@@ -17,6 +17,5 @@ export LD_LIBRARY_PATH="$SUGAR_BUNDLE_PATH/libs"
 
 export PYTHONPATH=$SUGAR_BUNDLE_PATH:$PYTHONPATH
 
-#sugar-activity -a $SUGAR_ACTIVITY_ID timeline.TimeLine
+sugar-activity -a $SUGAR_ACTIVITY_ID timeline.TimeLine
 
-./timeline.py
