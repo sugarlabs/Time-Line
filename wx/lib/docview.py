@@ -383,7 +383,7 @@ class Document(wx.EvtHandler):
             msgTitle = wx.GetApp().GetAppName()
             if not msgTitle:
                 msgTitle = _("Application")
-            res = wx.MessageBox(_("'%s' has been modified outside of %s.  Overwrite '%s' with current changes?") % (self.GetPrintableName(), msgTitle, self.GetPrintableName()),
+            res = wx.MessageBox(self.GetPrintableName() + _(' has been modified outside of ') + msgTitle + _('. Overwrite ') + self.GetPrintableName() + _(' with current changes?') ,
                                 msgTitle,
                                 wx.YES_NO | wx.CANCEL | wx.ICON_QUESTION,
                                 self.GetDocumentWindow())
@@ -408,7 +408,7 @@ class Document(wx.EvtHandler):
         if not docTemplate:
             return False
 
-        descr = docTemplate.GetDescription() + _(" (") + docTemplate.GetFileFilter() + _(") |") + docTemplate.GetFileFilter()  # spacing is important, make sure there is no space after the "|", it causes a bug on wx_gtk
+        descr = docTemplate.GetDescription() + " (" + docTemplate.GetFileFilter() + ") |" + docTemplate.GetFileFilter()  # spacing is important, make sure there is no space after the "|", it causes a bug on wx_gtk
         filename = wx.FileSelector(_("Save As"),
                                    docTemplate.GetDirectory(),
                                    FileNameFromPath(self.GetFilename()),
@@ -633,7 +633,8 @@ class Document(wx.EvtHandler):
             msgTitle = wx.GetApp().GetAppName()
             if not msgTitle:
                 msgTitle = _("Warning")
-            res = wx.MessageBox(_("'%s' has been modified outside of %s.  Overwrite '%s' with current changes?") % (self.GetPrintableName(), msgTitle, self.GetPrintableName()),
+
+            res = wx.MessageBox(self.GetPrintableName() + _(' has been modified outside of ') + msgTitle + _('. Overwrite ') + self.GetPrintableName() + _(' with current changes?') ,
                                 msgTitle,
                                 wx.YES_NO | wx.CANCEL | wx.ICON_QUESTION,
                                 self.GetDocumentWindow())
@@ -883,7 +884,7 @@ class View(wx.EvtHandler):
                     return
             else:
                 if appName and isinstance(self.GetFrame(), DocChildFrame):  # Only need app name in title for SDI
-                    title = appName + _(" - ")
+                    title = appName + " - "
                 else:
                     title = ''
                 self.GetFrame().SetTitle(title + self.GetDocument().GetPrintableName())
@@ -1569,7 +1570,8 @@ class DocManager(wx.EvtHandler):
             mimicFrame =  wx.GetApp().GetTopWindow()
             frame = wx.PreviewFrame(preview, mimicFrame, _("Print Preview"), mimicFrame.GetPosition(), mimicFrame.GetSize())
             frame.SetIcon(mimicFrame.GetIcon())
-            frame.SetTitle(_("%s - %s - Preview") % (mimicFrame.GetTitle(), view.GetDocument().GetPrintableName()))
+            string_aux =  mimicFrame.GetTitle() + ' - ' + view.GetDocument().GetPrintableName() + ' - ' + _("Preview")
+            frame.SetTitle(string_aux)
             frame.Initialize()
             frame.Show(True)
 
@@ -1892,13 +1894,13 @@ class DocManager(wx.EvtHandler):
                         if not msgTitle:
                             msgTitle = _("Warning")
                         shortName = document.GetPrintableName()
-                        res = wx.MessageBox(_("'%s' has been modified outside of %s.  Reload '%s' from file system?") % (shortName, msgTitle, shortName),
+                        res = wx.MessageBox( shortName + _(' has been modified outside of ') + msgTitle + '. ' + _('Reload ') + shortName + _(' from file system?'),
                                             msgTitle,
                                             wx.YES_NO | wx.ICON_QUESTION,
                                             self.FindSuitableParent())
                         if res == wx.YES:
                            if not self.CloseDocument(document, False):
-                               wx.MessageBox(_("Couldn't reload '%s'.  Unable to close current '%s'.") % (shortName, shortName))
+                               wx.MessageBox(_("Couldn't reload ") + shortName + ' . ' + _('Unable to close current ') + shortName)
                                return None
                            return self.CreateDocument(path, flags)
                         elif res == wx.NO:  # don't ask again
@@ -2016,7 +2018,7 @@ class DocManager(wx.EvtHandler):
             title = appName
         else:
             docName = doc.GetPrintableName()
-            title = docName + _(" - ") + appName
+            title = docName + " - " + appName
         return title
 
 
@@ -2168,11 +2170,11 @@ class DocManager(wx.EvtHandler):
             for temp in templates:
                 if temp.IsVisible():
                     if len(descr) > 0:
-                        descr = descr + _('|')
-                    descr = descr + temp.GetDescription() + _(" (") + temp.GetFileFilter() + _(") |") + temp.GetFileFilter()  # spacing is important, make sure there is no space after the "|", it causes a bug on wx_gtk
+                        descr = descr + '|'
+                    descr = descr + temp.GetDescription() + " (" + temp.GetFileFilter() + ") |" + temp.GetFileFilter()  # spacing is important, make sure there is no space after the "|", it causes a bug on wx_gtk
             descr = _("All|*.*|%s") % descr  # spacing is important, make sure there is no space after the "|", it causes a bug on wx_gtk
         else:
-            descr = _("*.*")
+            descr = "*.*"
 
         dlg = wx.FileDialog(self.FindSuitableParent(),
                                _("Select a File"),
