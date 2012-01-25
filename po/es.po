@@ -53,6 +53,11 @@ msgstr "Editar..."
 msgid "Add..."
 msgstr "Añadir..."
 
+#: timelinelib/wxgui/components/cattree.py:81
+#: wx/tools/Editra/src/prefdlg.py:1706 timelinelib/view/drawingarea.py:199
+msgid "Delete"
+msgstr "Eliminar"
+
 #: timelinelib/wxgui/components/cattree.py:218
 msgid "Edit Category"
 msgstr "Editar Categoría"
@@ -851,6 +856,11 @@ msgstr "&Abrir"
 #: wx/lib/pydocview.py:177
 msgid "Open"
 msgstr "Abrir"
+
+#: wx/tools/Editra/src/ed_menu.py:520
+#: timelinelib/wxgui/dialogs/mainframe.py:205
+msgid "Open &Recent"
+msgstr "Abrir &reciente"
 
 #: wx/tools/Editra/src/ed_menu.py:521
 msgid "Recently Opened Files"
