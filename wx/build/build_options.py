@@ -5,7 +5,7 @@ INSTALL_MULTIVERSION=1
 FLAVOUR=""
 EP_ADD_OPTS=1
 EP_FULL_VER=0
-WX_CONFIG="wx-config --version=2.8 --toolkit=gtk2 --static=no --unicode --debug=no"
+WX_CONFIG="/usr/bin/wx-config --toolkit=gtk2 --unicode=yes --version=2.8"
 WXPORT="gtk2"
 MONOLITHIC=0
 FINAL=0
