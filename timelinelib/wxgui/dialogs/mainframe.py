@@ -305,6 +305,7 @@ class MainFrame(wx.Frame):
 
     def _mnu_file_exit_on_click(self, evt):
         self.Close()
+        exit()        
 
     def _create_edit_menu(self, main_menu_bar):
         edit_menu = wx.Menu()
