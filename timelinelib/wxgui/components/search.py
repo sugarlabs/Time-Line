@@ -22,6 +22,7 @@ import wx
 
 from timelinelib.paths import ICONS_DIR
 
+from gettext import gettext as _
 
 class SearchBar(wx.ToolBar):
 

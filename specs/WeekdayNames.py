@@ -20,6 +20,7 @@ import unittest
 
 import timelinelib.weekdaynames
 
+from gettext import gettext as _
 
 class WeekdayNamesSpec(unittest.TestCase):
 

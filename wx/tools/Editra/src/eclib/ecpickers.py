@@ -29,7 +29,10 @@ __all__ = ['PyFontPicker', 'FontChangeEvent',
 # Imports
 import wx
 
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
+
 #-----------------------------------------------------------------------------#
 
 edEVT_FONT_CHANGED = wx.NewEventType()

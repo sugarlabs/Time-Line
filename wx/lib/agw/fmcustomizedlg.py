@@ -10,7 +10,9 @@ from artmanager import ArtManager
 from fmresources import *
 from labelbook import LabelBook
 
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
 
 # ---------------------------------------------------------------------------- #
 # Class OrderedDict

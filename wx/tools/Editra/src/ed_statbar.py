@@ -33,7 +33,9 @@ from extern.decorlib import anythread
 
 #--------------------------------------------------------------------------#
  
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
 
 #--------------------------------------------------------------------------#
 

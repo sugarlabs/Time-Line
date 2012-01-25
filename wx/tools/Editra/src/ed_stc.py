@@ -42,7 +42,9 @@ import ebmlib
 
 #-------------------------------------------------------------------------#
 # Globals
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
 
 # EOL Constants
 EDSTC_EOL_CR   = ed_glob.EOL_MODE_CR

@@ -30,6 +30,7 @@ import timelinelib.wxgui.utils as gui_utils
 NO_CHECKBOX_TYPE = 0
 CHECKBOX_TYPE = 1
 
+from gettext import gettext as _
 
 class CategoriesTree(customtreectrl.CustomTreeCtrl):
 

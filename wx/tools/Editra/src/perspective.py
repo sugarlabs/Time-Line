@@ -36,7 +36,10 @@ ID_DELETE_PERSPECTIVE = wx.NewId()
 ID_AUTO_PERSPECTIVE = wx.NewId()
 
 # Aliases
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
+
 #--------------------------------------------------------------------------#
 
 class PerspectiveManager(object):

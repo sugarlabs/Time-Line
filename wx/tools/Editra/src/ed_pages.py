@@ -38,12 +38,16 @@ import ebmlib
 import eclib
 from wx.lib.agw import aui
 
+
+
 #--------------------------------------------------------------------------#
 # Globals
 ID_IDLE_TIMER = wx.NewId()
 SIMULATED_EVT_ID = -1
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
 #--------------------------------------------------------------------------#
+
+from gettext import gettext as _
 
 class EdPages(aui.AuiNotebook):
     """Editra's editor buffer notebook

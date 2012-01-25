@@ -25,6 +25,7 @@ from mock import Mock
 from timelinelib.time import PyTimeType
 from timelinelib.db.objects import TimePeriod
 
+from gettext import gettext as _
 
 class PyTimeTypeSpec(unittest.TestCase):
 

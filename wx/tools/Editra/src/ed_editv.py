@@ -42,7 +42,9 @@ ID_SPELL_1 = wx.NewId()
 ID_SPELL_2 = wx.NewId()
 ID_SPELL_3 = wx.NewId()
 
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
 
 def modalcheck(func):
     """Decorator method to add extra modality guards to functions that

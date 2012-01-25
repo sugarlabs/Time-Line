@@ -25,7 +25,10 @@ import ed_glob
 import ed_msg
 from profiler import Profile_Get
 
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
+
 #--------------------------------------------------------------------------#
 # Global Variables
 TOOL_ID = [ ed_glob.ID_NEW, ed_glob.ID_OPEN, ed_glob.ID_SAVE, ed_glob.ID_PRINT,

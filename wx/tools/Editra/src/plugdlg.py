@@ -57,7 +57,9 @@ IMG_INSTALL  = 2
 IMG_ERROR    = 3
 IMG_PLUGIN   = 4
 
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
 
 #-----------------------------------------------------------------------------#
 

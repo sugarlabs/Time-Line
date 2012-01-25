@@ -59,7 +59,9 @@ Version 0.1
 
 import wx
 
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
 
 
 class PyInfoFrame(wx.Frame):

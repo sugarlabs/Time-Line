@@ -23,7 +23,10 @@ import string
 import pickle
 import tempfile
 import mmap
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
+
 if wx.Platform == '__WXMSW__':
     _WINDOWS = True
 else:

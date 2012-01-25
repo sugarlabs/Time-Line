@@ -58,7 +58,9 @@ from info import *
 #---- Imported Libs/Objects ----#
 import wx
 
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
 
 #---- WX Compatibility Hacks ----#
 import wxcompat

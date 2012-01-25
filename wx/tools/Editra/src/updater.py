@@ -51,7 +51,10 @@ DL_SRC = 'SRC'
 DL_WIN = 'Windows'
 ISBIN = hasattr(sys, 'frozen')
 
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
+
 #--------------------------------------------------------------------------#
 
 class UpdateService(object):

@@ -13,7 +13,9 @@ from fmresources import *
 # Class DCSaver
 # ---------------------------------------------------------------------------- #
 
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
 
 _libimported = None
 

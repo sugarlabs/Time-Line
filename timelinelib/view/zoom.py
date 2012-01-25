@@ -18,6 +18,7 @@
 
 from timelinelib.view.periodbase import SelectPeriodByDragInputHandler
 
+from gettext import gettext as _
 
 class ZoomByDragInputHandler(SelectPeriodByDragInputHandler):
 

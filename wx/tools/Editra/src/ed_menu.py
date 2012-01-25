@@ -32,7 +32,9 @@ from syntax import synglob
 
 #--------------------------------------------------------------------------#
 # Globals
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
 
 #--------------------------------------------------------------------------#
 

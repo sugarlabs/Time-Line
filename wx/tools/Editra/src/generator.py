@@ -40,7 +40,9 @@ import eclib
 
 #--------------------------------------------------------------------------#
 # Globals
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
 
 FONT_FALLBACKS = "Trebuchet, Tahoma, sans-serif"
 

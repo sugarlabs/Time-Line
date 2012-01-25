@@ -47,6 +47,7 @@ from timelinelib.db.utils import safe_write
 from timelinelib.version import get_version
 from timelinelib.utils import ex_msg
 
+from gettext import gettext as _
 
 class IcsTimeline(TimelineDB):
 

@@ -49,7 +49,10 @@ import os
 LANG_ID    = 0
 MODULE     = 1
 
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
+
 #-----------------------------------------------------------------------------#
 # Imports
 import synglob

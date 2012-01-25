@@ -36,7 +36,9 @@ import syntax.syntax as syntax
 import eclib
 
 # Function Aliases
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
 
 # Global Values
 ID_STYLES = wx.NewId()

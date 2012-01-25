@@ -16,7 +16,9 @@ import os.path
 import shutil
 import wx
 import sys
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
 
 
 #----------------------------------------------------------------------

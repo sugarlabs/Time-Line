@@ -33,7 +33,8 @@ import eclib
 #--------------------------------------------------------------------------#
 # Globals
 
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+from gettext import gettext as _
 
 FileIcon = PyEmbeddedImage(
     "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAABthJ"

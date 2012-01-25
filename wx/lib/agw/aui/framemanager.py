@@ -109,7 +109,9 @@ from aui_utilities import Clip, PaneCreateStippleBitmap, GetDockingImage, GetSli
 from aui_constants import *
 
 # Define this as a translation function
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
 
 _winxptheme = False
 if wx.Platform == "__WXMSW__":

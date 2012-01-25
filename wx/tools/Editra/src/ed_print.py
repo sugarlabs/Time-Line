@@ -30,7 +30,10 @@ import wx.stc
 import ed_glob
 import util
 
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
+
 #--------------------------------------------------------------------------#
 
 # Globals

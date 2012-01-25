@@ -100,7 +100,9 @@ DD_DIR_MUST_EXIST = wx.DD_DIR_MUST_EXIST
 """ or some other way is provided to the user to type the name of a new folder. """
 DD_NEW_DIR_BUTTON = wx.DD_NEW_DIR_BUTTON
 
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
 
 _cancel = PyEmbeddedImage(
     "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAA1dJ"

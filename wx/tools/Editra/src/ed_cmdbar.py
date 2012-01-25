@@ -39,7 +39,10 @@ import ebmlib
 import eclib
 from profiler import Profile_Get, Profile_Set
 
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
+
 #--------------------------------------------------------------------------#
 # Close Button Bitmap
 from extern.embeddedimage import PyEmbeddedImage

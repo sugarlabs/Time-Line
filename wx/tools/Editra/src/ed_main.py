@@ -49,7 +49,10 @@ import ebmlib
 import eclib
 
 # Function Aliases
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
+
 _PGET = profiler.Profile_Get
 _PSET = profiler.Profile_Set
 

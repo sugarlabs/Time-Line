@@ -22,6 +22,8 @@ import ed_glob
 import plugin
 import iface
 
+from gettext import gettext as _
+
 #--------------------------------------------------------------------------#
 
 class ScriptProcessorI(plugin.Interface):

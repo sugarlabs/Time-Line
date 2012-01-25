@@ -26,6 +26,8 @@ from timelinelib.repositories.interface import EventRepository
 from timelinelib.time import PyTimeType
 from timelinelib.wxgui.dialogs.eventeditor import EventEditorDialog
 
+from gettext import gettext as _
+
 
 class EventEditorTestCase(unittest.TestCase):
 

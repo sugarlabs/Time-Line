@@ -15,6 +15,7 @@
 # You should have received a copy of the GNU General Public License
 # along with Timeline.  If not, see <http://www.gnu.org/licenses/>.
 
+from gettext import gettext as _
 
 def _(message): return message # deferred translation
 ABBREVIATED_WEEKDAY_NAMES = [

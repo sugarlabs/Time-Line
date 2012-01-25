@@ -38,8 +38,10 @@ import ebmlib
 #--------------------------------------------------------------------------#
 # Globals
 
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
 #--------------------------------------------------------------------------#
+
+from gettext import gettext as _
 
 class EdSearchEngine(ebmlib.SearchEngine):
     """Text searching engine"""

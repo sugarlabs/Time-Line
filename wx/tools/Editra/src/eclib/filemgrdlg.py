@@ -38,7 +38,9 @@ FMD_DEFAULT_STYLE = wx.DEFAULT_DIALOG_STYLE | wx.RESIZE_BORDER
 FMD_NO_DELETE = 1
 
 
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
 
 #-----------------------------------------------------------------------------#
 

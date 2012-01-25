@@ -45,7 +45,7 @@ from timelinelib.wxgui.dialogs.textdisplay import TextDisplayDialog
 from timelinelib.unhandledex import create_error_message
 
 
-gettext.install(APPLICATION_NAME.lower(), LOCALE_DIR, unicode=True)
+#gettext.install(APPLICATION_NAME.lower(), LOCALE_DIR, unicode=True)
 
 from gettext import gettext as _
 

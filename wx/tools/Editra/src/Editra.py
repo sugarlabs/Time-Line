@@ -74,7 +74,9 @@ from syntax import synglob
 # Global Variables
 ID_UPDATE_CHECK = wx.NewId()
 
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
 #--------------------------------------------------------------------------#
 
 class Editra(wx.App, events.AppEventHandlerMixin):

@@ -92,7 +92,9 @@ ENTRYPOINT = 'Editra.plugins'
 PLUGIN_CONFIG = "plugin.cfg"
 _implements = []
 
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
 
 #--------------------------------------------------------------------------#
 

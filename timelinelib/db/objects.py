@@ -20,6 +20,8 @@
 Objects that can be read from and written to a timeline database.
 """
 
+from gettext import gettext as _
+
 
 class Event(object):
     """

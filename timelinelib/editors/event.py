@@ -21,6 +21,7 @@ from timelinelib.db.objects import PeriodTooLongError
 from timelinelib.db.objects import TimePeriod
 from timelinelib.utils import ex_msg
 
+from gettext import gettext as _
 
 class EventEditor(object):
 

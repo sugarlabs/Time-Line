@@ -34,7 +34,11 @@ import syntax.syntax as syntax
 import syntax.synglob as synglob
 import ebmlib
 
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+
+from gettext import gettext as _
+
 #--------------------------------------------------------------------------#
 
 class DropTargetFT(wx.PyDropTarget):

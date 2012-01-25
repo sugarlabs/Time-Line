@@ -96,7 +96,9 @@ GMD_USE_AQUABUTTONS = 32
 GMD_USE_GRADIENTBUTTONS = 64
 """ Uses `wx.lib.agw.gradientbutton` buttons instead of generic buttons. """
 
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
 
 _cancel = PyEmbeddedImage(
     "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAA1dJ"

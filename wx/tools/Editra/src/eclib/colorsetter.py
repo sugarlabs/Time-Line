@@ -34,7 +34,10 @@ from eclutil import HexToRGB
 # NOTE: # is expected at end
 HEX_CHARS = "0123456789ABCDEFabcdef#"
 
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
+
 #-----------------------------------------------------------------------------#
 
 csEVT_COLORSETTER = wx.NewEventType()

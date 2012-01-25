@@ -7,7 +7,9 @@ import wx
 import auibook
 from aui_constants import *
 
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
 
 #-----------------------------------------------------------------------------
 # AuiMDIParentFrame

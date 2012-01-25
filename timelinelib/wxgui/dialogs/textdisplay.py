@@ -20,6 +20,7 @@ from timelinelib.wxgui.utils import BORDER
 
 import wx
 
+from gettext import gettext as _
 
 class TextDisplayDialog(wx.Dialog):
 

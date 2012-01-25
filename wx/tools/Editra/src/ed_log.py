@@ -35,7 +35,9 @@ import ed_glob
 
 #-----------------------------------------------------------------------------#
 # Globals
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
 
 SHOW_ALL_MSG = 'ALL'
 #-----------------------------------------------------------------------------#

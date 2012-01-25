@@ -37,7 +37,9 @@ from ebmlib import IsUnicode
 
 #-----------------------------------------------------------------------------#
 # Globals
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+from gettext import gettext as _
+
 RE_LOG_LBL = re.compile(r"\[(.+?)\]")
 
 # The default fallback encoding

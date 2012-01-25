@@ -54,7 +54,10 @@ ID_PREF_AUTO_SPELL = wx.NewId()
 ID_PREF_SPELL_DICT = wx.NewId()
 ID_PREF_ENCHANT_PATH = wx.NewId()
 
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
+
 #----------------------------------------------------------------------------#
 # Utility
 

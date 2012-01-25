@@ -32,6 +32,7 @@ from timelinelib.wxgui.components.timelineview import DrawingAreaPanel
 from timelinelib.wxgui.components.timelineview import DrawingArea
 from timelinelib.wxgui.dialogs.mainframe import StatusBarAdapter
 
+from gettext import gettext as _
 
 # TODO: testSavesEventAfterMove
 # TODO: testSavesEventAfterResize

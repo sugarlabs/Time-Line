@@ -109,7 +109,9 @@ from math import pi, sin, cos, sqrt, atan2
 from wx.lib.embeddedimage import PyEmbeddedImage
 
 # Define a translation string
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
 
 # Show the alpha control in the dialog
 CCD_SHOW_ALPHA = 1

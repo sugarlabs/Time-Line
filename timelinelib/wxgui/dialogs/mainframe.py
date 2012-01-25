@@ -46,6 +46,7 @@ from timelinelib.utils import ex_msg
 import timelinelib.wxgui.utils as gui_utils
 import timelinelib.printing as printing
 
+from gettext import gettext as _
 
 class MainFrame(wx.Frame):
 

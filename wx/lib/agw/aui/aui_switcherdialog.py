@@ -153,8 +153,9 @@ from aui_constants import SWITCHER_TEXT_MARGIN_X, SWITCHER_TEXT_MARGIN_Y
 
 
 # Define a translation function
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
 
+from gettext import gettext as _
     
 class SwitcherItem(object):
     """ An object containing information about one item. """

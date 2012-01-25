@@ -23,6 +23,7 @@ from timelinelib.wxgui.utils import _display_error_message
 from timelinelib.wxgui.utils import time_picker_for
 from timelinelib.utils import ex_msg
 
+from gettext import gettext as _
 
 class TimeEditorDialog(wx.Dialog):
 

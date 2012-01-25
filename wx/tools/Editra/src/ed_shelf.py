@@ -34,9 +34,11 @@ from wx.lib.agw import aui
 # Globals
 
 PGNUM_PAT = re.compile(' - [0-9]+')
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
 
 #-----------------------------------------------------------------------------#
+
+from gettext import gettext as _
 
 def mainwinonly(func):
     """Decorator method to add guards for methods that require the parent

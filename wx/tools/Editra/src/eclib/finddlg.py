@@ -123,7 +123,9 @@ ID_OPTION_CHANGE = wx.NewId()
 ID_CHOOSE_DIR = wx.NewId()
 ID_DIR_BOX = wx.NewId()
 
-_ = wx.GetTranslation
+#_ = wx.GetTranslation
+
+from gettext import gettext as _
 
 #--------------------------------------------------------------------------#
 

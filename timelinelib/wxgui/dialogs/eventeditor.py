@@ -33,6 +33,7 @@ from timelinelib.wxgui.utils import _set_focus_and_select
 from timelinelib.wxgui.utils import time_picker_for
 import timelinelib.wxgui.utils as gui_utils
 
+from gettext import gettext as _
 
 class EventEditorDialog(wx.Dialog):
 
