@@ -1,14 +1,7 @@
-# #-#-#-#-#  prueba1.po (Timeline 0.4.0)  #-#-#-#-#
 # Spanish translations for the Timeline application.
 # Copyright (C) YEAR Rickard Lindberg
 # This file is distributed under the same license as the Timeline package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-# #-#-#-#-#  prueba2.po (PACKAGE VERSION)  #-#-#-#-#
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Alan Aguiar <alanjas@hotmail.com>, 2011, 2012.
 #
 msgid ""
 msgstr ""
