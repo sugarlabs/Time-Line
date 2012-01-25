@@ -29,6 +29,7 @@ ABBREVIATED_WEEKDAY_NAMES = [
 ]
 del _
 
+from gettext import gettext as _
 
 def abbreviated_name_of_weekday(weekday):
     return _(ABBREVIATED_WEEKDAY_NAMES[weekday])

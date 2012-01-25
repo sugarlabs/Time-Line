@@ -58,6 +58,7 @@ def month_from_english_name(month_name):
 def english_name_of_month(month):
     return ENGLISH_MONTH_NAMES[month-1]
 
+from gettext import gettext as _
 
 def abbreviated_name_of_month(month):
     return _(ABBREVIATED_ENGLISH_MONTH_NAMES[month-1])
