@@ -35,6 +35,7 @@ Usage:
 import re
 from markdown import markdown
 
+from gettext import gettext as _
 
 class HelpSystem(object):
 
