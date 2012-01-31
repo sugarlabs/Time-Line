@@ -117,9 +117,9 @@ class PyColourChooser(wx.Panel):
         resizeable."""
         wx.Panel.__init__(self, parent, id)
 
-        self.basic_label = wx.StaticText(self, -1, _("Basic Colours:"))
-        self.custom_label = wx.StaticText(self, -1, _("Custom Colours:"))
-        self.add_button = wx.Button(self, self.idADD_CUSTOM, _("Add to Custom Colours"))
+        self.basic_label = wx.StaticText(self, -1, _("Basic Colors:"))
+        self.custom_label = wx.StaticText(self, -1, _("Custom Colors:"))
+        self.add_button = wx.Button(self, self.idADD_CUSTOM, _("Add to Custom Colors"))
 
         self.Bind(wx.EVT_BUTTON, self.onAddCustom, self.add_button)
 
@@ -185,7 +185,7 @@ class PyColourChooser(wx.Panel):
         self.mouse_down = False
 
         self.solid = pycolourbox.PyColourBox(self, -1, size=(75, 50))
-        slabel = wx.StaticText(self, -1, _("Solid Colour"))
+        slabel = wx.StaticText(self, -1, _("Solid Color"))
         ssizer = wx.BoxSizer(wx.VERTICAL)
         ssizer.Add(self.solid, 0, 0)
         ssizer.Add((1, 2))
