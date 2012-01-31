@@ -2803,7 +2803,7 @@ class CubeColourDialog(wx.Dialog):
          to hide the alpha channel control or not.
         """
 
-        wx.Dialog.__init__(self, parent, id=wx.ID_ANY, title=_("CubeColourDialog: Choose Colour"),
+        wx.Dialog.__init__(self, parent, id=wx.ID_ANY, title=_("CubeColorDialog: Choose Color"),
                            pos=wx.DefaultPosition, size=(900, 900), style=wx.DEFAULT_DIALOG_STYLE)
 
         if colourData:

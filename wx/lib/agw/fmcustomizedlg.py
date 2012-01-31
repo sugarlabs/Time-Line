@@ -359,7 +359,7 @@ class FMCustomizeDlg(wx.Dialog):
         vsizer.Add(self._sbStyle, 0, wx.EXPAND | wx.ALL, 5)
 
         # Misc 
-        sb = wx.StaticBoxSizer(wx.StaticBox(options, -1, _("Colour Scheme")), wx.VERTICAL)
+        sb = wx.StaticBoxSizer(wx.StaticBox(options, -1, _("Color Scheme")), wx.VERTICAL)
         self._colourID = wx.NewId()
 
         colourChoices = ArtManager.Get().GetColourSchemes()

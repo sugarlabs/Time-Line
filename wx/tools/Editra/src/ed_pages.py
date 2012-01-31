@@ -160,7 +160,7 @@ class EdPages(aui.AuiNotebook):
                 enc = tried
 
             msg = _("The correct encoding of '%s' could not be determined.\n\n"
-                    "Choose an encoding and select Ok to open the file with the chosen encoding.\n"
+                    "Choose an encoding and select OK to open the file with the chosen encoding.\n"
                     "Click Cancel to abort opening the file") % fname
 
             # On some systems it seems that default encoding ends up being
