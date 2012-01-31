@@ -2149,8 +2149,8 @@ def GetPrintModeStrings():
 
     """
     return [_('Black/White'),       # PRINT_BLACK_WHITE
-            _('Colour/White'),      # PRINT_COLOR_WHITE
-            _('Colour/Default'),    # PRINT_COLOR_DEF
+            _('Color/White'),      # PRINT_COLOR_WHITE
+            _('Color/Default'),    # PRINT_COLOR_DEF
             _('Inverse'),           # PRINT_INVERSE
             _('Normal')]            # PRINT_NORMAL
 
