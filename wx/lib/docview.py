@@ -3160,7 +3160,7 @@ class CommandProcessor(wx.Object):
             else:
                 undoItem.SetText(_("&Undo" + undoAccel))
             if redoCommand and redoItem:
-                redoItem.SetText(_("&Redo ") + redoCommand.GetName() + redoAccel)
+                redoItem.SetText(_("&Redo") + redoCommand.GetName() + redoAccel)
             else:
                 redoItem.SetText(_("&Redo") + redoAccel)
 

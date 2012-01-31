@@ -136,7 +136,7 @@ class StyleEditor(wx.Dialog):
 
         # Create Buttons
         b_sizer = wx.BoxSizer(wx.HORIZONTAL)
-        ok_b = wx.Button(self, wx.ID_OK, _("Ok"))
+        ok_b = wx.Button(self, wx.ID_OK, _("OK"))
         ok_b.SetDefault()
         b_sizer.AddMany([(wx.Button(self, wx.ID_CANCEL, _("Cancel")), 0),
                          ((5, 5), 0),

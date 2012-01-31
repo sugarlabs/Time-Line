@@ -485,7 +485,7 @@ class DownloadPanel(eclib.ControlBox):
                 frame.SetStatusText(_("Downloaded") + ": " + plug, 0)
         finally:
             if not self._eggcount:
-                frame.SetStatusText(_("Finshed downloading plugins"), 0)
+                frame.SetStatusText(_("Finished downloading plugins"), 0)
                 wx.CallAfter(frame.Busy, False)
                 inst_pg = self.GetParent().GetPage(INSTALL_PG)
                 for key in self._eggbasket:
