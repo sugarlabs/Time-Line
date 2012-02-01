@@ -190,7 +190,7 @@ class PluginDialog(wx.Frame):
 
         if self._cfg_pg.ConfigChanged():
             wx.MessageBox(_("You must restart Editra before your "
-                            "changes will take full affect."),
+                            "changes will take full effect."),
                           _("Configuration Changes Made"),
                           wx.ICON_INFORMATION|wx.OK)
             

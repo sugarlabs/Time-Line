@@ -381,7 +381,7 @@ EOL_MODE_CRLF = 2
 def EOLModeMap():
     """Get the eol mode map"""
     # Maintenance Note: ints must be kept in sync with EDSTC_EOL_* in edstc
-    return { EOL_MODE_CR : _("Old Machintosh (\\r)"),
+    return { EOL_MODE_CR : _("Old Macintosh (\r)"),
              EOL_MODE_LF : _("Unix (\\n)"),
              EOL_MODE_CRLF : _("Windows (\\r\\n)")}
 

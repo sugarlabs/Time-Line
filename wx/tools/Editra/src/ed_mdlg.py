@@ -135,7 +135,7 @@ class EdFormatEOLDlg(eclib.ChoiceDialog):
         @keyword selection: default selection (wx.stc.STC_EOL_*)
 
         """
-        choices = [_("Old Machintosh (\\r)"), _("Unix (\\n)"),
+        choices = [_("Old Macintosh (\r)"), _("Unix (\\n)"),
                    _("Windows (\\r\\n)")]
         self._eol = [wx.stc.STC_EOL_CR, wx.stc.STC_EOL_LF, wx.stc.STC_EOL_CRLF]
         idx = self._eol.index(selection)
