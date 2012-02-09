@@ -1535,7 +1535,7 @@ def OnAbout(evt):
     if evt.GetId() == ID_ABOUT:
         info = wx.AboutDialogInfo()
         year = time.localtime()
-        desc = [_("Editra is a programmers text editor."),
+        desc = [_("Editra is a programmer's text editor."),
                 _("Written in 100%% Python."),
                 _("Homepage") + ": " + HOME_PAGE + "\n",
                 _("Platform Info") + ": (%s,%s)",

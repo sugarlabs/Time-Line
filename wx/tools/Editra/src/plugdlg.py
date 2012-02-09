@@ -231,7 +231,7 @@ class PluginDialog(wx.Frame):
                       " | " + self._nb.GetPageText(cur_pg))
         if cur_pg == CONFIG_PG:
             self._cfg_pg.PopulateCtrl()
-            self.SetStatusText(_("Changes will take affect once the"
+            self.SetStatusText(_("Changes will take effect once the"
                                  " program has been restarted"), 0)
         elif cur_pg == DOWNLOAD_PG:
             self._dl_pg.UpdateList()
