@@ -1,4 +1,5 @@
-# -*- coding: latin-1 -*-
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 class CaselessDict(dict):
     """
