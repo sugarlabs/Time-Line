@@ -619,7 +619,7 @@ class EdMenuBar(wx.MenuBar):
                         _("Move Current Line Down"),
                         _("Move the current line down"))
         editmenu.AppendMenu(ed_glob.ID_LINE_EDIT, _("Line Edit"), linemenu,
-                            _("Commands that effect an entire line"))
+                            _("Commands that influence an entire line"))
         bookmenu = EdMenu()
         bookmenu.AppendEx(ed_glob.ID_ADD_BM, _("Toggle Bookmark"),
                         _("Toggle bookmark of the current line"))
