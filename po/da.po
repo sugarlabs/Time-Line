@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-27 20:50-0200\n"
-"PO-Revision-Date: 2012-02-04 05:23+0200\n"
+"PO-Revision-Date: 2012-02-12 23:33+0200\n"
 "Last-Translator: Aputsiaq Niels <aj@isit.gl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -539,21 +539,24 @@ msgid ""
 "Help improve Editra by clicking on Report Error\n"
 "to send the Error Traceback shown below."
 msgstr ""
+"Fejl: Der skete noget uventet\n"
+"Hjælp med at forbedre Editra, klik på Rapportér fejl\n"
+"for at sende tilbagesporing af fejl som vises nedenfor."
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_statbar.py:62
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_statbar.py:64
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_statbar.py:66
 #, python-format
 msgid "Change line endings to %s"
-msgstr ""
+msgstr "Skift linjeendelser til %s"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_statbar.py:184
 msgid "Change the encoding of the current document."
-msgstr ""
+msgstr "Skift kodningen af nuværende dokument."
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_statbar.py:185
 msgid "Change Encoding"
-msgstr ""
+msgstr "Skift kodning"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_mdlg.py:86
 #, python-format
@@ -563,10 +566,14 @@ msgid ""
 "Error:\n"
 "%(errormsg)s"
 msgstr ""
+"Editra kunne ikke åbne %(filename)s\n"
+"\n"
+"Fejl:\n"
+"%(errormsg)s"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_mdlg.py:88
 msgid "Error Opening File"
-msgstr ""
+msgstr "Fejl under åbning af fil"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_mdlg.py:105
 #, python-format
@@ -576,15 +583,19 @@ msgid ""
 "Error:\n"
 "%(errormsg)s"
 msgstr ""
+"Mislykkedes med at gemme fil: %(filename)s\n"
+"\n"
+"Fejl:\n"
+"%(errormsg)s"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_mdlg.py:107
 msgid "Save Error"
-msgstr ""
+msgstr "Fejl under gem"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_mdlg.py:138
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_glob.py:384
 msgid "Old Machintosh (\\r)"
-msgstr ""
+msgstr "Gammel Macintosh (\r)"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_mdlg.py:138
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_glob.py:385
@@ -593,6 +604,8 @@ msgstr ""
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/prefdlg.py:755
 msgid "Unix (\\n)"
 msgstr ""
+"Unix (\n"
+")"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_mdlg.py:139
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_glob.py:386
@@ -601,6 +614,8 @@ msgstr ""
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/prefdlg.py:756
 msgid "Windows (\\r\\n)"
 msgstr ""
+"Windows (\r\n"
+")"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/Editra.py:590
 #, python-format
@@ -608,103 +623,105 @@ msgid ""
 "An updated version of Editra is available\n"
 "Would you like to download Editra %s now?"
 msgstr ""
+"En opdateret version af Editra er tilgængelig\n"
+"Vil du hente Editra %s nu?"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/Editra.py:592
 msgid "Update Available"
-msgstr ""
+msgstr "Opdatering tilgængelig"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/Editra.py:596
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/prefdlg.py:1565
 msgid "Downloading Update"
-msgstr ""
+msgstr "Henter opdatering"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/Editra.py:889
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/Editra.py:1098
 msgid "Your profile has been updated to the latest version"
-msgstr ""
+msgstr "Din profil er blevet opdateret til seneste version"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/Editra.py:891
 msgid "Please check the preferences dialog to check your preferences"
-msgstr ""
+msgstr "Tjek venligst dialogen præferencer for at tjekke dine præferencer"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/Editra.py:893
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/Editra.py:1102
 msgid "Profile Updated"
-msgstr ""
+msgstr "Profil opdateret"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/Editra.py:1100
 msgid "Please check the preferences dialog to verify your preferences"
-msgstr ""
+msgstr "Tjek venligst dialogen præferencer for at bekræfte dine præferencer"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:121
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:958
 msgid "Configure"
-msgstr ""
+msgstr "Tilpas"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:122
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:462
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:1110
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/prefdlg.py:1524
 msgid "Download"
-msgstr ""
+msgstr "Hent"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:123
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:765
 msgid "Install"
-msgstr ""
+msgstr "Installér"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:131
 msgid "Errors"
-msgstr ""
+msgstr "Fejl"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:180
 msgid "Downloads are incomplete"
-msgstr ""
+msgstr "Hentede filer er ikke komplette"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:181
 msgid "Do you wish to exit?"
-msgstr ""
+msgstr "Ønsker du at afbryde?"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:192
 msgid "You must restart Editra before your changes will take full affect."
-msgstr ""
+msgstr "Du skal genstarte Editra før dine ændringer træder helt i kraft."
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:194
 msgid "Configuration Changes Made"
-msgstr ""
+msgstr "Ændringer af konfiguration foretaget"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:234
 msgid "Changes will take affect once the program has been restarted"
-msgstr ""
+msgstr "Ændringer vil træde i kraft når programmet er genstartet"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:410
 msgid "This plugin requires a newer version of Editra."
-msgstr ""
+msgstr "Dette udvidelsesmodul kræver en nyere version af Editra."
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:485
 msgid "Downloaded"
-msgstr ""
+msgstr "Hentet"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:488
 msgid "Finshed downloading plugins"
-msgstr ""
+msgstr "Færdig med hentning af udvidelsesmoduler"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:503
 msgid "Select plugins to download"
-msgstr ""
+msgstr "Vælg udvidelsesmoduler som skal hentes"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:508
 msgid "Unable to retrieve plugin list"
-msgstr ""
+msgstr "Ikke i stand til at indhente liste med udvidelsesmoduler"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:597
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/updater.py:606
 msgid "Downloading"
-msgstr ""
+msgstr "Henter"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:675
 msgid "Retrieving Plugin List"
-msgstr ""
+msgstr "Indhenter liste med udvidelsesmoduler"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:754
 msgid ""
@@ -712,57 +729,63 @@ msgid ""
 "\n"
 "To remove an item select it and hit Delete or Backspace."
 msgstr ""
+"For at tilføje et nyt element, så træk og slip filen for udvidelsesmodulet "
+"ind i listen.\n"
+"\n"
+"For at fjerne et element, så vælg det og tryk slette- eller tilbagetasten."
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:767
 msgid "User Directory"
-msgstr ""
+msgstr "Brugerkatalog"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:769
 msgid "Install the plugins only for the current user"
-msgstr ""
+msgstr "Installér kun udvidelsesmodulerne for nuværende bruger"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:771
 msgid "System Directory"
-msgstr ""
+msgstr "Systemkatalog"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:772
 msgid ""
 "Install the plugins for all users\n"
 " **requires administrative privileges**"
 msgstr ""
+"Installér udvidelsesmodulerne for alle brugere\n"
+"** kræver administrative rettigheder**"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:833
 msgid "Successfully Installed Plugins"
-msgstr ""
+msgstr "Udvidelsesmoduler installeret med succes"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:840
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_editv.py:191
 #: /home/alan/Activities/TimeLine.activity/timelinelib/wxgui/utils.py:135
 msgid "Error"
-msgstr ""
+msgstr "Fejl"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:842
 #, python-format
 msgid "Failed to install %d plugins"
-msgstr ""
+msgstr "Mislykkedes med at installere %d udvidelsesmoduler"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:844
 msgid "Installation Error"
-msgstr ""
+msgstr "Installationsfejl"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:950
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:1131
 #, python-format
 msgid "Author: %s"
-msgstr ""
+msgstr "Forfatter: %s"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:951
 msgid "Enable"
-msgstr ""
+msgstr "Aktivér"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:954
 msgid "Uninstall"
-msgstr ""
+msgstr "Afinstallér"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:1062
 #, python-format
@@ -770,938 +793,941 @@ msgid ""
 "Are you sure you want to uninstall %s?\n"
 "This cannot be undone."
 msgstr ""
+"Er du sikker på at du vil afinstallére %s?\n"
+"Dette kan ikke fortrydes."
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:1064
 msgid "Uninstall Plugin"
-msgstr ""
+msgstr "Afinstallér udvidelsesmodul"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/plugdlg.py:1068
 msgid "This plugin will be uninstalled on next program launch."
-msgstr ""
+msgstr "Dette udvidelsesmodul vil blive afinstalleret ved næste programkørsel."
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_script.py:203
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_script.py:213
 msgid "Macro Manager"
-msgstr ""
+msgstr "Makro-håndtering"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_script.py:204
 msgid "View and Edit Macros"
-msgstr ""
+msgstr "Vis og redigér makroer"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/util.py:184
 msgid "Unable to accept dropped file or text"
-msgstr ""
+msgstr "Kan ikke godkende mistet fil eller tekst"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/util.py:357
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/eclib/infodlg.py:294
 msgid "Folder"
-msgstr ""
+msgstr "Mappe"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/util.py:361
 msgid "Text Document"
-msgstr ""
+msgstr "Tekstdokument"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/util.py:369
 #, python-format
 msgid "%s Source File"
-msgstr ""
+msgstr "%s kildefil"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:472
 msgid "Customize..."
-msgstr ""
+msgstr "Tilpas..."
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:473
 msgid "Customize the items shown in this menu."
-msgstr ""
+msgstr "Tilpas elementerne vist i denne menu"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:479
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/syntax/syntax.py:318
 #, python-format
 msgid "Switch Lexer to %s"
-msgstr ""
+msgstr "Skift lexer til %s"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:481
 msgid "Lexers"
-msgstr ""
+msgstr "Lexere"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:483
 msgid "Manually Set a Lexer/Syntax"
-msgstr ""
+msgstr "Angiv manuelt en lexer/syntaks"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:513
 msgid "&New Tab"
-msgstr ""
+msgstr "&Ny fane"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:514
 msgid "Start a new file in a new tab"
-msgstr ""
+msgstr "Åbn ny fil i en ny fane"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:515
 msgid "New &Window"
-msgstr ""
+msgstr "Nyt &vindue"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:516
 msgid "Start a new file in a new window"
-msgstr ""
+msgstr "Start ny fil i et nyt vindue"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:518
 msgid "&Open"
-msgstr ""
+msgstr "&Åbn"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:518
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_toolbar.py:78
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:177
 msgid "Open"
-msgstr ""
+msgstr "Åbn"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:520
 #: /home/alan/Activities/TimeLine.activity/timelinelib/wxgui/dialogs/mainframe.py:205
 msgid "Open &Recent"
-msgstr ""
+msgstr "Åbn seneste"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:521
 msgid "Recently Opened Files"
-msgstr ""
+msgstr "Senest åbnede filer"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:523
 msgid "&Close Tab"
-msgstr ""
+msgstr "&Luk fane"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:524
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:2905
 msgid "Close Current Tab"
-msgstr ""
+msgstr "Luk nuværende fane"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:526
 msgid "Close Window"
-msgstr ""
+msgstr "Luk vindue"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:526
 msgid "Close the current window"
-msgstr ""
+msgstr "Luk nuværende vindue"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:527
 msgid "Close All Tabs"
-msgstr ""
+msgstr "Luk alle faner"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:528
 msgid "Close all open tabs"
-msgstr ""
+msgstr "Luk alle åbne faner"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:530
 msgid "&Save"
-msgstr ""
+msgstr "&Gem"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:530
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_toolbar.py:79
 msgid "Save Current File"
-msgstr ""
+msgstr "Gem nuværende fil"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:531
 msgid "Save &As"
-msgstr ""
+msgstr "Gem &som"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:531
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/eclib/filemgrdlg.py:123
 #: /home/alan/Activities/TimeLine.activity/wx/lib/docview.py:412
 msgid "Save As"
-msgstr ""
+msgstr "Gem som"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:532
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:179
 msgid "Save All"
-msgstr ""
+msgstr "Gem alle"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:533
 msgid "Save all open pages"
-msgstr ""
+msgstr "Gem alle åbne sider"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:535
 msgid "Revert to Saved"
-msgstr ""
+msgstr "Rul tilbage til gemt"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:536
 msgid "Revert file to last save point"
-msgstr ""
+msgstr "Rul fil til senest gemt punkt"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:537
 msgid "Reload with Encoding..."
-msgstr ""
+msgstr "Genindlæs med kodning..."
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:538
 msgid "Reload the file with a specified encoding"
-msgstr ""
+msgstr "Genindlæs filen med angivelse af kodning"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:543
 msgid "Save Profile"
-msgstr ""
+msgstr "Gem profil"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:544
 msgid "Save Current Settings to a New Profile"
-msgstr ""
+msgstr "Gem nuværende indstillinger til en ny profil"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:545
 msgid "Load Profile"
-msgstr ""
+msgstr "Indlæs profil"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:546
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_main.py:747
 msgid "Load a Custom Profile"
-msgstr ""
+msgstr "Indlæs tilpasset profil"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:547
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_main.py:728
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_main.py:749
 msgid "Profile"
-msgstr ""
+msgstr "Profil"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:548
 msgid "Load and save custom Profiles"
-msgstr ""
+msgstr "Indlæs og gem tilpassede profiler"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:552
 msgid "Save Session"
-msgstr ""
+msgstr "Gem session"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:553
 msgid "Save the current session."
-msgstr ""
+msgstr "Gem den nuværende session"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:554
 msgid "Load Session"
-msgstr ""
+msgstr "Indlæs session"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:555
 msgid "Load a saved session."
-msgstr ""
+msgstr "Indlæs en gemt session."
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:556
 msgid "Sessions"
-msgstr ""
+msgstr "Sessioner"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:557
 msgid "Load and save custom sessions."
-msgstr ""
+msgstr "Indlæs og gem tilpassede sessioner."
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:560
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:101
 msgid "Page Set&up"
-msgstr ""
+msgstr "Side&opsætning"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:561
 msgid "Configure Printer"
-msgstr ""
+msgstr "Konfigurér printer"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:562
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:100
 msgid "Print Pre&view"
-msgstr ""
+msgstr "Forhånd&vis udskrift"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:563
 msgid "Preview Printout"
-msgstr ""
+msgstr "Forhåndsvis udskrift"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:564
 msgid "&Print"
-msgstr ""
+msgstr "&Udskriv"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:564
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_toolbar.py:81
 msgid "Print Current File"
-msgstr ""
+msgstr "Udskriv nuværende fil"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:566
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:106
 msgid "E&xit"
-msgstr ""
+msgstr "&Afslut"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:566
 msgid "Exit the Program"
-msgstr ""
+msgstr "Afslut programmet"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:569
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:109
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:2561
 #: /home/alan/Activities/TimeLine.activity/timelinelib/wxgui/dialogs/mainframe.py:132
 msgid "&File"
-msgstr ""
+msgstr "&Fil"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:578
 #: /home/alan/Activities/TimeLine.activity/wx/lib/docview.py:3161
 msgid "&Undo"
-msgstr ""
+msgstr "Fortr&yd"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:578
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_toolbar.py:83
 msgid "Undo Last Action"
-msgstr ""
+msgstr "Fortryd seneste handling"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:579
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_toolbar.py:84
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_editv.py:362
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:188
 msgid "Redo"
-msgstr ""
+msgstr "Omgør"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:579
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_toolbar.py:84
 msgid "Redo Last Undo"
-msgstr ""
+msgstr "Omgør seneste handling"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:581
 msgid "Cu&t"
-msgstr ""
+msgstr "Kli&p"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:582
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_toolbar.py:87
 msgid "Cut Selected Text from File"
-msgstr ""
+msgstr "Klip markerede tekst fra fil"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:583
 msgid "&Copy"
-msgstr ""
+msgstr "&Kopiér"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:584
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_toolbar.py:89
 msgid "Copy Selected Text to Clipboard"
-msgstr ""
+msgstr "Kopiér markerede tekst til udklipsholder"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:585
 msgid "&Paste"
-msgstr ""
+msgstr "&Indsæt"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:586
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_toolbar.py:91
 msgid "Paste Text from Clipboard to File"
-msgstr ""
+msgstr "Indsæt tekst fra udklipsholder til fil"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:587
 msgid "P&aste After"
-msgstr ""
+msgstr "Inds&æt efter"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:588
 msgid "Paste Text from Clipboard to File after the cursor"
-msgstr ""
+msgstr "Indsæt tekst fra udklipsholder til fil efter markør"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:589
 msgid "Cycle Clipboard"
-msgstr ""
+msgstr "Gennemgå udklipsholder"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:590
 msgid "Cycle through recent clipboard text"
-msgstr ""
+msgstr "Går gennem seneste tekst i udklipsholder"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:592
 msgid "Select &All"
-msgstr ""
+msgstr "Vælg &alt"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:593
 msgid "Select All Text in Document"
-msgstr ""
+msgstr "Vælg al tekst i dokument"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:594
 msgid "Column Mode"
-msgstr ""
+msgstr "Kolonne-tilstand"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:595
 msgid "Enable column edit mode."
-msgstr ""
+msgstr "Aktivér kolonne-tilstand for redigering."
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:598
 msgid "New Line After"
-msgstr ""
+msgstr "Ny linje efter"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:599
 msgid "Add a new line after the current line"
-msgstr ""
+msgstr "Tilføj en ny linje efter nuværende linje"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:600
 msgid "New Line Before"
-msgstr ""
+msgstr "Ny linje før"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:601
 msgid "Add a new line before the current line"
-msgstr ""
+msgstr "Tilføj en ny linje før nuværende linje"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:603
 msgid "Cut Line"
-msgstr ""
+msgstr "Klip linje"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:604
 msgid "Cut Current Line"
-msgstr ""
+msgstr "Klip nuværende linje"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:605
 msgid "Delete Line"
-msgstr ""
+msgstr "Slet linje"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:606
 msgid "Delete the selected line(s)"
-msgstr ""
+msgstr "Slet markerede linje(r)"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:607
 msgid "Copy Line"
-msgstr ""
+msgstr "Kopiér linje"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:608
 msgid "Copy Current Line"
-msgstr ""
+msgstr "Kopiér nuværende linje"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:609
 msgid "Duplicate Line"
-msgstr ""
+msgstr "Duplikér linje"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:610
 msgid "Duplicate the current line"
-msgstr ""
+msgstr "Duplikér nuværende linje"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:612
 msgid "Join Lines"
-msgstr ""
+msgstr "Sammensæt linjer"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:613
 msgid "Join the Selected Lines"
-msgstr ""
+msgstr "Sammensæt de markerede linjer"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:614
 msgid "Transpose Line"
-msgstr ""
+msgstr "Transponér linje"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:615
 msgid "Transpose the current line with the previous one"
-msgstr ""
+msgstr "Transponér nuværende linje med den forrige"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:616
 msgid "Move Current Line Up"
-msgstr ""
+msgstr "Flyt nuværende linje op"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:617
 msgid "Move the current line up"
-msgstr ""
+msgstr "Flyt den nuværende linje op"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:619
 msgid "Move Current Line Down"
-msgstr ""
+msgstr "Flyt nuværende linje ned"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:620
 msgid "Move the current line down"
-msgstr ""
+msgstr "Flyt den nuværende linje ned"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:621
 msgid "Line Edit"
-msgstr ""
+msgstr "Linje-redigering"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:622
 msgid "Commands that affect an entire line"
-msgstr ""
+msgstr "Kommandoer som påvirker en hel linje"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:624
 msgid "Toggle Bookmark"
-msgstr ""
+msgstr "Vis/skjul bogmærke"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:625
 msgid "Toggle bookmark of the current line"
-msgstr ""
+msgstr "Vis/skjul bogmærke for nuværende linje"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:626
 msgid "Remove All Bookmarks"
-msgstr ""
+msgstr "Fjern alle bogmærker"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:627
 msgid "Remove all bookmarks from the current document"
-msgstr ""
+msgstr "Fjern alle bogmærker fra det nuværende dokument"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:628
 msgid "Bookmarks"
-msgstr ""
+msgstr "Bogmærker"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:629
 msgid "Add and remove bookmarks"
-msgstr ""
+msgstr "Tilføj og fjern bogmærker"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:631
 msgid "&Find"
-msgstr ""
+msgstr "&Søg"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:631
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_toolbar.py:93
 msgid "Find Text"
-msgstr ""
+msgstr "Søg tekst"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:632
 msgid "Find/R&eplace"
-msgstr ""
+msgstr "Søg/&Erstat"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:633
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_toolbar.py:95
 msgid "Find and Replace Text"
-msgstr ""
+msgstr "Søg og erstat tekst"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:634
 msgid "&Quick Find"
-msgstr ""
+msgstr "&Hurtigsøg"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:635
 msgid "Open the Quick Find Bar"
-msgstr ""
+msgstr "Åbn bjælken med hurtigsøg"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:636
 msgid "Find Previous"
-msgstr ""
+msgstr "Find forrige"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:637
 msgid "Goto previous match"
-msgstr ""
+msgstr "Gå til forrige forekomst"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:638
 msgid "Find Next"
-msgstr ""
+msgstr "Find næste"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:639
 msgid "Goto the next match"
-msgstr ""
+msgstr "Gå til næste forekomst"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:640
 msgid "Find Selected"
-msgstr ""
+msgstr "Søg det valgte"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:641
 msgid "Search for the currently selected phrase"
-msgstr ""
+msgstr "Søg efter den nuværende valgte frase"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:643
 msgid "Pr&eferences"
-msgstr ""
+msgstr "Præf&erencer"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:644
 msgid "Edit Preferences / Settings"
-msgstr ""
+msgstr "Redigér præferencer / indstillinger"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:647
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:134
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:1925
 #: /home/alan/Activities/TimeLine.activity/timelinelib/wxgui/dialogs/mainframe.py:316
 msgid "&Edit"
-msgstr ""
+msgstr "R&edigér"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:656
 msgid "Zoom Out"
-msgstr ""
+msgstr "Zoom ud"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:657
 msgid "Zoom In"
-msgstr ""
+msgstr "Zoom ind"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:658
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:659
 msgid "Zoom Default"
-msgstr ""
+msgstr "Zoom standard"
 
+# What is caret?
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:662
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/prefdlg.py:933
 msgid "Highlight Caret Line"
-msgstr ""
+msgstr "Fremhæv markørlinje"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:663
 msgid "Highlight the background of the current line"
-msgstr ""
+msgstr "Fremhæv baggrunden til nuværende linje"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:665
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/prefdlg.py:936
 msgid "Indentation Guides"
-msgstr ""
+msgstr "Guider til indrykning"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:666
 msgid "Show Indentation Guides"
-msgstr ""
+msgstr "Vis guider til indrykning"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:667
 msgid "Show Edge Guide"
-msgstr ""
+msgstr "Vis guide til kanter"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:668
 msgid "Show the edge column guide"
-msgstr ""
+msgstr "Vis guide til kolonne-kanter"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:669
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:670
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/prefdlg.py:767
 msgid "Show EOL Markers"
-msgstr ""
+msgstr "Vis markører for linjeafslutning"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:671
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/prefdlg.py:769
 msgid "Show Line Numbers"
-msgstr ""
+msgstr "Vis linjenumre"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:672
 msgid "Show Line Number Margin"
-msgstr ""
+msgstr "Vis margin til linjenumre"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:673
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/prefdlg.py:771
 msgid "Show Whitespace"
-msgstr ""
+msgstr "Vis blanke felter"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:674
 msgid "Show Whitespace Markers"
-msgstr ""
+msgstr "Vis markører for blanke felter"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:675
 msgid "Editor"
-msgstr ""
+msgstr "Redigering"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:676
 msgid "Toggle Editor View Options"
-msgstr ""
+msgstr "Vis/skjul visningsvalg for redigering"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:678
 msgid "Toggle fold"
-msgstr ""
+msgstr "Vis/skjul sammenfold"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:679
 msgid "Toggle current fold"
-msgstr ""
+msgstr "Vis/skjul nuværende sammenfold"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:680
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:681
 msgid "Toggle all folds"
-msgstr ""
+msgstr "Vis/skjul alle sammenfold"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:682
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:787
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/prefdlg.py:922
 msgid "Code Folding"
-msgstr ""
+msgstr "Sammenfold af kode"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:683
 msgid "Code folding toggle actions"
-msgstr ""
+msgstr "Vis/skjul handlinger for sammenfold af kode"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:686
 msgid "Pane Navigator"
-msgstr ""
+msgstr "Navigation for rude"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:687
 msgid "View pane selection list"
-msgstr ""
+msgstr "Vis liste for rudevalg"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:688
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_main.py:1414
 msgid "Maximize Editor"
-msgstr ""
+msgstr "Maksimér redigering"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:689
 msgid "Toggle Editor Maximization"
-msgstr ""
+msgstr "Vis/skjul maksimering af redigering"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:691
 msgid "&Goto Line"
-msgstr ""
+msgstr "&Gå til linje"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:692
 msgid "Goto Line Number"
-msgstr ""
+msgstr "Gå til linjenummer"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:693
 msgid "Goto Matching Brace"
-msgstr ""
+msgstr "Gå til matchende klamme"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:694
 msgid "Move caret matching brace"
-msgstr ""
+msgstr "Flyt matchende markør-klamme"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:696
 msgid "Next Position"
-msgstr ""
+msgstr "Næste placering"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:697
 msgid "Goto next position in history."
-msgstr ""
+msgstr "Gå til næste placering i historik."
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:698
 msgid "Previous Position"
-msgstr ""
+msgstr "Forrige placering"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:699
 msgid "Goto previous position in history."
-msgstr ""
+msgstr "Gå til forrige placering i historik."
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:701
 msgid "Next Bookmark"
-msgstr ""
+msgstr "Næste bogmærke"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:702
 msgid "View Line of Next Bookmark"
-msgstr ""
+msgstr "Vis linje for næste bogmærke"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:703
 msgid "Previous Bookmark"
-msgstr ""
+msgstr "Forrige bogmærke"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:704
 msgid "View Line of Previous Bookmark"
-msgstr ""
+msgstr "Vis linje for forrige bogmærke"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:707
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/prefdlg.py:1207
 msgid "Show Status Bar"
-msgstr ""
+msgstr "Vis statusbjælke"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:708
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:140
 msgid "&Toolbar"
-msgstr ""
+msgstr "Værk&tøjsbjælke"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:709
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/prefdlg.py:1209
 msgid "Show Toolbar"
-msgstr ""
+msgstr "Vis værktøjsbjælke"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:712
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:146
 #: /home/alan/Activities/TimeLine.activity/timelinelib/wxgui/dialogs/mainframe.py:341
 msgid "&View"
-msgstr ""
+msgstr "&Vis"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:721
 msgid "&Font"
-msgstr ""
+msgstr "Skri&fttype"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:722
 msgid "Change Font Settings"
-msgstr ""
+msgstr "Skift indstillinger for skrift"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:724
 msgid "Toggle Comment"
-msgstr ""
+msgstr "Vis/skjul kommentar"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:725
 msgid "Toggle comment on the selected line(s)"
-msgstr ""
+msgstr "Vis/skjul kommentar for valgte linje(r)"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:728
 msgid "Indent Lines"
-msgstr ""
+msgstr "Indryk linjer"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:729
 msgid "Indent the selected lines"
-msgstr ""
+msgstr "Indryk de valgte linje"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:730
 msgid "Unindent Lines"
-msgstr ""
+msgstr "Afindryk linjer"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:731
 msgid "Unindent the selected lines"
-msgstr ""
+msgstr "Afindryk de valgte linjer"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:733
 msgid "Uppercase"
-msgstr ""
+msgstr "Store bogstaver"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:734
 msgid "Convert selected text to all uppercase letters"
-msgstr ""
+msgstr "Konvertér til store bogstaver for valgt tekst"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:735
 msgid "Lowercase"
-msgstr ""
+msgstr "Små bogstaver"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:736
 msgid "Convert selected text to all lowercase letters"
-msgstr ""
+msgstr "Konvertér til små bogstaver for valgt tekst"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:738
 msgid "Use Soft Tabs"
-msgstr ""
+msgstr "Brug bløde tabuleringer"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:739
 msgid "Insert spaces instead of tab characters with tab key"
-msgstr ""
+msgstr "Indsæt mellemrum i stedet for indrykningstegn med tabuleringstast"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:741
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/prefdlg.py:773
 msgid "Word Wrap"
-msgstr ""
+msgstr "Ombrydning af ord"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:742
 msgid "Wrap Text Horizontally"
-msgstr ""
+msgstr "Ombryd tekst vandret"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:747
 msgid "Spaces to Tabs"
-msgstr ""
+msgstr "Mellemrum til tabuleringer"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:748
 msgid "Convert spaces to tabs in selected/all text"
-msgstr ""
+msgstr "Konvertér mellemrum til tabuleringer for valgt/al tekst"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:749
 msgid "Tabs to Spaces"
-msgstr ""
+msgstr "Tabuleringer til mellemrum"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:750
 msgid "Convert tabs to spaces in selected/all text"
-msgstr ""
+msgstr "Konvertér tabuleringer til mellemrum for valgt/al tekst"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:751
 msgid "Trim Trailing Whitespace"
-msgstr ""
+msgstr "Trim efterfølgende blanke tegn"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:752
 msgid "Remove trailing whitespace"
-msgstr ""
+msgstr "Fjern efterfølgende blanke tegn"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:753
 msgid "Whitespace"
-msgstr ""
+msgstr "Blanke tegn"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:754
 msgid "Whitespace formating commands"
-msgstr ""
+msgstr "Kommandoer til formatering af blanke tegn"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:758
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:760
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/prefdlg.py:755
 msgid "Old Macintosh (\\r)"
-msgstr ""
+msgstr "Gammel Macintosh (\r)"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:759
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:762
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:765
 #, python-format
 msgid "Format all EOL characters to %s Mode"
-msgstr ""
+msgstr "Formatér alle linjeafslutninger til tilstanden %s"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:767
 msgid "EOL Mode"
-msgstr ""
+msgstr "Tilstand for linjeafslutning"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:768
 msgid "End of line character formatting"
-msgstr ""
+msgstr "Tegn-formatering for linjeafslutning"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:771
 msgid "F&ormat"
-msgstr ""
+msgstr "F&ormat"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:780
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/prefdlg.py:940
 msgid "Auto-Completion"
-msgstr ""
+msgstr "Auto-fuldførelse"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:781
 msgid "Use Auto Completion when available"
-msgstr ""
+msgstr "Brug automatisk fuldførelse når det er muligt"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:782
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/prefdlg.py:950
 msgid "Auto-Indent"
-msgstr ""
+msgstr "Auto-indryk"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:783
 msgid "Toggle Auto-Indentation functionality"
-msgstr ""
+msgstr "Vis/skjul funktionalitet til automatisk indrykning"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:785
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/prefdlg.py:920
 msgid "Bracket Highlighting"
-msgstr ""
+msgstr "Fremhævelse af parenteser"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:786
 msgid "Highlight Brackets/Braces"
-msgstr ""
+msgstr "Fremhæv klammer/parenteser"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:788
 msgid "Toggle Code Folding"
-msgstr ""
+msgstr "Vis/skjul sammenfold af kode"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:789
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/prefdlg.py:679
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/prefdlg.py:1080
 msgid "Syntax Highlighting"
-msgstr ""
+msgstr "Fremhævning af syntaks"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:790
 msgid "Color Highlight Code Syntax"
-msgstr ""
+msgstr "Farvet fremhævning af kode-syntaks"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:795
 msgid "&Settings"
-msgstr ""
+msgstr "Ind&stillinger"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:806
 msgid "Editor Command"
-msgstr ""
+msgstr "Kommando til redigering"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:807
 msgid "Goto command buffer"
-msgstr ""
+msgstr "Buffer for gå til-kommando"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:808
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_main.py:1072
 msgid "Plugin Manager"
-msgstr ""
+msgstr "Udvidelseshåndtering"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:809
 msgid "Manage, Download, and Install plugins"
-msgstr ""
+msgstr "Håndtér, hent og installér udvidelser"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:811
 msgid "Edit the way syntax is highlighted"
-msgstr ""
+msgstr "Tilpas måden syntaks fremhæves på"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:822
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:1408
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:1415
 msgid "&Tools"
-msgstr ""
+msgstr "Værk&tøjer"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:831
 msgid "&About..."
-msgstr ""
+msgstr "&Om..."
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:832
 msgid "About"
-msgstr ""
+msgstr "Om"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:833
 msgid "Project Homepage..."
-msgstr ""
+msgstr "Projektets hjemmeside..."
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:834
 #, python-format
 msgid "Visit the project homepage %s"
-msgstr ""
+msgstr "Besøg projektets hjemmeside %s"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:836
 msgid "Online Documentation..."
-msgstr ""
+msgstr "Online-dokumentation..."
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:837
 msgid "Online project documentation and help guides"
-msgstr ""
+msgstr "Projektets online-dokumentation og vejledninger"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:838
 msgid "Translate Editra..."
-msgstr ""
+msgstr "Oversæt Editra..."
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:839
 msgid "Editra translations project"
-msgstr ""
+msgstr "Projekt for Editra-oversættelser"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:840
 msgid "Bug Tracker..."
-msgstr ""
+msgstr "Fejlrapporteringsværktøj..."
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:841
 msgid "Feedback"
-msgstr ""
+msgstr "Tilbagemelding"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:842
 msgid "Send bug reports and suggestions"
-msgstr ""
+msgstr "Send fejlrapporter og forslag"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_menu.py:845
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_main.py:152
@@ -1709,61 +1735,61 @@ msgstr ""
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:2914
 #: /home/alan/Activities/TimeLine.activity/timelinelib/wxgui/dialogs/mainframe.py:582
 msgid "&Help"
-msgstr ""
+msgstr "&Hjælp"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_cmdbar.py:119
 #: /home/alan/Activities/TimeLine.activity/wx/lib/agw/fmcustomizedlg.py:171
 msgid "Customize"
-msgstr ""
+msgstr "Tilpas"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_cmdbar.py:266
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:2902
 msgid "Next"
-msgstr ""
+msgstr "Næste"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_cmdbar.py:274
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:2899
 msgid "Previous"
-msgstr ""
+msgstr "Forrige"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_cmdbar.py:280
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/eclib/finddlg.py:846
 msgid "Find All"
-msgstr ""
+msgstr "Find alle"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_cmdbar.py:286
 msgid "Match Case"
-msgstr ""
+msgstr "Match store/små bogstaver"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_cmdbar.py:293
 msgid "Whole Word"
-msgstr ""
+msgstr "Helt ord"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_cmdbar.py:297
 msgid "Regular Expression"
-msgstr ""
+msgstr "Regulært udtryk"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_cmdbar.py:410
 msgid "Command"
-msgstr ""
+msgstr "Kommando"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_cmdbar.py:440
 msgid "Goto Line"
-msgstr ""
+msgstr "Gå til linje"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_cmdbar.py:562
 #, python-format
 msgid "Can't change directory to: %s"
-msgstr ""
+msgstr "Kan ikke ændre katalog til: %s"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_cmdbar.py:764
 #, python-format
 msgid "Access Denied: %s"
-msgstr ""
+msgstr "Adgang nægtet: %s"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_cmdbar.py:779
 msgid "Invalid Path"
-msgstr ""
+msgstr "Ugyldig sti"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_cmdbar.py:874
 msgid "cwd: "
@@ -1874,8 +1900,9 @@ msgstr ""
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_main.py:773
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_main.py:800
+#, fuzzy
 msgid "Session"
-msgstr ""
+msgstr "Sessioner"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_main.py:788
 #, python-format
@@ -1896,8 +1923,9 @@ msgid "Select an encoding to reload the file with"
 msgstr ""
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_main.py:1209
+#, fuzzy
 msgid "Reload with Encoding"
-msgstr ""
+msgstr "Genindlæs med kodning..."
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_main.py:1221
 #, python-format
@@ -1905,8 +1933,9 @@ msgid "Failed to reload the file with: %(encoding)s"
 msgstr ""
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_main.py:1240
+#, fuzzy
 msgid "Aui Pane Navigator"
-msgstr ""
+msgstr "Navigation for rude"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_main.py:1416
 msgid "Restore Editor"
@@ -1970,8 +1999,9 @@ msgid "Downloading To: %s"
 msgstr ""
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/updater.py:647
+#, fuzzy
 msgid "Canceled"
-msgstr ""
+msgstr "Fortryd"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/updater.py:675
 #, python-format
@@ -1993,45 +2023,52 @@ msgstr ""
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_toolbar.py:79
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:178
 #: /home/alan/Activities/TimeLine.activity/wx/lib/agw/genericmessagedialog.py:471
+#, fuzzy
 msgid "Save"
-msgstr ""
+msgstr "&Gem"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_toolbar.py:80
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:181
 #: /home/alan/Activities/TimeLine.activity/timelinelib/wxgui/dialogs/mainframe.py:228
+#, fuzzy
 msgid "Print"
-msgstr ""
+msgstr "&Udskriv"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_toolbar.py:83
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_editv.py:361
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:187
+#, fuzzy
 msgid "Undo"
-msgstr ""
+msgstr "Fortr&yd"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_toolbar.py:86
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_editv.py:364
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:184
+#, fuzzy
 msgid "Cut"
-msgstr ""
+msgstr "Kli&p"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_toolbar.py:88
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_editv.py:365
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:185
+#, fuzzy
 msgid "Copy"
-msgstr ""
+msgstr "&Kopiér"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_toolbar.py:90
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_editv.py:366
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:186
+#, fuzzy
 msgid "Paste"
-msgstr ""
+msgstr "&Indsæt"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_print.py:108
 #: /home/alan/Activities/TimeLine.activity/wx/lib/docview.py:1571
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:182
 #: /home/alan/Activities/TimeLine.activity/timelinelib/wxgui/dialogs/mainframe.py:219
+#, fuzzy
 msgid "Print Preview"
-msgstr ""
+msgstr "Forhånd&vis udskrift"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_print.py:115
 msgid "Failed to create print preview"
@@ -2191,8 +2228,9 @@ msgid "Warn when mixed eol characters are detected"
 msgstr ""
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/prefdlg.py:545
+#, fuzzy
 msgid "File Settings"
-msgstr ""
+msgstr "Indstilling for skrifttyper"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/prefdlg.py:559
 msgid "Spell Checking"
@@ -2477,8 +2515,9 @@ msgid "Enter the name of the new key profile"
 msgstr ""
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/prefdlg.py:2038
+#, fuzzy
 msgid "Lexer"
-msgstr ""
+msgstr "Lexere"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/prefdlg.py:2040
 msgid "Extensions (space separated, no dots)"
@@ -2532,14 +2571,20 @@ msgstr ""
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_editv.py:189
 #, python-format
+#, python-format, fuzzy
 msgid ""
 "Failed to reload %(filename)s:\n"
 "Error: %(errmsg)s"
 msgstr ""
+"Mislykkedes med at gemme fil: %(filename)s\n"
+"\n"
+"Fejl:\n"
+"%(errormsg)s"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_editv.py:228
+#, fuzzy
 msgid "New Tab"
-msgstr ""
+msgstr "&Ny fane"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_editv.py:229
 msgid "Move Tab to New Window"
@@ -2569,16 +2614,19 @@ msgid "Copy Full Path"
 msgstr ""
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_editv.py:368
+#, fuzzy
 msgid "To Uppercase"
-msgstr ""
+msgstr "Store bogstaver"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_editv.py:369
+#, fuzzy
 msgid "To Lowercase"
-msgstr ""
+msgstr "Små bogstaver"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_editv.py:371
+#, fuzzy
 msgid "Select All"
-msgstr ""
+msgstr "Vælg &alt"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/ed_editv.py:394
 msgid "No Suggestions"
@@ -2638,8 +2686,9 @@ msgid "All"
 msgstr ""
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/perspective.py:72
+#, fuzzy
 msgid "Save Current View"
-msgstr ""
+msgstr "Gem nuværende fil"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/perspective.py:73
 msgid "Save the current window layout"
@@ -2708,8 +2757,9 @@ msgid "Modified"
 msgstr ""
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/eclib/infodlg.py:184
+#, fuzzy
 msgid "Kind"
-msgstr ""
+msgstr "Søg"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/eclib/infodlg.py:193
 msgid "Where"
@@ -2729,8 +2779,9 @@ msgid "Are you sure want to delete %s?"
 msgstr ""
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/eclib/filemgrdlg.py:170
+#, fuzzy
 msgid "Delete File?"
-msgstr ""
+msgstr "Slet linje"
 
 #: /home/alan/Activities/TimeLine.activity/wx/tools/Editra/src/eclib/filemgrdlg.py:176
 #, python-format
@@ -2874,8 +2925,9 @@ msgid "File Error"
 msgstr ""
 
 #: /home/alan/Activities/TimeLine.activity/wx/lib/docview.py:597
+#, fuzzy
 msgid "Untitled"
-msgstr ""
+msgstr "unavngivet"
 
 #: /home/alan/Activities/TimeLine.activity/wx/lib/docview.py:635
 #: /home/alan/Activities/TimeLine.activity/wx/lib/docview.py:652
@@ -2920,8 +2972,9 @@ msgstr ""
 
 #: /home/alan/Activities/TimeLine.activity/wx/lib/docview.py:2006
 #, python-format
+#, python-format, fuzzy
 msgid "Untitled %d"
-msgstr ""
+msgstr "unavngivet %d"
 
 #: /home/alan/Activities/TimeLine.activity/wx/lib/docview.py:2175
 #, python-format
@@ -2957,16 +3010,19 @@ msgid "Ctrl+Y"
 msgstr ""
 
 #: /home/alan/Activities/TimeLine.activity/wx/lib/docview.py:3157
+#, fuzzy
 msgid "&Undo "
-msgstr ""
+msgstr "Fortr&yd"
 
 #: /home/alan/Activities/TimeLine.activity/wx/lib/docview.py:3163
+#, fuzzy
 msgid "&Redo "
-msgstr ""
+msgstr "Omgør"
 
 #: /home/alan/Activities/TimeLine.activity/wx/lib/docview.py:3165
+#, fuzzy
 msgid "&Redo"
-msgstr ""
+msgstr "Omgør"
 
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:87
 msgid "&New...\tCtrl+N"
@@ -3221,8 +3277,9 @@ msgid "Location:"
 msgstr ""
 
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:2698
+#, fuzzy
 msgid "Size:"
-msgstr ""
+msgstr "Størrelse"
 
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:2700
 msgid "bytes"
@@ -3253,8 +3310,9 @@ msgid "Previous Tab"
 msgstr ""
 
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:2902
+#, fuzzy
 msgid "Next Tab"
-msgstr ""
+msgstr "&Ny fane"
 
 #: /home/alan/Activities/TimeLine.activity/wx/lib/pydocview.py:2905
 msgid "Close Current\tCtrl+F4"
@@ -3333,8 +3391,9 @@ msgid "Choose one or more folders:"
 msgstr ""
 
 #: /home/alan/Activities/TimeLine.activity/wx/lib/agw/multidirdialog.py:399
+#, fuzzy
 msgid "Folder:"
-msgstr ""
+msgstr "Mappe"
 
 #: /home/alan/Activities/TimeLine.activity/wx/lib/agw/multidirdialog.py:472
 msgid "Make New Folder"
@@ -3441,8 +3500,9 @@ msgid "&Previous"
 msgstr ""
 
 #: /home/alan/Activities/TimeLine.activity/wx/lib/agw/aui/framemanager.py:10214
+#, fuzzy
 msgid "Pane Preview"
-msgstr ""
+msgstr "Forhånd&vis udskrift"
 
 #: /home/alan/Activities/TimeLine.activity/wx/lib/agw/aui/aui_switcherdialog.py:1054
 msgid "Pane Switcher"
@@ -3479,8 +3539,9 @@ msgid "Printing"
 msgstr ""
 
 #: /home/alan/Activities/TimeLine.activity/timelinelib/printing.py:116
+#, fuzzy
 msgid "Print preview"
-msgstr ""
+msgstr "Forhånd&vis udskrift"
 
 #: /home/alan/Activities/TimeLine.activity/timelinelib/weekdaynames.py:23
 msgid "Tue"
@@ -3578,8 +3639,9 @@ msgid ""
 msgstr ""
 
 #: /home/alan/Activities/TimeLine.activity/timelinelib/help/pages.py:86
+#, fuzzy
 msgid "Timeline"
-msgstr ""
+msgstr "Tidslinje"
 
 #: /home/alan/Activities/TimeLine.activity/timelinelib/help/pages.py:93
 msgid ""
@@ -3737,8 +3799,9 @@ msgid "No timeline set"
 msgstr ""
 
 #: /home/alan/Activities/TimeLine.activity/timelinelib/view/drawingarea.py:197
+#, fuzzy
 msgid "Edit"
-msgstr ""
+msgstr "R&edigér"
 
 #: /home/alan/Activities/TimeLine.activity/timelinelib/view/drawingarea.py:198
 msgid "Duplicate..."
@@ -3993,8 +4056,9 @@ msgid "Open Timeline"
 msgstr ""
 
 #: /home/alan/Activities/TimeLine.activity/timelinelib/wxgui/dialogs/mainframe.py:210
+#, fuzzy
 msgid "Page Set&up..."
-msgstr ""
+msgstr "Side&opsætning"
 
 #: /home/alan/Activities/TimeLine.activity/timelinelib/wxgui/dialogs/mainframe.py:210
 msgid "Setup page for printing"
@@ -4045,8 +4109,9 @@ msgid "Play timeline as movie"
 msgstr ""
 
 #: /home/alan/Activities/TimeLine.activity/timelinelib/wxgui/dialogs/mainframe.py:304
+#, fuzzy
 msgid "Exit the program"
-msgstr ""
+msgstr "Afslut programmet"
 
 #: /home/alan/Activities/TimeLine.activity/timelinelib/wxgui/dialogs/mainframe.py:345
 msgid "&Sidebar\tCtrl+I"
@@ -4061,8 +4126,9 @@ msgid "&Balloons on hover"
 msgstr ""
 
 #: /home/alan/Activities/TimeLine.activity/timelinelib/wxgui/dialogs/mainframe.py:384
+#, fuzzy
 msgid "&Timeline"
-msgstr ""
+msgstr "Tidslinje"
 
 #: /home/alan/Activities/TimeLine.activity/timelinelib/wxgui/dialogs/mainframe.py:388
 msgid "Create &Event..."
@@ -4207,8 +4273,9 @@ msgid "Name:"
 msgstr ""
 
 #: /home/alan/Activities/TimeLine.activity/timelinelib/wxgui/dialogs/categoryeditor.py:118
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "Farve"
 
 #: /home/alan/Activities/TimeLine.activity/timelinelib/wxgui/dialogs/categoryeditor.py:119
 msgid "Font Color:"
@@ -4322,8 +4389,9 @@ msgid "Unable to copy to clipboard."
 msgstr ""
 
 #: /home/alan/Activities/TimeLine.activity/timelinelib/wxgui/dialogs/preferences.py:29
+#, fuzzy
 msgid "Preferences"
-msgstr ""
+msgstr "Præf&erencer"
 
 #: /home/alan/Activities/TimeLine.activity/timelinelib/wxgui/dialogs/preferences.py:83
 msgid "Date && Time"
@@ -4394,8 +4462,9 @@ msgstr ""
 
 #: /home/alan/Activities/TimeLine.activity/timelinelib/wxgui/components/wxdatetimepicker.py:76
 #: /home/alan/Activities/TimeLine.activity/timelinelib/wxgui/components/pydatetimepicker.py:81
+#, fuzzy
 msgid "Invalid date"
-msgstr ""
+msgstr "Ugyldig fil"
 
 #: /home/alan/Activities/TimeLine.activity/timelinelib/wxgui/components/search.py:71
 msgid "No match"
