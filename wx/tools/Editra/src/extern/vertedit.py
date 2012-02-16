@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: latin1 -*-
+# -*- coding: utf-8 -*-
 #
 # Created in 2008 by Don Quijote
 # Licence: wxWindows
