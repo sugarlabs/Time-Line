@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 """Microsoft Internet Explorer cookie loading on Windows.
 
 Copyright 2002-2003 Johnny Lee <typo_pl@hotmail.com> (MSIE Perl code)
