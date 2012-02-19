@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #----------------------------------------------------------------------------
 # Name:         maskededit.py
 # Authors:      Will Sadkin, Jeff Childers

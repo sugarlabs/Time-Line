@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # --------------------------------------------------------------------------- #
 # FLATNOTEBOOK Widget wxPython IMPLEMENTATION
 #

@@ -414,8 +414,8 @@ class IconEditor(wx.Panel):
         #s_y = self.MAX_SIZE[1]
         #label = _("Images will be scaled to fit inside a ") + s_x + ' ' + s_y + _(" box.")
         #description = wx.StaticText(self, label)
-        label = _("Images will be scaled to fit inside a %i x %i box.")
-        description = wx.StaticText(self, label=label % self.MAX_SIZE)
+        label1 = _("Images will be scaled to fit inside a 128 x 128 box.")
+        description = wx.StaticText(self, label= label1)
         btn_select = wx.Button(self, wx.ID_OPEN)
         btn_clear = wx.Button(self, wx.ID_CLEAR)
         self.Bind(wx.EVT_BUTTON, self._btn_select_on_click, btn_select)

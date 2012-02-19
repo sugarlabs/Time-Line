@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 """Support for icons."""
 
 __author__ = "Patrick K. O'Brien <pobrien@orbtech.com> / David Mashburn <david.n.mashburn@gmail.com>"

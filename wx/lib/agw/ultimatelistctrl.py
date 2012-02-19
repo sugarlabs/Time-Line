@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # --------------------------------------------------------------------------------- #
 # ULTIMATELISTCTRL wxPython IMPLEMENTATION
 # Inspired by and heavily based on the wxWidgets C++ generic version of wxListCtrl.

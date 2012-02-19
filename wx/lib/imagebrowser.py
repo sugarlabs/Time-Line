@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #----------------------------------------------------------------------------
 # Name:         BrowseImage.py
 # Purpose:      Display and Select Image Files
