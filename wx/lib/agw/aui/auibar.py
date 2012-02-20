@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 auibar contains an implementation of AuiToolBar, which is a completely owner-drawn
 toolbar perfectly integrated with the AUI layout system. This allows drag and drop of

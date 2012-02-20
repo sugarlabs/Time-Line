@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 """
 This module contains all the constants used by wxPython-AUI.
 

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # --------------------------------------------------------------------------- #
 # THUMBNAILCTRL Control wxPython IMPLEMENTATION
 # Python Code By:

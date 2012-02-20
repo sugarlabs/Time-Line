@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # Overall menu styles
 StyleXP = 0
 Style2007 = 1
