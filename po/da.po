@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-20 00:32-0500\n"
-"PO-Revision-Date: 2012-02-24 06:14+0200\n"
+"PO-Revision-Date: 2012-02-25 10:47+0200\n"
 "Last-Translator: Aputsiaq Niels <aj@isit.gl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -529,7 +529,7 @@ msgstr ""
 "\n"
 "Hvis du har flere spørgsmål om Tidslinje eller hvis du ønsker at skabe "
 "kontakt med brugere og udviklere af Tidslinje, så send e-post til "
-"brugergruppe-listen: <thetimelineproj-user@list.sourceforge.net>. (Skriv "
+"brugergruppe-listen: <thetimelineproj-user@lists.sourceforge.net>. (Skriv "
 "venligst på engelsk.)\n"
 
 #: timelinelib/help/pages.py:221
@@ -850,11 +850,11 @@ msgstr ""
 
 #: timelinelib/wxgui/components/cattree.py:235
 msgid "Events belonging to "
-msgstr "Begivenheder som hører til"
+msgstr "Begivenheder som hører til "
 
 #: timelinelib/wxgui/components/cattree.py:235
 msgid " will now belong to "
-msgstr "vil nu høre til"
+msgstr " vil nu høre til "
 
 #: timelinelib/wxgui/components/pydatetimepicker.py:81
 #: timelinelib/wxgui/components/wxdatetimepicker.py:76
@@ -1828,7 +1828,7 @@ msgstr "Sletter markeringen"
 
 #: wx/lib/pydocview.py:131
 msgid "Select A&ll\tCtrl+A"
-msgstr "Vælg alle\\Ctrl+&A"
+msgstr "Vælg alle\tCtrl+&A"
 
 #: wx/lib/pydocview.py:131
 msgid "Selects all available data"
@@ -3805,7 +3805,7 @@ msgstr "Gem nuværende visning"
 
 #: wx/tools/Editra/src/perspective.py:73
 msgid "Save the current window layout"
-msgstr "Gem nuværende layout  for vindue"
+msgstr "Gem nuværende layout for vindue"
 
 #: wx/tools/Editra/src/perspective.py:74
 msgid "Delete Saved View"
