@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-20 00:32-0500\n"
-"PO-Revision-Date: 2012-02-25 10:47+0200\n"
+"PO-Revision-Date: 2012-02-25 10:58+0200\n"
 "Last-Translator: Aputsiaq Niels <aj@isit.gl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -124,7 +124,7 @@ msgstr "Kan ikke åbne tidslinje '%s'."
 
 #: timelinelib/db/__init__.py:80
 msgid "Unknown format."
-msgstr "Ukendt format"
+msgstr "Ukendt format."
 
 #: timelinelib/db/backends/dir.py:106 timelinelib/db/backends/file.py:126
 #: timelinelib/db/backends/ics.py:156
@@ -1349,7 +1349,7 @@ msgstr "Søndag"
 
 #: timelinelib/wxgui/dialogs/textdisplay.py:57
 msgid "Unable to copy to clipboard."
-msgstr "Kan ikke kopiere til udklipsholder"
+msgstr "Kan ikke kopiere til udklipsholder."
 
 #: timelinelib/wxgui/utils.py:135 wx/tools/Editra/src/ed_editv.py:191
 #: wx/tools/Editra/src/plugdlg.py:840
@@ -2596,7 +2596,7 @@ msgstr "Fejl: Kan ikke åbne %s"
 
 #: wx/tools/Editra/src/ed_main.py:1538
 msgid "Editra is a programmer's text editor."
-msgstr "Editra er en tekstredigering for programmører"
+msgstr "Editra er en tekstredigering for programmører."
 
 #: wx/tools/Editra/src/ed_main.py:1539
 #, python-format
@@ -2683,7 +2683,7 @@ msgstr "Tilpas..."
 
 #: wx/tools/Editra/src/ed_menu.py:473
 msgid "Customize the items shown in this menu."
-msgstr "Tilpas elementerne vist i denne menu"
+msgstr "Tilpas elementerne vist i denne menu."
 
 #: wx/tools/Editra/src/ed_menu.py:479 wx/tools/Editra/src/syntax/syntax.py:318
 #, python-format
@@ -2796,7 +2796,7 @@ msgstr "Gem session"
 
 #: wx/tools/Editra/src/ed_menu.py:553
 msgid "Save the current session."
-msgstr "Gem den nuværende session"
+msgstr "Gem den nuværende session."
 
 #: wx/tools/Editra/src/ed_menu.py:554
 msgid "Load Session"
@@ -3503,7 +3503,7 @@ msgstr "Ugyldig fil"
 
 #: wx/tools/Editra/src/ed_pages.py:353
 msgid "Session file doesn't exist."
-msgstr "Sessionsfil eksisterer ikke"
+msgstr "Sessionsfil eksisterer ikke."
 
 #: wx/tools/Editra/src/ed_pages.py:367
 msgid "Invalid file"
@@ -3519,7 +3519,7 @@ msgstr "Tom fil"
 
 #: wx/tools/Editra/src/ed_pages.py:374
 msgid "Session file is empty."
-msgstr "Sessionsfil er tom"
+msgstr "Sessionsfil er tom."
 
 #: wx/tools/Editra/src/ed_pages.py:388
 msgid "Missing session files"
