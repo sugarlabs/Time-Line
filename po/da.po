@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-20 00:32-0500\n"
-"PO-Revision-Date: 2012-02-25 10:58+0200\n"
+"PO-Revision-Date: 2012-02-25 10:59+0200\n"
 "Last-Translator: Aputsiaq Niels <aj@isit.gl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -1337,7 +1337,7 @@ msgstr "Brug rulning med inerti"
 
 #: timelinelib/wxgui/dialogs/preferences.py:123
 msgid "Use extended date range (before 1 AD)"
-msgstr "Anvend udvidet dato-interval (før år 0)"
+msgstr "Anvend udvidet dato-interval (før år 1)"
 
 #: timelinelib/wxgui/dialogs/preferences.py:134
 msgid "Monday"
