@@ -3444,7 +3444,7 @@ msgstr "Send bug reports and suggestions"
 
 #: wx/tools/Editra/src/ed_pages.py:162
 #, python-format
-#, python-format, 
+#, python-format,
 msgid ""
 "The correct encoding of '%s' could not be determined.\n"
 "\n"
@@ -3533,7 +3533,7 @@ msgstr "No Valid Files to Open"
 
 #: wx/tools/Editra/src/ed_pages.py:981
 #, python-format
-#, python-format, 
+#, python-format,
 msgid ""
 "Do you wish to open all %d files in this directory?\n"
 "\n"
@@ -3629,7 +3629,7 @@ msgstr "\"%s\" was not found"
 
 #: wx/tools/Editra/src/ed_search.py:539 wx/tools/Editra/src/ed_search.py:700
 #, python-format
-#, python-format, 
+#, python-format,
 msgid ""
 "Error in regular expression expansion. The replace action cannot be "
 "completed.\n"
