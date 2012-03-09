@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-20 00:32-0500\n"
-"PO-Revision-Date: 2012-03-09 11:43+0200\n"
+"PO-Revision-Date: 2012-03-09 12:08+0200\n"
 "Last-Translator: Aputsiaq Niels <aj@isit.gl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -1189,7 +1189,7 @@ msgstr "Beskrive&lse"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:370
 msgid "&Balloons on hover"
-msgstr "Stiger som &ballon når der holdes over den"
+msgstr "Stiger som en &ballon når man holder over den"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:384
 msgid "&Timeline"
