@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-20 00:32-0500\n"
-"PO-Revision-Date: 2012-02-25 10:59+0200\n"
+"PO-Revision-Date: 2012-03-09 11:43+0200\n"
 "Last-Translator: Aputsiaq Niels <aj@isit.gl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -277,7 +277,7 @@ msgstr ""
 "Denne tidslinje lagres i hukommelsen og ændringer i den vil ikke blive "
 "bevaret mellem sessioner.\n"
 "\n"
-"Vælg Fil\\Ny\\Arkivér tidslinje for at oprette en tidslinje, der gemmes på "
+"Vælg Fil/Ny/Arkivér tidslinje for at oprette en tidslinje, der gemmes på "
 "disken."
 
 #: timelinelib/db/utils.py:56
@@ -410,8 +410,8 @@ msgstr ""
 "\n"
 "En begivenhed er grundlæggende datatype til repræsentation af information på "
 "tidslinjen.  Den skal angive hvor på tidslinjen den skal placeres (hvornår "
-"begivenheden skete). Dette kan kan enten være et specifikt tidspunkt eller "
-"en periode.\n"
+"begivenheden skete). Dette kan enten være et specifikt tidspunkt eller en "
+"periode.\n"
 
 #: timelinelib/help/pages.py:114
 msgid "Categories"
@@ -3456,7 +3456,7 @@ msgstr "Send fejlrapporter og forslag"
 
 #: wx/tools/Editra/src/ed_pages.py:162
 #, python-format
-#, python-format, 
+#, python-format,
 msgid ""
 "The correct encoding of '%s' could not be determined.\n"
 "\n"
@@ -3545,7 +3545,7 @@ msgstr "Ingen gyldige filer som kan åbnes"
 
 #: wx/tools/Editra/src/ed_pages.py:981
 #, python-format
-#, python-format, 
+#, python-format,
 msgid ""
 "Do you wish to open all %d files in this directory?\n"
 "\n"
@@ -3641,7 +3641,7 @@ msgstr "\"%s\" blev ikke fundet"
 
 #: wx/tools/Editra/src/ed_search.py:539 wx/tools/Editra/src/ed_search.py:700
 #, python-format
-#, python-format, 
+#, python-format,
 msgid ""
 "Error in regular expression expansion. The replace action cannot be "
 "completed.\n"
