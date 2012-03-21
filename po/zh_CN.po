@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-20 00:32-0500\n"
-"PO-Revision-Date: 2012-03-19 06:32+0200\n"
+"PO-Revision-Date: 2012-03-22 01:30+0200\n"
 "Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh_CN\n"
@@ -361,7 +361,7 @@ msgid ""
 "support this in future versions.\n"
 msgstr ""
 "\n"
-"目前使用的日期对象不支持哪些从周日开始的星期数。我们计划使用在未来的版本中支持的不同日期对象。\n"
+"目前使用的日期对象不支持哪些从周日开始的星期数。 我们计划使用在未来的版本中支持的不同日期对象。\n"
 
 #: timelinelib/help/pages.py:86
 msgid "Timeline"
@@ -567,7 +567,9 @@ msgstr "十一月"
 msgid ""
 "There was a problem printing.\n"
 "Perhaps your current printer is not set correctly?"
-msgstr "打印出现问题。\\ N也许当前打印机设置不正确？"
+msgstr ""
+"打印出现问题。\n"
+"也许当前打印机设置不正确？"
 
 #: timelinelib/printing.py:102
 msgid "Printing"
@@ -588,12 +590,12 @@ msgstr "转到时间(&T)\tCtrl+T"
 #: timelinelib/time/numtime.py:53 timelinelib/time/pytime.py:75
 #: timelinelib/time/wxtime.py:75
 msgid "Backward\tPgUp"
-msgstr "向后\\ţ上一页"
+msgstr "向后\t上一页"
 
 #: timelinelib/time/numtime.py:54 timelinelib/time/pytime.py:76
 #: timelinelib/time/wxtime.py:76
 msgid "Forward\tPgDn"
-msgstr "向前\\ţ下一页"
+msgstr "向前\t下一页"
 
 #: timelinelib/time/numtime.py:118
 msgid "Can't zoom deeper than 5"
@@ -1286,7 +1288,7 @@ msgid ""
 msgstr ""
 "此功能是实验性的。如果事件在扩展的范围内\n"
 "创建，你不能禁用此选项，也不能再次成功载\n"
-"入时间轴。需要生效请重新载入时间轴。\n"
+"入时间轴。需要生效请重新载入时间轴。"
 
 #: timelinelib/wxgui/dialogs/preferences.py:111
 msgid "Open most recent timeline on startup"
@@ -1542,11 +1544,11 @@ msgstr "应用程序"
 
 #: wx/lib/docview.py:386 wx/lib/docview.py:637 wx/lib/docview.py:1897
 msgid " has been modified outside of "
-msgstr " 已被外部程序修改"
+msgstr " 已被外部程序修改 "
 
 #: wx/lib/docview.py:386 wx/lib/docview.py:637
 msgid ". Overwrite "
-msgstr "。覆盖"
+msgstr "。覆盖 "
 
 #: wx/lib/docview.py:386 wx/lib/docview.py:637
 msgid " with current changes?"
@@ -1594,7 +1596,7 @@ msgstr "重做(&R)\tCtrl+Y"
 
 #: wx/lib/docview.py:1897
 msgid "Reload "
-msgstr "重新加载"
+msgstr "重新加载 "
 
 #: wx/lib/docview.py:1897
 msgid " from file system?"
@@ -1602,11 +1604,11 @@ msgstr " 从文件系统？"
 
 #: wx/lib/docview.py:1903
 msgid "Couldn't reload "
-msgstr "无法重新加载"
+msgstr "无法重新加载 "
 
 #: wx/lib/docview.py:1903
 msgid "Unable to close current "
-msgstr "无法关闭当前的"
+msgstr "无法关闭当前的 "
 
 #: wx/lib/docview.py:2006
 #, python-format
@@ -1649,7 +1651,7 @@ msgstr "Ctrl+Y"
 
 #: wx/lib/docview.py:3157
 msgid "&Undo "
-msgstr "撤销(&U)"
+msgstr "撤销(&U) "
 
 #: wx/lib/docview.py:3161 wx/tools/Editra/src/ed_menu.py:578
 msgid "&Undo"
@@ -1923,7 +1925,7 @@ msgstr "文档界面现在不会变化，重新启动应用程序后生效。"
 
 #: wx/lib/pydocview.py:2525
 msgid "About "
-msgstr "关于"
+msgstr "关于 "
 
 #: wx/lib/pydocview.py:2564
 msgid "&Properties"
@@ -2399,7 +2401,7 @@ msgstr ""
 #: wx/tools/Editra/src/ed_glob.py:386
 msgid "Windows (\\n)"
 msgstr ""
-"Windows (\r\n"
+"Windows (\n"
 ")"
 
 #: wx/tools/Editra/src/ed_log.py:81
@@ -3692,7 +3694,7 @@ msgstr "文件备份完成: %s"
 #: wx/tools/Editra/src/ed_stc.py:697
 #, python-format
 msgid "Line: %(lnum)d  Column: %(cnum)d"
-msgstr "行: %(lnum)d 列: %(cnum)d"
+msgstr "行: %(lnum)d  列: %(cnum)d"
 
 #: wx/tools/Editra/src/ed_stc.py:1097
 msgid ""
