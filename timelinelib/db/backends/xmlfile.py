@@ -54,6 +54,7 @@ INDENT1 = "  "
 INDENT2 = "    "
 INDENT3 = "      "
 
+from gettext import gettext as _
 
 # Must be defined before the XmlTimeline class since it is used as a decorator
 def wrap_in_tag(func, name, indent=""):

@@ -31,6 +31,7 @@ from timelinelib.wxgui.utils import time_picker_for
 import timelinelib.wxgui.utils as gui_utils
 from timelinelib.repositories.dbwrapper import DbWrapperEventRepository
 
+from gettext import gettext as _
 
 class EventEditorDialog(wx.Dialog):
 

@@ -50,6 +50,7 @@ from timelinelib.wxgui.utils import WildcardHelper
 import timelinelib.printing as printing
 import timelinelib.wxgui.utils as gui_utils
 
+from gettext import gettext as _
 
 class MainFrame(wx.Frame):
 

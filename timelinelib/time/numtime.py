@@ -27,6 +27,7 @@ from timelinelib.drawing.interface import Strip
 from timelinelib.drawing.utils import get_default_font
 from timelinelib.db.objects import TimePeriod
 
+from gettext import gettext as _
 
 class NumTimeType(TimeType):
 

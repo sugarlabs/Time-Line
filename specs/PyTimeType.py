@@ -22,6 +22,7 @@ import unittest
 from timelinelib.db.objects import TimePeriod
 from timelinelib.time import PyTimeType
 
+from gettext import gettext as _
 
 class PyTimeTypeSpec(unittest.TestCase):
 

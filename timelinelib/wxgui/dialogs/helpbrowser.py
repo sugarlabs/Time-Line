@@ -25,6 +25,7 @@ from timelinelib.config.paths import HELP_RESOURCES_DIR
 from timelinelib.config.paths import ICONS_DIR
 from timelinelib.wxgui.utils import _display_error_message
 
+from gettext import gettext as _
 
 class HelpBrowser(wx.Frame):
 

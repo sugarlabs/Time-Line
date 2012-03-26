@@ -36,6 +36,7 @@ from timelinelib.db.backends.memory import MemoryDB
 from timelinelib.db.objects import Event
 from timelinelib.db.objects import Category
 
+from gettext import gettext as _
 
 class DirTimeline(MemoryDB):
 

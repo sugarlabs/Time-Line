@@ -47,6 +47,7 @@ from timelinelib.meta.version import get_version
 from timelinelib.time import PyTimeType
 from timelinelib.utils import ex_msg
 
+from gettext import gettext as _
 
 class IcsTimeline(TimelineDB):
 

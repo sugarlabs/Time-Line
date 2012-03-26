@@ -28,6 +28,7 @@ Template for translator comments (should be before all body parts):
 # Dashes produce bullet lists. DON'T remove them.
 """
 
+from gettext import gettext as _
 
 def install(help_system):
 

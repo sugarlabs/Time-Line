@@ -22,6 +22,7 @@ import os.path
 
 from timelinelib.db.interface import TimelineIOError
 
+from gettext import gettext as _
 
 class IdCounter(object):
 

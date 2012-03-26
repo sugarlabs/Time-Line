@@ -37,6 +37,7 @@ from timelinelib.time.typeinterface import TimeType
 US_PER_SEC = 1000000
 US_PER_DAY = 24 * 60 * 60 * US_PER_SEC
 
+from gettext import gettext as _
 
 class PyTimeType(TimeType):
 

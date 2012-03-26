@@ -39,6 +39,7 @@ from timelinelib.db.objects import Category
 from timelinelib.db.utils import IdCounter
 from timelinelib.db.utils import generic_event_search
 
+from gettext import gettext as _
 
 class MemoryDB(TimelineDB):
 

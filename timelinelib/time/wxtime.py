@@ -41,6 +41,8 @@ US_PER_DAY = 24 * 60 * 60 * US_PER_SEC
 MIN_YEAR = -4700
 MAX_YEAR = 120000
 
+from gettext import gettext as _
+
 class WxTimeType(TimeType):
 
     def __eq__(self, other):

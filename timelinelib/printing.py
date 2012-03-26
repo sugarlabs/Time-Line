@@ -18,6 +18,7 @@
 
 import wx
 
+from gettext import gettext as _
 
 class TimelinePrintout(wx.Printout):
     """

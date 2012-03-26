@@ -15,6 +15,7 @@
 # You should have received a copy of the GNU General Public License
 # along with Timeline.  If not, see <http://www.gnu.org/licenses/>.
 
+from gettext import gettext as _
 
 ENGLISH_MONTH_NAMES = [
     "January",
@@ -47,7 +48,8 @@ ABBREVIATED_ENGLISH_MONTH_NAMES = [
     _("Nov"),
     _("Dec"),
 ]
-del _
+
+#del _
 
 
 def month_from_english_name(month_name):

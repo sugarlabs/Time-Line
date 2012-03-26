@@ -24,6 +24,7 @@ from timelinelib.db.objects import Event
 from timelinelib.db.objects import TimePeriod
 from timelinelib.db.backends.memory import MemoryDB
 
+from gettext import gettext as _
 
 def create_in_memory_tutorial_db():
     tutcreator = TutorialTimelineCreator()

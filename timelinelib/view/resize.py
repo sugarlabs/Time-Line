@@ -21,6 +21,7 @@ import wx
 from timelinelib.db.objects import PeriodTooLongError
 from timelinelib.view.scrollbase import ScrollViewInputHandler
 
+from gettext import gettext as _
 
 class ResizeByDragInputHandler(ScrollViewInputHandler):
 
