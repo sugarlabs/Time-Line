@@ -1,4 +1,5 @@
 # Copyright (C) 2009, 2010, 2011  Rickard Lindberg, Roger Lindberg
+# -*- coding: utf-8 -*-
 #
 # This file is part of Timeline.
 #
