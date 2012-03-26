@@ -18,10 +18,9 @@
 
 import wx
 
-from timelinelib.editors.preferences import PreferencesEditor
+from timelinelib.config.preferences import PreferencesEditor
 from timelinelib.wxgui.utils import BORDER
 
-from gettext import gettext as _
 
 class PreferencesDialog(wx.Dialog):
 

@@ -16,27 +16,47 @@
 # along with Timeline.  If not, see <http://www.gnu.org/licenses/>.
 
 
-VERSION = (0, 15, 0)
-DEV = False
+ENGLISH_MONTH_NAMES = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+]
 
 
-def get_version():
-    if DEV:
-        return ("%s.%s.%sdev" % VERSION) + DEV_REVISION
-    return "%s.%s.%s" % VERSION
+def _(message): return message # deferred translation
+ABBREVIATED_ENGLISH_MONTH_NAMES = [
+    _("Jan"),
+    _("Feb"),
+    _("Mar"),
+    _("Apr"),
+    _("May"),
+    _("Jun"),
+    _("Jul"),
+    _("Aug"),
+    _("Sep"),
+    _("Oct"),
+    _("Nov"),
+    _("Dec"),
+]
+del _
 
 
-def _get_revision():
-    try:
-        import os
-        from subprocess import Popen, PIPE
-        root = os.path.join(os.path.dirname(__file__), "..")
-        cmd = ["hg", "id", "-i", "-R", root]
-        rev = Popen(cmd, stdout=PIPE).communicate()[0].strip()
-        return rev
-    except:
-        return "0"
+def month_from_english_name(month_name):
+    return ENGLISH_MONTH_NAMES.index(month_name) + 1
 
 
-if DEV:
-    DEV_REVISION = _get_revision()
+def english_name_of_month(month):
+    return ENGLISH_MONTH_NAMES[month-1]
+
+
+def abbreviated_name_of_month(month):
+    return _(ABBREVIATED_ENGLISH_MONTH_NAMES[month-1])

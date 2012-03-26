@@ -37,15 +37,15 @@ class NoOpInputHandler(InputHandler):
         self.last_hovered_event = None
         self.last_hovered_balloon_event = None
 
-    def left_mouse_down(self, x, y, ctrl_down, shift_down):
+    def left_mouse_down(self, x, y, ctrl_down, shift_down, alt_down=False):
         self._toggle_balloon_stickyness(x, y)
-        event = self.drawing_area.event_at(x, y)
+        event = self.drawing_area.event_at(x, y, alt_down)
         time_at_x = self.drawing_area.get_time(x)
-        if self._hit_resize_handle(x, y) is not None:
-            direction = self._hit_resize_handle(x, y)
+        if self._hit_resize_handle(x, y, alt_down) is not None:
+            direction = self._hit_resize_handle(x, y, alt_down)
             self.drawing_area.change_input_handler_to_resize_by_drag(event, direction)
             return
-        if self._hit_move_handle(x, y):
+        if self._hit_move_handle(x, y, alt_down) and not event.ends_today:
             self.drawing_area.change_input_handler_to_move_by_drag(event, time_at_x)
             return
         if (event is None and ctrl_down == False and shift_down == False):
@@ -60,11 +60,11 @@ class NoOpInputHandler(InputHandler):
             self.drawing_area._toggle_event_selection(x, y, ctrl_down)
             self.drawing_area.change_input_handler_to_zoom_by_drag(time_at_x)
             return
-        self.drawing_area._toggle_event_selection(x, y, ctrl_down)
+        self.drawing_area._toggle_event_selection(x, y, ctrl_down, alt_down)
 
     def _toggle_balloon_stickyness(self, x, y):
         event_with_balloon = self.drawer.balloon_at(x, y)
-        if event_with_balloon: 
+        if event_with_balloon:
             stick = not self.view_properties.event_has_sticky_balloon(event_with_balloon)
             self.view_properties.set_event_has_sticky_balloon(event_with_balloon, has_sticky=stick)
             if stick:
@@ -75,14 +75,14 @@ class NoOpInputHandler(InputHandler):
                 else:
                     self.drawing_area._redraw_balloons(None)
 
-    def mouse_moved(self, x, y):
-        self.last_hovered_event = self.drawing_area.event_at(x, y)
+    def mouse_moved(self, x, y, alt_down=False):
+        self.last_hovered_event = self.drawing_area.event_at(x, y, alt_down)
         self.last_hovered_balloon_event = self.drawer.balloon_at(x, y)
         self._start_balloon_timers()
-        self.drawing_area._display_eventinfo_in_statusbar(x, y)
-        if self._hit_resize_handle(x, y) is not None:
+        self.drawing_area._display_eventinfo_in_statusbar(x, y, alt_down)
+        if self._hit_resize_handle(x, y, alt_down) is not None:
             self.drawing_area_view.set_size_cursor()
-        elif self._hit_move_handle(x, y):
+        elif self._hit_move_handle(x, y, alt_down) and not self.last_hovered_event.ends_today:
             self.drawing_area_view.set_move_cursor()
         else:
             self.drawing_area_view.set_default_cursor()
@@ -146,11 +146,11 @@ class NoOpInputHandler(InputHandler):
         bevt = self.last_hovered_balloon_event
         # If the visible balloon doesn't belong to the event pointed to
         # we remove the ballloon.
-        if hevt != cevt and hevt != bevt: 
+        if hevt != cevt and hevt != bevt:
             self.drawing_area._redraw_balloons(None)
 
-    def _hit_move_handle(self, x, y):
-        event_and_rect = self.drawing_area.event_with_rect_at(x, y)
+    def _hit_move_handle(self, x, y, alt_down=False):
+        event_and_rect = self.drawing_area.event_with_rect_at(x, y, alt_down)
         if event_and_rect is None:
             return False
         event, rect = event_and_rect
@@ -163,8 +163,8 @@ class NoOpInputHandler(InputHandler):
             return True
         return False
 
-    def _hit_resize_handle(self, x, y):
-        event_and_rect = self.drawing_area.event_with_rect_at(x, y)
+    def _hit_resize_handle(self, x, y, alt_down=False):
+        event_and_rect = self.drawing_area.event_with_rect_at(x, y, alt_down)
         if event_and_rect == None:
             return None
         event, rect = event_and_rect

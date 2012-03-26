@@ -26,7 +26,6 @@ from timelinelib.wxgui.utils import BORDER
 from timelinelib.editors.category import CategoryEditor
 from timelinelib.repositories.dbwrapper import DbWrapperCategoryRepository
 
-from gettext import gettext as _
 
 class WxCategoryEdtiorDialog(wx.Dialog):
 

@@ -16,20 +16,27 @@
 # along with Timeline.  If not, see <http://www.gnu.org/licenses/>.
 
 
-"""
-Definition of interface that timeline databases should adhere to.
-
-Actual implementations of timeline databases are in the backends package.
-"""
-
-
-from timelinelib.observer import Observable
-
-
 # A category was added, edited, or deleted
 STATE_CHANGE_CATEGORY = 1
 # Something happened that changed the state of the timeline
 STATE_CHANGE_ANY = 2
+
+
+class Observable(object):
+
+    def __init__(self):
+        self.observers = []
+
+    def register(self, fn):
+        self.observers.append(fn)
+
+    def unregister(self, fn):
+        if fn in self.observers:
+            self.observers.remove(fn)
+
+    def _notify(self, state_change):
+        for fn in self.observers:
+            fn(state_change)
 
 
 class TimelineDB(Observable):
@@ -186,3 +193,21 @@ class TimelineIOError(Exception):
     Also raised by the get_timeline method if loading of a timeline failed.
     """
     pass
+
+
+class ContainerStrategy(object):
+    
+    def __init__(self, container):
+        self.container = container
+        
+    def register_subevent(self, subevent):
+        """Return the event with the latest end time."""
+        raise NotImplementedError()    
+
+    def unregister_subevent(self, subevent):
+        """Return the event with the latest end time."""
+        raise NotImplementedError()    
+
+    def update(self, subevent):
+        """Update container properties when adding a new sub-event."""
+        raise NotImplementedError()    

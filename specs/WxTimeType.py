@@ -26,7 +26,6 @@ from timelinelib.time import WxTimeType
 from timelinelib.time import try_to_create_wx_date_time_from_dmy
 from timelinelib.db.objects import TimePeriod
 
-from gettext import gettext as _
 
 class WxTimeTypeSpec(unittest.TestCase):
 

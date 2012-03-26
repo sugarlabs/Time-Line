@@ -25,7 +25,6 @@ from timelinelib.wxgui.components.cattree import add_category
 from timelinelib.wxgui.components.cattree import edit_category
 from timelinelib.wxgui.components.cattree import delete_category
 
-from gettext import gettext as _
 
 class CategoriesEditor(wx.Dialog):
     """

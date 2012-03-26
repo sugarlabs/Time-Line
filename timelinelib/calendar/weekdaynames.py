@@ -15,50 +15,19 @@
 # You should have received a copy of the GNU General Public License
 # along with Timeline.  If not, see <http://www.gnu.org/licenses/>.
 
-from gettext import gettext as _
-
-ENGLISH_MONTH_NAMES = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-]
-
 
 def _(message): return message # deferred translation
-ABBREVIATED_ENGLISH_MONTH_NAMES = [
-    _("Jan"),
-    _("Feb"),
-    _("Mar"),
-    _("Apr"),
-    _("May"),
-    _("Jun"),
-    _("Jul"),
-    _("Aug"),
-    _("Sep"),
-    _("Oct"),
-    _("Nov"),
-    _("Dec"),
+ABBREVIATED_WEEKDAY_NAMES = [
+    _("Mon"),
+    _("Tue"),
+    _("Wed"),
+    _("Thu"),
+    _("Fri"),
+    _("Sat"),
+    _("Sun"),
 ]
 del _
 
 
-def month_from_english_name(month_name):
-    return ENGLISH_MONTH_NAMES.index(month_name) + 1
-
-
-def english_name_of_month(month):
-    return ENGLISH_MONTH_NAMES[month-1]
-
-from gettext import gettext as _
-
-def abbreviated_name_of_month(month):
-    return _(ABBREVIATED_ENGLISH_MONTH_NAMES[month-1])
+def abbreviated_name_of_weekday(weekday):
+    return _(ABBREVIATED_WEEKDAY_NAMES[weekday])

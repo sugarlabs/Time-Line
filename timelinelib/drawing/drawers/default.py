@@ -21,12 +21,12 @@ import os.path
 
 import wx
 
+from timelinelib.config.paths import ICONS_DIR
 from timelinelib.domain.category import sort_categories
 from timelinelib.drawing.interface import Drawer
 from timelinelib.drawing.scene import TimelineScene
 from timelinelib.drawing.utils import darken_color
 from timelinelib.drawing.utils import get_default_font
-from timelinelib.paths import ICONS_DIR
 
 
 OUTER_PADDING = 5 # Space between event boxes (pixels)
@@ -149,17 +149,33 @@ class DefaultDrawingAlgorithm(Drawer):
         start, end = period_selection
         return (self.snap(start), self.snap(end))
 
-    def event_at(self, x, y):
+    def event_at(self, x, y, alt_down=False):
+        container_event = None
         for (event, rect) in self.scene.event_data:
             if rect.Contains(wx.Point(x, y)):
-                return event
-        return None
+                if event.is_container():
+                    if alt_down:
+                        return event
+                    container_event = event
+                else:
+                    return event        
+        return container_event
 
-    def event_with_rect_at(self, x, y):
+    def event_with_rect_at(self, x, y, alt_down=False):
+        container_event = None
+        container_rect = None
         for (event, rect) in self.scene.event_data:
             if rect.Contains(wx.Point(x, y)):
-                return (event, rect)
-        return None
+                if event.is_container():
+                    if alt_down:
+                        return event, rect
+                    container_event = event
+                    container_rect = rect
+                else:
+                    return event, rect      
+        if container_event == None:
+            return None 
+        return container_event, container_rect
 
     def event_rect(self, evt):
         for (event, rect) in self.scene.event_data:
@@ -265,6 +281,8 @@ class DefaultDrawingAlgorithm(Drawer):
     def _draw_lines_to_non_period_events(self, view_properties):
         self.dc.SetBrush(self.black_solid_brush)
         for (event, rect) in self.scene.event_data:
+            if self._subevent_displayed_as_point_event(event, rect):
+                continue
             if rect.Y < self.scene.divider_y:
                 x = self.scene.x_pos_for_time(event.mean_time())
                 y = rect.Y + rect.Height / 2
@@ -348,12 +366,35 @@ class DefaultDrawingAlgorithm(Drawer):
         self.dc.SetFont(self.small_text_font)
         self.dc.DestroyClippingRegion()
         for (event, rect) in self.scene.event_data:
-            self._draw_box(rect, event)
+            if event.is_container():
+                self._draw_container(event, rect, view_properties)
+            else:
+                self._draw_event(event, rect, view_properties)
+
+    def _draw_container(self, event, rect, view_properties):
+        box_rect = wx.Rect(rect.X - 2, rect.Y - 2, rect.Width + 4, rect.Height + 4)
+        self._draw_box(box_rect, event)
+        if self._event_displayed_as_point_event(event, rect):
             self._draw_text(rect, event)
-            if event.has_data():
-                self._draw_contents_indicator(event, rect)
-            if view_properties.is_selected(event):
-                self._draw_selection_and_handles(rect, event)
+        if view_properties.is_selected(event):
+            self._draw_selection_and_handles(rect, event)
+
+    def _draw_event(self, event, rect, view_properties):
+        if self._subevent_displayed_as_point_event(event, rect):
+            return
+        self._draw_box(rect, event)
+        self._draw_text(rect, event)
+        if event.has_data():
+            self._draw_contents_indicator(event, rect)
+        if view_properties.is_selected(event):
+            self._draw_selection_and_handles(rect, event)
+
+    def _subevent_displayed_as_point_event(self, event, rect):
+        return (event.is_subevent() and
+                self._event_displayed_as_point_event(event, rect))
+
+    def _event_displayed_as_point_event(self, event, rect):
+        return self.scene.divider_y > rect.Y
 
     def _draw_box(self, rect, event):
         self.dc.SetClippingRect(rect)
@@ -440,7 +481,7 @@ class DefaultDrawingAlgorithm(Drawer):
             end_angle = math.pi / 4
         else:
             start_angle = -math.pi
-            end_angle = math.pi 
+            end_angle = math.pi
         self._draw_locked(event, rect, x, start_angle, end_angle)
 
     def _draw_locked_end(self, event, rect):
@@ -557,7 +598,7 @@ class DefaultDrawingAlgorithm(Drawer):
         if not event.locked:
             self.dc.DrawRectangleRect(east_rect)
             self.dc.DrawRectangleRect(west_rect)
-        if not event.locked:
+        if not event.locked and not event.ends_today:
             self.dc.DrawRectangleRect(center_rect)
 
     def _get_base_color(self, event):

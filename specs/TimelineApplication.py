@@ -20,10 +20,10 @@ import unittest
 
 from mock import Mock
 
-from timelinelib.wxgui.dialogs.mainframe import MainFrame
 from timelinelib.application import TimelineApplication
+from timelinelib.config.dotfile import Config
 from timelinelib.db.interface import TimelineIOError
-from timelinelib.config import Config
+from timelinelib.wxgui.dialogs.mainframe import MainFrame
 
 
 class MainFrameSpec(unittest.TestCase):
@@ -31,6 +31,10 @@ class MainFrameSpec(unittest.TestCase):
     def test_used_db_open_factory_method_to_create_timeline(self):
         self.when_timeline_is_opened("foo.timeline")
         self.db_open.assert_called_with("foo.timeline", self.USE_WIDE_DATE_RANGE)
+
+    def test_create_empty_timeline(self):
+        self.controller.set_no_timeline()
+        self.main_frame._display_timeline.assert_called_with(None)
 
     def test_adds_opened_timeline_to_recently_opened_list(self):
         self.when_timeline_is_opened("foo.timeline")
@@ -48,6 +52,13 @@ class MainFrameSpec(unittest.TestCase):
         self.given_opening_fails_with_error(error)
         self.when_timeline_is_opened()
         self.main_frame.handle_db_error.assert_called_with(error)
+
+    def test_opens_play_window(self):
+        opened_timeline = Mock()
+        self.given_opening_returns(opened_timeline)
+        self.when_timeline_is_opened()
+        self.controller.on_play_clicked()
+        self.main_frame.open_play_frame.assert_called_with(opened_timeline)
 
     def setUp(self):
         self.USE_WIDE_DATE_RANGE = False

@@ -25,12 +25,12 @@ import calendar
 
 import wx
 
-from timelinelib.time.typeinterface import TimeType
+from timelinelib.calendar.monthnames import abbreviated_name_of_month
 from timelinelib.db.objects import TimePeriod
-from timelinelib.drawing.interface import Strip
 from timelinelib.db.objects import time_period_center
+from timelinelib.drawing.interface import Strip
 from timelinelib.drawing.utils import get_default_font
-from timelinelib.monthnames import abbreviated_name_of_month
+from timelinelib.time.typeinterface import TimeType
 
 
 # To save computation power (used by `delta_to_microseconds`)
@@ -40,8 +40,6 @@ US_PER_MINUTE = 60 * 1000 * 1000
 US_PER_DAY = 24 * 60 * 60 * US_PER_SEC
 MIN_YEAR = -4700
 MAX_YEAR = 120000
-
-from gettext import gettext as _
 
 class WxTimeType(TimeType):
 

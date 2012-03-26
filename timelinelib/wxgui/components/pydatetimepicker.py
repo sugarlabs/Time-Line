@@ -21,11 +21,10 @@ import datetime
 
 import wx.calendar
 
-from timelinelib.paths import ICONS_DIR
+from timelinelib.config.paths import ICONS_DIR
 from timelinelib.time import PyTimeType
 from timelinelib.wxgui.utils import _display_error_message
 
-from gettext import gettext as _
 
 class PyDateTimePicker(wx.Panel):
 

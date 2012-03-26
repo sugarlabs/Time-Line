@@ -1,7 +1,7 @@
 [Activity]
 name = Time Line
-activity_version = 2
-bundle_id  = org.ceibaljam.timeline
+activity_version = 3
+bundle_id = org.ceibaljam.timeline
 icon = timeline
 exec = timeline-sugar
 license = GPLv3

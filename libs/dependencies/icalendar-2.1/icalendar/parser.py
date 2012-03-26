@@ -1,5 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+# -*- coding: latin-1 -*-
 
 """
 This module parses and generates contentlines as defined in RFC 2445
@@ -310,7 +309,7 @@ class Contentline(str):
 
     A value can also be unicode
     >>> from icalendar.prop import vText
-    >>> parts = ('SUMMARY', Parameters(), vText(u'INternational char \E6 \F8 \E5'))
+    >>> parts = ('SUMMARY', Parameters(), vText(u'INternational char æ ø å'))
     >>> Contentline.from_parts(parts)
     'SUMMARY:INternational char \\xc3\\xa6 \\xc3\\xb8 \\xc3\\xa5'
 

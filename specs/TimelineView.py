@@ -23,16 +23,15 @@ import wx
 
 from specs.utils import human_time_to_py
 from specs.utils import py_period
-from timelinelib.config import Config
+from timelinelib.config.dotfile import Config
 from timelinelib.db.backends.memory import MemoryDB
 from timelinelib.db.objects import Event
 from timelinelib.db.objects import TimeOutOfRangeLeftError
 from timelinelib.db.objects import TimeOutOfRangeRightError
-from timelinelib.wxgui.components.timelineview import DrawingAreaPanel
 from timelinelib.wxgui.components.timelineview import DrawingArea
+from timelinelib.wxgui.components.timelineview import DrawingAreaPanel
 from timelinelib.wxgui.dialogs.mainframe import StatusBarAdapter
 
-from gettext import gettext as _
 
 # TODO: testSavesEventAfterMove
 # TODO: testSavesEventAfterResize
@@ -510,7 +509,7 @@ class MockDrawer(object):
     def snap_selection(self, selection):
         return selection
 
-    def event_at(self, x, y):
+    def event_at(self, x, y, alt_down=False):
         for (event, rect) in self.events_and_rects:
             if rect.Contains((x, y)):
                 return event
@@ -522,7 +521,7 @@ class MockDrawer(object):
                 return rect
         raise Exception("Should not get here in tests.")
 
-    def event_with_rect_at(self, x, y):
+    def event_with_rect_at(self, x, y, alt_down=False):
         event = self.event_at(x, y)
         if event is None:
             return None

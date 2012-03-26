@@ -21,7 +21,6 @@ import wx
 from timelinelib.db.objects import PeriodTooLongError
 from timelinelib.view.scrollbase import ScrollViewInputHandler
 
-from gettext import gettext as _
 
 class ResizeByDragInputHandler(ScrollViewInputHandler):
 
@@ -33,8 +32,8 @@ class ResizeByDragInputHandler(ScrollViewInputHandler):
         self.direction = direction
         self.timer_running = False
 
-    def mouse_moved(self, x, y):
-        ScrollViewInputHandler.mouse_moved(self, x, y)
+    def mouse_moved(self, x, y, alt_down=False):
+        ScrollViewInputHandler.mouse_moved(self, x, y, alt_down)
         self._resize_event()
 
     def left_mouse_up(self):

@@ -24,7 +24,6 @@ from timelinelib.wxgui.utils import _display_error_message
 from timelinelib.editors.duplicateevent import DuplicateEventEditor
 import timelinelib.wxgui.utils as gui_utils
 
-from gettext import gettext as _
 
 class DuplicateEventDialog(wx.Dialog):
 

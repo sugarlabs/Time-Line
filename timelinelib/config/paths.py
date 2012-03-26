@@ -15,21 +15,11 @@
 # You should have received a copy of the GNU General Public License
 # along with Timeline.  If not, see <http://www.gnu.org/licenses/>.
 
-from gettext import gettext as _
 
-def _(message): return message # deferred translation
-ABBREVIATED_WEEKDAY_NAMES = [
-    _("Mon"),
-    _("Tue"),
-    _("Wed"),
-    _("Thu"),
-    _("Fri"),
-    _("Sat"),
-    _("Sun"),
-]
-del _
+import os.path
 
-from gettext import gettext as _
 
-def abbreviated_name_of_weekday(weekday):
-    return _(ABBREVIATED_WEEKDAY_NAMES[weekday])
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+ICONS_DIR = os.path.join(_ROOT, "icons")
+LOCALE_DIR = os.path.join(_ROOT, "po")
+HELP_RESOURCES_DIR = os.path.join(_ROOT, "help_resources")
