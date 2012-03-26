@@ -36,7 +36,9 @@ class ApplicationArguments(object):
             help="Path to config file")
 
     def parse_from(self, arguments):
-        (self.options, self.arguments) = self.option_parser.parse_args(arguments)
+        #(self.options, self.arguments) = self.option_parser.parse_args(arguments)
+        self.options = "{'config_file_path': None}"
+        self.arguments = []
 
     def get_files(self):
         return self.arguments
