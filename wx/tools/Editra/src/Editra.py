@@ -888,8 +888,7 @@ def UpgradeOldInstall():
         if not err:
             wx.MessageBox(_("Your profile has been updated to the latest "
                 "version") + u"\n" + \
-              _("Please check the preferences dialog to check "
-                "your preferences"),
+              _("Please check the preferences dialog to check your preferences"),
               _("Profile Updated"))
 
     return not err
@@ -1097,8 +1096,7 @@ def _Main(opts, args):
         profiler.Profile_Del('WPOS')
         wx.MessageBox(_("Your profile has been updated to the latest "
                         "version") + u"\n" + \
-                      _("Please check the preferences dialog to verify "
-                        "your preferences"),
+                      _("Please check the preferences dialog to check your preferences"),
                       _("Profile Updated"))
 
     # 3. Start Applications Main Loop
