@@ -7,14 +7,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-03-27 00:33-0400\n"
-"PO-Revision-Date: 2012-02-09 09:08+0200\n"
+"PO-Revision-Date: 2012-02-23 03:09+0200\n"
 "Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: rw\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1) ;\n"
 "X-Generator: Pootle 2.0.5\n"
 
 #: activity/activity.info:2
@@ -27,15 +27,15 @@ msgstr ""
 
 #: specs/MonthNames.py:34 timelinelib/monthnames.py:38
 msgid "Jan"
-msgstr "Jan"
+msgstr ""
 
 #: specs/MonthNames.py:49 timelinelib/monthnames.py:49
 msgid "Dec"
-msgstr "Des"
+msgstr ""
 
 #: specs/PyTimeType.py:60 specs/WxTimeType.py:83 timelinelib/monthnames.py:45
 msgid "Aug"
-msgstr "Aug"
+msgstr ""
 
 #: specs/PyTimeType.py:114 specs/PyTimeType.py:134 specs/PyTimeType.py:150
 #: specs/PyTimeType.py:154 specs/WxTimeType.py:151 specs/WxTimeType.py:167
@@ -101,11 +101,11 @@ msgstr ""
 
 #: specs/WeekdayNames.py:29 timelinelib/weekdaynames.py:22
 msgid "Mon"
-msgstr "Ma"
+msgstr ""
 
 #: specs/WeekdayNames.py:34 timelinelib/weekdaynames.py:28
 msgid "Sun"
-msgstr "So"
+msgstr ""
 
 #: timelinelib/db/__init__.py:74
 msgid ""
@@ -190,7 +190,7 @@ msgstr ""
 
 #: timelinelib/db/tutorial.py:52
 msgid "Zoom"
-msgstr "Zoem"
+msgstr ""
 
 #: timelinelib/db/tutorial.py:53
 msgid ""
@@ -301,7 +301,7 @@ msgstr ""
 
 #: timelinelib/editors/event.py:178
 msgid "Text"
-msgstr "Teks"
+msgstr ""
 
 #: timelinelib/help/pages.py:37
 msgid "Help contents"
@@ -477,39 +477,39 @@ msgstr ""
 
 #: timelinelib/monthnames.py:39
 msgid "Feb"
-msgstr "Feb"
+msgstr ""
 
 #: timelinelib/monthnames.py:40
 msgid "Mar"
-msgstr "Mrt"
+msgstr ""
 
 #: timelinelib/monthnames.py:41
 msgid "Apr"
-msgstr "Apr"
+msgstr ""
 
 #: timelinelib/monthnames.py:42
 msgid "May"
-msgstr "Mei"
+msgstr ""
 
 #: timelinelib/monthnames.py:43
 msgid "Jun"
-msgstr "Jun"
+msgstr ""
 
 #: timelinelib/monthnames.py:44
 msgid "Jul"
-msgstr "Jul"
+msgstr ""
 
 #: timelinelib/monthnames.py:46
 msgid "Sep"
-msgstr "Sep"
+msgstr ""
 
 #: timelinelib/monthnames.py:47
 msgid "Oct"
-msgstr "Okt"
+msgstr ""
 
 #: timelinelib/monthnames.py:48
 msgid "Nov"
-msgstr "Nov"
+msgstr ""
 
 #: timelinelib/printing.py:102
 msgid ""
@@ -676,17 +676,17 @@ msgstr ""
 
 #: timelinelib/view/drawingarea.py:197
 msgid "Edit"
-msgstr "Redigeer"
+msgstr ""
 
 #: timelinelib/view/drawingarea.py:198
 msgid "Duplicate..."
-msgstr "Dupliseer..."
+msgstr ""
 
 #: timelinelib/view/drawingarea.py:199
 #: timelinelib/wxgui/components/cattree.py:81
 #: wx/tools/Editra/src/prefdlg.py:1706
 msgid "Delete"
-msgstr ""
+msgstr "Siba"
 
 #: timelinelib/view/drawingarea.py:202
 msgid "Sticky Balloon"
@@ -720,31 +720,31 @@ msgstr ""
 
 #: timelinelib/weekdaynames.py:23
 msgid "Tue"
-msgstr "Di"
+msgstr "Kuwakabiri"
 
 #: timelinelib/weekdaynames.py:24
 msgid "Wed"
-msgstr "Wo"
+msgstr ""
 
 #: timelinelib/weekdaynames.py:25
 msgid "Thu"
-msgstr "Do"
+msgstr ""
 
 #: timelinelib/weekdaynames.py:26
 msgid "Fri"
-msgstr "Vr"
+msgstr "Kuwagatanu"
 
 #: timelinelib/weekdaynames.py:27
 msgid "Sat"
-msgstr "Sa"
+msgstr ""
 
 #: timelinelib/wxgui/components/cattree.py:75
 msgid "Edit..."
-msgstr "Redigeer..."
+msgstr ""
 
 #: timelinelib/wxgui/components/cattree.py:78
 msgid "Add..."
-msgstr "Voeg..."
+msgstr ""
 
 #: timelinelib/wxgui/components/cattree.py:218
 msgid "Edit Category"
@@ -806,7 +806,7 @@ msgstr ""
 
 #: timelinelib/wxgui/dialogs/categoryeditor.py:118
 msgid "Color:"
-msgstr "Kleur:"
+msgstr ""
 
 #: timelinelib/wxgui/dialogs/categoryeditor.py:119
 msgid "Font Color:"
@@ -853,7 +853,7 @@ msgstr ""
 #: timelinelib/wxgui/dialogs/duplicateevent.py:120
 #: wx/tools/Editra/src/eclib/finddlg.py:802
 msgid "Direction"
-msgstr ""
+msgstr "Icyerekezo"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:64
 msgid "Event Properties"
@@ -886,7 +886,7 @@ msgstr ""
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:155
 msgid "Text:"
-msgstr "Teks:"
+msgstr ""
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:161
 msgid "Category:"
@@ -1082,9 +1082,8 @@ msgstr ""
 
 #: timelinelib/wxgui/dialogs/mainframe.py:316 wx/lib/pydocview.py:134
 #: wx/lib/pydocview.py:1925 wx/tools/Editra/src/ed_menu.py:647
-#, fuzzy
 msgid "&Edit"
-msgstr "Redigeer"
+msgstr ""
 
 #: timelinelib/wxgui/dialogs/mainframe.py:341 wx/lib/pydocview.py:146
 #: wx/tools/Editra/src/ed_menu.py:712
@@ -1248,11 +1247,11 @@ msgstr ""
 
 #: timelinelib/wxgui/dialogs/preferences.py:134
 msgid "Monday"
-msgstr "Maandag"
+msgstr "Kuwa mbere"
 
 #: timelinelib/wxgui/dialogs/preferences.py:134
 msgid "Sunday"
-msgstr "Sondag"
+msgstr "Kucyumweru"
 
 #: timelinelib/wxgui/dialogs/textdisplay.py:57
 msgid "Unable to copy to clipboard."
@@ -1261,7 +1260,7 @@ msgstr ""
 #: timelinelib/wxgui/utils.py:135 wx/tools/Editra/src/ed_editv.py:191
 #: wx/tools/Editra/src/plugdlg.py:840
 msgid "Error"
-msgstr "Fout"
+msgstr ""
 
 #: timelinelib/wxgui/utils.py:141
 msgid "Question"
@@ -1317,13 +1316,13 @@ msgid "Cl&ose"
 msgstr ""
 
 #: wx/lib/agw/aui/tabmdi.py:35 wx/tools/Editra/src/ed_editv.py:234
+#, fuzzy
 msgid "Close All"
-msgstr ""
+msgstr "Funga BY&OSE"
 
 #: wx/lib/agw/aui/tabmdi.py:37
-#, fuzzy
 msgid "&Next"
-msgstr "Teks"
+msgstr ""
 
 #: wx/lib/agw/aui/tabmdi.py:38
 msgid "&Previous"
@@ -1409,7 +1408,7 @@ msgstr ""
 #: wx/tools/Editra/src/ed_search.py:1244
 #: wx/tools/Editra/src/style_editor.py:141 wx/tools/Editra/src/updater.py:570
 msgid "Cancel"
-msgstr "Kanselleer"
+msgstr ""
 
 #: wx/lib/agw/genericmessagedialog.py:829
 msgid "Yes"
@@ -1485,7 +1484,7 @@ msgstr ""
 
 #: wx/lib/docview.py:385
 msgid "Application"
-msgstr ""
+msgstr "Porogaramu"
 
 #: wx/lib/docview.py:386 wx/lib/docview.py:637 wx/lib/docview.py:1897
 msgid " has been modified outside of "
@@ -1502,7 +1501,7 @@ msgstr ""
 #: wx/lib/docview.py:412 wx/tools/Editra/src/eclib/filemgrdlg.py:123
 #: wx/tools/Editra/src/ed_menu.py:531
 msgid "Save As"
-msgstr "Bêre as"
+msgstr ""
 
 #: wx/lib/docview.py:453 wx/lib/docview.py:526 wx/lib/docview.py:2449
 #: wx/lib/docview.py:2705 wx/lib/pydocview.py:1076 wx/lib/pydocview.py:2215
@@ -1512,16 +1511,16 @@ msgstr ""
 
 #: wx/lib/docview.py:597
 msgid "Untitled"
-msgstr ""
+msgstr "Nta mutwe"
 
 #: wx/lib/docview.py:635 wx/lib/docview.py:652 wx/lib/docview.py:1895
 msgid "Warning"
-msgstr ""
+msgstr "Iburira"
 
 #: wx/lib/docview.py:654
 #, python-format
 msgid "Save changes to '%s'?"
-msgstr ""
+msgstr "Bika impinduka ku '%s'?"
 
 #: wx/lib/docview.py:1567
 msgid "Unable to display print preview."
@@ -1558,7 +1557,7 @@ msgstr ""
 #: wx/lib/docview.py:2006
 #, python-format
 msgid "Untitled %d"
-msgstr ""
+msgstr "Nta mutwe %d"
 
 #: wx/lib/docview.py:2175
 #, python-format
@@ -1595,12 +1594,11 @@ msgstr ""
 
 #: wx/lib/docview.py:3157
 msgid "&Undo "
-msgstr "&Ontdoen "
+msgstr ""
 
 #: wx/lib/docview.py:3161 wx/tools/Editra/src/ed_menu.py:578
-#, fuzzy
 msgid "&Undo"
-msgstr "Ontdoen"
+msgstr ""
 
 #: wx/lib/docview.py:3163 wx/lib/docview.py:3165
 msgid "&Redo"
@@ -1628,7 +1626,7 @@ msgstr ""
 
 #: wx/lib/pydocview.py:91
 msgid "Close A&ll"
-msgstr ""
+msgstr "Funga BY&OSE"
 
 #: wx/lib/pydocview.py:91
 msgid "Closes all open documents"
@@ -1727,8 +1725,9 @@ msgid "Inserts Clipboard contents"
 msgstr ""
 
 #: wx/lib/pydocview.py:127
+#, fuzzy
 msgid "&Delete"
-msgstr ""
+msgstr "&Siba"
 
 #: wx/lib/pydocview.py:127
 msgid "Erases the selection"
@@ -1769,12 +1768,11 @@ msgstr ""
 #: wx/lib/pydocview.py:177 wx/tools/Editra/src/ed_menu.py:518
 #: wx/tools/Editra/src/ed_toolbar.py:78
 msgid "Open"
-msgstr "Maak oop"
+msgstr ""
 
 #: wx/lib/pydocview.py:179 wx/tools/Editra/src/ed_menu.py:532
-#, fuzzy
 msgid "Save All"
-msgstr "Bêre as"
+msgstr ""
 
 #: wx/lib/pydocview.py:179
 msgid "Saves all the active documents"
@@ -1788,17 +1786,17 @@ msgstr ""
 #: wx/lib/pydocview.py:185 wx/tools/Editra/src/ed_editv.py:365
 #: wx/tools/Editra/src/ed_toolbar.py:88
 msgid "Copy"
-msgstr "Kopieer"
+msgstr ""
 
 #: wx/lib/pydocview.py:186 wx/tools/Editra/src/ed_editv.py:366
 #: wx/tools/Editra/src/ed_toolbar.py:90
 msgid "Paste"
-msgstr "Plak"
+msgstr ""
 
 #: wx/lib/pydocview.py:187 wx/tools/Editra/src/ed_editv.py:361
 #: wx/tools/Editra/src/ed_toolbar.py:83
 msgid "Undo"
-msgstr "Ontdoen"
+msgstr ""
 
 #: wx/lib/pydocview.py:188 wx/tools/Editra/src/ed_editv.py:362
 #: wx/tools/Editra/src/ed_menu.py:579 wx/tools/Editra/src/ed_toolbar.py:84
@@ -1895,7 +1893,7 @@ msgstr ""
 
 #: wx/lib/pydocview.py:2698
 msgid "Size:"
-msgstr "Grootte:"
+msgstr ""
 
 #: wx/lib/pydocview.py:2700
 msgid "bytes"
@@ -1906,8 +1904,9 @@ msgid "Created:"
 msgstr ""
 
 #: wx/lib/pydocview.py:2710
+#, fuzzy
 msgid "Modified:"
-msgstr ""
+msgstr "Yahinduwe:"
 
 #: wx/lib/pydocview.py:2714
 msgid "Accessed:"
@@ -1930,9 +1929,8 @@ msgid "Previous Tab"
 msgstr ""
 
 #: wx/lib/pydocview.py:2902 wx/tools/Editra/src/ed_cmdbar.py:266
-#, fuzzy
 msgid "Next"
-msgstr "Teks"
+msgstr ""
 
 #: wx/lib/pydocview.py:2902
 msgid "Next Tab"
@@ -2041,24 +2039,25 @@ msgstr ""
 
 #: wx/tools/Editra/src/eclib/filterdlg.py:77
 msgid "Add >>"
-msgstr ""
+msgstr "Ongeraho >>"
 
 #: wx/tools/Editra/src/eclib/filterdlg.py:78
 msgid "<< Remove"
-msgstr ""
+msgstr "<<Kuraho"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:632
 #: wx/tools/Editra/src/eclib/finddlg.py:767
 #: wx/tools/Editra/src/eclib/finddlg.py:843
 #: wx/tools/Editra/src/ed_cmdbar.py:264 wx/tools/Editra/src/ed_search.py:149
 #: wx/tools/Editra/src/ed_search.py:153 wx/tools/Editra/src/ed_toolbar.py:93
+#, fuzzy
 msgid "Find"
-msgstr "Vind"
+msgstr "Ubwoko"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:635
 #: wx/tools/Editra/src/eclib/finddlg.py:844
 msgid "Replace"
-msgstr ""
+msgstr "Simbuza"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:712
 msgid "Current Document"
@@ -2086,19 +2085,19 @@ msgstr ""
 
 #: wx/tools/Editra/src/eclib/finddlg.py:790
 msgid "Choose Folder"
-msgstr ""
+msgstr "Hitamo Ububiko"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:793
 msgid "Look in"
-msgstr ""
+msgstr "Rebera mu"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:804
 msgid "Up"
-msgstr ""
+msgstr "Hejuru"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:806
 msgid "Down"
-msgstr ""
+msgstr "Hasi"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:812
 msgid "Find Options"
@@ -2114,7 +2113,7 @@ msgstr ""
 
 #: wx/tools/Editra/src/eclib/finddlg.py:816
 msgid "Regular expression"
-msgstr ""
+msgstr "Interuro idahinduka"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:817
 msgid "Search Recursively"
@@ -2126,7 +2125,7 @@ msgstr ""
 
 #: wx/tools/Editra/src/eclib/finddlg.py:845
 msgid "Count"
-msgstr ""
+msgstr "Ibarura"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:846
 #: wx/tools/Editra/src/ed_cmdbar.py:280
@@ -2135,7 +2134,7 @@ msgstr ""
 
 #: wx/tools/Editra/src/eclib/finddlg.py:847
 msgid "Replace All"
-msgstr ""
+msgstr "Simbuza Byose"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:1118
 msgid "Choose Search Folder"
@@ -2152,21 +2151,20 @@ msgstr ""
 #: wx/tools/Editra/src/eclib/infodlg.py:165
 #: wx/tools/Editra/src/eclib/infodlg.py:197
 msgid "Modified"
-msgstr ""
+msgstr "Yahinduwe"
 
 #: wx/tools/Editra/src/eclib/infodlg.py:184
-#, fuzzy
 msgid "Kind"
-msgstr "Vind"
+msgstr "Ubwoko"
 
 #: wx/tools/Editra/src/eclib/infodlg.py:191
 #: wx/tools/Editra/src/style_editor.py:704
 msgid "Size"
-msgstr "Grootte"
+msgstr ""
 
 #: wx/tools/Editra/src/eclib/infodlg.py:193
 msgid "Where"
-msgstr ""
+msgstr "Hehe"
 
 #: wx/tools/Editra/src/eclib/infodlg.py:195
 msgid "Created"
@@ -2185,7 +2183,7 @@ msgstr ""
 #: wx/tools/Editra/src/plugdlg.py:425 wx/tools/Editra/src/plugin.py:724
 #: wx/tools/Editra/src/util.py:367
 msgid "Unknown"
-msgstr "Onbekend"
+msgstr ""
 
 #: wx/tools/Editra/src/ed_cmdbar.py:286
 msgid "Match Case"
@@ -2196,8 +2194,9 @@ msgid "Whole Word"
 msgstr ""
 
 #: wx/tools/Editra/src/ed_cmdbar.py:297
+#, fuzzy
 msgid "Regular Expression"
-msgstr ""
+msgstr "Interuro idahinduka"
 
 #: wx/tools/Editra/src/ed_cmdbar.py:410
 msgid "Command"
@@ -2581,9 +2580,8 @@ msgid "Start a new file in a new window"
 msgstr ""
 
 #: wx/tools/Editra/src/ed_menu.py:518
-#, fuzzy
 msgid "&Open"
-msgstr "Maak oop"
+msgstr ""
 
 #: wx/tools/Editra/src/ed_menu.py:521
 msgid "Recently Opened Files"
@@ -2618,9 +2616,8 @@ msgid "Save Current File"
 msgstr ""
 
 #: wx/tools/Editra/src/ed_menu.py:531
-#, fuzzy
 msgid "Save &As"
-msgstr "Bêre as"
+msgstr ""
 
 #: wx/tools/Editra/src/ed_menu.py:533
 msgid "Save all open pages"
@@ -2719,18 +2716,16 @@ msgid "Cut Selected Text from File"
 msgstr ""
 
 #: wx/tools/Editra/src/ed_menu.py:583
-#, fuzzy
 msgid "&Copy"
-msgstr "Kopieer"
+msgstr ""
 
 #: wx/tools/Editra/src/ed_menu.py:584 wx/tools/Editra/src/ed_toolbar.py:89
 msgid "Copy Selected Text to Clipboard"
 msgstr ""
 
 #: wx/tools/Editra/src/ed_menu.py:585
-#, fuzzy
 msgid "&Paste"
-msgstr "Plak"
+msgstr ""
 
 #: wx/tools/Editra/src/ed_menu.py:586 wx/tools/Editra/src/ed_toolbar.py:91
 msgid "Paste Text from Clipboard to File"
@@ -2881,9 +2876,8 @@ msgid "Add and remove bookmarks"
 msgstr ""
 
 #: wx/tools/Editra/src/ed_menu.py:631
-#, fuzzy
 msgid "&Find"
-msgstr "Vind"
+msgstr "&Shakisha"
 
 #: wx/tools/Editra/src/ed_menu.py:631 wx/tools/Editra/src/ed_toolbar.py:93
 msgid "Find Text"
@@ -3346,12 +3340,13 @@ msgstr ""
 
 #: wx/tools/Editra/src/ed_pages.py:232
 #, python-format
+#, python-format,
 msgid "untitled %d"
-msgstr ""
+msgstr "nta mutwe %d"
 
 #: wx/tools/Editra/src/ed_pages.py:234
 msgid "untitled"
-msgstr ""
+msgstr "nta mutwe"
 
 #: wx/tools/Editra/src/ed_pages.py:324
 msgid "Error Saving Session File"
@@ -3700,9 +3695,8 @@ msgid "Install"
 msgstr ""
 
 #: wx/tools/Editra/src/plugdlg.py:131
-#, fuzzy
 msgid "Errors"
-msgstr "Fout"
+msgstr ""
 
 #: wx/tools/Editra/src/plugdlg.py:180
 msgid "Downloads are incomplete"
@@ -4134,7 +4128,7 @@ msgstr ""
 
 #: wx/tools/Editra/src/prefdlg.py:1343
 msgid "Update"
-msgstr ""
+msgstr "Kiravuguruwe"
 
 #: wx/tools/Editra/src/prefdlg.py:1376
 msgid "Proxy Settings"
@@ -4154,11 +4148,11 @@ msgstr ""
 
 #: wx/tools/Editra/src/prefdlg.py:1398
 msgid "Username"
-msgstr ""
+msgstr "Izina rikoreshwa"
 
 #: wx/tools/Editra/src/prefdlg.py:1405
 msgid "Password"
-msgstr ""
+msgstr "Ijambo ryibanga"
 
 #: wx/tools/Editra/src/prefdlg.py:1505
 msgid "Installed Version"
@@ -4206,7 +4200,7 @@ msgstr ""
 
 #: wx/tools/Editra/src/prefdlg.py:1799
 msgid "None"
-msgstr ""
+msgstr "Ntanakimwe"
 
 #: wx/tools/Editra/src/prefdlg.py:1900
 msgid "New Profile"
@@ -4290,7 +4284,7 @@ msgstr ""
 
 #: wx/tools/Editra/src/style_editor.py:640
 msgid "Color"
-msgstr "Kleur"
+msgstr ""
 
 #: wx/tools/Editra/src/style_editor.py:644
 msgid "Foreground"
@@ -4347,9 +4341,8 @@ msgid "Downloading To: %s"
 msgstr ""
 
 #: wx/tools/Editra/src/updater.py:647
-#, fuzzy
 msgid "Canceled"
-msgstr "Kanselleer"
+msgstr ""
 
 #: wx/tools/Editra/src/updater.py:675
 #, python-format
