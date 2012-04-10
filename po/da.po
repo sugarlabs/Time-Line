@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-03 00:32-0400\n"
-"PO-Revision-Date: 2012-04-03 14:12+0200\n"
+"POT-Creation-Date: 2012-04-07 00:32-0400\n"
+"PO-Revision-Date: 2012-04-10 10:02+0200\n"
 "Last-Translator: Aputsiaq Niels <aj@isit.gl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -866,16 +866,17 @@ msgstr "Redigér kategori"
 msgid "Are you sure you want to delete category '%s'?"
 msgstr "Er du sikker på at du vil slette kategorien '%s'?"
 
-#: timelinelib/wxgui/components/cattree.py:232
+#: timelinelib/wxgui/components/cattree.py:231
 #, python-format
-msgid "Events belonging to '%s' will no longer belong to a category."
+#, python-format, 
+msgid "Events belonging to '%(name)s' will no longer belong to a category."
 msgstr ""
-"Begivenheder som hører til '%s' vil ikke længere tilhøre nogen kategori."
+"Begivenheder som hører til '%(name)s' vil ikke længere tilhøre nogen "
+"kategori."
 
-#: timelinelib/wxgui/components/cattree.py:235
-#, python-format
-msgid "Events belonging to '%s' will now belong to '%s'."
-msgstr "Begivenheder som tilhører '%s' vil nu tilhører '%s'."
+#: timelinelib/wxgui/components/cattree.py:234
+msgid "Events belonging to '%(name)' will now belong "
+msgstr "Begivenheder som tilhører '%(name)' vil nu tilhøre"
 
 #: timelinelib/wxgui/components/pydatetimepicker.py:80
 #: timelinelib/wxgui/components/wxdatetimepicker.py:76
@@ -1023,9 +1024,8 @@ msgid "Add more events after this one"
 msgstr "Tilføj flere begivenheder efter denne"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:447
-#, python-format, 
-msgid "Images will be scaled to fit inside a %ix%i box."
-msgstr "Billeder vil blive skaleret til at passe inde i en boks på %ix%i."
+msgid "Images will be scaled to fit inside a 128x128 box."
+msgstr "Billeder vil blive skaleret til at passe inde i en boks på 128x128."
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:484
 msgid "Select Icon"
@@ -4563,6 +4563,10 @@ msgstr "Tekstdokument"
 #, python-format
 msgid "%s Source File"
 msgstr "%s kildefil"
+
+#, python-format
+#~ msgid "Events belonging to '%s' will now belong to '%s'."
+#~ msgstr "Begivenheder som tilhører '%s' vil nu tilhører '%s'."
 
 #~ msgid "Events belonging to "
 #~ msgstr "Begivenheder som hører til "
