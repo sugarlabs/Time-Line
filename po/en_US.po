@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-07 00:32-0400\n"
+"POT-Creation-Date: 2012-04-15 00:32-0400\n"
 "PO-Revision-Date: 2012-04-09 08:26+0200\n"
 "Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -861,7 +861,8 @@ msgid "Are you sure you want to delete category '%s'?"
 msgstr "Are you sure you want to delete category '%s'?"
 
 #: timelinelib/wxgui/components/cattree.py:231
-#, python-format, 
+#, python-format
+#, python-format,
 msgid "Events belonging to '%(name)s' will no longer belong to a category."
 msgstr "Events belonging to '%(name)s' will no longer belong to a category."
 
@@ -1701,11 +1702,8 @@ msgstr "Ctrl+Z"
 msgid "Ctrl+Y"
 msgstr "Ctrl+Y"
 
-#: wx/lib/docview.py:3157
-msgid "&Undo "
-msgstr "&Undo "
-
-#: wx/lib/docview.py:3161 wx/tools/Editra/src/ed_menu.py:578
+#: wx/lib/docview.py:3157 wx/lib/docview.py:3161
+#: wx/tools/Editra/src/ed_menu.py:578
 msgid "&Undo"
 msgstr "&Undo"
 
@@ -4546,6 +4544,9 @@ msgstr "Text Document"
 #, python-format
 msgid "%s Source File"
 msgstr "%s Source File"
+
+#~ msgid "&Undo "
+#~ msgstr "&Undo "
 
 #, python-format
 #~ msgid "Events belonging to '%s' will now belong to '%s'."
