@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-15 00:32-0400\n"
-"PO-Revision-Date: 2012-04-09 08:44+0200\n"
+"POT-Creation-Date: 2012-04-27 00:32-0400\n"
+"PO-Revision-Date: 2012-04-28 09:43+0200\n"
 "Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: en_GB\n"
@@ -867,8 +867,9 @@ msgid "Events belonging to '%(name)s' will no longer belong to a category."
 msgstr "Events belonging to '%(name)s' will no longer belong to a category."
 
 #: timelinelib/wxgui/components/cattree.py:234
-msgid "Events belonging to '%(name)' will now belong "
-msgstr "Events belonging to '%(name)' will now belong "
+#, python-format, 
+msgid "Events belonging to '%(name)s' will now belong "
+msgstr "Events belonging to '%(name)s' will now belong "
 
 #: timelinelib/wxgui/components/pydatetimepicker.py:80
 #: timelinelib/wxgui/components/wxdatetimepicker.py:76
