@@ -23,6 +23,7 @@ import wx
 from timelinelib.wxgui.utils import _ask_question
 from timelinelib.wxgui.utils import WildcardHelper
 
+from gettext import gettext as _
 
 def export_to_image(main_frame):
     images_wildcard_helper = WildcardHelper(
