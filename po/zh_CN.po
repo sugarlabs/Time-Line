@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-04-27 00:32-0400\n"
-"PO-Revision-Date: 2012-05-05 09:44+0200\n"
-"Last-Translator: Xin <dram.wang@gmail.com>\n"
+"PO-Revision-Date: 2012-05-23 18:09+0200\n"
+"Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -846,7 +846,7 @@ msgstr "属于‘%(name)s’的事件将不再属于一个分类。"
 
 #: timelinelib/wxgui/components/cattree.py:234
 #, python-format
-#, python-format, 
+#, python-format,
 msgid "Events belonging to '%(name)s' will now belong "
 msgstr "属于‘%(name)s’的事件将属于 "
 
@@ -2580,7 +2580,7 @@ msgstr "Editra是面向程序员的文本编辑器。"
 #: wx/tools/Editra/src/ed_main.py:1539
 #, python-format
 msgid "Written in 100%% Python."
-msgstr "100％％使用Python编写。"
+msgstr "100％％ 使用Python编写。"
 
 #: wx/tools/Editra/src/ed_main.py:1540
 msgid "Homepage"
