@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: thetimelineproj\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-15 00:32-0400\n"
-"PO-Revision-Date: 2012-04-10 15:56+0200\n"
-"Last-Translator: Marcin <ulinski.marcin@gmail.com>\n"
+"POT-Creation-Date: 2012-04-27 00:32-0400\n"
+"PO-Revision-Date: 2012-05-30 05:23+0200\n"
+"Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -877,8 +877,10 @@ msgstr ""
 "Wydarzenia należące do '%(name)s' już nie będą należały do żadnej kategorii."
 
 #: timelinelib/wxgui/components/cattree.py:234
-msgid "Events belonging to '%(name)' will now belong "
-msgstr "Wydarzenia należące do '%(name)s' będą teraz należały"
+#, python-format
+#, python-format, 
+msgid "Events belonging to '%(name)s' will now belong "
+msgstr "Wydarzenia należące do '%(name)s' będą teraz należały "
 
 #: timelinelib/wxgui/components/pydatetimepicker.py:80
 #: timelinelib/wxgui/components/wxdatetimepicker.py:76
