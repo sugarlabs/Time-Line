@@ -876,7 +876,7 @@ msgstr ""
 
 #: timelinelib/wxgui/components/cattree.py:234
 #, python-format
-#, python-format, 
+#, python-format,
 msgid "Events belonging to '%(name)s' will now belong "
 msgstr "Begivenheder som tilhører '%(name)s' vil nu tilhøre"
 
