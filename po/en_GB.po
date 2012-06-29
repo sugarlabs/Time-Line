@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-27 00:32-0400\n"
-"PO-Revision-Date: 2012-04-28 09:43+0200\n"
+"POT-Creation-Date: 2012-06-28 17:54-0400\n"
+"PO-Revision-Date: 2012-06-29 06:49+0200\n"
 "Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: en_GB\n"
@@ -385,15 +385,15 @@ msgstr "Entered period is too long."
 msgid "Text"
 msgstr "Text"
 
-#: timelinelib/export/bitmap.py:29
+#: timelinelib/export/bitmap.py:30
 msgid "Image files"
 msgstr "Image files"
 
-#: timelinelib/export/bitmap.py:31
+#: timelinelib/export/bitmap.py:32
 msgid "Export to Image"
 msgstr "Export to Image"
 
-#: timelinelib/export/bitmap.py:35 timelinelib/wxgui/dialogs/mainframe.py:268
+#: timelinelib/export/bitmap.py:36 timelinelib/wxgui/dialogs/mainframe.py:268
 #, python-format
 msgid "File '%s' exists. Overwrite?"
 msgstr "File '%s' exists. Overwrite?"
@@ -867,7 +867,7 @@ msgid "Events belonging to '%(name)s' will no longer belong to a category."
 msgstr "Events belonging to '%(name)s' will no longer belong to a category."
 
 #: timelinelib/wxgui/components/cattree.py:234
-#, python-format, 
+#, python-format
 msgid "Events belonging to '%(name)s' will now belong "
 msgstr "Events belonging to '%(name)s' will now belong "
 
