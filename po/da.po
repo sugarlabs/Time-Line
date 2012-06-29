@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-06-28 17:54-0400\n"
-"PO-Revision-Date: 2012-06-29 20:38+0200\n"
-"Last-Translator: Aputsiaq Niels <aj@isit.gl>\n"
+"PO-Revision-Date: 2012-06-29 22:52+0200\n"
+"Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
@@ -878,7 +878,7 @@ msgstr ""
 #, python-format
 #, python-format, 
 msgid "Events belonging to '%(name)s' will now belong "
-msgstr "Begivenheder som hører til '%(name)' vil nu tilhøre"
+msgstr "Begivenheder som hører til '%(name)s' vil nu tilhøre "
 
 #: timelinelib/wxgui/components/pydatetimepicker.py:80
 #: timelinelib/wxgui/components/wxdatetimepicker.py:76
