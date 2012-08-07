@@ -6,11 +6,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-27 00:32-0400\n"
-"PO-Revision-Date: 2012-02-16 06:19+0200\n"
+"POT-Creation-Date: 2012-06-28 17:54-0400\n"
+"PO-Revision-Date: 2012-08-07 19:45+0200\n"
 "Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: hy\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -82,7 +82,7 @@ msgstr "օրեր"
 
 #: specs/TimelineView.py:67 timelinelib/view/zoom.py:29
 msgid "Select region to zoom into"
-msgstr ""
+msgstr "Ընտրիր տարածաշրջանը մոտեցնելու համար"
 
 #: specs/TimelineView.py:75 timelinelib/view/zoom.py:39
 msgid "Region too short"
@@ -94,11 +94,11 @@ msgstr "Տարածաշրջանը շատ մեծ է"
 
 #: specs/TimelineView.py:191 timelinelib/view/drawingarea.py:169
 msgid "Can't scroll more to the left"
-msgstr ""
+msgstr "Հնարավոր չէ ավել գլորել դեպի ձախ"
 
 #: specs/TimelineView.py:198 timelinelib/view/drawingarea.py:171
 msgid "Can't scroll more to the right"
-msgstr ""
+msgstr "Հնարավոր չէ ավել գլորել դեպի աջ"
 
 #: specs/WeekdayNames.py:29 timelinelib/calendar/weekdaynames.py:22
 msgid "Mon"
@@ -110,59 +110,59 @@ msgstr "Կիրակի"
 
 #: timelinelib/calendar/monthnames.py:39
 msgid "Feb"
-msgstr ""
+msgstr "Փետ."
 
 #: timelinelib/calendar/monthnames.py:40
 msgid "Mar"
-msgstr ""
+msgstr "Մարտ"
 
 #: timelinelib/calendar/monthnames.py:41
 msgid "Apr"
-msgstr ""
+msgstr "Ապր."
 
 #: timelinelib/calendar/monthnames.py:42
 msgid "May"
-msgstr ""
+msgstr "Մայ."
 
 #: timelinelib/calendar/monthnames.py:43
 msgid "Jun"
-msgstr ""
+msgstr "Հուն."
 
 #: timelinelib/calendar/monthnames.py:44
 msgid "Jul"
-msgstr ""
+msgstr "Հուլ."
 
 #: timelinelib/calendar/monthnames.py:46
 msgid "Sep"
-msgstr ""
+msgstr "Սեպտ."
 
 #: timelinelib/calendar/monthnames.py:47
 msgid "Oct"
-msgstr ""
+msgstr "Հոկտ."
 
 #: timelinelib/calendar/monthnames.py:48
 msgid "Nov"
-msgstr ""
+msgstr "Նով."
 
 #: timelinelib/calendar/weekdaynames.py:23
 msgid "Tue"
-msgstr ""
+msgstr "Երեք."
 
 #: timelinelib/calendar/weekdaynames.py:24
 msgid "Wed"
-msgstr ""
+msgstr "Չորեք."
 
 #: timelinelib/calendar/weekdaynames.py:25
 msgid "Thu"
-msgstr ""
+msgstr "Հինգ."
 
 #: timelinelib/calendar/weekdaynames.py:26
 msgid "Fri"
-msgstr ""
+msgstr "Ուրբ."
 
 #: timelinelib/calendar/weekdaynames.py:27
 msgid "Sat"
-msgstr ""
+msgstr "Շաբ."
 
 #: timelinelib/db/__init__.py:74
 msgid ""
@@ -174,47 +174,47 @@ msgstr ""
 #: timelinelib/db/__init__.py:79
 #, python-format
 msgid "Unable to open timeline '%s'."
-msgstr ""
+msgstr "Չի կարող բացել ժամանակացույցը '%s'"
 
 #: timelinelib/db/__init__.py:80
 msgid "Unknown format."
-msgstr ""
+msgstr "Չճանաչված ձևաչափ"
 
 #: timelinelib/db/backends/dir.py:106 timelinelib/db/backends/file.py:126
 #: timelinelib/db/backends/ics.py:156
 #, python-format
 msgid "Unable to read from file '%s'."
-msgstr ""
+msgstr "Չի ընթերցում '%s' ֆայլից"
 
 #: timelinelib/db/backends/file.py:119 timelinelib/db/backends/ics.py:150
 #: timelinelib/db/backends/xmlfile.py:143
 #, python-format
 msgid "Unable to read timeline data from '%s'."
-msgstr ""
+msgstr "Չի կարող ընթերցել ժամանակացույցի տվյալները '%s' - ից"
 
 #: timelinelib/db/backends/memory.py:223
 msgid "Displayed period must be > 0."
-msgstr ""
+msgstr "Ցուցադրված ժամանակաշրջանը պետք է լինի  > 0"
 
 #: timelinelib/db/objects.py:250
 msgid "Start time "
-msgstr ""
+msgstr "Մակնարկի ժամը "
 
 #: timelinelib/db/objects.py:252
 msgid "End time "
-msgstr ""
+msgstr "Ավարտի ժամը "
 
 #: timelinelib/db/objects.py:262
 msgid "Start time can't be after end time"
-msgstr ""
+msgstr "Մեկնարկի ժամը չի կարող լինել ավարտի ժամից հետո"
 
 #: timelinelib/db/tutorial.py:31
 msgid "Welcome"
-msgstr ""
+msgstr "Բարի գալուստ"
 
 #: timelinelib/db/tutorial.py:33
 msgid "Welcome to Timeline"
-msgstr ""
+msgstr "Բարի գալուստ Ժամանակացույց"
 
 #: timelinelib/db/tutorial.py:36
 msgid "Intro"
@@ -258,7 +258,7 @@ msgstr ""
 
 #: timelinelib/db/tutorial.py:59 timelinelib/help/pages.py:127
 msgid "Create event"
-msgstr ""
+msgstr "Ստեղծել իրադարձություն"
 
 #: timelinelib/db/tutorial.py:60
 msgid ""
@@ -266,18 +266,21 @@ msgid ""
 "\n"
 "Hold down Ctrl while dragging the mouse to select a period."
 msgstr ""
+"Երկու անգամ քլիք անել ժամանակացույցում որևէ տեղ\n"
+"\n"
+"Սեղմած պահել \"Ctrl\" ստեղնը և սահեցնել մկնիկը ժամանակաշրջանն ընտրելու համար"
 
 #: timelinelib/db/tutorial.py:66 timelinelib/help/pages.py:144
 msgid "Edit event"
-msgstr ""
+msgstr "Խմբագրել իրադարձությունը"
 
 #: timelinelib/db/tutorial.py:67
 msgid "Double click on an event."
-msgstr ""
+msgstr "Երկու անգամ քլիք անել իրադարձության վրա"
 
 #: timelinelib/db/tutorial.py:71
 msgid "Select event"
-msgstr ""
+msgstr "Ընտրել իրադարձությունը"
 
 #: timelinelib/db/tutorial.py:72
 msgid ""
@@ -285,14 +288,19 @@ msgid ""
 "\n"
 "Hold down Ctrl while clicking events to select multiple."
 msgstr ""
+"Քլիք անել դրա վրա.\n"
+"\n"
+"Սեղմած պահել \"Ctrl\" ստեղնը մի քանի իրադարձություններ ընտրելու համար"
 
 #: timelinelib/db/tutorial.py:78 timelinelib/help/pages.py:169
 msgid "Delete event"
-msgstr ""
+msgstr "Ջնջել րադարձությունը"
 
 #: timelinelib/db/tutorial.py:79
 msgid "Select events to be deleted and press the Del key."
 msgstr ""
+"Ընտրել այն իրադարձությունները, որոնք ցանկանում եք ջնջել և սեղմել \"Del\" "
+"ստեղնը"
 
 #: timelinelib/db/tutorial.py:83
 msgid "Resize and move me!"
@@ -321,12 +329,12 @@ msgstr ""
 
 #: timelinelib/db/utils.py:71
 msgid "Unable to write timeline data."
-msgstr ""
+msgstr "Չի կարող գրել ժամանակացույցի տվյալները"
 
 #: timelinelib/db/utils.py:75
 #, python-format
 msgid "Unable to write to temporary file '%s'."
-msgstr ""
+msgstr "Չի կարող գրել ժամանակավոր ֆայլում '%s'"
 
 #: timelinelib/db/utils.py:81
 #, python-format
@@ -366,15 +374,15 @@ msgstr ""
 msgid "Text"
 msgstr "Տեքստ"
 
-#: timelinelib/export/bitmap.py:29
+#: timelinelib/export/bitmap.py:30
 msgid "Image files"
 msgstr ""
 
-#: timelinelib/export/bitmap.py:31
+#: timelinelib/export/bitmap.py:32
 msgid "Export to Image"
 msgstr ""
 
-#: timelinelib/export/bitmap.py:35 timelinelib/wxgui/dialogs/mainframe.py:268
+#: timelinelib/export/bitmap.py:36 timelinelib/wxgui/dialogs/mainframe.py:268
 #, python-format
 msgid "File '%s' exists. Overwrite?"
 msgstr ""
@@ -2009,6 +2017,7 @@ msgstr ""
 msgid "Select Window"
 msgstr ""
 
+# Where is the %s?
 #: wx/tools/Editra/src/Editra.py:590
 #, python-format
 #, python-format, fuzzy
