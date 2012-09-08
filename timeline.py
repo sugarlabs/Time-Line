@@ -22,6 +22,7 @@ import locale
 import os
 import platform
 import sys
+import ConfigParser
 
 sys.path.insert(0, "libs")
 sys.path.insert(0, "timelinelib")
@@ -36,8 +37,6 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "libs", "dependencies
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "libs", "dependencies", "markdown-2.0.3"))
 
 from timelinelib.config.arguments import ApplicationArguments
-from timelinelib.config.paths import LOCALE_DIR
-from timelinelib.meta.about import APPLICATION_NAME
 from timelinelib.wxgui.setup import start_wx_application
 
 from sugar.activity.activity import Activity
@@ -52,15 +51,15 @@ class TimeLine(Activity):
 
 def iniciar_actividad():
 
-    if platform.system() == "Windows":
-        # The appropriate environment variables are set on other systems
-        language, encoding = locale.getdefaultlocale()
-        os.environ['LANG'] = language
+    file_activity_info = ConfigParser.ConfigParser()
+    activity_info_path = os.path.abspath('./activity/activity.info')
+    file_activity_info.read(activity_info_path)
+    bundle_id = file_activity_info.get('Activity', 'bundle_id')
+    path = os.path.abspath('locale')
 
-    gettext.install(APPLICATION_NAME.lower(), LOCALE_DIR, unicode=True)
+    gettext.install(bundle_id, path, unicode=True)
 
     application_arguments = ApplicationArguments()
-    #application_arguments.parse_from(sys.argv[1:])
     application_arguments.parse_from()
 
     start_wx_application(application_arguments)
