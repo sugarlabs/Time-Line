@@ -28,7 +28,6 @@ BORDER = 5
 # Used by dialogs as a return code when a TimelineIOError has been raised
 ID_ERROR = wx.NewId()
 
-from gettext import gettext as _
 
 class WildcardHelper(object):
 

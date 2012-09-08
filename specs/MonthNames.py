@@ -20,7 +20,6 @@ import unittest
 
 import timelinelib.calendar.monthnames
 
-from gettext import gettext as _
 
 class MonthNamesSpec(unittest.TestCase):
 

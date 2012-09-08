@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 #
 # Copyright (C) 2009, 2010, 2011  Rickard Lindberg, Roger Lindberg
 #
@@ -24,9 +23,6 @@ import os
 import platform
 import sys
 
-sys.path.insert(0, "libs")
-sys.path.insert(0, "timelinelib")
-
 # Make sure that we can import timelinelib
 sys.path.insert(0, os.path.dirname(__file__))
 # Make sure that we can import pysvg
@@ -41,25 +37,14 @@ from timelinelib.config.paths import LOCALE_DIR
 from timelinelib.meta.about import APPLICATION_NAME
 from timelinelib.wxgui.setup import start_wx_application
 
-from gettext import gettext as _
+if platform.system() == "Windows":
+    # The appropriate environment variables are set on other systems
+    language, encoding = locale.getdefaultlocale()
+    os.environ['LANG'] = language
 
+gettext.install(APPLICATION_NAME.lower(), LOCALE_DIR, unicode=True)
 
-from sugar.activity.activity import Activity
+application_arguments = ApplicationArguments()
+application_arguments.parse_from(sys.argv[1:])
 
-
-class TimeLine(Activity):
-
-    def __init__(self, handle):
-        Activity.__init__(self, handle)
-
-        iniciar_actividad()
-
-def iniciar_actividad():
-
-
-    application_arguments = ApplicationArguments()
-    #application_arguments.parse_from(sys.argv[1:])
-    application_arguments.parse_from()
-    start_wx_application(application_arguments)
-
-
+start_wx_application(application_arguments)

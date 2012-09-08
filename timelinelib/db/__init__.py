@@ -32,7 +32,6 @@ from timelinelib.db.backends.memory import MemoryDB
 from timelinelib.db.interface import TimelineIOError
 from timelinelib.drawing.viewproperties import ViewProperties
 
-from gettext import gettext as _
 
 def db_open(path, use_wide_date_range=False):
     """

@@ -39,7 +39,6 @@ from timelinelib.wxgui.dialogs.mainframe import StatusBarAdapter
 
 ANY_Y = 0
 
-from gettext import gettext as _
 
 class TimelineViewSpec(unittest.TestCase):
 

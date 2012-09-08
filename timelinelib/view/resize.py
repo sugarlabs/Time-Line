@@ -21,7 +21,6 @@ import wx
 from timelinelib.db.objects import PeriodTooLongError
 from timelinelib.view.scrollbase import ScrollViewInputHandler
 
-from gettext import gettext as _
 
 class ResizeByDragInputHandler(ScrollViewInputHandler):
 
@@ -66,7 +65,12 @@ class ResizeByDragInputHandler(ScrollViewInputHandler):
             self.status_bar.set_text(_("Period is too long"))
         else:
             self._clear_status_text()
+            if self.event.is_container():
+                self._adjust_container_edges()
             self.controller.redraw_timeline()
 
+    def _adjust_container_edges(self):
+        self.event.strategy._set_time_period()
+        
     def _clear_status_text(self):
         self.status_bar.set_text("")

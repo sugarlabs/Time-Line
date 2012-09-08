@@ -16,47 +16,22 @@
 # along with Timeline.  If not, see <http://www.gnu.org/licenses/>.
 
 
-ENGLISH_MONTH_NAMES = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-]
+import unittest
+
+from timelinelib.play.playcontroller import Animation
+from timelinelib.db.backends.memory import MemoryDB
+from specs.utils import py_period
 
 
-def _(message): return message # deferred translation
-ABBREVIATED_ENGLISH_MONTH_NAMES = [
-    _("Jan"),
-    _("Feb"),
-    _("Mar"),
-    _("Apr"),
-    _("May"),
-    _("Jun"),
-    _("Jul"),
-    _("Aug"),
-    _("Sep"),
-    _("Oct"),
-    _("Nov"),
-    _("Dec"),
-]
-del _
+class AnimationTest(unittest.TestCase):
 
+    def setUp(self):
+        self.timeline = MemoryDB()
 
-def month_from_english_name(month_name):
-    return ENGLISH_MONTH_NAMES.index(month_name) + 1
-
-
-def english_name_of_month(month):
-    return ENGLISH_MONTH_NAMES[month-1]
-
-
-def abbreviated_name_of_month(month):
-    return _(ABBREVIATED_ENGLISH_MONTH_NAMES[month-1])
+    def test_can_move_period_without_zooming(self):
+        a = Animation(self.timeline,
+                py_period("1 Jan 2010", "2 Jan 2010"),
+                2,
+                py_period("3 Jan 2010", "4 Jan 2010"))
+        a.change_current_period(1)
+        self.assertEquals(a.current_period, py_period("2 Jan 2010", "3 Jan 2010"))

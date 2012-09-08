@@ -39,7 +39,6 @@ from timelinelib.db.objects import Category
 from timelinelib.db.utils import IdCounter
 from timelinelib.db.utils import generic_event_search
 
-from gettext import gettext as _
 
 class MemoryDB(TimelineDB):
 
@@ -62,7 +61,7 @@ class MemoryDB(TimelineDB):
         return False
 
     def supported_event_data(self):
-        return ["description", "icon"]
+        return ["description", "icon", "alert"]
 
     def search(self, search_string):
         return generic_event_search(self.events, search_string)

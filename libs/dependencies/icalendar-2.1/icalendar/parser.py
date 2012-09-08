@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# -*- coding: latin-1 -*-
 
 """
 This module parses and generates contentlines as defined in RFC 2445

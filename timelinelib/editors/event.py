@@ -23,7 +23,6 @@ from timelinelib.db.objects import TimePeriod
 from timelinelib.utils import ex_msg
 from timelinelib.repositories.dbwrapper import DbWrapperEventRepository
 
-from gettext import gettext as _
 
 class EventEditor(object):
 

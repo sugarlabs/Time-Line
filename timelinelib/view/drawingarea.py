@@ -43,7 +43,6 @@ SCROLL_ZONE_WIDTH = 20
 LEFT_RIGHT_SCROLL_FACTOR = 1 / 200.0
 MOUSE_SCROLL_FACTOR = 1 / 10.0
 
-from gettext import gettext as _
 
 class DrawingArea(object):
 

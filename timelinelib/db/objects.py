@@ -20,7 +20,6 @@
 Objects that can be read from and written to a timeline database.
 """
 
-from gettext import gettext as _
 
 class Event(object):
     """
@@ -145,6 +144,9 @@ class Event(object):
     def is_subevent(self):
         return False
     
+    def time_span(self):
+        return self.time_period.end_time - self.time_period.start_time
+        
     
 class Category(object):
     """

@@ -46,7 +46,6 @@ from timelinelib.utils import ex_msg
 
 ENCODING = "utf-8"
 
-from gettext import gettext as _
 
 class ParseException(Exception):
     """Thrown if parsing of data read from file fails."""

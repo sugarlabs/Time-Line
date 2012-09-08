@@ -18,7 +18,6 @@
 
 from timelinelib.view.scrollbase import ScrollViewInputHandler
 
-from gettext import gettext as _
 
 class MoveByDragInputHandler(ScrollViewInputHandler):
 

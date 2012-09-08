@@ -27,7 +27,6 @@ from timelinelib.time import PyTimeType
 from timelinelib.wxgui.dialogs.eventeditor import EventEditorDialog
 from timelinelib.db.backends.memory import MemoryDB
 
-from gettext import gettext as _
 
 class EventEditorTestCase(unittest.TestCase):
 
