@@ -23,6 +23,9 @@ import os
 import platform
 import sys
 
+sys.path.insert(0, "libs")
+sys.path.insert(0, "timelinelib")
+
 # Make sure that we can import timelinelib
 sys.path.insert(0, os.path.dirname(__file__))
 # Make sure that we can import pysvg
@@ -37,14 +40,28 @@ from timelinelib.config.paths import LOCALE_DIR
 from timelinelib.meta.about import APPLICATION_NAME
 from timelinelib.wxgui.setup import start_wx_application
 
-if platform.system() == "Windows":
-    # The appropriate environment variables are set on other systems
-    language, encoding = locale.getdefaultlocale()
-    os.environ['LANG'] = language
+from sugar.activity.activity import Activity
 
-gettext.install(APPLICATION_NAME.lower(), LOCALE_DIR, unicode=True)
 
-application_arguments = ApplicationArguments()
-application_arguments.parse_from(sys.argv[1:])
+class TimeLine(Activity):
 
-start_wx_application(application_arguments)
+    def __init__(self, handle):
+        Activity.__init__(self, handle)
+
+        iniciar_actividad()
+
+def iniciar_actividad():
+
+    if platform.system() == "Windows":
+        # The appropriate environment variables are set on other systems
+        language, encoding = locale.getdefaultlocale()
+        os.environ['LANG'] = language
+
+    gettext.install(APPLICATION_NAME.lower(), LOCALE_DIR, unicode=True)
+
+    application_arguments = ApplicationArguments()
+    #application_arguments.parse_from(sys.argv[1:])
+    application_arguments.parse_from()
+
+    start_wx_application(application_arguments)
+
