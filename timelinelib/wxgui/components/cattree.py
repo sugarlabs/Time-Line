@@ -30,7 +30,6 @@ import timelinelib.wxgui.utils as gui_utils
 NO_CHECKBOX_TYPE = 0
 CHECKBOX_TYPE = 1
 
-from gettext import gettext as _
 
 class CategoriesTree(customtreectrl.CustomTreeCtrl):
 
@@ -226,13 +225,14 @@ def add_category(parent_ctrl, db, fn_handle_db_error):
 
 
 def delete_category(parent_ctrl, db, cat, fn_handle_db_error):
-    delete_warning = _("Are you sure you want to delete category '%s'?") % cat.name
+    delete_warning = _("Are you sure you want to "
+                       "delete category '%s'?") % cat.name
     if cat.parent is None:
-        update_warning = _("Events belonging to '%(name)s' will no longer "
-                           "belong to a category.") % {'name': cat.name}
+        update_warning = _("Events belonging to '%s' will no longer "
+                           "belong to a category.") % cat.name
     else:
-        update_warning = _("Events belonging to '%(name)s' will now belong ")
-                           "to '%(parent)s'.") % {'name': cat.name, 'parent': cat.parent.name)
+        update_warning = _("Events belonging to '%s' will now belong "
+                           "to '%s'.") % (cat.name, cat.parent.name)
     question = "%s\n\n%s" % (delete_warning, update_warning)
     if _ask_question(question, parent_ctrl) == wx.YES:
         try:
