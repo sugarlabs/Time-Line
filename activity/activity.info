@@ -6,3 +6,4 @@ icon = timeline
 exec = timeline-sugar
 license = GPLv3
 mime_types = application/timeline
+summary = Allows create interactive time lines
