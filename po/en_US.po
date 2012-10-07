@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-09 00:31-0400\n"
-"PO-Revision-Date: 2012-09-28 08:06+0200\n"
+"POT-Creation-Date: 2012-09-27 14:55-0400\n"
+"PO-Revision-Date: 2012-10-07 23:47+0200\n"
 "Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: en_US\n"
@@ -17,9 +17,14 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.0.5\n"
 
-#: activity/activity.info:2
+#. TRANS: "name" option from activity.info file
 msgid "Time Line"
 msgstr "Time Line"
+
+#. TRANS: "summary" option from activity.info file
+#. TRANS: "description" option from activity.info file
+msgid "Allows create interactive time lines"
+msgstr "Allows create interactive time lines"
 
 #: specs/EventEditor.py:350 timelinelib/editors/event.py:152
 msgid "You can't change time when the Event is locked"
@@ -862,14 +867,15 @@ msgstr "Are you sure you want to delete category '%s'?"
 
 #: timelinelib/wxgui/components/cattree.py:231
 #, python-format
-#, python-format, 
+#, python-format,
 msgid "Events belonging to '%s' will no longer belong to a category."
 msgstr "Events belonging to '%s' will no longer belong to a category."
 
 #: timelinelib/wxgui/components/cattree.py:234
 #, python-format
-msgid "Events belonging to '%(name)s' will now belong "
-msgstr "Events belonging to '%(name)s' will now belong "
+#, python-format, 
+msgid "Events belonging to '%(name)s' will now belong to '%(parent)s'."
+msgstr "Events belonging to '%(name)s' will now belong to '%(parent)s'."
 
 #: timelinelib/wxgui/components/pydatetimepicker.py:80
 #: timelinelib/wxgui/components/wxdatetimepicker.py:75
@@ -4552,12 +4558,12 @@ msgstr "Text Document"
 msgid "%s Source File"
 msgstr "%s Source File"
 
+#, python-format
+#~ msgid "Events belonging to '%(name)s' will now belong "
+#~ msgstr "Events belonging to '%(name)s' will now belong "
+
 #~ msgid "&Undo "
 #~ msgstr "&Undo "
-
-#, python-format
-#~ msgid "Events belonging to '%s' will now belong to '%s'."
-#~ msgstr "Events belonging to '%s' will now belong to '%s'."
 
 #~ msgid "Events belonging to "
 #~ msgstr "Events belonging to "
