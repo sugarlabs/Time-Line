@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Timeline 0.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-09 00:31-0400\n"
-"PO-Revision-Date: 2012-09-28 06:42+0200\n"
+"POT-Creation-Date: 2012-09-27 14:55-0400\n"
+"PO-Revision-Date: 2012-10-07 22:26+0200\n"
 "Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: native-languaje <elproferoman@gmail.com>\n"
 "Language: es\n"
@@ -19,9 +19,14 @@ msgstr ""
 "X-Launchpad-Export-Date: 2011-07-26 18:52+0000\n"
 "X-Poedit-Language: Spanish\n"
 
-#: activity/activity.info:2
+#. TRANS: "name" option from activity.info file
 msgid "Time Line"
 msgstr "Linea de Tiempo"
+
+#. TRANS: "summary" option from activity.info file
+#. TRANS: "description" option from activity.info file
+msgid "Allows create interactive time lines"
+msgstr "Permite crear lineas de tiempo interactivas"
 
 #: specs/EventEditor.py:350 timelinelib/editors/event.py:152
 msgid "You can't change time when the Event is locked"
@@ -469,7 +474,7 @@ msgstr ""
 "\n"
 "La línea de tiempo muestra días de acuerdo al calendario Gregoriano en el "
 "eje X. Actualmente las fechas admitidas están limitadas entre los años 10 y "
-"9899. \n"
+"9899.\n"
 
 #: timelinelib/help/pages.py:100
 msgid "Events"
@@ -871,14 +876,15 @@ msgid "Are you sure you want to delete category '%s'?"
 msgstr "¿Estás seguro que quieres eliminar la categoría '%s'?"
 
 #: timelinelib/wxgui/components/cattree.py:231
-#, python-format, 
+#, python-format
+#, python-format,
 msgid "Events belonging to '%s' will no longer belong to a category."
 msgstr "Eventos pertenecientes a '%s' ya no pertenecen a una categoría."
 
 #: timelinelib/wxgui/components/cattree.py:234
-#, python-format
-msgid "Events belonging to '%(name)s' will now belong "
-msgstr "Los eventos pertenecientes a '%(name)s' ahora le pertenecen "
+#, python-format, 
+msgid "Events belonging to '%(name)s' will now belong to '%(parent)s'."
+msgstr "Eventos pertenecientes a '%(name)s' ahora pertenecen a '%(parent)s'."
 
 #: timelinelib/wxgui/components/pydatetimepicker.py:80
 #: timelinelib/wxgui/components/wxdatetimepicker.py:75
@@ -4570,12 +4576,12 @@ msgstr "Documento de Texto"
 msgid "%s Source File"
 msgstr "Archivo fuente %s"
 
+#, python-format
+#~ msgid "Events belonging to '%(name)s' will now belong "
+#~ msgstr "Los eventos pertenecientes a '%(name)s' ahora le pertenecen "
+
 #~ msgid "&Undo "
 #~ msgstr "&Deshacer "
-
-#, python-format
-#~ msgid "Events belonging to '%s' will now belong to '%s'."
-#~ msgstr "Eventos pertenecientes a '%s' ahora pertenecen a '%s'."
 
 #~ msgid "Events belonging to "
 #~ msgstr "Eventos pertenecientes a "
