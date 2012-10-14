@@ -882,7 +882,8 @@ msgid "Events belonging to '%s' will no longer belong to a category."
 msgstr "Eventos pertenecientes a '%s' ya no pertenecen a una categoría."
 
 #: timelinelib/wxgui/components/cattree.py:234
-#, python-format, 
+#, python-format
+#, python-format,
 msgid "Events belonging to '%(name)s' will now belong to '%(parent)s'."
 msgstr "Eventos pertenecientes a '%(name)s' ahora pertenecen a '%(parent)s'."
 
