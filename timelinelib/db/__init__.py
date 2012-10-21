@@ -16,20 +16,14 @@
 # along with Timeline.  If not, see <http://www.gnu.org/licenses/>.
 
 
-"""
-Functionality for reading and writing timeline data from and to persistent
-storage.
-"""
-
-
 import os.path
 
-from timelinelib.db.tutorial import create_in_memory_tutorial_db
+from timelinelib.db.backends.memory import MemoryDB
+from timelinelib.db.backends.tutorial import create_in_memory_tutorial_db
+from timelinelib.db.exceptions import TimelineIOError
 from timelinelib.db.objects import Category
 from timelinelib.db.objects import Event
 from timelinelib.db.objects import TimePeriod
-from timelinelib.db.backends.memory import MemoryDB
-from timelinelib.db.interface import TimelineIOError
 from timelinelib.drawing.viewproperties import ViewProperties
 
 
@@ -59,7 +53,7 @@ def db_open(path, use_wide_date_range=False):
             from timelinelib.db.backends.file import FileTimeline
             from timelinelib.db.backends.xmlfile import XmlTimeline
             file_db = FileTimeline(path)
-            xml_db = XmlTimeline(path, load=False, 
+            xml_db = XmlTimeline(path, load=False,
                                  use_wide_date_range=use_wide_date_range)
             copy_db(file_db, xml_db)
             return xml_db

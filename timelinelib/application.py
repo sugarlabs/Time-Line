@@ -16,7 +16,7 @@
 # along with Timeline.  If not, see <http://www.gnu.org/licenses/>.
 
 
-from timelinelib.db.interface import TimelineIOError
+from timelinelib.db.exceptions import TimelineIOError
 
 
 class TimelineApplication(object):
@@ -46,7 +46,7 @@ class TimelineApplication(object):
             self.config.append_recently_opened(path)
             self.main_frame._update_open_recent_submenu()
             self.main_frame._display_timeline(self.timeline)
-            
+
     def set_no_timeline(self):
         self.timeline = None
         self.main_frame._display_timeline(None)

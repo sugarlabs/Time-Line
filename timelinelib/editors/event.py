@@ -17,11 +17,10 @@
 
 
 from timelinelib.db.objects import Event
-from timelinelib.db.subevent import Subevent
 from timelinelib.db.objects import PeriodTooLongError
+from timelinelib.db.objects import Subevent
 from timelinelib.db.objects import TimePeriod
 from timelinelib.utils import ex_msg
-from timelinelib.repositories.dbwrapper import DbWrapperEventRepository
 
 
 class EventEditor(object):
@@ -53,6 +52,11 @@ class EventEditor(object):
         self.view.set_name(self.name)
         self.view.set_focus("start")
 
+    def start_is_in_history(self):
+        if self.start is None:
+            return False
+        return self.start < self.timeline.time_type.now()
+    
     def _set_values(self, start, end, event):
         self.event = event
         if self.event != None:
@@ -71,7 +75,7 @@ class EventEditor(object):
             self.fuzzy = False
             self.locked = False
             self.ends_today = False
-            
+
     def _set_view_content(self):
         if self.event != None:
             self.view.set_event_data(self.event.data)
@@ -131,7 +135,7 @@ class EventEditor(object):
             return self.get_start_from_view()
 
     def _dialog_has_signalled_invalid_input(self, time):
-        return time == None 
+        return time == None
 
     def _verify_that_time_has_not_been_changed(self, start, end):
         self._exception_if_start_has_changed(start)
@@ -166,8 +170,8 @@ class EventEditor(object):
         if container_selected:
             if self.event.is_subevent():
                 if self.event.container == self.container:
-                    self.event.update(self.start, self.end, self.name, 
-                                      self.category, self.fuzzy, self.locked, 
+                    self.event.update(self.start, self.end, self.name,
+                                      self.category, self.fuzzy, self.locked,
                                       self.ends_today)
                 else:
                     self._change_container()
@@ -178,49 +182,49 @@ class EventEditor(object):
                 self._remove_event_from_container()
                 pass
             else:
-                self.event.update(self.start, self.end, self.name, 
-                                  self.category, self.fuzzy, self.locked, 
+                self.event.update(self.start, self.end, self.name,
+                                  self.category, self.fuzzy, self.locked,
                                   self.ends_today)
-        
+
     def _remove_event_from_container(self):
         self.event.container.unregister_subevent(self.event)
         self.timeline.delete_event(self.event)
         self._create_new_event()
-          
+
     def _add_event_to_container(self):
         self.timeline.delete_event(self.event)
         self._create_subevent()
-    
+
     def _change_container(self):
         self.event.container.unregister_subevent(self.event)
         self.container.register_subevent(self.event)
-        
+
     def _create_new_event(self):
         if self.container != None:
             self._create_subevent()
         else:
-            self.event = Event(self.time_type, self.start, self.end, self.name, 
-                               self.category, self.fuzzy, self.locked, 
+            self.event = Event(self.time_type, self.start, self.end, self.name,
+                               self.category, self.fuzzy, self.locked,
                                self.ends_today)
-        
+
     def _create_subevent(self):
         if self.is_new_container(self.container):
             self.add_new_container()
-        self.event = Subevent(self.time_type, self.start, self.end, self.name, 
+        self.event = Subevent(self.time_type, self.start, self.end, self.name,
                               self.category, self.container)
 
     def is_new_container(self, container):
         return container not in self.timeline.get_containers()
-    
+
     def add_new_container(self):
         max_id = 0
         for container in self.timeline.get_containers():
             if container.cid() > max_id:
                 max_id = container.cid()
         max_id += 1
-        self.container.set_cid(max_id) 
+        self.container.set_cid(max_id)
         self._save_container_to_db()
-        
+
     def _validate_and_save_start(self, start):
         if start == None:
             raise ValueError()

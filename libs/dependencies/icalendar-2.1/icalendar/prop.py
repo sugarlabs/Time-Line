@@ -73,7 +73,7 @@ class vBinary:
     'This is gibberish'
 
     The roundtrip test
-    >>> x = 'Binary data Ã¦ Ã¸ Ã¥ \x13 \x56'
+    >>> x = 'Binary data æ ø å \x13 \x56'
     >>> vBinary(x).ical()
     'QmluYXJ5IGRhdGEg5iD4IOUgEyBW'
     >>> vBinary.from_ical('QmluYXJ5IGRhdGEg5iD4IOUgEyBW')
@@ -1055,12 +1055,12 @@ class vText(unicode):
     If you pass a unicode object, it will be utf-8 encoded. As this is the
     (only) standard that RFC 2445 support.
 
-    >>> t = vText(u'international chars Ã¦Ã¸Ã¥ Ã†Ã˜Ã… Ã¼')
+    >>> t = vText(u'international chars æøå ÆØÅ ü')
     >>> t.ical()
     'international chars \\xc3\\xa6\\xc3\\xb8\\xc3\\xa5 \\xc3\\x86\\xc3\\x98\\xc3\\x85 \\xc3\\xbc'
 
     Unicode is converted to utf-8
-    >>> t = vText(u'international Ã¦ Ã¸ Ã¥')
+    >>> t = vText(u'international æ ø å')
     >>> str(t)
     'international \\xc3\\xa6 \\xc3\\xb8 \\xc3\\xa5'
 
@@ -1386,12 +1386,12 @@ class TypesFactory(CaselessDict):
     datetime.datetime(2005, 1, 1, 12, 30)
 
     It can also be used to directly encode property and parameter values
-    >>> comment = factory.ical('comment', u'by Rasmussen, Max MÃ¸ller')
+    >>> comment = factory.ical('comment', u'by Rasmussen, Max Møller')
     >>> str(comment)
     'by Rasmussen\\\\, Max M\\xc3\\xb8ller'
     >>> factory.ical('priority', 1)
     '1'
-    >>> factory.ical('cn', u'Rasmussen, Max MÃ¸ller')
+    >>> factory.ical('cn', u'Rasmussen, Max Møller')
     'Rasmussen\\\\, Max M\\xc3\\xb8ller'
 
     >>> factory.from_ical('cn', 'Rasmussen\\\\, Max M\\xc3\\xb8ller')

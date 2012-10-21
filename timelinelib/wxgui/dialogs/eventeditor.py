@@ -20,16 +20,16 @@ import os.path
 
 import wx
 
-from timelinelib.db.interface import TimelineIOError
+from timelinelib.db.exceptions import TimelineIOError
 from timelinelib.editors.event import EventEditor
-from timelinelib.wxgui.dialogs.containereditor import ContainerEditorDialog
+from timelinelib.repositories.dbwrapper import DbWrapperEventRepository
 from timelinelib.wxgui.components.categorychoice import CategoryChoice
+from timelinelib.wxgui.dialogs.containereditor import ContainerEditorDialog
 from timelinelib.wxgui.utils import BORDER
 from timelinelib.wxgui.utils import _display_error_message
 from timelinelib.wxgui.utils import _set_focus_and_select
 from timelinelib.wxgui.utils import time_picker_for
 import timelinelib.wxgui.utils as gui_utils
-from timelinelib.repositories.dbwrapper import DbWrapperEventRepository
 
 
 class EventEditorDialog(wx.Dialog):
@@ -63,12 +63,12 @@ class EventEditorDialog(wx.Dialog):
         main_box_content = wx.StaticBoxSizer(groupbox, wx.VERTICAL)
         self._create_detail_content(main_box_content)
         self._create_notebook_content(main_box_content)
-        sizer.Add(main_box_content, flag=wx.EXPAND|wx.ALL, 
+        sizer.Add(main_box_content, flag=wx.EXPAND|wx.ALL,
                            border=BORDER, proportion=1)
 
     def _create_detail_content(self, properties_box_content):
         details = self._create_details()
-        properties_box_content.Add(details, flag=wx.ALL|wx.EXPAND, 
+        properties_box_content.Add(details, flag=wx.ALL|wx.EXPAND,
                                    border=BORDER)
 
     def _create_details(self):
@@ -79,7 +79,7 @@ class EventEditorDialog(wx.Dialog):
         self._create_text_field(grid)
         self._create_categories_listbox(grid)
         self._create_container_listbox(grid)
-        return grid    
+        return grid
 
     def _create_time_details(self, grid):
         grid.Add(wx.StaticText(self, label=_("When:")),
@@ -123,7 +123,7 @@ class EventEditorDialog(wx.Dialog):
         label = wx.StaticText(self, label=_("Container:"))
         grid.Add(label, flag=wx.ALIGN_CENTER_VERTICAL)
         grid.Add(self.lst_containers)
-        self.Bind(wx.EVT_CHOICE, self._lst_containers_on_choice, 
+        self.Bind(wx.EVT_CHOICE, self._lst_containers_on_choice,
                   self.lst_containers)
 
     def _lst_containers_on_choice(self, e):
@@ -137,14 +137,15 @@ class EventEditorDialog(wx.Dialog):
         else:
             self.current_container_selection = new_selection_index
         self._enable_disable_checkboxes()
-            
+
     def _enable_disable_checkboxes(self):
         self._enable_disable_ends_today()
         self._enable_disable_locked()
 
     def _enable_disable_ends_today(self):
-        enable = (self._container_not_selected() and 
-                  not self.chb_locked.GetValue())
+        enable = (self._container_not_selected() and
+                  not self.chb_locked.GetValue() and
+                  self.controller.start_is_in_history())
         self.chb_ends_today.Enable(enable)
 
     def _enable_disable_locked(self):
@@ -154,7 +155,7 @@ class EventEditorDialog(wx.Dialog):
     def _container_not_selected(self):
         index = self.lst_containers.GetSelection()
         return (index == 0)
-    
+
     def _add_container(self):
         def create_container_editor():
             return ContainerEditorDialog(self, _("Add Container"), self.timeline, None)
@@ -167,7 +168,7 @@ class EventEditorDialog(wx.Dialog):
         gui_utils.show_modal(create_container_editor,
                              gui_utils.create_dialog_db_error_handler(self),
                              handle_success)
-        
+
     def _create_period_checkbox(self, box):
         handler = self._chb_period_on_checkbox
         return self._create_chb(box, _("Period"), handler)
@@ -220,7 +221,7 @@ class EventEditorDialog(wx.Dialog):
 
     def _create_notebook_content(self, properties_box_content):
         notebook = self._create_notebook()
-        properties_box_content.Add(notebook, border=BORDER, 
+        properties_box_content.Add(notebook, border=BORDER,
                                    flag=wx.ALL|wx.EXPAND, proportion=1)
 
     def _create_notebook(self):
@@ -242,7 +243,7 @@ class EventEditorDialog(wx.Dialog):
                    "alert" : (_("Alert"), AlertEditor),
                    "icon" : (_("Icon"), IconEditor) }
         if editors.has_key(editor_class_id):
-            return editors[editor_class_id]  
+            return editors[editor_class_id]
         else:
             return None
 
@@ -293,7 +294,7 @@ class EventEditorDialog(wx.Dialog):
                     self.lst_containers.SetSelection(current_item_index)
                     selection_set = True
             current_item_index += 1
-                    
+
         self.last_real_container_index = current_item_index - 1
         self.add_container_item_index = self.last_real_container_index + 2
         self.edit_container_item_index = self.last_real_container_index + 3
@@ -343,19 +344,19 @@ class EventEditorDialog(wx.Dialog):
 
     def set_name(self, name):
         self.txt_text.SetValue(name)
-        
+
     def get_name(self):
         return self.txt_text.GetValue().strip()
 
     def set_category(self, category):
         self.lst_category.select(category)
-        
+
     def get_category(self):
         return self.lst_category.get()
 
     def set_container(self, container):
         self._fill_containers_listbox(container)
-        
+
     def get_container(self):
         selection = self.lst_containers.GetSelection()
         if selection != -1:
@@ -402,7 +403,7 @@ class EventEditorDialog(wx.Dialog):
 
     def _display_invalid_input(self, message, control):
         _display_error_message(message, self)
-        _set_focus_and_select(control)  
+        _set_focus_and_select(control)
 
     def display_db_exception(self, e):
         gui_utils.handle_db_error_in_dialog(self, e)
@@ -445,8 +446,8 @@ class IconEditor(wx.Panel):
         self.MAX_SIZE = (128, 128)
         # Controls
         self.img_icon = wx.StaticBitmap(self, size=self.MAX_SIZE)
-        label = _("Images will be scaled to fit inside a 128x128 box.")
-        description = wx.StaticText(self, label=label)
+        label = _("Images will be scaled to fit inside a %ix%i box.")
+        description = wx.StaticText(self, label=label % self.MAX_SIZE)
         btn_select = wx.Button(self, wx.ID_OPEN)
         btn_clear = wx.Button(self, wx.ID_CLEAR)
         self.Bind(wx.EVT_BUTTON, self._btn_select_on_click, btn_select)
@@ -517,7 +518,7 @@ class AlertEditor(wx.Panel):
         self.editor = editor
         self._create_gui()
         self._initialize_data()
-        
+
     def _create_gui(self):
         self._create_controls()
         self._layout_controls()
@@ -526,7 +527,7 @@ class AlertEditor(wx.Panel):
         self._set_initial_time()
         self._set_initial_text()
         self._set_visible(False)
-        
+
     def _set_initial_time(self):
         if self.editor.event is not None:
             self.dtp_start.set_value(self.editor.event.time_period.start_time)
@@ -535,12 +536,12 @@ class AlertEditor(wx.Panel):
 
     def _set_initial_text(self):
         self.text_data.SetValue("")
-            
+
     def _create_controls(self):
         self.btn_add = self._create_add_button()
         self.btn_clear = self._create_clear_button()
         self.alert_panel = self._create_input_controls()
-    
+
     def _layout_controls(self):
         self._layout_input_controls(self.alert_panel)
         sizer = wx.GridBagSizer(5, 5)
@@ -548,7 +549,7 @@ class AlertEditor(wx.Panel):
         sizer.Add(self.btn_clear, wx.GBPosition(0, 1), wx.GBSpan(1, 1))
         sizer.Add(self.alert_panel, wx.GBPosition(1, 0), wx.GBSpan(4, 5))
         self.SetSizerAndFit(sizer)
-                    
+
     def _create_add_button(self):
         btn_add = wx.Button(self, wx.ID_ADD)
         self.Bind(wx.EVT_BUTTON, self._btn_add_on_click, btn_add)
@@ -558,7 +559,7 @@ class AlertEditor(wx.Panel):
         btn_clear = wx.Button(self, wx.ID_CLEAR)
         self.Bind(wx.EVT_BUTTON, self._btn_clear_on_click, btn_clear)
         return btn_clear
-    
+
     def _create_input_controls(self):
         alert_panel = wx.Panel(self)
         time_type = self.editor.timeline.get_time_type()
@@ -583,7 +584,7 @@ class AlertEditor(wx.Panel):
             return (time, text)
         else:
             return None
-        
+
     def set_data(self, data):
         if data == None:
             self._set_visible(False)
@@ -597,6 +598,9 @@ class AlertEditor(wx.Panel):
         self._set_visible(True)
 
     def _btn_clear_on_click(self, evt):
+        self.clear_data()
+
+    def clear_data(self):
         self._set_initial_time()
         self._set_initial_text()
         self._set_visible(False)
@@ -607,3 +611,21 @@ class AlertEditor(wx.Panel):
         self.btn_add.Enable(not value)
         self.btn_clear.Enable(value)
         self.GetSizer().Layout()
+
+
+def open_event_editor_for(parent, config, db, handle_db_error, event):
+    def create_event_editor():
+        if event.is_container():
+            title = _("Edit Container")
+            return ContainerEditorDialog(parent, title, db, event)
+        else:
+            return EventEditorDialog(
+                parent, config, _("Edit Event"), db, event=event)
+    gui_utils.show_modal(create_event_editor, handle_db_error)
+
+
+def open_create_event_editor(parent, config, db, handle_db_error, start=None, end=None):
+    def create_event_editor():
+        return EventEditorDialog(
+            parent, config, _("Create Event"), db, start, end)
+    gui_utils.show_modal(create_event_editor, handle_db_error)

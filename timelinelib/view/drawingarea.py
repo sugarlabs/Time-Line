@@ -18,11 +18,11 @@
 
 import wx
 
-from timelinelib.db.interface import STATE_CHANGE_ANY
-from timelinelib.db.interface import STATE_CHANGE_CATEGORY
-from timelinelib.db.interface import TimelineIOError
+from timelinelib.db.exceptions import TimelineIOError
 from timelinelib.db.objects import TimeOutOfRangeLeftError
 from timelinelib.db.objects import TimeOutOfRangeRightError
+from timelinelib.db.observer import STATE_CHANGE_ANY
+from timelinelib.db.observer import STATE_CHANGE_CATEGORY
 from timelinelib.drawing.viewproperties import ViewProperties
 from timelinelib.utils import ex_msg
 from timelinelib.view.move import MoveByDragInputHandler
@@ -34,8 +34,8 @@ from timelinelib.view.zoom import ZoomByDragInputHandler
 
 
 # The width in pixels of the vertical scroll zones.
-# When the mouse reaches the any of the two scroll zone areas, scrolling 
-# of the timeline will take place if there is an ongoing selection of the 
+# When the mouse reaches the any of the two scroll zone areas, scrolling
+# of the timeline will take place if there is an ongoing selection of the
 # timeline. The scroll zone areas are found at the beginning and at the
 # end of the timeline.
 SCROLL_ZONE_WIDTH = 20
@@ -184,7 +184,7 @@ class DrawingArea(object):
         """
         Event handler used when the right mouse button has been pressed.
 
-        If the mouse hits an event and the timeline is not readonly, the 
+        If the mouse hits an event and the timeline is not readonly, the
         context menu for that event is displayed.
         """
         if self.timeline.is_read_only():
@@ -218,13 +218,13 @@ class DrawingArea(object):
         if len(selected_event_ids) > 0:
             id = selected_event_ids[0]
             return self.timeline.find_event_with_id(id)
-        return None 
+        return None
 
     def _context_menu_on_edit_event(self, evt):
-        self.view.edit_event(self.context_menu_event)
+        self.view.open_event_editor_for(self.context_menu_event)
 
     def _context_menu_on_duplicate_event(self, evt):
-        self.view.duplicate_event(self.context_menu_event)
+        self.view.open_duplicate_event_dialog_for_event(self.context_menu_event)
 
     def _context_menu_on_delete_event(self, evt):
         self.context_menu_event.selected = True
@@ -239,7 +239,7 @@ class DrawingArea(object):
         Event handler used when the left mouse button has been double clicked.
 
         If the timeline is readonly, no action is taken.
-        If the mouse hits an event, a dialog opens for editing this event. 
+        If the mouse hits an event, a dialog opens for editing this event.
         Otherwise a dialog for creating a new event is opened.
         """
         if self.timeline.is_read_only():
@@ -252,10 +252,10 @@ class DrawingArea(object):
         self._toggle_event_selection(x, y, ctrl_down, alt_down)
         event = self.drawing_algorithm.event_at(x, y, alt_down)
         if event:
-            self.view.edit_event(event)
+            self.view.open_event_editor_for(event)
         else:
             current_time = self.get_time(x)
-            self.view.create_new_event(current_time, current_time)
+            self.view.open_create_event_editor(current_time, current_time)
 
     def get_time(self, x):
         return self.drawing_algorithm.get_time(x)
@@ -290,9 +290,9 @@ class DrawingArea(object):
         Mouse event handler, when the mouse is entering the window.
 
         If there is an ongoing selection-marking (dragscroll timer running)
-        and the left mouse button is not down when we enter the window, we 
-        want to simulate a 'mouse left up'-event, so that the dialog for 
-        creating an event will be opened or sizing, moving stops. 
+        and the left mouse button is not down when we enter the window, we
+        want to simulate a 'mouse left up'-event, so that the dialog for
+        creating an event will be opened or sizing, moving stops.
         """
         if self.dragscroll_timer_running:
             if not left_is_down:
@@ -301,10 +301,10 @@ class DrawingArea(object):
     def mouse_moved(self, x, y, alt_down=False):
         self.input_handler.mouse_moved(x, y, alt_down)
 
-    def mouse_wheel_moved(self, rotation, ctrl_down, shift_down):
+    def mouse_wheel_moved(self, rotation, ctrl_down, shift_down, x):
         direction = _step_function(rotation)
         if ctrl_down:
-            self._zoom_timeline(direction)
+            self._zoom_timeline(direction, x)
         elif shift_down:
             self.divider_line_slider.SetValue(self.divider_line_slider.GetValue() + direction)
             self._redraw_timeline()
@@ -327,15 +327,15 @@ class DrawingArea(object):
     def _move_event_vertically(self, up=True):
         if self._one_and_only_one_event_selected():
             selected_event = self._get_first_selected_event()
-            (overlapping_event, direction) = self.drawing_algorithm.get_closest_overlapping_event(selected_event, 
-                                                                                                  up=up) 
+            (overlapping_event, direction) = self.drawing_algorithm.get_closest_overlapping_event(selected_event,
+                                                                                                  up=up)
             if overlapping_event is None:
                 return
             if direction > 0:
-                self.timeline.place_event_after_event(selected_event, 
+                self.timeline.place_event_after_event(selected_event,
                                                       overlapping_event)
             else:
-                self.timeline.place_event_before_event(selected_event, 
+                self.timeline.place_event_before_event(selected_event,
                                                        overlapping_event)
             self._redraw_timeline()
 
@@ -362,7 +362,7 @@ class DrawingArea(object):
         self._redraw_timeline()
 
     def _timeline_changed(self, state_change):
-        if (state_change == STATE_CHANGE_ANY or 
+        if (state_change == STATE_CHANGE_ANY or
             state_change == STATE_CHANGE_CATEGORY):
             self._redraw_timeline()
 
@@ -448,21 +448,24 @@ class DrawingArea(object):
 
     def _scroll_timeline_view_by_factor(self, factor):
         time_period = self.view_properties.displayed_period
-        delta = self.time_type.mult_timedelta(time_period.delta(), factor) 
+        delta = self.time_type.mult_timedelta(time_period.delta(), factor)
         self._scroll_timeline(delta)
 
     def _scroll_timeline(self, delta):
         self.navigate_timeline(lambda tp: tp.move_delta(-delta))
 
-    def _zoom_timeline(self, direction=0):
-        self.navigate_timeline(lambda tp: tp.zoom(direction))
+    def _zoom_timeline(self, direction, x):
+        """ zoom time line at position x """
+        width, height = self.view.GetSizeTuple()
+        x_percent_of_width=float(x)/width
+        self.navigate_timeline(lambda tp: tp.zoom(direction, x_percent_of_width))
 
     def _delete_selected_events(self):
         """After acknowledge from the user, delete all selected events."""
         selected_event_ids = self.view_properties.get_selected_event_ids()
         nbr_of_selected_event_ids = len(selected_event_ids)
         if nbr_of_selected_event_ids > 1:
-            text = _("Are you sure you want to delete %d events?" % 
+            text = _("Are you sure you want to delete %d events?" %
                      nbr_of_selected_event_ids)
         else:
             text = _("Are you sure you want to delete this event?")
@@ -475,7 +478,7 @@ class DrawingArea(object):
 
     def balloon_visibility_changed(self, visible):
         self.view_properties.show_balloons_on_hover = visible
-        # When display on hovering is disabled we have to make sure 
+        # When display on hovering is disabled we have to make sure
         # that any visible balloon is removed.
         # TODO: Do we really need that?
         if not visible:

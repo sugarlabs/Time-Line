@@ -16,10 +16,7 @@
 # along with Timeline.  If not, see <http://www.gnu.org/licenses/>.
 
 
-import sys
 import re
-
-import wx
 
 from timelinelib.time.typeinterface import TimeType
 from timelinelib.db.objects import time_period_center
@@ -76,7 +73,6 @@ class NumTimeType(TimeType):
     def choose_strip(self, metrics, config):
         start_time = 1
         end_time = 2
-        period_width = 0
         limit = 30
         period = TimePeriod(self, start_time, end_time)
         period_width = metrics.calc_exact_width(period)
@@ -108,7 +104,7 @@ class NumTimeType(TimeType):
         return time_period.start_time + delta * x_percent_of_width
 
     def div_timedeltas(self, delta1, delta2):
-       return delta1 / delta2
+        return delta1 / delta2
 
     def get_max_zoom_delta(self):
         return (None, None)

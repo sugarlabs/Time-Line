@@ -23,8 +23,8 @@ import wx
 from timelinelib.application import TimelineApplication
 from timelinelib.config.dotfile import read_config
 from timelinelib.config.paths import ICONS_DIR
+from timelinelib.db.exceptions import TimelineIOError
 from timelinelib.db import db_open
-from timelinelib.db.interface import TimelineIOError
 from timelinelib.db.objects import TimePeriod
 from timelinelib.export.bitmap import export_to_image
 from timelinelib.meta.about import APPLICATION_NAME
@@ -36,9 +36,8 @@ from timelinelib.wxgui.components.hyperlinkbutton import HyperlinkButton
 from timelinelib.wxgui.components.search import SearchBar
 from timelinelib.wxgui.components.timelineview import DrawingAreaPanel
 from timelinelib.wxgui.dialogs.categorieseditor import CategoriesEditor
-from timelinelib.wxgui.dialogs.containereditor import ContainerEditorDialog
-from timelinelib.wxgui.dialogs.duplicateevent import DuplicateEventDialog
-from timelinelib.wxgui.dialogs.eventeditor import EventEditorDialog
+from timelinelib.wxgui.dialogs.duplicateevent import open_duplicate_event_dialog_for_event
+from timelinelib.wxgui.dialogs.eventeditor import open_create_event_editor
 from timelinelib.wxgui.dialogs.helpbrowser import HelpBrowser
 from timelinelib.wxgui.dialogs.playframe import PlayFrame
 from timelinelib.wxgui.dialogs.preferences import PreferencesDialog
@@ -49,7 +48,6 @@ from timelinelib.wxgui.utils import _display_error_message
 from timelinelib.wxgui.utils import WildcardHelper
 import timelinelib.printing as printing
 import timelinelib.wxgui.utils as gui_utils
-from timelinelib.time.wxtime import WxTimeType
 
 
 class MainFrame(wx.Frame):
@@ -57,7 +55,7 @@ class MainFrame(wx.Frame):
     def __init__(self, application_arguments):
         self.config = read_config(application_arguments.get_config_file_path())
 
-        wx.Frame.__init__(self, None, size=self.config.get_window_size(), 
+        wx.Frame.__init__(self, None, size=self.config.get_window_size(),
                           pos=self.config.get_window_pos(),
                           style=wx.DEFAULT_FRAME_STYLE, name="main_frame")
 
@@ -87,7 +85,7 @@ class MainFrame(wx.Frame):
         self.Bind(wx.EVT_TIMER, self._timer_tick, self.timer)
         self.timer.Start(10000)
         self.alert_dialog_open = False
-                
+
     def _set_initial_values_to_member_variables(self):
         self.timeline = None
         self.timeline_wildcard_helper = WildcardHelper(
@@ -112,7 +110,7 @@ class MainFrame(wx.Frame):
         self.status_bar_adapter = StatusBarAdapter(self.GetStatusBar())
 
     def _create_main_panel(self):
-        self.main_panel = MainPanel(self, self.config)
+        self.main_panel = MainPanel(self, self.config, self)
 
     def _create_main_menu_bar(self):
         main_menu_bar = wx.MenuBar()
@@ -303,7 +301,6 @@ class MainFrame(wx.Frame):
 
     def _mnu_file_exit_on_click(self, evt):
         self.Close()
-        exit()
 
     def _create_edit_menu(self, main_menu_bar):
         edit_menu = wx.Menu()
@@ -387,14 +384,8 @@ class MainFrame(wx.Frame):
         self.menu_controller.add_menu_requiring_writable_timeline(create_event_item)
 
     def _mnu_timeline_create_event_on_click(self, evt):
-        self.create_new_event()
-
-    def create_new_event(self, start=None, end=None):
-        def create_event_editor():
-            return EventEditorDialog(
-                self, self.config, _("Create Event"), self.timeline,
-                start, end)
-        gui_utils.show_modal(create_event_editor, self.handle_db_error)
+        open_create_event_editor(
+            self, self.config, self.timeline, self.handle_db_error)
 
     def _create_timeline_duplicate_event_menu_item(self, timeline_menu):
         self.mnu_timeline_duplicate_event = timeline_menu.Append(
@@ -404,30 +395,26 @@ class MainFrame(wx.Frame):
         self.menu_controller.add_menu_requiring_writable_timeline(self.mnu_timeline_duplicate_event)
 
     def _mnu_timeline_duplicate_event_on_click(self, evt):
-        self.duplicate_event()
+        try:
+            drawing_area = self.main_panel.drawing_area
+            id = drawing_area.get_view_properties().get_selected_event_ids()[0]
+            event = self.timeline.find_event_with_id(id)
+        except IndexError, e:
+            # No event selected so do nothing!
+            return
+        open_duplicate_event_dialog_for_event(
+            self,
+            self.timeline,
+            self.handle_db_error,
+            event)
 
     def _create_timeline_measure_distance_between_events_menu_item(self, timeline_menu):
         self.mnu_timeline_measure_distance_between_events = timeline_menu.Append(
-            wx.ID_ANY, _("&Measure Distance between two Events..."), 
+            wx.ID_ANY, _("&Measure Distance between two Events..."),
             _("Measure the Distance between two Events"))
         self.Bind(wx.EVT_MENU, self._mnu_timeline_measure_distance_between_events_on_click,
                   self.mnu_timeline_measure_distance_between_events)
         self.menu_controller.add_menu_requiring_writable_timeline(self.mnu_timeline_measure_distance_between_events)
-
-    def duplicate_event(self, event=None):
-        def show_dialog(event):
-            def create_dialog():
-                return DuplicateEventDialog(self, self.timeline, event)
-            gui_utils.show_modal(create_dialog, self.handle_db_error)
-        if event is None:
-            try:
-                drawing_area = self.main_panel.drawing_area 
-                id = drawing_area.get_view_properties().get_selected_event_ids()[0]
-                event = self.timeline.find_event_with_id(id)
-            except IndexError, e:
-                # No event selected so do nothing!
-                return
-        show_dialog(event)
 
     def _mnu_timeline_measure_distance_between_events_on_click(self, evt):
         self._measure_distance_between_events()
@@ -445,12 +432,12 @@ class MainFrame(wx.Frame):
         event2 = self.timeline.find_event_with_id(event_id_2)
         return event1, event2
 
-    def _calc_events_distance(self,event1, event2):    
+    def _calc_events_distance(self,event1, event2):
         if event1.time_period.start_time <= event2.time_period.start_time:
-            distance = (event2.time_period.start_time - 
+            distance = (event2.time_period.start_time -
                         event1.time_period.end_time)
-        else:    
-            distance = (event1.time_period.start_time - 
+        else:
+            distance = (event1.time_period.start_time -
                         event2.time_period.end_time)
         return distance
 
@@ -462,7 +449,7 @@ class MainFrame(wx.Frame):
         self._display_text(header, distance_text)
 
     def _display_text(self, header, text):
-        dialog = wx.MessageDialog(self, text, header, 
+        dialog = wx.MessageDialog(self, text, header,
                                   wx.OK | wx.ICON_INFORMATION)
         dialog.ShowModal()
         dialog.Destroy()
@@ -504,7 +491,7 @@ class MainFrame(wx.Frame):
         if event:
             start = event.time_period.start_time
             delta = self.main_panel.drawing_area.get_view_properties().displayed_period.delta()
-            end   = start + delta 
+            end   = start + delta
             margin_delta = self.timeline.get_time_type().margin_delta(delta)
             self._navigate_timeline(lambda tp: tp.update(start, end, -margin_delta))
 
@@ -630,18 +617,6 @@ class MainFrame(wx.Frame):
         self.controller.open_timeline(input_file)
         self._update_navigation_menu_items()
 
-    def edit_event(self, event):
-        def create_event_editor():
-            if event.is_container():
-                parent = self
-                title = _("Edit Container")
-                timeline = self.timeline
-                return ContainerEditorDialog(parent, title, timeline, event)
-            else:
-                return EventEditorDialog(self, self.config, _("Edit Event"), 
-                                         self.timeline, event=event)
-        gui_utils.show_modal(create_event_editor, self.handle_db_error)
-
     def handle_db_error(self, error):
         _display_error_message(ex_msg(error), self)
         self._switch_to_error_view(error)
@@ -738,7 +713,7 @@ class MainFrame(wx.Frame):
             _display_error_message(_("File '%s' does not exist.") % path, self)
 
     def enable_disable_menus(self):
-        self.menu_controller.enable_disable_menus(self.main_panel.timeline_panel_visible())                                                        
+        self.menu_controller.enable_disable_menus(self.main_panel.timeline_panel_visible())
         self._enable_disable_duplicate_event_menu()
         self._enable_disable_measure_distance_between_two_events_menu()
         self._enable_disable_searchbar()
@@ -753,7 +728,7 @@ class MainFrame(wx.Frame):
         two_events_selected = len(view_properties.selected_event_ids) == 2
         self.mnu_timeline_measure_distance_between_events.Enable(two_events_selected)
 
-    def _enable_disable_searchbar(self): 
+    def _enable_disable_searchbar(self):
         if self.timeline == None:
             self.main_panel.show_searchbar(False)
 
@@ -792,7 +767,7 @@ class MainFrame(wx.Frame):
 
     def _timer_tick(self, evt):
         self._handle_event_alerts()
-        
+
     def _handle_event_alerts(self):
         if self.timeline is None:
             return
@@ -804,44 +779,43 @@ class MainFrame(wx.Frame):
     def _display_events_alerts(self):
         self.alert_dialog_open = True
         all_events = self.timeline.get_all_events()
-        AlertController().display_events_alerts(all_events, self.timeline.time_type)
+        AlertController().display_events_alerts(all_events, self.timeline.get_time_type())
 
 
 class AlertController(object):
-    
+
     def display_events_alerts(self, all_events, time_type):
         self.time_type = time_type
         for event in all_events:
             alert = event.get_data("alert")
             if alert is not None:
-                alert_time = self._alert_time_as_text(alert)
-                if self._time_has_expired(alert_time):
+                if self._time_has_expired(alert[0]):
                     self._display_and_delete_event_alert(event, alert)
 
     def _display_and_delete_event_alert(self, event, alert):
         self._display_alert_dialog(alert, event)
         event.set_data("alert", None)
-        
+
     def _alert_time_as_text(self, alert):
         return "%s" % alert[0]
-    
-    def _time_has_expired(self, time_as_text):
-        now_as_text = "%s" % self.time_type.now()
-        return time_as_text <= now_as_text
-    
+
+    def _time_has_expired(self, time):
+        return time <= self.time_type.now()
+
+
     def _display_alert_dialog(self, alert, event):
         text = self._format_alert_text(alert, event)
         dialog = TextDisplayDialog("Alert", text)
         dialog.ShowModal()
         dialog.Destroy()
-    
-    def _format_alert_text(self, alert, event):    
+
+    def _format_alert_text(self, alert, event):
         text1 = "Trigger time: %s\n\n" % alert[0]
         text2 = "Event: %s\n\n" % event.get_label()
         text = "%s%s%s" % (text1, text2, alert[1])
         return text
 
-                
+
 class MenuController(object):
 
     def __init__(self):
@@ -899,9 +873,10 @@ class MainPanel(wx.Panel):
     Also displays the search bar.
     """
 
-    def __init__(self, parent, config):
+    def __init__(self, parent, config, main_frame):
         wx.Panel.__init__(self, parent)
         self.config = config
+        self.main_frame = main_frame
         self._create_gui()
         # Install variables for backwards compatibility
         self.cattree = self.timeline_panel.sidebar.cattree
@@ -935,9 +910,11 @@ class MainPanel(wx.Panel):
         self.searchbar = SearchBar(self, search_close)
         self.searchbar.Show(False)
         # Panels
-        self.welcome_panel = WelcomePanel(self)
-        self.timeline_panel = TimelinePanel(self, self.config)
-        self.error_panel = ErrorPanel(self)
+        self.welcome_panel = WelcomePanel(self, self.main_frame)
+        self.timeline_panel = TimelinePanel(
+            self, self.config, self.main_frame.handle_db_error,
+            self.main_frame.status_bar_adapter, self.main_frame)
+        self.error_panel = ErrorPanel(self, self.main_frame)
         # Layout
         self.sizerOuter = wx.BoxSizer(wx.VERTICAL)
         self.sizer = wx.BoxSizer(wx.HORIZONTAL)
@@ -961,8 +938,9 @@ class MainPanel(wx.Panel):
 
 class WelcomePanel(wx.Panel):
 
-    def __init__(self, parent):
+    def __init__(self, parent, main_frame):
         wx.Panel.__init__(self, parent)
+        self.main_frame = main_frame
         self._create_gui()
 
     def _create_gui(self):
@@ -985,7 +963,7 @@ class WelcomePanel(wx.Panel):
         self.SetSizer(hsizer)
 
     def _btn_tutorial_on_click(self, e):
-        wx.GetTopLevelParent(self).open_timeline(":tutorial:")
+        self.main_frame.open_timeline(":tutorial:")
 
     def activated(self):
         pass
@@ -993,9 +971,13 @@ class WelcomePanel(wx.Panel):
 
 class TimelinePanel(wx.Panel):
 
-    def __init__(self, parent, config):
+    def __init__(self, parent, config, handle_db_error, status_bar_adapter,
+            main_frame):
         wx.Panel.__init__(self, parent)
         self.config = config
+        self.handle_db_error = handle_db_error
+        self.status_bar_adapter = status_bar_adapter
+        self.main_frame = main_frame
         self.sidebar_width = self.config.get_sidebar_width()
         self._create_gui()
 
@@ -1023,16 +1005,16 @@ class TimelinePanel(wx.Panel):
             self.sidebar_width = self.splitter.GetSashPosition()
 
     def _create_sidebar(self):
-        self.sidebar = Sidebar(self.splitter)
+        self.sidebar = Sidebar(self.splitter, self.handle_db_error)
 
     def _create_drawing_area(self):
-        main_frame = wx.GetTopLevelParent(self)
         self.drawing_area = DrawingAreaPanel(
             self.splitter,
-            main_frame.status_bar_adapter,
+            self.status_bar_adapter,
             self.divider_line_slider,
-            main_frame.handle_db_error,
-            self.config)
+            self.handle_db_error,
+            self.config,
+            self.main_frame)
 
     def _layout_components(self):
         sizer = wx.BoxSizer(wx.HORIZONTAL)
@@ -1058,8 +1040,9 @@ class TimelinePanel(wx.Panel):
 
 class ErrorPanel(wx.Panel):
 
-    def __init__(self, parent):
+    def __init__(self, parent, main_frame):
         wx.Panel.__init__(self, parent)
+        self.main_frame = main_frame
         self._create_gui()
 
     def populate(self, error):
@@ -1085,7 +1068,7 @@ class ErrorPanel(wx.Panel):
         self.SetSizer(hsizer)
 
     def _btn_contact_on_click(self, e):
-        wx.GetTopLevelParent(self).help_browser.show_page("contact")
+        self.main_frame.help_browser.show_page("contact")
 
     def activated(self):
         pass
@@ -1098,13 +1081,12 @@ class Sidebar(wx.Panel):
     Currently only shows the categories with visibility check boxes.
     """
 
-    def __init__(self, parent):
+    def __init__(self, parent, handle_db_error):
         wx.Panel.__init__(self, parent, style=wx.BORDER_NONE)
-        self._create_gui()
+        self._create_gui(handle_db_error)
 
-    def _create_gui(self):
-        main_frame = wx.GetTopLevelParent(self)
-        self.cattree = CategoriesTree(self, main_frame.handle_db_error)
+    def _create_gui(self, handle_db_error):
+        self.cattree = CategoriesTree(self, handle_db_error)
         # Layout
         sizer = wx.BoxSizer(wx.VERTICAL)
         sizer.Add(self.cattree, flag=wx.GROW, proportion=1)

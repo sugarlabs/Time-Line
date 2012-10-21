@@ -29,21 +29,22 @@ query persistent storage to retrieve data.
 """
 
 
-from timelinelib.db.interface import TimelineIOError
-from timelinelib.db.interface import TimelineDB
-from timelinelib.db.interface import STATE_CHANGE_ANY
-from timelinelib.db.interface import STATE_CHANGE_CATEGORY
-from timelinelib.db.objects import Event
-from timelinelib.db.container import Container
+from timelinelib.db.exceptions import TimelineIOError
 from timelinelib.db.objects import Category
+from timelinelib.db.objects import Container
+from timelinelib.db.objects import Event
+from timelinelib.db.observer import Observable
+from timelinelib.db.observer import STATE_CHANGE_ANY
+from timelinelib.db.observer import STATE_CHANGE_CATEGORY
+from timelinelib.db.search import generic_event_search
 from timelinelib.db.utils import IdCounter
-from timelinelib.db.utils import generic_event_search
 
 
-class MemoryDB(TimelineDB):
+class MemoryDB(Observable):
 
     def __init__(self):
-        TimelineDB.__init__(self, "")
+        Observable.__init__(self)
+        self.path = ""
         self.categories = []
         self.category_id_counter = IdCounter()
         self.events = []
@@ -117,10 +118,10 @@ class MemoryDB(TimelineDB):
             id = subevent.cid()
             if id == 0:
                 id = self._get_max_container_id(container_events) + 1
-                subevent.set_cid(id) 
+                subevent.set_cid(id)
             name = "[%d]Container" % id
-            container = Container(subevent.time_type, 
-                                  subevent.time_period.start_time, 
+            container = Container(subevent.time_type,
+                                  subevent.time_period.start_time,
                                   subevent.time_period.end_time, name)
             self.save_event(container)
             self._register_subevent(subevent)
@@ -132,7 +133,7 @@ class MemoryDB(TimelineDB):
             if id < event.cid():
                 id = event.cid()
         return id
-    
+
     def _unregister_subevent(self, subevent):
         container_events = [event for event in self.events
                             if event.is_container()]
@@ -146,7 +147,7 @@ class MemoryDB(TimelineDB):
                 self.events.remove(container)
         except:
             pass
-            
+
     def delete_event(self, event_or_id):
         if isinstance(event_or_id, Event):
             event = event_or_id
@@ -169,7 +170,7 @@ class MemoryDB(TimelineDB):
         return list(self.categories)
 
     def get_containers(self):
-        containers = [event for event in self.events 
+        containers = [event for event in self.events
                       if event.is_container()]
         return containers
 

@@ -31,22 +31,22 @@ from xml.sax.saxutils import escape as xmlescape
 import wx
 
 from timelinelib.db.backends.memory import MemoryDB
-from timelinelib.db.backends.xmlparser import ANY
-from timelinelib.db.backends.xmlparser import OPTIONAL
-from timelinelib.db.backends.xmlparser import parse
-from timelinelib.db.backends.xmlparser import parse_fn_store
-from timelinelib.db.backends.xmlparser import SINGLE
-from timelinelib.db.backends.xmlparser import Tag
-from timelinelib.db.interface import TimelineIOError
+from timelinelib.db.exceptions import TimelineIOError
 from timelinelib.db.objects import Category
+from timelinelib.db.objects import Container
 from timelinelib.db.objects import Event
-from timelinelib.db.container import Container
-from timelinelib.db.subevent import Subevent
+from timelinelib.db.objects import Subevent
 from timelinelib.db.objects import TimePeriod
 from timelinelib.db.utils import safe_write
 from timelinelib.meta.version import get_version
 from timelinelib.time import WxTimeType
 from timelinelib.utils import ex_msg
+from timelinelib.xml.parser import ANY
+from timelinelib.xml.parser import OPTIONAL
+from timelinelib.xml.parser import parse
+from timelinelib.xml.parser import parse_fn_store
+from timelinelib.xml.parser import SINGLE
+from timelinelib.xml.parser import Tag
 
 
 ENCODING = "utf-8"
@@ -111,7 +111,7 @@ class XmlTimeline(MemoryDB):
             except:
                 #TODO: Create container
                 pass
-                 
+
     def _load(self):
         """
         Load timeline data from the file that this timeline points to.
@@ -122,7 +122,7 @@ class XmlTimeline(MemoryDB):
 
         If a read error occurs a TimelineIOError will be raised.
         """
-        if not os.path.exists(self.path): 
+        if not os.path.exists(self.path):
             # Nothing to load. Will create a new timeline on save.
             return
         try:
@@ -255,7 +255,7 @@ class XmlTimeline(MemoryDB):
         time, text = alert
         time_string = self._time_string(time)
         return "%s;%s" % (time_string, text)
-    
+
     def _parse_alert_string(self, alert_string):
         if alert_string is not None:
             try:
@@ -267,13 +267,13 @@ class XmlTimeline(MemoryDB):
         else:
             alert = None
         return alert
-        
+
     def _is_container_event(self, text):
         return text.startswith("[")
 
     def _is_subevent(self, text):
         return text.startswith("(")
-            
+
     def _extract_container_id(self, text):
         str_id, text = text.split("]", 1)
         try:
@@ -282,7 +282,7 @@ class XmlTimeline(MemoryDB):
         except:
             id = -1
         return id, text
-    
+
     def _extract_subid(self, text):
         id, text = text.split(")", 1)
         try:
@@ -290,7 +290,7 @@ class XmlTimeline(MemoryDB):
         except:
             id = -1
         return id, text
-    
+
     def _parse_optional_bool(self, tmp_dict, id):
         if tmp_dict.has_key(id):
             return tmp_dict.pop(id) == "True"
@@ -326,7 +326,7 @@ class XmlTimeline(MemoryDB):
         events = [event for event in self.events if not event.is_subevent()]
         events.extend(subevents)
         self.events = events
-        
+
     def _write_xml_doc(self, file):
         file.write("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n")
         self._write_timeline(file)
@@ -379,7 +379,7 @@ class XmlTimeline(MemoryDB):
         if evt.get_data("description") is not None:
             write_simple_tag(file, "description", evt.get_data("description"),
                              INDENT3)
-        alert = evt.get_data("alert")    
+        alert = evt.get_data("alert")
         if alert is not None:
             write_simple_tag(file, "alert", self.alert_string(alert),
                              INDENT3)

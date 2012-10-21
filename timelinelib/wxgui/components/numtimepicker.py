@@ -16,12 +16,7 @@
 # along with Timeline.  If not, see <http://www.gnu.org/licenses/>.
 
 
-import os.path
-import re
-
 import wx
-
-from timelinelib.time import NumTimeType
 
 
 class NumTimePicker(wx.Panel):
@@ -29,7 +24,7 @@ class NumTimePicker(wx.Panel):
     def __init__(self, parent, show_time=False, config=None):
         wx.Panel.__init__(self, parent)
         self.time_picker = self._create_gui()
-        self.controller = NumTimePickerController(self, 0) 
+        self.controller = NumTimePickerController(self, 0)
 
     def get_value(self):
         return self.time_picker.GetValue()
@@ -59,7 +54,6 @@ class NumTimePicker(wx.Panel):
 class NumTimePickerController(object):
 
     def __init__(self, time_picker, default_num_time):
-        import sys
         self.time_picker = time_picker
         self.time_picker.set_range(-10000, 10000)
         self.default_num_time = default_num_time

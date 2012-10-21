@@ -22,7 +22,7 @@ from mock import Mock
 
 from timelinelib.application import TimelineApplication
 from timelinelib.config.dotfile import Config
-from timelinelib.db.interface import TimelineIOError
+from timelinelib.db.exceptions import TimelineIOError
 from timelinelib.wxgui.dialogs.mainframe import MainFrame
 
 
@@ -65,7 +65,7 @@ class MainFrameSpec(unittest.TestCase):
         self.main_frame = Mock(MainFrame)
         self.db_open = Mock()
         self.config = Mock(Config)
-        self.config.get_use_wide_date_range.return_value = self.USE_WIDE_DATE_RANGE 
+        self.config.get_use_wide_date_range.return_value = self.USE_WIDE_DATE_RANGE
         self.controller = TimelineApplication(
             self.main_frame, self.db_open, self.config)
 

@@ -51,7 +51,7 @@ class EventEditorTestCase(unittest.TestCase):
 
     def when_editor_opened_with(self, start, end, event):
         self.editor = EventEditor(self.view)
-        self.editor.edit(PyTimeType(), self.event_repository, self.timeline, 
+        self.editor.edit(PyTimeType(), self.event_repository, self.timeline,
                          start, end, event)
 
     def simulate_user_enters_start_time(self, time):
@@ -152,6 +152,26 @@ class describe_event_editor__locked_checkbox(EventEditorTestCase):
         event.locked = sentinel.LOCKED
         self.when_editor_opened_with_event(event)
         self.view.set_locked.assert_called_with(sentinel.LOCKED)
+
+    def test_new_event_starting_in_history(self):
+        self.when_editor_opened_with_time("1 Jan 3010")
+        self.assertFalse(self.editor.start_is_in_history())
+
+    def test_new_event_not_starting_in_history(self):
+        self.when_editor_opened_with_time("1 Jan 2010")
+        self.assertTrue(self.editor.start_is_in_history())
+
+    def test_event_not_starting_in_history(self):
+        event = Mock()
+        event.time_period.start_time = human_time_to_py("1 Jan 3010")
+        self.when_editor_opened_with_event(event)
+        self.assertFalse(self.editor.start_is_in_history())
+
+    def test_event_starting_in_history(self):
+        event = Mock()
+        event.time_period.start_time = human_time_to_py("1 Jan 2010")
+        self.when_editor_opened_with_event(event)
+        self.assertTrue(self.editor.start_is_in_history())
 
 
 class describe_event_editor__ends_today_checkbox(EventEditorTestCase):

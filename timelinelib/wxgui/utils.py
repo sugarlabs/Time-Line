@@ -18,8 +18,8 @@
 
 import wx
 
-from timelinelib.db.interface import TimelineIOError
-from timelinelib.domain.category import sort_categories
+from timelinelib.db.exceptions import TimelineIOError
+from timelinelib.db.objects.category import sort_categories
 
 
 # Border, in pixels, between controls in a window (should always be used when
@@ -146,7 +146,7 @@ def set_wait_cursor(parent):
 
 
 def set_default_cursor(parent):
-    parent.SetCursor(wx.StockCursor(wx.CURSOR_DEFAULT))    
+    parent.SetCursor(wx.StockCursor(wx.CURSOR_DEFAULT))
 
 
 def time_picker_for(time_type):

@@ -138,7 +138,8 @@ class TimelineViewSpec(unittest.TestCase):
 
     def test_zooms_timeline_by_10_percent_on_each_side_when_scrolling_while_holding_down_ctrl(self):
         self.init_view_with_db_with_period("1 Aug 2010", "21 Aug 2010")
-        self.controller.mouse_wheel_moved(1, ctrl_down=True, shift_down=False)
+        self.controller.mouse_wheel_moved(
+            1, ctrl_down=True, shift_down=False, x=self.middle_x)
         self.assert_displays_period("3 Aug 2010", "19 Aug 2010")
 
     def test_displays_balloon_for_event_with_description(self):
@@ -207,7 +208,7 @@ class TimelineViewSpec(unittest.TestCase):
         event = self.given_event_with(pos=(40, 60), size=(20, 10))
         self.init_view_with_db()
         self.simulate_mouse_double_click(50, 65)
-        self.view.edit_event.assert_called_with(event)
+        self.view.open_event_editor_for.assert_called_with(event)
         self.assert_timeline_redrawn()
 
     def test_selects_and_deselects_event_when_clicking_on_it(self):
@@ -318,10 +319,12 @@ class TimelineViewSpec(unittest.TestCase):
 
     def test_scrolls_with_10_percent_when_using_mouse_wheel(self):
         self.init_view_with_db_with_period("1 Aug 2010", "21 Aug 2010")
-        self.controller.mouse_wheel_moved(-1, ctrl_down=False, shift_down=False)
+        self.controller.mouse_wheel_moved(
+            -1, ctrl_down=False, shift_down=False, x=self.middle_x)
         self.assert_displays_period("3 Aug 2010", "23 Aug 2010")
         self.assert_timeline_redrawn()
-        self.controller.mouse_wheel_moved(1, ctrl_down=False, shift_down=False)
+        self.controller.mouse_wheel_moved(
+            1, ctrl_down=False, shift_down=False, x=self.middle_x)
         self.assert_displays_period("1 Aug 2010", "21 Aug 2010")
         self.assert_timeline_redrawn()
 
@@ -346,7 +349,8 @@ class TimelineViewSpec(unittest.TestCase):
 
     def test_shift_scroll_changes_divider_line_value_and_redraws(self):
         self.init_view_with_db()
-        self.controller.mouse_wheel_moved(1, ctrl_down=False, shift_down=True)
+        self.controller.mouse_wheel_moved(
+            1, ctrl_down=False, shift_down=True, x=self.middle_x)
         self.assertTrue(self.divider_line_slider.SetValue.called)
         self.assert_timeline_redrawn()
 
@@ -357,7 +361,9 @@ class TimelineViewSpec(unittest.TestCase):
     def setUp(self):
         self.db = MemoryDB()
         self.view = Mock(DrawingAreaPanel)
-        self.view.GetSizeTuple.return_value = (10, 10)
+        self.width = 10
+        self.middle_x = self.width / 2
+        self.view.GetSizeTuple.return_value = (self.width, 10)
         self.status_bar_adapter = Mock(StatusBarAdapter)
         self.config = Mock(Config)
         self.mock_drawer = MockDrawer()
@@ -462,7 +468,7 @@ class TimelineViewSpec(unittest.TestCase):
         self.assertTrue(self.view.redraw_surface.called)
 
     def assert_created_event_with_period(self, start, end):
-        self.view.create_new_event.assert_called_with(
+        self.view.open_create_event_editor.assert_called_with(
             human_time_to_py(start), human_time_to_py(end))
 
     def assert_is_selected(self, event):

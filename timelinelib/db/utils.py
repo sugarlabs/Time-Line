@@ -20,7 +20,7 @@ import codecs
 import os
 import os.path
 
-from timelinelib.db.interface import TimelineIOError
+from timelinelib.db.exceptions import TimelineIOError
 
 
 class IdCounter(object):
@@ -31,16 +31,6 @@ class IdCounter(object):
     def get_next(self):
         self.id += 1
         return self.id
-
-
-def generic_event_search(events, search_string):
-    def match(event):
-        return search_string.lower() in event.text.lower()
-    def mean_time(event):
-        return event.mean_time()
-    matches = [event for event in events if match(event)]
-    matches.sort(key=mean_time)
-    return matches
 
 
 def safe_write(path, encoding, write_fn):

@@ -56,7 +56,7 @@ class SceneSpec(unittest.TestCase):
         self.given_visible_event_at("5 Jan 2010")
         self.given_visible_event_at("5 Jan 2010")
         self.when_scene_is_created()
-        self.assertTrue(self.scene.event_data[0][1].Y > 
+        self.assertTrue(self.scene.event_data[0][1].Y >
                         self.scene.event_data[1][1].Y)
 
     def test_point_events_on_different_dates_has_same_y_positions(self):
@@ -64,7 +64,7 @@ class SceneSpec(unittest.TestCase):
         self.given_visible_event_at("2 Jan 2010")
         self.given_visible_event_at("9 Jan 2010")
         self.when_scene_is_created()
-        self.assertEqual(self.scene.event_data[0][1].Y, 
+        self.assertEqual(self.scene.event_data[0][1].Y,
                          self.scene.event_data[1][1].Y)
 
     def test_period_events_with_same_period_has_different_y_positions(self):
@@ -72,7 +72,7 @@ class SceneSpec(unittest.TestCase):
         self.given_visible_event_at("2 Jan 2010", "10 Jan 2010")
         self.given_visible_event_at("2 Jan 2010", "10 Jan 2010")
         self.when_scene_is_created()
-        self.assertTrue(self.scene.event_data[0][1].Y < 
+        self.assertTrue(self.scene.event_data[0][1].Y <
                         self.scene.event_data[1][1].Y)
 
     def test_period_events_with_different_periods_has_same_y_positions(self):
@@ -80,9 +80,17 @@ class SceneSpec(unittest.TestCase):
         self.given_visible_event_at("2 Jan 2010", "3 Jan 2010")
         self.given_visible_event_at("8 Jan 2010", "10 Jan 2010")
         self.when_scene_is_created()
-        self.assertEqual(self.scene.event_data[0][1].Y, 
+        self.assertEqual(self.scene.event_data[0][1].Y,
                          self.scene.event_data[1][1].Y)
 
+    def test_scene_must_be_created_at_last_century(self):
+        self.given_displayed_period("1 Jan 9890", "1 Jan 9990")
+        try:
+            self.when_scene_is_created()
+            self.assertTrue(self.scene != None)
+        except:
+            self.assertTrue(False)
+        
     def setUp(self):
         self.db = MemoryDB()
         self.view_properties = ViewProperties()
@@ -112,7 +120,7 @@ class SceneSpec(unittest.TestCase):
         category = Category("category", (0, 0, 0), None, visible)
         if end_time is None:
             end_time = start_time
-        event = Event(self.db.get_time_type(), human_time_to_py(start_time), 
+        event = Event(self.db.get_time_type(), human_time_to_py(start_time),
                       human_time_to_py(end_time), "event-text", category)
         self.db.save_category(category)
         self.db.save_event(event)

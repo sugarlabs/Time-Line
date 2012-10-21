@@ -21,11 +21,11 @@ import unittest
 from mock import Mock, sentinel
 
 from specs.utils import an_event_with, human_time_to_py, ObjectWithTruthValue
+from timelinelib.db.backends.memory import MemoryDB
+from timelinelib.db.objects import Container
 from timelinelib.editors.container import ContainerEditor
 from timelinelib.repositories.interface import EventRepository
 from timelinelib.wxgui.dialogs.eventeditor import ContainerEditorDialog
-from timelinelib.db.backends.memory import MemoryDB
-from timelinelib.db.container import Container
 
 
 class ContainerEditorTestCase(unittest.TestCase):
@@ -42,25 +42,24 @@ class ContainerEditorTestCase(unittest.TestCase):
         self.given_editor_without_container()
         self.view.set_name.assert_called_with("")
         self.view.set_category.assert_called_with(None)
-                  
+
     def testConstructionWithContainer(self):
         self.given_editor_with_container()
         self.view.set_name.assert_called_with("Container1")
         self.view.set_category.assert_called_with(None)
-                  
+
     def testContainerCreated(self):
         self.given_editor_without_container()
         self.editor.save()
         self.view.get_name.assert_called()
         self.view.get_category.assert_called()
         self.assertFalse(self.editor.container == None)
-                          
+
     def given_editor_without_container(self):
         self.editor = ContainerEditor(self.view, self.db, None)
 
     def given_editor_with_container(self):
         self.editor = ContainerEditor(self.view, self.db, self.container)
-                          
+
     def time(self, tm):
         return self.db.get_time_type().parse_time(tm)
-        

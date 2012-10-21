@@ -20,14 +20,20 @@ import wx
 
 from timelinelib.drawing import get_drawer
 from timelinelib.view.drawingarea import DrawingArea
+from timelinelib.wxgui.dialogs.duplicateevent import open_duplicate_event_dialog_for_event
+from timelinelib.wxgui.dialogs.eventeditor import open_create_event_editor
+from timelinelib.wxgui.dialogs.eventeditor import open_event_editor_for
 from timelinelib.wxgui.utils import _ask_question
 
 
 class DrawingAreaPanel(wx.Panel):
 
     def __init__(self, parent, status_bar_adapter, divider_line_slider,
-                 fn_handle_db_error, config):
+                 fn_handle_db_error, config, main_frame):
         wx.Panel.__init__(self, parent, style=wx.NO_BORDER)
+        self.fn_handle_db_error = fn_handle_db_error
+        self.config = config
+        self.main_frame = main_frame
         self.controller = DrawingArea(
             self, status_bar_adapter, config, get_drawer(),
             divider_line_slider, fn_handle_db_error)
@@ -79,16 +85,31 @@ class DrawingAreaPanel(wx.Panel):
         self.Update()
 
     def enable_disable_menus(self):
-        wx.GetTopLevelParent(self).enable_disable_menus()
+        self.main_frame.enable_disable_menus()
 
-    def edit_event(self, event):
-        wx.GetTopLevelParent(self).edit_event(event)
+    def open_event_editor_for(self, event):
+        open_event_editor_for(
+            self,
+            self.config,
+            self.controller.get_timeline(),
+            self.fn_handle_db_error,
+            event)
 
-    def duplicate_event(self, event):
-        wx.GetTopLevelParent(self).duplicate_event(event)
+    def open_duplicate_event_dialog_for_event(self, event):
+        open_duplicate_event_dialog_for_event(
+            self,
+            self.controller.get_timeline(),
+            self.fn_handle_db_error,
+            event)
 
-    def create_new_event(self, start_time, end_time):
-        wx.GetTopLevelParent(self).create_new_event(start_time, end_time)
+    def open_create_event_editor(self, start_time, end_time):
+        open_create_event_editor(
+            self,
+            self.config,
+            self.controller.get_timeline(),
+            self.fn_handle_db_error,
+            start_time,
+            end_time)
 
     def start_balloon_show_timer(self, milliseconds=-1, oneShot=False):
         self.balloon_show_timer.Start(milliseconds, oneShot)
@@ -164,7 +185,7 @@ class DrawingAreaPanel(wx.Panel):
         self.controller.window_resized()
 
     def _on_left_down(self, evt):
-        self.controller.left_mouse_down(evt.m_x, evt.m_y, evt.m_controlDown, 
+        self.controller.left_mouse_down(evt.m_x, evt.m_y, evt.m_controlDown,
                                         evt.m_shiftDown, evt.m_altDown)
         evt.Skip()
 
@@ -172,7 +193,7 @@ class DrawingAreaPanel(wx.Panel):
         self.controller.right_mouse_down(evt.m_x, evt.m_y, evt.m_altDown)
 
     def _on_left_dclick(self, evt):
-        self.controller.left_mouse_dclick(evt.m_x, evt.m_y, evt.m_controlDown, 
+        self.controller.left_mouse_dclick(evt.m_x, evt.m_y, evt.m_controlDown,
                                           evt.m_altDown)
 
     def _on_middle_up(self, evt):
@@ -188,7 +209,7 @@ class DrawingAreaPanel(wx.Panel):
         self.controller.mouse_moved(evt.m_x, evt.m_y, evt.m_altDown)
 
     def _on_mousewheel(self, evt):
-        self.controller.mouse_wheel_moved(evt.m_wheelRotation, evt.ControlDown(), evt.ShiftDown())
+        self.controller.mouse_wheel_moved(evt.m_wheelRotation, evt.ControlDown(), evt.ShiftDown(), evt.GetX())
 
     def _on_key_down(self, evt):
         self.controller.key_down(evt.GetKeyCode(), evt.AltDown())
