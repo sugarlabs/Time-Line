@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-15 00:32-0400\n"
+"POT-Creation-Date: 2012-10-22 00:31-0400\n"
 "PO-Revision-Date: 2012-03-20 10:55+0200\n"
 "Last-Translator: Meechai <malaku38@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,154 +17,159 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.0.5\n"
 
-#: activity/activity.info:2
+#. TRANS: "name" option from activity.info file
 msgid "Time Line"
 msgstr "Time Line"
 
-#: specs/EventEditor.py:351 timelinelib/editors/event.py:153
+#. TRANS: "summary" option from activity.info file
+#. TRANS: "description" option from activity.info file
+msgid "Allows create interactive time lines"
+msgstr ""
+
+#: specs/EventEditor.py:370 timelinelib/editors/event.py:156
 msgid "You can't change time when the Event is locked"
 msgstr "คุณไม่สามารถเปลี่ยนเวลาถ้าเหตุการณ์นี้ถูกล็อก"
 
-#: specs/MonthNames.py:34 timelinelib/calendar/monthnames.py:38
+#: specs/MonthNames.py:33 timelinelib/calendar/monthnames.py:37
 msgid "Jan"
 msgstr "ชื่อย่อของเดือน มกราคม"
 
-#: specs/MonthNames.py:49 timelinelib/calendar/monthnames.py:49
+#: specs/MonthNames.py:48 timelinelib/calendar/monthnames.py:48
 msgid "Dec"
 msgstr "ชื่อย่อของเดือนธันวาคม"
 
-#: specs/PyTimeType.py:57 specs/WxTimeType.py:83
-#: timelinelib/calendar/monthnames.py:45
+#: specs/PyTimeType.py:56 specs/WxTimeType.py:82
+#: timelinelib/calendar/monthnames.py:44
 msgid "Aug"
 msgstr "ชื่อย่อของเดือนสิงหาคม"
 
-#: specs/PyTimeType.py:111 specs/PyTimeType.py:131 specs/PyTimeType.py:147
-#: specs/PyTimeType.py:151 specs/WxTimeType.py:151 specs/WxTimeType.py:167
-#: specs/WxTimeType.py:171 timelinelib/time/pytime.py:123
-#: timelinelib/time/wxtime.py:126
+#: specs/PyTimeType.py:110 specs/PyTimeType.py:130 specs/PyTimeType.py:146
+#: specs/PyTimeType.py:150 specs/WxTimeType.py:150 specs/WxTimeType.py:166
+#: specs/WxTimeType.py:170 timelinelib/time/pytime.py:122
+#: timelinelib/time/wxtime.py:120
 msgid "day"
 msgstr "วัน"
 
-#: specs/PyTimeType.py:115 specs/PyTimeType.py:139 specs/PyTimeType.py:159
-#: specs/WxTimeType.py:135 specs/WxTimeType.py:159 specs/WxTimeType.py:179
-#: timelinelib/time/pytime.py:131 timelinelib/time/wxtime.py:134
+#: specs/PyTimeType.py:114 specs/PyTimeType.py:138 specs/PyTimeType.py:158
+#: specs/WxTimeType.py:134 specs/WxTimeType.py:158 specs/WxTimeType.py:178
+#: timelinelib/time/pytime.py:130 timelinelib/time/wxtime.py:128
 msgid "minute"
 msgstr "นาที"
 
-#: specs/PyTimeType.py:119 specs/PyTimeType.py:143 specs/PyTimeType.py:163
-#: specs/WxTimeType.py:139 specs/WxTimeType.py:163 specs/WxTimeType.py:183
-#: timelinelib/time/pytime.py:133 timelinelib/time/wxtime.py:136
+#: specs/PyTimeType.py:118 specs/PyTimeType.py:142 specs/PyTimeType.py:162
+#: specs/WxTimeType.py:138 specs/WxTimeType.py:162 specs/WxTimeType.py:182
+#: timelinelib/time/pytime.py:132 timelinelib/time/wxtime.py:130
 msgid "minutes"
 msgstr "หลายนาที"
 
-#: specs/PyTimeType.py:123 specs/PyTimeType.py:139 specs/PyTimeType.py:143
-#: specs/PyTimeType.py:147 specs/WxTimeType.py:143 specs/WxTimeType.py:159
-#: specs/WxTimeType.py:163 specs/WxTimeType.py:167
-#: timelinelib/time/pytime.py:127 timelinelib/time/wxtime.py:130
+#: specs/PyTimeType.py:122 specs/PyTimeType.py:138 specs/PyTimeType.py:142
+#: specs/PyTimeType.py:146 specs/WxTimeType.py:142 specs/WxTimeType.py:158
+#: specs/WxTimeType.py:162 specs/WxTimeType.py:166
+#: timelinelib/time/pytime.py:126 timelinelib/time/wxtime.py:124
 msgid "hour"
 msgstr "ชั่วโมง"
 
-#: specs/PyTimeType.py:127 specs/PyTimeType.py:151 specs/PyTimeType.py:155
-#: specs/PyTimeType.py:159 specs/PyTimeType.py:163 specs/WxTimeType.py:147
-#: specs/WxTimeType.py:171 specs/WxTimeType.py:175 specs/WxTimeType.py:179
-#: specs/WxTimeType.py:183 specs/WxTimeType.py:187
-#: timelinelib/time/pytime.py:129 timelinelib/time/wxtime.py:132
+#: specs/PyTimeType.py:126 specs/PyTimeType.py:150 specs/PyTimeType.py:154
+#: specs/PyTimeType.py:158 specs/PyTimeType.py:162 specs/WxTimeType.py:146
+#: specs/WxTimeType.py:170 specs/WxTimeType.py:174 specs/WxTimeType.py:178
+#: specs/WxTimeType.py:182 specs/WxTimeType.py:186
+#: timelinelib/time/pytime.py:128 timelinelib/time/wxtime.py:126
 msgid "hours"
 msgstr "หลายชั่วโมง"
 
-#: specs/PyTimeType.py:135 specs/PyTimeType.py:155 specs/PyTimeType.py:159
-#: specs/PyTimeType.py:163 specs/PyTimeType.py:167 specs/PyTimeType.py:173
-#: specs/WxTimeType.py:155 specs/WxTimeType.py:175 specs/WxTimeType.py:179
-#: specs/WxTimeType.py:183 specs/WxTimeType.py:187 specs/WxTimeType.py:193
-#: timelinelib/time/pytime.py:125 timelinelib/time/wxtime.py:128
+#: specs/PyTimeType.py:134 specs/PyTimeType.py:154 specs/PyTimeType.py:158
+#: specs/PyTimeType.py:162 specs/PyTimeType.py:166 specs/PyTimeType.py:172
+#: specs/WxTimeType.py:154 specs/WxTimeType.py:174 specs/WxTimeType.py:178
+#: specs/WxTimeType.py:182 specs/WxTimeType.py:186 specs/WxTimeType.py:192
+#: timelinelib/time/pytime.py:124 timelinelib/time/wxtime.py:122
 msgid "days"
 msgstr "หลายวัน"
 
-#: specs/TimelineView.py:67 timelinelib/view/zoom.py:29
+#: specs/TimelineView.py:66 timelinelib/view/zoom.py:28
 msgid "Select region to zoom into"
 msgstr "เลือกบริเวณที่จะ ขยาย ภาพ"
 
-#: specs/TimelineView.py:75 timelinelib/view/zoom.py:39
+#: specs/TimelineView.py:74 timelinelib/view/zoom.py:38
 msgid "Region too short"
 msgstr "บริเวณสั้นเกินไป"
 
-#: specs/TimelineView.py:91 timelinelib/view/zoom.py:36
+#: specs/TimelineView.py:90 timelinelib/view/zoom.py:35
 msgid "Region too long"
 msgstr "บริเวณยาวเกินไป"
 
-#: specs/TimelineView.py:191 timelinelib/view/drawingarea.py:169
+#: specs/TimelineView.py:191 timelinelib/view/drawingarea.py:168
 msgid "Can't scroll more to the left"
 msgstr "ไม่สามารถเลื่อนไปทางซ้ายได้อีก"
 
-#: specs/TimelineView.py:198 timelinelib/view/drawingarea.py:171
+#: specs/TimelineView.py:198 timelinelib/view/drawingarea.py:170
 msgid "Can't scroll more to the right"
 msgstr "ไม่สามารถเลื่อนไปทางขวาได้อีก"
 
-#: specs/WeekdayNames.py:29 timelinelib/calendar/weekdaynames.py:22
+#: specs/WeekdayNames.py:28 timelinelib/calendar/weekdaynames.py:21
 msgid "Mon"
 msgstr "จ."
 
-#: specs/WeekdayNames.py:34 timelinelib/calendar/weekdaynames.py:28
+#: specs/WeekdayNames.py:33 timelinelib/calendar/weekdaynames.py:27
 msgid "Sun"
 msgstr "อา."
 
-#: timelinelib/calendar/monthnames.py:39
+#: timelinelib/calendar/monthnames.py:38
 msgid "Feb"
 msgstr "ชื่อย่อ ของเดือนกุมภาพันธ์"
 
-#: timelinelib/calendar/monthnames.py:40
+#: timelinelib/calendar/monthnames.py:39
 msgid "Mar"
 msgstr "ชื่อย่อ ของเดือนมีนาคม"
 
-#: timelinelib/calendar/monthnames.py:41
+#: timelinelib/calendar/monthnames.py:40
 msgid "Apr"
 msgstr "ชื่อย่อ ของเดือนเมษายน"
 
-#: timelinelib/calendar/monthnames.py:42
+#: timelinelib/calendar/monthnames.py:41
 msgid "May"
 msgstr "ชื่อย่อ ของเดือนพฤษภาคม"
 
-#: timelinelib/calendar/monthnames.py:43
+#: timelinelib/calendar/monthnames.py:42
 msgid "Jun"
 msgstr "ชื่อย่อ ของเดือนมิถุนายน"
 
-#: timelinelib/calendar/monthnames.py:44
+#: timelinelib/calendar/monthnames.py:43
 msgid "Jul"
 msgstr "ชื่อย่อ ของเดือนกรกฎาคม"
 
-#: timelinelib/calendar/monthnames.py:46
+#: timelinelib/calendar/monthnames.py:45
 msgid "Sep"
 msgstr "ชื่อย่อ ของเดือนกันยายน"
 
-#: timelinelib/calendar/monthnames.py:47
+#: timelinelib/calendar/monthnames.py:46
 msgid "Oct"
 msgstr "ชื่อย่อ ของเดือนตุลาคม"
 
-#: timelinelib/calendar/monthnames.py:48
+#: timelinelib/calendar/monthnames.py:47
 msgid "Nov"
 msgstr "ชื่อย่อ ของเดือนพฤศจิกายน"
 
-#: timelinelib/calendar/weekdaynames.py:23
+#: timelinelib/calendar/weekdaynames.py:22
 msgid "Tue"
 msgstr "วันอังคาร"
 
-#: timelinelib/calendar/weekdaynames.py:24
+#: timelinelib/calendar/weekdaynames.py:23
 msgid "Wed"
 msgstr "วันพุธ"
 
-#: timelinelib/calendar/weekdaynames.py:25
+#: timelinelib/calendar/weekdaynames.py:24
 msgid "Thu"
 msgstr "วันพฤหัสบดี"
 
-#: timelinelib/calendar/weekdaynames.py:26
+#: timelinelib/calendar/weekdaynames.py:25
 msgid "Fri"
 msgstr "วันศุกร์"
 
-#: timelinelib/calendar/weekdaynames.py:27
+#: timelinelib/calendar/weekdaynames.py:26
 msgid "Sat"
 msgstr "วันเสาร์"
 
-#: timelinelib/db/__init__.py:74
+#: timelinelib/db/__init__.py:67
 msgid ""
 "Could not find iCalendar Python package. It is required for working with ICS "
 "files. See the Timeline website or the INSTALL file for instructions how to "
@@ -173,23 +178,23 @@ msgstr ""
 "ไม่สามารถหา iCalendar Phythonpackage.มันถูกต้องการสำหรับการทำงานกับ ICS "
 "ไฟล์.ดู Timeline หรือ install ไฟล์สำหรับคำแนะนำในการ install"
 
-#: timelinelib/db/__init__.py:79
+#: timelinelib/db/__init__.py:72
 #, python-format
 msgid "Unable to open timeline '%s'."
 msgstr "ไม่สามารถ เปิด timeline '%s'."
 
-#: timelinelib/db/__init__.py:80
+#: timelinelib/db/__init__.py:73
 msgid "Unknown format."
 msgstr "ไม่รู้จัก รูปแบบ นี้"
 
-#: timelinelib/db/backends/dir.py:106 timelinelib/db/backends/file.py:126
-#: timelinelib/db/backends/ics.py:156
+#: timelinelib/db/backends/dir.py:105 timelinelib/db/backends/file.py:114
+#: timelinelib/db/backends/ics.py:137
 #, python-format
 msgid "Unable to read from file '%s'."
 msgstr "ไม่สามารถอ่านไฟล์ '%s'."
 
-#: timelinelib/db/backends/file.py:119 timelinelib/db/backends/ics.py:150
-#: timelinelib/db/backends/xmlfile.py:143
+#: timelinelib/db/backends/file.py:107 timelinelib/db/backends/ics.py:131
+#: timelinelib/db/backends/xmlfile.py:142
 #, python-format
 msgid "Unable to read timeline data from '%s'."
 msgstr "ไม่สามารถอ่านข้อมูล timelime จาก '%s'."
@@ -198,48 +203,36 @@ msgstr "ไม่สามารถอ่านข้อมูล timelime จ�
 msgid "Displayed period must be > 0."
 msgstr "การดูช่วงต้อง > 0"
 
-#: timelinelib/db/objects.py:250
-msgid "Start time "
-msgstr "เวลาเริ่มต้น "
-
-#: timelinelib/db/objects.py:252
-msgid "End time "
-msgstr "เวลาสิ้นสุด "
-
-#: timelinelib/db/objects.py:262
-msgid "Start time can't be after end time"
-msgstr "ไม่สามารถเริ่มต้นเวลาได้หลังจากหมดเวลา"
-
-#: timelinelib/db/tutorial.py:31
+#: timelinelib/db/backends/tutorial.py:30 timelinelib/db/tutorial.py:30
 msgid "Welcome"
 msgstr "ยินดีต้อนรับ"
 
-#: timelinelib/db/tutorial.py:33
+#: timelinelib/db/backends/tutorial.py:32 timelinelib/db/tutorial.py:32
 msgid "Welcome to Timeline"
 msgstr "ยินดีต้อนรับ สู่ TimeLine"
 
-#: timelinelib/db/tutorial.py:36
+#: timelinelib/db/backends/tutorial.py:35 timelinelib/db/tutorial.py:35
 msgid "Intro"
 msgstr "การเปิดตัว"
 
-#: timelinelib/db/tutorial.py:38
+#: timelinelib/db/backends/tutorial.py:37 timelinelib/db/tutorial.py:37
 #, fuzzy
 msgid "Hover me!"
 msgstr "Hover me!"
 
-#: timelinelib/db/tutorial.py:39
+#: timelinelib/db/backends/tutorial.py:38 timelinelib/db/tutorial.py:38
 msgid "Hovering events with a triangle shows the event description."
 msgstr "เหตุการณ์ Hovering ที่มีรูปสามเหลี่ยมแสดงให้เห็นถึงคำอธิบายของเหตุการณ์"
 
-#: timelinelib/db/tutorial.py:41
+#: timelinelib/db/backends/tutorial.py:40 timelinelib/db/tutorial.py:40
 msgid "Features"
 msgstr "คุณสมบัติ"
 
-#: timelinelib/db/tutorial.py:43
+#: timelinelib/db/backends/tutorial.py:42 timelinelib/db/tutorial.py:42
 msgid "Scroll"
 msgstr "เลื่อน"
 
-#: timelinelib/db/tutorial.py:44
+#: timelinelib/db/backends/tutorial.py:43 timelinelib/db/tutorial.py:43
 msgid ""
 "Left click somewhere on the timeline and start dragging.\n"
 "\n"
@@ -253,11 +246,11 @@ msgstr ""
 "\n"
 "คุณสามารถใช้ คลิกกลาง กับ เม้าส์ เพื่อ ศูนย์รอบจุดบริเวณ"
 
-#: timelinelib/db/tutorial.py:52
+#: timelinelib/db/backends/tutorial.py:51 timelinelib/db/tutorial.py:51
 msgid "Zoom"
 msgstr "ขยาย"
 
-#: timelinelib/db/tutorial.py:53
+#: timelinelib/db/backends/tutorial.py:52 timelinelib/db/tutorial.py:52
 msgid ""
 "Hold down Ctrl while scrolling the mouse wheel.\n"
 "\n"
@@ -267,11 +260,12 @@ msgstr ""
 "\n"
 "กด shift ระหว่าง เลื่อน เม้าส์"
 
-#: timelinelib/db/tutorial.py:59 timelinelib/help/pages.py:127
+#: timelinelib/db/backends/tutorial.py:58 timelinelib/db/tutorial.py:58
+#: timelinelib/help/pages.py:126
 msgid "Create event"
 msgstr "สร้างเหตุการณ์"
 
-#: timelinelib/db/tutorial.py:60
+#: timelinelib/db/backends/tutorial.py:59 timelinelib/db/tutorial.py:59
 msgid ""
 "Double click somewhere on the timeline.\n"
 "\n"
@@ -281,19 +275,20 @@ msgstr ""
 "\n"
 "กด Ctrl ไปด้วยขณะเลื่อนเพื่อ เลือก ระยะเวลา"
 
-#: timelinelib/db/tutorial.py:66 timelinelib/help/pages.py:144
+#: timelinelib/db/backends/tutorial.py:65 timelinelib/db/tutorial.py:65
+#: timelinelib/help/pages.py:143
 msgid "Edit event"
 msgstr "แก้ไขเหตุการณ์"
 
-#: timelinelib/db/tutorial.py:67
+#: timelinelib/db/backends/tutorial.py:66 timelinelib/db/tutorial.py:66
 msgid "Double click on an event."
 msgstr "double คลิ๊ก ในบริเวณในเหตุการณ์"
 
-#: timelinelib/db/tutorial.py:71
+#: timelinelib/db/backends/tutorial.py:70 timelinelib/db/tutorial.py:70
 msgid "Select event"
 msgstr "เลือก เหตุการณ์"
 
-#: timelinelib/db/tutorial.py:72
+#: timelinelib/db/backends/tutorial.py:71 timelinelib/db/tutorial.py:71
 msgid ""
 "Click on it.\n"
 "\n"
@@ -303,27 +298,30 @@ msgstr ""
 "\n"
 "กด ctrl ขณะ คลิ๊กเหตุการณ์ เพื่อเลือกได้หลายเหตูการณ์"
 
-#: timelinelib/db/tutorial.py:78 timelinelib/help/pages.py:169
+#: timelinelib/db/backends/tutorial.py:77 timelinelib/db/tutorial.py:77
+#: timelinelib/help/pages.py:168
 msgid "Delete event"
 msgstr "ลบเหตุการณ์"
 
-#: timelinelib/db/tutorial.py:79
+#: timelinelib/db/backends/tutorial.py:78 timelinelib/db/tutorial.py:78
 msgid "Select events to be deleted and press the Del key."
 msgstr "เลือกเหตุการณ์เพื่อลบ โดยการกดปุ่ม delete"
 
-#: timelinelib/db/tutorial.py:83
+#: timelinelib/db/backends/tutorial.py:82 timelinelib/db/tutorial.py:82
 msgid "Resize and move me!"
 msgstr "ปรับขนาดใหม่และย้ายฉัน"
 
-#: timelinelib/db/tutorial.py:84
+#: timelinelib/db/backends/tutorial.py:83 timelinelib/db/tutorial.py:83
 msgid "First select me and then drag the handles."
 msgstr "เลือกฉันก่อนแล้วใช้ตัวจัดการเพื่อลาก"
 
-#: timelinelib/db/tutorial.py:87 timelinelib/db/tutorial.py:89
+#: timelinelib/db/backends/tutorial.py:86
+#: timelinelib/db/backends/tutorial.py:88 timelinelib/db/tutorial.py:86
+#: timelinelib/db/tutorial.py:88
 msgid "Saving"
 msgstr "กำลังบันทึก"
 
-#: timelinelib/db/tutorial.py:90
+#: timelinelib/db/backends/tutorial.py:89 timelinelib/db/tutorial.py:89
 msgid ""
 "This timeline is stored in memory and modifications to it will not be "
 "persisted between sessions.\n"
@@ -335,36 +333,48 @@ msgstr ""
 "\n"
 "เลือกไฟล์/ไฟล์ใหม่/ไฟล์ timeline เพื่อสร้าง timeline ที่ถูกเซฟลงดิสกฺ์"
 
-#: timelinelib/db/utils.py:56
+#: timelinelib/db/objects.py:252 timelinelib/db/objects/timeperiod.py:72
+msgid "Start time "
+msgstr "เวลาเริ่มต้น "
+
+#: timelinelib/db/objects.py:254 timelinelib/db/objects/timeperiod.py:74
+msgid "End time "
+msgstr "เวลาสิ้นสุด "
+
+#: timelinelib/db/objects.py:264 timelinelib/db/objects/timeperiod.py:84
+msgid "Start time can't be after end time"
+msgstr "ไม่สามารถเริ่มต้นเวลาได้หลังจากหมดเวลา"
+
+#: timelinelib/db/utils.py:45
 #, python-format
 msgid "Unable to save timeline data to '%s'. File left unmodified."
 msgstr "ไม่สามารถบันทึกข้อมูลได้ที่ '%s' ไฟล์ยังไม่ได้เปลี่ยนแปลง"
 
-#: timelinelib/db/utils.py:71
+#: timelinelib/db/utils.py:60
 msgid "Unable to write timeline data."
 msgstr "ไม่สามารถเขียนข้อมูลได้"
 
-#: timelinelib/db/utils.py:75
+#: timelinelib/db/utils.py:64
 #, python-format
 msgid "Unable to write to temporary file '%s'."
 msgstr "ไม่สามารถเขียนเป็นไฟล์ชั่วคราวได้ที่ '%s'."
 
-#: timelinelib/db/utils.py:81
+#: timelinelib/db/utils.py:70
 #, python-format
 msgid "Unable to take backup to '%s'."
 msgstr "ไม่สามารถสำรองไฟล์ไปที่ '%s'."
 
-#: timelinelib/db/utils.py:86
+#: timelinelib/db/utils.py:75
 #, python-format
 msgid "Unable to rename temporary file '%s' to original."
 msgstr "ไม่สามารถเปลี่ยนชื่อไฟล์สำรองที่ '%s' เป็นแบบเดิม"
 
-#: timelinelib/db/utils.py:92
+#: timelinelib/db/utils.py:81
 #, python-format
 msgid "Unable to delete backup file '%s'."
 msgstr "ไม่สามารถลบไฟล์สำรองที่ '%s'."
 
-#: timelinelib/editors/container.py:81 timelinelib/editors/event.py:247
+#: timelinelib/editors/container.py:81 timelinelib/editors/event.py:250
 #, python-format
 msgid "Field '%s' can't be empty."
 msgstr "พื้นที่ '%s' ไม่สามารถว่างได้"
@@ -374,15 +384,15 @@ msgstr "พื้นที่ '%s' ไม่สามารถว่างได
 msgid "Name"
 msgstr "ชื่อ:"
 
-#: timelinelib/editors/event.py:234
+#: timelinelib/editors/event.py:237
 msgid "End must be > Start"
 msgstr ""
 
-#: timelinelib/editors/event.py:242
+#: timelinelib/editors/event.py:245
 msgid "Entered period is too long."
 msgstr "ระยะเวลาที่เข้าไปยาวเกินไป"
 
-#: timelinelib/editors/event.py:247
+#: timelinelib/editors/event.py:250
 msgid "Text"
 msgstr "ข้อความ"
 
@@ -394,33 +404,33 @@ msgstr "แฟ้มรูปภาพ"
 msgid "Export to Image"
 msgstr "ส่งภาพออก"
 
-#: timelinelib/export/bitmap.py:35 timelinelib/wxgui/dialogs/mainframe.py:268
+#: timelinelib/export/bitmap.py:35 timelinelib/wxgui/dialogs/mainframe.py:273
 #, python-format
 #, python-format, fuzzy
 msgid "File '%s' exists. Overwrite?"
 msgstr "แฟ้มเอกสารที่มีอยู่ สามารถเขียนทับได้ไหม?"
 
-#: timelinelib/help/pages.py:37
+#: timelinelib/help/pages.py:36
 msgid "Help contents"
 msgstr "เนื้อหา สนับสนุน"
 
-#: timelinelib/help/pages.py:55
+#: timelinelib/help/pages.py:54
 msgid "Questions and answers"
 msgstr "คำถามและคำตอบ"
 
-#: timelinelib/help/pages.py:55
+#: timelinelib/help/pages.py:54
 msgid "Concepts"
 msgstr "แนวคิด"
 
-#: timelinelib/help/pages.py:55
+#: timelinelib/help/pages.py:54
 msgid "Tasks"
 msgstr "งาน"
 
-#: timelinelib/help/pages.py:60
+#: timelinelib/help/pages.py:59
 msgid "Where is the save button?"
 msgstr "ปุ่มบันทึกอยู่ที่ไหน?"
 
-#: timelinelib/help/pages.py:66
+#: timelinelib/help/pages.py:65
 msgid ""
 "\n"
 "There is no save button. Timeline will automatically save your data whenever "
@@ -429,11 +439,11 @@ msgstr ""
 "\n"
 "ไม่มีปุ่มบันทึก โปรแกรมจะทำการบันทึกให้โดยอัติโนมัติเมื่อจำเป็น\n"
 
-#: timelinelib/help/pages.py:73
+#: timelinelib/help/pages.py:72
 msgid "Where do the week numbers go if I start my weeks on Sunday?"
 msgstr "อีกกี่สัปดาห์ ถ้าฉันเริ่มต้นสัปดาห์ในวันอาทิตย์ ?"
 
-#: timelinelib/help/pages.py:79
+#: timelinelib/help/pages.py:78
 msgid ""
 "\n"
 "The date data object used does not support week numbers for weeks that start "
@@ -444,15 +454,16 @@ msgstr ""
 "วันที่ของข้อมูล ไม่สนับสนุนสัปดาห์ที่เริ่มต้นด้วยวันอาทิตย์ ที่เสนอ "
 "แผนของเรา ที่ใช้วันที่ของข้อมูลแตกต่าง จะสนับสนุนรุ่นต่อๆไปในอนาคต\n"
 
-#: timelinelib/help/pages.py:86
+#: timelinelib/help/pages.py:85
 msgid "Timeline"
 msgstr "ไทม์ไลน์"
 
-#: timelinelib/help/pages.py:93
+#: timelinelib/help/pages.py:92
+#, fuzzy
 msgid ""
 "\n"
 "The timeline shows dates according to the Gregorian calendar on the x-axis. "
-"Currently the dates are limited to dates between year 10 and year 9989.  \n"
+"Currently the dates are limited to dates between year 10 and year 9989.\n"
 "\n"
 "Future versions might support various kinds of timelines so that you for "
 "example can specify a time in terms of number of minutes since a start time. "
@@ -466,11 +477,11 @@ msgstr ""
 "ระบุเวลาในมุมของจำนวนนาทีตั้งแต่เวลาเริ่มต้น "
 "หากคุณสนใจในคุณลักษณะดังกล่าวโปรดติดต่อ.\n"
 
-#: timelinelib/help/pages.py:101
+#: timelinelib/help/pages.py:100
 msgid "Events"
 msgstr "เหตุการณ์"
 
-#: timelinelib/help/pages.py:108
+#: timelinelib/help/pages.py:107
 msgid ""
 "\n"
 "An event is the basic data type for representing information on the "
@@ -484,11 +495,11 @@ msgstr ""
 "(เมื่อมีเหตุการณ์ที่เกิดขึ้น) "
 "นี้สามารถเป็นได้ทั้งจุดที่ระบุในเวลาหรือช่วงเวลา.\n"
 
-#: timelinelib/help/pages.py:114
+#: timelinelib/help/pages.py:113
 msgid "Categories"
 msgstr "หมวดหมู่"
 
-#: timelinelib/help/pages.py:121
+#: timelinelib/help/pages.py:120
 msgid ""
 "\n"
 "Categories are used to group events. An event can only belong to one "
@@ -500,7 +511,7 @@ msgstr ""
 "เป็นได้แค่หนึ่งหมวดหมู่เท่านั้น "
 "ทุกๆเหตุการณ์ที่เป็นเหมือนหมวดหมู่จะแสดงที่สีพื้นหลังเหมือนกัน\n"
 
-#: timelinelib/help/pages.py:134
+#: timelinelib/help/pages.py:133
 msgid ""
 "\n"
 "The *Create Event* dialog can be opened in the following ways:\n"
@@ -517,7 +528,7 @@ msgstr ""
 "-ดับเบิ้ลคลิก *ซ้าย* ปุ่มเมาส์ในไทม์ไลน์\n"
 "-กดปุ่ม *Ctrl* หลังจากนั้น กดปุ่ม*left* ลงบนไทม์ไลน์ ลากเมาส์และปล่อยมัน\n"
 
-#: timelinelib/help/pages.py:151
+#: timelinelib/help/pages.py:150
 msgid ""
 "\n"
 "The *Edit Event* dialog can be opened by double clicking on an event.\n"
@@ -525,11 +536,11 @@ msgstr ""
 "\n"
 "*Edit Event* dialog สามารถเปิดได้โดยดับเบิลคลิกที่เหตุการณ์.\n"
 
-#: timelinelib/help/pages.py:157
+#: timelinelib/help/pages.py:156
 msgid "Selecting events"
 msgstr "เลือกเหตุการณ์"
 
-#: timelinelib/help/pages.py:163
+#: timelinelib/help/pages.py:162
 msgid ""
 "\n"
 "To select an event, click on it. To select multiple events, hold down the "
@@ -539,7 +550,7 @@ msgstr ""
 "เพื่อเลือกเหตการณ์,กดคลิกมัน.เพื่อเลือกหลายๆเหตุการณ์,กดปุ่ม Ctrl "
 "ค้างไว้จนกว่าจะเสร็จ.\n"
 
-#: timelinelib/help/pages.py:176
+#: timelinelib/help/pages.py:175
 msgid ""
 "\n"
 "To delete an event, select it and press the *Del* key. Multiple events can "
@@ -549,11 +560,11 @@ msgstr ""
 "เพื่อลบเหตุการณ์ เลือกและกดปุ่ม*Del* หลายๆเหตุการณ์ "
 "สามารถลบได้ในเวลาเดียวกัน\n"
 
-#: timelinelib/help/pages.py:182
+#: timelinelib/help/pages.py:181
 msgid "Will associated events be deleted when I delete a category?"
 msgstr "กิจกรรมที่เกี่ยวข้องจะถูกลบเมื่อฉันลบหมวดหมู่นี้?"
 
-#: timelinelib/help/pages.py:188
+#: timelinelib/help/pages.py:187
 msgid ""
 "\n"
 "No. The events will still be there but they will not belong to a category.\n"
@@ -561,13 +572,13 @@ msgstr ""
 "\n"
 "ไม่ เหตุการณ์ จะอยู่ตรงนั้น แต่จะไม่เป็นของหมวหมู่\n"
 
-#: timelinelib/help/pages.py:194
+#: timelinelib/help/pages.py:193
 #: timelinelib/wxgui/components/categorychoice.py:53
-#: timelinelib/wxgui/dialogs/mainframe.py:465
+#: timelinelib/wxgui/dialogs/mainframe.py:459
 msgid "Edit categories"
 msgstr "กำหนด หมวดหมู่"
 
-#: timelinelib/help/pages.py:201
+#: timelinelib/help/pages.py:200
 msgid ""
 "\n"
 "Categories can be managed in the *Edit Categories* dialog (*Timeline* > "
@@ -582,12 +593,12 @@ msgstr ""
 "\n"
 "การแสดงผลของประเภทนี้ยังสามารถแก้ไขได้ในแถบด้านข้าง (* View *> * Sidebar *).\n"
 
-#: timelinelib/help/pages.py:209 timelinelib/wxgui/dialogs/mainframe.py:589
-#: timelinelib/wxgui/dialogs/mainframe.py:1021
+#: timelinelib/help/pages.py:208 timelinelib/wxgui/dialogs/mainframe.py:583
+#: timelinelib/wxgui/dialogs/mainframe.py:1062
 msgid "Contact"
 msgstr "ติดต่อ"
 
-#: timelinelib/help/pages.py:215
+#: timelinelib/help/pages.py:214
 msgid ""
 "\n"
 "If you have more questions about Timeline, or if you want to get in contact "
@@ -598,11 +609,11 @@ msgstr ""
 "ถ้าคุณมีคำถามอื่นๆ เกี่ยวกับไทม์ไลน์ หรือ ถ้าคุณต้องการติดต่อผู้ใช้งาน "
 "และผู้พัฒนา ไทม์ไลน์ ส่งจดหมายอิเล็กส์ทรอนิค ไปที่รายชื่อผู้ใช้\n"
 
-#: timelinelib/help/pages.py:221
+#: timelinelib/help/pages.py:220
 msgid "Why is Timeline not available in my language?"
 msgstr "ทำไม ไทม์ไลน์ ไม่สามารถใช้งานได้ กับภาษาของฉัน ?"
 
-#: timelinelib/help/pages.py:228
+#: timelinelib/help/pages.py:227
 msgid ""
 "\n"
 "Timeline is developed and translated by volunteers. If you would like to "
@@ -612,16 +623,16 @@ msgstr ""
 "ไทม์ไลน์ ถูกพัฒนาและแปลโดย อาสาสมัคร ถ้าคุณต้องการสนับสนุนการแปล "
 "มีความยินดีอย่างมากที่จะติดต่อเรา.\n"
 
-#: timelinelib/help/system.py:65
+#: timelinelib/help/system.py:64
 #, python-format
 msgid "Search results for '%s'"
 msgstr "ค้นหาผลลัพท์ สำหรับ '%s'"
 
-#: timelinelib/help/system.py:123
+#: timelinelib/help/system.py:122
 msgid "Related pages"
 msgstr "หน้าที่เกี่ยวข้อง"
 
-#: timelinelib/printing.py:101
+#: timelinelib/printing.py:100
 msgid ""
 "There was a problem printing.\n"
 "Perhaps your current printer is not set correctly?"
@@ -629,263 +640,264 @@ msgstr ""
 "การพิมมีปัญหาเกิดขึ้น \n"
 " บางทีเครื่องพิมพ์ปัจจุบันของคุณไม่ได้ตั้งค่าอย่างถูกต้อง?"
 
-#: timelinelib/printing.py:101
+#: timelinelib/printing.py:100
 msgid "Printing"
 msgstr "กำลังพิมพ์"
 
-#: timelinelib/printing.py:115
+#: timelinelib/printing.py:114
 msgid "Print preview"
 msgstr "ตัวอย่างการพิมพ์"
 
-#: timelinelib/time/numtime.py:50
+#: timelinelib/time/numtime.py:46
 #, fuzzy
 msgid "Go to &Zero\tCtrl+Z"
 msgstr "Go to &Zero\tCtrl+Z"
 
-#: timelinelib/time/numtime.py:51
+#: timelinelib/time/numtime.py:47
 msgid "Go to &Time\tCtrl+T"
 msgstr ""
 
-#: timelinelib/time/numtime.py:53 timelinelib/time/pytime.py:75
-#: timelinelib/time/wxtime.py:75
+#: timelinelib/time/numtime.py:49 timelinelib/time/pytime.py:74
+#: timelinelib/time/wxtime.py:69
 msgid "Backward\tPgUp"
 msgstr ""
 
-#: timelinelib/time/numtime.py:54 timelinelib/time/pytime.py:76
-#: timelinelib/time/wxtime.py:76
+#: timelinelib/time/numtime.py:50 timelinelib/time/pytime.py:75
+#: timelinelib/time/wxtime.py:70
 msgid "Forward\tPgDn"
 msgstr ""
 
-#: timelinelib/time/numtime.py:118
+#: timelinelib/time/numtime.py:113
 msgid "Can't zoom deeper than 5"
 msgstr "ไม่สามารถ ขยายได้ใกล้กว่า 5"
 
-#: timelinelib/time/numtime.py:131
+#: timelinelib/time/numtime.py:126
 msgid "1-period"
 msgstr "1 ตอน"
 
-#: timelinelib/time/numtime.py:132
+#: timelinelib/time/numtime.py:127
 msgid "10-period"
 msgstr "10 ตอน"
 
-#: timelinelib/time/numtime.py:133
+#: timelinelib/time/numtime.py:128
 msgid "100-period"
 msgstr "100 ตอน"
 
-#: timelinelib/time/numtime.py:134
+#: timelinelib/time/numtime.py:129
 msgid "1000-period"
 msgstr "1000 ตอน"
 
-#: timelinelib/time/numtime.py:179
+#: timelinelib/time/numtime.py:174
 msgid "Go to Time"
 msgstr "ไปที่เวลา"
 
-#: timelinelib/time/pytime.py:72 timelinelib/time/wxtime.py:72
+#: timelinelib/time/pytime.py:71 timelinelib/time/wxtime.py:66
 msgid "Go to &Today\tCtrl+T"
 msgstr ""
 
-#: timelinelib/time/pytime.py:73 timelinelib/time/wxtime.py:73
+#: timelinelib/time/pytime.py:72 timelinelib/time/wxtime.py:67
 msgid "Go to D&ate...\tCtrl+G"
 msgstr ""
 
-#: timelinelib/time/pytime.py:77 timelinelib/time/wxtime.py:77
+#: timelinelib/time/pytime.py:76 timelinelib/time/wxtime.py:71
 #, fuzzy
 msgid "Forward One Wee&k\tCtrl+K"
 msgstr "Forward One Wee&k\tCtrl+K"
 
-#: timelinelib/time/pytime.py:78 timelinelib/time/wxtime.py:78
+#: timelinelib/time/pytime.py:77 timelinelib/time/wxtime.py:72
 msgid "Back One &Week\tCtrl+W"
 msgstr ""
 
-#: timelinelib/time/pytime.py:79 timelinelib/time/wxtime.py:79
+#: timelinelib/time/pytime.py:78 timelinelib/time/wxtime.py:73
 #, fuzzy
 msgid "Forward One Mont&h\tCtrl+h"
 msgstr "Forward One Wee&k\tCtrl+K"
 
-#: timelinelib/time/pytime.py:80 timelinelib/time/wxtime.py:80
+#: timelinelib/time/pytime.py:79 timelinelib/time/wxtime.py:74
 msgid "Back One &Month\tCtrl+M"
 msgstr ""
 
-#: timelinelib/time/pytime.py:81 timelinelib/time/wxtime.py:81
+#: timelinelib/time/pytime.py:80 timelinelib/time/wxtime.py:75
 #, fuzzy
 msgid "Forward One Yea&r\tCtrl+R"
 msgstr "Forward One Wee&k\tCtrl+K"
 
-#: timelinelib/time/pytime.py:82 timelinelib/time/wxtime.py:82
+#: timelinelib/time/pytime.py:81 timelinelib/time/wxtime.py:76
 msgid "Back One &Year\tCtrl+Y"
 msgstr ""
 
-#: timelinelib/time/pytime.py:84 timelinelib/time/wxtime.py:84
+#: timelinelib/time/pytime.py:83 timelinelib/time/wxtime.py:78
 msgid "Fit Millennium"
 msgstr "มิลเลนเนียมที่เหมาะสม"
 
-#: timelinelib/time/pytime.py:85 timelinelib/time/wxtime.py:85
+#: timelinelib/time/pytime.py:84 timelinelib/time/wxtime.py:79
 msgid "Fit Century"
 msgstr "Centuryที่เหมาะสม"
 
-#: timelinelib/time/pytime.py:86 timelinelib/time/wxtime.py:86
+#: timelinelib/time/pytime.py:85 timelinelib/time/wxtime.py:80
 msgid "Fit Decade"
 msgstr "ทศวรรษที่เหมาะสม"
 
-#: timelinelib/time/pytime.py:87 timelinelib/time/wxtime.py:87
+#: timelinelib/time/pytime.py:86 timelinelib/time/wxtime.py:81
 msgid "Fit Year"
 msgstr "ปีที่เหมาะสม"
 
-#: timelinelib/time/pytime.py:88 timelinelib/time/wxtime.py:88
+#: timelinelib/time/pytime.py:87 timelinelib/time/wxtime.py:82
 msgid "Fit Month"
 msgstr "เดือนที่เหมาะสม"
 
-#: timelinelib/time/pytime.py:89 timelinelib/time/wxtime.py:89
+#: timelinelib/time/pytime.py:88 timelinelib/time/wxtime.py:83
 msgid "Fit Day"
 msgstr "วันที่เหมาะสม"
 
-#: timelinelib/time/pytime.py:141
+#: timelinelib/time/pytime.py:140
 msgid "can't be before year 10"
 msgstr "ไม่สามารถเป็นไปได้ก่อนปีที่ 10"
 
-#: timelinelib/time/pytime.py:145
+#: timelinelib/time/pytime.py:144
 msgid "can't be after year 9989"
 msgstr "ไม่สามารถเป็นไปได้หลังปีที่ 9989"
 
-#: timelinelib/time/pytime.py:202 timelinelib/time/wxtime.py:204
+#: timelinelib/time/pytime.py:201 timelinelib/time/wxtime.py:198
 msgid "Can't zoom wider than 1200 years"
 msgstr "ไม่สามารถซูมกว้างกว่า 1200 ปี"
 
-#: timelinelib/time/pytime.py:205 timelinelib/time/wxtime.py:207
+#: timelinelib/time/pytime.py:204 timelinelib/time/wxtime.py:201
 msgid "Can't zoom deeper than 1 hour"
 msgstr "ไม่สามารถขยายลึกกว่า 1 ชั่วโมง"
 
-#: timelinelib/time/pytime.py:220 timelinelib/time/wxtime.py:222
+#: timelinelib/time/pytime.py:219 timelinelib/time/wxtime.py:216
 msgid "Day"
 msgstr "วัน"
 
-#: timelinelib/time/pytime.py:221 timelinelib/time/pytime.py:547
-#: timelinelib/time/wxtime.py:223 timelinelib/time/wxtime.py:550
+#: timelinelib/time/pytime.py:220 timelinelib/time/pytime.py:569
+#: timelinelib/time/wxtime.py:217 timelinelib/time/wxtime.py:544
 msgid "Week"
 msgstr "สัปดาห์"
 
-#: timelinelib/time/pytime.py:222 timelinelib/time/wxtime.py:224
+#: timelinelib/time/pytime.py:221 timelinelib/time/wxtime.py:218
 msgid "Month"
 msgstr "เดือน"
 
-#: timelinelib/time/pytime.py:223 timelinelib/time/wxtime.py:225
+#: timelinelib/time/pytime.py:222 timelinelib/time/wxtime.py:219
 msgid "Year"
 msgstr "ปี"
 
-#: timelinelib/time/pytime.py:257 timelinelib/time/wxtime.py:261
+#: timelinelib/time/pytime.py:256 timelinelib/time/wxtime.py:255
 msgid "Go to Date"
 msgstr "ไปยังวัน"
 
-#: timelinelib/time/wxtime.py:144
+#: timelinelib/time/wxtime.py:138
 #, python-format
 msgid "can't be before year %d"
 msgstr "ไม่สามารถเป็นไปได้ก่อนปีที่ %d"
 
-#: timelinelib/time/wxtime.py:148
+#: timelinelib/time/wxtime.py:142
 #, python-format
 msgid "can't be after year %d"
 msgstr "ไม่สามารถเป็นไปได้หลังปีที่ %d"
 
-#: timelinelib/view/drawingarea.py:145 timelinelib/view/drawingarea.py:163
+#: timelinelib/view/drawingarea.py:144 timelinelib/view/drawingarea.py:162
 msgid "No timeline set"
 msgstr "ไม่มีการตั้งค่า Timeline"
 
-#: timelinelib/view/drawingarea.py:197
+#: timelinelib/view/drawingarea.py:196
 msgid "Edit"
 msgstr "แก้ไข"
 
-#: timelinelib/view/drawingarea.py:198
+#: timelinelib/view/drawingarea.py:197
 msgid "Duplicate..."
 msgstr "คัดลอก..."
 
-#: timelinelib/view/drawingarea.py:199
-#: timelinelib/wxgui/components/cattree.py:81
+#: timelinelib/view/drawingarea.py:198
+#: timelinelib/wxgui/components/cattree.py:80
 #: wx/tools/Editra/src/prefdlg.py:1706
 msgid "Delete"
 msgstr "ลบ"
 
-#: timelinelib/view/drawingarea.py:202
+#: timelinelib/view/drawingarea.py:201
 #, fuzzy
 msgid "Sticky Balloon"
 msgstr "Sticky Balloon"
 
-#: timelinelib/view/drawingarea.py:353
+#: timelinelib/view/drawingarea.py:352
 msgid "Center"
 msgstr "ศูนย์กลาง"
 
-#: timelinelib/view/drawingarea.py:401
+#: timelinelib/view/drawingarea.py:400
 #, python-format
 msgid "%s events hidden"
 msgstr "เหตุการณ์ %s ถูกซ่อนไว้"
 
-#: timelinelib/view/drawingarea.py:466
+#: timelinelib/view/drawingarea.py:468
 #, python-format
 msgid "Are you sure you want to delete %d events?"
 msgstr "คุณแน่ใจหรือไม่ว่าต้องการลบเหตุการณ์ %d"
 
-#: timelinelib/view/drawingarea.py:469
+#: timelinelib/view/drawingarea.py:471
 msgid "Are you sure you want to delete this event?"
 msgstr "คุณแน่ใจหรือไม่ว่าต้องการลบเหตุการณ์นี้"
 
-#: timelinelib/view/move.py:65
+#: timelinelib/view/move.py:64
 msgid "Can't move locked event"
 msgstr "ไม่สามารถเคลื่อนย้ายเหตุการณ์ที่ถูกล็อคไว้ได้"
 
-#: timelinelib/view/resize.py:66
+#: timelinelib/view/resize.py:65
 msgid "Period is too long"
 msgstr "ระยะเวลานานเกินไป"
 
 #: timelinelib/wxgui/components/categorychoice.py:52
-#: timelinelib/wxgui/dialogs/eventeditor.py:300
+#: timelinelib/wxgui/dialogs/eventeditor.py:302
 msgid "Add new"
 msgstr "เพิ่มใหม่"
 
 #: timelinelib/wxgui/components/categorychoice.py:76
-#: timelinelib/wxgui/components/cattree.py:224
+#: timelinelib/wxgui/components/cattree.py:223
 msgid "Add Category"
 msgstr "เพิ่มหมวดหมู่"
 
-#: timelinelib/wxgui/components/cattree.py:75
+#: timelinelib/wxgui/components/cattree.py:74
 msgid "Edit..."
 msgstr "แก้ไข..."
 
-#: timelinelib/wxgui/components/cattree.py:78
+#: timelinelib/wxgui/components/cattree.py:77
 msgid "Add..."
 msgstr "เพิ่ม..."
 
-#: timelinelib/wxgui/components/cattree.py:218
+#: timelinelib/wxgui/components/cattree.py:217
 msgid "Edit Category"
 msgstr "แก้ไขประเภท"
 
-#: timelinelib/wxgui/components/cattree.py:229
+#: timelinelib/wxgui/components/cattree.py:228
 #, python-format
 msgid "Are you sure you want to delete category '%s'?"
 msgstr "คุณแน่ใจหรือไม่ว่าต้องการลบหมวด '%s' ?"
 
 #: timelinelib/wxgui/components/cattree.py:231
 #, python-format
-#, python-format, fuzzy
-msgid "Events belonging to '%(name)s' will no longer belong to a category."
+#, fuzzy
+msgid "Events belonging to '%s' will no longer belong to a category."
 msgstr "เหตุการณ์ที่เป็นของ '%s' จะไม่สามารถเป็นของหมวดหมู่ได้"
 
 #: timelinelib/wxgui/components/cattree.py:234
-msgid "Events belonging to '%(name)' will now belong "
+#, python-format
+msgid "Events belonging to '%(name)s' will now belong to '%(parent)s'."
 msgstr ""
 
 #: timelinelib/wxgui/components/pydatetimepicker.py:80
-#: timelinelib/wxgui/components/wxdatetimepicker.py:76
+#: timelinelib/wxgui/components/wxdatetimepicker.py:75
 msgid "Invalid date"
 msgstr "วันที่ไม่ถูกต้อง"
 
-#: timelinelib/wxgui/components/search.py:71
+#: timelinelib/wxgui/components/search.py:70
 msgid "No match"
 msgstr "ไม่ตรงกัน"
 
-#: timelinelib/wxgui/components/search.py:75
+#: timelinelib/wxgui/components/search.py:74
 msgid "Only one match"
 msgstr "ตรงกันหนึ่งอัน"
 
-#: timelinelib/wxgui/dialogs/categorieseditor.py:39
+#: timelinelib/wxgui/dialogs/categorieseditor.py:38
 msgid "Edit Categories"
 msgstr "แก้ไขหมวดหมู่"
 
@@ -921,45 +933,45 @@ msgid "Container Properties"
 msgstr ""
 
 #: timelinelib/wxgui/dialogs/containereditor.py:65
-#: timelinelib/wxgui/dialogs/eventeditor.py:216
+#: timelinelib/wxgui/dialogs/eventeditor.py:217
 msgid "Category:"
 msgstr "หมวดหมู่:"
 
-#: timelinelib/wxgui/dialogs/duplicateevent.py:32
+#: timelinelib/wxgui/dialogs/duplicateevent.py:31
 msgid "Duplicate Event"
 msgstr "คัดลอกเหตุการณ์"
 
-#: timelinelib/wxgui/dialogs/duplicateevent.py:69
+#: timelinelib/wxgui/dialogs/duplicateevent.py:68
 #, python-format
 msgid "%d Events not duplicated due to missing dates."
 msgstr "เหตุการณ์ %d ไม่สามารถคัดสอกได้เนื่องจากวันที่หายไป"
 
-#: timelinelib/wxgui/dialogs/duplicateevent.py:89
+#: timelinelib/wxgui/dialogs/duplicateevent.py:88
 msgid "Number of duplicates:"
 msgstr "จำนวนรายการที่ซ้ำกัน:"
 
-#: timelinelib/wxgui/dialogs/duplicateevent.py:99
-#: timelinelib/wxgui/dialogs/eventeditor.py:173
+#: timelinelib/wxgui/dialogs/duplicateevent.py:98
+#: timelinelib/wxgui/dialogs/eventeditor.py:174
 msgid "Period"
 msgstr "ระยะเวลา"
 
-#: timelinelib/wxgui/dialogs/duplicateevent.py:109
+#: timelinelib/wxgui/dialogs/duplicateevent.py:108
 msgid "Frequency:"
 msgstr "ความถี่:"
 
-#: timelinelib/wxgui/dialogs/duplicateevent.py:119
+#: timelinelib/wxgui/dialogs/duplicateevent.py:118
 msgid "Forward"
 msgstr "ไปข้างหน้า"
 
-#: timelinelib/wxgui/dialogs/duplicateevent.py:119
+#: timelinelib/wxgui/dialogs/duplicateevent.py:118
 msgid "Backward"
 msgstr "ย้อนกลับ"
 
-#: timelinelib/wxgui/dialogs/duplicateevent.py:119
+#: timelinelib/wxgui/dialogs/duplicateevent.py:118
 msgid "Both"
 msgstr "ทั้งสอง"
 
-#: timelinelib/wxgui/dialogs/duplicateevent.py:120
+#: timelinelib/wxgui/dialogs/duplicateevent.py:119
 #: wx/tools/Editra/src/eclib/finddlg.py:802
 msgid "Direction"
 msgstr "ทิศทาง"
@@ -969,6 +981,7 @@ msgid "Event Properties"
 msgstr "คุณสมบัติของเหตุการณ์"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:85
+#: timelinelib/wxgui/dialogs/eventeditor.py:571
 msgid "When:"
 msgstr "เวลา:"
 
@@ -980,58 +993,75 @@ msgstr "ถึง"
 msgid "Container:"
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:160
+#: timelinelib/wxgui/dialogs/eventeditor.py:161
 msgid "Add Container"
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:180
-#: timelinelib/wxgui/dialogs/timeeditor.py:48
+#: timelinelib/wxgui/dialogs/eventeditor.py:181
+#: timelinelib/wxgui/dialogs/timeeditor.py:47
 msgid "Show time"
 msgstr "โชว์เวลา"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:188
+#: timelinelib/wxgui/dialogs/eventeditor.py:189
 msgid "Fuzzy"
 msgstr "เลื่อน"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:192
+#: timelinelib/wxgui/dialogs/eventeditor.py:193
 msgid "Locked"
 msgstr "ถูกล็อคไว้"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:199
+#: timelinelib/wxgui/dialogs/eventeditor.py:200
 msgid "Ends today"
 msgstr "สิ้นสุดวันนี้"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:210
+#: timelinelib/wxgui/dialogs/eventeditor.py:211
+#: timelinelib/wxgui/dialogs/eventeditor.py:572
 msgid "Text:"
 msgstr "ข้อความ:"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:241
+#: timelinelib/wxgui/dialogs/eventeditor.py:242
 msgid "Description"
 msgstr "คำบรรยาย"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:242
+#: timelinelib/wxgui/dialogs/eventeditor.py:243
+msgid "Alert"
+msgstr ""
+
+#: timelinelib/wxgui/dialogs/eventeditor.py:244
 msgid "Icon"
 msgstr "สัญลักษณ์"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:259
+#: timelinelib/wxgui/dialogs/eventeditor.py:261
 msgid "Add more events after this one"
 msgstr "เพิ่มเหตุการณ์ หลังจากเหตุการณ์นี้"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:447
+#: timelinelib/wxgui/dialogs/eventeditor.py:449
 #, fuzzy
 msgid "Images will be scaled to fit inside a 128x128 box."
 msgstr "รูปภาพจะถูกปรับขนาดให้พอดีภายในกล่องขนาด 128 x 128"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:484
+#: timelinelib/wxgui/dialogs/eventeditor.py:486
 msgid "Select Icon"
 msgstr "เลือกสัญลักษณ์"
 
-#: timelinelib/wxgui/dialogs/helpbrowser.py:37
+#: timelinelib/wxgui/dialogs/eventeditor.py:619
+msgid "Edit Container"
+msgstr ""
+
+#: timelinelib/wxgui/dialogs/eventeditor.py:623
+msgid "Edit Event"
+msgstr "แก้ไขเหตุการณ์"
+
+#: timelinelib/wxgui/dialogs/eventeditor.py:630
+msgid "Create Event"
+msgstr "สร้างเหตุการณ์"
+
+#: timelinelib/wxgui/dialogs/helpbrowser.py:36
 #: wx/lib/agw/genericmessagedialog.py:837
 msgid "Help"
 msgstr "ขอความช่วยเหลือ"
 
-#: timelinelib/wxgui/dialogs/helpbrowser.py:66
+#: timelinelib/wxgui/dialogs/helpbrowser.py:65
 msgid ""
 "Could not find markdown Python package.  It is needed by the help system. "
 "See the Timeline website or the INSTALL file for instructions how to install "
@@ -1040,123 +1070,123 @@ msgstr ""
 "ไม่พบ markdown Phyton package มันเป็นสิ่งจำเป็นโดยระบบช่วยเหลือ  "
 "ดูเวบไซด์ไทม์ไลน์หรือติดตั้งไฟล์สำหรับคำแนะนำวิธีการติดตั้ง"
 
-#: timelinelib/wxgui/dialogs/helpbrowser.py:104
+#: timelinelib/wxgui/dialogs/helpbrowser.py:103
 msgid "Go to home page"
 msgstr "กลับสู่หน้าหลัก"
 
-#: timelinelib/wxgui/dialogs/helpbrowser.py:111
+#: timelinelib/wxgui/dialogs/helpbrowser.py:110
 msgid "Go back one page"
 msgstr "ย้อนกลับไปหน้าก่อนหน้านี้"
 
-#: timelinelib/wxgui/dialogs/helpbrowser.py:117
+#: timelinelib/wxgui/dialogs/helpbrowser.py:116
 msgid "Go forward one page"
 msgstr "ไปหน้าถัดไป"
 
-#: timelinelib/wxgui/dialogs/helpbrowser.py:202
+#: timelinelib/wxgui/dialogs/helpbrowser.py:201
 msgid "Page not found"
 msgstr "ไม่พบหน้านี้"
 
-#: timelinelib/wxgui/dialogs/helpbrowser.py:203
+#: timelinelib/wxgui/dialogs/helpbrowser.py:202
 #, python-format
 msgid "Could not find page '%s'."
 msgstr "ไม่พบหน้า '%s'"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:87
+#: timelinelib/wxgui/dialogs/mainframe.py:92
 msgid "Timeline files"
 msgstr "แฟ้มไทม์ไลน์"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:89
+#: timelinelib/wxgui/dialogs/mainframe.py:94
 msgid "SVG files"
 msgstr "แฟ้ม SVG"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:137 wx/lib/pydocview.py:109
+#: timelinelib/wxgui/dialogs/mainframe.py:142 wx/lib/pydocview.py:109
 #: wx/lib/pydocview.py:2561 wx/tools/Editra/src/ed_menu.py:569
 msgid "&File"
 msgstr "&แฟ้ม"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:143 wx/lib/pydocview.py:176
+#: timelinelib/wxgui/dialogs/mainframe.py:148 wx/lib/pydocview.py:176
 #: wx/tools/Editra/src/ed_toolbar.py:77 wx/tools/Editra/src/prefdlg.py:1705
 #: wx/tools/Editra/src/style_editor.py:200
 msgid "New"
 msgstr "ใหม่"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:143
+#: timelinelib/wxgui/dialogs/mainframe.py:148
 msgid "Create a new timeline"
 msgstr "สร้างไทม์ไลน์ใหม่"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:149
+#: timelinelib/wxgui/dialogs/mainframe.py:154
 msgid "File Timeline..."
 msgstr "แฟ้มไทม์ไลน์..."
 
-#: timelinelib/wxgui/dialogs/mainframe.py:157
-#: timelinelib/wxgui/dialogs/mainframe.py:180
+#: timelinelib/wxgui/dialogs/mainframe.py:162
+#: timelinelib/wxgui/dialogs/mainframe.py:185
 msgid "Create Timeline"
 msgstr "สร้างไทม์ไลน์"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:163
+#: timelinelib/wxgui/dialogs/mainframe.py:168
 msgid "The specified timeline already exists."
 msgstr "ไทม์ไลน์ที่กำหนด มีอยู่แล้ว"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:164
+#: timelinelib/wxgui/dialogs/mainframe.py:169
 msgid "Opening timeline instead of creating new."
 msgstr "เปิดไทม์ไลน์แทนการสร้างใหม่"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:166
+#: timelinelib/wxgui/dialogs/mainframe.py:171
 msgid "Information"
 msgstr "ข้อมูล"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:173
+#: timelinelib/wxgui/dialogs/mainframe.py:178
 msgid "Directory Timeline..."
 msgstr "สารบบของไทม์ไลน์..."
 
-#: timelinelib/wxgui/dialogs/mainframe.py:189
+#: timelinelib/wxgui/dialogs/mainframe.py:194
 msgid "Open an existing timeline"
 msgstr "เปิดไทม์ไลน์ที่มีอยู่"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:200
+#: timelinelib/wxgui/dialogs/mainframe.py:205
 msgid "Open Timeline"
 msgstr "เปิดไทม์ไลน์"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:210
+#: timelinelib/wxgui/dialogs/mainframe.py:215
 #: wx/tools/Editra/src/ed_menu.py:520
 msgid "Open &Recent"
 msgstr "เปิดชิ้นงานล่าสุด"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:215
+#: timelinelib/wxgui/dialogs/mainframe.py:220
 msgid "Page Set&up..."
 msgstr "ตั้งค่าหน้ากระดาษ..."
 
-#: timelinelib/wxgui/dialogs/mainframe.py:215
+#: timelinelib/wxgui/dialogs/mainframe.py:220
 msgid "Setup page for printing"
 msgstr "ตั้งค่าหน้ากระดาษก่อนพิมพ์"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:224 wx/lib/docview.py:1571
+#: timelinelib/wxgui/dialogs/mainframe.py:229 wx/lib/docview.py:1571
 #: wx/lib/pydocview.py:182 wx/tools/Editra/src/ed_print.py:108
 msgid "Print Preview"
 msgstr "ดูตัวอย่างก่อนพิมพ์"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:233 wx/lib/pydocview.py:181
+#: timelinelib/wxgui/dialogs/mainframe.py:238 wx/lib/pydocview.py:181
 #: wx/tools/Editra/src/ed_toolbar.py:80
 msgid "Print"
 msgstr "พิมพ์"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:242
+#: timelinelib/wxgui/dialogs/mainframe.py:247
 msgid "&Export to Image..."
 msgstr "ทำเป็นรูปภาพ..."
 
-#: timelinelib/wxgui/dialogs/mainframe.py:242
+#: timelinelib/wxgui/dialogs/mainframe.py:247
 msgid "Export the current view to a PNG image"
 msgstr "แปลงมุมมองปัจจุบันเป็นรูปประเภท PNG"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:251
+#: timelinelib/wxgui/dialogs/mainframe.py:256
 msgid "&Export to SVG..."
 msgstr "ส่ง SVG ออก..."
 
-#: timelinelib/wxgui/dialogs/mainframe.py:251
+#: timelinelib/wxgui/dialogs/mainframe.py:256
 msgid "Export the current view to a SVG image"
 msgstr "ส่งออกภาพ SVG ณ ปัจจุบัน"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:260
+#: timelinelib/wxgui/dialogs/mainframe.py:265
 msgid ""
 "Could not find pysvg Python package. It is needed to export to SVG. See the "
 "Timeline website or the INSTALL file for instructions how to install it."
@@ -1164,149 +1194,137 @@ msgstr ""
 "ไม่สามารถหา pysvg phyton package มันต้องการส่งออกไปยัง SVG. "
 "ดูตารางเวลาเวบไซด์หรือติดตั้งเอกสารเพื่อเป็นคำแนะนำว่าติดตั้งอย่างไร"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:264
+#: timelinelib/wxgui/dialogs/mainframe.py:269
 msgid "Export to SVG"
 msgstr "ส่ง SVG ออก"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:286
+#: timelinelib/wxgui/dialogs/mainframe.py:291
 msgid "Play timeline"
 msgstr "เล่นตารางเวลา"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:286
+#: timelinelib/wxgui/dialogs/mainframe.py:291
 msgid "Play timeline as movie"
 msgstr "เล่นตารางเวลาในรูปแบบภาพยนตร์"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:294
+#: timelinelib/wxgui/dialogs/mainframe.py:299
 msgid "Exit the program"
 msgstr "ออกจากโปรแกรม"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:306 wx/lib/pydocview.py:134
+#: timelinelib/wxgui/dialogs/mainframe.py:310 wx/lib/pydocview.py:134
 #: wx/lib/pydocview.py:1925 wx/tools/Editra/src/ed_menu.py:647
 msgid "&Edit"
 msgstr "แก้ไข"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:331 wx/lib/pydocview.py:146
+#: timelinelib/wxgui/dialogs/mainframe.py:335 wx/lib/pydocview.py:146
 #: wx/tools/Editra/src/ed_menu.py:712
 msgid "&View"
 msgstr "มอง"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:335
+#: timelinelib/wxgui/dialogs/mainframe.py:339
 msgid "&Sidebar\tCtrl+I"
 msgstr "แถบด้านข้าง\tCtrl+l"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:349
+#: timelinelib/wxgui/dialogs/mainframe.py:353
 msgid "&Legend"
 msgstr "คำบรรยายใต้ภาพ"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:360
+#: timelinelib/wxgui/dialogs/mainframe.py:364
 msgid "&Balloons on hover"
 msgstr "เวลาเลื่อน"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:374
+#: timelinelib/wxgui/dialogs/mainframe.py:378
 msgid "&Timeline"
 msgstr "ตารางเวลา"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:378
+#: timelinelib/wxgui/dialogs/mainframe.py:382
 msgid "Create &Event..."
 msgstr "สร้างเหตุการณ์..."
 
-#: timelinelib/wxgui/dialogs/mainframe.py:378
+#: timelinelib/wxgui/dialogs/mainframe.py:382
 msgid "Create a new event"
 msgstr "สร้างเหตุการณ์ใหม่"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:388
-msgid "Create Event"
-msgstr "สร้างเหตุการณ์"
-
-#: timelinelib/wxgui/dialogs/mainframe.py:394
+#: timelinelib/wxgui/dialogs/mainframe.py:392
 msgid "&Duplicate Selected Event..."
 msgstr "จำลองเหตุการณ์ที่เลือก..."
 
-#: timelinelib/wxgui/dialogs/mainframe.py:394
+#: timelinelib/wxgui/dialogs/mainframe.py:392
 msgid "Duplicate the Selected Event"
 msgstr "จำลองเหตุการณ์ที่เลือก"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:404
+#: timelinelib/wxgui/dialogs/mainframe.py:413
 msgid "&Measure Distance between two Events..."
 msgstr "จำนวนระยะทางระหว่าง 2 เหตุการณ์..."
 
-#: timelinelib/wxgui/dialogs/mainframe.py:405
+#: timelinelib/wxgui/dialogs/mainframe.py:414
 msgid "Measure the Distance between two Events"
 msgstr "จำนวนระยะทางระหว่าง 2 เหตุการณ์"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:451
+#: timelinelib/wxgui/dialogs/mainframe.py:445
 msgid "Distance between selected events"
 msgstr "ระยะทางระหว่าง 2 เหตุการณ์"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:454
+#: timelinelib/wxgui/dialogs/mainframe.py:448
 msgid "Events are overlapping or distance is 0"
 msgstr "หลายเหตุการณ์ที่ซ้อนกันหรือระยะทางเป็นศูนย์"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:465
+#: timelinelib/wxgui/dialogs/mainframe.py:459
 msgid "Edit &Categories"
 msgstr "แก้ไขและแบ่งหมวดหมู่"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:487
+#: timelinelib/wxgui/dialogs/mainframe.py:481
 msgid "&Navigate"
 msgstr "หาเส้นทาง"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:491
+#: timelinelib/wxgui/dialogs/mainframe.py:485
 msgid "Find First Event"
 msgstr "หาเหตุการณ์แรก"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:505
+#: timelinelib/wxgui/dialogs/mainframe.py:499
 msgid "Find Last Event"
 msgstr "หาเหตุการณ์สุดท้าย"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:519
+#: timelinelib/wxgui/dialogs/mainframe.py:513
 msgid "Fit All Events"
 msgstr "ทำให้เหตุการณ์ทั้งหมดมีความพอดี,เหมาะสม"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:572 wx/lib/pydocview.py:150
+#: timelinelib/wxgui/dialogs/mainframe.py:566 wx/lib/pydocview.py:150
 #: wx/lib/pydocview.py:2914 wx/tools/Editra/src/ed_main.py:152
 #: wx/tools/Editra/src/ed_menu.py:845
 msgid "&Help"
 msgstr "&ช่วยเหลือ"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:575
+#: timelinelib/wxgui/dialogs/mainframe.py:569
 msgid "&Contents\tF1"
 msgstr "&เนื้อหา\tF1"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:582
-#: timelinelib/wxgui/dialogs/mainframe.py:921
+#: timelinelib/wxgui/dialogs/mainframe.py:576
+#: timelinelib/wxgui/dialogs/mainframe.py:957
 msgid "Getting started tutorial"
 msgstr "เริ่มต้นการสอน"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:618
+#: timelinelib/wxgui/dialogs/mainframe.py:612
 msgid "Unable to write configuration file."
 msgstr "ไฟล์ที่ตั้งค่าไว้ไม่สามารถเขียนได้"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:630
-msgid "Edit Container"
-msgstr ""
-
-#: timelinelib/wxgui/dialogs/mainframe.py:634
-msgid "Edit Event"
-msgstr "แก้ไขเหตุการณ์"
-
-#: timelinelib/wxgui/dialogs/mainframe.py:670
+#: timelinelib/wxgui/dialogs/mainframe.py:652
 msgid "read-only"
 msgstr "อ่านได้อย่างเดียว"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:731
+#: timelinelib/wxgui/dialogs/mainframe.py:713
 #, python-format
 msgid "File '%s' does not exist."
 msgstr "ไม่มีไฟล์ '%s'."
 
-#: timelinelib/wxgui/dialogs/mainframe.py:913
+#: timelinelib/wxgui/dialogs/mainframe.py:949
 msgid "No timeline opened."
 msgstr "ไม่มีตารางเวลาที่เปิดอยู่"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:918
+#: timelinelib/wxgui/dialogs/mainframe.py:954
 msgid "First time using Timeline?"
 msgstr "ครั้งแรกที่ใช้ตารางเวลา?"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:1018
+#: timelinelib/wxgui/dialogs/mainframe.py:1059
 msgid "Relevant help topics:"
 msgstr "หัวข้อช่วยเหลือที่เกี่ยวข้อง:"
 
@@ -1314,25 +1332,25 @@ msgstr "หัวข้อช่วยเหลือที่เกี่ยว
 msgid "Close"
 msgstr "ปิด"
 
-#: timelinelib/wxgui/dialogs/preferences.py:29
+#: timelinelib/wxgui/dialogs/preferences.py:28
 msgid "Preferences"
 msgstr "การตั้งค่า"
 
-#: timelinelib/wxgui/dialogs/preferences.py:73 wx/lib/pydocview.py:1635
+#: timelinelib/wxgui/dialogs/preferences.py:72 wx/lib/pydocview.py:1635
 #: wx/lib/pydocview.py:2722 wx/tools/Editra/src/prefdlg.py:191
 #: wx/tools/Editra/src/prefdlg.py:677 wx/tools/Editra/src/prefdlg.py:964
 msgid "General"
 msgstr "ทั่วไป"
 
-#: timelinelib/wxgui/dialogs/preferences.py:83
+#: timelinelib/wxgui/dialogs/preferences.py:82
 msgid "Date && Time"
 msgstr "วัน && เวลา"
 
-#: timelinelib/wxgui/dialogs/preferences.py:91
+#: timelinelib/wxgui/dialogs/preferences.py:90
 msgid "Week start on:"
 msgstr "เริ่มต้น,เริ่มทำงานสัปดาห์ที่:"
 
-#: timelinelib/wxgui/dialogs/preferences.py:94
+#: timelinelib/wxgui/dialogs/preferences.py:93
 msgid ""
 "This feature is experimental. If events are\n"
 "created in the extended range, you can not\n"
@@ -1346,36 +1364,36 @@ msgstr ""
 "ตาราเวลาอีกครั้ง. ตาราเวลามีการโหลดใหม่\n"
 "มันยังเป็นสิ่งจำเป็นต่อการถูกบังคับใช้"
 
-#: timelinelib/wxgui/dialogs/preferences.py:111
+#: timelinelib/wxgui/dialogs/preferences.py:110
 msgid "Open most recent timeline on startup"
 msgstr "ครั้งล่าสุดที่เปิดตารางเวลา"
 
-#: timelinelib/wxgui/dialogs/preferences.py:117
+#: timelinelib/wxgui/dialogs/preferences.py:116
 msgid "Use inertial scrolling"
 msgstr "ใช้ตัวเลื่อน"
 
-#: timelinelib/wxgui/dialogs/preferences.py:123
+#: timelinelib/wxgui/dialogs/preferences.py:122
 msgid "Use extended date range (before 1 AD)"
 msgstr "ใช้ช่วงวันที่ถูกขยาย(ก่อน 1 AD)"
 
-#: timelinelib/wxgui/dialogs/preferences.py:134
+#: timelinelib/wxgui/dialogs/preferences.py:133
 msgid "Monday"
 msgstr "วันจันทร์"
 
-#: timelinelib/wxgui/dialogs/preferences.py:134
+#: timelinelib/wxgui/dialogs/preferences.py:133
 msgid "Sunday"
 msgstr "วันอาทิตย์"
 
-#: timelinelib/wxgui/dialogs/textdisplay.py:57
+#: timelinelib/wxgui/dialogs/textdisplay.py:90
 msgid "Unable to copy to clipboard."
 msgstr "ไม่สามารถคัดลอกลงบนคลิปบอร์ด"
 
-#: timelinelib/wxgui/utils.py:135 wx/tools/Editra/src/ed_editv.py:191
+#: timelinelib/wxgui/utils.py:134 wx/tools/Editra/src/ed_editv.py:191
 #: wx/tools/Editra/src/plugdlg.py:840
 msgid "Error"
 msgstr "ข้อผิดพลาด"
 
-#: timelinelib/wxgui/utils.py:141
+#: timelinelib/wxgui/utils.py:140
 msgid "Question"
 msgstr "คำถาม"
 
