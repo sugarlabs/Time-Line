@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-22 00:31-0400\n"
-"PO-Revision-Date: 2012-10-28 16:24+0200\n"
-"Last-Translator: Yannis <kiolalis@gmail.com>\n"
+"PO-Revision-Date: 2013-03-25 04:18+0200\n"
+"Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
@@ -261,7 +261,7 @@ msgstr ""
 "Κρατήστε πατημένο το πλήκτρο Ctrl ενώ χρησιμοποιείτε το ροδάκι κύλισης του "
 "ποντικιού.\n"
 "\n"
-"Κρατήστε πατημένο το πλήκτρο Shift καθώς τραβάτε αντικείμενα με το ποντίκι .\n"
+"Κρατήστε πατημένο το πλήκτρο Shift καθώς τραβάτε αντικείμενα με το ποντίκι ."
 
 #: timelinelib/db/backends/tutorial.py:58 timelinelib/db/tutorial.py:58
 #: timelinelib/help/pages.py:126
@@ -342,11 +342,11 @@ msgstr ""
 
 #: timelinelib/db/objects.py:252 timelinelib/db/objects/timeperiod.py:72
 msgid "Start time "
-msgstr "Χρόνος έναρξης"
+msgstr "Χρόνος έναρξης "
 
 #: timelinelib/db/objects.py:254 timelinelib/db/objects/timeperiod.py:74
 msgid "End time "
-msgstr "Χρόνος λήξης"
+msgstr "Χρόνος λήξης "
 
 #: timelinelib/db/objects.py:264 timelinelib/db/objects/timeperiod.py:84
 msgid "Start time can't be after end time"
@@ -1974,7 +1974,7 @@ msgstr ""
 #: wx/lib/pydocview.py:2525
 #, fuzzy
 msgid "About "
-msgstr "Σχετικά"
+msgstr "Σχετικά "
 
 #: wx/lib/pydocview.py:2564
 msgid "&Properties"
