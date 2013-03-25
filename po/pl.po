@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: thetimelineproj\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-22 00:31-0400\n"
-"PO-Revision-Date: 2012-05-30 05:23+0200\n"
+"PO-Revision-Date: 2013-03-25 04:08+0200\n"
 "Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "Language: pl\n"
@@ -884,8 +884,7 @@ msgstr "Na pewno chcesz usunąć kategorię '%s'?"
 #, python-format
 #, python-format, fuzzy
 msgid "Events belonging to '%s' will no longer belong to a category."
-msgstr ""
-"Wydarzenia należące do '%(name)s' już nie będą należały do żadnej kategorii."
+msgstr "Wydarzenia należące do '%s' już nie będą należały do żadnej kategorii."
 
 #: timelinelib/wxgui/components/cattree.py:234
 #, python-format
