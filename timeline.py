@@ -22,10 +22,9 @@ import locale
 import os
 import platform
 import sys
+import ConfigParser
+from sugar.activity.activity import Activity
 
-if platform.system() != "Windows":
-    import wxversion
-    wxversion.ensureMinimal('2.8')
 
 # Make sure that we can import timelinelib
 sys.path.insert(0, os.path.dirname(__file__))
@@ -48,9 +47,25 @@ if platform.system() == "Windows":
     language, encoding = locale.getdefaultlocale()
     os.environ['LANG'] = language
 
-gettext.install(APPLICATION_NAME.lower(), LOCALE_DIR, unicode=True)
+class TimeLine(Activity):
 
-application_arguments = ApplicationArguments()
-application_arguments.parse_from(sys.argv[1:])
+    def __init__(self, handle):
+        Activity.__init__(self, handle)
 
-start_wx_application(application_arguments)
+        iniciar_actividad()
+
+def iniciar_actividad():
+
+    file_activity_info = ConfigParser.ConfigParser()
+    activity_info_path = os.path.abspath('./activity/activity.info')
+    file_activity_info.read(activity_info_path)
+    bundle_id = file_activity_info.get('Activity', 'bundle_id')
+    path = os.path.abspath('locale')
+
+    gettext.install(bundle_id, path, unicode=True)
+
+    application_arguments = ApplicationArguments()
+    application_arguments.parse_from()
+
+    start_wx_application(application_arguments)
+
