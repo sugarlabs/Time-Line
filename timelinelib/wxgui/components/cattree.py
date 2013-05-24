@@ -20,7 +20,8 @@ import wx
 import wx.lib.agw.customtreectrl as customtreectrl
 
 from timelinelib.db.exceptions import TimelineIOError
-from timelinelib.db.observer import STATE_CHANGE_CATEGORY
+from timelinelib.db.utils import safe_locking
+from timelinelib.utilities.observer import STATE_CHANGE_CATEGORY
 from timelinelib.wxgui.dialogs.categoryeditor import WxCategoryEdtiorDialog
 from timelinelib.wxgui.utils import _ask_question
 from timelinelib.wxgui.utils import category_tree
@@ -34,6 +35,7 @@ CHECKBOX_TYPE = 1
 class CategoriesTree(customtreectrl.CustomTreeCtrl):
 
     def __init__(self, parent, fn_handle_db_error):
+        self.parent = parent
         style = wx.BORDER_SUNKEN
         agwStyle = (customtreectrl.TR_HIDE_ROOT |
                     customtreectrl.TR_HAS_VARIABLE_ROW_HEIGHT |
@@ -108,18 +110,21 @@ class CategoriesTree(customtreectrl.CustomTreeCtrl):
             self._update_categories_from_tree(subtree, item, view_properties)
 
     def _on_right_down(self, e):
-        (item, flags) = self.HitTest(e.GetPosition())
-        if item is not None:
-            self.SelectItem(item, True)
-        self._update_menu_enableness()
-        self.PopupMenu(self.mnu)
-
+        def edit_function():
+            (item, flags) = self.HitTest(e.GetPosition())
+            if item is not None:
+                self.SelectItem(item, True)
+            self._update_menu_enableness()
+            self.PopupMenu(self.mnu)
+        safe_locking(self.parent, edit_function)
+        
     def _on_key_down(self, e):
+        def edit_function():
+            self.controller.delete_selected_category()
         if self.GetFirstVisibleItem() is None:
             return
-        keycode = e.GetKeyCode()
-        if keycode == wx.WXK_DELETE:
-            self.controller.delete_selected_category()
+        if e.GetKeyCode() == wx.WXK_DELETE:
+            safe_locking(self.parent, edit_function)
         e.Skip()
 
     def _mnu_add_on_click(self, e):
@@ -231,8 +236,8 @@ def delete_category(parent_ctrl, db, cat, fn_handle_db_error):
         update_warning = _("Events belonging to '%s' will no longer "
                            "belong to a category.") % cat.name
     else:
-        update_warning = _("Events belonging to '%(name)s' will now belong to '%(parent)s'.") \
-                        % {'name': cat.name, 'parent': cat.parent.name}
+        update_warning = _("Events belonging to '%s' will now belong "
+                           "to '%s'.") % (cat.name, cat.parent.name)
     question = "%s\n\n%s" % (delete_warning, update_warning)
     if _ask_question(question, parent_ctrl) == wx.YES:
         try:

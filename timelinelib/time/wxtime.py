@@ -80,6 +80,7 @@ class WxTimeType(TimeType):
             (_("Fit Decade"), fit_decade_fn),
             (_("Fit Year"), fit_year_fn),
             (_("Fit Month"), fit_month_fn),
+            (_("Fit Week"), fit_week_fn),
             (_("Fit Day"), fit_day_fn),
         ]
 
@@ -242,6 +243,12 @@ class WxTimeType(TimeType):
         s2 = "%s %s" % (self.event_date_string(time2),
                         self.event_date_string(time2))
         return s1 == s2
+
+    def adjust_for_bc_years(self, time):
+        if time.Year == 0:
+            return time  + wx.DateSpan.Year()
+        else:
+            return time
 
 
 def go_to_today_fn(main_frame, current_period, navigation_fn):
@@ -428,6 +435,16 @@ def fit_day_fn(main_frame, current_period, navigation_fn):
     navigation_fn(lambda tp: tp.update(start, end))
 
 
+def fit_week_fn(main_frame, current_period, navigation_fn):
+    mean = current_period.mean_time()
+    start = wx.DateTimeFromDMY(mean.Day, mean.Month, mean.Year)
+    start.SetToWeekDayInSameWeek(1)
+    if not main_frame.week_starts_on_monday():
+        start = start - wx.DateSpan.Day()
+    end = start + wx.DateSpan.Days(7)
+    navigation_fn(lambda tp: tp.update(start, end))
+
+  
 class StripCentury(Strip):
 
     def label(self, time, major=False):
@@ -473,7 +490,7 @@ class StripDecade(Strip):
 class StripYear(Strip):
 
     def label(self, time, major=False):
-        return str(time.Year)
+        return str(wx.DateTime.ConvertYearToBC(time.Year))
 
     def start(self, time):
         return wx.DateTimeFromDMY(1, 0, time.Year)

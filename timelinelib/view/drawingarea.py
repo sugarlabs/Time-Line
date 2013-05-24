@@ -17,12 +17,14 @@
 
 
 import wx
+import webbrowser
 
 from timelinelib.db.exceptions import TimelineIOError
 from timelinelib.db.objects import TimeOutOfRangeLeftError
 from timelinelib.db.objects import TimeOutOfRangeRightError
-from timelinelib.db.observer import STATE_CHANGE_ANY
-from timelinelib.db.observer import STATE_CHANGE_CATEGORY
+from timelinelib.db.utils import safe_locking
+from timelinelib.utilities.observer import STATE_CHANGE_ANY
+from timelinelib.utilities.observer import STATE_CHANGE_CATEGORY
 from timelinelib.drawing.viewproperties import ViewProperties
 from timelinelib.utils import ex_msg
 from timelinelib.view.move import MoveByDragInputHandler
@@ -60,6 +62,7 @@ class DrawingArea(object):
         self.divider_line_slider.Bind(wx.EVT_CONTEXT_MENU, self._slider_on_context_menu)
         self.change_input_handler_to_no_op()
         self.fast_draw = False
+        self.timeline = None
 
     def change_input_handler_to_zoom_by_drag(self, start_time):
         self.input_handler = ZoomByDragInputHandler(self, self.status_bar_adapter, start_time)
@@ -80,6 +83,7 @@ class DrawingArea(object):
 
     def change_input_handler_to_no_op(self):
         self.input_handler = NoOpInputHandler(self, self.view)
+        self.view.edit_ends()
 
     def get_drawer(self):
         return self.drawing_algorithm
@@ -192,6 +196,7 @@ class DrawingArea(object):
         self.context_menu_event = self.drawing_algorithm.event_at(x, y, alt_down)
         if self.context_menu_event is None:
             return
+        self.view_properties.set_selected(self.context_menu_event, True)
         menu_definitions = [
             (_("Edit"), self._context_menu_on_edit_event),
             (_("Duplicate..."), self._context_menu_on_duplicate_event),
@@ -199,6 +204,9 @@ class DrawingArea(object):
         ]
         if self.context_menu_event.has_data():
             menu_definitions.append((_("Sticky Balloon"), self._context_menu_on_sticky_balloon_event))
+        hyperlink = self.context_menu_event.get_data("hyperlink")
+        if hyperlink is not None:
+            menu_definitions.append((_("Goto URL"), self._context_menu_on_goto_hyperlink_event))
         menu = wx.Menu()
         for menu_definition in menu_definitions:
             text, method = menu_definition
@@ -234,6 +242,12 @@ class DrawingArea(object):
         self.view_properties.set_event_has_sticky_balloon(self.context_menu_event, has_sticky=True)
         self._redraw_timeline()
 
+    def _context_menu_on_goto_hyperlink_event(self, evt):
+        hyperlink = self.context_menu_event.get_data("hyperlink")
+        webbrowser.open(hyperlink)
+
+
+    
     def left_mouse_dclick(self, x, y, ctrl_down, alt_down=False):
         """
         Event handler used when the left mouse button has been double clicked.
@@ -316,16 +330,20 @@ class DrawingArea(object):
             self._delete_selected_events()
         elif alt_down:
             if keycode == wx.WXK_UP:
-                self._move_event_vertically(up=True)
+                self._try_move_event_vertically(True)
             elif keycode == wx.WXK_DOWN:
-                self._move_event_vertically(up=False)
+                self._try_move_event_vertically(False)
             elif keycode == wx.WXK_RIGHT:
                 self._scroll_timeline_view_by_factor(LEFT_RIGHT_SCROLL_FACTOR)
             elif keycode == wx.WXK_LEFT:
                 self._scroll_timeline_view_by_factor(-LEFT_RIGHT_SCROLL_FACTOR)
 
-    def _move_event_vertically(self, up=True):
+    def _try_move_event_vertically(self, up=True):
         if self._one_and_only_one_event_selected():
+            self._move_event_vertically(up)
+
+    def _move_event_vertically(self, up=True):
+        def edit_function():
             selected_event = self._get_first_selected_event()
             (overlapping_event, direction) = self.drawing_algorithm.get_closest_overlapping_event(selected_event,
                                                                                                   up=up)
@@ -338,6 +356,8 @@ class DrawingArea(object):
                 self.timeline.place_event_before_event(selected_event,
                                                        overlapping_event)
             self._redraw_timeline()
+            self.timeline._save_if_not_disabled()
+        safe_locking(self.view, edit_function)
 
     def key_up(self, keycode):
         if keycode == wx.WXK_CONTROL:
@@ -464,18 +484,24 @@ class DrawingArea(object):
         """After acknowledge from the user, delete all selected events."""
         selected_event_ids = self.view_properties.get_selected_event_ids()
         nbr_of_selected_event_ids = len(selected_event_ids)
-        if nbr_of_selected_event_ids > 1:
-            text = _("Are you sure you want to delete %d events?" %
-                     nbr_of_selected_event_ids)
-        else:
-            text = _("Are you sure you want to delete this event?")
-        if self.view.ask_question(text) == wx.YES:
-            try:
+        def user_ack():
+            if nbr_of_selected_event_ids > 1:
+                text = _("Are you sure you want to delete %d events?" %
+                         nbr_of_selected_event_ids)
+            else:
+                text = _("Are you sure you want to delete this event?")
+            return self.view.ask_question(text) == wx.YES
+        def exception_handler(ex):
+            if isinstance(ex, TimelineIOError):
+                self.fn_handle_db_error(ex)
+            else:
+                raise(ex)
+        def edit_function():
+            if user_ack():
                 for event_id in selected_event_ids:
                     self.timeline.delete_event(event_id)
-            except TimelineIOError, e:
-                self.fn_handle_db_error(e)
-
+        safe_locking(self.view, edit_function, exception_handler)
+            
     def balloon_visibility_changed(self, visible):
         self.view_properties.show_balloons_on_hover = visible
         # When display on hovering is disabled we have to make sure

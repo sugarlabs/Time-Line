@@ -40,6 +40,7 @@ def install(help_system):
     - Help(categories_delete)
     - Help(why_not_timeline_in_my_language)
     - Help(week_numbers_sunday_week_start)
+    - Help(multiple_users)
 - **%s**
     - Help(timeline)
     - Help(events)
@@ -47,6 +48,7 @@ def install(help_system):
 - **%s**
     - Help(create_event)
     - Help(edit_event)
+    - Help(move_event_vertically)
     - Help(delete_event)
     - Help(edit_categories)
     - Help(select_events)
@@ -79,6 +81,24 @@ There is no save button. Timeline will automatically save your data whenever nee
 The date data object used does not support week numbers for weeks that start on Sunday at present.  We plan on using a different date object that will support this in future versions.
 """))
 
+    help_system.install_page(
+        id="multiple_users",
+        header=_("Can multiple users work with the same timeline?"),
+        # TRANSLATORS: This text uses special markup.
+        # DON'T translate 'HelpFigure(..)' or 'Help(..)'.
+        # Just write them as they are.
+        # Stars produce emphasized text. DON'T remove them.
+        # Dashes produce bullet lists. DON'T remove them.
+        body=_("""
+There are some support for multiple users to work on the same timeline file.
+
+When you try to make a change and someone else has made a change you will be asked to make one of two choices:
+
+- Set timeline in read-only mode.
+- Synchronize the timeline.
+ 
+During the your edit action the timeline is locked for changes by others. If you try to edit a timeline when it is locked by someone else you will be notified about this situation.
+"""))
 
     help_system.install_page(
         id="timeline",
@@ -93,6 +113,8 @@ The date data object used does not support week numbers for weeks that start on 
 The timeline shows dates according to the Gregorian calendar on the x-axis. Currently the dates are limited to dates between year 10 and year 9989.
 
 Future versions might support various kinds of timelines so that you for example can specify a time in terms of number of minutes since a start time. If you are interested in such a feature, please get in touch.
+
+The timeline is divided in two areas with a horizontal adjustable divider line. Period events are displayed below the line and point events are displayed above the line.
 """))
 
     help_system.install_page(
@@ -149,6 +171,19 @@ The *Create Event* dialog can be opened in the following ways:
         # Dashes produce bullet lists. DON'T remove them.
         body=_("""
 The *Edit Event* dialog can be opened by double clicking on an event.
+"""))
+
+    help_system.install_page(
+        id="move_event_vertically",
+        header=_("Move event vertically"),
+        related_pages=["events", "select_events"],
+        # TRANSLATORS: This text uses special markup.
+        # DON'T translate 'HelpFigure(..)' or 'Help(..)'.
+        # Just write them as they are.
+        # Stars produce emphasized text. DON'T remove them.
+        # Dashes produce bullet lists. DON'T remove them.
+        body=_("""
+An event can be moved vertically. This is done by first selecting the event and therefter using the Alt+Up or Alt+Down keys.
 """))
 
     help_system.install_page(

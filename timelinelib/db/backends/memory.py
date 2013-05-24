@@ -33,9 +33,9 @@ from timelinelib.db.exceptions import TimelineIOError
 from timelinelib.db.objects import Category
 from timelinelib.db.objects import Container
 from timelinelib.db.objects import Event
-from timelinelib.db.observer import Observable
-from timelinelib.db.observer import STATE_CHANGE_ANY
-from timelinelib.db.observer import STATE_CHANGE_CATEGORY
+from timelinelib.utilities.observer import Observable
+from timelinelib.utilities.observer import STATE_CHANGE_ANY
+from timelinelib.utilities.observer import STATE_CHANGE_CATEGORY
 from timelinelib.db.search import generic_event_search
 from timelinelib.db.utils import IdCounter
 
@@ -54,15 +54,19 @@ class MemoryDB(Observable):
         self.save_disabled = False
         from timelinelib.time.pytime import PyTimeType
         self.time_type = PyTimeType()
+        self.readonly = False
 
     def get_time_type(self):
         return self.time_type
 
     def is_read_only(self):
-        return False
+        return self.readonly
 
+    def set_readonly(self):
+        self.readonly = True
+        
     def supported_event_data(self):
-        return ["description", "icon", "alert"]
+        return ["description", "icon", "alert", "hyperlink"]
 
     def search(self, search_string):
         return generic_event_search(self.events, search_string)

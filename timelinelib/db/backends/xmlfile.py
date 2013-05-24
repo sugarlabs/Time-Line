@@ -184,6 +184,8 @@ class XmlTimeline(MemoryDB):
                         parse_fn_store("tmp_description")),
                     Tag("alert", OPTIONAL,
                         parse_fn_store("tmp_alert")),
+                    Tag("hyperlink", OPTIONAL,
+                        parse_fn_store("tmp_hyperlink")),
                     Tag("icon", OPTIONAL,
                         parse_fn_store("tmp_icon")),
                 ])
@@ -238,6 +240,7 @@ class XmlTimeline(MemoryDB):
             icon = None
         else:
             icon = parse_icon(icon_text)
+        hyperlink = tmp_dict.pop("tmp_hyperlink", None)
         if self._is_container_event(text):
             cid, text = self._extract_container_id(text)
             event = Container(self.get_time_type(), start, end, text, category, cid=cid)
@@ -245,12 +248,21 @@ class XmlTimeline(MemoryDB):
             cid, text = self._extract_subid(text)
             event = Subevent(self.get_time_type(), start, end, text, category, cid=cid)
         else:
+            if self._text_starts_with_added_space(text):
+                text = self._remove_added_space(text)
             event = Event(self.get_time_type(), start, end, text, category, fuzzy, locked, ends_today)
         event.set_data("description", description)
         event.set_data("icon", icon)
         event.set_data("alert", alert)
+        event.set_data("hyperlink", hyperlink)
         self.save_event(event)
 
+    def _text_starts_with_added_space(self, text):
+        return text[0:2] in (" (", " [")
+    
+    def _remove_added_space(self, text):
+        return text[1:]
+        
     def alert_string(self, alert):
         time, text = alert
         time_string = self._time_string(time)
@@ -370,7 +382,10 @@ class XmlTimeline(MemoryDB):
         elif evt.is_subevent():
             write_simple_tag(file, "text", "(%d)%s " % (evt.cid(), evt.text), INDENT3)
         else:
-            write_simple_tag(file, "text", evt.text, INDENT3)
+            text = evt.text
+            if self._text_starts_with_container_tag(evt.text):
+                text = self._add_leading_space_to_text(evt.text)
+            write_simple_tag(file, "text", text, INDENT3)
         write_simple_tag(file, "fuzzy", "%s" % evt.fuzzy, INDENT3)
         write_simple_tag(file, "locked", "%s" % evt.locked, INDENT3)
         write_simple_tag(file, "ends_today", "%s" % evt.ends_today, INDENT3)
@@ -383,11 +398,20 @@ class XmlTimeline(MemoryDB):
         if alert is not None:
             write_simple_tag(file, "alert", self.alert_string(alert),
                              INDENT3)
+        hyperlink = evt.get_data("hyperlink")
+        if hyperlink is not None:
+            write_simple_tag(file, "hyperlink", hyperlink, INDENT3)
         if evt.get_data("icon") is not None:
             icon_text = icon_string(evt.get_data("icon"))
             write_simple_tag(file, "icon", icon_text, INDENT3)
     _write_event = wrap_in_tag(_write_event, "event", INDENT2)
 
+    def _text_starts_with_container_tag(self, text):
+        return text[0] in ('(', '[')
+
+    def _add_leading_space_to_text(self, text):
+        return " %s" % text
+    
     def _write_view(self, file):
         if self._get_displayed_period() is not None:
             self._write_displayed_period(file)

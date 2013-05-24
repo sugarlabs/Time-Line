@@ -1,3 +1,36 @@
+Timeline 0.20.0, released on 30 March 2013
+==========================================
+
+New features, enhancements:
+
+  * Added 'Save As' feature
+  * Strategy for allowing multiple users to use the same Timeline file.
+  * The timeline view regains focus when the event editor is closed.
+  * Enter-key works in date and time fields of the event editor
+  * Some help texts updated
+  * New version of icalender to cope with years before 1900
+  * TimelineComponent can explicitly clear the drawing area
+  
+Bug fixes:
+
+  * Fixed problem with Event texts starting with '('- or '['-character
+  * Delete event by context menu now works
+
+
+Timeline 0.19.0, released on 30 December 2012
+=============================================
+
+New features, enhancements:
+
+  * Possibility to define URL on events and execute "Goto URL" to open web browser.
+  * Implemented 'fit week' navigation function.
+  * Help text added, to describe vertical movement of events.
+  
+Bug fixes:
+
+  * Build script generates zip file with only LF as line endings in files
+  * Year 0 removed from timeline display when using extended date range
+
 Timeline 0.18.0, released on 30 September 2012
 ==============================================
 
@@ -12,8 +45,6 @@ Bug fixes:
   * Fixed problem with ends-today property
   * Fit millennium now works close to edges
   * Fit century now works close to edges
-
-  
 
 Timeline 0.17.0, released on 15 June 2012
 =========================================

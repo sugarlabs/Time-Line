@@ -16,7 +16,7 @@
 # along with Timeline.  If not, see <http://www.gnu.org/licenses/>.
 
 
-VERSION = (0, 18, 0)
+VERSION = (0, 20, 0)
 DEV = False
 
 

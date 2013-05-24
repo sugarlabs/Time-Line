@@ -35,7 +35,11 @@ class WxDateTimePicker(wx.Panel):
         self.controller = WxDateTimePickerController(
             self.date_picker, self.time_picker, wx.DateTime.Now)
         self.show_time(show_time)
+        self.parent = parent
 
+    def on_return(self):
+        self.parent.on_return()
+        
     def show_time(self, show=True):
         self.time_picker.Show(show)
         self.GetSizer().Layout()
@@ -194,7 +198,8 @@ class WxDatePicker(wx.TextCtrl):
         self.controller = WxDatePickerController(self)
         self._bind_events()
         self._resize_to_fit_text()
-
+        self.parent = parent
+        
     def get_date(self):
         return self.controller.get_date()
 
@@ -243,6 +248,9 @@ class WxDatePicker(wx.TextCtrl):
             self.controller.on_up()
         elif evt.GetKeyCode() == wx.WXK_DOWN:
             self.controller.on_down()
+        elif (evt.GetKeyCode() == wx.WXK_NUMPAD_ENTER or 
+              evt.GetKeyCode() == wx.WXK_RETURN):
+            self.parent.on_return()
         else:
             evt.Skip()
 
@@ -271,6 +279,10 @@ class WxDatePickerController(object):
     def get_date(self):
         try:
             (year, month, day) = self._parse_year_month_day()
+            if year == 0:
+                raise ValueError("Invalid date.")
+            if year < 0:
+                year +=1
             wx_date = try_to_create_wx_date_time_from_dmy(day, month - 1, year)
             self._ensure_date_within_allowed_period(wx_date)
             return wx_date
@@ -278,7 +290,9 @@ class WxDatePickerController(object):
             raise ValueError("Invalid date.")
 
     def set_date(self, wx_date):
-        date_string = WxTimeType().event_date_string(wx_date)
+        bc_year = wx.DateTime.ConvertYearToBC(wx_date.Year)
+        tmp_date = wx.DateTimeFromDMY(wx_date.Day, wx_date.Month, bc_year)
+        date_string = WxTimeType().event_date_string(tmp_date)
         self.wx_date_picker.set_date_string(date_string)
 
     def on_set_focus(self):
@@ -495,6 +509,7 @@ class WxTimePicker(wx.TextCtrl):
         self.controller = WxTimePickerController(self)
         self._bind_events()
         self._resize_to_fit_text()
+        self.parent = parent
 
     def get_time(self):
         return self.controller.get_time()
@@ -544,6 +559,9 @@ class WxTimePicker(wx.TextCtrl):
             self.controller.on_up()
         elif evt.GetKeyCode() == wx.WXK_DOWN:
             self.controller.on_down()
+        elif (evt.GetKeyCode() == wx.WXK_NUMPAD_ENTER or 
+              evt.GetKeyCode() == wx.WXK_RETURN):
+            self.parent.on_return()
         else:
             evt.Skip()
 

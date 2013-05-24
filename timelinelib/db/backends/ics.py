@@ -25,7 +25,7 @@ from icalendar import Calendar
 
 from timelinelib.db.exceptions import TimelineIOError
 from timelinelib.db.objects import Event
-from timelinelib.db.observer import Observable
+from timelinelib.utilities.observer import Observable
 from timelinelib.db.search import generic_event_search
 from timelinelib.db.utils import IdCounter
 from timelinelib.time import PyTimeType
@@ -105,7 +105,7 @@ class IcsTimeline(Observable):
         return None
 
     def _get_events(self, decider_fn=None):
-        events = []
+        self.events = []
         for event in self.cal.walk("VEVENT"):
             start, end = extract_start_end(event)
             txt = ""
@@ -114,17 +114,17 @@ class IcsTimeline(Observable):
             e = Event(self.get_time_type(), start, end, txt)
             e.set_id(event["timeline_id"])
             if decider_fn is None or decider_fn(e):
-                events.append(e)
-        return events
+                self.events.append(e)
+        return self.events
 
     def _load_data(self):
         self.cal = Calendar()
         try:
-            file = open(self.path, "rb")
+            ics_file = open(self.path, "rb")
             try:
-                file_contents = file.read()
+                file_contents = ics_file.read()
                 try:
-                    self.cal = Calendar.from_string(file_contents)
+                    self.cal = Calendar.from_ical(file_contents)
                     for event in self.cal.walk("VEVENT"):
                         event["timeline_id"] = self.event_id_counter.get_next()
                 except Exception, pe:
@@ -132,7 +132,7 @@ class IcsTimeline(Observable):
                     msg2 = "\n\n" + ex_msg(pe)
                     raise TimelineIOError((msg1 % abspath(self.path)) + msg2)
             finally:
-                file.close()
+                ics_file.close()
         except IOError, e:
             msg = _("Unable to read from file '%s'.")
             whole_msg = (msg + "\n\n%s") % (abspath(self.path), e)

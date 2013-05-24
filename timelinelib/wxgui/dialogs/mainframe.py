@@ -25,7 +25,10 @@ from timelinelib.config.dotfile import read_config
 from timelinelib.config.paths import ICONS_DIR
 from timelinelib.db.exceptions import TimelineIOError
 from timelinelib.db import db_open
+from timelinelib.db.backends.xmlfile import XmlTimeline
 from timelinelib.db.objects import TimePeriod
+from timelinelib.db.transformers.toxmltimeline import transform_to_xml_timeline
+from timelinelib.db.utils import safe_locking
 from timelinelib.export.bitmap import export_to_image
 from timelinelib.meta.about import APPLICATION_NAME
 from timelinelib.meta.about import display_about_dialog
@@ -46,6 +49,7 @@ from timelinelib.wxgui.dialogs.timeeditor import TimeEditorDialog
 from timelinelib.wxgui.utils import _ask_question
 from timelinelib.wxgui.utils import _display_error_message
 from timelinelib.wxgui.utils import WildcardHelper
+from timelinelib.wxgui.timer import TimelineTimer
 import timelinelib.printing as printing
 import timelinelib.wxgui.utils as gui_utils
 
@@ -80,11 +84,20 @@ class MainFrame(wx.Frame):
         self.controller.on_started(application_arguments)
         self._create_and_start_timer()
 
+    def week_starts_on_monday(self):
+        return self.config.week_start == "monday"
+
+    def ok_to_edit(self):
+        return self.controller.ok_to_edit()
+        
+    def edit_ends(self):
+        self.controller.edit_ends()
+        
     def _create_and_start_timer(self):
-        self.timer = wx.Timer(self)
-        self.Bind(wx.EVT_TIMER, self._timer_tick, self.timer)
-        self.timer.Start(10000)
         self.alert_dialog_open = False
+        self.timer = TimelineTimer(self)
+        self.timer.register(self._timer_tick)
+        self.timer.start(10000)
 
     def _set_initial_values_to_member_variables(self):
         self.timeline = None
@@ -127,6 +140,8 @@ class MainFrame(wx.Frame):
         self._create_file_new_menu(file_menu)
         self._create_file_open_menu_item(file_menu)
         self._create_file_open_recent_menu(file_menu)
+        file_menu.AppendSeparator()
+        self._create_file_save_as_menu(file_menu)
         file_menu.AppendSeparator()
         self._create_file_page_setup_menu_item(file_menu)
         self._create_file_print_preview_menu_item(file_menu)
@@ -197,6 +212,39 @@ class MainFrame(wx.Frame):
     def _mnu_file_open_on_click(self, event):
         self._open_existing_timeline()
 
+    def mnu_file_save_as_on_click(self, event):
+        if self.timeline is not None:
+            self._save_as()
+
+    def _save_as(self):
+        new_timeline_path = self._get_new_timeline_path_from_user()
+        self._save_timeline_to_new_path(new_timeline_path)
+    
+    def _get_new_timeline_path_from_user(self):
+        defaultDir = os.path.dirname(self.timeline.path)
+        wildcard_helper = WildcardHelper(_("Timeline files"), ["timeline"])
+        wildcard = wildcard_helper.wildcard_string()
+        style = wx.FD_SAVE|wx.FD_OVERWRITE_PROMPT
+        message = _("Save Timeline As")
+        dialog = wx.FileDialog(self, message=message, defaultDir=defaultDir,
+                               wildcard=wildcard, style=style)
+        if dialog.ShowModal() == wx.ID_OK:
+            new_timeline_path = wildcard_helper.get_path(dialog)
+        else:
+            new_timeline_path = None
+        dialog.Destroy()
+        return new_timeline_path
+
+    def _save_timeline_to_new_path(self, new_timeline_path):
+        if new_timeline_path is not None:
+            if isinstance(self.timeline, XmlTimeline):
+                self.timeline.path = new_timeline_path
+            else:
+                self.timeline =  transform_to_xml_timeline(new_timeline_path, 
+                                                           self.timeline)
+            self._save_current_timeline_data()
+            self.open_timeline(self.timeline.path)
+        
     def _open_existing_timeline(self):
         dir = ""
         if self.timeline is not None:
@@ -214,6 +262,10 @@ class MainFrame(wx.Frame):
         self.mnu_file_open_recent_submenu = wx.Menu()
         file_menu.AppendMenu(wx.ID_ANY, _("Open &Recent"), self.mnu_file_open_recent_submenu)
         self._update_open_recent_submenu()
+
+    def _create_file_save_as_menu(self, file_menu):
+        menu = file_menu.Append(wx.ID_SAVEAS, "", _("Save As..."))
+        self.Bind(wx.EVT_MENU, self.mnu_file_save_as_on_click, id=wx.ID_SAVEAS)
 
     def _create_file_page_setup_menu_item(self, file_menu):
         mnu_file_print_setup = file_menu.Append(
@@ -322,9 +374,11 @@ class MainFrame(wx.Frame):
         self.Bind(wx.EVT_MENU, self._mnu_edit_preferences_on_click, preferences_item)
 
     def _mnu_edit_preferences_on_click(self, evt):
-        dialog = PreferencesDialog(self, self.config)
-        dialog.ShowModal()
-        dialog.Destroy()
+        def edit_function():
+            dialog = PreferencesDialog(self, self.config)
+            dialog.ShowModal()
+            dialog.Destroy()
+        safe_locking(self, edit_function)
 
     def _create_view_menu(self, main_menu_bar):
         view_menu = wx.Menu()
@@ -375,6 +429,7 @@ class MainFrame(wx.Frame):
         self._create_timeline_duplicate_event_menu_item(timeline_menu)
         self._create_timeline_measure_distance_between_events_menu_item(timeline_menu)
         self._create_timeline_edit_categories(timeline_menu)
+        self._create_timeline_set_readonly(timeline_menu)
         main_menu_bar.Append(timeline_menu, _("&Timeline"))
 
     def _create_timeline_create_event_menu_item(self, timeline_menu):
@@ -384,8 +439,8 @@ class MainFrame(wx.Frame):
         self.menu_controller.add_menu_requiring_writable_timeline(create_event_item)
 
     def _mnu_timeline_create_event_on_click(self, evt):
-        open_create_event_editor(
-            self, self.config, self.timeline, self.handle_db_error)
+        open_create_event_editor(self, self.config, self.timeline, 
+                                 self.handle_db_error)
 
     def _create_timeline_duplicate_event_menu_item(self, timeline_menu):
         self.mnu_timeline_duplicate_event = timeline_menu.Append(
@@ -462,7 +517,22 @@ class MainFrame(wx.Frame):
         self.menu_controller.add_menu_requiring_writable_timeline(edit_categories_item)
 
     def _mnu_timeline_edit_categories_on_click(self, evt):
-        self.edit_categories()
+        def edit_function():
+            self.edit_categories()
+        safe_locking(self, edit_function)
+
+    def _create_timeline_set_readonly(self, timeline_menu):
+        item = timeline_menu.Append(
+            wx.ID_ANY, _("Read Only"), _("Read Only"))
+        self.Bind(wx.EVT_MENU, self._mnu_timeline_set_readonly_on_click, item)
+        self.menu_controller.add_menu_requiring_writable_timeline(item)
+
+    def _mnu_timeline_set_readonly_on_click(self, evt):
+        self.controller.set_timeline_in_readonly_mode()
+        
+    def timeline_is_readonly(self):
+        self.status_bar_adapter.set_read_only_text(_("read-only"))
+        self.enable_disable_menus()
 
     def edit_categories(self):
         def create_categories_editor():
@@ -616,6 +686,7 @@ class MainFrame(wx.Frame):
     def open_timeline(self, input_file):
         self.controller.open_timeline(input_file)
         self._update_navigation_menu_items()
+        self.enable_disable_menus()
 
     def handle_db_error(self, error):
         _display_error_message(ex_msg(error), self)
@@ -852,6 +923,12 @@ class MenuController(object):
         else:
             menu.Enable(True)
 
+    def _enable_disable_menu_requiring_xml_timeline(self, menu):
+        if isinstance(self.current_timeline, XmlTimeline):
+            menu.Enable(True)
+        else:
+            menu.Enable(False)
+
     def _enable_disable_menu_requiring_timeline(self, menu):
         menu.Enable(self.current_timeline != None)
 
@@ -1005,7 +1082,7 @@ class TimelinePanel(wx.Panel):
             self.sidebar_width = self.splitter.GetSashPosition()
 
     def _create_sidebar(self):
-        self.sidebar = Sidebar(self.splitter, self.handle_db_error)
+        self.sidebar = Sidebar(self.main_frame, self.splitter, self.handle_db_error)
 
     def _create_drawing_area(self):
         self.drawing_area = DrawingAreaPanel(
@@ -1081,7 +1158,8 @@ class Sidebar(wx.Panel):
     Currently only shows the categories with visibility check boxes.
     """
 
-    def __init__(self, parent, handle_db_error):
+    def __init__(self, main_frame, parent, handle_db_error):
+        self.main_frame = main_frame
         wx.Panel.__init__(self, parent, style=wx.BORDER_NONE)
         self._create_gui(handle_db_error)
 
@@ -1091,6 +1169,12 @@ class Sidebar(wx.Panel):
         sizer = wx.BoxSizer(wx.VERTICAL)
         sizer.Add(self.cattree, flag=wx.GROW, proportion=1)
         self.SetSizer(sizer)
+        
+    def ok_to_edit(self):
+        return self.main_frame.ok_to_edit()
+
+    def edit_ends(self):
+        return self.main_frame.edit_ends()
 
 
 class StatusBarAdapter(object):
