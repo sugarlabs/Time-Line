@@ -86,7 +86,7 @@ class TimelineApplication(object):
             return True
         last_changed = self._get_modification_date()
         if last_changed > self.last_changed:
-            ack = get_user_ack(_("Someoneelse has changed the Timeline.\nYou have two choices!\n  1. Set Timeline in Read-Only mode.\n  2. Synchronize Timeline.\n\nDo you want to Synchronize?"))
+            ack = get_user_ack(_("Someone else has changed the Timeline.\nYou have two choices!\n  1. Set Timeline in Read-Only mode.\n  2. Synchronize Timeline.\n\nDo you want to Synchronize?"))
             if ack:
                 self._synchronize()
             else:
