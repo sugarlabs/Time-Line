@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-22 00:31-0400\n"
-"PO-Revision-Date: 2013-05-02 21:39+0200\n"
-"Last-Translator: anushnur <anush.mkrtchyan@ca1492.com>\n"
+"POT-Creation-Date: 2013-05-28 00:31-0400\n"
+"PO-Revision-Date: 2013-06-28 21:53+0200\n"
+"Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: hy\n"
 "MIME-Version: 1.0\n"
@@ -45,27 +45,27 @@ msgstr "Օգոստոս"
 
 #: specs/PyTimeType.py:110 specs/PyTimeType.py:130 specs/PyTimeType.py:146
 #: specs/PyTimeType.py:150 specs/WxTimeType.py:150 specs/WxTimeType.py:166
-#: specs/WxTimeType.py:170 timelinelib/time/pytime.py:122
-#: timelinelib/time/wxtime.py:120
+#: specs/WxTimeType.py:170 timelinelib/time/pytime.py:123
+#: timelinelib/time/wxtime.py:121
 msgid "day"
 msgstr "օր"
 
 #: specs/PyTimeType.py:114 specs/PyTimeType.py:138 specs/PyTimeType.py:158
 #: specs/WxTimeType.py:134 specs/WxTimeType.py:158 specs/WxTimeType.py:178
-#: timelinelib/time/pytime.py:130 timelinelib/time/wxtime.py:128
+#: timelinelib/time/pytime.py:131 timelinelib/time/wxtime.py:129
 msgid "minute"
 msgstr "րոպե"
 
 #: specs/PyTimeType.py:118 specs/PyTimeType.py:142 specs/PyTimeType.py:162
 #: specs/WxTimeType.py:138 specs/WxTimeType.py:162 specs/WxTimeType.py:182
-#: timelinelib/time/pytime.py:132 timelinelib/time/wxtime.py:130
+#: timelinelib/time/pytime.py:133 timelinelib/time/wxtime.py:131
 msgid "minutes"
 msgstr "րոպեներ"
 
 #: specs/PyTimeType.py:122 specs/PyTimeType.py:138 specs/PyTimeType.py:142
 #: specs/PyTimeType.py:146 specs/WxTimeType.py:142 specs/WxTimeType.py:158
 #: specs/WxTimeType.py:162 specs/WxTimeType.py:166
-#: timelinelib/time/pytime.py:126 timelinelib/time/wxtime.py:124
+#: timelinelib/time/pytime.py:127 timelinelib/time/wxtime.py:125
 msgid "hour"
 msgstr "ժամ"
 
@@ -73,7 +73,7 @@ msgstr "ժամ"
 #: specs/PyTimeType.py:158 specs/PyTimeType.py:162 specs/WxTimeType.py:146
 #: specs/WxTimeType.py:170 specs/WxTimeType.py:174 specs/WxTimeType.py:178
 #: specs/WxTimeType.py:182 specs/WxTimeType.py:186
-#: timelinelib/time/pytime.py:128 timelinelib/time/wxtime.py:126
+#: timelinelib/time/pytime.py:129 timelinelib/time/wxtime.py:127
 msgid "hours"
 msgstr "ժամեր"
 
@@ -81,7 +81,7 @@ msgstr "ժամեր"
 #: specs/PyTimeType.py:162 specs/PyTimeType.py:166 specs/PyTimeType.py:172
 #: specs/WxTimeType.py:154 specs/WxTimeType.py:174 specs/WxTimeType.py:178
 #: specs/WxTimeType.py:182 specs/WxTimeType.py:186 specs/WxTimeType.py:192
-#: timelinelib/time/pytime.py:124 timelinelib/time/wxtime.py:122
+#: timelinelib/time/pytime.py:125 timelinelib/time/wxtime.py:123
 msgid "days"
 msgstr "օրեր"
 
@@ -97,11 +97,11 @@ msgstr "Տարածաշրջանը շատ փոքր է"
 msgid "Region too long"
 msgstr "Տարածաշրջանը շատ մեծ է"
 
-#: specs/TimelineView.py:191 timelinelib/view/drawingarea.py:168
+#: specs/TimelineView.py:191 timelinelib/view/drawingarea.py:172
 msgid "Can't scroll more to the left"
 msgstr "Հնարավոր չէ ավել գլորել դեպի ձախ"
 
-#: specs/TimelineView.py:198 timelinelib/view/drawingarea.py:170
+#: specs/TimelineView.py:198 timelinelib/view/drawingarea.py:174
 msgid "Can't scroll more to the right"
 msgstr "Հնարավոր չէ ավել գլորել դեպի աջ"
 
@@ -112,6 +112,16 @@ msgstr "Երկուշաբթի"
 #: specs/WeekdayNames.py:33 timelinelib/calendar/weekdaynames.py:27
 msgid "Sun"
 msgstr "Կիրակի"
+
+#: timelinelib/application.py:89
+msgid ""
+"Someone else has changed the Timeline.\n"
+"You have two choices!\n"
+"  1. Set Timeline in Read-Only mode.\n"
+"  2. Synchronize Timeline.\n"
+"\n"
+"Do you want to Synchronize?"
+msgstr ""
 
 #: timelinelib/calendar/monthnames.py:38
 msgid "Feb"
@@ -175,7 +185,7 @@ msgid ""
 "files. See the Timeline website or the INSTALL file for instructions how to "
 "install it."
 msgstr ""
-" iՕրացույց Պիթոնի փաթեթը չգտնվեց: Այն պահանջվում է ICS օպերացիոն համակարգի "
+"iՕրացույց Պիթոնի փաթեթը չգտնվեց: Այն պահանջվում է ICS օպերացիոն համակարգի "
 "ֆայլերի հետ աշխատելու համար: Տես Ժամանակացույց կայքէջը կամ ՏԵՂԱԴՐՄԱՆ ֆայլ, "
 "վերջինիս տեղադրման հրահանգներին ծանոթանալու համար:"
 
@@ -200,39 +210,39 @@ msgstr "Չի ընթերցում '%s' ֆայլից"
 msgid "Unable to read timeline data from '%s'."
 msgstr "Չի կարող ընթերցել ժամանակացույցի տվյալները '%s' - ից"
 
-#: timelinelib/db/backends/memory.py:223
+#: timelinelib/db/backends/memory.py:227
 msgid "Displayed period must be > 0."
 msgstr "Ցուցադրված ժամանակաշրջանը պետք է լինի  > 0"
 
-#: timelinelib/db/backends/tutorial.py:30 timelinelib/db/tutorial.py:30
+#: timelinelib/db/backends/tutorial.py:30
 msgid "Welcome"
 msgstr "Բարի գալուստ"
 
-#: timelinelib/db/backends/tutorial.py:32 timelinelib/db/tutorial.py:32
+#: timelinelib/db/backends/tutorial.py:32
 msgid "Welcome to Timeline"
 msgstr "Բարի գալուստ Ժամանակացույց"
 
-#: timelinelib/db/backends/tutorial.py:35 timelinelib/db/tutorial.py:35
+#: timelinelib/db/backends/tutorial.py:35
 msgid "Intro"
 msgstr "Մուտք"
 
-#: timelinelib/db/backends/tutorial.py:37 timelinelib/db/tutorial.py:37
+#: timelinelib/db/backends/tutorial.py:37
 msgid "Hover me!"
 msgstr "Անցիր ինձ վրայով"
 
-#: timelinelib/db/backends/tutorial.py:38 timelinelib/db/tutorial.py:38
+#: timelinelib/db/backends/tutorial.py:38
 msgid "Hovering events with a triangle shows the event description."
 msgstr "Անցկացնելով կուրսորը եռանկյունով` ցուցադրում է նկարագրությունը:"
 
-#: timelinelib/db/backends/tutorial.py:40 timelinelib/db/tutorial.py:40
+#: timelinelib/db/backends/tutorial.py:40
 msgid "Features"
 msgstr "Հատկություններ"
 
-#: timelinelib/db/backends/tutorial.py:42 timelinelib/db/tutorial.py:42
+#: timelinelib/db/backends/tutorial.py:42
 msgid "Scroll"
 msgstr "Ոլորել"
 
-#: timelinelib/db/backends/tutorial.py:43 timelinelib/db/tutorial.py:43
+#: timelinelib/db/backends/tutorial.py:43
 msgid ""
 "Left click somewhere on the timeline and start dragging.\n"
 "\n"
@@ -241,11 +251,11 @@ msgid ""
 "You can also middle click with the mouse to center around that point."
 msgstr "Ձախ քլիք որևէ տեղ ժամանակացույցի վրա և սկսիր քաշել"
 
-#: timelinelib/db/backends/tutorial.py:51 timelinelib/db/tutorial.py:51
+#: timelinelib/db/backends/tutorial.py:51
 msgid "Zoom"
 msgstr "Հեռափոխում"
 
-#: timelinelib/db/backends/tutorial.py:52 timelinelib/db/tutorial.py:52
+#: timelinelib/db/backends/tutorial.py:52
 msgid ""
 "Hold down Ctrl while scrolling the mouse wheel.\n"
 "\n"
@@ -255,12 +265,11 @@ msgstr ""
 "\n"
 "Սեղմած պահիր Shift ստեղնը մինչդեռ քաշում ես մկնիկով:"
 
-#: timelinelib/db/backends/tutorial.py:58 timelinelib/db/tutorial.py:58
-#: timelinelib/help/pages.py:126
+#: timelinelib/db/backends/tutorial.py:58 timelinelib/help/pages.py:148
 msgid "Create event"
 msgstr "Ստեղծել իրադարձություն"
 
-#: timelinelib/db/backends/tutorial.py:59 timelinelib/db/tutorial.py:59
+#: timelinelib/db/backends/tutorial.py:59
 msgid ""
 "Double click somewhere on the timeline.\n"
 "\n"
@@ -270,20 +279,19 @@ msgstr ""
 "\n"
 "Սեղմած պահել \"Ctrl\" ստեղնը և սահեցնել մկնիկը ժամանակաշրջանն ընտրելու համար"
 
-#: timelinelib/db/backends/tutorial.py:65 timelinelib/db/tutorial.py:65
-#: timelinelib/help/pages.py:143
+#: timelinelib/db/backends/tutorial.py:65 timelinelib/help/pages.py:165
 msgid "Edit event"
 msgstr "Խմբագրել իրադարձությունը"
 
-#: timelinelib/db/backends/tutorial.py:66 timelinelib/db/tutorial.py:66
+#: timelinelib/db/backends/tutorial.py:66
 msgid "Double click on an event."
 msgstr "Երկու անգամ քլիք անել իրադարձության վրա"
 
-#: timelinelib/db/backends/tutorial.py:70 timelinelib/db/tutorial.py:70
+#: timelinelib/db/backends/tutorial.py:70
 msgid "Select event"
 msgstr "Ընտրել իրադարձությունը"
 
-#: timelinelib/db/backends/tutorial.py:71 timelinelib/db/tutorial.py:71
+#: timelinelib/db/backends/tutorial.py:71
 msgid ""
 "Click on it.\n"
 "\n"
@@ -293,32 +301,30 @@ msgstr ""
 "\n"
 "Սեղմած պահել \"Ctrl\" ստեղնը մի քանի իրադարձություններ ընտրելու համար"
 
-#: timelinelib/db/backends/tutorial.py:77 timelinelib/db/tutorial.py:77
-#: timelinelib/help/pages.py:168
+#: timelinelib/db/backends/tutorial.py:77 timelinelib/help/pages.py:203
 msgid "Delete event"
 msgstr "Ջնջել րադարձությունը"
 
-#: timelinelib/db/backends/tutorial.py:78 timelinelib/db/tutorial.py:78
+#: timelinelib/db/backends/tutorial.py:78
 msgid "Select events to be deleted and press the Del key."
 msgstr ""
 "Ընտրել այն իրադարձությունները, որոնք ցանկանում եք ջնջել և սեղմել \"Del\" "
 "ստեղնը"
 
-#: timelinelib/db/backends/tutorial.py:82 timelinelib/db/tutorial.py:82
+#: timelinelib/db/backends/tutorial.py:82
 msgid "Resize and move me!"
 msgstr "Փոխիր իմ չափսը և տեղաշարժիր ինձ"
 
-#: timelinelib/db/backends/tutorial.py:83 timelinelib/db/tutorial.py:83
+#: timelinelib/db/backends/tutorial.py:83
 msgid "First select me and then drag the handles."
 msgstr "Առաջինը ընտրիր ինձ և հետո քաշիր բռնակները"
 
 #: timelinelib/db/backends/tutorial.py:86
-#: timelinelib/db/backends/tutorial.py:88 timelinelib/db/tutorial.py:86
-#: timelinelib/db/tutorial.py:88
+#: timelinelib/db/backends/tutorial.py:88
 msgid "Saving"
 msgstr "Պահպանում է"
 
-#: timelinelib/db/backends/tutorial.py:89 timelinelib/db/tutorial.py:89
+#: timelinelib/db/backends/tutorial.py:89
 msgid ""
 "This timeline is stored in memory and modifications to it will not be "
 "persisted between sessions.\n"
@@ -331,15 +337,15 @@ msgstr ""
 "Ընտրիր ֆայլը/Նոր/Ֆայլի ժամանակացույց ստեղծելու ժամանակացույց, որը պահպանված "
 "է դիսկում:"
 
-#: timelinelib/db/objects.py:252 timelinelib/db/objects/timeperiod.py:72
+#: timelinelib/db/objects/timeperiod.py:72
 msgid "Start time "
 msgstr "Մակնարկի ժամը "
 
-#: timelinelib/db/objects.py:254 timelinelib/db/objects/timeperiod.py:74
+#: timelinelib/db/objects/timeperiod.py:74
 msgid "End time "
 msgstr "Ավարտի ժամը "
 
-#: timelinelib/db/objects.py:264 timelinelib/db/objects/timeperiod.py:84
+#: timelinelib/db/objects/timeperiod.py:84
 msgid "Start time can't be after end time"
 msgstr "Մեկնարկի ժամը չի կարող լինել ավարտի ժամից հետո"
 
@@ -376,7 +382,7 @@ msgstr "Հնարավոր չէ ջնջել պահուստային ֆայլը '%s'.
 #: timelinelib/editors/container.py:81 timelinelib/editors/event.py:250
 #, python-format
 msgid "Field '%s' can't be empty."
-msgstr " '%s'  դաշտը չի կարող լինել դատարկ:"
+msgstr "'%s'  դաշտը չի կարող լինել դատարկ:"
 
 #: timelinelib/editors/container.py:81
 msgid "Name"
@@ -402,7 +408,7 @@ msgstr "Պատկերի ֆայլերը"
 msgid "Export to Image"
 msgstr "Արտահանել Պատկերը"
 
-#: timelinelib/export/bitmap.py:35 timelinelib/wxgui/dialogs/mainframe.py:273
+#: timelinelib/export/bitmap.py:35 timelinelib/wxgui/dialogs/mainframe.py:325
 #, python-format
 msgid "File '%s' exists. Overwrite?"
 msgstr "'%s' ֆայլը գոյություն ունի: Գրել նորի՞ց"
@@ -411,23 +417,23 @@ msgstr "'%s' ֆայլը գոյություն ունի: Գրել նորի՞ց"
 msgid "Help contents"
 msgstr "Օգնության բովանդակություն"
 
-#: timelinelib/help/pages.py:54
+#: timelinelib/help/pages.py:56
 msgid "Questions and answers"
 msgstr "Հարցեր և պատասխաններ"
 
-#: timelinelib/help/pages.py:54
+#: timelinelib/help/pages.py:56
 msgid "Concepts"
 msgstr "Հասկացությունները"
 
-#: timelinelib/help/pages.py:54
+#: timelinelib/help/pages.py:56
 msgid "Tasks"
 msgstr "Առաջադրանքներ"
 
-#: timelinelib/help/pages.py:59
+#: timelinelib/help/pages.py:61
 msgid "Where is the save button?"
 msgstr "Որտե՞ղ է պահպանման կոճակը:"
 
-#: timelinelib/help/pages.py:65
+#: timelinelib/help/pages.py:67
 msgid ""
 "\n"
 "There is no save button. Timeline will automatically save your data whenever "
@@ -437,11 +443,11 @@ msgstr ""
 "Պահպանման կոճակ չկա: Ժամանակացույցը ավտոմատ կերպով կպահպանի քո տվյալները երբ "
 "որ պետք լինի:\n"
 
-#: timelinelib/help/pages.py:72
+#: timelinelib/help/pages.py:74
 msgid "Where do the week numbers go if I start my weeks on Sunday?"
 msgstr "Ու՞ր են գնում շաբաթվա օրերը, եթե ես սկսում եմ իմ շաբաթը կիրակի օրվանից:"
 
-#: timelinelib/help/pages.py:78
+#: timelinelib/help/pages.py:80
 msgid ""
 "\n"
 "The date data object used does not support week numbers for weeks that start "
@@ -451,13 +457,34 @@ msgstr ""
 "\n"
 "Օրվա տվյալների առարկան չի աջակցում այն շաբաթվա օրերին, որը սկսում են Կիրակի "
 "օրվանից: Պատրաստվում ենք օգտագործել այլ տվյալների առարկա, որը կաջակցի "
-"հետագայում: \n"
+"հետագայում:\n"
 
-#: timelinelib/help/pages.py:85
+#: timelinelib/help/pages.py:86
+msgid "Can multiple users work with the same timeline?"
+msgstr ""
+
+#: timelinelib/help/pages.py:92
+msgid ""
+"\n"
+"There are some support for multiple users to work on the same timeline "
+"file.\n"
+"\n"
+"When you try to make a change and someone else has made a change you will be "
+"asked to make one of two choices:\n"
+"\n"
+"- Set timeline in read-only mode.\n"
+"- Synchronize the timeline.\n"
+" \n"
+"During the your edit action the timeline is locked for changes by others. If "
+"you try to edit a timeline when it is locked by someone else you will be "
+"notified about this situation.\n"
+msgstr ""
+
+#: timelinelib/help/pages.py:105
 msgid "Timeline"
 msgstr "Ժամանակացույց"
 
-#: timelinelib/help/pages.py:92
+#: timelinelib/help/pages.py:112
 msgid ""
 "\n"
 "The timeline shows dates according to the Gregorian calendar on the x-axis. "
@@ -466,20 +493,17 @@ msgid ""
 "Future versions might support various kinds of timelines so that you for "
 "example can specify a time in terms of number of minutes since a start time. "
 "If you are interested in such a feature, please get in touch.\n"
+"\n"
+"The timeline is divided in two areas with a horizontal adjustable divider "
+"line. Period events are displayed below the line and point events are "
+"displayed above the line.\n"
 msgstr ""
-"\n"
-"Ժամանակացույնցը ցուցադրում է օրերը համաձայն Գրիգորյան օրացույցի x առանցքի "
-"վրա: Ներկայումս ամսաթվերը սահմանափակվում են 10 և 9989 թ.-ի միջև: \n"
-"\n"
-"Հետագա տարբերակները կունենան ժամանակացույցի տարբեր տեսակներ, օրինակ դու "
-"կկարողանաս հատկորոշել ժամանակ րոպեների թվերի ժամկետում սկսած մեկնարկման "
-"ժամանակից: Եթե հետաքրքրված ես այդպիսի հատկանիշով, խնրում եմ տեղեկացնել:\n"
 
-#: timelinelib/help/pages.py:100
+#: timelinelib/help/pages.py:122
 msgid "Events"
 msgstr "Իրադարձություններ"
 
-#: timelinelib/help/pages.py:107
+#: timelinelib/help/pages.py:129
 msgid ""
 "\n"
 "An event is the basic data type for representing information on the "
@@ -491,13 +515,13 @@ msgstr ""
 "Իրադարձությունը հիմնական տվյալի տեսակ է ժամանակացույցի վրա տեղեկատվություն "
 "ցուցադրելու համար: Պետք է հատկորոշվի, թե ժամանակացույցի վրա որտեղ պետք է "
 "տեղադրվի (երբ է տեղի ունեցել այդ իրադարձությունը): Այն կարող է լինել կամ "
-"հատուկ կետ ժամանակի մեջ կամ ժամանակաշրջան: \n"
+"հատուկ կետ ժամանակի մեջ կամ ժամանակաշրջան:\n"
 
-#: timelinelib/help/pages.py:113
+#: timelinelib/help/pages.py:135
 msgid "Categories"
 msgstr "Կարգեր"
 
-#: timelinelib/help/pages.py:120
+#: timelinelib/help/pages.py:142
 msgid ""
 "\n"
 "Categories are used to group events. An event can only belong to one "
@@ -507,9 +531,9 @@ msgstr ""
 "\n"
 "Կարգերը օգտագործվում են իրադարձությունները խմբավորելու համար: Մեկ "
 "իրադարձությունը կարող է պատկանել միայն մեկ կարգի: Այն բոլոր դեպքերը, որոնք "
-"պատկանում են միևնույն կարգին ցուցադրվում են միևնույն գույնի խորապատկերով:"
+"պատկանում են միևնույն կարգին ցուցադրվում են միևնույն գույնի խորապատկերով:\n"
 
-#: timelinelib/help/pages.py:133
+#: timelinelib/help/pages.py:155
 msgid ""
 "\n"
 "The *Create Event* dialog can be opened in the following ways:\n"
@@ -525,22 +549,33 @@ msgstr ""
 "- Ընտրել *Ժամանակացույց* - *Ստեղծել Իրադարձություն* ընտրացանկից:\n"
 "- Երկու անգամ քլիք անել մկնիկի *Ձախ* կոճակովժամանակացույցի վրա:\n"
 "- Սեղմել *Ctrl* ստեղնը, այնուհետև սեղմած պահել մկնիկի *Ձախ* կոճակը "
-"ժամանակացույցի վրա, քաշել մկնիկը և բաց թողնել այն: \n"
+"ժամանակացույցի վրա, քաշել մկնիկը և բաց թողնել այն:\n"
 
-#: timelinelib/help/pages.py:150
+#: timelinelib/help/pages.py:172
 msgid ""
 "\n"
 "The *Edit Event* dialog can be opened by double clicking on an event.\n"
 msgstr ""
 "\n"
 "*Խմբագրել Իրադարձություն* դիալոգը կարող է բացվել` երկու անգամ քլիք անելով "
-"իրադարձության վրա: \n"
+"իրադարձության վրա:\n"
 
-#: timelinelib/help/pages.py:156
+#: timelinelib/help/pages.py:178
+msgid "Move event vertically"
+msgstr ""
+
+#: timelinelib/help/pages.py:185
+msgid ""
+"\n"
+"An event can be moved vertically. This is done by first selecting the event "
+"and therefter using the Alt+Up or Alt+Down keys.\n"
+msgstr ""
+
+#: timelinelib/help/pages.py:191
 msgid "Selecting events"
 msgstr "Ընտրել իրադարձություններ"
 
-#: timelinelib/help/pages.py:162
+#: timelinelib/help/pages.py:197
 msgid ""
 "\n"
 "To select an event, click on it. To select multiple events, hold down the "
@@ -551,7 +586,7 @@ msgstr ""
 "միևնույն ժամանակ ընտրելու համար սեղմած պահել *Ctrl* ստեղնը և ընտրել "
 "իրադարձությունները:\n"
 
-#: timelinelib/help/pages.py:175
+#: timelinelib/help/pages.py:210
 msgid ""
 "\n"
 "To delete an event, select it and press the *Del* key. Multiple events can "
@@ -561,13 +596,13 @@ msgstr ""
 "Իրադարձությունը ջնջելու համար, ընտրել այն և սեղմել *Del* ստեղնը: Կարելի է "
 "ջնջել մի քանի իրադարձություններ միևնույն ժամանակ:\n"
 
-#: timelinelib/help/pages.py:181
+#: timelinelib/help/pages.py:216
 msgid "Will associated events be deleted when I delete a category?"
 msgstr ""
 "Արդյո՞ք կատեգորիան ջնջելիս կջնջվեն նաև վերջինիս կապակցված "
 "իրադարձությունները:"
 
-#: timelinelib/help/pages.py:187
+#: timelinelib/help/pages.py:222
 msgid ""
 "\n"
 "No. The events will still be there but they will not belong to a category.\n"
@@ -576,13 +611,13 @@ msgstr ""
 "Ոչ: Իրադարձությունները դեռևս այնտեղ կլինեն, բայց դրանք չեն պատկանի որևէ "
 "կարգի:\n"
 
-#: timelinelib/help/pages.py:193
+#: timelinelib/help/pages.py:228
 #: timelinelib/wxgui/components/categorychoice.py:53
-#: timelinelib/wxgui/dialogs/mainframe.py:459
+#: timelinelib/wxgui/dialogs/mainframe.py:514
 msgid "Edit categories"
 msgstr "Խմբագրել կարգերը"
 
-#: timelinelib/help/pages.py:200
+#: timelinelib/help/pages.py:235
 msgid ""
 "\n"
 "Categories can be managed in the *Edit Categories* dialog (*Timeline* > "
@@ -599,12 +634,12 @@ msgstr ""
 "Կարգեր տեսանելիությունը նունպես հնարավոր է խմբագրել կողքի մասում գտնվող "
 "ձողում (*Տեսնել* > *Կողքի Ձողը*).\n"
 
-#: timelinelib/help/pages.py:208 timelinelib/wxgui/dialogs/mainframe.py:583
-#: timelinelib/wxgui/dialogs/mainframe.py:1062
+#: timelinelib/help/pages.py:243 timelinelib/wxgui/dialogs/mainframe.py:653
+#: timelinelib/wxgui/dialogs/mainframe.py:1139
 msgid "Contact"
 msgstr "Հաղորդակցություն"
 
-#: timelinelib/help/pages.py:214
+#: timelinelib/help/pages.py:249
 msgid ""
 "\n"
 "If you have more questions about Timeline, or if you want to get in contact "
@@ -617,11 +652,11 @@ msgstr ""
 "էլեկտրոնային նամակ ուղարկիր հետևյալ հասցեով. <thetimelineproj-"
 "user@lists.sourceforge.net> (Խնդրում ենք, անգլերեն լեզվով.)\n"
 
-#: timelinelib/help/pages.py:220
+#: timelinelib/help/pages.py:255
 msgid "Why is Timeline not available in my language?"
 msgstr "Ինչու՞ Ժամանակացույցը հասանելի չէ իմ լեզվով:"
 
-#: timelinelib/help/pages.py:227
+#: timelinelib/help/pages.py:262
 msgid ""
 "\n"
 "Timeline is developed and translated by volunteers. If you would like to "
@@ -630,7 +665,7 @@ msgstr ""
 "\n"
 "Ժամանակացույց ծրագիրը մշակվում և թարգմանվում է կամավորների կողմից: Եթե "
 "ցանկանում ես համագործակցել թարգմանությունների հարցում շատ ուրախ կլինենք, մեզ "
-"հետ կապնվելու համար: \n"
+"հետ կապնվելու համար:\n"
 
 #: timelinelib/help/system.py:64
 #, python-format
@@ -752,143 +787,151 @@ msgid "Fit Month"
 msgstr "Տեղադրել Ամիսը"
 
 #: timelinelib/time/pytime.py:88 timelinelib/time/wxtime.py:83
+msgid "Fit Week"
+msgstr ""
+
+#: timelinelib/time/pytime.py:89 timelinelib/time/wxtime.py:84
 msgid "Fit Day"
 msgstr "Տեղադրել Օրը"
 
-#: timelinelib/time/pytime.py:140
+#: timelinelib/time/pytime.py:141
 msgid "can't be before year 10"
 msgstr "չի կարող լինել 10 տարուց առաջ"
 
-#: timelinelib/time/pytime.py:144
+#: timelinelib/time/pytime.py:145
 msgid "can't be after year 9989"
 msgstr "չի կարող լինել 9989 տարուց հետո"
 
-#: timelinelib/time/pytime.py:201 timelinelib/time/wxtime.py:198
+#: timelinelib/time/pytime.py:202 timelinelib/time/wxtime.py:199
 msgid "Can't zoom wider than 1200 years"
 msgstr "Հնարավոր չէ հեռափոխել 1200 տարուց ավելի ընդարձակ"
 
-#: timelinelib/time/pytime.py:204 timelinelib/time/wxtime.py:201
+#: timelinelib/time/pytime.py:205 timelinelib/time/wxtime.py:202
 msgid "Can't zoom deeper than 1 hour"
 msgstr "Հնարավոր չէ հեռափոխել ավելի խորությամբ քան 1 ժամ"
 
-#: timelinelib/time/pytime.py:219 timelinelib/time/wxtime.py:216
+#: timelinelib/time/pytime.py:220 timelinelib/time/wxtime.py:217
 msgid "Day"
 msgstr "Օր"
 
-#: timelinelib/time/pytime.py:220 timelinelib/time/pytime.py:569
-#: timelinelib/time/wxtime.py:217 timelinelib/time/wxtime.py:544
+#: timelinelib/time/pytime.py:221 timelinelib/time/pytime.py:583
+#: timelinelib/time/wxtime.py:218 timelinelib/time/wxtime.py:561
 msgid "Week"
 msgstr "Շաբաթ"
 
-#: timelinelib/time/pytime.py:221 timelinelib/time/wxtime.py:218
+#: timelinelib/time/pytime.py:222 timelinelib/time/wxtime.py:219
 msgid "Month"
 msgstr "Ամիս"
 
-#: timelinelib/time/pytime.py:222 timelinelib/time/wxtime.py:219
+#: timelinelib/time/pytime.py:223 timelinelib/time/wxtime.py:220
 msgid "Year"
 msgstr "Տարի"
 
-#: timelinelib/time/pytime.py:256 timelinelib/time/wxtime.py:255
+#: timelinelib/time/pytime.py:259 timelinelib/time/wxtime.py:262
 msgid "Go to Date"
 msgstr "Գնալ դեպի Ամսաթիվը"
 
-#: timelinelib/time/wxtime.py:138
+#: timelinelib/time/wxtime.py:139
 #, python-format
 msgid "can't be before year %d"
 msgstr "չի կարող լինել %d տարուց առաջ"
 
-#: timelinelib/time/wxtime.py:142
+#: timelinelib/time/wxtime.py:143
 #, python-format
 msgid "can't be after year %d"
 msgstr "չի կարող լինել %d տարուց հետո"
 
-#: timelinelib/view/drawingarea.py:144 timelinelib/view/drawingarea.py:162
+#: timelinelib/view/drawingarea.py:148 timelinelib/view/drawingarea.py:166
 msgid "No timeline set"
 msgstr "Ոչ մի Ժամանակացույց սահմանված չէ"
 
-#: timelinelib/view/drawingarea.py:196
+#: timelinelib/view/drawingarea.py:201
 msgid "Edit"
 msgstr "Խմբագրել"
 
-#: timelinelib/view/drawingarea.py:197
+#: timelinelib/view/drawingarea.py:202
 msgid "Duplicate..."
 msgstr "Կրկնօրինակել..."
 
-#: timelinelib/view/drawingarea.py:198
-#: timelinelib/wxgui/components/cattree.py:80
+#: timelinelib/view/drawingarea.py:203
+#: timelinelib/wxgui/components/cattree.py:82
 #: wx/tools/Editra/src/prefdlg.py:1706
 msgid "Delete"
 msgstr "Ջնջել"
 
-#: timelinelib/view/drawingarea.py:201
+#: timelinelib/view/drawingarea.py:206
 msgid "Sticky Balloon"
 msgstr "Կպչուն Փուչիկ"
 
-#: timelinelib/view/drawingarea.py:352
+#: timelinelib/view/drawingarea.py:209
+msgid "Goto URL"
+msgstr ""
+
+#: timelinelib/view/drawingarea.py:372
 msgid "Center"
 msgstr "Կենտրոն"
 
-#: timelinelib/view/drawingarea.py:400
+#: timelinelib/view/drawingarea.py:420
 #, python-format
 msgid "%s events hidden"
 msgstr "%s իրադարձությունները թաքնված են"
 
-#: timelinelib/view/drawingarea.py:468
+#: timelinelib/view/drawingarea.py:489
 #, python-format
 msgid "Are you sure you want to delete %d events?"
 msgstr "Համոզվա՞ծ ես, որ ցանկանում ես ջնջել %d իրադարձությունները:"
 
-#: timelinelib/view/drawingarea.py:471
+#: timelinelib/view/drawingarea.py:492
 msgid "Are you sure you want to delete this event?"
 msgstr "Համոզվա՞ծ ես, որ ցանկանում ես ջնջել այս իրադարձությունը"
 
-#: timelinelib/view/move.py:64
+#: timelinelib/view/move.py:66
 msgid "Can't move locked event"
 msgstr "Հնաչավոր չէ տեղաշարժել արգելափակված իրադարձությունը"
 
-#: timelinelib/view/resize.py:65
+#: timelinelib/view/resize.py:67
 msgid "Period is too long"
 msgstr "Ժամանակաշրջանը բավականին երկար է"
 
 #: timelinelib/wxgui/components/categorychoice.py:52
-#: timelinelib/wxgui/dialogs/eventeditor.py:302
+#: timelinelib/wxgui/dialogs/eventeditor.py:308
 msgid "Add new"
 msgstr "Ավելացնել նորը"
 
 #: timelinelib/wxgui/components/categorychoice.py:76
-#: timelinelib/wxgui/components/cattree.py:223
+#: timelinelib/wxgui/components/cattree.py:228
 msgid "Add Category"
 msgstr "Ավելացնել Կարգ"
 
-#: timelinelib/wxgui/components/cattree.py:74
+#: timelinelib/wxgui/components/cattree.py:76
 msgid "Edit..."
 msgstr "Խմբագրել..."
 
-#: timelinelib/wxgui/components/cattree.py:77
+#: timelinelib/wxgui/components/cattree.py:79
 msgid "Add..."
 msgstr "Ավելացնել..."
 
-#: timelinelib/wxgui/components/cattree.py:217
+#: timelinelib/wxgui/components/cattree.py:222
 msgid "Edit Category"
 msgstr "խմբագրել Կարգը"
 
-#: timelinelib/wxgui/components/cattree.py:228
+#: timelinelib/wxgui/components/cattree.py:233
 #, python-format
 msgid "Are you sure you want to delete category '%s'?"
 msgstr "Համոզվա՞ծ ես, որ ցանկանում ես ջնջել կարգը '%s'"
 
-#: timelinelib/wxgui/components/cattree.py:231
+#: timelinelib/wxgui/components/cattree.py:236
 #, python-format
 msgid "Events belonging to '%s' will no longer belong to a category."
-msgstr "'%s' պատկանող իրադարձությունները այլևս չեն պատկանի որևէ կարգի: "
+msgstr "'%s' պատկանող իրադարձությունները այլևս չեն պատկանի որևէ կարգի:"
 
-#: timelinelib/wxgui/components/cattree.py:234
+#: timelinelib/wxgui/components/cattree.py:239
 #, python-format
 msgid "Events belonging to '%(name)s' will now belong to '%(parent)s'."
-msgstr "'%(անուն)s' պատկանող իրադարձությունները չեն պատկանի '%(ծնող)s'."
+msgstr "'%(name)s' պատկանող իրադարձությունները չեն պատկանի '%(parent)s'."
 
-#: timelinelib/wxgui/components/pydatetimepicker.py:80
-#: timelinelib/wxgui/components/wxdatetimepicker.py:75
+#: timelinelib/wxgui/components/pydatetimepicker.py:84
+#: timelinelib/wxgui/components/wxdatetimepicker.py:79
 msgid "Invalid date"
 msgstr "Անվավեր ֆայլ"
 
@@ -936,125 +979,138 @@ msgid "Container Properties"
 msgstr "Տարրայի Հատկությունները"
 
 #: timelinelib/wxgui/dialogs/containereditor.py:65
-#: timelinelib/wxgui/dialogs/eventeditor.py:217
+#: timelinelib/wxgui/dialogs/eventeditor.py:219
 msgid "Category:"
 msgstr "Կարգ`"
 
-#: timelinelib/wxgui/dialogs/duplicateevent.py:31
+#: timelinelib/wxgui/dialogs/duplicateevent.py:32
 msgid "Duplicate Event"
 msgstr "Կրկնօրինակել Իրադարձությունը"
 
-#: timelinelib/wxgui/dialogs/duplicateevent.py:68
+#: timelinelib/wxgui/dialogs/duplicateevent.py:69
 #, python-format
 msgid "%d Events not duplicated due to missing dates."
 msgstr "%d Իրադարձությունները կրկնօրինակված չեն բացակայող ամսաթվերի հետևանքով:"
 
-#: timelinelib/wxgui/dialogs/duplicateevent.py:88
+#: timelinelib/wxgui/dialogs/duplicateevent.py:89
 msgid "Number of duplicates:"
 msgstr "Կրկնօրինակումների Թիվը`"
 
-#: timelinelib/wxgui/dialogs/duplicateevent.py:98
-#: timelinelib/wxgui/dialogs/eventeditor.py:174
+#: timelinelib/wxgui/dialogs/duplicateevent.py:99
+#: timelinelib/wxgui/dialogs/eventeditor.py:176
 msgid "Period"
 msgstr "Ժամանակաշրջան"
 
-#: timelinelib/wxgui/dialogs/duplicateevent.py:108
+#: timelinelib/wxgui/dialogs/duplicateevent.py:109
 msgid "Frequency:"
 msgstr "Հաճախականություն`"
 
-#: timelinelib/wxgui/dialogs/duplicateevent.py:118
+#: timelinelib/wxgui/dialogs/duplicateevent.py:119
 msgid "Forward"
 msgstr "Առաջ"
 
-#: timelinelib/wxgui/dialogs/duplicateevent.py:118
+#: timelinelib/wxgui/dialogs/duplicateevent.py:119
 msgid "Backward"
 msgstr "Հետ"
 
-#: timelinelib/wxgui/dialogs/duplicateevent.py:118
+#: timelinelib/wxgui/dialogs/duplicateevent.py:119
 msgid "Both"
 msgstr "Երկուսն էլ"
 
-#: timelinelib/wxgui/dialogs/duplicateevent.py:119
+#: timelinelib/wxgui/dialogs/duplicateevent.py:120
 #: wx/tools/Editra/src/eclib/finddlg.py:802
 msgid "Direction"
 msgstr "Ուղղությունը"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:62
+#: timelinelib/wxgui/dialogs/eventeditor.py:64
 msgid "Event Properties"
 msgstr "Իրադարձության Հատկությունները"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:85
-#: timelinelib/wxgui/dialogs/eventeditor.py:571
+#: timelinelib/wxgui/dialogs/eventeditor.py:87
+#: timelinelib/wxgui/dialogs/eventeditor.py:578
 msgid "When:"
 msgstr "Երբ`"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:88
+#: timelinelib/wxgui/dialogs/eventeditor.py:90
 msgid "to"
 msgstr "դեպի"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:123
+#: timelinelib/wxgui/dialogs/eventeditor.py:125
 msgid "Container:"
 msgstr "Տարրա`"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:161
+#: timelinelib/wxgui/dialogs/eventeditor.py:163
 msgid "Add Container"
 msgstr "Ավելացնել Տարրա"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:181
+#: timelinelib/wxgui/dialogs/eventeditor.py:183
 #: timelinelib/wxgui/dialogs/timeeditor.py:47
 msgid "Show time"
 msgstr "Ցուցադրել Ժամանակը"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:189
+#: timelinelib/wxgui/dialogs/eventeditor.py:191
 msgid "Fuzzy"
 msgstr "Անորոշ"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:193
+#: timelinelib/wxgui/dialogs/eventeditor.py:195
 msgid "Locked"
 msgstr "Արգելափակված"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:200
+#: timelinelib/wxgui/dialogs/eventeditor.py:202
 msgid "Ends today"
 msgstr "Ավարտվում է այսօր"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:211
-#: timelinelib/wxgui/dialogs/eventeditor.py:572
+#: timelinelib/wxgui/dialogs/eventeditor.py:213
+#: timelinelib/wxgui/dialogs/eventeditor.py:579
 msgid "Text:"
 msgstr "Տեքստ`"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:242
+#: timelinelib/wxgui/dialogs/eventeditor.py:244
 msgid "Description"
 msgstr "Նկարագրություն"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:243
+#: timelinelib/wxgui/dialogs/eventeditor.py:245
 msgid "Alert"
 msgstr "Ազդանշան"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:244
+#: timelinelib/wxgui/dialogs/eventeditor.py:246
 msgid "Icon"
 msgstr "Պատկերանշան"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:261
+#: timelinelib/wxgui/dialogs/eventeditor.py:247
+msgid "Hyperlink"
+msgstr ""
+
+#: timelinelib/wxgui/dialogs/eventeditor.py:264
 msgid "Add more events after this one"
 msgstr "Ավելացնել ավելի շատ իրադարձություններ այս մեկից հետո"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:449
+#: timelinelib/wxgui/dialogs/eventeditor.py:456
 msgid "Images will be scaled to fit inside a 128x128 box."
 msgstr "Պատկերները կմասշտաբավորվեն 128x128 չափսի արկղի մեջ տեղավորվելու համար:"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:486
+#: timelinelib/wxgui/dialogs/eventeditor.py:493
 msgid "Select Icon"
 msgstr "Ընտրել Պատկերանշան"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:619
+#: timelinelib/wxgui/dialogs/eventeditor.py:668
+#, fuzzy
+msgid "Test"
+msgstr "Տեքստ"
+
+#: timelinelib/wxgui/dialogs/eventeditor.py:678
+msgid "URL:"
+msgstr ""
+
+#: timelinelib/wxgui/dialogs/eventeditor.py:722
 msgid "Edit Container"
 msgstr "Խմբագրել Տարրան"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:623
+#: timelinelib/wxgui/dialogs/eventeditor.py:726
 msgid "Edit Event"
 msgstr "Խմբագրել իրադարձությունը"
 
-#: timelinelib/wxgui/dialogs/eventeditor.py:630
+#: timelinelib/wxgui/dialogs/eventeditor.py:734
 msgid "Create Event"
 msgstr "Ստեղծել իրադարձություն"
 
@@ -1094,243 +1150,265 @@ msgstr "Էջը հայտնաբերված չէ"
 msgid "Could not find page '%s'."
 msgstr "Հնարավոր չէ գտնել '%s' էջը:"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:92
+#: timelinelib/wxgui/dialogs/mainframe.py:105
+#: timelinelib/wxgui/dialogs/mainframe.py:225
 msgid "Timeline files"
 msgstr "Ժամանակացույցի ֆայլերը"
 
 # Scalable Vector Graphics մասշտաբավորվող վեկտորային գրաֆիկա
-#: timelinelib/wxgui/dialogs/mainframe.py:94
+#: timelinelib/wxgui/dialogs/mainframe.py:107
 msgid "SVG files"
 msgstr "SVG ֆայլեր"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:142 wx/lib/pydocview.py:109
+#: timelinelib/wxgui/dialogs/mainframe.py:157 wx/lib/pydocview.py:109
 #: wx/lib/pydocview.py:2561 wx/tools/Editra/src/ed_menu.py:569
 msgid "&File"
 msgstr "&Ֆայլ"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:148 wx/lib/pydocview.py:176
+#: timelinelib/wxgui/dialogs/mainframe.py:163 wx/lib/pydocview.py:176
 #: wx/tools/Editra/src/ed_toolbar.py:77 wx/tools/Editra/src/prefdlg.py:1705
 #: wx/tools/Editra/src/style_editor.py:200
 msgid "New"
 msgstr "Նոր"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:148
+#: timelinelib/wxgui/dialogs/mainframe.py:163
 msgid "Create a new timeline"
 msgstr "Ստեղծել նոր ժամանակացույց"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:154
-msgid "File Timeline..."
-msgstr ""
-
-#: timelinelib/wxgui/dialogs/mainframe.py:162
-#: timelinelib/wxgui/dialogs/mainframe.py:185
-msgid "Create Timeline"
-msgstr ""
-
-#: timelinelib/wxgui/dialogs/mainframe.py:168
-msgid "The specified timeline already exists."
-msgstr ""
-
 #: timelinelib/wxgui/dialogs/mainframe.py:169
+msgid "File Timeline..."
+msgstr "Պահպանել Ժամանակացույցը..."
+
+#: timelinelib/wxgui/dialogs/mainframe.py:177
+#: timelinelib/wxgui/dialogs/mainframe.py:200
+msgid "Create Timeline"
+msgstr "Ստեղծել Ժամանակացույց"
+
+#: timelinelib/wxgui/dialogs/mainframe.py:183
+msgid "The specified timeline already exists."
+msgstr "Նշված ժամանակացույցը արդեն գոյություն ունի"
+
+#: timelinelib/wxgui/dialogs/mainframe.py:184
 msgid "Opening timeline instead of creating new."
-msgstr ""
+msgstr "Բացել ժամանակացույցը նոր ստեղծելու փոխարեն:"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:171
+#: timelinelib/wxgui/dialogs/mainframe.py:186
 msgid "Information"
-msgstr ""
+msgstr "Տեղեկատվություն"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:178
+#: timelinelib/wxgui/dialogs/mainframe.py:193
 msgid "Directory Timeline..."
-msgstr ""
+msgstr "Ժամանակացույցի տեղեկատու..."
 
-#: timelinelib/wxgui/dialogs/mainframe.py:194
+#: timelinelib/wxgui/dialogs/mainframe.py:209
 msgid "Open an existing timeline"
+msgstr "Բացել գոյությու ունեցող ժամանակացույցը"
+
+#: timelinelib/wxgui/dialogs/mainframe.py:228
+msgid "Save Timeline As"
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:205
+#: timelinelib/wxgui/dialogs/mainframe.py:253
 msgid "Open Timeline"
-msgstr ""
+msgstr "Բացել Ժամանակացույցը"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:215
+#: timelinelib/wxgui/dialogs/mainframe.py:263
 #: wx/tools/Editra/src/ed_menu.py:520
 msgid "Open &Recent"
+msgstr "Բացել &Արդիականացնել"
+
+#: timelinelib/wxgui/dialogs/mainframe.py:267
+msgid "Save As..."
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:220
+#: timelinelib/wxgui/dialogs/mainframe.py:272
 msgid "Page Set&up..."
-msgstr ""
+msgstr "Էջի կարգա&վորում"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:220
+#: timelinelib/wxgui/dialogs/mainframe.py:272
 msgid "Setup page for printing"
-msgstr ""
+msgstr "Կարգավորել էջը տպելու համար"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:229 wx/lib/docview.py:1571
+#: timelinelib/wxgui/dialogs/mainframe.py:281 wx/lib/docview.py:1571
 #: wx/lib/pydocview.py:182 wx/tools/Editra/src/ed_print.py:108
+#, fuzzy
 msgid "Print Preview"
-msgstr ""
+msgstr "Նախադիտում"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:238 wx/lib/pydocview.py:181
+#: timelinelib/wxgui/dialogs/mainframe.py:290 wx/lib/pydocview.py:181
 #: wx/tools/Editra/src/ed_toolbar.py:80
 msgid "Print"
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:247
+#: timelinelib/wxgui/dialogs/mainframe.py:299
+#, fuzzy
 msgid "&Export to Image..."
-msgstr ""
+msgstr "Արտահանել Պատկերը"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:247
+#: timelinelib/wxgui/dialogs/mainframe.py:299
 msgid "Export the current view to a PNG image"
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:256
+#: timelinelib/wxgui/dialogs/mainframe.py:308
 msgid "&Export to SVG..."
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:256
+#: timelinelib/wxgui/dialogs/mainframe.py:308
 msgid "Export the current view to a SVG image"
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:265
+#: timelinelib/wxgui/dialogs/mainframe.py:317
+#, fuzzy
 msgid ""
 "Could not find pysvg Python package. It is needed to export to SVG. See the "
 "Timeline website or the INSTALL file for instructions how to install it."
 msgstr ""
+"Հնարավոր չէ գտնել Պիթոնի վերականգնման փաթեթը, որը անհրաժեշտ է համակարգի "
+"օգնության համար: Տես Ժամանակացույց կայքէջը կամ ՏԵՂԱԴՐՄԱՆ ֆայլը տեղադրման "
+"հրահանգների համար:"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:269
+#: timelinelib/wxgui/dialogs/mainframe.py:321
 msgid "Export to SVG"
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:291
+#: timelinelib/wxgui/dialogs/mainframe.py:343
 msgid "Play timeline"
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:291
+#: timelinelib/wxgui/dialogs/mainframe.py:343
 msgid "Play timeline as movie"
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:299
+#: timelinelib/wxgui/dialogs/mainframe.py:351
 msgid "Exit the program"
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:310 wx/lib/pydocview.py:134
+#: timelinelib/wxgui/dialogs/mainframe.py:362 wx/lib/pydocview.py:134
 #: wx/lib/pydocview.py:1925 wx/tools/Editra/src/ed_menu.py:647
 #, fuzzy
 msgid "&Edit"
 msgstr "Խմբագրել"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:335 wx/lib/pydocview.py:146
+#: timelinelib/wxgui/dialogs/mainframe.py:389 wx/lib/pydocview.py:146
 #: wx/tools/Editra/src/ed_menu.py:712
 msgid "&View"
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:339
+#: timelinelib/wxgui/dialogs/mainframe.py:393
 msgid "&Sidebar\tCtrl+I"
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:353
+#: timelinelib/wxgui/dialogs/mainframe.py:407
 msgid "&Legend"
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:364
+#: timelinelib/wxgui/dialogs/mainframe.py:418
 msgid "&Balloons on hover"
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:378
+#: timelinelib/wxgui/dialogs/mainframe.py:433
 #, fuzzy
 msgid "&Timeline"
 msgstr "Ժամանակացույց"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:382
+#: timelinelib/wxgui/dialogs/mainframe.py:437
 #, fuzzy
 msgid "Create &Event..."
 msgstr "Ստեղծել իրադարձություն"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:382
+#: timelinelib/wxgui/dialogs/mainframe.py:437
 msgid "Create a new event"
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:392
+#: timelinelib/wxgui/dialogs/mainframe.py:447
 msgid "&Duplicate Selected Event..."
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:392
+#: timelinelib/wxgui/dialogs/mainframe.py:447
 msgid "Duplicate the Selected Event"
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:413
+#: timelinelib/wxgui/dialogs/mainframe.py:468
 msgid "&Measure Distance between two Events..."
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:414
+#: timelinelib/wxgui/dialogs/mainframe.py:469
 msgid "Measure the Distance between two Events"
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:445
+#: timelinelib/wxgui/dialogs/mainframe.py:500
 msgid "Distance between selected events"
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:448
+#: timelinelib/wxgui/dialogs/mainframe.py:503
 msgid "Events are overlapping or distance is 0"
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:459
+#: timelinelib/wxgui/dialogs/mainframe.py:514
+#, fuzzy
 msgid "Edit &Categories"
+msgstr "Խմբագրել Կարգերը"
+
+#: timelinelib/wxgui/dialogs/mainframe.py:526
+#: wx/tools/Editra/src/ed_stc.py:1722
+msgid "Read Only"
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:481
+#: timelinelib/wxgui/dialogs/mainframe.py:534
+#: timelinelib/wxgui/dialogs/mainframe.py:723
+msgid "read-only"
+msgstr ""
+
+#: timelinelib/wxgui/dialogs/mainframe.py:551
 msgid "&Navigate"
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:485
+#: timelinelib/wxgui/dialogs/mainframe.py:555
 msgid "Find First Event"
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:499
+#: timelinelib/wxgui/dialogs/mainframe.py:569
 msgid "Find Last Event"
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:513
+#: timelinelib/wxgui/dialogs/mainframe.py:583
 msgid "Fit All Events"
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:566 wx/lib/pydocview.py:150
+#: timelinelib/wxgui/dialogs/mainframe.py:636 wx/lib/pydocview.py:150
 #: wx/lib/pydocview.py:2914 wx/tools/Editra/src/ed_main.py:152
 #: wx/tools/Editra/src/ed_menu.py:845
 #, fuzzy
 msgid "&Help"
 msgstr "օգնություն"
 
-#: timelinelib/wxgui/dialogs/mainframe.py:569
+#: timelinelib/wxgui/dialogs/mainframe.py:639
 msgid "&Contents\tF1"
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:576
-#: timelinelib/wxgui/dialogs/mainframe.py:957
+#: timelinelib/wxgui/dialogs/mainframe.py:646
+#: timelinelib/wxgui/dialogs/mainframe.py:1034
 msgid "Getting started tutorial"
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:612
+#: timelinelib/wxgui/dialogs/mainframe.py:682
 msgid "Unable to write configuration file."
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:652
-msgid "read-only"
-msgstr ""
-
-#: timelinelib/wxgui/dialogs/mainframe.py:713
+#: timelinelib/wxgui/dialogs/mainframe.py:784
 #, python-format
 msgid "File '%s' does not exist."
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:949
+#: timelinelib/wxgui/dialogs/mainframe.py:1026
 msgid "No timeline opened."
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:954
+#: timelinelib/wxgui/dialogs/mainframe.py:1031
 msgid "First time using Timeline?"
 msgstr ""
 
-#: timelinelib/wxgui/dialogs/mainframe.py:1059
+#: timelinelib/wxgui/dialogs/mainframe.py:1136
 msgid "Relevant help topics:"
 msgstr ""
 
@@ -1396,7 +1474,12 @@ msgstr ""
 msgid "Error"
 msgstr "Սխալներ"
 
-#: timelinelib/wxgui/utils.py:140
+#: timelinelib/wxgui/utils.py:139 wx/lib/docview.py:635 wx/lib/docview.py:652
+#: wx/lib/docview.py:1895
+msgid "Warning"
+msgstr ""
+
+#: timelinelib/wxgui/utils.py:144 timelinelib/wxgui/utils.py:150
 msgid "Question"
 msgstr ""
 
@@ -1442,8 +1525,9 @@ msgid "</body>"
 msgstr "</body>"
 
 #: wx/lib/agw/aui/framemanager.py:10214
+#, fuzzy
 msgid "Pane Preview"
-msgstr ""
+msgstr "Նախադիտում"
 
 #: wx/lib/agw/aui/tabmdi.py:34
 #, fuzzy
@@ -1652,10 +1736,6 @@ msgstr ""
 msgid "Untitled"
 msgstr "անվերնագիր"
 
-#: wx/lib/docview.py:635 wx/lib/docview.py:652 wx/lib/docview.py:1895
-msgid "Warning"
-msgstr ""
-
 #: wx/lib/docview.py:654
 #, python-format
 msgid "Save changes to '%s'?"
@@ -1805,16 +1885,18 @@ msgid "Prints the active document"
 msgstr ""
 
 #: wx/lib/pydocview.py:100 wx/tools/Editra/src/ed_menu.py:562
+#, fuzzy
 msgid "Print Pre&view"
-msgstr ""
+msgstr "Նախադիտում"
 
 #: wx/lib/pydocview.py:100 wx/lib/pydocview.py:181
 msgid "Displays full pages"
 msgstr ""
 
 #: wx/lib/pydocview.py:101 wx/tools/Editra/src/ed_menu.py:560
+#, fuzzy
 msgid "Page Set&up"
-msgstr ""
+msgstr "Էջի կարգա&վորում"
 
 #: wx/lib/pydocview.py:101
 msgid "Changes page layout settings"
@@ -3826,10 +3908,6 @@ msgstr ""
 msgid "File is Read Only and cannot be saved"
 msgstr ""
 
-#: wx/tools/Editra/src/ed_stc.py:1722
-msgid "Read Only"
-msgstr ""
-
 #: wx/tools/Editra/src/ed_toolbar.py:77
 msgid "Start a New File"
 msgstr ""
@@ -4335,8 +4413,9 @@ msgid "Main display font for various UI components"
 msgstr ""
 
 #: wx/tools/Editra/src/prefdlg.py:1220
+#, fuzzy
 msgid "Icons"
-msgstr ""
+msgstr "Պատկերանշան"
 
 #: wx/tools/Editra/src/prefdlg.py:1225
 msgid "Layout"
@@ -4603,6 +4682,23 @@ msgstr ""
 #, python-format
 msgid "%s Source File"
 msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "The timeline shows dates according to the Gregorian calendar on the x-axis. "
+#~ "Currently the dates are limited to dates between year 10 and year 9989.\n"
+#~ "\n"
+#~ "Future versions might support various kinds of timelines so that you for "
+#~ "example can specify a time in terms of number of minutes since a start time. "
+#~ "If you are interested in such a feature, please get in touch.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Ժամանակացույնցը ցուցադրում է օրերը համաձայն Գրիգորյան օրացույցի x առանցքի "
+#~ "վրա: Ներկայումս ամսաթվերը սահմանափակվում են 10 և 9989 թ.-ի միջև: \n"
+#~ "\n"
+#~ "Հետագա տարբերակները կունենան ժամանակացույցի տարբեր տեսակներ, օրինակ դու "
+#~ "կկարողանաս հատկորոշել ժամանակ րոպեների թվերի ժամկետում սկսած մեկնարկման "
+#~ "ժամանակից: Եթե հետաքրքրված ես այդպիսի հատկանիշով, խնրում եմ տեղեկացնել:\n"
 
 #, fuzzy
 #~ msgid "&Undo "
