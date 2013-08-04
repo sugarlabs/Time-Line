@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-05-28 00:31-0400\n"
-"PO-Revision-Date: 2013-06-27 12:25+0200\n"
-"Last-Translator: EdgarQuispeChambi <quispedgar@yahoo.es>\n"
+"PO-Revision-Date: 2013-08-04 18:50+0200\n"
+"Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ayc\n"
 "MIME-Version: 1.0\n"
@@ -349,11 +349,11 @@ msgstr ""
 
 #: timelinelib/db/objects/timeperiod.py:72
 msgid "Start time "
-msgstr "Qalltäwi pacha chani"
+msgstr "Qalltäwi pacha chani "
 
 #: timelinelib/db/objects/timeperiod.py:74
 msgid "End time "
-msgstr "Tuküwi pacha chani"
+msgstr "Tuküwi pacha chani "
 
 #: timelinelib/db/objects/timeperiod.py:84
 msgid "Start time can't be after end time"
@@ -1786,7 +1786,7 @@ msgstr "&Wasitata luraña\tCtrl+Y"
 
 #: wx/lib/docview.py:1897
 msgid "Reload "
-msgstr "Yapxataña"
+msgstr "Yapxataña "
 
 #: wx/lib/docview.py:1897
 msgid " from file system?"
@@ -1990,7 +1990,7 @@ msgstr "&Lurañanaka siqi"
 
 #: wx/lib/pydocview.py:140
 msgid "Shows or hides the toolbar"
-msgstr "Lurañanaka siqi uñachayma jani ukaxa imantuma "
+msgstr "Lurañanaka siqi uñachayma jani ukaxa imantuma"
 
 #: wx/lib/pydocview.py:143
 msgid "&Status Bar"
@@ -2469,7 +2469,7 @@ msgstr "Sara pantjata"
 
 #: wx/tools/Editra/src/ed_cmdbar.py:874
 msgid "cwd: "
-msgstr "cwd: chimpu"
+msgstr "cwd: chimpu "
 
 #: wx/tools/Editra/src/ed_editv.py:189
 #, python-format
@@ -4088,7 +4088,7 @@ msgstr "Plugins suma wakichrantata"
 #: wx/tools/Editra/src/plugdlg.py:842
 #, python-format
 msgid "Failed to install %d plugins"
-msgstr "plugins wakichata %d wakichrantañkama pantjasi "
+msgstr "plugins wakichata %d wakichrantañkama pantjasi"
 
 #: wx/tools/Editra/src/plugdlg.py:844
 msgid "Installation Error"
@@ -4248,7 +4248,7 @@ msgstr "Jiwasa pacha imata wakichatanaka, imata wakichataru katjasa apxataña"
 
 #: wx/tools/Editra/src/prefdlg.py:539
 msgid "Warn when mixed eol characters are detected"
-msgstr "Mantäwi chixintatanaka qhipa wakichatanaka katjaña uñasipana yatiyaña "
+msgstr "Mantäwi chixintatanaka qhipa wakichatanaka katjaña uñasipana yatiyaña"
 
 #: wx/tools/Editra/src/prefdlg.py:545
 msgid "File Settings"
@@ -4260,7 +4260,7 @@ msgstr "Qillqaña chimpunaka uñanchaña"
 
 #: wx/tools/Editra/src/prefdlg.py:563
 msgid "Check spelling while typing"
-msgstr "Qillqañana wakisiri chimpunka uñanchäwi "
+msgstr "Qillqañana wakisiri chimpunka uñanchäwi"
 
 #: wx/tools/Editra/src/prefdlg.py:570
 msgid "Dictionary"
