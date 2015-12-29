@@ -1,4 +1,4 @@
-# Copyright (C) 2009, 2010, 2011  Rickard Lindberg, Roger Lindberg
+# Copyright (C) 2009, 2010, 2011, 2012, 2013, 2014, 2015  Rickard Lindberg, Roger Lindberg
 #
 # This file is part of Timeline.
 #
@@ -16,7 +16,7 @@
 # along with Timeline.  If not, see <http://www.gnu.org/licenses/>.
 
 
-VERSION = (0, 20, 0)
+VERSION = (1, 8, 1)
 DEV = False
 
 
@@ -30,7 +30,7 @@ def _get_revision():
     try:
         import os
         from subprocess import Popen, PIPE
-        root = os.path.join(os.path.dirname(__file__), "..", "..")
+        root = os.path.join(os.path.dirname(__file__), "..", "..", "..")
         cmd = ["hg", "id", "-i", "-R", root]
         rev = Popen(cmd, stdout=PIPE).communicate()[0].strip()
         return rev

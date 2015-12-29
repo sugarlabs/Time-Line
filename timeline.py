@@ -1,71 +1,74 @@
 #!/usr/bin/env python
+
+# Copyright (C) 2009, Simon Schampijer
 #
-# Copyright (C) 2009, 2010, 2011  Rickard Lindberg, Roger Lindberg
-#
-# This file is part of Timeline.
-#
-# Timeline is free software: you can redistribute it and/or modify
+# This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
+# the Free Software Foundation; either version 2 of the License, or
 # (at your option) any later version.
 #
-# Timeline is distributed in the hope that it will be useful,
+# This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with Timeline.  If not, see <http://www.gnu.org/licenses/>.
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
-import gettext
-import locale
-import os
-import platform
-import sys
-import ConfigParser
-from sugar.activity.activity import Activity
+import sys, os, platform
 
+from gi.repository import Gtk
 
-# Make sure that we can import timelinelib
-sys.path.insert(0, os.path.dirname(__file__))
-# Make sure that we can import pysvg
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), "libs", "dependencies", "pysvg-0.2.1"))
-# Make sure that we can import pytz which icalendar is dependant on
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), "libs", "dependencies", "pytz-2012j"))
-# Make sure that we can import icalendar
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), "libs", "dependencies", "icalendar-3.2"))
-# Make sure that we can import markdown
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), "libs", "dependencies", "markdown-2.0.3"))
+from sugar3.activity import activity
+from sugar3.graphics.toolbarbox import ToolbarBox
+from sugar3.activity.widgets import ActivityButton
+from sugar3.activity.widgets import TitleEntry
+from sugar3.activity.widgets import StopButton
 
-from timelinelib.config.arguments import ApplicationArguments
-from timelinelib.config.paths import LOCALE_DIR
-from timelinelib.meta.about import APPLICATION_NAME
-from timelinelib.wxgui.setup import start_wx_application
-
-if platform.system() == "Windows":
-    # The appropriate environment variables are set on other systems
-    language, encoding = locale.getdefaultlocale()
-    os.environ['LANG'] = language
-
-class TimeLine(Activity):
-
+class TimeLine(activity.Activity):
     def __init__(self, handle):
-        Activity.__init__(self, handle)
+        activity.Activity.__init__(self, handle)
 
-        iniciar_actividad()
+        self.max_participants = 1
 
-def iniciar_actividad():
+        toolbar_box = ToolbarBox()
 
-    file_activity_info = ConfigParser.ConfigParser()
-    activity_info_path = os.path.abspath('./activity/activity.info')
-    file_activity_info.read(activity_info_path)
-    bundle_id = file_activity_info.get('Activity', 'bundle_id')
-    path = os.path.abspath('locale')
+        activity_button = ActivityButton(self)
+        toolbar_box.toolbar.insert(activity_button, 0)
+        activity_button.show()
 
-    gettext.install(bundle_id, path, unicode=True)
+        title_entry = TitleEntry(self)
+        toolbar_box.toolbar.insert(title_entry, -1)
+        title_entry.show()
+        
+        separator = Gtk.SeparatorToolItem()
+        separator.props.draw = False
+        separator.set_expand(True)
+        toolbar_box.toolbar.insert(separator, -1)
+        separator.show()
 
-    application_arguments = ApplicationArguments()
-    application_arguments.parse_from()
+        stop_button = StopButton(self)
+        toolbar_box.toolbar.insert(stop_button, -1)
+        stop_button.show()
 
-    start_wx_application(application_arguments)
+        self.set_toolbar_box(toolbar_box)
+        toolbar_box.show()
 
+        self.signal = self.connect("draw", self.execute)
+        
+    def execute(self, *args):
+        self.disconnect(self.signal)
+        if platform.machine().startswith('arm'):
+            os.environ["LD_LIBRARY_PATH"] = "libs_arm/:"+os.environ["LD_LIBRARY_PATH"]
+        else:
+            if platform.architecture()[0] == '64bit':
+                os.environ["LD_LIBRARY_PATH"] = "libs64/:"+os.environ["LD_LIBRARY_PATH"]
+            else:
+                os.environ["LD_LIBRARY_PATH"] = "libs/:"+os.environ["LD_LIBRARY_PATH"]
+        if os.system("python run.py") == 0:
+            self.close()
+        else:
+            label = Gtk.Label("Sorry, this activity can't run on this computer")
+            self.set_canvas(label)
+            label.show()

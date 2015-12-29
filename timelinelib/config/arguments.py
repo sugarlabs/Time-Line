@@ -1,4 +1,4 @@
-# Copyright (C) 2009, 2010, 2011  Rickard Lindberg, Roger Lindberg
+# Copyright (C) 2009, 2010, 2011, 2012, 2013, 2014, 2015  Rickard Lindberg, Roger Lindberg
 #
 # This file is part of Timeline.
 #
@@ -35,18 +35,22 @@ class ApplicationArguments(object):
             "-c", "--config-file", dest="config_file_path", default=None,
             help="Path to config file")
 
-    def parse_from(self):
-        #(self.options, self.arguments) = self.option_parser.parse_args(arguments)
-        self.options = "{'config_file_path': None}"
-        self.arguments = []
+    def parse_from(self, arguments):
+        (self.options, self.arguments) = self.option_parser.parse_args(arguments)
 
     def get_files(self):
         return self.arguments
 
+    def get_first_file(self):
+        return self.arguments[0]
+
+    def has_files(self):
+        return len(self.arguments) > 0
+
     def get_config_file_path(self):
-        #if self.options.config_file_path:
-        #    return self.options.config_file_path
-        #else:
-        return os.path.join(
+        if self.options.config_file_path:
+            return self.options.config_file_path
+        else:
+            return os.path.join(
                 wx.StandardPaths.Get().GetUserConfigDir(),
                 ".thetimelineproj.cfg")

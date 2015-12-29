@@ -1,4 +1,4 @@
-# Copyright (C) 2009, 2010, 2011  Rickard Lindberg, Roger Lindberg
+# Copyright (C) 2009, 2010, 2011, 2012, 2013, 2014, 2015  Rickard Lindberg, Roger Lindberg
 #
 # This file is part of Timeline.
 #
@@ -16,10 +16,13 @@
 # along with Timeline.  If not, see <http://www.gnu.org/licenses/>.
 
 
+import sys
+
 import wx
 
+from timelinelib.data import sort_categories
 from timelinelib.db.exceptions import TimelineIOError
-from timelinelib.db.objects.category import sort_categories
+from timelinelib.time.bosparaniantime import BosparanianTimeType
 
 
 # Border, in pixels, between controls in a window (should always be used when
@@ -67,6 +70,27 @@ class WildcardHelper(object):
                 self.ext_names.append(ext)
 
 
+class PopupTextWindow(wx.PopupTransientWindow):
+
+    def __init__(self, parent, text, color="#D3F4B8", timeout=1200, pos=None):
+        self.timeout = timeout
+        wx.PopupTransientWindow.__init__(self, parent, wx.NO_BORDER)
+        self.SetBackgroundColour(color)
+        st = wx.StaticText(self, wx.ID_ANY, text, pos=(10, 10))
+        sz = st.GetBestSize()
+        self.SetSize((sz.width + 20, sz.height + 20))
+        if pos:
+            self.Position(pos, (-1, -1))
+        self.Popup()
+
+    def ProcessLeftDown(self, evt):
+        return False
+
+    def Popup(self):
+        super(PopupTextWindow, self).Popup()
+        wx.CallLater(self.timeout, self.Dismiss)
+
+
 def category_tree(category_list, parent=None, remove=None):
     """
     Transform flat list of categories to a tree based on parent attribute.
@@ -82,7 +106,7 @@ def category_tree(category_list, parent=None, remove=None):
     children.
     """
     children = [child for child in category_list
-                if (child.parent is parent and child is not remove)]
+                if (child._get_parent() is parent and child is not remove)]
     sorted_children = sort_categories(children)
     tree = [(x, category_tree(category_list, x, remove))
             for x in sorted_children]
@@ -129,7 +153,7 @@ def _set_focus_and_select(ctrl):
         ctrl.SelectAll()
 
 
-def _display_error_message(message, parent=None):
+def display_error_message(message, parent=None):
     """Display an error message in a modal dialog box"""
     dial = wx.MessageDialog(parent, message, _("Error"), wx.OK | wx.ICON_ERROR)
     dial.ShowModal()
@@ -140,15 +164,43 @@ def display_warning_message(message, parent=None):
     dial.ShowModal()
 
 
+def display_information_message(caption, message, parent=None):
+    dialog = wx.MessageDialog(parent, message, caption,
+                              wx.OK | wx.ICON_INFORMATION)
+    dialog.ShowModal()
+    dialog.Destroy()
+
+
+def display_categories_editor_moved_message(parent):
+    display_information_message(
+        caption=_("Dialog moved"),
+        message=_("This dialog has been removed. Edit categories in the sidebar instead."),
+        parent=parent)
+
+
+def handle_db_error_by_crashing(e, parent=None):
+    try:
+        display_error_message("\n\n".join([
+            _("Timeline has encountered a fatal error:"),
+            str(e),
+            _("To prevent you from loosing data, Timeline will now crash."),
+        ]), parent=parent)
+        (error_type, value, traceback) = sys.exc_info()
+        from timelinelib.wxgui.setup import unhandled_exception_hook
+        unhandled_exception_hook(error_type, value, traceback)
+    finally:
+        sys.exit(1)
+
+
 def get_user_ack(question, parent=None):
     return wx.MessageBox(question, _("Question"),
-                         wx.YES_NO|wx.CENTRE|wx.NO_DEFAULT, parent) == wx.YES
+                         wx.YES_NO | wx.CENTRE | wx.NO_DEFAULT, parent) == wx.YES
 
 
 def _ask_question(question, parent=None):
     """Ask a yes/no question and return the reply."""
     return wx.MessageBox(question, _("Question"),
-                         wx.YES_NO|wx.CENTRE|wx.NO_DEFAULT, parent)
+                         wx.YES_NO | wx.CENTRE | wx.NO_DEFAULT, parent)
 
 
 def set_wait_cursor(parent):
@@ -161,16 +213,26 @@ def set_default_cursor(parent):
 
 def time_picker_for(time_type):
     from timelinelib.wxgui.components.numtimepicker import NumTimePicker
-    from timelinelib.wxgui.components.pydatetimepicker import PyDateTimePicker
-    from timelinelib.wxgui.components.wxdatetimepicker import WxDateTimePicker
-    from timelinelib.time import NumTimeType
-    from timelinelib.time import PyTimeType
-    from timelinelib.time import WxTimeType
-    if isinstance(time_type, PyTimeType):
-        return PyDateTimePicker
-    elif isinstance(time_type, WxTimeType):
-        return WxDateTimePicker
-    elif isinstance(time_type, NumTimeType):
+    from timelinelib.wxgui.components.gregoriandatetimepicker import GregorianDateTimePicker
+    from timelinelib.wxgui.components.bosparaniandatetimepicker import BosparanianDateTimePicker
+    from timelinelib.time.numtime import NumTimeType
+    from timelinelib.time.gregoriantime import GregorianTimeType
+    if isinstance(time_type, NumTimeType):
         return NumTimePicker
+    if isinstance(time_type, BosparanianTimeType):
+        return BosparanianDateTimePicker
+    elif isinstance(time_type, GregorianTimeType):
+        return GregorianDateTimePicker
     else:
         raise ValueError("Unsupported time type: %s" % time_type)
+
+
+def get_colour(rgb_tuple):
+    return wx.Colour(rgb_tuple[0], rgb_tuple[1], rgb_tuple[2])
+
+
+def set_focus(parent, name):
+    for child in parent.GetChildren():
+        if child.GetName() == name:
+            child.SetFocus()
+            break
