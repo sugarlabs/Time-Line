@@ -1,4 +1,4 @@
-# Copyright (C) 2009, 2010, 2011  Rickard Lindberg, Roger Lindberg
+# Copyright (C) 2009, 2010, 2011, 2012, 2013, 2014, 2015  Rickard Lindberg, Roger Lindberg
 #
 # This file is part of Timeline.
 #
@@ -19,9 +19,6 @@
 """
 Utilities used by drawers.
 """
-
-
-import wx
 
 
 class Metrics(object):
@@ -46,7 +43,13 @@ class Metrics(object):
 
     def calc_x(self, time):
         """Return the x position in pixels as an integer for the given time."""
-        return int(round(self.calc_exact_x(time)))
+        try:
+            return int(round(self.calc_exact_x(time)))
+        except OverflowError:
+            if time < self.time_period.start_time:
+                return -1
+            if time > self.time_period.end_time:
+                return self.width + 1
 
     def calc_exact_width(self, time_period):
         """Return the with in pixels as a float for the given time_period."""
@@ -67,17 +70,15 @@ class Metrics(object):
         return self.get_time(x1) - self.get_time(x2)
 
 
-def get_default_font(size, bold=False):
-    if bold:
-        weight = wx.FONTWEIGHT_BOLD
-    else:
-        weight = wx.FONTWEIGHT_NORMAL
-    return wx.Font(size, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, weight)
-
-
 def darken_color(color, factor=0.7):
-    r, g, b = color
-    new_r = int(r * factor)
-    new_g = int(g * factor)
-    new_b = int(b * factor)
-    return (new_r, new_g, new_b)
+    if (factor < 0.0 or factor > 1.0):
+        return color
+    return tuple([int(x * factor) for x in color])
+
+
+def lighten_color(color, factor=1.5):
+    if (factor < 1.0 or factor > 255.0):
+        return color
+    if (color == (0, 0, 0)):
+        color = (1, 1, 1)  # avoid multiplying factor by zero
+    return tuple([min(int(x * factor), 255) for x in color])

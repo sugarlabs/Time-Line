@@ -1,4 +1,4 @@
-# Copyright (C) 2009, 2010, 2011  Rickard Lindberg, Roger Lindberg
+# Copyright (C) 2009, 2010, 2011, 2012, 2013, 2014, 2015  Rickard Lindberg, Roger Lindberg
 #
 # This file is part of Timeline.
 #
@@ -21,116 +21,177 @@ import os.path
 import wx
 
 from timelinelib.config.paths import ICONS_DIR
+from timelinelib.wxgui.dialogs.eventlist.view import EventListDialog
 
 
-class SearchBar(wx.ToolBar):
-
-    def __init__(self, parent, close_fn):
-        wx.ToolBar.__init__(self, parent, style=wx.TB_HORIZONTAL|wx.TB_BOTTOM)
-        self.last_search = None
-        self.result = []
-        self.result_index = 0
-        self.view = None
-        self.close_fn = close_fn
-        self._create_gui()
-        self._update_buttons()
-
-    def set_view(self, view):
-        self.view = view
-        self.Enable(view is not None)
+class GuiCreator(object):
 
     def _create_gui(self):
-        icon_size = (16, 16)
-        # Close button
-        if 'wxMSW' in wx.PlatformInfo:
-            close_bmp = wx.Bitmap(os.path.join(ICONS_DIR, "close.png"))
-        else:
-            close_bmp = wx.ArtProvider.GetBitmap(wx.ART_CROSS_MARK, wx.ART_TOOLBAR,
-                                             icon_size)
-        self.AddLabelTool(wx.ID_CLOSE, "", close_bmp, shortHelp="")
-        self.Bind(wx.EVT_TOOL, self._btn_close_on_click, id=wx.ID_CLOSE)
-        # Search box
+        self.icon_size = (16, 16)
+        self._create_close_button()
+        self._create_search_box()
+        self._create_prev_button()
+        self._create_next_button()
+        self._create_list_button()
+        self._create_no_match_label()
+        self._create_single_match_label()
+        self.Realize()
+
+    def set_focus(self):
+        self.search.SetFocus()
+
+    def _create_search_box(self):
         self.search = wx.SearchCtrl(self, size=(150, -1),
                                     style=wx.TE_PROCESS_ENTER)
         self.Bind(wx.EVT_SEARCHCTRL_SEARCH_BTN,
                   self._search_on_search_btn, self.search)
         self.Bind(wx.EVT_TEXT_ENTER, self._search_on_text_enter, self.search)
         self.AddControl(self.search)
-        # Prev button
+
+    def _create_close_button(self):
+        if 'wxMSW' in wx.PlatformInfo:
+            close_bmp = wx.Bitmap(os.path.join(ICONS_DIR, "close.png"))
+        else:
+            close_bmp = wx.ArtProvider.GetBitmap(wx.ART_CROSS_MARK, wx.ART_TOOLBAR, self.icon_size)
+        self.AddLabelTool(wx.ID_CLOSE, "", close_bmp, shortHelp="")
+        self.Bind(wx.EVT_TOOL, self._btn_close_on_click, id=wx.ID_CLOSE)
+
+    def _create_prev_button(self):
         prev_bmp = wx.ArtProvider.GetBitmap(wx.ART_GO_BACK, wx.ART_TOOLBAR,
-                                            icon_size)
+                                            self.icon_size)
         self.AddLabelTool(wx.ID_BACKWARD, "", prev_bmp, shortHelp="")
         self.Bind(wx.EVT_TOOL, self._btn_prev_on_click, id=wx.ID_BACKWARD)
-        # Next button
-        next_bmp = wx.ArtProvider.GetBitmap(wx.ART_GO_FORWARD, wx.ART_TOOLBAR,
-                                            icon_size)
+
+    def _create_next_button(self):
+        next_bmp = wx.ArtProvider.GetBitmap(wx.ART_GO_FORWARD, wx.ART_TOOLBAR, self.icon_size)
         self.AddLabelTool(wx.ID_FORWARD, "", next_bmp, shortHelp="")
         self.Bind(wx.EVT_TOOL, self._btn_next_on_click, id=wx.ID_FORWARD)
-        # No match label
+
+    def _create_list_button(self):
+        list_bmp = wx.ArtProvider.GetBitmap(wx.ART_LIST_VIEW, wx.ART_TOOLBAR, self.icon_size)
+        self.AddLabelTool(wx.ID_MORE, "", list_bmp, shortHelp="")
+        self.Bind(wx.EVT_TOOL, self._btn_list_on_click, id=wx.ID_MORE)
+
+    def _create_no_match_label(self):
         self.lbl_no_match = wx.StaticText(self, label=_("No match"))
         self.lbl_no_match.Show(False)
         self.AddControl(self.lbl_no_match)
-        # Single match label
+
+    def _create_single_match_label(self):
         self.lbl_single_match = wx.StaticText(self, label=_("Only one match"))
         self.lbl_single_match.Show(False)
         self.AddControl(self.lbl_single_match)
-        # Finish it up
-        self.Realize()
 
     def _btn_close_on_click(self, e):
-        self.close_fn()
+        self.Show(False)
+        self.GetParent().Layout()
 
     def _search_on_search_btn(self, e):
-        self._search()
+        self.controller.search()
 
     def _search_on_text_enter(self, e):
-        self._search()
+        self.controller.search()
 
     def _btn_prev_on_click(self, e):
-        self._prev()
+        self.controller.prev()
 
     def _btn_next_on_click(self, e):
-        self._next()
+        self.controller.next()
 
-    def _search(self):
-        new_search = self.search.GetValue()
+    def _btn_list_on_click(self, e):
+        self.controller.list()
+
+
+class SearchBarController(object):
+
+    def __init__(self, view):
+        self.view = view
+        self.result = []
+        self.result_index = 0
+        self.last_search = None
+
+    def set_timeline_canvas(self, timeline_canvas):
+        self.timeline_canvas = timeline_canvas
+        self.view.Enable(timeline_canvas is not None)
+
+    def search(self):
+        new_search = self.view.get_value()
         if self.last_search is not None and self.last_search == new_search:
-            self._next()
+            self.next()
         else:
             self.last_search = new_search
-            if self.view is not None:
-                events = self.view.get_timeline().search(self.last_search)
-                filtered_events = self.view.get_view_properties().filter_events(events)
-                self.result = filtered_events
+            if self.timeline_canvas is not None:
+                self.result = self.timeline_canvas.get_filtered_events(new_search)
             else:
                 self.result = []
             self.result_index = 0
-            self._navigate_to_match()
-            self.lbl_no_match.Show(len(self.result) == 0)
-            self.lbl_single_match.Show(len(self.result) == 1)
-        self._update_buttons()
+            self.navigate_to_match()
+            self.view.update_nomatch_labels(len(self.result) == 0)
+            self.view.update_singlematch_label(len(self.result) == 1)
+        self.view.update_buttons()
 
-    def _update_buttons(self):
-        enable_backward = bool(self.result and self.result_index > 0)
-        self.EnableTool(wx.ID_BACKWARD, enable_backward)
-        enable_forward = bool(self.result and
-                              self.result_index < (len(self.result) - 1))
-        self.EnableTool(wx.ID_FORWARD, enable_forward)
-
-    def _next(self):
-        if self.result > 0 and self.result_index < (len(self.result) - 1):
+    def next(self):
+        if not self._on_last_match():
             self.result_index += 1
-            self._navigate_to_match()
-            self._update_buttons()
+            self.navigate_to_match()
+            self.view.update_buttons()
 
-    def _prev(self):
-        if self.result > 0 and self.result_index > 0:
+    def prev(self):
+        if not self._on_first_match():
             self.result_index -= 1
-            self._navigate_to_match()
-            self._update_buttons()
+            self.navigate_to_match()
+            self.view.update_buttons()
 
-    def _navigate_to_match(self):
-        if (self.view is not None and
-            self.result_index in range(len(self.result))):
+    def list(self):
+        event_list = [event.get_label() for event in self.result]
+        dlg = EventListDialog(self.view, event_list)
+        if dlg.ShowModal() == wx.ID_OK:
+            self.result_index = dlg.GetSelectedIndex()
+            self.navigate_to_match()
+        dlg.Destroy()
+
+    def navigate_to_match(self):
+        if (self.timeline_canvas is not None and self.result_index in range(len(self.result))):
             event = self.result[self.result_index]
-            self.view.navigate_timeline(lambda tp: tp.center(event.mean_time()))
+            self.timeline_canvas.navigate_timeline(lambda tp: tp.center(event.mean_time()))
+
+    def enable_backward(self):
+        return bool(self.result and self.result_index > 0)
+
+    def enable_forward(self):
+        return bool(self.result and self.result_index < (len(self.result) - 1))
+
+    def enable_list(self):
+        return bool(len(self.result) > 0)
+
+    def _on_first_match(self):
+        return self.result > 0 and self.result_index == 0
+
+    def _on_last_match(self):
+        return self.result > 0 and self.result_index == (len(self.result) - 1)
+
+
+class SearchBar(wx.ToolBar, GuiCreator):
+
+    def __init__(self, parent):
+        wx.ToolBar.__init__(self, parent, style=wx.TB_HORIZONTAL | wx.TB_BOTTOM)
+        self.controller = SearchBarController(self)
+        self._create_gui()
+        self.update_buttons()
+
+    def set_timeline_canvas(self, timeline_canvas):
+        self.controller.set_timeline_canvas(timeline_canvas)
+
+    def get_value(self):
+        return self.search.GetValue()
+
+    def update_nomatch_labels(self, nomatch):
+        self.lbl_no_match.Show(nomatch)
+
+    def update_singlematch_label(self, singlematch):
+        self.lbl_single_match.Show(singlematch)
+
+    def update_buttons(self):
+        self.EnableTool(wx.ID_BACKWARD, self.controller.enable_backward())
+        self.EnableTool(wx.ID_FORWARD, self.controller.enable_forward())
+        self.EnableTool(wx.ID_MORE, self.controller.enable_list())

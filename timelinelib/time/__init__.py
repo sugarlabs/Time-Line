@@ -1,4 +1,4 @@
-# Copyright (C) 2009, 2010, 2011  Rickard Lindberg, Roger Lindberg
+# Copyright (C) 2009, 2010, 2011, 2012, 2013, 2014, 2015  Rickard Lindberg, Roger Lindberg
 #
 # This file is part of Timeline.
 #
@@ -16,7 +16,6 @@
 # along with Timeline.  If not, see <http://www.gnu.org/licenses/>.
 
 
-from timelinelib.time.numtime import NumTimeType
-from timelinelib.time.pytime import PyTimeType
-from timelinelib.time.wxtime import try_to_create_wx_date_time_from_dmy
-from timelinelib.time.wxtime import WxTimeType
+# Import sometimes otherwise shadowed standard library functions
+from time import time
+from time import clock

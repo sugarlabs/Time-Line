@@ -1,4 +1,4 @@
-# Copyright (C) 2009, 2010, 2011  Rickard Lindberg, Roger Lindberg
+# Copyright (C) 2009, 2010, 2011, 2012, 2013, 2014, 2015  Rickard Lindberg, Roger Lindberg
 #
 # This file is part of Timeline.
 #
@@ -51,6 +51,12 @@ class TimeType(object):
     def get_default_time_period(self):
         raise NotImplementedError("get_default_time_period not implemented.")
 
+    def supports_saved_now(self):
+        raise NotImplementedError("supports_saved_now not implemented.")        
+
+    def set_saved_now(self,time):
+        raise NotImplementedError("set_saved_now not implemented.")
+
     def now(self):
         raise NotImplementedError("now not implemented.")
 
@@ -61,11 +67,8 @@ class TimeType(object):
     def div_timedeltas(self, delta1, delta2):
         raise NotImplementedError("div_timedeltas not implemented.")
 
-    def get_max_zoom_delta(self):
-        raise NotImplementedError("get_max_zoom_delta not implemented.")
-
     def get_min_zoom_delta(self):
-        raise NotImplementedError("get_max_zoom_delta not implemented.")
+        raise NotImplementedError("get_min_zoom_delta not implemented.")
 
     def get_zero_delta(self):
         raise NotImplementedError("get_zero_delta not implemented.")
@@ -86,13 +89,16 @@ class TimeType(object):
         raise NotImplementedError("margin_delta not implemented.")
 
     def event_date_string(self, time):
-        raise NotImplementedError("eventtimes_equals not implemented.")
+        raise NotImplementedError("event_date_string not implemented.")
 
     def event_time_string(self, time):
-        raise NotImplementedError("eventtimes_equals not implemented.")
+        raise NotImplementedError("event_time_string not implemented.")
 
     def eventtimes_equals(self, time1, time2):
         raise NotImplementedError("eventtimes_equals not implemented.")
 
     def adjust_for_bc_years(self, time):
-        raise NotImplementedError("adjust_for_zero_year not implemented.")
+        raise NotImplementedError("adjust_for_bc_years not implemented.")
+    
+    def get_utils(self):
+        raise NotImplementedError("get_utils not implemented.")

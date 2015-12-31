@@ -1,4 +1,4 @@
-# Copyright (C) 2009, 2010, 2011  Rickard Lindberg, Roger Lindberg
+# Copyright (C) 2009, 2010, 2011, 2012, 2013, 2014, 2015  Rickard Lindberg, Roger Lindberg
 #
 # This file is part of Timeline.
 #
@@ -20,16 +20,24 @@ from sys import version as python_version
 import platform
 import sys
 import traceback
+import locale
 
 import wx
 
 from timelinelib.meta.version import get_version
-from timelinelib.wxgui.dialogs.mainframe import MainFrame
-from timelinelib.wxgui.dialogs.textdisplay import TextDisplayDialog
+from timelinelib.wxgui.frames.mainframe.mainframe import MainFrame
+from timelinelib.wxgui.dialogs.feedback.view import show_feedback_dialog
+from timelinelib.features.experimental.experimentalfeaturedateformatting import create_locale_sample_date
+
+
+def setup_humblewx():
+    import timelinelib.wxgui.components
+    import humblewx
+    humblewx.COMPONENT_MODULES.insert(0, timelinelib.wxgui.components)
 
 
 def start_wx_application(application_arguments, before_main_loop_hook=None):
-    app = wx.PySimpleApp()
+    app = wx.App(False)
     main_frame = MainFrame(application_arguments)
     main_frame.Show()
     sys.excepthook = unhandled_exception_hook
@@ -38,28 +46,34 @@ def start_wx_application(application_arguments, before_main_loop_hook=None):
     app.MainLoop()
 
 
-def unhandled_exception_hook(type, value, tb):
-    title = "Unexpected Error"
-    text = create_error_message(type, value, tb)
-    dialog = TextDisplayDialog(title, text)
-    dialog.ShowModal()
-    dialog.Destroy()
+def unhandled_exception_hook(exception_type, value, tb):
+    show_feedback_dialog(
+        parent=None,
+        info=create_info_message(),
+        subject=create_subject(exception_type, value),
+        body=create_error_message(exception_type, value, tb))
 
 
-def create_error_message(type, value, tb):
-    intro = create_intro_message()
-    exception = ("".join(traceback.format_exception(type, value, tb))).strip()
-    versions = create_versions_message()
-    return "%s\n\n%s\n\n%s" % (intro, exception, versions)
+def create_info_message():
+    return ("An unexpected error has occurred. Help us fix it by reporting "
+            "the error through this form. ")
 
 
-def create_intro_message():
-    intro1 = ("An unexpected error has occurred. Please report this by copying "
-              "this error message and sending it to "
-              "thetimelineproj-user@lists.sourceforge.net.")
-    intro2 = ("It would also be useful if you can describe what you did just "
-              "before the error occurred.")
-    return "%s\n\n%s" % (intro1, intro2)
+def create_subject(exception_type, value):
+    return "".join(traceback.format_exception_only(exception_type, value)).strip()
+
+
+def create_error_message(exception_type, value, tb):
+    return "\n".join([
+        "Stacktrace:",
+        "",
+        indent(("".join(traceback.format_exception(exception_type, value, tb))).strip()),
+        "",
+        "Environment:",
+        "",
+        indent(create_versions_message()),
+        indent(create_locale_message()),
+    ])
 
 
 def create_versions_message():
@@ -69,3 +83,14 @@ def create_versions_message():
         "Python version: %s" % python_version.replace("\n", ""),
         "wxPython version: %s" % wx.version(),
     ])
+
+
+def create_locale_message():
+    return "\n".join([
+        "Locale setting: %s" % " ".join(locale.getlocale(locale.LC_TIME)),
+        "Locale sample date: %s" % create_locale_sample_date(),
+    ])
+
+
+def indent(text):
+    return "\n".join("    " + x for x in text.split("\n"))

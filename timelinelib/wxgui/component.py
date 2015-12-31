@@ -1,4 +1,4 @@
-# Copyright (C) 2009, 2010, 2011  Rickard Lindberg, Roger Lindberg
+# Copyright (C) 2009, 2010, 2011, 2012, 2013, 2014, 2015  Rickard Lindberg, Roger Lindberg
 #
 # This file is part of Timeline.
 #
@@ -16,10 +16,8 @@
 # along with Timeline.  If not, see <http://www.gnu.org/licenses/>.
 
 
-import wx
-
 from timelinelib.db import db_open
-from timelinelib.wxgui.dialogs.mainframe import TimelinePanel
+from timelinelib.wxgui.components.timelinepanel import TimelinePanel
 
 
 class DummyConfig(object):
@@ -34,8 +32,7 @@ class DummyConfig(object):
         self.recently_opened = []
         self.open_recent_at_startup = False
         self.balloon_on_hover = True
-        self.week_start = "monaday"
-        self.use_wide_date_range = False
+        self.week_start = "monday"
         self.use_inertial_scrolling = False
 
     def get_sidebar_width(self):
@@ -68,6 +65,12 @@ class DummyMainFrame(object):
     def enable_disable_menus(self):
         pass
 
+    def edit_ends(self):
+        pass
+
+    def ok_to_edit(self):
+        return False
+
 
 class TimelineComponent(TimelinePanel):
 
@@ -82,9 +85,12 @@ class TimelineComponent(TimelinePanel):
 
     def open_timeline(self, path):
         timeline = db_open(path)
-        self.drawing_area.set_timeline(timeline)
-        self.sidebar.cattree.initialize_from_timeline_view(self.drawing_area)
+        self.timeline_canvas.set_timeline(timeline)
+        self.sidebar.category_tree.set_timeline_view(
+            self.timeline_canvas.get_timeline(),
+            self.timeline_canvas.get_view_properties()
+        )
 
     def clear_timeline(self):
-        self.drawing_area.set_timeline(None)
-        self.sidebar.cattree.initialize_from_timeline_view(self.drawing_area)
+        self.timeline_canvas.set_timeline(None)
+        self.sidebar.category_tree.set_no_timeline_view()
