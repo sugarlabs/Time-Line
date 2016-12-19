@@ -4559,8 +4559,8 @@ msgid "Style Tags"
 msgstr "Style Tags"
 
 #: wx/tools/Editra/src/style_editor.py:252
-msgid "Some styles have been changed would you like to save before exiting?"
-msgstr "Some styles have been changed would you like to save before exiting?"
+msgid "Some styles have been changed. Would you like to save before exiting?"
+msgstr "Some styles have been changed. Would you like to save before exiting?"
 
 #: wx/tools/Editra/src/style_editor.py:254
 msgid "Save Styles"
