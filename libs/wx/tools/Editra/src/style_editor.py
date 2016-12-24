@@ -249,7 +249,7 @@ class StyleEditor(wx.Dialog):
         result = wx.ID_NO
         if diff:
             dlg = wx.MessageDialog(self,
-                                    _("Some styles have been changed would "
+                                    _("Some styles have been changed. Would "
                                       "you like to save before exiting?"),
                                    _("Save Styles"),
                                    style=wx.YES_NO | wx.YES_DEFAULT | \
