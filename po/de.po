@@ -7,17 +7,17 @@ msgstr ""
 "Project-Id-Version: Timeline 0.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-05-28 00:31-0400\n"
-"PO-Revision-Date: 2012-02-20 05:18+0200\n"
-"Last-Translator: Chris <cjl@laptop.org>\n"
+"PO-Revision-Date: 2017-11-01 22:26+0000\n"
+"Last-Translator: Markus <m.slg@gmx.de>\n"
 "Language-Team: German\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Generator: Pootle 2.5.1.1\n"
 "X-Launchpad-Export-Date: 2011-10-30 13:32+0000\n"
-"X-Poedit-Language: German\n"
+"X-POOTLE-MTIME: 1509575181.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Time Line"
@@ -703,9 +703,8 @@ msgid "Forward\tPgDn"
 msgstr "Vorwärts\tBild-ab"
 
 #: timelinelib/time/numtime.py:113
-#, fuzzy
 msgid "Can't zoom deeper than 5"
-msgstr "Der Zoom kann nicht auf weniger als eine Stunde eingestellt werden."
+msgstr "Kann nicht tiefer als Stufe 5 zoomen"
 
 #: timelinelib/time/numtime.py:126
 msgid "1-period"
@@ -946,10 +945,9 @@ msgid "Edit Categories"
 msgstr "Kategorien bearbeiten"
 
 #: timelinelib/wxgui/dialogs/categoryeditor.py:87
-#, python-format
-#, python-format, fuzzy
+#, python-format, python-format
 msgid "Category name '%s' not valid. Must be non-empty."
-msgstr "Bitte geben Sie einen Namen für die gewählte Kategorie ein."
+msgstr "Der Kategorienname '%s' ist unzulässig. Er darf nicht leer sein."
 
 #: timelinelib/wxgui/dialogs/categoryeditor.py:92
 #, python-format
@@ -1085,11 +1083,9 @@ msgid "Add more events after this one"
 msgstr "Weitere Ereignisse nach diesem erstellen"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:456
-#, fuzzy
 msgid "Images will be scaled to fit inside a 128x128 box."
 msgstr ""
-"Die Bilder werden so skaliert werden, dass sie in einen Bereich von %ix%i "
-"passen."
+"Die Bilder werden so skaliert, dass sie in einen Rahmen von 128x128 passen."
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:493
 msgid "Select Icon"

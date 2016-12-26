@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-05-28 00:31-0400\n"
-"PO-Revision-Date: 2013-06-28 21:53+0200\n"
-"Last-Translator: Chris <cjl@laptop.org>\n"
+"PO-Revision-Date: 2014-05-19 06:54+0200\n"
+"Last-Translator: Aram <ararat.info@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: hy\n"
 "MIME-Version: 1.0\n"
@@ -122,6 +122,12 @@ msgid ""
 "\n"
 "Do you want to Synchronize?"
 msgstr ""
+"Որևէ մեկը նույնպես փոխել է Ժամանակացույցը.\n"
+"Ունես երկու տարբերակ!\n"
+"1. Տեղադրել Ժամանակացույցը \"Միայն-Ընթերցել\" ռեժիմով.\n"
+"2. Համապատասխանեցնել Ժամանակացույցը.\n"
+"\n"
+"Ցանկանում ես Համապատասխանեցնել?"
 
 #: timelinelib/calendar/monthnames.py:38
 msgid "Feb"
@@ -461,7 +467,7 @@ msgstr ""
 
 #: timelinelib/help/pages.py:86
 msgid "Can multiple users work with the same timeline?"
-msgstr ""
+msgstr "Կարող է բազմապատկել օգտվողների աշխատանքը միևնույն ժամանակացույցով?"
 
 #: timelinelib/help/pages.py:92
 msgid ""
@@ -479,6 +485,20 @@ msgid ""
 "you try to edit a timeline when it is locked by someone else you will be "
 "notified about this situation.\n"
 msgstr ""
+"\n"
+"Կա որոշակի աջակցություն բազմաթիվ օգտվողների համար, նույն ժամանակացույցի վրա "
+"աշխատելու համար.\n"
+"\n"
+"Երբ փորձում ես փոփոխություն կատարել և ինչ-որ մեկը արդեն կատարել է "
+"փոփոխություն, քեզ երկու տարբերակների միջև ընտրության հնարավորություն կտրվի:\n"
+"\n"
+"- Տեղադրել ժամանակացույցը Միայն-Ընթերցել ռեժիմ.\n"
+"- Համապատասխանեցնել ժամանակացույցը.\n"
+"\n"
+"Քո խմբագրման գործողության ընթացքում ժամանակացույցը արգելափակվում է` ուրիշի "
+"կողմից հետագայում փոփոխվելու նպատակով: Եթե փորձում ես խմբագրել ժամանակցույցը "
+"երբ այն արգելափակված է նաև մեկ այլ օգտվողի կողմից, դու անպայման կտեղեկացվես "
+"այդ մասին.\n"
 
 #: timelinelib/help/pages.py:105
 msgid "Timeline"
@@ -562,7 +582,7 @@ msgstr ""
 
 #: timelinelib/help/pages.py:178
 msgid "Move event vertically"
-msgstr ""
+msgstr "Շարժել իրադարձությունը ուղղահայաց"
 
 #: timelinelib/help/pages.py:185
 msgid ""
@@ -788,7 +808,7 @@ msgstr "Տեղադրել Ամիսը"
 
 #: timelinelib/time/pytime.py:88 timelinelib/time/wxtime.py:83
 msgid "Fit Week"
-msgstr ""
+msgstr "Տեղադրել Շաբաթը"
 
 #: timelinelib/time/pytime.py:89 timelinelib/time/wxtime.py:84
 msgid "Fit Day"
@@ -865,7 +885,7 @@ msgstr "Կպչուն Փուչիկ"
 
 #: timelinelib/view/drawingarea.py:209
 msgid "Goto URL"
-msgstr ""
+msgstr "Գնալ դեպի URL"
 
 #: timelinelib/view/drawingarea.py:372
 msgid "Center"
@@ -1079,7 +1099,7 @@ msgstr "Պատկերանշան"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:247
 msgid "Hyperlink"
-msgstr ""
+msgstr "Հիպեր հղում"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:264
 msgid "Add more events after this one"
@@ -1094,13 +1114,12 @@ msgid "Select Icon"
 msgstr "Ընտրել Պատկերանշան"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:668
-#, fuzzy
 msgid "Test"
 msgstr "Տեքստ"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:678
 msgid "URL:"
-msgstr ""
+msgstr "URL:"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:722
 msgid "Edit Container"
@@ -1206,7 +1225,7 @@ msgstr "Բացել գոյությու ունեցող ժամանակացույց�
 
 #: timelinelib/wxgui/dialogs/mainframe.py:228
 msgid "Save Timeline As"
-msgstr ""
+msgstr "Պահպանել Ժամանակացույցը որպես"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:253
 msgid "Open Timeline"
@@ -1219,7 +1238,7 @@ msgstr "Բացել &Արդիականացնել"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:267
 msgid "Save As..."
-msgstr ""
+msgstr "Պահպանել որպես..."
 
 #: timelinelib/wxgui/dialogs/mainframe.py:272
 msgid "Page Set&up..."
@@ -1231,34 +1250,31 @@ msgstr "Կարգավորել էջը տպելու համար"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:281 wx/lib/docview.py:1571
 #: wx/lib/pydocview.py:182 wx/tools/Editra/src/ed_print.py:108
-#, fuzzy
 msgid "Print Preview"
 msgstr "Նախադիտում"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:290 wx/lib/pydocview.py:181
 #: wx/tools/Editra/src/ed_toolbar.py:80
 msgid "Print"
-msgstr ""
+msgstr "Տպել"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:299
-#, fuzzy
 msgid "&Export to Image..."
-msgstr "Արտահանել Պատկերը"
+msgstr "&Արտահանել Պատկերը"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:299
 msgid "Export the current view to a PNG image"
-msgstr ""
+msgstr "Արտահանել սույն պատկերը որպես PNG պատկեր"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:308
 msgid "&Export to SVG..."
-msgstr ""
+msgstr "&Արտահանել SVG..."
 
 #: timelinelib/wxgui/dialogs/mainframe.py:308
 msgid "Export the current view to a SVG image"
-msgstr ""
+msgstr "Արտահանել սույն պատկերը որպես SVG պատկեր"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:317
-#, fuzzy
 msgid ""
 "Could not find pysvg Python package. It is needed to export to SVG. See the "
 "Timeline website or the INSTALL file for instructions how to install it."
@@ -1269,30 +1285,29 @@ msgstr ""
 
 #: timelinelib/wxgui/dialogs/mainframe.py:321
 msgid "Export to SVG"
-msgstr ""
+msgstr "Արտահանել SVG"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:343
 msgid "Play timeline"
-msgstr ""
+msgstr "Նվագարկել ժամանակացույցը"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:343
 msgid "Play timeline as movie"
-msgstr ""
+msgstr "Նվագարկել ժամանակացույցը որպես ֆիլմ"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:351
 msgid "Exit the program"
-msgstr ""
+msgstr "Դուրս գալ ծրագրից"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:362 wx/lib/pydocview.py:134
 #: wx/lib/pydocview.py:1925 wx/tools/Editra/src/ed_menu.py:647
-#, fuzzy
 msgid "&Edit"
-msgstr "Խմբագրել"
+msgstr "&Խմբագրել"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:389 wx/lib/pydocview.py:146
 #: wx/tools/Editra/src/ed_menu.py:712
 msgid "&View"
-msgstr ""
+msgstr "&Տեսք"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:393
 msgid "&Sidebar\tCtrl+I"
@@ -1300,45 +1315,43 @@ msgstr ""
 
 #: timelinelib/wxgui/dialogs/mainframe.py:407
 msgid "&Legend"
-msgstr ""
+msgstr "&Առասպել"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:418
 msgid "&Balloons on hover"
-msgstr ""
+msgstr "&Փուչիկները սավառնում են"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:433
-#, fuzzy
 msgid "&Timeline"
-msgstr "Ժամանակացույց"
+msgstr "&Ժամանակացույց"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:437
-#, fuzzy
 msgid "Create &Event..."
-msgstr "Ստեղծել իրադարձություն"
+msgstr "Ստեղծել &իրադարձություն..."
 
 #: timelinelib/wxgui/dialogs/mainframe.py:437
 msgid "Create a new event"
-msgstr ""
+msgstr "Ստեղծել նոր իրադարձություն"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:447
 msgid "&Duplicate Selected Event..."
-msgstr ""
+msgstr "&Կրկնապատկել Ընտրված Իրադարձությունը..."
 
 #: timelinelib/wxgui/dialogs/mainframe.py:447
 msgid "Duplicate the Selected Event"
-msgstr ""
+msgstr "Կրկնապատկել Ընտրված Իրադարձությունը"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:468
 msgid "&Measure Distance between two Events..."
-msgstr ""
+msgstr "&Չափել Հեռավորությունը երկու իրադարձությունների միջև..."
 
 #: timelinelib/wxgui/dialogs/mainframe.py:469
 msgid "Measure the Distance between two Events"
-msgstr ""
+msgstr "Չափել Հեռավորությունը երկու իրադարձությունների միջև"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:500
 msgid "Distance between selected events"
-msgstr ""
+msgstr "Հեռավորությունը  Ընտրված Իրադարձությունի միջև"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:503
 msgid "Events are overlapping or distance is 0"
@@ -1623,7 +1636,7 @@ msgstr ""
 #: wx/tools/Editra/src/style_editor.py:139
 #, fuzzy
 msgid "OK"
-msgstr "OK"
+msgstr "Լավ"
 
 #: wx/lib/agw/genericmessagedialog.py:825 wx/lib/agw/multidirdialog.py:476
 #: wx/tools/Editra/src/ed_search.py:1244
@@ -4454,12 +4467,10 @@ msgid "Port Number"
 msgstr ""
 
 #: wx/tools/Editra/src/prefdlg.py:1398
-#, fuzzy
 msgid "Username"
-msgstr "Օգտագործողի անունը"
+msgstr "Օգտվողի անունը"
 
 #: wx/tools/Editra/src/prefdlg.py:1405
-#, fuzzy
 msgid "Password"
 msgstr "Գաղտնաբառ"
 
@@ -4485,7 +4496,7 @@ msgstr ""
 
 #: wx/tools/Editra/src/prefdlg.py:1715
 msgid "Menu"
-msgstr ""
+msgstr "Ցանկ"
 
 #: wx/tools/Editra/src/prefdlg.py:1725
 msgid "Modifier 1"
@@ -4636,35 +4647,34 @@ msgstr "Տառատեսակ"
 
 #: wx/tools/Editra/src/updater.py:147
 msgid "Unable to retrieve version info"
-msgstr ""
+msgstr "Անհնար է վերհանել տարբերակի մասին տեղեկույթ"
 
 #: wx/tools/Editra/src/updater.py:292
 msgid "Status Unknown"
-msgstr ""
+msgstr "Անհայտ կարգավիճակ"
 
 #: wx/tools/Editra/src/updater.py:567
 #, python-format
 msgid "Downloading: %s"
-msgstr ""
+msgstr "Ներբեռնում: %s"
 
 #: wx/tools/Editra/src/updater.py:569
 #, python-format
 msgid "Downloading To: %s"
-msgstr ""
+msgstr "Ներբեռնում դեպի: %s"
 
 #: wx/tools/Editra/src/updater.py:647
-#, fuzzy
 msgid "Canceled"
-msgstr "Չեղարկել"
+msgstr "Չեղարկված"
 
 #: wx/tools/Editra/src/updater.py:675
 #, python-format
 msgid "Rate: %.2f Kb/s"
-msgstr ""
+msgstr "Արագություն՝  %.2f Kb/s"
 
 #: wx/tools/Editra/src/updater.py:682
 msgid "Finished"
-msgstr ""
+msgstr "Ավարտված է"
 
 #: wx/tools/Editra/src/updater.py:685
 msgid "Failed"
@@ -4676,7 +4686,7 @@ msgstr ""
 
 #: wx/tools/Editra/src/util.py:361
 msgid "Text Document"
-msgstr ""
+msgstr "Տեսքստային փաստաթուղթ"
 
 #: wx/tools/Editra/src/util.py:369
 #, python-format

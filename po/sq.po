@@ -1,36 +1,35 @@
-# Swedish translations for the Timeline application.
-# Copyright (C) 2009 ORGANIZATION
-# This file is distributed under the same license as the Timeline package.
-# Roger Lindberg <roger@rolidata.se>, 2009.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
-"Project-Id-Version: Timeline 0.4.0\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-05-28 00:31-0400\n"
-"PO-Revision-Date: 2017-04-07 12:46+0000\n"
-"Last-Translator: Anders <anders.jonsson@norsjovallen.se>\n"
+"PO-Revision-Date: 2018-02-10 15:59+0000\n"
+"Last-Translator: Besnik_b <besnik@programeshqip.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: sv\n"
+"Language: sq\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-Launchpad-Export-Date: 2011-10-30 13:32+0000\n"
-"X-POOTLE-MTIME: 1491569189.000000\n"
+"X-POOTLE-MTIME: 1518278370.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Time Line"
-msgstr "Tidslinje"
+msgstr "Rrjedhë Kohore"
 
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
 msgid "Allows create interactive time lines"
-msgstr "Tillåt skapande av interaktiva tidslinjer"
+msgstr "Lejon krijim rrjedhash kohore ndërvepruese"
 
 #: specs/EventEditor.py:370 timelinelib/editors/event.py:156
 msgid "You can't change time when the Event is locked"
-msgstr "Du kan inte ändra tid då händelsen är låst"
+msgstr "S’mund të ndryshoni kohën kur Akti është i kyçur"
 
 #: specs/MonthNames.py:33 timelinelib/calendar/monthnames.py:37
 msgid "Jan"
@@ -38,38 +37,38 @@ msgstr "Jan"
 
 #: specs/MonthNames.py:48 timelinelib/calendar/monthnames.py:48
 msgid "Dec"
-msgstr "Dec"
+msgstr "Dhj"
 
 #: specs/PyTimeType.py:56 specs/WxTimeType.py:82
 #: timelinelib/calendar/monthnames.py:44
 msgid "Aug"
-msgstr "Aug"
+msgstr "Gus"
 
 #: specs/PyTimeType.py:110 specs/PyTimeType.py:130 specs/PyTimeType.py:146
 #: specs/PyTimeType.py:150 specs/WxTimeType.py:150 specs/WxTimeType.py:166
 #: specs/WxTimeType.py:170 timelinelib/time/pytime.py:123
 #: timelinelib/time/wxtime.py:121
 msgid "day"
-msgstr "dag"
+msgstr "ditë"
 
 #: specs/PyTimeType.py:114 specs/PyTimeType.py:138 specs/PyTimeType.py:158
 #: specs/WxTimeType.py:134 specs/WxTimeType.py:158 specs/WxTimeType.py:178
 #: timelinelib/time/pytime.py:131 timelinelib/time/wxtime.py:129
 msgid "minute"
-msgstr "minut"
+msgstr "minutë"
 
 #: specs/PyTimeType.py:118 specs/PyTimeType.py:142 specs/PyTimeType.py:162
 #: specs/WxTimeType.py:138 specs/WxTimeType.py:162 specs/WxTimeType.py:182
 #: timelinelib/time/pytime.py:133 timelinelib/time/wxtime.py:131
 msgid "minutes"
-msgstr "minuter"
+msgstr "minuta"
 
 #: specs/PyTimeType.py:122 specs/PyTimeType.py:138 specs/PyTimeType.py:142
 #: specs/PyTimeType.py:146 specs/WxTimeType.py:142 specs/WxTimeType.py:158
 #: specs/WxTimeType.py:162 specs/WxTimeType.py:166
 #: timelinelib/time/pytime.py:127 timelinelib/time/wxtime.py:125
 msgid "hour"
-msgstr "timme"
+msgstr "orë"
 
 #: specs/PyTimeType.py:126 specs/PyTimeType.py:150 specs/PyTimeType.py:154
 #: specs/PyTimeType.py:158 specs/PyTimeType.py:162 specs/WxTimeType.py:146
@@ -77,7 +76,7 @@ msgstr "timme"
 #: specs/WxTimeType.py:182 specs/WxTimeType.py:186
 #: timelinelib/time/pytime.py:129 timelinelib/time/wxtime.py:127
 msgid "hours"
-msgstr "timmar"
+msgstr "orë"
 
 #: specs/PyTimeType.py:134 specs/PyTimeType.py:154 specs/PyTimeType.py:158
 #: specs/PyTimeType.py:162 specs/PyTimeType.py:166 specs/PyTimeType.py:172
@@ -85,35 +84,35 @@ msgstr "timmar"
 #: specs/WxTimeType.py:182 specs/WxTimeType.py:186 specs/WxTimeType.py:192
 #: timelinelib/time/pytime.py:125 timelinelib/time/wxtime.py:123
 msgid "days"
-msgstr "dagar"
+msgstr "ditë"
 
 #: specs/TimelineView.py:66 timelinelib/view/zoom.py:28
 msgid "Select region to zoom into"
-msgstr "Välj område att zooma till"
+msgstr "Përzgjidhni zonë për të kryer zoom"
 
 #: specs/TimelineView.py:74 timelinelib/view/zoom.py:38
 msgid "Region too short"
-msgstr "Område för kort"
+msgstr "Zonë shumë e shkurtër"
 
 #: specs/TimelineView.py:90 timelinelib/view/zoom.py:35
 msgid "Region too long"
-msgstr "Område för långt"
+msgstr "Zonë shumë e gjatë"
 
 #: specs/TimelineView.py:191 timelinelib/view/drawingarea.py:172
 msgid "Can't scroll more to the left"
-msgstr "Kan inte rulla mer åt vänster"
+msgstr "S’rrëshqitet dot më majtas"
 
 #: specs/TimelineView.py:198 timelinelib/view/drawingarea.py:174
 msgid "Can't scroll more to the right"
-msgstr "Kan inte rulla mer åt höger"
+msgstr "S’rrëshqitet dot më djathtas"
 
 #: specs/WeekdayNames.py:28 timelinelib/calendar/weekdaynames.py:21
 msgid "Mon"
-msgstr "Mån"
+msgstr "Hën"
 
 #: specs/WeekdayNames.py:33 timelinelib/calendar/weekdaynames.py:27
 msgid "Sun"
-msgstr "Sön"
+msgstr "Die"
 
 #: timelinelib/application.py:89
 msgid ""
@@ -124,16 +123,16 @@ msgid ""
 "\n"
 "Do you want to Synchronize?"
 msgstr ""
-"Någon annan har ändrat tidslinjen.\n"
-"Du har två val!\n"
-"  1. Ställ in tidslinjen till skrivskyddat läge.\n"
-"  2. Synkronisera tidslinje.\n"
+"Dikush tjetër ka ndryshuar Rrjedhën Kohore.\n"
+"Keni dy mundësi!\n"
+"  1. Ta kaloni Rrjedhën Kohore nën mënyrën Vetëm Lexim.\n"
+"  2. Ta njëkohësoni Rrjedhën Kohore.\n"
 "\n"
-"Vill du synkronisera?"
+"Doni të Njëkohësohet?"
 
 #: timelinelib/calendar/monthnames.py:38
 msgid "Feb"
-msgstr "Feb"
+msgstr "Shk"
 
 #: timelinelib/calendar/monthnames.py:39
 msgid "Mar"
@@ -141,7 +140,7 @@ msgstr "Mar"
 
 #: timelinelib/calendar/monthnames.py:40
 msgid "Apr"
-msgstr "Apr"
+msgstr "Pri"
 
 #: timelinelib/calendar/monthnames.py:41
 msgid "May"
@@ -149,43 +148,43 @@ msgstr "Maj"
 
 #: timelinelib/calendar/monthnames.py:42
 msgid "Jun"
-msgstr "Jun"
+msgstr "Qer"
 
 #: timelinelib/calendar/monthnames.py:43
 msgid "Jul"
-msgstr "Jul"
+msgstr "Kor"
 
 #: timelinelib/calendar/monthnames.py:45
 msgid "Sep"
-msgstr "Sep"
+msgstr "Sht"
 
 #: timelinelib/calendar/monthnames.py:46
 msgid "Oct"
-msgstr "Okt"
+msgstr "Tet"
 
 #: timelinelib/calendar/monthnames.py:47
 msgid "Nov"
-msgstr "Nov"
+msgstr "Nën"
 
 #: timelinelib/calendar/weekdaynames.py:22
 msgid "Tue"
-msgstr "Tis"
+msgstr "Mar"
 
 #: timelinelib/calendar/weekdaynames.py:23
 msgid "Wed"
-msgstr "Ons"
+msgstr "Mër"
 
 #: timelinelib/calendar/weekdaynames.py:24
 msgid "Thu"
-msgstr "Tor"
+msgstr "Enj"
 
 #: timelinelib/calendar/weekdaynames.py:25
 msgid "Fri"
-msgstr "Fre"
+msgstr "Pre"
 
 #: timelinelib/calendar/weekdaynames.py:26
 msgid "Sat"
-msgstr "Lör"
+msgstr "Sht"
 
 #: timelinelib/db/__init__.py:67
 msgid ""
@@ -193,62 +192,64 @@ msgid ""
 "files. See the Timeline website or the INSTALL file for instructions how to "
 "install it."
 msgstr ""
-"Kunde inte hitta iCalendar-Pythonpaket. Det krävs för att arbeta med ICS-"
-"filer. Se webbplatsen för Tidslinje eller INSTALL-filen för instruktioner "
-"hur du kan installera det."
+"S’u gjet dot paketë iCalendar Python. Është e domosdoshme për punim me "
+"kartela ICS. Për udhëzime se si të instalohet, shihni sajtin e Rrjedhës "
+"Kohore ose kartelën INSTALL."
 
 #: timelinelib/db/__init__.py:72
 #, python-format
 msgid "Unable to open timeline '%s'."
-msgstr "Kan inte öppna tidslinje '%s'."
+msgstr "S’arrihet të hapet rrjedha kohore '%s'."
 
 #: timelinelib/db/__init__.py:73
 msgid "Unknown format."
-msgstr "Okänt format."
+msgstr "Format i panjohur."
 
 #: timelinelib/db/backends/dir.py:105 timelinelib/db/backends/file.py:114
 #: timelinelib/db/backends/ics.py:137
 #, python-format
 msgid "Unable to read from file '%s'."
-msgstr "Kan inte läsa från filen '%s'."
+msgstr "S’arrihet të lexohet kartela '%s'."
 
 #: timelinelib/db/backends/file.py:107 timelinelib/db/backends/ics.py:131
 #: timelinelib/db/backends/xmlfile.py:142
 #, python-format
 msgid "Unable to read timeline data from '%s'."
-msgstr "Kunde inte läsa tidslinjedata från '%s'."
+msgstr "S’arrihet të lexohen të dhëna rrjedhe kohore nga '%s'."
 
 #: timelinelib/db/backends/memory.py:227
 msgid "Displayed period must be > 0."
-msgstr "Visad period måste vara > 0."
+msgstr "Periudha e shfaqur duhet të jetë > 0."
 
 #: timelinelib/db/backends/tutorial.py:30
 msgid "Welcome"
-msgstr "Välkommen"
+msgstr "Mirë se vini"
 
 #: timelinelib/db/backends/tutorial.py:32
 msgid "Welcome to Timeline"
-msgstr "Välkommen till tidslinje"
+msgstr "Mirë se vini te Rrjedha Kohore"
 
 #: timelinelib/db/backends/tutorial.py:35
 msgid "Intro"
-msgstr "Introduktion"
+msgstr "Hyrje"
 
 #: timelinelib/db/backends/tutorial.py:37
 msgid "Hover me!"
-msgstr "Hovra över mig!"
+msgstr "Kalomë kursorin përsipër!"
 
 #: timelinelib/db/backends/tutorial.py:38
 msgid "Hovering events with a triangle shows the event description."
-msgstr "Att hovra över händelser med en triangel visar händelsens beskrivning."
+msgstr ""
+"Kalimi i kursorit sipër aktesh me një trekëndësh sjell shfaqje përshkrimi "
+"akti."
 
 #: timelinelib/db/backends/tutorial.py:40
 msgid "Features"
-msgstr "Funktioner"
+msgstr "Veçori"
 
 #: timelinelib/db/backends/tutorial.py:42
 msgid "Scroll"
-msgstr "Rulla"
+msgstr "Rrëshqitje"
 
 #: timelinelib/db/backends/tutorial.py:43
 msgid ""
@@ -258,15 +259,15 @@ msgid ""
 "\n"
 "You can also middle click with the mouse to center around that point."
 msgstr ""
-"Vänsterklicka någonstans på tidslinjen och börja dra.\n"
+"Majtasklikoni diku mbi rrjedhën kohore dhe filloni ta tërhiqni.\n"
 "\n"
-"Du kan också använda mushjulet.\n"
+"Mund të përdorni edhe rrotëzën e miut.\n"
 "\n"
-"Du kan också mittenklicka med musen för att centrera kring den punkten."
+"Mundet edhe të klikoni me butonin e mesit që të përqendrohet rreth asaj pike."
 
 #: timelinelib/db/backends/tutorial.py:51
 msgid "Zoom"
-msgstr "Zooma"
+msgstr "Zmadhim/Zvogëlim"
 
 #: timelinelib/db/backends/tutorial.py:52
 msgid ""
@@ -274,13 +275,13 @@ msgid ""
 "\n"
 "Hold down Shift while dragging with the mouse."
 msgstr ""
-"Håll nere Ctrl medan du rullar mushjulet.\n"
+"Mbani të shtypur Ctrl-në teksa rrotulloni rrotëzën e miut.\n"
 "\n"
-"Håll nere Skift medan du drar med musen."
+"Mbani të shtypur Shift-in teksa tërhiqni përmes miut."
 
 #: timelinelib/db/backends/tutorial.py:58 timelinelib/help/pages.py:148
 msgid "Create event"
-msgstr "Skapa händelse"
+msgstr "Krijoni akt"
 
 #: timelinelib/db/backends/tutorial.py:59
 msgid ""
@@ -288,21 +289,21 @@ msgid ""
 "\n"
 "Hold down Ctrl while dragging the mouse to select a period."
 msgstr ""
-"Dubbelklicka någonstans på tidslinjen.\n"
+"Dyklikoni diku mbi rrjedhën kohore.\n"
 "\n"
-"Håll nere Ctrl medan du drar musen för att välja en period."
+"Që të përzgjidhni një periudhë, mbani të shtypur Ctrl-në teksa tërhiqni miun."
 
 #: timelinelib/db/backends/tutorial.py:65 timelinelib/help/pages.py:165
 msgid "Edit event"
-msgstr "Redigera händelse"
+msgstr "Përpunoni akt"
 
 #: timelinelib/db/backends/tutorial.py:66
 msgid "Double click on an event."
-msgstr "Dubbelklicka på en händelse."
+msgstr "Dyklikoni mbi një akt."
 
 #: timelinelib/db/backends/tutorial.py:70
 msgid "Select event"
-msgstr "Välj händelse"
+msgstr "Përzgjidhni akt"
 
 #: timelinelib/db/backends/tutorial.py:71
 msgid ""
@@ -310,30 +311,31 @@ msgid ""
 "\n"
 "Hold down Ctrl while clicking events to select multiple."
 msgstr ""
-"Klicka på den.\n"
+"Klikoni mbi të.\n"
 "\n"
-"Håll nere Ctrl medan du klickar på händelser för att välja flera."
+"Që të përzgjidhni disa njëherësh, mbani të shtypur Ctrl-në teksa klikoni mbi "
+"akte."
 
 #: timelinelib/db/backends/tutorial.py:77 timelinelib/help/pages.py:203
 msgid "Delete event"
-msgstr "Ta bort händelse"
+msgstr "Fshije aktin"
 
 #: timelinelib/db/backends/tutorial.py:78
 msgid "Select events to be deleted and press the Del key."
-msgstr "Välj händelser som ska tas bort och tryck Del-tangenten."
+msgstr "Përzgjidhni akte që duhen fshirë dhe shtypni tastin Del."
 
 #: timelinelib/db/backends/tutorial.py:82
 msgid "Resize and move me!"
-msgstr "Ändra storlek och flytta mig!"
+msgstr "Ripërmasomëni dhe lëvizmëni!"
 
 #: timelinelib/db/backends/tutorial.py:83
 msgid "First select me and then drag the handles."
-msgstr "Välj mig först och dra sedan i handtagen."
+msgstr "Së pari përzgjidhmëni dhe mandej tërhiqni dorëzat."
 
 #: timelinelib/db/backends/tutorial.py:86
 #: timelinelib/db/backends/tutorial.py:88
 msgid "Saving"
-msgstr "Att spara"
+msgstr "Po ruhet"
 
 #: timelinelib/db/backends/tutorial.py:89
 msgid ""
@@ -342,105 +344,108 @@ msgid ""
 "\n"
 "Choose File/New/File Timeline to create a timeline that is saved on disk."
 msgstr ""
-"Denna tidslinje lagras i minne och ändringar till den kommer inte att bestå "
-"mellan sessioner.\n"
+"Kjo rrjedhë kohore është depozituar në kujtese dhe modifikimet në të nuk do "
+"të ruhen përgjatë sesionesh.\n"
 "\n"
-"Välj Arkiv/Ny/Tidslinjefil för att skapa en tidslinje som sparas på disk."
+"Zgjidhni Kartelë/E re/Rrjedhë Kohore Kartele që të krijoni një rrjedhë "
+"kohore që ruhet në disk."
 
 #: timelinelib/db/objects/timeperiod.py:72
 msgid "Start time "
-msgstr "Starttid "
+msgstr "Kohë fillimi "
 
 #: timelinelib/db/objects/timeperiod.py:74
 msgid "End time "
-msgstr "Sluttid "
+msgstr "Kohë përfundimi "
 
 #: timelinelib/db/objects/timeperiod.py:84
 msgid "Start time can't be after end time"
-msgstr "Starttiden kan inte vara efter sluttiden"
+msgstr "Koha e fillimit s’mund të bjerë pas kohës së mbarimit"
 
 #: timelinelib/db/utils.py:45
 #, python-format
 msgid "Unable to save timeline data to '%s'. File left unmodified."
-msgstr "Kan inte spara tidslinjedata till '%s'. Filen lämnad oförändrad."
+msgstr ""
+"S’arrihet të ruhen të dhëna rrjedhe kohore te '%s'. Kartela u la e "
+"pandryshuar."
 
 #: timelinelib/db/utils.py:60
 msgid "Unable to write timeline data."
-msgstr "Kan inte skriva tidslinjedata."
+msgstr "S’arrihet të shkruhen të dhëna rrjedhe kohore."
 
 #: timelinelib/db/utils.py:64
 #, python-format
 msgid "Unable to write to temporary file '%s'."
-msgstr "Kan inte skriva till tillfällig fil '%s'."
+msgstr "S’arrihet të shkruhet te kartelë e përkohshme '%s'."
 
 #: timelinelib/db/utils.py:70
 #, python-format
 msgid "Unable to take backup to '%s'."
-msgstr "Kan inte ta säkerhetskopia till '%s'."
+msgstr "S’arrihet të shpihet kopjeruajtje te '%s'."
 
 #: timelinelib/db/utils.py:75
 #, python-format
 msgid "Unable to rename temporary file '%s' to original."
-msgstr "Kan inte byta namn på tillfällig fil '%s' till originalet."
+msgstr "S’arrihet të riemërtohet kartela e përkohshme '%s' si në origjinal."
 
 #: timelinelib/db/utils.py:81
 #, python-format
 msgid "Unable to delete backup file '%s'."
-msgstr "Kan inte ta bort säkerhetskopian '%s'."
+msgstr "S’arrihet të fshihet kartelë kopjeruajtjeje '%s'."
 
 #: timelinelib/editors/container.py:81 timelinelib/editors/event.py:250
 #, python-format
 msgid "Field '%s' can't be empty."
-msgstr "Fältet '%s' får inte vara tomt."
+msgstr "Fusha '%s' s'mund të jetë e zbrazët."
 
 #: timelinelib/editors/container.py:81
 msgid "Name"
-msgstr "Namn"
+msgstr "Emër"
 
 #: timelinelib/editors/event.py:237
 msgid "End must be > Start"
-msgstr "Slut måste vara > Start"
+msgstr "Fundi duhet të jetë > se Fillimi"
 
 #: timelinelib/editors/event.py:245
 msgid "Entered period is too long."
-msgstr "Angiven period är för lång."
+msgstr "Periudha e dhënë është shumë e gjatë."
 
 #: timelinelib/editors/event.py:250
 msgid "Text"
-msgstr "Text"
+msgstr "Tekst"
 
 #: timelinelib/export/bitmap.py:29
 msgid "Image files"
-msgstr "Bildfiler"
+msgstr "Kartela figurë"
 
 #: timelinelib/export/bitmap.py:31
 msgid "Export to Image"
-msgstr "Exportera till bild"
+msgstr "Eksportoje si Figurë"
 
 #: timelinelib/export/bitmap.py:35 timelinelib/wxgui/dialogs/mainframe.py:325
 #, python-format
 msgid "File '%s' exists. Overwrite?"
-msgstr "Filen '%s' finns redan. Vill du skriva över den?"
+msgstr "Kartela '%s' ekziston. Të mbishkruhet?"
 
 #: timelinelib/help/pages.py:36
 msgid "Help contents"
-msgstr "Hjälpinnehåll"
+msgstr "Lëndë ndihme"
 
 #: timelinelib/help/pages.py:56
 msgid "Questions and answers"
-msgstr "Frågor och svar"
+msgstr "Pyetje dhe përgjigje"
 
 #: timelinelib/help/pages.py:56
 msgid "Concepts"
-msgstr "Begrepp"
+msgstr "Koncepte"
 
 #: timelinelib/help/pages.py:56
 msgid "Tasks"
-msgstr "Aktiviteter"
+msgstr "Punë"
 
 #: timelinelib/help/pages.py:61
 msgid "Where is the save button?"
-msgstr "Var är sparaknappen?"
+msgstr "Ku është butoni i ruajtjeve?"
 
 #: timelinelib/help/pages.py:67
 msgid ""
@@ -449,12 +454,12 @@ msgid ""
 "needed.\n"
 msgstr ""
 "\n"
-"Det finns ingen sparaknapp. Tidslinje sparar automatiskt dina data när det "
-"behövs.\n"
+"S’ka buton ruajtjesh. Rrjedha kohore do të ruajë vetvetiu të dhënat tuaja "
+"kurdo që të jetë e nevojshme.\n"
 
 #: timelinelib/help/pages.py:74
 msgid "Where do the week numbers go if I start my weeks on Sunday?"
-msgstr "Var hamnar veckonumren om jag startar mina veckor på söndag?"
+msgstr "Ku shkojnë numrat e javëve, nëse javët i mia i filloj të Dielave?"
 
 #: timelinelib/help/pages.py:80
 msgid ""
@@ -464,13 +469,14 @@ msgid ""
 "support this in future versions.\n"
 msgstr ""
 "\n"
-"Dataobjektet för datum stöder för närvarande inte veckonummer för veckor som "
-"startar på söndagar.  Vi planerar att i framtida versioner använda ett annat "
-"datumobjekt som kommer att stödja detta.\n"
+"Hëpërhë, objekti i përdorur për të dhëna datash nuk mbulon numra javësh për "
+"javë që fillojnë të Dielave.  Kemi në plan të përdorim një objekt tjetër "
+"datash që do ta mbulojë këtë në versione të ardhshëm.\n"
 
 #: timelinelib/help/pages.py:86
 msgid "Can multiple users work with the same timeline?"
-msgstr "Kan flera användare arbeta med samma tidslinje?"
+msgstr ""
+"A mund të punojnë me të njëjtën rrjedhë kohore disa përdorues njëherësh?"
 
 #: timelinelib/help/pages.py:92
 msgid ""
@@ -489,21 +495,22 @@ msgid ""
 "notified about this situation.\n"
 msgstr ""
 "\n"
-"Det finns visst stöd för att flera användare arbetar på samma tidslinjefil.\n"
+"Ka një farë mbulimi për raste kur disa përdorues njëherësh punojnë me të "
+"njëjtën kartelë rrjedhe kohore.\n"
 "\n"
-"Då du försöker göra en ändring och någon annan har gjort en ändring kommer "
-"du att ombes att göra ett av två val:\n"
+"Kur bëni një ndryshim dhe dikush tjetër ka bërë një ndryshim, do t’ju "
+"kërkohet të bëni një prej këtyre dy zgjedhjeve:\n"
 "\n"
-"- Ställ tidslinje i skrivskyddat läge.\n"
-"- Synkronisera tidslinjen.\n"
+"- Kalojeni rrjedhën kohore nën mënyrën vetëm lexim.\n"
+"- Njëkohësojeni rrjedhën kohore.\n"
 " \n"
-"Under din redigeringsåtgärd låses tidslinjen från ändringar av andra. Om du "
-"försöker redigera en tidslinje då den är låst av någon annan kommer du att "
-"meddelas om denna situation.\n"
+"Gjatë aktit tuaj të përpunimit, rrjedha kohore është e kyçur kundrejt "
+"ndryshimeve nga të tjerë. Nëse provoni të përpunoni një rrjedhë kohore, kur "
+"është e kyçur nga dikush tjetër, do të njoftoheni rreth kësaj gjendjeje.\n"
 
 #: timelinelib/help/pages.py:105
 msgid "Timeline"
-msgstr "Tidslinje"
+msgstr "Rrjedhë kohore"
 
 #: timelinelib/help/pages.py:112
 msgid ""
@@ -520,19 +527,21 @@ msgid ""
 "displayed above the line.\n"
 msgstr ""
 "\n"
-"Tidslinjen visar datum enligt den Gregorianska kalendern på x-axeln. För "
-"närvarande är datumen begränsade till datum mellan år 10 och år 9989.\n"
+"Rrjedha kohore në boshtin x tregon datat sipas kalendarit Gregorian. Hëpërhë "
+"datat kufizohen mes vitit 10 dhe vitit 9989.\n"
 "\n"
-"Framtida versioner kan tänkas stödja olika sorters tidslinjer så att du till "
-"exempel kan ange en tid som ett antal minuter efter en starttid. Hör av dig "
-"om du är intresserad av en sådan funktion.\n"
+"Versione të ardhshëm mund të mbulojnë lloje të ndryshme rrjedhash kohore, "
+"kështu që ju, për shembull, të mund të specifikoni një kohë sipas numrit të "
+"minutave që nga një kohë fillimi. Nëse ju intereson një veçori e tillë, ju "
+"lutemi, lidhuni me ne.\n"
 "\n"
-"Tidslinjen delas upp i två områden med en justerbar horisontell skiljelinje. "
-"Periodhändelser visas under linjen och punkthändelser visas ovanför linjen.\n"
+"Rrjedha kohore është e ndarë në dy zona, përmes një vije ndarëse horizontale "
+"të ndryshueshme. Akte me shtrirje gjatë një periudhe shfaqen nën vijën dhe "
+"aktet pa shtrirje shfaqen sipër vijës.\n"
 
 #: timelinelib/help/pages.py:122
 msgid "Events"
-msgstr "Händelser"
+msgstr "Akte"
 
 #: timelinelib/help/pages.py:129
 msgid ""
@@ -543,14 +552,14 @@ msgid ""
 "period.\n"
 msgstr ""
 "\n"
-"En händelse är den bastyp som används för att representera information på "
-"tidslinjen.  Den måste ange var på tidslinjen den ska placeras (när "
-"händelsen inträffar). Detta kan vara antingen en specifik tidpunkt eller en "
-"tidsperiod.\n"
+"Një akt është lloji bazë i të dhënave për paraqitje informacioni në rrjedhën "
+"kohore.  Ai duhet të tregojë se ku duhet vendosur në rrjedhën kohore (kur "
+"ndodh ai akt). Kjo mund të jetë ose një pikë e caktuar në kohë, ose një "
+"periudhë.\n"
 
 #: timelinelib/help/pages.py:135
 msgid "Categories"
-msgstr "Kategorier"
+msgstr "Kategori"
 
 #: timelinelib/help/pages.py:142
 msgid ""
@@ -560,9 +569,9 @@ msgid ""
 "same background color.\n"
 msgstr ""
 "\n"
-"Kategorier används för att gruppera händelser. En händelse kan tillhöra en "
-"och endast en kategori. Alla händelser som tillhör samma kategori visas med "
-"den bakgrundsfärg som man valt för kategorin.\n"
+"Kategoritë përdoren për të grupuar akte. Një akt mund të bëjë pjesë vetëm në "
+"një kategori. Krejt aktet që i përkasin të njëjtës kategori shfaqen me të "
+"njëjtën ngjyrë sfondi.\n"
 
 #: timelinelib/help/pages.py:155
 msgid ""
@@ -575,12 +584,12 @@ msgid ""
 "timeline, drag the mouse and release it.\n"
 msgstr ""
 "\n"
-"Dialogen *Skapa händelse* kan öppnas på följande sätt:\n"
+"Dialogu *Krijoni Akt* mund të hapet në rrugët vijuese:\n"
 "\n"
-"- Välj *Tidslinje* - *Skapa händelse* från menyn.\n"
-"- Dubbelklicka med den *vänstra* musknappen på tidslinjen.\n"
-"- Håll *Ctrl*-tangenten, håll *vänster* musknapp nedtryckt, dra den över "
-"tidslinjen och släpp den.\n"
+"- Përzgjidhni *Rrjedhë Kohore* - *Krijoni Akt* prej menusë.\n"
+"- Dyklikoni mbi rrjedhën kohore me butonin e *majtë* të miut.\n"
+"- Shtypni tastin *Ctrl*, dhe mandej mbajeni butonin e *majtë* të miut në "
+"rrjedhën kohore, tërhiqeni miut dhe lëshojeni.\n"
 
 #: timelinelib/help/pages.py:172
 msgid ""
@@ -588,11 +597,11 @@ msgid ""
 "The *Edit Event* dialog can be opened by double clicking on an event.\n"
 msgstr ""
 "\n"
-"Dialogen *Redigera händelse* öppnas genom att dubbelklicka på en händelse.\n"
+"Dialogu *Përpunoni Akt* mund të hapet duke dyklikuar mbi një akt.\n"
 
 #: timelinelib/help/pages.py:178
 msgid "Move event vertically"
-msgstr "Flytta händelse vertikalt"
+msgstr "Lëvize aktin vertikalisht"
 
 #: timelinelib/help/pages.py:185
 msgid ""
@@ -601,12 +610,12 @@ msgid ""
 "and therefter using the Alt+Up or Alt+Down keys.\n"
 msgstr ""
 "\n"
-"En händelse kan flyttas vertikalt. Detta görs genom att först välja "
-"händelsen och sedan använda tangenterna Alt+Upp eller Alt+Ner.\n"
+"Një akt mund të lëvizet vertikalisht. Kjo arrihet duke përzgjedhur së pari "
+"aktin dhe mandej duke përdorur tastet Alt+Up ose Alt+Down.\n"
 
 #: timelinelib/help/pages.py:191
 msgid "Selecting events"
-msgstr "Markera händelser"
+msgstr "Përzgjedhje aktesh"
 
 #: timelinelib/help/pages.py:197
 msgid ""
@@ -615,8 +624,8 @@ msgid ""
 "*Ctrl* key while clicking events.\n"
 msgstr ""
 "\n"
-"För att markera en händelse, klicka på den. För att markera flera händelser, "
-"håll nere *Ctrl*-tangenten medan du klickar på händelser.\n"
+"Që të përzgjidhni një akt, klikoni mbi të. Që të përzgjidhni disa akte "
+"njëherësh, mbani të shtypur tastin *Ctrl* teksa klikoni mbi akte.\n"
 
 #: timelinelib/help/pages.py:210
 msgid ""
@@ -625,12 +634,12 @@ msgid ""
 "be deleted at the same time.\n"
 msgstr ""
 "\n"
-"För att ta bort en händelse, markera den och tryck på *Del*. Flera händelser "
-"kan tas bort samtidigt.\n"
+"Që të fshihet një akt, përzgjidheni dhe shtypni tastin*Del*. Me të njëjtën "
+"mënyrë mund të fshihen edhe disa akte njëherësh.\n"
 
 #: timelinelib/help/pages.py:216
 msgid "Will associated events be deleted when I delete a category?"
-msgstr "Kommer associerade händelser tas bort när jag tar bort en kategori?"
+msgstr "Kur fshij një kategori, a do të fshihen dhe aktet e përshoqëruar me të?"
 
 #: timelinelib/help/pages.py:222
 msgid ""
@@ -638,14 +647,14 @@ msgid ""
 "No. The events will still be there but they will not belong to a category.\n"
 msgstr ""
 "\n"
-"Nej. Händelserna kommer fortfarande att vara kvar men de kommer inte att "
-"tillhöra någon kategori.\n"
+"Jo. Aktet do të jenë prapë aty, por s’do të bëjnë më pjesë te ndonjë "
+"kategori.\n"
 
 #: timelinelib/help/pages.py:228
 #: timelinelib/wxgui/components/categorychoice.py:53
 #: timelinelib/wxgui/dialogs/mainframe.py:514
 msgid "Edit categories"
-msgstr "Redigera kategorier"
+msgstr "Përpunoni kategoritë"
 
 #: timelinelib/help/pages.py:235
 msgid ""
@@ -657,17 +666,17 @@ msgid ""
 "*Sidebar*).\n"
 msgstr ""
 "\n"
-"Kategorier kan redigeras i dialogen \"Redigera kategorier\" (*Tidslinje* > * "
-"Redigera kategorier*). För att ändra data för en kategori så dubbelklickar "
-"du på den.\n"
+"Kategoritë mund të administrohen që nga dialogu *Përpunoni Kategori* (*"
+"Rrjedhë Kohore* > *Përpunoni Kategori*). Që të përpunoni një kategori "
+"ekzistuese, dyklikoni mbi të.\n"
 "\n"
-"Om befintliga kategorier ska visas i sidopanelen eller inte är valfritt "
-"(*Visa* > *Sidopanel*)\n"
+"Dukshmëria e kategorive mund të përpunohet gjithashtu te anështylla (*Shihni*"
+" > *Anështyllë*).\n"
 
 #: timelinelib/help/pages.py:243 timelinelib/wxgui/dialogs/mainframe.py:653
 #: timelinelib/wxgui/dialogs/mainframe.py:1139
 msgid "Contact"
-msgstr "Kontakta"
+msgstr "Kontakt"
 
 #: timelinelib/help/pages.py:249
 msgid ""
@@ -677,14 +686,14 @@ msgid ""
 "list: <thetimelineproj-user@lists.sourceforge.net>. (Please use English.)\n"
 msgstr ""
 "\n"
-"Om du har fler frågor om Tidslinje eller om du vill komma i kontakt med "
-"användare och utvecklare av Tidslinje, skicka ett e-postmeddelande till "
-"sändlistan för användare: <thetimelineproj-user@lists.sourceforge.net>. ("
-"Vänligen skriv på engelska.)\n"
+"Nëse keni më tepër pyetje rreth Rrjedhës Kohore, ose nëse doni të lidheni me "
+"përdorues dhe zhvillues të Rrjedhës Kohore, dërgoni një email te lista e "
+"postimeve nga përdorues: <thetimelineproj-user@lists.sourceforge.net>. (Ju "
+"lutemi, përdorni anglishten.)\n"
 
 #: timelinelib/help/pages.py:255
 msgid "Why is Timeline not available in my language?"
-msgstr "Varför finns inte Tidslinje på mitt språk?"
+msgstr "Pse Rrjedha Kohore s’është gati në gjuhën time?"
 
 #: timelinelib/help/pages.py:262
 msgid ""
@@ -693,320 +702,319 @@ msgid ""
 "contribute translations you are very much welcome to contact us.\n"
 msgstr ""
 "\n"
-"Tidslinje utvecklas och översätts av volontärer. Om du vill hjälpa till att "
-"översätta så är du mycket välkommen att kontakta oss.\n"
+"Rrjedha kohore zhvillohet dhe përkthehet nga vullnetarë. Nëse do të donit të "
+"kontribuonit përkthime, jeni shumë të mirëpritur të lidheni me ne.\n"
 
 #: timelinelib/help/system.py:64
 #, python-format
 msgid "Search results for '%s'"
-msgstr "Sökresultat för '%s'"
+msgstr "Përfundime kërkimi për '%s'"
 
 #: timelinelib/help/system.py:122
 msgid "Related pages"
-msgstr "Relaterade sidor"
+msgstr "Faqe të afërta"
 
 #: timelinelib/printing.py:100
 msgid ""
 "There was a problem printing.\n"
 "Perhaps your current printer is not set correctly?"
 msgstr ""
-"Det gick inte att skriva ut.\n"
-"Kontrollera så att din skrivare är inställd korrekt."
+"Pati një problem me shtypjen.\n"
+"Ndoshta shtypësi juaj s’është rregulluar si duhet?"
 
 #: timelinelib/printing.py:100
 msgid "Printing"
-msgstr "Utskrift"
+msgstr "Po shtyp"
 
 #: timelinelib/printing.py:114
 msgid "Print preview"
-msgstr "Förhandsgranska"
+msgstr "Paraparje shtypjeje"
 
 #: timelinelib/time/numtime.py:46
 msgid "Go to &Zero\tCtrl+Z"
-msgstr "Gå till &noll\tCtrl+Z"
+msgstr "Shko te &Zeroja\tCtrl+Z"
 
 #: timelinelib/time/numtime.py:47
 msgid "Go to &Time\tCtrl+T"
-msgstr "Gå till &tid\tCtrl+T"
+msgstr "Shko te &Koha\tCtrl+K"
 
 #: timelinelib/time/numtime.py:49 timelinelib/time/pytime.py:74
 #: timelinelib/time/wxtime.py:69
 msgid "Backward\tPgUp"
-msgstr "Bakåt\tPgUp"
+msgstr "Mbrapsht\tPgUp"
 
 #: timelinelib/time/numtime.py:50 timelinelib/time/pytime.py:75
 #: timelinelib/time/wxtime.py:70
 msgid "Forward\tPgDn"
-msgstr "Framåt\tPgDn"
+msgstr "Përpara\tPgDn"
 
 #: timelinelib/time/numtime.py:113
 msgid "Can't zoom deeper than 5"
-msgstr "Kan inte zooma djupare än 5"
+msgstr "S’mund të bëhet zoom më thellë se 5"
 
 #: timelinelib/time/numtime.py:126
 msgid "1-period"
-msgstr "1-period"
+msgstr "Periudhë 1"
 
 #: timelinelib/time/numtime.py:127
 msgid "10-period"
-msgstr "10-period"
+msgstr "Periudhë 10"
 
 #: timelinelib/time/numtime.py:128
 msgid "100-period"
-msgstr "100-period"
+msgstr "Periudhë 100"
 
 #: timelinelib/time/numtime.py:129
 msgid "1000-period"
-msgstr "1000-period"
+msgstr "Periudhë 1000"
 
 #: timelinelib/time/numtime.py:174
 msgid "Go to Time"
-msgstr "Gå till tid"
+msgstr "Shko te Koha"
 
 #: timelinelib/time/pytime.py:71 timelinelib/time/wxtime.py:66
 msgid "Go to &Today\tCtrl+T"
-msgstr "Gå &till idag\tCtrl+T"
+msgstr "Shko te &Sot\tCtrl+S"
 
 #: timelinelib/time/pytime.py:72 timelinelib/time/wxtime.py:67
 msgid "Go to D&ate...\tCtrl+G"
-msgstr "Gå till d&atum...\tCtrl+G"
+msgstr "Shkoni te &Data…\tCtrl+D"
 
 #: timelinelib/time/pytime.py:76 timelinelib/time/wxtime.py:71
 msgid "Forward One Wee&k\tCtrl+K"
-msgstr "Framåt en vec&ka\tCtrl+K"
+msgstr "Mbrapsht Një Jav&ë\tCtrl+ë"
 
 #: timelinelib/time/pytime.py:77 timelinelib/time/wxtime.py:72
 msgid "Back One &Week\tCtrl+W"
-msgstr "Bakåt en &vecka\tCtrl+W"
+msgstr "Mbrapsht Një &Javë\tCtrl+J"
 
 #: timelinelib/time/pytime.py:78 timelinelib/time/wxtime.py:73
 msgid "Forward One Mont&h\tCtrl+h"
-msgstr "Framåt en måna&d\tCtrl+H"
+msgstr "Mbrapsht Një Mua&j\tCtrl+j"
 
 #: timelinelib/time/pytime.py:79 timelinelib/time/wxtime.py:74
 msgid "Back One &Month\tCtrl+M"
-msgstr "Bakåt en &månad\tCtrl+M"
+msgstr "Mbrapsht Një M&uaj\tCtrl+u"
 
 #: timelinelib/time/pytime.py:80 timelinelib/time/wxtime.py:75
 msgid "Forward One Yea&r\tCtrl+R"
-msgstr "Framåt ett å&r\tCtrl+R"
+msgstr "Mbrapsht Një V&it\tCtrl+i"
 
 #: timelinelib/time/pytime.py:81 timelinelib/time/wxtime.py:76
 msgid "Back One &Year\tCtrl+Y"
-msgstr "Bakåt ett &år\tCtrl+Y"
+msgstr "Mbrapsht Një &Vit\tCtrl+V"
 
 #: timelinelib/time/pytime.py:83 timelinelib/time/wxtime.py:78
 msgid "Fit Millennium"
-msgstr "Passa till årtusende"
+msgstr "Sa Mijëvjeçari"
 
 #: timelinelib/time/pytime.py:84 timelinelib/time/wxtime.py:79
 msgid "Fit Century"
-msgstr "Passa till århundrade"
+msgstr "Sa Shekulli"
 
 #: timelinelib/time/pytime.py:85 timelinelib/time/wxtime.py:80
 msgid "Fit Decade"
-msgstr "Passa till årtionde"
+msgstr "Sa Dhjetëvjeçari"
 
 #: timelinelib/time/pytime.py:86 timelinelib/time/wxtime.py:81
 msgid "Fit Year"
-msgstr "Passa till år"
+msgstr "Sa Viti"
 
 #: timelinelib/time/pytime.py:87 timelinelib/time/wxtime.py:82
 msgid "Fit Month"
-msgstr "Passa till månad"
+msgstr "Sa Muaji"
 
 #: timelinelib/time/pytime.py:88 timelinelib/time/wxtime.py:83
 msgid "Fit Week"
-msgstr "Passa till vecka"
+msgstr "Sa Java"
 
 #: timelinelib/time/pytime.py:89 timelinelib/time/wxtime.py:84
 msgid "Fit Day"
-msgstr "Passa till dag"
+msgstr "Sa Dita"
 
 #: timelinelib/time/pytime.py:141
 msgid "can't be before year 10"
-msgstr "kan inte vara före år 10"
+msgstr "s’mund të bjerë para vitit 10"
 
 #: timelinelib/time/pytime.py:145
 msgid "can't be after year 9989"
-msgstr "kan inte vara efter år 9989"
+msgstr "s’mund të bjerë pas vitit 9989"
 
 #: timelinelib/time/pytime.py:202 timelinelib/time/wxtime.py:199
 msgid "Can't zoom wider than 1200 years"
-msgstr "Kan inte zooma bredare än 1200 år"
+msgstr "S’mund të bëhet zoom më gjerë se 1200 vjet"
 
 #: timelinelib/time/pytime.py:205 timelinelib/time/wxtime.py:202
 msgid "Can't zoom deeper than 1 hour"
-msgstr "Kan inte zooma djupare än 1 timme"
+msgstr "S’mund të bëhet zoom më thellë se 1 orë"
 
 #: timelinelib/time/pytime.py:220 timelinelib/time/wxtime.py:217
 msgid "Day"
-msgstr "Dag"
+msgstr "Ditë"
 
 #: timelinelib/time/pytime.py:221 timelinelib/time/pytime.py:583
 #: timelinelib/time/wxtime.py:218 timelinelib/time/wxtime.py:561
 msgid "Week"
-msgstr "Vecka"
+msgstr "Javë"
 
 #: timelinelib/time/pytime.py:222 timelinelib/time/wxtime.py:219
 msgid "Month"
-msgstr "Månad"
+msgstr "Muaj"
 
 #: timelinelib/time/pytime.py:223 timelinelib/time/wxtime.py:220
 msgid "Year"
-msgstr "År"
+msgstr "Vit"
 
 #: timelinelib/time/pytime.py:259 timelinelib/time/wxtime.py:262
 msgid "Go to Date"
-msgstr "Gå till datum"
+msgstr "Shko te Data"
 
 #: timelinelib/time/wxtime.py:139
 #, python-format
 msgid "can't be before year %d"
-msgstr "kan inte vara före år %d"
+msgstr "s’mund të bjerë para vitit %d"
 
 #: timelinelib/time/wxtime.py:143
 #, python-format
 msgid "can't be after year %d"
-msgstr "kan inte vara efter år %d"
+msgstr "s’mund të bjerë pas vitit %d"
 
 #: timelinelib/view/drawingarea.py:148 timelinelib/view/drawingarea.py:166
 msgid "No timeline set"
-msgstr "Ingen tidslinje vald"
+msgstr "S’ka rrjedhë kohore të caktuar"
 
 #: timelinelib/view/drawingarea.py:201
 msgid "Edit"
-msgstr "Redigera"
+msgstr "Përpunim"
 
 #: timelinelib/view/drawingarea.py:202
 msgid "Duplicate..."
-msgstr "Duplicera..."
+msgstr "Përsëdytni…"
 
 #: timelinelib/view/drawingarea.py:203
 #: timelinelib/wxgui/components/cattree.py:82
 #: wx/tools/Editra/src/prefdlg.py:1706
 msgid "Delete"
-msgstr "Ta bort"
+msgstr "Fshije"
 
 #: timelinelib/view/drawingarea.py:206
 msgid "Sticky Balloon"
-msgstr "Fäst ballong"
+msgstr "Tullumbace Ngjitëse"
 
 #: timelinelib/view/drawingarea.py:209
 msgid "Goto URL"
-msgstr "Gå till URL"
+msgstr "URL Goto"
 
 #: timelinelib/view/drawingarea.py:372
 msgid "Center"
-msgstr "Centrera"
+msgstr "Qendër"
 
 #: timelinelib/view/drawingarea.py:420
 #, python-format
 msgid "%s events hidden"
-msgstr "%s händelser dolda"
+msgstr "%s akte të fshehur"
 
 #: timelinelib/view/drawingarea.py:489
 #, python-format
 msgid "Are you sure you want to delete %d events?"
-msgstr "Är du säker på att du vill ta bort %d händelser?"
+msgstr "Jeni i sigurt se doni të fshihen %d akte?"
 
 #: timelinelib/view/drawingarea.py:492
 msgid "Are you sure you want to delete this event?"
-msgstr "Är du säker på att du vill ta bort den här händelsen?"
+msgstr "Jeni i sigurt se doni të fshihet ky akt?"
 
 #: timelinelib/view/move.py:66
 msgid "Can't move locked event"
-msgstr "Kan inte flytta låst händelse"
+msgstr "S’mund të lëvizet një akt i kyçur"
 
 #: timelinelib/view/resize.py:67
 msgid "Period is too long"
-msgstr "Perioden är för lång"
+msgstr "Periudha është shumë e gjatë"
 
 #: timelinelib/wxgui/components/categorychoice.py:52
 #: timelinelib/wxgui/dialogs/eventeditor.py:308
 msgid "Add new"
-msgstr "Lägg till ny"
+msgstr "Shtoni të ri"
 
 #: timelinelib/wxgui/components/categorychoice.py:76
 #: timelinelib/wxgui/components/cattree.py:228
 msgid "Add Category"
-msgstr "Lägg till kategori"
+msgstr "Shtoni Kategori"
 
 #: timelinelib/wxgui/components/cattree.py:76
 msgid "Edit..."
-msgstr "Redigera..."
+msgstr "Përpunoni…"
 
 #: timelinelib/wxgui/components/cattree.py:79
 msgid "Add..."
-msgstr "Lägg till..."
+msgstr "Shtoni…"
 
 #: timelinelib/wxgui/components/cattree.py:222
 msgid "Edit Category"
-msgstr "Redigera kategori"
+msgstr "Përpunoni Kategori"
 
 #: timelinelib/wxgui/components/cattree.py:233
-#, python-format, python-format
+#, python-format
 msgid "Are you sure you want to delete category '%s'?"
-msgstr "Är du säker på att du vill ta bort kategorin '%s'?"
+msgstr "Jeni i sigurt se doni të fshihet kategoria '%s'?"
 
 #: timelinelib/wxgui/components/cattree.py:236
 #, python-format
 msgid "Events belonging to '%s' will no longer belong to a category."
-msgstr ""
-"Händelser som hör till '%s' kommer inte längre att höra till en kategori."
+msgstr "Aktet që i përkasin '%s' nuk do të jenë më pjesë e ndonjë kategorie."
 
 #: timelinelib/wxgui/components/cattree.py:239
 #, python-format
 msgid "Events belonging to '%(name)s' will now belong to '%(parent)s'."
-msgstr "Händelser som hör till '%(name)s' kommer nu att höra till '%(parent)s'."
+msgstr "Aktet që i përkasin '%(name)s' nuk do të jenë më pjesë e '%(parent)s'."
 
 #: timelinelib/wxgui/components/pydatetimepicker.py:84
 #: timelinelib/wxgui/components/wxdatetimepicker.py:79
 msgid "Invalid date"
-msgstr "Ogiltigt datum"
+msgstr "Datë e pavlefshme"
 
 #: timelinelib/wxgui/components/search.py:70
 msgid "No match"
-msgstr "Ingen matchning"
+msgstr "S’ka përputhje"
 
 #: timelinelib/wxgui/components/search.py:74
 msgid "Only one match"
-msgstr "Endast en matchning"
+msgstr "Vetëm një përputhje"
 
 #: timelinelib/wxgui/dialogs/categorieseditor.py:38
 msgid "Edit Categories"
-msgstr "Redigera kategorier"
+msgstr "Përpunoni Kategoritë"
 
 #: timelinelib/wxgui/dialogs/categoryeditor.py:87
 #, python-format
 msgid "Category name '%s' not valid. Must be non-empty."
-msgstr "Ogiltigt kategorinamn '%s'. Får inte vara blankt."
+msgstr "Emër kategorie '%s' jo i vlefshëm. Duhet të jetë jo i zbrazët."
 
 #: timelinelib/wxgui/dialogs/categoryeditor.py:92
 #, python-format
 msgid "Category name '%s' already in use."
-msgstr "Kategorinamnet '%s' används redan."
+msgstr "Emri i kategorisë '%s' është i përdorur."
 
 #: timelinelib/wxgui/dialogs/categoryeditor.py:116
 #: timelinelib/wxgui/dialogs/containereditor.py:59
 msgid "Name:"
-msgstr "Namn:"
+msgstr "Emër:"
 
 #: timelinelib/wxgui/dialogs/categoryeditor.py:117
 msgid "Color:"
-msgstr "Färg:"
+msgstr "Ngjyrë:"
 
 #: timelinelib/wxgui/dialogs/categoryeditor.py:118
 msgid "Font Color:"
-msgstr "Typsnittsfärg:"
+msgstr "Ngjyrë Shkronjash:"
 
 #: timelinelib/wxgui/dialogs/categoryeditor.py:119
 msgid "Parent:"
-msgstr "Förälder:"
+msgstr "Mëmë:"
 
 #: timelinelib/wxgui/dialogs/containereditor.py:45
 msgid "Container Properties"
-msgstr "Behållaregenskaper"
+msgstr "Veti Përmbajtësi"
 
 #: timelinelib/wxgui/dialogs/containereditor.py:65
 #: timelinelib/wxgui/dialogs/eventeditor.py:219
@@ -1015,117 +1023,117 @@ msgstr "Kategori:"
 
 #: timelinelib/wxgui/dialogs/duplicateevent.py:32
 msgid "Duplicate Event"
-msgstr "Duplicera händelse"
+msgstr "Përsëdyte Aktin"
 
 #: timelinelib/wxgui/dialogs/duplicateevent.py:69
 #, python-format
 msgid "%d Events not duplicated due to missing dates."
-msgstr "%d händelser duplicerades inte på grund av ogiltiga datum."
+msgstr "%d Akte jo të përsëdytur, për mungesë datash."
 
 #: timelinelib/wxgui/dialogs/duplicateevent.py:89
 msgid "Number of duplicates:"
-msgstr "Antal dupliceringar:"
+msgstr "Numër përsëdytjesh:"
 
 #: timelinelib/wxgui/dialogs/duplicateevent.py:99
 #: timelinelib/wxgui/dialogs/eventeditor.py:176
 msgid "Period"
-msgstr "Period"
+msgstr "Periudhë"
 
 #: timelinelib/wxgui/dialogs/duplicateevent.py:109
 msgid "Frequency:"
-msgstr "Frekvens:"
+msgstr "Shpeshti:"
 
 #: timelinelib/wxgui/dialogs/duplicateevent.py:119
 msgid "Forward"
-msgstr "Framåt"
+msgstr "Përpara"
 
 #: timelinelib/wxgui/dialogs/duplicateevent.py:119
 msgid "Backward"
-msgstr "Bakåt"
+msgstr "Mbrapsht"
 
 #: timelinelib/wxgui/dialogs/duplicateevent.py:119
 msgid "Both"
-msgstr "Både och"
+msgstr "Të dyja"
 
 #: timelinelib/wxgui/dialogs/duplicateevent.py:120
 #: wx/tools/Editra/src/eclib/finddlg.py:802
 msgid "Direction"
-msgstr "Riktning"
+msgstr "Drejtim"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:64
 msgid "Event Properties"
-msgstr "Egenskaper för händelse"
+msgstr "Veti Akti"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:87
 #: timelinelib/wxgui/dialogs/eventeditor.py:578
 msgid "When:"
-msgstr "När:"
+msgstr "Kur:"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:90
 msgid "to"
-msgstr "till"
+msgstr "te"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:125
 msgid "Container:"
-msgstr "Behållare:"
+msgstr "Përmbajtës:"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:163
 msgid "Add Container"
-msgstr "Lägg till behållare"
+msgstr "Shtoni Përmbajtës"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:183
 #: timelinelib/wxgui/dialogs/timeeditor.py:47
 msgid "Show time"
-msgstr "Visa tid"
+msgstr "Shfaq kohën"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:191
 msgid "Fuzzy"
-msgstr "Luddig"
+msgstr "E turbullt"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:195
 msgid "Locked"
-msgstr "Låst"
+msgstr "E kyçur"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:202
 msgid "Ends today"
-msgstr "Slutar idag"
+msgstr "Përfundon sot"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:213
 #: timelinelib/wxgui/dialogs/eventeditor.py:579
 msgid "Text:"
-msgstr "Text:"
+msgstr "Tekst:"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:244
 msgid "Description"
-msgstr "Beskrivning"
+msgstr "Përshkrim"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:245
 msgid "Alert"
-msgstr "Varning"
+msgstr "Sinjalizim"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:246
 msgid "Icon"
-msgstr "Ikon"
+msgstr "Ikonë"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:247
 msgid "Hyperlink"
-msgstr "Hyperlänk"
+msgstr "Tejlidhje"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:264
 msgid "Add more events after this one"
-msgstr "Lägg till fler händelser efter denna"
+msgstr "Shtoni më tepër akte pas këtij"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:456
 msgid "Images will be scaled to fit inside a 128x128 box."
-msgstr "Bilder kommer skalas ner så att de inte är större än 128x128."
+msgstr "Figurat do të ripërmasohen që t’i nxërë një kuti 128x128."
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:493
 msgid "Select Icon"
-msgstr "Välj ikon"
+msgstr "Përzgjidhni Ikonë"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:668
 msgid "Test"
-msgstr "Test"
+msgstr "Testim"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:678
 msgid "URL:"
@@ -1133,20 +1141,20 @@ msgstr "URL:"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:722
 msgid "Edit Container"
-msgstr "Redigera behållare"
+msgstr "Përpunoni Përmbajtës"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:726
 msgid "Edit Event"
-msgstr "Redigera händelse"
+msgstr "Përpunoni Akt"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:734
 msgid "Create Event"
-msgstr "Skapa händelse"
+msgstr "Krijoni Akt"
 
 #: timelinelib/wxgui/dialogs/helpbrowser.py:36
 #: wx/lib/agw/genericmessagedialog.py:837
 msgid "Help"
-msgstr "Hjälp"
+msgstr "Ndihmë"
 
 #: timelinelib/wxgui/dialogs/helpbrowser.py:65
 msgid ""
@@ -1154,305 +1162,305 @@ msgid ""
 "See the Timeline website or the INSTALL file for instructions how to install "
 "it."
 msgstr ""
-"Kunde inte hitta markdown-Pythonpaket.  Hjälpsystemet behöver detta. Se "
-"webbplatsen för Tidslinje eller INSTALL-filen för instruktioner över hur det "
-"kan installeras."
+"S’u gjet dot paketë Python markdown.  I duhet doemos sistemit të ndihmës. "
+"Për udhëzime se si të instalohet, shihni sajtin Timeline ose kartelën "
+"INSTALL."
 
 #: timelinelib/wxgui/dialogs/helpbrowser.py:103
 msgid "Go to home page"
-msgstr "Gå till startsidan"
+msgstr "Shko te faqja hyrëse"
 
 #: timelinelib/wxgui/dialogs/helpbrowser.py:110
 msgid "Go back one page"
-msgstr "Gå bakåt en sida"
+msgstr "Shko një faqe prapa"
 
 #: timelinelib/wxgui/dialogs/helpbrowser.py:116
 msgid "Go forward one page"
-msgstr "Gå framåt en sida"
+msgstr "Shko një faqe përpara"
 
 #: timelinelib/wxgui/dialogs/helpbrowser.py:201
 msgid "Page not found"
-msgstr "Sidan hittades inte"
+msgstr "S’u gjet faqe"
 
 #: timelinelib/wxgui/dialogs/helpbrowser.py:202
 #, python-format
 msgid "Could not find page '%s'."
-msgstr "Kunde inte hitta sidan '%s'."
+msgstr "S’u gjet dot faqja '%s'."
 
 #: timelinelib/wxgui/dialogs/mainframe.py:105
 #: timelinelib/wxgui/dialogs/mainframe.py:225
 msgid "Timeline files"
-msgstr "Tidslinjefiler"
+msgstr "Kartela rrjedhe kohore"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:107
 msgid "SVG files"
-msgstr "SVG-filer"
+msgstr "Kartela SVG"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:157 wx/lib/pydocview.py:109
 #: wx/lib/pydocview.py:2561 wx/tools/Editra/src/ed_menu.py:569
 msgid "&File"
-msgstr "&Arkiv"
+msgstr "&Kartelë"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:163 wx/lib/pydocview.py:176
 #: wx/tools/Editra/src/ed_toolbar.py:77 wx/tools/Editra/src/prefdlg.py:1705
 #: wx/tools/Editra/src/style_editor.py:200
 msgid "New"
-msgstr "Ny"
+msgstr "E re"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:163
 msgid "Create a new timeline"
-msgstr "Skapa en ny tidslinje"
+msgstr "Krijoni rrjedhë kohore të re"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:169
 msgid "File Timeline..."
-msgstr "Tidslinjefil..."
+msgstr "Rrjedhë kohore e Kartelës…"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:177
 #: timelinelib/wxgui/dialogs/mainframe.py:200
 msgid "Create Timeline"
-msgstr "Skapa tidslinje"
+msgstr "Krijoni Rrjedhë Kohore"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:183
 msgid "The specified timeline already exists."
-msgstr "Den angivna tidslinjen finns redan."
+msgstr "Rrjedha kohore e treguar ekziston tashmë."
 
 #: timelinelib/wxgui/dialogs/mainframe.py:184
 msgid "Opening timeline instead of creating new."
-msgstr "Öppnar tidslinje istället för att skapa ny."
+msgstr "Po hapet rrjedha kohore, në vend se të krijohet një e re."
 
 #: timelinelib/wxgui/dialogs/mainframe.py:186
 msgid "Information"
-msgstr "Information"
+msgstr "Të dhëna"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:193
 msgid "Directory Timeline..."
-msgstr "Tidslinje från filkataloger..."
+msgstr "Rrjedhë Kohore Drejtorie…"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:209
 msgid "Open an existing timeline"
-msgstr "Öppna en befintlig tidslinje"
+msgstr "Hapni një rrjedhë kohore ekzistuese"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:228
 msgid "Save Timeline As"
-msgstr "Spara tidslinje som"
+msgstr "Ruaje Rrjedhën Kohore Si"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:253
 msgid "Open Timeline"
-msgstr "Öppna tidslinje"
+msgstr "Hapni Rrjedhën Kohore"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:263
 #: wx/tools/Editra/src/ed_menu.py:520
 msgid "Open &Recent"
-msgstr "Öppna s&enaste"
+msgstr "Hap &Më të Fundit"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:267
 msgid "Save As..."
-msgstr "Spara som..."
+msgstr "Ruajeni Si…"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:272
 msgid "Page Set&up..."
-msgstr "Sid&inställning..."
+msgstr "Rregu&llim Faqeje…"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:272
 msgid "Setup page for printing"
-msgstr "Definiera utskriftsformat"
+msgstr "Rregullojeni faqen për shtypje"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:281 wx/lib/docview.py:1571
 #: wx/lib/pydocview.py:182 wx/tools/Editra/src/ed_print.py:108
 msgid "Print Preview"
-msgstr "Förhandsgranska"
+msgstr "Paraparje Shtypjeje"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:290 wx/lib/pydocview.py:181
 #: wx/tools/Editra/src/ed_toolbar.py:80
 msgid "Print"
-msgstr "Skriv ut"
+msgstr "Shtype"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:299
 msgid "&Export to Image..."
-msgstr "&Exportera till bild..."
+msgstr "&Eksportojeni si Figurë…"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:299
 msgid "Export the current view to a PNG image"
-msgstr "Exportera nuvarande vy till en PNG-bild"
+msgstr "Eksportoje pamjen e tanishme si një figurë PNG"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:308
 msgid "&Export to SVG..."
-msgstr "&Exportera till SVG..."
+msgstr "&Eksportoje si SVG…"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:308
 msgid "Export the current view to a SVG image"
-msgstr "Exportera nuvarande vy till en SVG-bild"
+msgstr "Eksportoje pamjen e tanishme si një figurë SVG"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:317
 msgid ""
 "Could not find pysvg Python package. It is needed to export to SVG. See the "
 "Timeline website or the INSTALL file for instructions how to install it."
 msgstr ""
-"Kunde inte hitta pysvg-Pythonpaket. Detta behövs för export till SVG. Se "
-"webbplatsen för Tidslinje eller INSTALL-filen för instruktioner över hur det "
-"kan installeras."
+"S’u gjet paketë Python pysvg. Është e domosdoshme për eksportim si SVG. Për "
+"udhëzime se si të instalohet, shihni sajtin e Rrjedhës Kohore ose kartelën "
+"INSTALL."
 
 #: timelinelib/wxgui/dialogs/mainframe.py:321
 msgid "Export to SVG"
-msgstr "Exportera till SVG"
+msgstr "Eksportoje si SVG"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:343
 msgid "Play timeline"
-msgstr "Spela upp tidslinje"
+msgstr "Luaje rrjedhën kohore"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:343
 msgid "Play timeline as movie"
-msgstr "Spela upp tidslinje som film"
+msgstr "Luaje rrjedhën kohore si film"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:351
 msgid "Exit the program"
-msgstr "Avsluta programmet"
+msgstr "Dilni nga programi"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:362 wx/lib/pydocview.py:134
 #: wx/lib/pydocview.py:1925 wx/tools/Editra/src/ed_menu.py:647
 msgid "&Edit"
-msgstr "&Redigera"
+msgstr "&Përpunojeni"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:389 wx/lib/pydocview.py:146
 #: wx/tools/Editra/src/ed_menu.py:712
 msgid "&View"
-msgstr "&Visa"
+msgstr "&Shiheni"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:393
 msgid "&Sidebar\tCtrl+I"
-msgstr "&Sidopanel\tCtrl+I"
+msgstr "&Anështyllë\tCtrl+A"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:407
 msgid "&Legend"
-msgstr "&Teckenförklaring"
+msgstr "&Legjendë"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:418
 msgid "&Balloons on hover"
-msgstr "&Ballonger vid hovring"
+msgstr "&Tullumbace kur kalohet kursori përsipër"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:433
 msgid "&Timeline"
-msgstr "&Tidslinje"
+msgstr "&Rrjedhë kohore"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:437
 msgid "Create &Event..."
-msgstr "Skapa &händelse..."
+msgstr "Krijoni &Akt…"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:437
 msgid "Create a new event"
-msgstr "Skapa en ny händelse"
+msgstr "Krijoni një akt të ri"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:447
 msgid "&Duplicate Selected Event..."
-msgstr "&Duplicera markerad händelse..."
+msgstr "&Përsëdytni Aktin e Përzgjedhur…"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:447
 msgid "Duplicate the Selected Event"
-msgstr "Duplicera den markerade händelsen"
+msgstr "Përsëdyte Aktin e Përzgjedhur"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:468
 msgid "&Measure Distance between two Events..."
-msgstr "&Mät avstånd mellan två händelser..."
+msgstr "&Matni Largësinë mes dysh Aktesh…"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:469
 msgid "Measure the Distance between two Events"
-msgstr "Mät avståndet mellan två händelser"
+msgstr "Matni Largësinë mes dy Aktesh"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:500
 msgid "Distance between selected events"
-msgstr "Avstånd mellan valda händelser"
+msgstr "Largësi mes aktesh të përzgjedhur"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:503
 msgid "Events are overlapping or distance is 0"
-msgstr "Händelser överlappar eller så är avståndet 0"
+msgstr "Aktet bien mbi njëri-tjetrin ose largësia është 0"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:514
 msgid "Edit &Categories"
-msgstr "Redigera &kategorier"
+msgstr "Përpunoni &Kategoritë"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:526
 #: wx/tools/Editra/src/ed_stc.py:1722
 msgid "Read Only"
-msgstr "Skrivskyddad"
+msgstr "Vetëm e Lexueshme"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:534
 #: timelinelib/wxgui/dialogs/mainframe.py:723
 msgid "read-only"
-msgstr "skrivskyddad"
+msgstr "vetëm-lexim"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:551
 msgid "&Navigate"
-msgstr "&Navigera"
+msgstr "&Lëvizni"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:555
 msgid "Find First Event"
-msgstr "Sök första händelsen"
+msgstr "Gjej Aktin e Parë"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:569
 msgid "Find Last Event"
-msgstr "Sök sista händelsen"
+msgstr "Gjej Aktin e Fundit"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:583
 msgid "Fit All Events"
-msgstr "Passa till alla händelser"
+msgstr ""
 
 #: timelinelib/wxgui/dialogs/mainframe.py:636 wx/lib/pydocview.py:150
 #: wx/lib/pydocview.py:2914 wx/tools/Editra/src/ed_main.py:152
 #: wx/tools/Editra/src/ed_menu.py:845
 msgid "&Help"
-msgstr "&Hjälp"
+msgstr "&Ndihmë"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:639
 msgid "&Contents\tF1"
-msgstr "&Innehåll\tF1"
+msgstr "&Lëndë\tF1"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:646
 #: timelinelib/wxgui/dialogs/mainframe.py:1034
 msgid "Getting started tutorial"
-msgstr "Kom igång-övning"
+msgstr "Përkujdesore se si t’ia fillohet"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:682
 msgid "Unable to write configuration file."
-msgstr "Kan inte skriva konfigurationsfil."
+msgstr "S’arrihet të shkruhet kartelë formësimi."
 
 #: timelinelib/wxgui/dialogs/mainframe.py:784
 #, python-format
 msgid "File '%s' does not exist."
-msgstr "Filen '%s' finns inte."
+msgstr "Kartela '%s' s’ekziston."
 
 #: timelinelib/wxgui/dialogs/mainframe.py:1026
 msgid "No timeline opened."
-msgstr "Ingen tidslinje öppnad."
+msgstr "S’ka rrjedhë kohore të hapur."
 
 #: timelinelib/wxgui/dialogs/mainframe.py:1031
 msgid "First time using Timeline?"
-msgstr "Första gången du använder Tidslinje?"
+msgstr "Hera e parë që po përdorni Rrjedhën Kohore?"
 
 #: timelinelib/wxgui/dialogs/mainframe.py:1136
 msgid "Relevant help topics:"
-msgstr "Relevanta hjälpavsnitt:"
+msgstr "Tema të rëndësishme ndihme:"
 
 #: timelinelib/wxgui/dialogs/playframe.py:31 wx/lib/pydocview.py:905
 msgid "Close"
-msgstr "Stäng"
+msgstr "Mbylle"
 
 #: timelinelib/wxgui/dialogs/preferences.py:28
 msgid "Preferences"
-msgstr "Inställningar"
+msgstr "Parapëlqime"
 
 #: timelinelib/wxgui/dialogs/preferences.py:72 wx/lib/pydocview.py:1635
 #: wx/lib/pydocview.py:2722 wx/tools/Editra/src/prefdlg.py:191
 #: wx/tools/Editra/src/prefdlg.py:677 wx/tools/Editra/src/prefdlg.py:964
 msgid "General"
-msgstr "Allmänt"
+msgstr "Të përgjithshme"
 
 #: timelinelib/wxgui/dialogs/preferences.py:82
 msgid "Date && Time"
-msgstr "Datum && tid"
+msgstr "Datë && Kohë"
 
 #: timelinelib/wxgui/dialogs/preferences.py:90
 msgid "Week start on:"
-msgstr "Vecka startar på:"
+msgstr "Java fillon më:"
 
 #: timelinelib/wxgui/dialogs/preferences.py:93
 msgid ""
@@ -1462,72 +1470,71 @@ msgid ""
 "the timeline again. A reload of the timeline\n"
 "is also needed for this to take effect."
 msgstr ""
-"Denna funktion är experimentell. Om händelser\n"
-"skapas i det utökade intervallet så kan du inte\n"
-"inaktivera detta alternativ och läsa in\n"
-"tidslinjen igen. En omläsning av tidslinjen\n"
-"krävs också för att detta ska bli aktivt."
+"Kjo veçori është eksperimentale. Nëse aktet\n"
+"krijohen në intervalin e zgjeruar, s’mund\n"
+"ta çaktivizoni këtë mundësi dhe të ringarkoni\n"
+"me sukses rrjedhën kohore. Që kjo të ketë efekt,\n"
+"lypset një ringarkim i rrjedhës kohore."
 
 #: timelinelib/wxgui/dialogs/preferences.py:110
 msgid "Open most recent timeline on startup"
-msgstr "Öppna senaste tidslinje vid start"
+msgstr "Gjatë nisjes hap rrjedhën kohore më të freskët"
 
 #: timelinelib/wxgui/dialogs/preferences.py:116
 msgid "Use inertial scrolling"
-msgstr "Använd tröghetsrullning"
+msgstr ""
 
 #: timelinelib/wxgui/dialogs/preferences.py:122
 msgid "Use extended date range (before 1 AD)"
-msgstr "Använd utökat datumintervall (före 1 e.Kr.)"
+msgstr "Përdor interval të zgjeruar datash (përpara 1 e.r.)"
 
 #: timelinelib/wxgui/dialogs/preferences.py:133
 msgid "Monday"
-msgstr "Måndag"
+msgstr "E hënë"
 
 #: timelinelib/wxgui/dialogs/preferences.py:133
 msgid "Sunday"
-msgstr "Söndag"
+msgstr "E dielë"
 
 #: timelinelib/wxgui/dialogs/textdisplay.py:90
 msgid "Unable to copy to clipboard."
-msgstr "Misslyckades med att kopiera till urklipp."
+msgstr "S’arrihet të kopjohet në të papastër."
 
 #: timelinelib/wxgui/utils.py:134 wx/tools/Editra/src/ed_editv.py:191
 #: wx/tools/Editra/src/plugdlg.py:840
 msgid "Error"
-msgstr "Fel"
+msgstr "Gabime"
 
 #: timelinelib/wxgui/utils.py:139 wx/lib/docview.py:635 wx/lib/docview.py:652
 #: wx/lib/docview.py:1895
 msgid "Warning"
-msgstr "Varning"
+msgstr "Kujdes"
 
 #: timelinelib/wxgui/utils.py:144 timelinelib/wxgui/utils.py:150
 msgid "Question"
-msgstr "Fråga"
+msgstr "Pyetje"
 
 #: wx/lib/agw/artmanager.py:620 wx/lib/agw/artmanager.py:1943
 #: wx/lib/agw/fmcustomizedlg.py:506
 msgid "Default"
-msgstr "Standard"
+msgstr "Parazgjedhje"
 
 #: wx/lib/agw/artmanager.py:1944
 msgid "Dark"
-msgstr "Mörkt"
+msgstr "E errët"
 
 #: wx/lib/agw/artmanager.py:1945
 msgid "Dark Olive Green"
-msgstr "Mörkt olivgrön"
+msgstr "E gjelbër e Errët Ulli"
 
 #: wx/lib/agw/artmanager.py:1946
 msgid "Generic"
-msgstr "Allmänt"
+msgstr "E përgjithshme"
 
 #: wx/lib/agw/aui/aui_switcherdialog.py:1054
 msgid "Pane Switcher"
-msgstr "Panelväxlare"
+msgstr "Këmbyes Kuadratesh"
 
-# Why is this partial HTML translatable?
 #: wx/lib/agw/aui/aui_switcherdialog.py:1179
 msgid "<body bgcolor=\"#"
 msgstr "<body bgcolor=\"#"
@@ -1550,94 +1557,94 @@ msgstr "</body>"
 
 #: wx/lib/agw/aui/framemanager.py:10214
 msgid "Pane Preview"
-msgstr "Panelförhandsgranskning"
+msgstr "Paraparje Kuadrati"
 
 #: wx/lib/agw/aui/tabmdi.py:34
 msgid "Cl&ose"
-msgstr "&Stäng"
+msgstr "&Mbylle"
 
 #: wx/lib/agw/aui/tabmdi.py:35 wx/tools/Editra/src/ed_editv.py:234
 msgid "Close All"
-msgstr "Stäng alla"
+msgstr "Mbylli Krejt"
 
 #: wx/lib/agw/aui/tabmdi.py:37
 msgid "&Next"
-msgstr "&Nästa"
+msgstr "&Pasuesi"
 
 #: wx/lib/agw/aui/tabmdi.py:38
 msgid "&Previous"
-msgstr "Fö&regående"
+msgstr "I &mëparshmi"
 
 #: wx/lib/agw/aui/tabmdi.py:205 wx/lib/agw/aui/tabmdi.py:216
 #: wx/lib/agw/aui/tabmdi.py:218 wx/lib/pydocview.py:2915
 #: wx/lib/pydocview.py:3017
 msgid "&Window"
-msgstr "&Fönster"
+msgstr "&Dritare"
 
 #: wx/lib/agw/cubecolourdialog.py:2806
 msgid "CubeColorDialog: Choose Color"
-msgstr "CubeColorDialog: Välj färg"
+msgstr "CubeColorDialog: Zgjidhni Ngjyrë"
 
 #: wx/lib/agw/fmcustomizedlg.py:171 wx/tools/Editra/src/ed_cmdbar.py:119
 msgid "Customize"
-msgstr "Anpassa"
+msgstr "Përshtateni"
 
 #: wx/lib/agw/fmcustomizedlg.py:206 wx/lib/pydocview.py:89
 msgid "&Close"
-msgstr "S&täng"
+msgstr "&Mbylle"
 
 #: wx/lib/agw/fmcustomizedlg.py:215
 msgid "Menus"
-msgstr "Menyer"
+msgstr "Menu"
 
 #: wx/lib/agw/fmcustomizedlg.py:216 wx/lib/pydocview.py:1491
 msgid "Options"
-msgstr "Alternativ"
+msgstr "Mundësi"
 
 #: wx/lib/agw/fmcustomizedlg.py:284
 msgid "Select Menu To Add/Remove:"
-msgstr "Välj meny att lägga till/ta bort:"
+msgstr "Përzgjidhni Menu Për Shtim/Heqje:"
 
 #: wx/lib/agw/fmcustomizedlg.py:323
 msgid "Default Style"
-msgstr "Standardstil"
+msgstr "Stil Parazgjedhje"
 
 #: wx/lib/agw/fmcustomizedlg.py:323
 msgid "Metallic"
-msgstr "Metallic"
+msgstr "Metalike"
 
 #: wx/lib/agw/fmcustomizedlg.py:324
 msgid "Menu bar style"
-msgstr "Menyradstil"
+msgstr "Stil shtyllash menuje"
 
 #: wx/lib/agw/fmcustomizedlg.py:340
 msgid "Default style settings"
-msgstr "Standardstilinställningar"
+msgstr "Rregullime stili parazgjedhje"
 
 #: wx/lib/agw/fmcustomizedlg.py:342
 msgid "Draw vertical gradient"
-msgstr "Rita vertikal toning"
+msgstr "Vizato përshkallëzim vertikal"
 
 #: wx/lib/agw/fmcustomizedlg.py:348
 msgid "Draw border around menu bar"
-msgstr "Rita kant runt menyrad"
+msgstr "Vizato anë përreth shtyllës së menuve"
 
 #: wx/lib/agw/fmcustomizedlg.py:354
 msgid "Toolbar float over menu bar"
-msgstr "Verktygsfält flyter ovanpå menyrad"
+msgstr "Paneli pezull mbi shtyllë menush"
 
 #: wx/lib/agw/fmcustomizedlg.py:362 wx/tools/Editra/src/prefdlg.py:1095
 msgid "Color Scheme"
-msgstr "Färgschema"
+msgstr "Skemë Ngjyrash"
 
 #: wx/lib/agw/genericmessagedialog.py:471 wx/lib/pydocview.py:178
 #: wx/tools/Editra/src/ed_toolbar.py:79
 msgid "Save"
-msgstr "Spara"
+msgstr "Ruaje"
 
 #: wx/lib/agw/genericmessagedialog.py:473
 msgid "Don't Save"
-msgstr "Spara inte"
+msgstr "Mos e Ruaj"
 
 #: wx/lib/agw/genericmessagedialog.py:821 wx/lib/agw/multidirdialog.py:474
 #: wx/tools/Editra/src/style_editor.py:139
@@ -1648,67 +1655,67 @@ msgstr "OK"
 #: wx/tools/Editra/src/ed_search.py:1244
 #: wx/tools/Editra/src/style_editor.py:141 wx/tools/Editra/src/updater.py:570
 msgid "Cancel"
-msgstr "Avbryt"
+msgstr "Anuloje"
 
 #: wx/lib/agw/genericmessagedialog.py:829
 msgid "Yes"
-msgstr "Ja"
+msgstr "Po"
 
 #: wx/lib/agw/genericmessagedialog.py:833
 msgid "No"
-msgstr "Nej"
+msgstr "Jo"
 
 #: wx/lib/agw/multidirdialog.py:272
 msgid "Choose a directory"
-msgstr "Välj en katalog"
+msgstr "Zgjidhni një drejtori"
 
 #: wx/lib/agw/multidirdialog.py:272
 msgid "Browse For Folders"
-msgstr "Bläddra efter mappar"
+msgstr "Shfletoni Për Dosje"
 
 #: wx/lib/agw/multidirdialog.py:390
 msgid "Choose one or more folders:"
-msgstr "Välj en eller flera mappar:"
+msgstr "Zgjidhni një ose më shumë dosje:"
 
 #: wx/lib/agw/multidirdialog.py:399
 msgid "Folder:"
-msgstr "Mapp:"
+msgstr "Dosje:"
 
 #: wx/lib/agw/multidirdialog.py:472
 msgid "Make New Folder"
-msgstr "Skapa ny mapp"
+msgstr "Krijoni Dosje të Re"
 
 #: wx/lib/agw/pybusyinfo.py:211
 msgid "Busy"
-msgstr "Upptagen"
+msgstr "I zënë"
 
 #: wx/lib/colourchooser/pycolourchooser.py:120
 msgid "Basic Colors:"
-msgstr "Grundläggande färger:"
+msgstr "Ngjyra Bazë:"
 
 #: wx/lib/colourchooser/pycolourchooser.py:121
 msgid "Custom Colors:"
-msgstr "Anpassade färger:"
+msgstr "Ngjyra Vetjake:"
 
 #: wx/lib/colourchooser/pycolourchooser.py:122
 msgid "Add to Custom Colors"
-msgstr "Lägg till i anpassade färger"
+msgstr "Shtoje te Ngjyra Vetjake"
 
 #: wx/lib/colourchooser/pycolourchooser.py:188
 msgid "Solid Color"
-msgstr "Enfärgad"
+msgstr "Ngjyrë e Plotë"
 
 #: wx/lib/colourchooser/pycolourchooser.py:194
 msgid "H:"
-msgstr "N:"
+msgstr "H:"
 
 #: wx/lib/colourchooser/pycolourchooser.py:197
 msgid "S:"
-msgstr "M:"
+msgstr "S:"
 
 #: wx/lib/colourchooser/pycolourchooser.py:200
 msgid "V:"
-msgstr "I:"
+msgstr "V:"
 
 #: wx/lib/colourchooser/pycolourchooser.py:210
 msgid "R:"
@@ -1724,101 +1731,101 @@ msgstr "B:"
 
 #: wx/lib/docview.py:385
 msgid "Application"
-msgstr "Program"
+msgstr "Aplikacion"
 
 #: wx/lib/docview.py:386 wx/lib/docview.py:637 wx/lib/docview.py:1897
 msgid " has been modified outside of "
-msgstr " har ändrats utanför "
+msgstr " është ndryshuar jashtë "
 
 #: wx/lib/docview.py:386 wx/lib/docview.py:637
 msgid ". Overwrite "
-msgstr ". Skriv över "
+msgstr ". Të mbishkruhet "
 
 #: wx/lib/docview.py:386 wx/lib/docview.py:637
 msgid " with current changes?"
-msgstr " med aktuella ändringar?"
+msgstr " me ndryshimet e tanishme?"
 
 #: wx/lib/docview.py:412 wx/tools/Editra/src/eclib/filemgrdlg.py:123
 #: wx/tools/Editra/src/ed_menu.py:531
 msgid "Save As"
-msgstr "Spara som"
+msgstr "Ruaje Si"
 
 #: wx/lib/docview.py:453 wx/lib/docview.py:526 wx/lib/docview.py:2449
 #: wx/lib/docview.py:2705 wx/lib/pydocview.py:1076 wx/lib/pydocview.py:2215
 #: wx/lib/pydocview.py:2391
 msgid "File Error"
-msgstr "Filfel"
+msgstr "Gabim Kartele"
 
 #: wx/lib/docview.py:597
 msgid "Untitled"
-msgstr "Namnlös"
+msgstr "Pa titull"
 
 #: wx/lib/docview.py:654
 #, python-format
 msgid "Save changes to '%s'?"
-msgstr "Spara ändringar till '%s'?"
+msgstr "Të ruhen ndryshimet te '%s'?"
 
 #: wx/lib/docview.py:1567
 msgid "Unable to display print preview."
-msgstr "Kan inte visa förhandsgranskning."
+msgstr "S’arrihet të shfaqet paraparje shtypjeje."
 
 #: wx/lib/docview.py:1573 wx/tools/Editra/src/style_editor.py:132
 msgid "Preview"
-msgstr "Förhandsgranskning"
+msgstr "Paraparje"
 
 #: wx/lib/docview.py:1660 wx/lib/pydocview.py:112
 msgid "&Undo\tCtrl+Z"
-msgstr "Å&ngra\tCtrl+Z"
+msgstr "&Zhbëje\tCtrl+Z"
 
 #: wx/lib/docview.py:1672 wx/lib/pydocview.py:113
 msgid "&Redo\tCtrl+Y"
-msgstr "Gör &om\tCtrl+Y"
+msgstr "&Ribëje\tCtrl+B"
 
 #: wx/lib/docview.py:1897
 msgid "Reload "
-msgstr "Läs om "
+msgstr "Të ringarkohet"
 
 #: wx/lib/docview.py:1897
 msgid " from file system?"
-msgstr " från filsystem?"
+msgstr " nga sistem kartelash?"
 
 #: wx/lib/docview.py:1903
 msgid "Couldn't reload "
-msgstr "Kunde inte läsa om "
+msgstr "S’u ringarkua dot "
 
 #: wx/lib/docview.py:1903
 msgid "Unable to close current "
-msgstr "Kunde inte stänga aktuell "
+msgstr "S’arrihet të mbyllet i tanishmi "
 
 #: wx/lib/docview.py:2006
 #, python-format
 msgid "Untitled %d"
-msgstr "Namnlös %d"
+msgstr "%d pa titull"
 
 #: wx/lib/docview.py:2175
 #, python-format
 msgid "All|*.*|%s"
-msgstr "Alla|*.*|%s"
+msgstr "Krejt|*.*|%s"
 
 #: wx/lib/docview.py:2180
 msgid "Select a File"
-msgstr "Välj en fil"
+msgstr "Përzgjidhni një Kartelë"
 
 #: wx/lib/docview.py:2243
 msgid "Select a document type:"
-msgstr "Välj en dokumenttyp:"
+msgstr "Përzgjidhni lloj dokumenti:"
 
 #: wx/lib/docview.py:2244
 msgid "Documents"
-msgstr "Dokument"
+msgstr "Dokumente"
 
 #: wx/lib/docview.py:2274
 msgid "Select a document view:"
-msgstr "Välj en dokumentvy:"
+msgstr "Përzgjidhni parje dokumenti:"
 
 #: wx/lib/docview.py:2275
 msgid "Views"
-msgstr "Vyer"
+msgstr "Parje"
 
 #: wx/lib/docview.py:3049
 msgid "Ctrl+Z"
@@ -1831,360 +1838,359 @@ msgstr "Ctrl+Y"
 #: wx/lib/docview.py:3157 wx/lib/docview.py:3161
 #: wx/tools/Editra/src/ed_menu.py:578
 msgid "&Undo"
-msgstr "Ån&gra"
+msgstr "&Zhbëje"
 
 #: wx/lib/docview.py:3163 wx/lib/docview.py:3165
 msgid "&Redo"
-msgstr "Gö&r om"
+msgstr "&Ribëje"
 
 #: wx/lib/pydocview.py:87
 msgid "&New...\tCtrl+N"
-msgstr "&Nytt...\tCtrl+N"
+msgstr "E &re… \tCtrl+R"
 
 #: wx/lib/pydocview.py:87 wx/lib/pydocview.py:176
 msgid "Creates a new document"
-msgstr "Skapar ett nytt dokument"
+msgstr "Krijon një dokument të ri"
 
 #: wx/lib/pydocview.py:88
 msgid "&Open...\tCtrl+O"
-msgstr "&Öppna...\tCtrl+O"
+msgstr "&Hapni…\tCtrl+H"
 
 #: wx/lib/pydocview.py:88 wx/lib/pydocview.py:177
 msgid "Opens an existing document"
-msgstr "Öppnar ett befintligt dokument"
+msgstr "Hap një dokument ekzistues"
 
 #: wx/lib/pydocview.py:89
 msgid "Closes the active document"
-msgstr "Stänger det aktiva dokumentet"
+msgstr "Mbyll dokumentin aktiv"
 
 #: wx/lib/pydocview.py:91
 msgid "Close A&ll"
-msgstr "Stäng a&lla"
+msgstr "Mbylli &Krejt"
 
 #: wx/lib/pydocview.py:91
 msgid "Closes all open documents"
-msgstr "Stänger alla öppna dokument"
+msgstr "Mbyll krejt dokumentet e hapur"
 
 #: wx/lib/pydocview.py:93
 msgid "&Save\tCtrl+S"
-msgstr "&Spara\tCtrl+S"
+msgstr "&Ruaje\tCtrl+R"
 
 #: wx/lib/pydocview.py:93 wx/lib/pydocview.py:178
 msgid "Saves the active document"
-msgstr "Sparar det aktiva dokumentet"
+msgstr "Ruan dokumentin aktiv"
 
 #: wx/lib/pydocview.py:94
 msgid "Save &As..."
-msgstr "Sp&ara som..."
+msgstr "Ruajeni &Si…"
 
 #: wx/lib/pydocview.py:94
 msgid "Saves the active document with a new name"
-msgstr "Sparar det aktiva dokumentet med ett nytt namn"
+msgstr "E ruan dokumentin aktiv me një emër të ri"
 
 #: wx/lib/pydocview.py:95
 msgid "Save All\tCtrl+Shift+A"
-msgstr "Spara alla\tCtrl+Skift+A"
+msgstr "Ruaji Krejt\tCtrl+Shift+K"
 
-# TODO: *the* can be removed 
 #: wx/lib/pydocview.py:95
 msgid "Saves the all active documents"
-msgstr "Sparar alla aktiva dokument"
+msgstr "Ruan krejt dokumentet aktive"
 
 #: wx/lib/pydocview.py:99
 msgid "&Print\tCtrl+P"
-msgstr "S&kriv ut\tCtrl+P"
+msgstr "&Shtyp\tCtrl+Y"
 
 #: wx/lib/pydocview.py:99 wx/lib/pydocview.py:182
 msgid "Prints the active document"
-msgstr "Skriver ut det aktiva dokumentet"
+msgstr "Shtyp dokumentin aktiv"
 
 #: wx/lib/pydocview.py:100 wx/tools/Editra/src/ed_menu.py:562
 msgid "Print Pre&view"
-msgstr "Förhands&granska"
+msgstr "P&araparje Shtypjeje"
 
 #: wx/lib/pydocview.py:100 wx/lib/pydocview.py:181
 msgid "Displays full pages"
-msgstr "Visar hela sidor"
+msgstr "I shfaq faqet të plota"
 
 #: wx/lib/pydocview.py:101 wx/tools/Editra/src/ed_menu.py:560
 msgid "Page Set&up"
-msgstr "Sid&inställning"
+msgstr "Rregu&llim Faqeje"
 
 #: wx/lib/pydocview.py:101
 msgid "Changes page layout settings"
-msgstr "Ändrar inställningar för sidlayout"
+msgstr "Ndryshon rregullimet e skemës së faqes"
 
 #: wx/lib/pydocview.py:104
 msgid "&Quit"
-msgstr "A&vsluta"
+msgstr "&Dil"
 
 #: wx/lib/pydocview.py:104 wx/lib/pydocview.py:106
 msgid "Closes this program"
-msgstr "Stänger detta program"
+msgstr "Mbylle këtë program"
 
 #: wx/lib/pydocview.py:106 wx/tools/Editra/src/ed_menu.py:566
 msgid "E&xit"
-msgstr "A&vsluta"
+msgstr "&Dil"
 
 #: wx/lib/pydocview.py:112 wx/lib/pydocview.py:187
 msgid "Reverses the last action"
-msgstr "Återställer den senaste åtgärden"
+msgstr "Prapakthen veprimin e fundit"
 
 #: wx/lib/pydocview.py:113 wx/lib/pydocview.py:188
 msgid "Reverses the last undo"
-msgstr "Återställer den senaste ångraåtgärden"
+msgstr "Prapakthen zhbërjen e fundit"
 
 #: wx/lib/pydocview.py:118
 msgid "Cu&t\tCtrl+X"
-msgstr "Klipp u&t\tCtrl+X"
+msgstr "&Prije\tCtrl+X"
 
 #: wx/lib/pydocview.py:118 wx/lib/pydocview.py:184
 msgid "Cuts the selection and puts it on the Clipboard"
-msgstr "Klipper ut markeringen och placerar den i urklipp"
+msgstr "E pret përzgjedhjen dhe e hedh te E papastra"
 
 #: wx/lib/pydocview.py:121
 msgid "&Copy\tCtrl+C"
-msgstr "&Kopiera\tCtrl+C"
+msgstr "&Kopjoje\tCtrl+K"
 
 #: wx/lib/pydocview.py:121 wx/lib/pydocview.py:185
 msgid "Copies the selection and puts it on the Clipboard"
-msgstr "Kopierar markeringen och placerar den i urklipp"
+msgstr "E kopjon përzgjedhjen dhe e hedh te E papastra"
 
 #: wx/lib/pydocview.py:124
 msgid "&Paste\tCtrl+V"
-msgstr "Klistra &in\tCtrl+V"
+msgstr "&Ngjite\tCtrl+N"
 
 #: wx/lib/pydocview.py:124 wx/lib/pydocview.py:186
 msgid "Inserts Clipboard contents"
-msgstr "Infogar innehållet från urklipp"
+msgstr "Fut lëndë nga E papastra"
 
 #: wx/lib/pydocview.py:127
 msgid "&Delete"
-msgstr "Ta &bort"
+msgstr "&Fshije"
 
 #: wx/lib/pydocview.py:127
 msgid "Erases the selection"
-msgstr "Raderar markeringen"
+msgstr "E fshin përzgjedhjen"
 
 #: wx/lib/pydocview.py:131
 msgid "Select A&ll\tCtrl+A"
-msgstr "Markera a&llt\tCtrl+A"
+msgstr "Përzgjidhni &Krejt\tCtrl+K"
 
 #: wx/lib/pydocview.py:131
 msgid "Selects all available data"
-msgstr "Markerar alla tillgängliga data"
+msgstr "Përzgjedh tërë të dhënat e gatshme"
 
 #: wx/lib/pydocview.py:140 wx/tools/Editra/src/ed_menu.py:708
 msgid "&Toolbar"
-msgstr "&Verktygsfält"
+msgstr "&Panel"
 
 #: wx/lib/pydocview.py:140
 msgid "Shows or hides the toolbar"
-msgstr "Visar eller döljer verktygsfältet"
+msgstr "Shfaq ose fsheh panelin"
 
 #: wx/lib/pydocview.py:143
 msgid "&Status Bar"
-msgstr "&Statusrad"
+msgstr "&Shtyllë Gjendjesh"
 
 #: wx/lib/pydocview.py:143
 msgid "Shows or hides the status bar"
-msgstr "Visar eller döljer statusraden"
+msgstr "Shfaq ose fsheh shtyllën e gjendjeve"
 
 #: wx/lib/pydocview.py:149
 msgid "&About"
-msgstr "&Om"
+msgstr "&Rreth"
 
 #: wx/lib/pydocview.py:149
 msgid "Displays program information, version number, and copyright"
-msgstr "Visar programinformation, versionsnummer och copyright"
+msgstr "Shfaq të dhëna rreth programit, numër versioni dhe të drejta kopjimi"
 
 #: wx/lib/pydocview.py:177 wx/tools/Editra/src/ed_menu.py:518
 #: wx/tools/Editra/src/ed_toolbar.py:78
 msgid "Open"
-msgstr "Öppna"
+msgstr "Hape"
 
 #: wx/lib/pydocview.py:179 wx/tools/Editra/src/ed_menu.py:532
 msgid "Save All"
-msgstr "Spara alla"
+msgstr "Ruaji Krejt"
 
 #: wx/lib/pydocview.py:179
 msgid "Saves all the active documents"
-msgstr "Sparar alla aktiva dokument"
+msgstr "Ruan krejt dokumentet aktive"
 
 #: wx/lib/pydocview.py:184 wx/tools/Editra/src/ed_editv.py:364
 #: wx/tools/Editra/src/ed_toolbar.py:86
 msgid "Cut"
-msgstr "Klipp ut"
+msgstr "Prije"
 
 #: wx/lib/pydocview.py:185 wx/tools/Editra/src/ed_editv.py:365
 #: wx/tools/Editra/src/ed_toolbar.py:88
 msgid "Copy"
-msgstr "Kopiera"
+msgstr "Kopjoje"
 
 #: wx/lib/pydocview.py:186 wx/tools/Editra/src/ed_editv.py:366
 #: wx/tools/Editra/src/ed_toolbar.py:90
 msgid "Paste"
-msgstr "Klistra in"
+msgstr "Ngjite"
 
 #: wx/lib/pydocview.py:187 wx/tools/Editra/src/ed_editv.py:361
 #: wx/tools/Editra/src/ed_toolbar.py:83
 msgid "Undo"
-msgstr "Ångra"
+msgstr "Zhbëje"
 
 #: wx/lib/pydocview.py:188 wx/tools/Editra/src/ed_editv.py:362
 #: wx/tools/Editra/src/ed_menu.py:579 wx/tools/Editra/src/ed_toolbar.py:84
 msgid "Redo"
-msgstr "Gör om"
+msgstr "Ribëje"
 
 #: wx/lib/pydocview.py:251
 msgid "Ready"
-msgstr "Redo"
+msgstr "Gati"
 
 #: wx/lib/pydocview.py:911
 #, python-format
 msgid "Close All but \"%s\""
-msgstr "Stäng alla utom \"%s\""
+msgstr "Mbylli Krejt, hiq \"%s\""
 
 #: wx/lib/pydocview.py:921
 msgid "Select Tab"
-msgstr "Välj flik"
+msgstr "Përzgjidhni Skedë"
 
 #: wx/lib/pydocview.py:1408 wx/lib/pydocview.py:1415
 #: wx/tools/Editra/src/ed_menu.py:822
 msgid "&Tools"
-msgstr "Verk&tyg"
+msgstr "&Mjete"
 
 #: wx/lib/pydocview.py:1414
 msgid "&Format"
-msgstr "&Format"
+msgstr ""
 
 #: wx/lib/pydocview.py:1419
 msgid "&Options..."
-msgstr "A&lternativ..."
+msgstr "&Mundësi…"
 
 #: wx/lib/pydocview.py:1419
 msgid "Sets options"
-msgstr "Ställer in alternativ"
+msgstr "Cakton mundësitë"
 
 #: wx/lib/pydocview.py:1592
 msgid "Show tips at start up"
-msgstr "Visa tips vid uppstart"
+msgstr "Shfaq ndihmëza në nisje"
 
 #: wx/lib/pydocview.py:1597
 msgid "Show each document in its own window"
-msgstr "Visa varje dokument i sitt eget fönster"
+msgstr "Shfaqe çdo dokument në dritaren e vet"
 
 #: wx/lib/pydocview.py:1598
 msgid "Show all documents in a single window with tabs"
-msgstr "Visa alla dokument i ett enda fönster med flikar"
+msgstr "Shfaqi krejt dokumentet në një dritare të vetme me skeda"
 
 #: wx/lib/pydocview.py:1599
 msgid "Show all documents in a single window with child windows"
-msgstr "Visa alla dokument i ett enda fönster med underfönster"
+msgstr "Shfaqi krejt dokumentet në një dritare të vetme me dritare pjella"
 
 #: wx/lib/pydocview.py:1605
 msgid "Document Display Style"
-msgstr "Dokumentvisningsstil"
+msgstr "Stil Paraqitjeje Dokumentesh"
 
 #: wx/lib/pydocview.py:1619
 msgid "Document Options"
-msgstr "Dokumentalternativ"
+msgstr "Mundësi Dokumenti"
 
 #: wx/lib/pydocview.py:1620
 msgid ""
 "Document interface changes will not appear until the application is "
 "restarted."
 msgstr ""
-"Gränssnittsändringar för dokument kommer inte att visas förrän programmet "
-"startats om."
+"Ndryshimet në ndërfaqen e dokumenteve nuk do të shfaqen pa u rinisur "
+"aplikacioni."
 
 #: wx/lib/pydocview.py:2525
 msgid "About "
-msgstr "Om "
+msgstr "Rreth "
 
 #: wx/lib/pydocview.py:2564
 msgid "&Properties"
-msgstr "&Egenskaper"
+msgstr "&Veti"
 
 #: wx/lib/pydocview.py:2564
 msgid "Show file properties"
-msgstr "Visa filegenskaper"
+msgstr "Shfaq veti kartele"
 
 #: wx/lib/pydocview.py:2678
 msgid "File Properties"
-msgstr "Filegenskaper"
+msgstr "Veti Kartele"
 
 #: wx/lib/pydocview.py:2692
 msgid "Filename:"
-msgstr "Filnamn:"
+msgstr "Emër kartele:"
 
 #: wx/lib/pydocview.py:2695
 msgid "Location:"
-msgstr "Plats:"
+msgstr "Vendndodhje:"
 
 #: wx/lib/pydocview.py:2698
 msgid "Size:"
-msgstr "Storlek:"
+msgstr "Madhësi:"
 
 #: wx/lib/pydocview.py:2700
 msgid "bytes"
-msgstr "byte"
+msgstr "bajte"
 
 #: wx/lib/pydocview.py:2706
 msgid "Created:"
-msgstr "Skapad:"
+msgstr "Krijuar më:"
 
 #: wx/lib/pydocview.py:2710
 msgid "Modified:"
-msgstr "Ändrad:"
+msgstr "Ndryshuar më:"
 
 #: wx/lib/pydocview.py:2714
 msgid "Accessed:"
-msgstr "Använd:"
+msgstr "Përdorur më:"
 
 #: wx/lib/pydocview.py:2890
 msgid "&Arrange All"
-msgstr "&Arrangera alla"
+msgstr "&Sistemoji Krejt"
 
 #: wx/lib/pydocview.py:2890
 msgid "Arrange the open windows"
-msgstr "Arrangera de öppna fönstren"
+msgstr "Sistemo dritaret e hapura"
 
 #: wx/lib/pydocview.py:2899 wx/tools/Editra/src/ed_cmdbar.py:274
 msgid "Previous"
-msgstr "Föregående"
+msgstr "E mëparshmja"
 
 #: wx/lib/pydocview.py:2899
 msgid "Previous Tab"
-msgstr "Föregående flik"
+msgstr "Skeda e Mëparshme"
 
 #: wx/lib/pydocview.py:2902 wx/tools/Editra/src/ed_cmdbar.py:266
 msgid "Next"
-msgstr "Nästa"
+msgstr "Pasuesja"
 
 #: wx/lib/pydocview.py:2902
 msgid "Next Tab"
-msgstr "Nästa flik"
+msgstr "Skeda Pasuese"
 
 #: wx/lib/pydocview.py:2905
 msgid "Close Current\tCtrl+F4"
-msgstr "Stäng aktuell\tCtrl+F4"
+msgstr "Mbyll të Tanishmen\tCtrl+F4"
 
 #: wx/lib/pydocview.py:2905 wx/tools/Editra/src/ed_menu.py:524
 msgid "Close Current Tab"
-msgstr "Stäng aktuell flik"
+msgstr "Mbyll Skedën e Tanishme"
 
 #: wx/lib/pydocview.py:3037
 msgid "&More Windows..."
-msgstr "&Fler fönster..."
+msgstr "&Më Tepër Dritare…"
 
 #: wx/lib/pydocview.py:3163
 msgid "Select a window to show:"
-msgstr "Välj ett fönster att visa:"
+msgstr "Përzgjidhni një dritare për shfaqje:"
 
 #: wx/lib/pydocview.py:3164
 msgid "Select Window"
-msgstr "Välj fönster"
+msgstr "Përzgjidhni Dritare"
 
 #: wx/tools/Editra/src/Editra.py:590
 #, python-format
@@ -2192,94 +2198,95 @@ msgid ""
 "An updated version of Editra is available\n"
 "Would you like to download Editra %s now?"
 msgstr ""
-"En uppdaterad version av Editra finns tillgänglig\n"
-"Vill du hämta Editra %s nu?"
+"Është gati një version i përditësuar i Editra-s\n"
+"Do të donit ta shkarkonit Editra %s tani?"
 
 #: wx/tools/Editra/src/Editra.py:592
 msgid "Update Available"
-msgstr "Uppdatering tillgänglig"
+msgstr "Ka Përditësim"
 
 #: wx/tools/Editra/src/Editra.py:596 wx/tools/Editra/src/prefdlg.py:1565
 msgid "Downloading Update"
-msgstr "Hämtar uppdatering"
+msgstr "Po shkarkohet Përditësimi"
 
 #: wx/tools/Editra/src/Editra.py:889 wx/tools/Editra/src/Editra.py:1097
 msgid "Your profile has been updated to the latest version"
-msgstr "Din profil har uppdaterats till den senaste versionen"
+msgstr "Profili juaj u përditësua me versionin më të ri"
 
 #: wx/tools/Editra/src/Editra.py:891 wx/tools/Editra/src/Editra.py:1099
 msgid "Please check the preferences dialog to check your preferences"
-msgstr "Se inställningsdialogrutan för att kontrollera dina inställningar"
+msgstr ""
+"Që të kontrolloni parapëlqimet tuaja, ju lutemi, shihni te dialogu i "
+"parapëlqimeve"
 
 #: wx/tools/Editra/src/Editra.py:892 wx/tools/Editra/src/Editra.py:1100
 msgid "Profile Updated"
-msgstr "Profil uppdaterad"
+msgstr "Profili u Përditësua"
 
-# TODO: happend -> happened
 #: wx/tools/Editra/src/dev_tool.py:242
 msgid ""
 "Error: Something unexpected happend\n"
 "Help improve Editra by clicking on Report Error\n"
 "to send the Error Traceback shown below."
 msgstr ""
-"Fel: Något oväntat inträffade\n"
-"Förbättra Editra genom att klicka Rapportera\n"
-"fel för att sända felloggen som visas nedan."
+"Gabim: Ndodhi diçka e papritur\n"
+"Ndihmoni të përmirësohet Editra, duke klikuar mbi Njoftoni Gabim,\n"
+"që të dërgohet Pasgjurmimi i Gabimit i treguar më poshtë."
 
 #: wx/tools/Editra/src/eclib/colorsetter.py:85
 msgid "Enter a hex color value"
-msgstr "Ange ett hexadecimalt färgvärde"
+msgstr "Jepni një vlerë gjashtëshe ngjyre"
 
 #: wx/tools/Editra/src/eclib/ecpickers.py:83
 msgid "Set Font"
-msgstr "Ställ in typsnitt"
+msgstr "Caktoni Shkronja"
 
 #: wx/tools/Editra/src/eclib/errdlg.py:319
 msgid "Error Traceback:"
-msgstr "Fellogg:"
+msgstr "Pasgjurmim Gabimi:"
 
 #: wx/tools/Editra/src/eclib/errdlg.py:323
 msgid "Abort"
-msgstr "Avbryt"
+msgstr "Ndërprite"
 
 #: wx/tools/Editra/src/eclib/errdlg.py:324
 msgid "Exit the application"
-msgstr "Avsluta programmet"
+msgstr "Dilni nga aplikacioni"
 
 #: wx/tools/Editra/src/eclib/errdlg.py:325
 msgid "Report Error"
-msgstr "Rapportera fel"
+msgstr "Njoftojeni Gabimin"
 
 #: wx/tools/Editra/src/eclib/filemgrdlg.py:169
 #, python-format
 msgid "Are you sure want to delete %s?"
-msgstr "Är du säker på att du vill ta bort %s?"
+msgstr "Jeni i sigurt se doni të fshihet %s?"
 
 #: wx/tools/Editra/src/eclib/filemgrdlg.py:170
 msgid "Delete File?"
-msgstr "Ta bort fil?"
+msgstr "Të fshihet kartela?"
 
 #: wx/tools/Editra/src/eclib/filemgrdlg.py:176
 #, python-format
 msgid "Unable to delete %s"
-msgstr "Kan inte ta bort %s"
+msgstr "S’arrihet të fshihet %s"
 
 #: wx/tools/Editra/src/eclib/filemgrdlg.py:177
 msgid "Delete Error"
-msgstr "Borttagningsfel"
+msgstr "Gabim Fshirjeje"
 
 #: wx/tools/Editra/src/eclib/filemgrdlg.py:220
 #: wx/tools/Editra/src/prefdlg.py:307
 msgid "Files"
-msgstr "Filer"
+msgstr "Kartela"
 
 #: wx/tools/Editra/src/eclib/filterdlg.py:77
 msgid "Add >>"
-msgstr "Lägg till >>"
+msgstr "Shtoni >>"
 
 #: wx/tools/Editra/src/eclib/filterdlg.py:78
 msgid "<< Remove"
-msgstr "<< Ta bort"
+msgstr "<< Hiqni"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:632
 #: wx/tools/Editra/src/eclib/finddlg.py:767
@@ -2287,176 +2294,178 @@ msgstr "<< Ta bort"
 #: wx/tools/Editra/src/ed_cmdbar.py:264 wx/tools/Editra/src/ed_search.py:149
 #: wx/tools/Editra/src/ed_search.py:153 wx/tools/Editra/src/ed_toolbar.py:93
 msgid "Find"
-msgstr "Sök"
+msgstr "Gjej"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:635
 #: wx/tools/Editra/src/eclib/finddlg.py:844
 msgid "Replace"
-msgstr "Ersätt"
+msgstr "Zëvendësoje"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:712
 msgid "Current Document"
-msgstr "Aktuellt dokument"
+msgstr "Dokumenti i Tanishëm"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:712
 msgid "Selected Text"
-msgstr "Markerad text"
+msgstr "Teksti i Përzgjedhur"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:713
 msgid "Open Documents"
-msgstr "Öppna dokument"
+msgstr "Dokumente të Hapur"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:716
 msgid "File Filters:"
-msgstr "Filfilter:"
+msgstr "Filtra Kartelash:"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:765
 msgid "Find what"
-msgstr "Hitta vad"
+msgstr "Ç’të gjendet"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:778
 msgid "Replace with"
-msgstr "Ersätt med"
+msgstr "Zëvendësoje me"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:790
 msgid "Choose Folder"
-msgstr "Välj mapp"
+msgstr "Zgjidhni Dosje"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:793
 msgid "Look in"
-msgstr "Sök i"
+msgstr "Shih në"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:804
 msgid "Up"
-msgstr "Upp"
+msgstr "Sipër"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:806
 msgid "Down"
-msgstr "Ner"
+msgstr "Poshtë"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:812
 msgid "Find Options"
-msgstr "Sökalternativ"
+msgstr "Mundësi Gjetjeje"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:814
 msgid "Match case"
-msgstr "Matcha skiftläge"
+msgstr "Siç është shkruar"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:815
 msgid "Whole word"
-msgstr "Hela ord"
+msgstr "Krejt fjalën"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:816
 msgid "Regular expression"
-msgstr "Reguljärt uttryck"
+msgstr "Shprehje e rregullt"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:817
 msgid "Search Recursively"
-msgstr "Sök rekursivt"
+msgstr "Kërko Në Mënyrë Ripërsëritëse"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:823
 msgid "Enter wildcard shell patterns for matching files (*.txt)."
-msgstr "Ange jokerteckenmönster för matchande filer (*.txt)."
+msgstr ""
+"Jepni rregullsi shelli me shenja të gjithëpushtetshme për kartela me "
+"përputhje (*.txt)."
 
 #: wx/tools/Editra/src/eclib/finddlg.py:845
 msgid "Count"
-msgstr "Antal"
+msgstr "Numër"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:846
 #: wx/tools/Editra/src/ed_cmdbar.py:280
 msgid "Find All"
-msgstr "Hitta alla"
+msgstr "Gjeji Krejt"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:847
 msgid "Replace All"
-msgstr "Ersätt alla"
+msgstr "Zëvendësoji Krejt"
 
 #: wx/tools/Editra/src/eclib/finddlg.py:1118
 msgid "Choose Search Folder"
-msgstr "Välj sökmapp"
+msgstr "Zgjidhni Dosje Kërkimi"
 
 #: wx/tools/Editra/src/eclib/infodlg.py:60
 msgid "Info"
-msgstr "Info"
+msgstr "Të dhëna"
 
 #: wx/tools/Editra/src/eclib/infodlg.py:117
 msgid "File Stat Failed"
-msgstr "Misslyckades med att köra stat på fil"
+msgstr "Përftimi i Statistikave Mbi Kartelën Dështoi"
 
 #: wx/tools/Editra/src/eclib/infodlg.py:165
 #: wx/tools/Editra/src/eclib/infodlg.py:197
 msgid "Modified"
-msgstr "Ändrad"
+msgstr "Ndryshuar më"
 
 #: wx/tools/Editra/src/eclib/infodlg.py:184
 msgid "Kind"
-msgstr "Typ"
+msgstr "Lloj"
 
 #: wx/tools/Editra/src/eclib/infodlg.py:191
 #: wx/tools/Editra/src/style_editor.py:704
 msgid "Size"
-msgstr "Storlek"
+msgstr "Madhësi"
 
 #: wx/tools/Editra/src/eclib/infodlg.py:193
 msgid "Where"
-msgstr "Var"
+msgstr "Ku"
 
 #: wx/tools/Editra/src/eclib/infodlg.py:195
 msgid "Created"
-msgstr "Skapad"
+msgstr "Krijuar më"
 
 #: wx/tools/Editra/src/eclib/infodlg.py:199
 msgid "Permissions"
-msgstr "Rättigheter"
+msgstr "Leje"
 
 #: wx/tools/Editra/src/eclib/infodlg.py:294 wx/tools/Editra/src/util.py:357
 msgid "Folder"
-msgstr "Mapp"
+msgstr "Dosje"
 
 #: wx/tools/Editra/src/eclib/infodlg.py:300 wx/tools/Editra/src/plugdlg.py:368
 #: wx/tools/Editra/src/plugdlg.py:374 wx/tools/Editra/src/plugdlg.py:421
 #: wx/tools/Editra/src/plugdlg.py:425 wx/tools/Editra/src/plugin.py:724
 #: wx/tools/Editra/src/util.py:367
 msgid "Unknown"
-msgstr "Okänd"
+msgstr "I panjohur"
 
 #: wx/tools/Editra/src/ed_cmdbar.py:286
 msgid "Match Case"
-msgstr "Matcha skiftläge"
+msgstr "Siç Është Shkruar"
 
 #: wx/tools/Editra/src/ed_cmdbar.py:293
 msgid "Whole Word"
-msgstr "Hela ord"
+msgstr "Krejt Fjalën"
 
 #: wx/tools/Editra/src/ed_cmdbar.py:297
 msgid "Regular Expression"
-msgstr "Reguljärt uttryck"
+msgstr "Shprehje e Rregullt"
 
 #: wx/tools/Editra/src/ed_cmdbar.py:410
 msgid "Command"
-msgstr "Kommando"
+msgstr "Udhër"
 
 #: wx/tools/Editra/src/ed_cmdbar.py:440
 msgid "Goto Line"
-msgstr "Gå till rad"
+msgstr "Goto Rreshti"
 
 #: wx/tools/Editra/src/ed_cmdbar.py:562
 #, python-format
 msgid "Can't change directory to: %s"
-msgstr "Kan inte byta katalog till: %s"
+msgstr "S’ndryshohet dot drejtoria te: %s"
 
 #: wx/tools/Editra/src/ed_cmdbar.py:764
 #, python-format
 msgid "Access Denied: %s"
-msgstr "Åtkomst nekad: %s"
+msgstr "Hyrje e Mohuar: %s"
 
 #: wx/tools/Editra/src/ed_cmdbar.py:779
 msgid "Invalid Path"
-msgstr "Ogiltig sökväg"
+msgstr "Shteg i Pavlefshëm"
 
 #: wx/tools/Editra/src/ed_cmdbar.py:874
 msgid "cwd: "
-msgstr "arbkat: "
+msgstr ""
 
 #: wx/tools/Editra/src/ed_editv.py:189
 #, python-format
@@ -2464,50 +2473,50 @@ msgid ""
 "Failed to reload %(filename)s:\n"
 "Error: %(errmsg)s"
 msgstr ""
-"Kunde inte läsa om %(filename)s:\n"
-"Fel: %(errmsg)s"
+"Dështoi në ringarkimin e %(filename)s:\n"
+"Gabim: %(errmsg)s"
 
 #: wx/tools/Editra/src/ed_editv.py:228
 msgid "New Tab"
-msgstr "Ny flik"
+msgstr "Skedë e Re"
 
 #: wx/tools/Editra/src/ed_editv.py:229
 msgid "Move Tab to New Window"
-msgstr "Flytta flik till nytt fönster"
+msgstr "Kaloje Skedën në Dritare të Re"
 
 #: wx/tools/Editra/src/ed_editv.py:231
 #, python-format
 msgid "Save \"%s\""
-msgstr "Spara \"%s\""
+msgstr "Ruaje \"%s\""
 
 #: wx/tools/Editra/src/ed_editv.py:232
 #, python-format
 msgid "Close \"%s\""
-msgstr "Stäng \"%s\""
+msgstr "Mbylle \"%s\""
 
 #: wx/tools/Editra/src/ed_editv.py:233
 msgid "Close Other Tabs"
-msgstr "Stäng andra flikar"
+msgstr "Mbylli Skedat e Tjera"
 
 #: wx/tools/Editra/src/ed_editv.py:236
 msgid "Copy Full Path"
-msgstr "Kopiera fullständig sökväg"
+msgstr "Kopjo Shtegun e Plotë"
 
 #: wx/tools/Editra/src/ed_editv.py:368
 msgid "To Uppercase"
-msgstr "Till versaler"
+msgstr "Me të Mëdha"
 
 #: wx/tools/Editra/src/ed_editv.py:369
 msgid "To Lowercase"
-msgstr "Till gemener"
+msgstr "Me të Vogla"
 
 #: wx/tools/Editra/src/ed_editv.py:371
 msgid "Select All"
-msgstr "Markera allt"
+msgstr "Përzgjidhi Krejt"
 
 #: wx/tools/Editra/src/ed_editv.py:394
 msgid "No Suggestions"
-msgstr "Inga förslag"
+msgstr "S’ka Këshillime"
 
 #: wx/tools/Editra/src/ed_editv.py:444
 #, python-format
@@ -2516,13 +2525,13 @@ msgid ""
 "\n"
 "Would you like to save it again?"
 msgstr ""
-"%s har tagits bort sedan sin senaste sparningspunkt.\n"
+"%s është fshirë që nga pika e vet e fundit e ruajtjes.\n"
 "\n"
-"Vill du spara det igen?"
+"Do të donit të ruhet sërish?"
 
 #: wx/tools/Editra/src/ed_editv.py:447
 msgid "Resave File?"
-msgstr "Spara om fil?"
+msgstr "Të riruhet Kartela?"
 
 #: wx/tools/Editra/src/ed_editv.py:464
 #, python-format
@@ -2531,13 +2540,13 @@ msgid ""
 "\n"
 "Would you like to reload it?"
 msgstr ""
-"%s har ändrats av ett annat program.\n"
+"%s është modifikuar nga një aplikacion tjetër.\n"
 "\n"
-"Vill du läsa in den på nytt?"
+"Do të donit të ringarkohet?"
 
 #: wx/tools/Editra/src/ed_editv.py:467
 msgid "Reload File?"
-msgstr "Läs om fil?"
+msgstr "Të ringarkohet Kartela?"
 
 #: wx/tools/Editra/src/ed_editv.py:500
 #, python-format
@@ -2546,18 +2555,18 @@ msgid ""
 "\n"
 "Would you like to save the changes?"
 msgstr ""
-"Filen \"%s\" har ändrats sedan den senaste sparningspunkten.\n"
+"Kartela \"%s\" është ndryshuar që nga pika e ruajtjes së fundit.\n"
 "\n"
-"Vill du spara ändringarna?"
+"Do të donit të ruhen ndryshimet?"
 
 #: wx/tools/Editra/src/ed_editv.py:503
 msgid "Save Changes?"
-msgstr "Spara ändringar?"
+msgstr "Të ruhen Ndryshimet?"
 
 #: wx/tools/Editra/src/ed_glob.py:384
 msgid "Old Macintosh (\\n)"
 msgstr ""
-"Gammal Macintosh (\\n"
+"Macintosh i Dikurshëm (\\n"
 ")"
 
 #: wx/tools/Editra/src/ed_glob.py:385 wx/tools/Editra/src/ed_menu.py:761
@@ -2575,31 +2584,31 @@ msgstr ""
 
 #: wx/tools/Editra/src/ed_log.py:81
 msgid "Editra Log"
-msgstr "Editra-logg"
+msgstr "Regjistër Editra"
 
 #: wx/tools/Editra/src/ed_log.py:82
 msgid "View Editra's console log"
-msgstr "Visa Editras konsollogg"
+msgstr "Shihni regjistër konsole Editra"
 
 #: wx/tools/Editra/src/ed_log.py:134
 msgid "Show output from"
-msgstr "Visa utdata från"
+msgstr "Shfaq përfundim nga"
 
 #: wx/tools/Editra/src/ed_log.py:142 wx/tools/Editra/src/ed_search.py:1253
 msgid "Clear"
-msgstr "Rensa"
+msgstr "Pastroje"
 
 #: wx/tools/Editra/src/ed_log.py:172 wx/tools/Editra/src/ed_log.py:247
 msgid "All"
-msgstr "Allt"
+msgstr "Krejt"
 
 #: wx/tools/Editra/src/ed_main.py:143
 msgid "Perspectives"
-msgstr "Perspektiv"
+msgstr "Perspektiva"
 
 #: wx/tools/Editra/src/ed_main.py:464
 msgid "Editra: Open"
-msgstr "Editra: Öppna"
+msgstr "Editra: Hap"
 
 #: wx/tools/Editra/src/ed_main.py:602
 #, python-format
@@ -2607,40 +2616,40 @@ msgid ""
 "%s could not be found.\n"
 "Perhaps it's been moved or deleted."
 msgstr ""
-"%s kunde inte hittas.\n"
-"Kanske har den flyttats eller tagits bort."
+"%s s’u gjet dot.\n"
+"Ndoshta është lëvizur ose fshirë."
 
 #: wx/tools/Editra/src/ed_main.py:604
 msgid "File Not Found"
-msgstr "Filen hittades inte"
+msgstr "Kartela S’u Gjet"
 
 #: wx/tools/Editra/src/ed_main.py:664
 #, python-format
 msgid "Saved File: %s"
-msgstr "Sparade fil: %s"
+msgstr "Kartela e Ruajtur: %s"
 
 #: wx/tools/Editra/src/ed_main.py:667
 #, python-format
 msgid "ERROR: %s"
-msgstr "FEL: %s"
+msgstr "GABIM: %s"
 
 #: wx/tools/Editra/src/ed_main.py:691
 msgid "Choose a Save Location"
-msgstr "Välj en plats att spara till"
+msgstr "Zgjidhni Vend Ruajtjesh"
 
 #: wx/tools/Editra/src/ed_main.py:707
 #, python-format
 msgid "ERROR: Failed to save %s"
-msgstr "FEL: Misslyckades med att spara %s"
+msgstr "GABIM: Dështoi në ruajtjen e %s"
 
 #: wx/tools/Editra/src/ed_main.py:710
 #, python-format
 msgid "Saved File As: %s"
-msgstr "Sparade fil som: %s"
+msgstr "Kartela u Ruajt Si: %s"
 
 #: wx/tools/Editra/src/ed_main.py:726
 msgid "Where to Save Profile?"
-msgstr "Var ska profil sparas?"
+msgstr "Ku të Ruhet Profili?"
 
 #: wx/tools/Editra/src/ed_main.py:728 wx/tools/Editra/src/ed_main.py:749
 #: wx/tools/Editra/src/ed_menu.py:547
@@ -2650,106 +2659,106 @@ msgstr "Profil"
 #: wx/tools/Editra/src/ed_main.py:733
 #, python-format
 msgid "Profile Saved as: %s"
-msgstr "Profil sparad som: %s"
+msgstr "Profili u Ruajt si: %s"
 
 #: wx/tools/Editra/src/ed_main.py:747 wx/tools/Editra/src/ed_menu.py:546
 msgid "Load a Custom Profile"
-msgstr "Läs in en anpassad profil"
+msgstr "Ngarkoni një Profil Vetjak"
 
 #: wx/tools/Editra/src/ed_main.py:754
 #, python-format
 msgid "Loaded Profile: %s"
-msgstr "Läste in profil: %s"
+msgstr "Profili i Ngarkuar: %s"
 
 #: wx/tools/Editra/src/ed_main.py:771
 msgid "Where to Save Session?"
-msgstr "Var ska session sparas?"
+msgstr "Ku të Ruhet Sesioni?"
 
 #: wx/tools/Editra/src/ed_main.py:773 wx/tools/Editra/src/ed_main.py:800
 msgid "Session"
-msgstr "Session"
+msgstr "Sesion"
 
 #: wx/tools/Editra/src/ed_main.py:788
 #, python-format
 msgid "Session Saved as: %s"
-msgstr "Session sparad som: %s"
+msgstr "Sesioni u Ruajt si: %s"
 
 #: wx/tools/Editra/src/ed_main.py:798
 msgid "Load a Session file"
-msgstr "Läs in en sessionsfil"
+msgstr "Ngarkoni një kartelë Sesioni"
 
 #: wx/tools/Editra/src/ed_main.py:812
 #, python-format
 msgid "Loaded Session: %s"
-msgstr "Läste in session: %s"
+msgstr "Sesioni i Ngarkuar: %s"
 
 #: wx/tools/Editra/src/ed_main.py:1072 wx/tools/Editra/src/ed_menu.py:808
 msgid "Plugin Manager"
-msgstr "Insticksmodulhanterare"
+msgstr "Përgjegjës Shtojcash"
 
 #: wx/tools/Editra/src/ed_main.py:1208
 msgid "Select an encoding to reload the file with"
-msgstr "Välj en kodning att läsa om filen med"
+msgstr "Përzgjidhni një kodim nën të cilin të ruhet kartela"
 
 #: wx/tools/Editra/src/ed_main.py:1209
 msgid "Reload with Encoding"
-msgstr "Läs om med kodning"
+msgstr "Ringarkoje me Kodim"
 
 #: wx/tools/Editra/src/ed_main.py:1221
 #, python-format
 msgid "Failed to reload the file with: %(encoding)s"
-msgstr "Misslyckades med att läsa om filen med %(encoding)s"
+msgstr "Dështoi në ringarkimin e kartelës me: %(encoding)s"
 
 #: wx/tools/Editra/src/ed_main.py:1240
 msgid "Aui Pane Navigator"
-msgstr "Aui-panelnavigerare"
+msgstr ""
 
 #: wx/tools/Editra/src/ed_main.py:1414 wx/tools/Editra/src/ed_menu.py:688
 msgid "Maximize Editor"
-msgstr "Maximera redigerare"
+msgstr "Maksimizo Përpunuesin"
 
 #: wx/tools/Editra/src/ed_main.py:1416
 msgid "Restore Editor"
-msgstr "Återställ redigerare"
+msgstr "Rikthe Përpunuesin"
 
 #: wx/tools/Editra/src/ed_main.py:1436
 msgid "Customize Menu"
-msgstr "Anpassa meny"
+msgstr "Përshtateni Menunë"
 
 #: wx/tools/Editra/src/ed_main.py:1485
 #, python-format
 msgid "Opening %s"
-msgstr "Öppnar %s"
+msgstr "Po hapet %s"
 
 #: wx/tools/Editra/src/ed_main.py:1488
 #, python-format
 msgid "Error: Unable to open %s"
-msgstr "Fel: Kan inte öppna %s"
+msgstr "Gabim: S’arrihet të hapet %s"
 
 #: wx/tools/Editra/src/ed_main.py:1538
 msgid "Editra is a programmer's text editor."
-msgstr "Editra är en programmerares textredigerare."
+msgstr "Editra është një përpunues tekstesh për programues."
 
 #: wx/tools/Editra/src/ed_main.py:1539
 #, python-format
 msgid "Written in 100%% Python."
-msgstr "Skriven i 100%% Python."
+msgstr "Shkruar 100%% në Python."
 
 #: wx/tools/Editra/src/ed_main.py:1540
 msgid "Homepage"
-msgstr "Webbplats"
+msgstr "Faqe Hyrëse"
 
 #: wx/tools/Editra/src/ed_main.py:1541
 msgid "Platform Info"
-msgstr "Plattformsinfo"
+msgstr "Të dhëna Platforme"
 
 #: wx/tools/Editra/src/ed_main.py:1542
 msgid "License: wxWindows (see COPYING.txt for full license)"
-msgstr "Licens: wxWindows (se COPYING.txt för fullständig licens)"
+msgstr "Licencë: wxWindows (për licencën e plotë shihni COPYING.txt)"
 
 #: wx/tools/Editra/src/ed_main.py:1548
 msgid "Copyright"
-msgstr "Upphovsrätt"
+msgstr "Të drejta kopjimi"
 
 #: wx/tools/Editra/src/ed_mdlg.py:86
 #, python-format
@@ -2759,14 +2768,14 @@ msgid ""
 "Error:\n"
 "%(errormsg)s"
 msgstr ""
-"Editra kunde inte öppna %(filename)s\n"
+"Editra s’hapi dot %(filename)s\n"
 "\n"
-"Fel:\n"
+"Gabim:\n"
 "%(errormsg)s"
 
 #: wx/tools/Editra/src/ed_mdlg.py:88
 msgid "Error Opening File"
-msgstr "Fel då fil skulle öppnas"
+msgstr "Gabim Gjatë Hapjes së Kartelës"
 
 #: wx/tools/Editra/src/ed_mdlg.py:105
 #, python-format
@@ -2776,21 +2785,21 @@ msgid ""
 "Error:\n"
 "%(errormsg)s"
 msgstr ""
-"Kunde inte spara fil: %(filename)s\n"
+"Dështoi në ruajtjen e kartelës: %(filename)s\n"
 "\n"
-"Fel:\n"
+"Gabim:\n"
 "%(errormsg)s"
 
 #: wx/tools/Editra/src/ed_mdlg.py:107
 msgid "Save Error"
-msgstr "Sparningsfel"
+msgstr "Ruaje Gabimin"
 
 #: wx/tools/Editra/src/ed_mdlg.py:138
 msgid ""
 "Old Macintosh (\n"
 ")"
 msgstr ""
-"Gammal Macintosh (\n"
+"Macintosh i Dikurshëm (\n"
 ")"
 
 #: wx/tools/Editra/src/ed_mdlg.py:138
@@ -2811,653 +2820,655 @@ msgstr ""
 
 #: wx/tools/Editra/src/ed_menu.py:472
 msgid "Customize..."
-msgstr "Anpassa..."
+msgstr "Përshtateni…"
 
 #: wx/tools/Editra/src/ed_menu.py:473
 msgid "Customize the items shown in this menu."
-msgstr "Anpassa objekten som visas i denna meny."
+msgstr "Përshtatni elementët e shfaqur në këtë menu."
 
 #: wx/tools/Editra/src/ed_menu.py:479 wx/tools/Editra/src/syntax/syntax.py:318
 #, python-format
 msgid "Switch Lexer to %s"
-msgstr "Växla lexer till %s"
+msgstr "Kaloje Fjalëzuesin në %s"
 
 #: wx/tools/Editra/src/ed_menu.py:481
 msgid "Lexers"
-msgstr "Lexer"
+msgstr "Fjalëzues"
 
 #: wx/tools/Editra/src/ed_menu.py:483
 msgid "Manually Set a Lexer/Syntax"
-msgstr "Ställ manuellt in en lexer/syntax"
+msgstr "Caktoni Dorazi një Fjalëzues/Sintaksë"
 
 #: wx/tools/Editra/src/ed_menu.py:513
 msgid "&New Tab"
-msgstr "&Ny flik"
+msgstr "&Skedë e Re"
 
 #: wx/tools/Editra/src/ed_menu.py:514
 msgid "Start a new file in a new tab"
-msgstr "Starta en ny fil i en ny flik"
+msgstr "Filloni një kartelë të re në një skedë të re"
 
 #: wx/tools/Editra/src/ed_menu.py:515
 msgid "New &Window"
-msgstr "Nytt &fönster"
+msgstr "&Dritare e Re"
 
 #: wx/tools/Editra/src/ed_menu.py:516
 msgid "Start a new file in a new window"
-msgstr "Starta en ny fil i ett nytt fönster"
+msgstr "Filloje një kartelë të re në një dritare të re"
 
 #: wx/tools/Editra/src/ed_menu.py:518
 msgid "&Open"
-msgstr "&Öppna"
+msgstr "&Hape"
 
 #: wx/tools/Editra/src/ed_menu.py:521
 msgid "Recently Opened Files"
-msgstr "Senast öppnade filer"
+msgstr "Kartela Hapur Së Fundi"
 
 #: wx/tools/Editra/src/ed_menu.py:523
 msgid "&Close Tab"
-msgstr "S&täng flik"
+msgstr "&Mbylle Skedën"
 
 #: wx/tools/Editra/src/ed_menu.py:526
 msgid "Close Window"
-msgstr "Stäng fönster"
+msgstr "Mbylle Dritaren"
 
 #: wx/tools/Editra/src/ed_menu.py:526
 msgid "Close the current window"
-msgstr "Stäng det aktuella fönstret"
+msgstr "Mbyll dritaren e tanishme"
 
 #: wx/tools/Editra/src/ed_menu.py:527
 msgid "Close All Tabs"
-msgstr "Stäng alla flikar"
+msgstr "Mbylli Krejt Skedat"
 
 #: wx/tools/Editra/src/ed_menu.py:528
 msgid "Close all open tabs"
-msgstr "Stäng alla öppna flikar"
+msgstr "Mbylli krejt skedat e hapura"
 
 #: wx/tools/Editra/src/ed_menu.py:530
 msgid "&Save"
-msgstr "&Spara"
+msgstr "&Ruaje"
 
 #: wx/tools/Editra/src/ed_menu.py:530 wx/tools/Editra/src/ed_toolbar.py:79
 msgid "Save Current File"
-msgstr "Spara aktuell fil"
+msgstr "Ruaj Kartelën e Tanishme"
 
 #: wx/tools/Editra/src/ed_menu.py:531
 msgid "Save &As"
-msgstr "Spara s&om"
+msgstr "Ruaje &Si"
 
 #: wx/tools/Editra/src/ed_menu.py:533
 msgid "Save all open pages"
-msgstr "Spara alla öppna sidor"
+msgstr "Ruaj krejt faqet e hapura"
 
 #: wx/tools/Editra/src/ed_menu.py:535
 msgid "Revert to Saved"
-msgstr "Återställ till sparad"
+msgstr "Riktheje tek e Ruajtura"
 
 #: wx/tools/Editra/src/ed_menu.py:536
 msgid "Revert file to last save point"
-msgstr "Återställ fil till senaste sparningspunkt"
+msgstr "Rikthejeni kartelën te pika e ruajtjes së fundit"
 
 #: wx/tools/Editra/src/ed_menu.py:537
 msgid "Reload with Encoding..."
-msgstr "Läs om med kodning..."
+msgstr "Ringarkoje me Kodim…"
 
 #: wx/tools/Editra/src/ed_menu.py:538
 msgid "Reload the file with a specified encoding"
-msgstr "Läs om filen med en angiven kodning"
+msgstr "Ringarkoje kartelën me një kodim specifik"
 
 #: wx/tools/Editra/src/ed_menu.py:543
 msgid "Save Profile"
-msgstr "Spara profil"
+msgstr "Ruaje Profilin"
 
 #: wx/tools/Editra/src/ed_menu.py:544
 msgid "Save Current Settings to a New Profile"
-msgstr "Spara aktuella inställningar till en ny profil"
+msgstr "Ruaji Rregullimet e Tanishme te Një Profil i Ri"
 
 #: wx/tools/Editra/src/ed_menu.py:545
 msgid "Load Profile"
-msgstr "Läs in profil"
+msgstr "Ngarkoje Profilin"
 
 #: wx/tools/Editra/src/ed_menu.py:548
 msgid "Load and save custom Profiles"
-msgstr "Läs in och spara anpassade profiler"
+msgstr "Ngarkoni dhe ruani Profile vetjakë"
 
 #: wx/tools/Editra/src/ed_menu.py:552
 msgid "Save Session"
-msgstr "Spara session"
+msgstr "Ruaje Sesionin"
 
 #: wx/tools/Editra/src/ed_menu.py:553
 msgid "Save the current session."
-msgstr "Spara den aktuella sessionen."
+msgstr "Ruaj sesionin e tanishëm."
 
 #: wx/tools/Editra/src/ed_menu.py:554
 msgid "Load Session"
-msgstr "Läs in session"
+msgstr "Ngarkoje Sesionin"
 
 #: wx/tools/Editra/src/ed_menu.py:555
 msgid "Load a saved session."
-msgstr "Läs in en sparad session."
+msgstr "Ngarkoni një sesion të ruajtur."
 
 #: wx/tools/Editra/src/ed_menu.py:556
 msgid "Sessions"
-msgstr "Sessioner"
+msgstr "Sesione"
 
 #: wx/tools/Editra/src/ed_menu.py:557
 msgid "Load and save custom sessions."
-msgstr "Läs in och spara anpassade sessioner."
+msgstr "Ngarkoni dhe ruani sesione vetjake."
 
 #: wx/tools/Editra/src/ed_menu.py:561
 msgid "Configure Printer"
-msgstr "Konfigurera skrivare"
+msgstr "Formësoni Shtypës"
 
 #: wx/tools/Editra/src/ed_menu.py:563
 msgid "Preview Printout"
-msgstr "Förhandsgranska utskrift"
+msgstr "Parashiheni Shtypjen"
 
 #: wx/tools/Editra/src/ed_menu.py:564
 msgid "&Print"
-msgstr "Skriv &ut"
+msgstr "&Shtype"
 
 #: wx/tools/Editra/src/ed_menu.py:564 wx/tools/Editra/src/ed_toolbar.py:81
 msgid "Print Current File"
-msgstr "Skriv ut aktuell fil"
+msgstr "Shtyp Kartelën e Tanishme"
 
 #: wx/tools/Editra/src/ed_menu.py:566
 msgid "Exit the Program"
-msgstr "Avsluta programmet"
+msgstr "Dilni nga Programi"
 
 #: wx/tools/Editra/src/ed_menu.py:578 wx/tools/Editra/src/ed_toolbar.py:83
 msgid "Undo Last Action"
-msgstr "Ångra senaste åtgärd"
+msgstr "Zhbëje Veprimin e Fundit"
 
 #: wx/tools/Editra/src/ed_menu.py:579 wx/tools/Editra/src/ed_toolbar.py:84
 msgid "Redo Last Undo"
-msgstr "Gör om senaste ångrad åtgärd"
+msgstr "Ribëje Zhbërjen e Fundit"
 
 #: wx/tools/Editra/src/ed_menu.py:581
 msgid "Cu&t"
-msgstr "Klipp u&t"
+msgstr "&Prije"
 
 #: wx/tools/Editra/src/ed_menu.py:582 wx/tools/Editra/src/ed_toolbar.py:87
 msgid "Cut Selected Text from File"
-msgstr "Klipp ut markerad text från fil"
+msgstr "Prije Tekstin e Përzgjedhur prej Kartelës"
 
 #: wx/tools/Editra/src/ed_menu.py:583
 msgid "&Copy"
-msgstr "&Kopiera"
+msgstr "&Kopjoje"
 
 #: wx/tools/Editra/src/ed_menu.py:584 wx/tools/Editra/src/ed_toolbar.py:89
 msgid "Copy Selected Text to Clipboard"
-msgstr "Kopiera markerad text till urklipp"
+msgstr "Kopjoje Tekstin e Përzgjedhur te e Papastra"
 
 #: wx/tools/Editra/src/ed_menu.py:585
 msgid "&Paste"
-msgstr "K&listra in"
+msgstr "&Ngjite"
 
 #: wx/tools/Editra/src/ed_menu.py:586 wx/tools/Editra/src/ed_toolbar.py:91
 msgid "Paste Text from Clipboard to File"
-msgstr "Klistra in text från urklipp till fil"
+msgstr "Ngjitni në Kartelë Tekst prej së Papastrës"
 
 #: wx/tools/Editra/src/ed_menu.py:587
 msgid "P&aste After"
-msgstr "Kl&istra in efter"
+msgstr "&Ngjite Pas"
 
 #: wx/tools/Editra/src/ed_menu.py:588
 msgid "Paste Text from Clipboard to File after the cursor"
-msgstr "Klistra in text från urklipp till fil efter markören"
+msgstr "Ngjitni te Kartela Tekst prej të Papastre fill pas kursorit"
 
 #: wx/tools/Editra/src/ed_menu.py:589
 msgid "Cycle Clipboard"
-msgstr "Växla genom urklipp"
+msgstr "Rikalo Në të Papastër"
 
 #: wx/tools/Editra/src/ed_menu.py:590
 msgid "Cycle through recent clipboard text"
-msgstr "Växla genom senaste urklippstexter"
+msgstr "Rikalo nëpër tekste të papastre përdorur së fundi"
 
 #: wx/tools/Editra/src/ed_menu.py:592
 msgid "Select &All"
-msgstr "Markera &allt"
+msgstr "Përzgjidhi &Krejt"
 
 #: wx/tools/Editra/src/ed_menu.py:593
 msgid "Select All Text in Document"
-msgstr "Markera all text i dokument"
+msgstr "Përzgjidhni Krejt Tekstin në Dokument"
 
 #: wx/tools/Editra/src/ed_menu.py:594
 msgid "Column Mode"
-msgstr "Kolumnläge"
+msgstr "Mënyrë Shtyllash"
 
 #: wx/tools/Editra/src/ed_menu.py:595
 msgid "Enable column edit mode."
-msgstr "Aktivera kolumnredigeringsläge."
+msgstr "Aktivizo mënyrën përpunim shtyllash."
 
 #: wx/tools/Editra/src/ed_menu.py:598
 msgid "New Line After"
-msgstr "Ny rad efter"
+msgstr "Rresht i Ri Pas"
 
 #: wx/tools/Editra/src/ed_menu.py:599
 msgid "Add a new line after the current line"
-msgstr "Lägg till en ny rad efter den aktuella raden"
+msgstr "Shtoni një rresht të ri pas rreshtit të tanishëm"
 
 #: wx/tools/Editra/src/ed_menu.py:600
 msgid "New Line Before"
-msgstr "Ny rad före"
+msgstr "Rresht i Ri Para"
 
 #: wx/tools/Editra/src/ed_menu.py:601
 msgid "Add a new line before the current line"
-msgstr "Lägg till en ny rad före den aktuella raden"
+msgstr "Shtoni një rresht të ri para rreshtit të tanishëm"
 
 #: wx/tools/Editra/src/ed_menu.py:603
 msgid "Cut Line"
-msgstr "Klipp ut rad"
+msgstr "Prije Rreshtin"
 
 #: wx/tools/Editra/src/ed_menu.py:604
 msgid "Cut Current Line"
-msgstr "Klipp ut aktuell rad"
+msgstr "Prije Rreshtin e Tanishëm"
 
 #: wx/tools/Editra/src/ed_menu.py:605
 msgid "Delete Line"
-msgstr "Ta bort rad"
+msgstr "Fshije Rreshtin"
 
 #: wx/tools/Editra/src/ed_menu.py:606
 msgid "Delete the selected line(s)"
-msgstr "Ta bort markerade rader"
+msgstr "Fshi rreshtin(at) e përzgjedhur"
 
 #: wx/tools/Editra/src/ed_menu.py:607
 msgid "Copy Line"
-msgstr "Kopiera rad"
+msgstr "Kopjo Rreshtin"
 
 #: wx/tools/Editra/src/ed_menu.py:608
 msgid "Copy Current Line"
-msgstr "Kopiera aktuell rad"
+msgstr "Kopjo Rreshtin e Tanishëm"
 
 #: wx/tools/Editra/src/ed_menu.py:609
 msgid "Duplicate Line"
-msgstr "Duplicera rad"
+msgstr "Përsëdyte Rreshtin"
 
 #: wx/tools/Editra/src/ed_menu.py:610
 msgid "Duplicate the current line"
-msgstr "Duplicera aktuell rad"
+msgstr "Përsëdytni rreshtin e tanishëm"
 
 #: wx/tools/Editra/src/ed_menu.py:612
 msgid "Join Lines"
-msgstr "Slå ihop rader"
+msgstr "Bashko Rreshta"
 
 #: wx/tools/Editra/src/ed_menu.py:613
 msgid "Join the Selected Lines"
-msgstr "Slå ihop de markerade raderna"
+msgstr "Bashko Rreshta e Përzgjedhur"
 
 #: wx/tools/Editra/src/ed_menu.py:614
 msgid "Transpose Line"
-msgstr "Byt plats på rad"
+msgstr "Ndërkëmbe Rresht"
 
 #: wx/tools/Editra/src/ed_menu.py:615
 msgid "Transpose the current line with the previous one"
-msgstr "Byt plats på den aktuella raden med den föregående"
+msgstr "Ndërkëmbe vendet e rreshtit të tanishëm me atë të mëparshëm"
 
 #: wx/tools/Editra/src/ed_menu.py:616
 msgid "Move Current Line Up"
-msgstr "Flytta aktuell rad uppåt"
+msgstr "Ngjite Sipër Rreshtin e Tanishëm"
 
 #: wx/tools/Editra/src/ed_menu.py:617
 msgid "Move the current line up"
-msgstr "Flytta den aktuella raden uppåt"
+msgstr "Ngjite sipër rreshtin e tanishëm"
 
 #: wx/tools/Editra/src/ed_menu.py:619
 msgid "Move Current Line Down"
-msgstr "Flytta aktuell rad nedåt"
+msgstr "Ule Poshtë Rreshtin e Tanishëm"
 
 #: wx/tools/Editra/src/ed_menu.py:620
 msgid "Move the current line down"
-msgstr "Flytta den aktuella raden nedåt"
+msgstr "Ule poshtë rreshtin e tanishëm"
 
 #: wx/tools/Editra/src/ed_menu.py:621
 msgid "Line Edit"
-msgstr "Radredigering"
+msgstr "Përpunim Rreshti"
 
 #: wx/tools/Editra/src/ed_menu.py:622
 msgid "Commands that influence an entire line"
-msgstr "Kommandon som påverkar en hel rad"
+msgstr "Urdhra që kanë ndikim mbi një rresht të tërë"
 
 #: wx/tools/Editra/src/ed_menu.py:624
 msgid "Toggle Bookmark"
-msgstr "Slå på/av bokmärke"
+msgstr "Shfaq/fshih Faqerojtës"
 
 #: wx/tools/Editra/src/ed_menu.py:625
 msgid "Toggle bookmark of the current line"
-msgstr "Slå på/av bokmärke för aktuell rad"
+msgstr "Shfaqni/fshihni faqerojtës të rreshtit të tanishëm"
 
 #: wx/tools/Editra/src/ed_menu.py:626
 msgid "Remove All Bookmarks"
-msgstr "Ta bort alla bokmärken"
+msgstr "Hiqi Krejt Faqerojtësit"
 
 #: wx/tools/Editra/src/ed_menu.py:627
 msgid "Remove all bookmarks from the current document"
-msgstr "Ta bort alla bokmärken från det aktuella dokumentet"
+msgstr "Hiqi krejt faqerojtësit prej dokumentit të tanishëm"
 
 #: wx/tools/Editra/src/ed_menu.py:628
 msgid "Bookmarks"
-msgstr "Bokmärken"
+msgstr "Faqerojtës"
 
 #: wx/tools/Editra/src/ed_menu.py:629
 msgid "Add and remove bookmarks"
-msgstr "Lägg till och ta bort bokmärken"
+msgstr "Shtoni dhe hiqni faqerojtës"
 
 #: wx/tools/Editra/src/ed_menu.py:631
 msgid "&Find"
-msgstr "&Sök"
+msgstr "&Gjej"
 
 #: wx/tools/Editra/src/ed_menu.py:631 wx/tools/Editra/src/ed_toolbar.py:93
 msgid "Find Text"
-msgstr "Sök text"
+msgstr "Gjej Tekst"
 
 #: wx/tools/Editra/src/ed_menu.py:632
 msgid "Find/R&eplace"
-msgstr "Sök/&Ersätt"
+msgstr "Gjej/&Zëvendëso"
 
 #: wx/tools/Editra/src/ed_menu.py:633 wx/tools/Editra/src/ed_toolbar.py:95
 msgid "Find and Replace Text"
-msgstr "Sök och ersätt text"
+msgstr "Gjeni dhe Zëvendësoni Tekst"
 
 #: wx/tools/Editra/src/ed_menu.py:634
 msgid "&Quick Find"
-msgstr "S&nabbsök"
+msgstr "Gjetje e &Shpejtë"
 
 #: wx/tools/Editra/src/ed_menu.py:635
 msgid "Open the Quick Find Bar"
-msgstr "Öppna snabbsökningsraden"
+msgstr "Hap Shtyllën e Gjetjeve të Shpejta"
 
 #: wx/tools/Editra/src/ed_menu.py:636
 msgid "Find Previous"
-msgstr "Sök föregående"
+msgstr "Gjej të Mëparshmin"
 
 #: wx/tools/Editra/src/ed_menu.py:637
 msgid "Goto previous match"
-msgstr "Gå till föregående matchning"
+msgstr "Shko te përputhja e mëparshme"
 
 #: wx/tools/Editra/src/ed_menu.py:638
 msgid "Find Next"
-msgstr "Sök nästa"
+msgstr "Gjej Pasuesin"
 
 #: wx/tools/Editra/src/ed_menu.py:639
 msgid "Goto the next match"
-msgstr "Gå till nästa matchning"
+msgstr "Shko te përputhja pasuese"
 
 #: wx/tools/Editra/src/ed_menu.py:640
 msgid "Find Selected"
-msgstr "Sök markerad"
+msgstr "Gjej të Përzgjedhurën"
 
 #: wx/tools/Editra/src/ed_menu.py:641
 msgid "Search for the currently selected phrase"
-msgstr "Sök den aktuellt markerade frasen"
+msgstr "Kërko për frazën e tanishme të përzgjedhur"
 
 #: wx/tools/Editra/src/ed_menu.py:643
 msgid "Pr&eferences"
-msgstr "Ins&tällningar"
+msgstr "P&arapëlqime"
 
 #: wx/tools/Editra/src/ed_menu.py:644
 msgid "Edit Preferences / Settings"
-msgstr "Redigera inställningar"
+msgstr "Përpunoni Parapëlqime / Rregullime"
 
 #: wx/tools/Editra/src/ed_menu.py:656
 msgid "Zoom Out"
-msgstr "Zooma ut"
+msgstr "Zvogëloje"
 
 #: wx/tools/Editra/src/ed_menu.py:657
 msgid "Zoom In"
-msgstr "Zooma in"
+msgstr "Zmadhoje"
 
 #: wx/tools/Editra/src/ed_menu.py:658 wx/tools/Editra/src/ed_menu.py:659
 msgid "Zoom Default"
-msgstr "Standardzoom"
+msgstr "Parazgjedhje Zmadhimi/Zvogëlimi"
 
 #: wx/tools/Editra/src/ed_menu.py:662 wx/tools/Editra/src/prefdlg.py:933
 msgid "Highlight Caret Line"
-msgstr "Färgmarkera markörrad"
+msgstr "Thekso Kursorin"
 
 #: wx/tools/Editra/src/ed_menu.py:663
 msgid "Highlight the background of the current line"
-msgstr "Färgmarkerar bakgrunden för den aktuella raden"
+msgstr "Thekso sfondin e rreshtit të tanishëm"
 
 #: wx/tools/Editra/src/ed_menu.py:665 wx/tools/Editra/src/prefdlg.py:936
 msgid "Indentation Guides"
-msgstr "Indenteringslinjer"
+msgstr "Udhëzues për Brendazi"
 
 #: wx/tools/Editra/src/ed_menu.py:666
 msgid "Show Indentation Guides"
-msgstr "Visa indenteringslinjer"
+msgstr "Shfaq Udhëzues për Brendazi"
 
 #: wx/tools/Editra/src/ed_menu.py:667
 msgid "Show Edge Guide"
-msgstr "Visa kantlinje"
+msgstr "Shfaq Udhëzues Anësh"
 
 #: wx/tools/Editra/src/ed_menu.py:668
 msgid "Show the edge column guide"
-msgstr "Visa hjälpkolumnlinje"
+msgstr "Shfaq udhëzuesin anësor të shtyllës"
 
 #: wx/tools/Editra/src/ed_menu.py:669 wx/tools/Editra/src/ed_menu.py:670
 #: wx/tools/Editra/src/prefdlg.py:767
 msgid "Show EOL Markers"
-msgstr "Visa radslutsmarkörer"
+msgstr "Shfaq Shenja EOL"
 
 #: wx/tools/Editra/src/ed_menu.py:671 wx/tools/Editra/src/prefdlg.py:769
 msgid "Show Line Numbers"
-msgstr "Visa radnummer"
+msgstr "Shfaq Numra Rreshtash"
 
 #: wx/tools/Editra/src/ed_menu.py:672
 msgid "Show Line Number Margin"
-msgstr "Visa marginal med radnummer"
+msgstr "Shfaq Mënjanë Numrash Rreshtash"
 
 #: wx/tools/Editra/src/ed_menu.py:673 wx/tools/Editra/src/prefdlg.py:771
 msgid "Show Whitespace"
-msgstr "Visa blanktecken"
+msgstr "Shfaq Hapësirë të Zbrazët"
 
 #: wx/tools/Editra/src/ed_menu.py:674
 msgid "Show Whitespace Markers"
-msgstr "Visa blankteckenmarkörer"
+msgstr "Shfaq Shenja Hapësirash të Zbrazëta"
 
 #: wx/tools/Editra/src/ed_menu.py:675
 msgid "Editor"
-msgstr "Redigerare"
+msgstr "Përpunues"
 
 #: wx/tools/Editra/src/ed_menu.py:676
 msgid "Toggle Editor View Options"
-msgstr "Slå på/av alternativ för redigerarvy"
+msgstr "Shfaq/Fshih Mundësi Pamjeje Përpunuesi"
 
 #: wx/tools/Editra/src/ed_menu.py:678
 msgid "Toggle fold"
-msgstr "Expandera/Fäll ihop"
+msgstr ""
 
 #: wx/tools/Editra/src/ed_menu.py:679
 msgid "Toggle current fold"
-msgstr "Expandera/Fäll ihop aktuell vikning"
+msgstr ""
 
 #: wx/tools/Editra/src/ed_menu.py:680 wx/tools/Editra/src/ed_menu.py:681
 msgid "Toggle all folds"
-msgstr "Expandera/Fäll ihop alla"
+msgstr ""
 
 #: wx/tools/Editra/src/ed_menu.py:682 wx/tools/Editra/src/ed_menu.py:787
 #: wx/tools/Editra/src/prefdlg.py:922
 msgid "Code Folding"
-msgstr "Kodvikning"
+msgstr ""
 
 #: wx/tools/Editra/src/ed_menu.py:683
 msgid "Code folding toggle actions"
-msgstr "Växlingsåtgärder för kodvikning"
+msgstr ""
 
 #: wx/tools/Editra/src/ed_menu.py:686
 msgid "Pane Navigator"
-msgstr "Panelnavigerare"
+msgstr ""
 
 #: wx/tools/Editra/src/ed_menu.py:687
 msgid "View pane selection list"
-msgstr "Visa lista för panelval"
+msgstr ""
 
 #: wx/tools/Editra/src/ed_menu.py:689
 msgid "Toggle Editor Maximization"
-msgstr "Slå på/av redigerarmaximering"
+msgstr "Shfaq/Fshih Maksimizim Përpunuesi"
 
 #: wx/tools/Editra/src/ed_menu.py:691
 msgid "&Goto Line"
-msgstr "&Gå till rad"
+msgstr "&Goto Rresht"
 
 #: wx/tools/Editra/src/ed_menu.py:692
 msgid "Goto Line Number"
-msgstr "Gå till radnummer"
+msgstr "Goto Numër Rreshti"
 
 #: wx/tools/Editra/src/ed_menu.py:693
 msgid "Goto Matching Brace"
-msgstr "Gå till matchande parentes"
+msgstr ""
 
 #: wx/tools/Editra/src/ed_menu.py:694
 msgid "Move caret matching brace"
-msgstr "Flytta markör till matchande parentes"
+msgstr ""
 
 #: wx/tools/Editra/src/ed_menu.py:696
 msgid "Next Position"
-msgstr "Nästa position"
+msgstr "Vendndodhja Pasuese"
 
 #: wx/tools/Editra/src/ed_menu.py:697
 msgid "Goto next position in history."
-msgstr "Gå till nästa position i historik."
+msgstr "Goto te vendndodhja pasuese në historik."
 
 #: wx/tools/Editra/src/ed_menu.py:698
 msgid "Previous Position"
-msgstr "Föregående position"
+msgstr "Vendndodhja e Mëparshme"
 
 #: wx/tools/Editra/src/ed_menu.py:699
 msgid "Goto previous position in history."
-msgstr "Gå till föregående position i historik."
+msgstr "Goto te vendndodhja e mëparshme në historik."
 
 #: wx/tools/Editra/src/ed_menu.py:701
 msgid "Next Bookmark"
-msgstr "Nästa bokmärke"
+msgstr "Faqerojtësi Pasues"
 
 #: wx/tools/Editra/src/ed_menu.py:702
 msgid "View Line of Next Bookmark"
-msgstr "Visa rad för nästa bokmärke"
+msgstr "Shihni Rreshtin e Faqerojtësit Pasues"
 
 #: wx/tools/Editra/src/ed_menu.py:703
 msgid "Previous Bookmark"
-msgstr "Föregående bokmärke"
+msgstr "Faqerojtësi i Mëparshëm"
 
 #: wx/tools/Editra/src/ed_menu.py:704
 msgid "View Line of Previous Bookmark"
-msgstr "Visa rad för föregående bokmärke"
+msgstr "Shihni Rreshtin e Faqerojtësit të Mëparshëm"
 
 #: wx/tools/Editra/src/ed_menu.py:707 wx/tools/Editra/src/prefdlg.py:1207
 msgid "Show Status Bar"
-msgstr "Visa statusrad"
+msgstr "Shfaq Shtyllën e Gjendjes"
 
 #: wx/tools/Editra/src/ed_menu.py:709 wx/tools/Editra/src/prefdlg.py:1209
 msgid "Show Toolbar"
-msgstr "Visa verktygsfält"
+msgstr "Shfaq Panel"
 
 #: wx/tools/Editra/src/ed_menu.py:721
 msgid "&Font"
-msgstr "&Typsnitt"
+msgstr "&Shkronja"
 
 #: wx/tools/Editra/src/ed_menu.py:722
 msgid "Change Font Settings"
-msgstr "Ändra typsnittsinställningar"
+msgstr "Ndryshoni Rregullime Shkronjash"
 
 #: wx/tools/Editra/src/ed_menu.py:724
 msgid "Toggle Comment"
-msgstr "Kommentera/avkommentera"
+msgstr "Shfaq/Fshih Komente"
 
 #: wx/tools/Editra/src/ed_menu.py:725
 msgid "Toggle comment on the selected line(s)"
-msgstr "Kommentera/avkommentera markerade rader"
+msgstr "Shfaq/Fshih koment te rreshti(at) i përzgjedhur"
 
 #: wx/tools/Editra/src/ed_menu.py:728
 msgid "Indent Lines"
-msgstr "Indentera rader"
+msgstr "Rreshta Brendazi"
 
 #: wx/tools/Editra/src/ed_menu.py:729
 msgid "Indent the selected lines"
-msgstr "Indentera de markerade raderna"
+msgstr "Zhvendosi brendazi rreshtat e përzgjedhur"
 
 #: wx/tools/Editra/src/ed_menu.py:730
 msgid "Unindent Lines"
-msgstr "Avindentera rader"
+msgstr "Hiqu Rreshtave Shmangien Brendazi"
 
 #: wx/tools/Editra/src/ed_menu.py:731
 msgid "Unindent the selected lines"
-msgstr "Avindentera de markerade raderna"
+msgstr "Hiqu rreshtave shmangien brendazi"
 
 #: wx/tools/Editra/src/ed_menu.py:733
 msgid "Uppercase"
-msgstr "Versaler"
+msgstr "Me të mëdha"
 
 #: wx/tools/Editra/src/ed_menu.py:734
 msgid "Convert selected text to all uppercase letters"
-msgstr "Konvertera markerad text till versaler"
+msgstr "Shndërroji gjithë shkronjat e tekstit të përzgjedhur në të mëdha"
 
 #: wx/tools/Editra/src/ed_menu.py:735
 msgid "Lowercase"
-msgstr "Gemener"
+msgstr "Me të vogla"
 
 #: wx/tools/Editra/src/ed_menu.py:736
 msgid "Convert selected text to all lowercase letters"
-msgstr "Konvertera markerad text till gemener"
+msgstr "Shndërroji gjithë shkronjat e tekstit të përzgjedhur në të vogla"
 
 #: wx/tools/Editra/src/ed_menu.py:738
 msgid "Use Soft Tabs"
-msgstr "Använd mjuka tabbar"
+msgstr "Përdor Tabulacione Soft"
 
 #: wx/tools/Editra/src/ed_menu.py:739
 msgid "Insert spaces instead of tab characters with tab key"
-msgstr "Infoga blanksteg istället för tabbtecken med tabbtangenten"
+msgstr "Kur shtypet tasti Tab, fut hapësira në vend se shenjë tab"
 
 #: wx/tools/Editra/src/ed_menu.py:741 wx/tools/Editra/src/prefdlg.py:773
 msgid "Word Wrap"
-msgstr "Radbrytning"
+msgstr "Mbështjellje Fjalësh"
 
 #: wx/tools/Editra/src/ed_menu.py:742
 msgid "Wrap Text Horizontally"
-msgstr "Radbryt text horisontellt"
+msgstr "Mbështille Tekstin Horizontalisht"
 
 #: wx/tools/Editra/src/ed_menu.py:747
 msgid "Spaces to Tabs"
-msgstr "Blanksteg till tabbar"
+msgstr "Hapësira në Tabulacione"
 
 #: wx/tools/Editra/src/ed_menu.py:748
 msgid "Convert spaces to tabs in selected/all text"
-msgstr "Konvertera blanksteg till tabbar i markerad/all text"
+msgstr ""
+"Shndërroji hapësirat në tabulacione te teksti i përzgjedhur/krejt teksti"
 
 #: wx/tools/Editra/src/ed_menu.py:749
 msgid "Tabs to Spaces"
-msgstr "Tabbar till blanksteg"
+msgstr "Tabulacionet në Hapësira"
 
 #: wx/tools/Editra/src/ed_menu.py:750
 msgid "Convert tabs to spaces in selected/all text"
-msgstr "Konvertera tabbar till blanksteg i markerad/all text"
+msgstr ""
+"Shndërroji tabulacionet në hapësira te teksti i përzgjedhur/krejt teksti"
 
 #: wx/tools/Editra/src/ed_menu.py:751
 msgid "Trim Trailing Whitespace"
-msgstr "Trimma ner eftersläpande blanktecken"
+msgstr ""
 
 #: wx/tools/Editra/src/ed_menu.py:752
 msgid "Remove trailing whitespace"
-msgstr "Ta bort eftersläpande blanktecken"
+msgstr ""
 
 #: wx/tools/Editra/src/ed_menu.py:753
 msgid "Whitespace"
-msgstr "Blanktecken"
+msgstr "Hapësirë"
 
 #: wx/tools/Editra/src/ed_menu.py:754
 msgid "Whitespace formating commands"
-msgstr "Kommandon för blankteckenformatering"
+msgstr "Urdhra formatimi hapësirash të zbrazëta"
 
 #: wx/tools/Editra/src/ed_menu.py:758 wx/tools/Editra/src/ed_menu.py:760
 #: wx/tools/Editra/src/prefdlg.py:755
 msgid "Old Macintosh (\\r)"
-msgstr "Gammal Macintosh (\\r)"
+msgstr "Macintosh i Dikurshëm (\\r)"
 
 #: wx/tools/Editra/src/ed_menu.py:759 wx/tools/Editra/src/ed_menu.py:762
 #: wx/tools/Editra/src/ed_menu.py:765
 #, python-format
 msgid "Format all EOL characters to %s Mode"
-msgstr "Formatera alla radslutstecken till %s-läge"
+msgstr "Formatoji krejt shenjat EOL sipas Mënyrës %s"
 
 #: wx/tools/Editra/src/ed_menu.py:764 wx/tools/Editra/src/ed_menu.py:766
 #: wx/tools/Editra/src/prefdlg.py:756
@@ -3468,11 +3479,11 @@ msgstr ""
 
 #: wx/tools/Editra/src/ed_menu.py:767
 msgid "EOL Mode"
-msgstr "Radslutsläge"
+msgstr "Mënyrë për EOL"
 
 #: wx/tools/Editra/src/ed_menu.py:768
 msgid "End of line character formatting"
-msgstr "Formatering för radslutstecken"
+msgstr "Formatim shenje fundi rreshti"
 
 #: wx/tools/Editra/src/ed_menu.py:771
 msgid "F&ormat"
@@ -3480,109 +3491,109 @@ msgstr "F&ormat"
 
 #: wx/tools/Editra/src/ed_menu.py:780 wx/tools/Editra/src/prefdlg.py:940
 msgid "Auto-Completion"
-msgstr "Automatisk komplettering"
+msgstr "Vetëplotësim"
 
 #: wx/tools/Editra/src/ed_menu.py:781
 msgid "Use Auto Completion when available"
-msgstr "Använd automatisk komplettering då tillgänglig"
+msgstr "Përdor Vetë-Plotësim kur mundet"
 
 #: wx/tools/Editra/src/ed_menu.py:782 wx/tools/Editra/src/prefdlg.py:950
 msgid "Auto-Indent"
-msgstr "Automatisk indentering"
+msgstr "Auto-Brendazi"
 
 #: wx/tools/Editra/src/ed_menu.py:783
 msgid "Toggle Auto-Indentation functionality"
-msgstr "Slå på/av funktionalitet för automatisk indentering"
+msgstr "Aktivizoni/Çaktivizoni funksionon Auto-Brendazi"
 
 #: wx/tools/Editra/src/ed_menu.py:785 wx/tools/Editra/src/prefdlg.py:920
 msgid "Bracket Highlighting"
-msgstr "Parentesmarkering"
+msgstr "Theksim Kllapash"
 
 #: wx/tools/Editra/src/ed_menu.py:786
 msgid "Highlight Brackets/Braces"
-msgstr "Markera parenteser/hakparenteser"
+msgstr "Thekso Kllapa"
 
 #: wx/tools/Editra/src/ed_menu.py:788
 msgid "Toggle Code Folding"
-msgstr "Slå på/av kodvikning"
+msgstr "Aktivizoni/Çaktivizoni Palosje Kodi"
 
 #: wx/tools/Editra/src/ed_menu.py:789 wx/tools/Editra/src/prefdlg.py:679
 #: wx/tools/Editra/src/prefdlg.py:1080
 msgid "Syntax Highlighting"
-msgstr "Syntaxfärgning"
+msgstr "Theksim Sintakse"
 
 #: wx/tools/Editra/src/ed_menu.py:790
 msgid "Color Highlight Code Syntax"
-msgstr "Färgmarkera kodsyntax"
+msgstr "Ngjyrosje Sintakse Theksimi Kodi"
 
 #: wx/tools/Editra/src/ed_menu.py:795
 msgid "&Settings"
-msgstr "&Inställningar"
+msgstr "&Rregullime"
 
 #: wx/tools/Editra/src/ed_menu.py:806
 msgid "Editor Command"
-msgstr "Redigerarkommando"
+msgstr "Urdhër Përpunuesi"
 
 #: wx/tools/Editra/src/ed_menu.py:807
 msgid "Goto command buffer"
-msgstr "Gå till kommandobuffert"
+msgstr ""
 
 #: wx/tools/Editra/src/ed_menu.py:809
 msgid "Manage, Download, and Install plugins"
-msgstr "Hantera, hämta och installera insticksmoduler"
+msgstr "Administroni, Shkarkoni, dhe Instaloni shtojca"
 
 #: wx/tools/Editra/src/ed_menu.py:810 wx/tools/Editra/src/style_editor.py:65
 msgid "Style Editor"
-msgstr "Stilredigerare"
+msgstr "Përpunues Stili"
 
 #: wx/tools/Editra/src/ed_menu.py:811
 msgid "Edit the way syntax is highlighted"
-msgstr "Redigera sättet som syntax färgmarkeras på"
+msgstr "Përpunoni mënyrën se si theksohet sintaksa"
 
 #: wx/tools/Editra/src/ed_menu.py:831
 msgid "&About..."
-msgstr "&Om..."
+msgstr "&Rreth…"
 
 #: wx/tools/Editra/src/ed_menu.py:832
 msgid "About"
-msgstr "Om"
+msgstr "Rreth"
 
 #: wx/tools/Editra/src/ed_menu.py:833
 msgid "Project Homepage..."
-msgstr "Projektwebbplats..."
+msgstr "Faqja Hyrëse e Projektit…"
 
 #: wx/tools/Editra/src/ed_menu.py:834
 #, python-format
 msgid "Visit the project homepage %s"
-msgstr "Besök projektwebbplatsen %s"
+msgstr "Vizitoni faqen hyrëse të projektit %s"
 
 #: wx/tools/Editra/src/ed_menu.py:836
 msgid "Online Documentation..."
-msgstr "Webbdokumentation..."
+msgstr "Dokumentim në Internet…"
 
 #: wx/tools/Editra/src/ed_menu.py:837
 msgid "Online project documentation and help guides"
-msgstr "Projektdokumentation och hjälpguider på webben"
+msgstr "Dokumentim projekti dhe udhërrëfyes ndihme në Internet"
 
 #: wx/tools/Editra/src/ed_menu.py:838
 msgid "Translate Editra..."
-msgstr "Översätt Editra..."
+msgstr "Përktheni Editra-n…"
 
 #: wx/tools/Editra/src/ed_menu.py:839
 msgid "Editra translations project"
-msgstr "Editras översättningsprojekt"
+msgstr "Projekt përkthimesh të Editra-s"
 
 #: wx/tools/Editra/src/ed_menu.py:840
 msgid "Bug Tracker..."
-msgstr "Felhanteringssystem..."
+msgstr "Ndjekës të Metash…"
 
 #: wx/tools/Editra/src/ed_menu.py:841
 msgid "Feedback"
-msgstr "Återkoppling"
+msgstr "Përshtypje"
 
 #: wx/tools/Editra/src/ed_menu.py:842
 msgid "Send bug reports and suggestions"
-msgstr "Skicka felrapporter och förslag"
+msgstr "Dërgoni njoftime të metash dhe këshilla"
 
 #: wx/tools/Editra/src/ed_pages.py:162
 #, python-format
@@ -3592,85 +3603,86 @@ msgid ""
 "Choose an encoding and select OK to open the file with the chosen encoding.\n"
 "Click Cancel to abort opening the file"
 msgstr ""
-"Den rätta kodningen för '%s' kunde inte avgöras.\n"
+"S’u përcaktua dot kodimi i saktë i '%s'.\n"
 "\n"
-"Välj en kodning och välj OK för att öppna filen med den valda kodningen.\n"
-"Klicka Avbryt för att sluta öppna filen"
+"Zgjidhni një kodim dhe përzgjidhni OK që të hapet kartela nën kodimin e "
+"zgjedhur.\n"
+"Klikoni Anuloje që të ndërpritet hapja e kartelës"
 
 #: wx/tools/Editra/src/ed_pages.py:172
 msgid "Choose an Encoding"
-msgstr "Välj en kodning"
+msgstr "Zgjidhni një Kodim"
 
 #: wx/tools/Editra/src/ed_pages.py:211
 msgid ""
 "File is already open in an existing page.\n"
 "Do you wish to open it again?"
 msgstr ""
-"Filen är redan öppen i en befintlig sida.\n"
-"Vill du öppna den igen?"
+"Kartela është e hapur tashmë në një faqe ekzistuese.\n"
+"Doni të hapet sërish?"
 
 #: wx/tools/Editra/src/ed_pages.py:213
 msgid "Open File"
-msgstr "Öppna fil"
+msgstr "Hapni Kartelë"
 
 #: wx/tools/Editra/src/ed_pages.py:232
 #, python-format
 msgid "untitled %d"
-msgstr "namnlös %d"
+msgstr "%d pa titull"
 
 #: wx/tools/Editra/src/ed_pages.py:234
 msgid "untitled"
-msgstr "namnlös"
+msgstr "pa titull"
 
 #: wx/tools/Editra/src/ed_pages.py:324
 msgid "Error Saving Session File"
-msgstr "Fel vid sparande av sessionsfil"
+msgstr "Gabim Në Ruajtje Kartele Sesioni"
 
 #: wx/tools/Editra/src/ed_pages.py:353
 msgid "Invalid File"
-msgstr "Ogiltig fil"
+msgstr "Kartelë e Pavlefshme"
 
 #: wx/tools/Editra/src/ed_pages.py:353
 msgid "Session file doesn't exist."
-msgstr "Sessionsfil finns inte."
+msgstr "Kartela e sesionit s’ekziston."
 
 #: wx/tools/Editra/src/ed_pages.py:367
 msgid "Invalid file"
-msgstr "Ogiltig fil"
+msgstr "Kartelë e pavlefshme"
 
 #: wx/tools/Editra/src/ed_pages.py:368
 msgid "Selected file is not a valid session file"
-msgstr "Vald fil är inte en giltig sessionsfil"
+msgstr "Kartela e përzgjedhur s’është kartelë sesioni e vlefshme"
 
 #: wx/tools/Editra/src/ed_pages.py:374
 msgid "Empty File"
-msgstr "Tom fil"
+msgstr "Kartelë e Zbrazët"
 
 #: wx/tools/Editra/src/ed_pages.py:374
 msgid "Session file is empty."
-msgstr "Sessionsfilen är tom."
+msgstr "Kartela e sesionit është e zbrazët."
 
 #: wx/tools/Editra/src/ed_pages.py:388
 msgid "Missing session files"
-msgstr "Saknar sessionsfiler"
+msgstr "Mungojnë kartela sesioni"
 
 #: wx/tools/Editra/src/ed_pages.py:389
 msgid "Some files in saved session could not be found on disk:\n"
-msgstr "Några filer i sparad session kunde inte hittas på disk:\n"
+msgstr "Disa kartela në sesionin e ruajtur s’u gjetën dot në disk:\n"
 
 #: wx/tools/Editra/src/ed_pages.py:965
 #, python-format
 msgid "Invalid file: %s"
-msgstr "Ogiltig fil: %s"
+msgstr "Kartelë e pavlefshme: %s"
 
 #: wx/tools/Editra/src/ed_pages.py:973
 #, python-format
 msgid "There are no files that Editra can open in %s"
-msgstr "Det finns inga filer som Editra kan öppna i %s"
+msgstr "S’ka kartela që mund të hapen nga Editra në %s"
 
 #: wx/tools/Editra/src/ed_pages.py:975
 msgid "No Valid Files to Open"
-msgstr "Inga giltiga filer att öppna"
+msgstr "S’ka Kartela të Vlefshme Për Hapje"
 
 #: wx/tools/Editra/src/ed_pages.py:981
 #, python-format
@@ -3680,92 +3692,92 @@ msgid ""
 "Warning: opening many files at once may cause the editor to temporarily "
 "freeze."
 msgstr ""
-"Vill du öppna alla %d filer i denna katalog?\n"
+"Doni të hapen krejt %d kartelat në këtë kategori?\n"
 "\n"
-"Varning: att öppna många filer samtidigt kan få redigeraren att tillfälligt "
-"stanna till."
+"Kujdes: hapja e shumë kartelave njëherësh mund të shkaktojë ngrirjen e "
+"përkohshme të përpunuesit."
 
 #: wx/tools/Editra/src/ed_pages.py:986
 msgid "Open Directory?"
-msgstr "Öppna katalog?"
+msgstr "Të hapet Drejtoria?"
 
 #: wx/tools/Editra/src/ed_pages.py:1006
 #, python-format
 msgid "Opened file: %s"
-msgstr "Öppnade fil: %s"
+msgstr "U hap kartelë: %s"
 
 #: wx/tools/Editra/src/ed_print.py:115
 msgid "Failed to create print preview"
-msgstr "Misslyckades med att skapa förhandsgranskning"
+msgstr "Dështoi në krijimin e paraparjes së shtypjes"
 
 #: wx/tools/Editra/src/ed_print.py:116
 msgid "Print Error"
-msgstr "Utskriftsfel"
+msgstr "Gabim Shtypjeje"
 
 #: wx/tools/Editra/src/ed_print.py:132
 msgid ""
 "There was an error when printing.\n"
 "Check that your printer is properly connected."
 msgstr ""
-"Det uppstod ett fel vid utskrift.\n"
-"Kontrollera att din skrivare är korrekt ansluten."
+"Pati një gabim gjatë shtypjes.\n"
+"Kontrolloni nëse shtypësi juaj është lidhur si duhet."
 
 #: wx/tools/Editra/src/ed_print.py:134
 msgid "Printer Error"
-msgstr "Skrivarfel"
+msgstr "Gabim Shtypësi"
 
 #: wx/tools/Editra/src/ed_print.py:232
 #, python-format
 msgid "Page: %d"
-msgstr "Sida: %d"
+msgstr "Faqe: %d"
 
 #: wx/tools/Editra/src/ed_script.py:203 wx/tools/Editra/src/ed_script.py:213
 msgid "Macro Manager"
-msgstr "Makrohanterare"
+msgstr "Përgjegjës Makrosh"
 
 #: wx/tools/Editra/src/ed_script.py:204
 msgid "View and Edit Macros"
-msgstr "Visa och redigera makron"
+msgstr "Shihni dhe Përpunoni Makro"
 
 #: wx/tools/Editra/src/ed_search.py:64 wx/tools/Editra/src/ed_search.py:68
 msgid "DECODING ERROR"
-msgstr "AVKODNINGSFEL"
+msgstr "GABIM SHKODIMI"
 
 #: wx/tools/Editra/src/ed_search.py:149 wx/tools/Editra/src/ed_search.py:153
 #: wx/tools/Editra/src/ed_toolbar.py:94
 msgid "Find/Replace"
-msgstr "Sök/Ersätt"
+msgstr "Gjej/Zëvendëso"
 
 #: wx/tools/Editra/src/ed_search.py:310
 #, python-format
 msgid "The search term '%(term)s' was found %(count)d times."
-msgstr "Söktermen '%(term)s' hittades %(count)d gånger."
+msgstr "Termi i kërkimit '%(term)s' u gjet %(count)d herë."
 
 #: wx/tools/Editra/src/ed_search.py:311
 msgid "Find Count"
-msgstr "Sökträffar"
+msgstr "Numër Gjetjesh"
 
 #: wx/tools/Editra/src/ed_search.py:351
 #, python-format
 msgid "Invalid expression \"%s\""
-msgstr "Ogiltigt uttryck \"%s\""
+msgstr "Shprehje e pavlefshme \"%s\""
 
 #: wx/tools/Editra/src/ed_search.py:352
 msgid "Regex Compile Error"
-msgstr "Reguttr-kompileringsfel"
+msgstr "Gabim Përpilimi Regex"
 
 #: wx/tools/Editra/src/ed_search.py:405
 msgid "Search wrapped to top"
-msgstr "Sökning började om högst upp"
+msgstr "Kërkimi i mbështjellë sipër"
 
 #: wx/tools/Editra/src/ed_search.py:410
 msgid "Search wrapped to bottom"
-msgstr "Sökning började om längst ned"
+msgstr "Kërkimi i mbështjellë poshtë"
 
 #: wx/tools/Editra/src/ed_search.py:431
 #, python-format
 msgid "\"%s\" was not found"
-msgstr "\"%s\" hittades inte"
+msgstr "\"%s\" s’u gjet"
 
 #: wx/tools/Editra/src/ed_search.py:539 wx/tools/Editra/src/ed_search.py:700
 #, python-format
@@ -3775,93 +3787,94 @@ msgid ""
 "\n"
 "Error Message: %s"
 msgstr ""
-"Fel i expansion av reguljärt uttryck. Ersätt-åtgärden kan inte slutföras.\n"
+"Gabim në zgjerim shprehjeje të rregullt. Veprimi i zëvendësimeve nuk mund të "
+"plotësohet.\n"
 "\n"
-"Felmeddelande: %s"
+"Mesazh Gabimi: %s"
 
 #: wx/tools/Editra/src/ed_search.py:542 wx/tools/Editra/src/ed_search.py:703
 msgid "Replace Error"
-msgstr "Ersätt-fel"
+msgstr "Gabim Zëvendësimi"
 
 #: wx/tools/Editra/src/ed_search.py:612
 msgid "Sorry will be ready for next version"
-msgstr "Tyvärr, kommer vara färdigt inför nästa version"
+msgstr "Na ndjeni, do të jetë gati në versionin pasues"
 
 #: wx/tools/Editra/src/ed_search.py:613
 msgid "Not implemented"
-msgstr "Inte implementerat"
+msgstr "Ende e pasendërtuar"
 
 #: wx/tools/Editra/src/ed_search.py:633
 #, python-format
 msgid "%d matches were replaced."
-msgstr "%d matchningar ersattes."
+msgstr "U zëvendësuan %d gjetje."
 
 #: wx/tools/Editra/src/ed_search.py:796
 msgid "Recent Searches"
-msgstr "Senaste sökningar"
+msgstr "Kërkime Së Fundi"
 
 #: wx/tools/Editra/src/ed_search.py:1271
 msgid "Search Started"
-msgstr "Sökning startad"
+msgstr "Kërkimi u Fillua"
 
 #: wx/tools/Editra/src/ed_search.py:1290
 msgid "Search complete"
-msgstr "Sökning slutförd"
+msgstr "Kërkim i plotësuar"
 
 #: wx/tools/Editra/src/ed_search.py:1297
 #, python-format
 msgid "Search Complete: %d matching lines where found."
-msgstr "Sökning slutförd: %d matchande rader hittades."
+msgstr "Kërkim i Plotësuar: u gjetën %d rreshta me përputhje."
 
 #: wx/tools/Editra/src/ed_search.py:1298
 #, python-format
 msgid "Files Searched: %d"
-msgstr "Filer genomsökta: %d"
+msgstr "Kartela të Kërkuara: %d"
 
 #: wx/tools/Editra/src/ed_search.py:1381
 #, python-format
 msgid "Searching in: %s"
-msgstr "Söker i: %s"
+msgstr "Po kërkohet te: %s"
 
 #: wx/tools/Editra/src/ed_shelf.py:117
 msgid "Shelf"
-msgstr "Hylla"
+msgstr "Raft"
 
 #: wx/tools/Editra/src/ed_shelf.py:118
 msgid "Put an item on the Shelf"
-msgstr "Stoppa ett objekt på hyllan"
+msgstr "Vendosni një objekt te Rafti"
 
 #: wx/tools/Editra/src/ed_shelf.py:351
 msgid "Show Shelf"
-msgstr "Visa hylla"
+msgstr "Shfaq Raft"
 
 #: wx/tools/Editra/src/ed_shelf.py:353
 msgid "Show the Shelf"
-msgstr "Visa hyllan"
+msgstr "Shfaq Raftin"
 
 #: wx/tools/Editra/src/ed_statbar.py:62 wx/tools/Editra/src/ed_statbar.py:64
 #: wx/tools/Editra/src/ed_statbar.py:66
 #, python-format
 msgid "Change line endings to %s"
-msgstr "Ändra radsluten till %s"
+msgstr "Ndrysho funde rreshtash në %s"
 
 #: wx/tools/Editra/src/ed_statbar.py:184
 msgid "Change the encoding of the current document."
-msgstr "Ändra kodningen för det aktuella dokumentet."
+msgstr "Ndryshoni kodimin e dokumentit të tanishëm."
 
 #: wx/tools/Editra/src/ed_statbar.py:185
 msgid "Change Encoding"
-msgstr "Ändra kodning"
+msgstr "Ndryshoni Kodimin"
 
 #: wx/tools/Editra/src/ed_stc.py:563
 #, python-format
 msgid "File backup performed: %s"
-msgstr "Säkerhetskopiering av fil utförd: %s"
+msgstr "U krye kopjeruajtja e kartelës: %s"
 
 #: wx/tools/Editra/src/ed_stc.py:697
 #, python-format
 msgid "Line: %(lnum)d  Column: %(cnum)d"
-msgstr "Rad: %(lnum)d  Kolumn: %(cnum)d"
+msgstr "Rreshti: %(lnum)d  Shtylla: %(cnum)d"
 
 #: wx/tools/Editra/src/ed_stc.py:1097
 msgid ""
@@ -3869,168 +3882,170 @@ msgid ""
 "\n"
 "Would you like to format them to all be the same?"
 msgstr ""
-"Blandade radslutstecken upptäcktes.\n"
+"U pikasën shenja të përziera EOL.\n"
 "\n"
-"Vill du formatera dem så att alla är samma?"
+"Do të donit që të formatohen për të qenë njësoj?"
 
 #: wx/tools/Editra/src/ed_stc.py:1100
 msgid "Format EOL?"
-msgstr "Formatera radslut?"
+msgstr "Të formatohet EOL?"
 
 #: wx/tools/Editra/src/ed_stc.py:1355
 msgid "Recording Macro"
-msgstr "Spelar in makro"
+msgstr "Regjistrim Makroje"
 
 #: wx/tools/Editra/src/ed_stc.py:1368
 msgid "Recording Finished"
-msgstr "Inspelning färdig"
+msgstr "Regjistrimi Përfundoi"
 
 #: wx/tools/Editra/src/ed_stc.py:1674
 #, python-format
 msgid "%s does not exist"
-msgstr "%s finns inte"
+msgstr "%s s’ekziston"
 
 #: wx/tools/Editra/src/ed_stc.py:1721
 msgid "File is Read Only and cannot be saved"
-msgstr "Fil är skrivskyddad och kan inte sparas"
+msgstr "Kartela është Vetëm për Lexim dhe s’mund të ruhet"
 
 #: wx/tools/Editra/src/ed_toolbar.py:77
 msgid "Start a New File"
-msgstr "Starta en ny fil"
+msgstr "Filloni një Kartelë të Re"
 
 #: wx/tools/Editra/src/generator.py:117
 msgid "Generator"
-msgstr "Skapare"
+msgstr "Prodhues"
 
 #: wx/tools/Editra/src/generator.py:118
 msgid "Generate Code and Documents"
-msgstr "Skapa kod och dokument"
+msgstr "Prodhoni Kod dhe Dokumentime"
 
 #: wx/tools/Editra/src/generator.py:291 wx/tools/Editra/src/generator.py:678
 #: wx/tools/Editra/src/generator.py:881
 #, python-format
 msgid "Generate %s"
-msgstr "Skapa %s"
+msgstr "Prodho %s"
 
 #: wx/tools/Editra/src/generator.py:292 wx/tools/Editra/src/generator.py:882
 #, python-format
 msgid "Generate a %s version of the current document"
-msgstr "Skapa en %s-version av det aktuella dokumentet"
+msgstr "Prodhoni një version %s të dokumentit të tanishëm"
 
 #: wx/tools/Editra/src/generator.py:679
 #, python-format
 msgid "Generate an %s version of the current document"
-msgstr "Skapa en %s-version av det aktuella dokumentet"
+msgstr "Prodhoni një version %s të dokumentit të tanishëm"
 
 #: wx/tools/Editra/src/perspective.py:72
 msgid "Save Current View"
-msgstr "Spara aktuell vy"
+msgstr "Ruaje Pamjen e Tanishme"
 
 #: wx/tools/Editra/src/perspective.py:73
 msgid "Save the current window layout"
-msgstr "Spara den aktuella fönsterlayouten"
+msgstr "Ruaj skemën e tanishme të dritares"
 
 #: wx/tools/Editra/src/perspective.py:74
 msgid "Delete Saved View"
-msgstr "Ta bort sparad vy"
+msgstr "Fshije Pamjen e Ruajtur"
 
 #: wx/tools/Editra/src/perspective.py:76
 msgid "Automatic"
-msgstr "Automatiskt"
+msgstr "Automatike"
 
 #: wx/tools/Editra/src/perspective.py:77
 msgid "Automatically save/use window state from last session"
-msgstr "Spara/använd automatiskt fönstertillstånd från förra sessionen"
+msgstr "Ruaj/përdor automatikisht gjendje dritare nga sesioni i fundit"
 
 #: wx/tools/Editra/src/perspective.py:130
 #, python-format
 msgid "Change view to \"%s\""
-msgstr "Ändra vy till \"%s\""
+msgstr "Ndryshoje pamjen në \"%s\""
 
 #: wx/tools/Editra/src/perspective.py:252
 msgid "Perspective Name"
-msgstr "Perspektivnamn"
+msgstr "Emër Perspektive"
 
 #: wx/tools/Editra/src/perspective.py:253
 msgid "Save Perspective"
-msgstr "Spara perspektiv"
+msgstr "Ruaj Perspektivë"
 
 #: wx/tools/Editra/src/perspective.py:269
 msgid "Perspective to Delete"
-msgstr "Perspektiv att ta bort"
+msgstr "Perspektivë për Fshirje"
 
 #: wx/tools/Editra/src/perspective.py:270
 msgid "Delete Perspective"
-msgstr "Ta bort perspektiv"
+msgstr "Fshije Perspektivën"
 
 #: wx/tools/Editra/src/plugdlg.py:121 wx/tools/Editra/src/plugdlg.py:958
 msgid "Configure"
-msgstr "Konfigurera"
+msgstr "Formësojeni"
 
 #: wx/tools/Editra/src/plugdlg.py:122 wx/tools/Editra/src/plugdlg.py:462
 #: wx/tools/Editra/src/plugdlg.py:1110 wx/tools/Editra/src/prefdlg.py:1524
 msgid "Download"
-msgstr "Hämta"
+msgstr "Shkarkoje"
 
 #: wx/tools/Editra/src/plugdlg.py:123 wx/tools/Editra/src/plugdlg.py:765
 msgid "Install"
-msgstr "Installera"
+msgstr "Instaloje"
 
 #: wx/tools/Editra/src/plugdlg.py:131
 msgid "Errors"
-msgstr "Fel"
+msgstr "Gabime"
 
 #: wx/tools/Editra/src/plugdlg.py:180
 msgid "Downloads are incomplete"
-msgstr "Hämtningar är ofullständiga"
+msgstr "Shkarkimet s’janë të plotë"
 
 #: wx/tools/Editra/src/plugdlg.py:181
 msgid "Do you wish to exit?"
-msgstr "Vill du avsluta?"
+msgstr "Doni vërtet të dilet?"
 
 #: wx/tools/Editra/src/plugdlg.py:192
 msgid "You must restart Editra before your changes will take full effect."
-msgstr "Du måste starta om Editra för att dina ändringar ska ha full effekt."
+msgstr ""
+"Duhet të rinisni Editra-n përpara se të hyjnë plotësisht në fuqi ndryshimet "
+"tuajat."
 
 #: wx/tools/Editra/src/plugdlg.py:194
 msgid "Configuration Changes Made"
-msgstr "Konfigurationsändringar har gjorts"
+msgstr "U bënë Ndryshime Formësimi"
 
 #: wx/tools/Editra/src/plugdlg.py:234
 msgid "Changes will take effect once the program has been restarted"
-msgstr "Ändringar kommer att börja gälla då programmet startats om"
+msgstr "Ndryshimet do të hyjnë në fuqi pasi të riniset programi"
 
 #: wx/tools/Editra/src/plugdlg.py:372 wx/tools/Editra/src/plugin.py:723
 msgid "No Description Available"
-msgstr "Ingen beskrivning tillgänglig"
+msgstr "Nuk Ka Përshkrim"
 
 #: wx/tools/Editra/src/plugdlg.py:410
 msgid "This plugin requires a newer version of Editra."
-msgstr "Denna insticksmodul kräver en nyare version av Editra."
+msgstr "Kjo shtojcë lyp version më të ri të Editra-s."
 
 #: wx/tools/Editra/src/plugdlg.py:485
 msgid "Downloaded"
-msgstr "Hämtade"
+msgstr "U shkarkua"
 
 #: wx/tools/Editra/src/plugdlg.py:488
 msgid "Finished downloading plugins"
-msgstr "Slutförde hämtning av insticksmoduler"
+msgstr "U përfunduan shkarkimet e shtojcave"
 
 #: wx/tools/Editra/src/plugdlg.py:503
 msgid "Select plugins to download"
-msgstr "Välj insticksmoduler att hämta"
+msgstr "Përzgjidhni shtojca për shkarkim"
 
 #: wx/tools/Editra/src/plugdlg.py:508
 msgid "Unable to retrieve plugin list"
-msgstr "Kunde inte erhålla lista över insticksmoduler"
+msgstr "S’arrihet të merret lista e shtojcave"
 
 #: wx/tools/Editra/src/plugdlg.py:597 wx/tools/Editra/src/updater.py:606
 msgid "Downloading"
-msgstr "Hämtar"
+msgstr "Po shkarkohet"
 
 #: wx/tools/Editra/src/plugdlg.py:675
 msgid "Retrieving Plugin List"
-msgstr "Erhåller lista över insticksmoduler"
+msgstr "Po merret Listë Shtojcash"
 
 #: wx/tools/Editra/src/plugdlg.py:754
 msgid ""
@@ -4038,55 +4053,57 @@ msgid ""
 "\n"
 "To remove an item select it and hit Delete or Backspace."
 msgstr ""
-"För att lägga till en ny post, dra och släpp insticksfilen i listan.\n"
+"Që të shtoni një element të ri tërhiqeni dhe lëreni te lista kartelën e "
+"shtojcës.\n"
 "\n"
-"För att ta bort en post, välj den och tryck Delete eller backsteg."
+"Që të hiqet një element, përzgjidheni dhe shtypni tastin Delete ose "
+"Backspace."
 
 #: wx/tools/Editra/src/plugdlg.py:767
 msgid "User Directory"
-msgstr "Användarkatalog"
+msgstr "Drejtori Përdoruesi"
 
 #: wx/tools/Editra/src/plugdlg.py:769
 msgid "Install the plugins only for the current user"
-msgstr "Installera insticksmodulerna endast för den aktuella användaren"
+msgstr "Instaloje shtojcën vetëm për përdoruesin e tanishëm"
 
 #: wx/tools/Editra/src/plugdlg.py:771
 msgid "System Directory"
-msgstr "Systemkatalog"
+msgstr "Drejtori Sistemi"
 
 #: wx/tools/Editra/src/plugdlg.py:772
 msgid ""
 "Install the plugins for all users\n"
 " **requires administrative privileges**"
 msgstr ""
-"Installera insticksmodulerna för alla användare\n"
-" **kräver administratörsprivilegier**"
+"Instaloji shtojcat për krejt përdoruesit\n"
+" **lyp privilegje përgjegjësi**"
 
 #: wx/tools/Editra/src/plugdlg.py:833
 msgid "Successfully Installed Plugins"
-msgstr "Installerade insticksmoduler"
+msgstr "Shtojcat u Instaluan Me Sukses"
 
 #: wx/tools/Editra/src/plugdlg.py:842
 #, python-format
 msgid "Failed to install %d plugins"
-msgstr "Misslyckades med att installera %d insticksmoduler"
+msgstr "Dështoi në instalimin e %d shtojcave"
 
 #: wx/tools/Editra/src/plugdlg.py:844
 msgid "Installation Error"
-msgstr "Installationsfel"
+msgstr "Gabim Instalimi"
 
 #: wx/tools/Editra/src/plugdlg.py:950 wx/tools/Editra/src/plugdlg.py:1131
 #, python-format
 msgid "Author: %s"
-msgstr "Författare: %s"
+msgstr "Autor: %s"
 
 #: wx/tools/Editra/src/plugdlg.py:951
 msgid "Enable"
-msgstr "Aktivera"
+msgstr "Aktivizoje"
 
 #: wx/tools/Editra/src/plugdlg.py:954
 msgid "Uninstall"
-msgstr "Avinstallera"
+msgstr "Çinstaloje"
 
 #: wx/tools/Editra/src/plugdlg.py:1062
 #, python-format
@@ -4094,24 +4111,24 @@ msgid ""
 "Are you sure you want to uninstall %s?\n"
 "This cannot be undone."
 msgstr ""
-"Är du säker på att du vill avinstallera %s?\n"
-"Detta kan inte ångras."
+"Jeni i sigurt se doni të çinstalohet %s?\n"
+"Kjo s’mund të zhbëhet."
 
 #: wx/tools/Editra/src/plugdlg.py:1064
 msgid "Uninstall Plugin"
-msgstr "Avinstallera insticksmodul"
+msgstr "Çinstalojeni Shtojcën"
 
 #: wx/tools/Editra/src/plugdlg.py:1068
 msgid "This plugin will be uninstalled on next program launch."
-msgstr "Denna insticksmodul kommer att avinstalleras vid nästa programstart."
+msgstr "Kjo shtojcë do të çinstalohet herës tjetër që hapet programi."
 
 #: wx/tools/Editra/src/prefdlg.py:109
 msgid "Preferences - Editra"
-msgstr "Inställningar - Editra"
+msgstr "Parapëlqime - Editra"
 
 #: wx/tools/Editra/src/prefdlg.py:193
 msgid "Appearance"
-msgstr "Utseende"
+msgstr "Dukje"
 
 #: wx/tools/Editra/src/prefdlg.py:195
 msgid "Document"
@@ -4119,147 +4136,147 @@ msgstr "Dokument"
 
 #: wx/tools/Editra/src/prefdlg.py:197
 msgid "Network"
-msgstr "Nätverk"
+msgstr "Rrjet"
 
 #: wx/tools/Editra/src/prefdlg.py:199
 msgid "Advanced"
-msgstr "Avancerat"
+msgstr "Të mëtejshme"
 
 #: wx/tools/Editra/src/prefdlg.py:284
 msgid ""
 "Changes made in this dialog are saved in your current profile. Some Items "
 "such as Language require the program to be restarted before taking effect."
 msgstr ""
-"Ändringar som görs i denna dialogruta sparas i din aktuella profil. Vissa "
-"poster så som Språk kräver att programmet startas om innan de börjar gälla."
+"Ndryshimet e bëra nën këtë dialog ruhen te profili juaj i tanishëm. Disa "
+"Elementë, të tillë si Gjuha, lypin rinisje të programit, pa të hyjnë në fuqi."
 
 #: wx/tools/Editra/src/prefdlg.py:306
 msgid "Startup"
-msgstr "Uppstart"
+msgstr "Nisje"
 
 #: wx/tools/Editra/src/prefdlg.py:385
 msgid "Editor Mode"
-msgstr "Redigerarläge"
+msgstr "Mënyrë Përpunues"
 
 #: wx/tools/Editra/src/prefdlg.py:393
 msgid "Printer Mode"
-msgstr "Skrivarläge"
+msgstr "Mënyrë Shtypës"
 
 #: wx/tools/Editra/src/prefdlg.py:401
 msgid "Disable Error Reporter"
-msgstr "Inaktivera felrapportör"
+msgstr "Çaktivizo Njoftues Gabimesh"
 
 #: wx/tools/Editra/src/prefdlg.py:403
 msgid "Load Last Session"
-msgstr "Läs in senaste session"
+msgstr "Ngarko Sesionin e Fundit"
 
 #: wx/tools/Editra/src/prefdlg.py:405
 msgid "Load files from last session on startup"
-msgstr "Läs in filer från senaste session vid uppstart"
+msgstr "Ngarko gjatë nisjes kartela prej sesionit të fundit"
 
 #: wx/tools/Editra/src/prefdlg.py:407
 msgid "Show Splash Screen"
-msgstr "Visa startskärm"
+msgstr "Shfaqe Siglën"
 
 #: wx/tools/Editra/src/prefdlg.py:414
 msgid "Check for updates on startup"
-msgstr "Sök efter uppdateringar vid uppstart"
+msgstr "Kontrollo për përditësime gjatë nisjes"
 
 #: wx/tools/Editra/src/prefdlg.py:419
 msgid "Language"
-msgstr "Språk"
+msgstr "Gjuhë"
 
 #: wx/tools/Editra/src/prefdlg.py:429
 msgid "Startup Settings"
-msgstr "Uppstartsinställningar"
+msgstr "Rregullime Nisjeje"
 
 #: wx/tools/Editra/src/prefdlg.py:440
 msgid "Locale Settings"
-msgstr "Lokala inställningar"
+msgstr "Rregullime Vendore"
 
 #: wx/tools/Editra/src/prefdlg.py:477
 msgid "File History Length"
-msgstr "Längd på filhistorik"
+msgstr "Gjatësi Historiku Kartelash"
 
 #: wx/tools/Editra/src/prefdlg.py:496
 msgid "Encoding to try when auto detection fails"
-msgstr "Kodning att prova då automatisk upptäckt misslyckas"
+msgstr "Kodim që duhet provuar kur dështon vetëzbulimi"
 
 #: wx/tools/Editra/src/prefdlg.py:498
 msgid "Prefered Encoding"
-msgstr "Föredragen kodning"
+msgstr "Kodim i Parapëlqyer"
 
 #: wx/tools/Editra/src/prefdlg.py:502
 msgid "Automatically Backup Files"
-msgstr "Säkerhetskopiera automatiskt filer"
+msgstr "Kopjeruaji Kartelat Vetvetiu"
 
 #: wx/tools/Editra/src/prefdlg.py:505
 msgid "Backup buffer to file periodically"
-msgstr "Säkerhetskopiera periodiskt buffert till fil"
+msgstr "Kopjeruaje të përkohshmen periodikisht në kartelë"
 
 #: wx/tools/Editra/src/prefdlg.py:508
 msgid "Backup Path:"
-msgstr "Sökväg till säkerhetskopia:"
+msgstr "Shteg Kopjeruajtjeje:"
 
 #: wx/tools/Editra/src/prefdlg.py:513
 msgid ""
 "Used to set a custom backup path. If not specified the backup will be put in "
 "the same directory as the file."
 msgstr ""
-"Används för att ställa in en anpassad sökväg för säkerhetskopior. Om ej "
-"angiven kommer säkerhetskopian att läggas i samma katalog som filen."
+"I përdorur për të caktuar një shteg vetjak kopjeruajtjesh. Nëse s’"
+"përcaktohet, kopjeruajtja do të vendoset në të njëjtën drejtori me kartelën."
 
 #: wx/tools/Editra/src/prefdlg.py:523
 msgid "Open files in new windows by default"
-msgstr "Öppna filer i nya fönster som standard"
+msgstr "Si parazgjedhje, hapi kartelat në dritare të re"
 
 #: wx/tools/Editra/src/prefdlg.py:526
 msgid "Remember File Position"
-msgstr "Kom ihåg filposition"
+msgstr "Mbaje Mend Pozicionin e Kartelës"
 
 #: wx/tools/Editra/src/prefdlg.py:529
 msgid "Check if on disk file has been modified by others"
-msgstr "Kontrollera om fil på disk har ändrats av andra"
+msgstr "Kontrollo nëse kartela në disk është ndryshuar nga të tjerë"
 
 #: wx/tools/Editra/src/prefdlg.py:534
 msgid "Automatically reload files when changes are detected on disk"
-msgstr "Läs automatiskt om filer då ändringar upptäcks på disk"
+msgstr "Ngarkoji vetvetiu kartelat, kur pikasen ndryshime në disk"
 
 #: wx/tools/Editra/src/prefdlg.py:539
 msgid "Warn when mixed eol characters are detected"
-msgstr "Varna då blandade radslutstecken upptäcks"
+msgstr "Sinjalizo kur pikasen shenja EOL të përziera"
 
 #: wx/tools/Editra/src/prefdlg.py:545
 msgid "File Settings"
-msgstr "Filinställningar"
+msgstr "Rregullime Kartele"
 
 #: wx/tools/Editra/src/prefdlg.py:559
 msgid "Spell Checking"
-msgstr "Stavningskontroll"
+msgstr "Kontroll Drejtshkrimi"
 
 #: wx/tools/Editra/src/prefdlg.py:563
 msgid "Check spelling while typing"
-msgstr "Kontrollera stavning under tiden text skrivs"
+msgstr "Kontrollo drejtshkrimin teksa shtypet"
 
 #: wx/tools/Editra/src/prefdlg.py:570
 msgid "Dictionary"
-msgstr "Ordlista"
+msgstr "Fjalor"
 
 #: wx/tools/Editra/src/prefdlg.py:580
 msgid "Enchant Path"
-msgstr "Enchant-sökväg"
+msgstr "Shteg Enchant-i"
 
 #: wx/tools/Editra/src/prefdlg.py:585 wx/tools/Editra/src/prefdlg.py:586
 msgid "Path to libenchant"
-msgstr "Sökväg till libenchant"
+msgstr "Shteg libenchant-i"
 
 #: wx/tools/Editra/src/prefdlg.py:649
 msgid "Failed to load Enchant"
-msgstr "Misslyckades med att läsa in Enchant"
+msgstr "Dështoi në ngarkimin e Enchant-it"
 
 #: wx/tools/Editra/src/prefdlg.py:650
 msgid "Library Error"
-msgstr "Biblioteksfel"
+msgstr "Gabim Librarie"
 
 #: wx/tools/Editra/src/prefdlg.py:678
 msgid "Code"
@@ -4267,47 +4284,47 @@ msgstr "Kod"
 
 #: wx/tools/Editra/src/prefdlg.py:726
 msgid "Tab Width"
-msgstr "Tabbredd"
+msgstr "Gjerësi Tabulacioni"
 
 #: wx/tools/Editra/src/prefdlg.py:734
 msgid "Indent Width"
-msgstr "Indenteringsbredd"
+msgstr "Gjerësi për Brendazi"
 
 #: wx/tools/Editra/src/prefdlg.py:742
 msgid "Automatically trim whitespace on save"
-msgstr "Trimma automatiskt ned blanktecken vid sparning"
+msgstr "Qethi vetvetiu hapësirat e zbrazëta gjatë ruajtjesh"
 
 #: wx/tools/Editra/src/prefdlg.py:745
 msgid "Use Tabs Instead of Spaces"
-msgstr "Använd tabbar istället för blanksteg"
+msgstr "Përdor Tabulacione Në Vend Se Hapësira"
 
 #: wx/tools/Editra/src/prefdlg.py:748
 msgid "Backspace Unindents"
-msgstr "Backsteg avindenterar"
+msgstr ""
 
 #: wx/tools/Editra/src/prefdlg.py:760
 msgid "Default EOL Mode"
-msgstr "Standardradslutsläge"
+msgstr "Mënyrë Parazgjedhje për EOL"
 
 #: wx/tools/Editra/src/prefdlg.py:765
 msgid "AntiAliasing"
-msgstr "Kantutjämning"
+msgstr ""
 
 #: wx/tools/Editra/src/prefdlg.py:775
 msgid "Turn off for better performance"
-msgstr "Slå av för bättre prestanda"
+msgstr "Për punim më të mirë, çaktivizojeni"
 
 #: wx/tools/Editra/src/prefdlg.py:782
 msgid "Sets the main/default font of the document"
-msgstr "Ställer in huvud/standardtypsnittet för dokumentet"
+msgstr "Cakton shkronjat kryesore/parazgjedhje për dokumentin"
 
 #: wx/tools/Editra/src/prefdlg.py:787
 msgid ""
 "Sets a secondary font used for special regions when syntax highlighting is "
 "in use"
 msgstr ""
-"Ställer in ett sekundärt typsnitt som används för speciella områden då "
-"syntaxfärgning används"
+"Cakton një palë shkronja dytësore të përdorura për zona speciale, kur "
+"theksimi i sintaksës është i aktivizuar"
 
 #: wx/tools/Editra/src/prefdlg.py:794
 msgid "Format"
@@ -4315,370 +4332,352 @@ msgstr "Format"
 
 #: wx/tools/Editra/src/prefdlg.py:802
 msgid "View Options"
-msgstr "Visningsalternativ"
+msgstr "Shihni Mundësitë"
 
 #: wx/tools/Editra/src/prefdlg.py:809
 msgid "Primary Font"
-msgstr "Primärt typsnitt"
+msgstr "Shkronja Parësore"
 
 #: wx/tools/Editra/src/prefdlg.py:812
 msgid "Secondary Font"
-msgstr "Sekundärt typsnitt"
+msgstr "Shkronja Dytësore"
 
-# TODO: Highlighting
 #: wx/tools/Editra/src/prefdlg.py:911
 msgid "Default highlighing for new documents"
-msgstr "Standardmarkering för nya dokument"
+msgstr "Theksim parazgjedhje për dokumente të reja"
 
 #: wx/tools/Editra/src/prefdlg.py:913
 msgid "Default Lexer"
-msgstr "Standardlexer"
+msgstr "Fjalëzues Parazgjedhje"
 
 #: wx/tools/Editra/src/prefdlg.py:918
 msgid "Visual Helpers"
-msgstr "Visuell hjälp"
+msgstr "Ndihmues Pamorë"
 
 #: wx/tools/Editra/src/prefdlg.py:924
 msgid "Edge Guide"
-msgstr "Kantlinje"
+msgstr "Udhëzues Anësh"
 
 #: wx/tools/Editra/src/prefdlg.py:928
 msgid "Guide Column"
-msgstr "Hjälpkolumn"
+msgstr "Shtyllë Udhërrëfyesi"
 
 #: wx/tools/Editra/src/prefdlg.py:943
 msgid "Extended Auto-Comp"
-msgstr "Utökad automatisk komplettering"
+msgstr "Vetë-plotësim i Zgjeruar"
 
 #: wx/tools/Editra/src/prefdlg.py:946
 msgid "Warning suggestions will include context insensitive results"
-msgstr "Varning: förslag kommer att inkludera kontextoberoende resultat"
+msgstr ""
 
 #: wx/tools/Editra/src/prefdlg.py:952
 msgid "Enable Vi Emulation"
-msgstr "Aktivera Vi-emulering"
+msgstr "Aktivizo Emulim Vi-je"
 
 #: wx/tools/Editra/src/prefdlg.py:955
 msgid "Start in Normal Mode"
-msgstr "Starta i normalläge"
+msgstr "Fillo nën Mënyrën Normale"
 
 #: wx/tools/Editra/src/prefdlg.py:973
 msgid "Input Helpers"
-msgstr "Indatahjälp"
+msgstr ""
 
 #: wx/tools/Editra/src/prefdlg.py:1089
 msgid "Filetype Associations"
-msgstr "Filtypsassociationer"
+msgstr "Përshoqërime Llojesh Kartele"
 
 #: wx/tools/Editra/src/prefdlg.py:1106 wx/tools/Editra/src/prefdlg.py:1761
 msgid "Revert to Default"
-msgstr "Återställ till standard"
+msgstr "Riktheje te Parazgjedhja"
 
 #: wx/tools/Editra/src/prefdlg.py:1175
 msgid "Icon Theme"
-msgstr "Ikontema"
+msgstr "Temë Ikonash"
 
 #: wx/tools/Editra/src/prefdlg.py:1180
 msgid "Toolbar Icon Size"
-msgstr "Storlek för verktygsfältsikoner"
+msgstr "Madhësi Ikone Paneli"
 
 #: wx/tools/Editra/src/prefdlg.py:1186
 msgid "Show Icons on Tabs"
-msgstr "Visa ikoner på flikar"
+msgstr "Shfaq Ikona në Skeda"
 
 #: wx/tools/Editra/src/prefdlg.py:1197
 msgid "Default Perspective"
-msgstr "Standardperspektiv"
+msgstr "Perspektivë Parazgjedhje"
 
 #: wx/tools/Editra/src/prefdlg.py:1202
 msgid "Remember Window Size on Exit"
-msgstr "Kom ihåg fönsterstorlek vid avslut"
+msgstr "Mba Mend Madhësi Dritareje Teksa Dilet"
 
 #: wx/tools/Editra/src/prefdlg.py:1205
 msgid "Remember Window Position on Exit"
-msgstr "Kom ihåg fönsterposition vid avslut"
+msgstr "Mba Mend Pozicion Dritareje Teksa Dilet"
 
 #: wx/tools/Editra/src/prefdlg.py:1215
 msgid "Main display font for various UI components"
-msgstr "Huvudsakligt visningstypsnitt för diverse gränssnittskomponenter"
+msgstr "Shkronjat kryesore paraqitjeje për përbërës të ndryshëm UI"
 
 #: wx/tools/Editra/src/prefdlg.py:1220
 msgid "Icons"
-msgstr "Ikoner"
+msgstr "Ikona"
 
 #: wx/tools/Editra/src/prefdlg.py:1225
 msgid "Layout"
-msgstr "Layout"
+msgstr "Skemë"
 
 #: wx/tools/Editra/src/prefdlg.py:1233
 msgid "Transparency"
-msgstr "Transparens"
+msgstr "Tejdukshmëri"
 
 #: wx/tools/Editra/src/prefdlg.py:1239
 msgid "Display Font"
-msgstr "Visningstypsnitt"
+msgstr "Shkronja Ekrani"
 
 #: wx/tools/Editra/src/prefdlg.py:1339
 msgid "Configuration"
-msgstr "Konfiguration"
+msgstr "Formësim"
 
 #: wx/tools/Editra/src/prefdlg.py:1343
 msgid "Update"
-msgstr "Uppdatera"
+msgstr "Përditësoje"
 
 #: wx/tools/Editra/src/prefdlg.py:1376
 msgid "Proxy Settings"
-msgstr "Proxy-inställningar"
+msgstr "Rregullime Ndërmjetësi"
 
 #: wx/tools/Editra/src/prefdlg.py:1381
 msgid "Use Proxy"
-msgstr "Använd proxy"
+msgstr "Përdorni Ndërmjetës"
 
 #: wx/tools/Editra/src/prefdlg.py:1386
 msgid "Proxy URL"
-msgstr "Proxy-URL"
+msgstr "URL Ndërmjetësi"
 
 #: wx/tools/Editra/src/prefdlg.py:1390
 msgid "Port Number"
-msgstr "Portnummer"
+msgstr "Numër Porte"
 
 #: wx/tools/Editra/src/prefdlg.py:1398
 msgid "Username"
-msgstr "Användarnamn"
+msgstr "Emër përdoruesi"
 
 #: wx/tools/Editra/src/prefdlg.py:1405
 msgid "Password"
-msgstr "Lösenord"
+msgstr "Fjalëkalim"
 
 #: wx/tools/Editra/src/prefdlg.py:1505
 msgid "Installed Version"
-msgstr "Installerad version"
+msgstr "Version i Instaluar"
 
 #: wx/tools/Editra/src/prefdlg.py:1511
 msgid "Latest Version"
-msgstr "Senaste version"
+msgstr "Versioni Më i Ri"
 
 #: wx/tools/Editra/src/prefdlg.py:1529
 msgid "Check"
-msgstr "Kontrollera"
+msgstr "Kontrollo"
 
 #: wx/tools/Editra/src/prefdlg.py:1617
 msgid "Keybindings"
-msgstr "Tangentbindningar"
+msgstr "Përshoqërime tastesh"
 
 #: wx/tools/Editra/src/prefdlg.py:1702
 msgid "Key Profile"
-msgstr "Tangentprofil"
+msgstr "Profil Tastesh"
 
 #: wx/tools/Editra/src/prefdlg.py:1715
 msgid "Menu"
-msgstr "Meny"
+msgstr "Menu"
 
 #: wx/tools/Editra/src/prefdlg.py:1725
 msgid "Modifier 1"
-msgstr "Modifierare 1"
+msgstr "Modifikues 1"
 
 #: wx/tools/Editra/src/prefdlg.py:1729
 msgid "Modifier 2"
-msgstr "Modifierare 2"
+msgstr "Modifikues 2"
 
 #: wx/tools/Editra/src/prefdlg.py:1733
 msgid "Key"
-msgstr "Tangent"
+msgstr "Tast"
 
 #: wx/tools/Editra/src/prefdlg.py:1737
 msgid "Binding"
-msgstr "Bindning"
+msgstr "Përshoqërim"
 
 #: wx/tools/Editra/src/prefdlg.py:1763
 msgid "Apply"
-msgstr "Verkställ"
+msgstr "Zbatoje"
 
 #: wx/tools/Editra/src/prefdlg.py:1799
 msgid "None"
-msgstr "Ingen"
+msgstr "Asnjë"
 
 #: wx/tools/Editra/src/prefdlg.py:1900
 msgid "New Profile"
-msgstr "Ny profil"
+msgstr "Profil i Ri"
 
 #: wx/tools/Editra/src/prefdlg.py:1901
 msgid "Enter the name of the new key profile"
-msgstr "Ange namnet på den nya tangentprofilen"
+msgstr "Jepni emrin e profilit të ri të tasteve"
 
 #: wx/tools/Editra/src/prefdlg.py:2038
 msgid "Lexer"
-msgstr "Lexer"
+msgstr "Fjalëzues"
 
 #: wx/tools/Editra/src/prefdlg.py:2040
 msgid "Extensions (space separated, no dots)"
-msgstr "Filändelser (blankstegsseparerade, inga punkter)"
+msgstr "Zgjatime (ndarë me hapësira, pa pika)"
 
 #: wx/tools/Editra/src/prefdlg.py:2151
 msgid "Black/White"
-msgstr "Svart/Vit"
+msgstr "Bardhë/Zi"
 
 #: wx/tools/Editra/src/prefdlg.py:2152
 msgid "Color/White"
-msgstr "Färg/Vit"
+msgstr "Ngjyrë/E bardhë"
 
 #: wx/tools/Editra/src/prefdlg.py:2153
 msgid "Color/Default"
-msgstr "Färg/Standard"
+msgstr "Ngjyrë/Parazgjedhje"
 
 #: wx/tools/Editra/src/prefdlg.py:2154
 msgid "Inverse"
-msgstr "Inverterad"
+msgstr "Së prapthi"
 
 #: wx/tools/Editra/src/prefdlg.py:2155
 msgid "Normal"
-msgstr "Normal"
+msgstr "Normale"
 
 #: wx/tools/Editra/src/style_editor.py:143
 msgid "Export"
-msgstr "Export"
+msgstr "Eksportoje"
 
 #: wx/tools/Editra/src/style_editor.py:176
 msgid "Syntax Files"
-msgstr "Syntaxfiler"
+msgstr "Kartela Sintakse"
 
 #: wx/tools/Editra/src/style_editor.py:179
 msgid "Set the preview file type"
-msgstr "Ställ in filtypen för förhandsgranskning"
+msgstr "Caktoni lloj paraparje kartelash"
 
 #: wx/tools/Editra/src/style_editor.py:194
 msgid "Style Theme"
-msgstr "Stiltema"
+msgstr "Temë Sili"
 
 #: wx/tools/Editra/src/style_editor.py:198
 msgid "Base new theme on existing one"
-msgstr "Basera nytt tema på existerande sådant"
+msgstr "Bazojeni temën e re në një ekzistuese"
 
 #: wx/tools/Editra/src/style_editor.py:201
 msgid "Start a blank new style"
-msgstr "Starta en ny, tom stil"
+msgstr "Nis një stil të ri të zbrazët"
 
 #: wx/tools/Editra/src/style_editor.py:218
 msgid "Style Tags"
-msgstr "Stiltaggar"
+msgstr "Etiketa Stili"
 
 #: wx/tools/Editra/src/style_editor.py:252
 msgid "Some styles have been changed would you like to save before exiting?"
-msgstr "Några stilar har ändrats, vill du spara innan du avslutar?"
+msgstr "Disa stile janë ndryshuar. Do të donit të ruhen përpara se të dilet?"
 
 #: wx/tools/Editra/src/style_editor.py:254
 msgid "Save Styles"
-msgstr "Spara stilar"
+msgstr "Ruaji Stilet"
 
 #: wx/tools/Editra/src/style_editor.py:294
 msgid "Enter style sheet name"
-msgstr "Ange namn på stilmall"
+msgstr "Jepni emër fletë stili"
 
 #: wx/tools/Editra/src/style_editor.py:295
 msgid "Export Style Sheet"
-msgstr "Exportera stilmall"
+msgstr "Eksporto Fletë Stili"
 
 #: wx/tools/Editra/src/style_editor.py:640
 msgid "Color"
-msgstr "Färg"
+msgstr "Ngjyrë"
 
 #: wx/tools/Editra/src/style_editor.py:644
 msgid "Foreground"
-msgstr "Förgrund"
+msgstr "Përpara"
 
 #: wx/tools/Editra/src/style_editor.py:656
 msgid "Background"
-msgstr "Bakgrund"
+msgstr "Sfond"
 
 #: wx/tools/Editra/src/style_editor.py:667
 msgid "Attributes"
-msgstr "Attribut"
+msgstr "Atribute"
 
 #: wx/tools/Editra/src/style_editor.py:671
 msgid "bold"
-msgstr "fet"
+msgstr "të trasha"
 
 #: wx/tools/Editra/src/style_editor.py:672
 msgid "eol"
-msgstr "radslut"
+msgstr "eol"
 
 #: wx/tools/Editra/src/style_editor.py:673
 msgid "italic"
-msgstr "kursiv"
+msgstr "të pjerrta"
 
 #: wx/tools/Editra/src/style_editor.py:674
 msgid "underline"
-msgstr "understruken"
+msgstr "nënvijë"
 
 #: wx/tools/Editra/src/style_editor.py:683
 msgid "Font Settings"
-msgstr "Typsnittsinställningar"
+msgstr "Rregullime Shkronjash"
 
 #: wx/tools/Editra/src/style_editor.py:688
 msgid "Font"
-msgstr "Typsnitt"
+msgstr "Shkronja"
 
 #: wx/tools/Editra/src/updater.py:147
 msgid "Unable to retrieve version info"
-msgstr "Kan inte erhålla versionsinfo"
+msgstr "S’arrihet të merren të dhëna versioni"
 
 #: wx/tools/Editra/src/updater.py:292
 msgid "Status Unknown"
-msgstr "Status okänd"
+msgstr "Gjendje e Panjohur"
 
 #: wx/tools/Editra/src/updater.py:567
 #, python-format
 msgid "Downloading: %s"
-msgstr "Hämtar: %s"
+msgstr "Po shkarkohet: %s"
 
 #: wx/tools/Editra/src/updater.py:569
 #, python-format
 msgid "Downloading To: %s"
-msgstr "Hämtar till: %s"
+msgstr "Po shkarkohet Te: %s"
 
 #: wx/tools/Editra/src/updater.py:647
 msgid "Canceled"
-msgstr "Avbruten"
+msgstr "E anuluar"
 
 #: wx/tools/Editra/src/updater.py:675
 #, python-format
 msgid "Rate: %.2f Kb/s"
-msgstr "Hastighet: %.2f Kb/s"
+msgstr "Shpejtësi: %.2f Kb/s"
 
 #: wx/tools/Editra/src/updater.py:682
 msgid "Finished"
-msgstr "Färdig"
+msgstr "E përfunduar"
 
 #: wx/tools/Editra/src/updater.py:685
 msgid "Failed"
-msgstr "Misslyckades"
+msgstr "Dështoi"
 
 #: wx/tools/Editra/src/util.py:184
 msgid "Unable to accept dropped file or text"
-msgstr "Kan inte acceptera släppt fil eller text"
+msgstr "S’arrihet të pranohet kartela apo teksti i hedhur"
 
 #: wx/tools/Editra/src/util.py:361
 msgid "Text Document"
-msgstr "Textdokument"
+msgstr "Dokument Tekst"
 
 #: wx/tools/Editra/src/util.py:369
 #, python-format
 msgid "%s Source File"
-msgstr "%s-källfil"
-
-#~ msgid ""
-#~ "\n"
-#~ "To select an event, click on it. To select multiple events, hold down the "
-#~ "*Ctrl* key while clicking events.\n"
-#~ "\n"
-#~ "Selected events are indicated with a striped background:\n"
-#~ "\n"
-#~ "HelpFigure(selected_event)\n"
-#~ msgstr ""
-#~ "\n"
-#~ "För att markera en händelse, klicka på den. För att markera flera händelser, "
-#~ "håll nere *Ctrl* och klicka på händelser.\n"
-#~ "\n"
-#~ "Markerade händelser visas med en streckad bakgrund:\n"
-#~ "\n"
-#~ "HelpFigure(selected_event)\n"
+msgstr "Kartelë Burim %s"

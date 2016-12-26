@@ -8,16 +8,17 @@ msgstr ""
 "Project-Id-Version: thetimelineproj\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-05-28 00:31-0400\n"
-"PO-Revision-Date: 2012-04-22 04:33+0200\n"
-"Last-Translator: Chris <cjl@laptop.org>\n"
+"PO-Revision-Date: 2016-12-09 07:22+0000\n"
+"Last-Translator: unkuiri <unkuiri@gmail.com>\n"
 "Language-Team: Sugar Labs\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Generator: Pootle 2.5.1.1\n"
 "X-Launchpad-Export-Date: 2011-10-30 13:32+0000\n"
+"X-POOTLE-MTIME: 1481268166.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Time Line"
@@ -26,7 +27,7 @@ msgstr "Linha Temporal"
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
 msgid "Allows create interactive time lines"
-msgstr ""
+msgstr "Permite criar linhas de tempo interativas"
 
 #: specs/EventEditor.py:370 timelinelib/editors/event.py:156
 msgid "You can't change time when the Event is locked"
@@ -218,15 +219,15 @@ msgstr "Período exibido deve ser > 0."
 
 #: timelinelib/db/backends/tutorial.py:30
 msgid "Welcome"
-msgstr ""
+msgstr "Bem-vindo"
 
 #: timelinelib/db/backends/tutorial.py:32
 msgid "Welcome to Timeline"
-msgstr ""
+msgstr "Bem-vindo ao LinhaTemporal"
 
 #: timelinelib/db/backends/tutorial.py:35
 msgid "Intro"
-msgstr ""
+msgstr "Introdução"
 
 #: timelinelib/db/backends/tutorial.py:37
 msgid "Hover me!"
