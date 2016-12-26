@@ -3635,7 +3635,7 @@ msgstr ""
 
 #: wx/tools/Editra/src/ed_print.py:232
 #, python-format
-#, python-format, 
+#, python-format,
 msgid "Page: %d"
 msgstr "Whārangi:  %d"
 

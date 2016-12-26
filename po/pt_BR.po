@@ -7,68 +7,69 @@ msgstr ""
 "Project-Id-Version: Timeline 0.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-05-28 00:31-0400\n"
-"PO-Revision-Date: 2010-07-13 16:15+0000\n"
-"Last-Translator: Miguel Mendes Ruiz <Unknown>\n"
+"PO-Revision-Date: 2016-08-20 16:09+0000\n"
+"Last-Translator: Chris <cjl@sugarlabs.org>\n"
 "Language-Team: Brazilian Portuguese <LL@li.org>\n"
-"Language: \n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Launchpad (build 14197)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1.1\n"
 "X-Launchpad-Export-Date: 2011-10-30 13:32+0000\n"
+"X-POOTLE-MTIME: 1471709369.000000\n"
 
 #. TRANS: "name" option from activity.info file
-#, fuzzy
 msgid "Time Line"
-msgstr "Timeline"
+msgstr "Linha do tempo"
 
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
 msgid "Allows create interactive time lines"
-msgstr ""
+msgstr "Permite criar linhas de tempo interativas"
 
 #: specs/EventEditor.py:370 timelinelib/editors/event.py:156
 msgid "You can't change time when the Event is locked"
-msgstr ""
+msgstr "Você não pode mudar o tempo quando Evento está bloqueado"
 
 #: specs/MonthNames.py:33 timelinelib/calendar/monthnames.py:37
 msgid "Jan"
-msgstr ""
+msgstr "Jan"
 
 #: specs/MonthNames.py:48 timelinelib/calendar/monthnames.py:48
 msgid "Dec"
-msgstr ""
+msgstr "Dez"
 
 #: specs/PyTimeType.py:56 specs/WxTimeType.py:82
 #: timelinelib/calendar/monthnames.py:44
 msgid "Aug"
-msgstr ""
+msgstr "Ago"
 
 #: specs/PyTimeType.py:110 specs/PyTimeType.py:130 specs/PyTimeType.py:146
 #: specs/PyTimeType.py:150 specs/WxTimeType.py:150 specs/WxTimeType.py:166
 #: specs/WxTimeType.py:170 timelinelib/time/pytime.py:123
 #: timelinelib/time/wxtime.py:121
 msgid "day"
-msgstr ""
+msgstr "dia"
 
 #: specs/PyTimeType.py:114 specs/PyTimeType.py:138 specs/PyTimeType.py:158
 #: specs/WxTimeType.py:134 specs/WxTimeType.py:158 specs/WxTimeType.py:178
 #: timelinelib/time/pytime.py:131 timelinelib/time/wxtime.py:129
 msgid "minute"
-msgstr ""
+msgstr "minuto"
 
 #: specs/PyTimeType.py:118 specs/PyTimeType.py:142 specs/PyTimeType.py:162
 #: specs/WxTimeType.py:138 specs/WxTimeType.py:162 specs/WxTimeType.py:182
 #: timelinelib/time/pytime.py:133 timelinelib/time/wxtime.py:131
 msgid "minutes"
-msgstr ""
+msgstr "minutos"
 
 #: specs/PyTimeType.py:122 specs/PyTimeType.py:138 specs/PyTimeType.py:142
 #: specs/PyTimeType.py:146 specs/WxTimeType.py:142 specs/WxTimeType.py:158
 #: specs/WxTimeType.py:162 specs/WxTimeType.py:166
 #: timelinelib/time/pytime.py:127 timelinelib/time/wxtime.py:125
 msgid "hour"
-msgstr ""
+msgstr "hora"
 
 #: specs/PyTimeType.py:126 specs/PyTimeType.py:150 specs/PyTimeType.py:154
 #: specs/PyTimeType.py:158 specs/PyTimeType.py:162 specs/WxTimeType.py:146
@@ -76,7 +77,7 @@ msgstr ""
 #: specs/WxTimeType.py:182 specs/WxTimeType.py:186
 #: timelinelib/time/pytime.py:129 timelinelib/time/wxtime.py:127
 msgid "hours"
-msgstr ""
+msgstr "horas"
 
 #: specs/PyTimeType.py:134 specs/PyTimeType.py:154 specs/PyTimeType.py:158
 #: specs/PyTimeType.py:162 specs/PyTimeType.py:166 specs/PyTimeType.py:172
@@ -84,31 +85,31 @@ msgstr ""
 #: specs/WxTimeType.py:182 specs/WxTimeType.py:186 specs/WxTimeType.py:192
 #: timelinelib/time/pytime.py:125 timelinelib/time/wxtime.py:123
 msgid "days"
-msgstr ""
+msgstr "dias"
 
 #: specs/TimelineView.py:66 timelinelib/view/zoom.py:28
 msgid "Select region to zoom into"
-msgstr ""
+msgstr "Escolha uma região para aproximar"
 
 #: specs/TimelineView.py:74 timelinelib/view/zoom.py:38
 msgid "Region too short"
-msgstr ""
+msgstr "Região muito pequena"
 
 #: specs/TimelineView.py:90 timelinelib/view/zoom.py:35
 msgid "Region too long"
-msgstr ""
+msgstr "Região muito grande"
 
 #: specs/TimelineView.py:191 timelinelib/view/drawingarea.py:172
 msgid "Can't scroll more to the left"
-msgstr ""
+msgstr "Não pode arrastar mais para a esquerda"
 
 #: specs/TimelineView.py:198 timelinelib/view/drawingarea.py:174
 msgid "Can't scroll more to the right"
-msgstr ""
+msgstr "Não pode arrastar mais para a direita"
 
 #: specs/WeekdayNames.py:28 timelinelib/calendar/weekdaynames.py:21
 msgid "Mon"
-msgstr ""
+msgstr "Seg"
 
 #: specs/WeekdayNames.py:33 timelinelib/calendar/weekdaynames.py:27
 msgid "Sun"
@@ -158,34 +159,38 @@ msgstr ""
 
 #: timelinelib/calendar/monthnames.py:47
 msgid "Nov"
-msgstr ""
+msgstr "Nov"
 
 #: timelinelib/calendar/weekdaynames.py:22
 msgid "Tue"
-msgstr ""
+msgstr "Ter"
 
 #: timelinelib/calendar/weekdaynames.py:23
 msgid "Wed"
-msgstr ""
+msgstr "Qua"
 
 #: timelinelib/calendar/weekdaynames.py:24
 msgid "Thu"
-msgstr ""
+msgstr "Qui"
 
 #: timelinelib/calendar/weekdaynames.py:25
 msgid "Fri"
-msgstr ""
+msgstr "Sex"
 
 #: timelinelib/calendar/weekdaynames.py:26
 msgid "Sat"
-msgstr ""
+msgstr "Sáb"
 
 #: timelinelib/db/__init__.py:67
+#, fuzzy
 msgid ""
 "Could not find iCalendar Python package. It is required for working with ICS "
 "files. See the Timeline website or the INSTALL file for instructions how to "
 "install it."
 msgstr ""
+"Não foi possível encontrar o pacote Python iCalendar. Ele é necessário para "
+"trabalhar com ficheiros ICS. Consulta o site da Linha Temporal(timeline) ou "
+"o ficheiro INSTALL para obteres instruções de como instalá-lo."
 
 #: timelinelib/db/__init__.py:72
 #, python-format
@@ -209,12 +214,13 @@ msgid "Unable to read timeline data from '%s'."
 msgstr "Incapaz de ler informações sobre linha do tempo de '%s'."
 
 #: timelinelib/db/backends/memory.py:227
+#, fuzzy
 msgid "Displayed period must be > 0."
-msgstr ""
+msgstr "Período exibido deve ser > 0."
 
 #: timelinelib/db/backends/tutorial.py:30
 msgid "Welcome"
-msgstr ""
+msgstr "Bem-vindo"
 
 #: timelinelib/db/backends/tutorial.py:32
 msgid "Welcome to Timeline"
@@ -297,20 +303,20 @@ msgstr "Remover evento"
 
 #: timelinelib/db/backends/tutorial.py:78
 msgid "Select events to be deleted and press the Del key."
-msgstr ""
+msgstr "Selecione os eventos para eliminar e pressione a tecla Del."
 
 #: timelinelib/db/backends/tutorial.py:82
 msgid "Resize and move me!"
-msgstr ""
+msgstr "Defina o tamanho e me mova!"
 
 #: timelinelib/db/backends/tutorial.py:83
 msgid "First select me and then drag the handles."
-msgstr ""
+msgstr "Primeiro me escolha e então arraste os puxadores."
 
 #: timelinelib/db/backends/tutorial.py:86
 #: timelinelib/db/backends/tutorial.py:88
 msgid "Saving"
-msgstr ""
+msgstr "Salvando"
 
 #: timelinelib/db/backends/tutorial.py:89
 msgid ""
@@ -854,7 +860,7 @@ msgstr "Editar Categoria"
 #, python-format
 #, python-format, fuzzy
 msgid "Are you sure you want to delete category '%s'?"
-msgstr "Tem certeza de que deseja remover %d eventos?"
+msgstr "Tem certeza de que deseja remover %s eventos?"
 
 #: timelinelib/wxgui/components/cattree.py:236
 #, python-format
