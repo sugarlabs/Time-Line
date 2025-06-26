@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: thetimelineproj\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-05-28 00:31-0400\n"
-"PO-Revision-Date: 2025-06-26 08:22+0000\n"
+"PO-Revision-Date: 2025-06-26 09:42+0000\n"
 "Last-Translator: Erdem Uygun <erdem.uygun@eba.gov.tr>\n"
 "Language-Team: Turkish <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/timeline/tr/>\n"
@@ -999,7 +999,7 @@ msgstr ""
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:244
 msgid "Description"
-msgstr ""
+msgstr "Açıklama"
 
 #: timelinelib/wxgui/dialogs/eventeditor.py:245
 msgid "Alert"
@@ -1049,7 +1049,7 @@ msgstr ""
 #: timelinelib/wxgui/dialogs/helpbrowser.py:36
 #: wx/lib/agw/genericmessagedialog.py:837
 msgid "Help"
-msgstr ""
+msgstr "Yardım"
 
 #: timelinelib/wxgui/dialogs/helpbrowser.py:65
 msgid ""
