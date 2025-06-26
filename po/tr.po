@@ -7,14 +7,16 @@ msgstr ""
 "Project-Id-Version: thetimelineproj\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-05-28 00:31-0400\n"
-"PO-Revision-Date: 2011-05-27 06:56+0000\n"
-"Last-Translator: Mehmet Gülmen <Unknown>\n"
-"Language-Team: Turkish <tr@li.org>\n"
+"PO-Revision-Date: 2025-06-26 08:22+0000\n"
+"Last-Translator: Erdem Uygun <erdem.uygun@eba.gov.tr>\n"
+"Language-Team: Turkish <http://weblate.sugarlabs.org/projects/"
+"sugar-activities/timeline/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Launchpad (build 14197)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4.2\n"
 "X-Launchpad-Export-Date: 2011-10-30 13:32+0000\n"
 
 #. TRANS: "name" option from activity.info file
@@ -774,7 +776,7 @@ msgstr ""
 
 #: timelinelib/view/drawingarea.py:201
 msgid "Edit"
-msgstr ""
+msgstr "Düzenle"
 
 #: timelinelib/view/drawingarea.py:202
 msgid "Duplicate..."
@@ -1912,12 +1914,12 @@ msgstr ""
 #: wx/lib/pydocview.py:185 wx/tools/Editra/src/ed_editv.py:365
 #: wx/tools/Editra/src/ed_toolbar.py:88
 msgid "Copy"
-msgstr ""
+msgstr "Kopyala"
 
 #: wx/lib/pydocview.py:186 wx/tools/Editra/src/ed_editv.py:366
 #: wx/tools/Editra/src/ed_toolbar.py:90
 msgid "Paste"
-msgstr ""
+msgstr "Yapıştır"
 
 #: wx/lib/pydocview.py:187 wx/tools/Editra/src/ed_editv.py:361
 #: wx/tools/Editra/src/ed_toolbar.py:83
