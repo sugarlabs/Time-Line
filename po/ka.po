@@ -8,13 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-21 12:51+1100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-18 06:28+0000\n"
+"Last-Translator: NF <rkavt@smartprojects.ge>\n"
+"Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
+"sugar-activities/timeline/ka/>\n"
 "Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4.2\n"
 
 #: activity/activity.info:2
 msgid "Time Line"
@@ -490,19 +493,19 @@ msgstr ""
 #: libs/wx/tools/Editra/src/ed_toolbar.py:86
 #: libs/wx/tools/Editra/src/ed_editv.py:364 libs/wx/lib/pydocview.py:184
 msgid "Cut"
-msgstr ""
+msgstr "ამოჭრა"
 
 #: libs_arm/wx/lib/pydocview.py:182 libs64/wx/lib/pydocview.py:182
 #: libs/wx/tools/Editra/src/ed_toolbar.py:88
 #: libs/wx/tools/Editra/src/ed_editv.py:365 libs/wx/lib/pydocview.py:185
 msgid "Copy"
-msgstr ""
+msgstr "კოპირება"
 
 #: libs_arm/wx/lib/pydocview.py:183 libs64/wx/lib/pydocview.py:183
 #: libs/wx/tools/Editra/src/ed_toolbar.py:90
 #: libs/wx/tools/Editra/src/ed_editv.py:366 libs/wx/lib/pydocview.py:186
 msgid "Paste"
-msgstr ""
+msgstr "ჩასმა"
 
 #: libs_arm/wx/lib/pydocview.py:184 timelinelib/config/shortcut.py:87
 #: libs64/wx/lib/pydocview.py:184 libs/wx/tools/Editra/src/ed_toolbar.py:83
@@ -928,7 +931,7 @@ msgstr ""
 #: libs64/wx/lib/agw/genericmessagedialog.py:846
 #: libs/wx/lib/agw/genericmessagedialog.py:837
 msgid "Help"
-msgstr ""
+msgstr "დახმარება"
 
 #: libs_arm/wx/lib/agw/shortcuteditor.py:2418
 msgid "Accelerators"
@@ -2122,7 +2125,7 @@ msgstr ""
 #: timelinelib/wxgui/dialogs/preferences/view.py:138
 #: timelinelib/wxgui/components/canvas/timelinecanvascontroller.py:253
 msgid "Edit"
-msgstr ""
+msgstr "ჩასწორება"
 
 #: timelinelib/config/shortcut.py:51
 msgid "View"
@@ -2184,11 +2187,11 @@ msgstr ""
 
 #: timelinelib/config/shortcut.py:74 libs/wx/tools/Editra/src/ed_menu.py:657
 msgid "Zoom In"
-msgstr ""
+msgstr "გადიდება"
 
 #: timelinelib/config/shortcut.py:75 libs/wx/tools/Editra/src/ed_menu.py:656
 msgid "Zoom Out"
-msgstr ""
+msgstr "დაპატარავება"
 
 #: timelinelib/config/shortcut.py:76
 msgid "Vertical Zoom In"
@@ -4582,7 +4585,7 @@ msgstr ""
 #: libs/wx/tools/Editra/src/ed_search.py:1253
 #: libs/wx/tools/Editra/src/ed_log.py:142
 msgid "Clear"
-msgstr ""
+msgstr "გასუფთავება"
 
 #: libs/wx/tools/Editra/src/ed_search.py:1271
 msgid "Search Started"
@@ -5789,11 +5792,11 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/prefdlg.py:2154
 msgid "Inverse"
-msgstr ""
+msgstr "უკუ"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:2155
 msgid "Normal"
-msgstr ""
+msgstr "ნორმალური"
 
 #: libs/wx/tools/Editra/src/ed_print.py:115
 msgid "Failed to create print preview"
@@ -6081,3 +6084,7 @@ msgstr ""
 #: libs/wx/lib/agw/cubecolourdialog.py:2806
 msgid "CubeColorDialog: Choose Color"
 msgstr ""
+
+#: timelinelib/editors/event.py:250
+msgid "Text"
+msgstr "ტექსტი"
