@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-21 12:51+1100\n"
-"PO-Revision-Date: 2026-03-18 06:28+0000\n"
+"PO-Revision-Date: 2026-04-01 08:11+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/timeline/ka/>\n"
@@ -684,7 +684,7 @@ msgstr ""
 #: libs_arm/wx/lib/pydocview.py:2896 libs64/wx/lib/pydocview.py:2896
 #: libs/wx/tools/Editra/src/ed_cmdbar.py:274 libs/wx/lib/pydocview.py:2899
 msgid "Previous"
-msgstr ""
+msgstr "წინა"
 
 #: libs_arm/wx/lib/pydocview.py:2896 libs64/wx/lib/pydocview.py:2896
 #: libs/wx/lib/pydocview.py:2899
@@ -694,7 +694,7 @@ msgstr ""
 #: libs_arm/wx/lib/pydocview.py:2899 libs64/wx/lib/pydocview.py:2899
 #: libs/wx/tools/Editra/src/ed_cmdbar.py:266 libs/wx/lib/pydocview.py:2902
 msgid "Next"
-msgstr ""
+msgstr "შემდეგი"
 
 #: libs_arm/wx/lib/pydocview.py:2899 libs64/wx/lib/pydocview.py:2899
 #: libs/wx/lib/pydocview.py:2902
@@ -816,7 +816,7 @@ msgstr ""
 #: libs_arm/wx/lib/agw/shortcuteditor.py:986
 #: timelinelib/wxgui/dialogs/duplicateevent/view.py:89
 msgid "Forward"
-msgstr ""
+msgstr "წინ"
 
 #: libs_arm/wx/lib/agw/shortcuteditor.py:987
 msgid "Go to the next page"
@@ -2288,7 +2288,7 @@ msgstr ""
 #: timelinelib/wxgui/utils.py:158 libs/wx/tools/Editra/src/plugdlg.py:840
 #: libs/wx/tools/Editra/src/ed_editv.py:191
 msgid "Error"
-msgstr ""
+msgstr "შეცდომა"
 
 #: timelinelib/wxgui/utils.py:176
 msgid "Dialog moved"
@@ -4890,7 +4890,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/ed_menu.py:624
 msgid "Toggle Bookmark"
-msgstr ""
+msgstr "სანიშნის გადართვა"
 
 #: libs/wx/tools/Editra/src/ed_menu.py:625
 msgid "Toggle bookmark of the current line"
@@ -5175,7 +5175,7 @@ msgstr ""
 #: libs/wx/tools/Editra/src/ed_menu.py:741
 #: libs/wx/tools/Editra/src/prefdlg.py:773
 msgid "Word Wrap"
-msgstr ""
+msgstr "სიტყვების გადატანა"
 
 #: libs/wx/tools/Editra/src/ed_menu.py:742
 msgid "Wrap Text Horizontally"
