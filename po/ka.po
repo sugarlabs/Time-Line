@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-21 12:51+1100\n"
-"PO-Revision-Date: 2026-04-01 08:11+0000\n"
+"PO-Revision-Date: 2026-05-04 07:03+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/timeline/ka/>\n"
@@ -463,7 +463,7 @@ msgstr ""
 #: libs/wx/tools/Editra/src/ed_toolbar.py:78
 #: libs/wx/tools/Editra/src/ed_menu.py:518 libs/wx/lib/pydocview.py:177
 msgid "Open"
-msgstr ""
+msgstr "გახნა"
 
 #: libs_arm/wx/lib/pydocview.py:175
 #: libs_arm/wx/lib/agw/genericmessagedialog.py:522
@@ -471,7 +471,7 @@ msgstr ""
 #: libs/wx/tools/Editra/src/ed_toolbar.py:79 libs/wx/lib/pydocview.py:178
 #: libs/wx/lib/agw/genericmessagedialog.py:471
 msgid "Save"
-msgstr ""
+msgstr "შენახვა"
 
 #: libs_arm/wx/lib/pydocview.py:176 libs64/wx/lib/pydocview.py:176
 #: libs/wx/tools/Editra/src/ed_menu.py:532 libs/wx/lib/pydocview.py:179
@@ -922,7 +922,7 @@ msgstr ""
 #: libs/wx/lib/agw/multidirdialog.py:476
 #: libs/wx/lib/agw/genericmessagedialog.py:825
 msgid "Cancel"
-msgstr ""
+msgstr "გაუქმება"
 
 #: libs_arm/wx/lib/agw/shortcuteditor.py:2260
 #: libs_arm/wx/lib/agw/genericmessagedialog.py:1072
@@ -5688,7 +5688,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/prefdlg.py:1339
 msgid "Configuration"
-msgstr ""
+msgstr "მორგება"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:1343
 msgid "Update"
@@ -5716,7 +5716,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/prefdlg.py:1405
 msgid "Password"
-msgstr ""
+msgstr "პაროლი"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:1505
 msgid "Installed Version"
