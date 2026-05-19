@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-21 12:51+1100\n"
-"PO-Revision-Date: 2026-05-04 07:03+0000\n"
+"PO-Revision-Date: 2026-05-19 07:09+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/timeline/ka/>\n"
@@ -457,7 +457,7 @@ msgstr ""
 #: libs/wx/tools/Editra/src/style_editor.py:200
 #: libs/wx/tools/Editra/src/prefdlg.py:1705 libs/wx/lib/pydocview.py:176
 msgid "New"
-msgstr ""
+msgstr "ახალი"
 
 #: libs_arm/wx/lib/pydocview.py:174 libs64/wx/lib/pydocview.py:174
 #: libs/wx/tools/Editra/src/ed_toolbar.py:78
@@ -511,14 +511,14 @@ msgstr "ჩასმა"
 #: libs64/wx/lib/pydocview.py:184 libs/wx/tools/Editra/src/ed_toolbar.py:83
 #: libs/wx/tools/Editra/src/ed_editv.py:361 libs/wx/lib/pydocview.py:187
 msgid "Undo"
-msgstr ""
+msgstr "გაუქმება"
 
 #: libs_arm/wx/lib/pydocview.py:185 timelinelib/config/shortcut.py:88
 #: libs64/wx/lib/pydocview.py:185 libs/wx/tools/Editra/src/ed_toolbar.py:84
 #: libs/wx/tools/Editra/src/ed_editv.py:362
 #: libs/wx/tools/Editra/src/ed_menu.py:579 libs/wx/lib/pydocview.py:188
 msgid "Redo"
-msgstr ""
+msgstr "გამეორება"
 
 #: libs_arm/wx/lib/pydocview.py:248 libs64/wx/lib/pydocview.py:248
 #: libs/wx/lib/pydocview.py:251
