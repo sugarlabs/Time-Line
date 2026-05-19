@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-21 12:51+1100\n"
-"PO-Revision-Date: 2026-05-19 07:09+0000\n"
+"PO-Revision-Date: 2026-05-19 11:33+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/timeline/ka/>\n"
@@ -649,7 +649,7 @@ msgstr ""
 #: libs_arm/wx/lib/pydocview.py:2695 libs64/wx/lib/pydocview.py:2695
 #: libs/wx/lib/pydocview.py:2698
 msgid "Size:"
-msgstr ""
+msgstr "ზომა:"
 
 #: libs_arm/wx/lib/pydocview.py:2697 libs64/wx/lib/pydocview.py:2697
 #: libs/wx/lib/pydocview.py:2700
@@ -2809,7 +2809,7 @@ msgstr ""
 #: timelinelib/wxgui/dialogs/filenew/view.py:66
 #: timelinelib/wxgui/dialogs/editevent/view.py:194
 msgid "Description"
-msgstr ""
+msgstr "აღწერა"
 
 #: timelinelib/wxgui/dialogs/filenew/view.py:67
 msgid "Create new timeline"
@@ -4049,7 +4049,7 @@ msgstr ""
 #: libs/wx/tools/Editra/src/style_editor.py:704
 #: libs/wx/tools/Editra/src/eclib/infodlg.py:191
 msgid "Size"
-msgstr ""
+msgstr "ზომა"
 
 #: libs/wx/tools/Editra/src/plugin.py:723
 #: libs/wx/tools/Editra/src/plugdlg.py:372
