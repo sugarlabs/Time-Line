@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-21 12:51+1100\n"
-"PO-Revision-Date: 2026-05-19 11:33+0000\n"
+"PO-Revision-Date: 2026-06-15 07:48+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/timeline/ka/>\n"
@@ -567,7 +567,7 @@ msgstr ""
 #: libs64/wx/lib/pydocview.py:1488 libs64/wx/lib/agw/fmcustomizedlg.py:214
 #: libs/wx/lib/pydocview.py:1491 libs/wx/lib/agw/fmcustomizedlg.py:216
 msgid "Options"
-msgstr ""
+msgstr "მორგება"
 
 #: libs_arm/wx/lib/pydocview.py:1589 libs64/wx/lib/pydocview.py:1589
 #: libs/wx/lib/pydocview.py:1592
@@ -984,13 +984,13 @@ msgstr ""
 #: libs64/wx/lib/agw/genericmessagedialog.py:838
 #: libs/wx/lib/agw/genericmessagedialog.py:829
 msgid "Yes"
-msgstr ""
+msgstr "დიახ"
 
 #: libs_arm/wx/lib/agw/genericmessagedialog.py:1033
 #: libs64/wx/lib/agw/genericmessagedialog.py:842
 #: libs/wx/lib/agw/genericmessagedialog.py:833
 msgid "No"
-msgstr ""
+msgstr "არა"
 
 #: libs_arm/wx/lib/agw/cubecolourdialog.py:2857
 #: libs64/wx/lib/agw/cubecolourdialog.py:2804
@@ -1937,7 +1937,7 @@ msgstr ""
 
 #: timelinelib/calendar/weekdaynames.py:28 specs/WeekdayNames.py:33
 msgid "Sun"
-msgstr ""
+msgstr "მზე"
 
 #: timelinelib/calendar/monthnames.py:38 specs/MonthNames.py:33
 msgid "Jan"
@@ -2251,7 +2251,7 @@ msgstr ""
 
 #: timelinelib/config/shortcut.py:94 libs/wx/tools/Editra/src/ed_menu.py:832
 msgid "About"
-msgstr ""
+msgstr "შესახებ"
 
 #: timelinelib/config/shortcut.py:96
 msgid "Find First Event"
@@ -2868,7 +2868,7 @@ msgstr ""
 #: timelinelib/wxgui/dialogs/eraeditor/controller.py:65
 #: timelinelib/wxgui/dialogs/editcontainer/controller.py:83
 msgid "Name"
-msgstr ""
+msgstr "სახელი"
 
 #: timelinelib/wxgui/dialogs/eraeditor/controller.py:72
 msgid "Invalid start time."
@@ -3169,7 +3169,7 @@ msgstr ""
 #: timelinelib/wxgui/components/canvas/timelinecanvascontroller.py:249
 #: libs/wx/tools/Editra/src/prefdlg.py:1706
 msgid "Delete"
-msgstr ""
+msgstr "წაშლა"
 
 #: timelinelib/wxgui/components/categorytree.py:208
 msgid "Check All"
@@ -3465,21 +3465,21 @@ msgstr ""
 
 #: timelinelib/time/gregoriantime.py:212
 msgid "Day"
-msgstr ""
+msgstr "დღე"
 
 #: timelinelib/time/gregoriantime.py:213 timelinelib/time/gregoriantime.py:640
 #: timelinelib/time/bosparaniantime.py:563
 #: timelinelib/time/bosparaniantime.py:564
 msgid "Week"
-msgstr ""
+msgstr "კვირა"
 
 #: timelinelib/time/gregoriantime.py:214
 msgid "Month"
-msgstr ""
+msgstr "თვე"
 
 #: timelinelib/time/gregoriantime.py:215
 msgid "Year"
-msgstr ""
+msgstr "წელი"
 
 #: timelinelib/time/gregoriantime.py:262
 #: timelinelib/time/bosparaniantime.py:189
@@ -4008,7 +4008,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/style_editor.py:640
 msgid "Color"
-msgstr ""
+msgstr "ფერი"
 
 #: libs/wx/tools/Editra/src/style_editor.py:644
 msgid "Foreground"
@@ -4063,7 +4063,7 @@ msgstr ""
 #: libs/wx/tools/Editra/src/plugdlg.py:425 libs/wx/tools/Editra/src/util.py:367
 #: libs/wx/tools/Editra/src/eclib/infodlg.py:300
 msgid "Unknown"
-msgstr ""
+msgstr "უცნობი"
 
 #: libs/wx/tools/Editra/src/plugdlg.py:121
 #: libs/wx/tools/Editra/src/plugdlg.py:958
@@ -5401,7 +5401,7 @@ msgstr ""
 #: libs/wx/tools/Editra/src/prefdlg.py:307
 #: libs/wx/tools/Editra/src/eclib/filemgrdlg.py:220
 msgid "Files"
-msgstr ""
+msgstr "ფაილები"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:385
 msgid "Editor Mode"
@@ -5891,7 +5891,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/eclib/infodlg.py:193
 msgid "Where"
-msgstr ""
+msgstr "სად"
 
 #: libs/wx/tools/Editra/src/eclib/infodlg.py:195
 msgid "Created"
