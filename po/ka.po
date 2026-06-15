@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-21 12:51+1100\n"
-"PO-Revision-Date: 2026-06-15 07:48+0000\n"
+"PO-Revision-Date: 2026-06-15 16:05+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/timeline/ka/>\n"
@@ -2998,7 +2998,7 @@ msgstr ""
 
 #: timelinelib/wxgui/dialogs/editevent/view.py:196
 msgid "Alert"
-msgstr ""
+msgstr "ალერტი"
 
 #: timelinelib/wxgui/dialogs/editevent/view.py:197
 msgid "Hyperlink"
@@ -3636,7 +3636,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/ed_pages.py:234
 msgid "untitled"
-msgstr ""
+msgstr "უსათაურო"
 
 #: libs/wx/tools/Editra/src/ed_pages.py:324
 msgid "Error Saving Session File"
@@ -3783,7 +3783,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/updater.py:682
 msgid "Finished"
-msgstr ""
+msgstr "დასრულდა"
 
 #: libs/wx/tools/Editra/src/updater.py:685
 msgid "Failed"
@@ -5433,7 +5433,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/prefdlg.py:419
 msgid "Language"
-msgstr ""
+msgstr "ენა"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:429
 msgid "Startup Settings"
