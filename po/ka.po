@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-21 12:51+1100\n"
-"PO-Revision-Date: 2026-06-15 16:05+0000\n"
+"PO-Revision-Date: 2026-06-22 06:20+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/timeline/ka/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: activity/activity.info:2
 msgid "Time Line"
-msgstr ""
+msgstr "ქრონოლოგია"
 
 #: libs_arm/wx/lib/docview.py:383 libs64/wx/lib/docview.py:383
 #: libs/wx/lib/docview.py:385
