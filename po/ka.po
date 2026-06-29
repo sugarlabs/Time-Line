@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-21 12:51+1100\n"
-"PO-Revision-Date: 2026-06-29 10:13+0000\n"
+"PO-Revision-Date: 2026-06-29 11:24+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/timeline/ka/>\n"
@@ -26,7 +26,7 @@ msgstr "ქრონოლოგია"
 #: libs_arm/wx/lib/docview.py:383 libs64/wx/lib/docview.py:383
 #: libs/wx/lib/docview.py:385
 msgid "Application"
-msgstr ""
+msgstr "აპლიკაცია"
 
 #: libs_arm/wx/lib/docview.py:384 libs_arm/wx/lib/docview.py:634
 #: libs64/wx/lib/docview.py:384 libs64/wx/lib/docview.py:634
@@ -68,7 +68,7 @@ msgstr ""
 #: libs_arm/wx/lib/docview.py:595 libs64/wx/lib/docview.py:595
 #: libs/wx/lib/docview.py:597
 msgid "Untitled"
-msgstr ""
+msgstr "უსათაურო"
 
 #: libs_arm/wx/lib/docview.py:633 libs_arm/wx/lib/docview.py:649
 #: libs_arm/wx/lib/docview.py:1891 timelinelib/wxgui/utils.py:163
@@ -76,7 +76,7 @@ msgstr ""
 #: libs64/wx/lib/docview.py:1891 libs/wx/lib/docview.py:635
 #: libs/wx/lib/docview.py:652 libs/wx/lib/docview.py:1895
 msgid "Warning"
-msgstr ""
+msgstr "გაფრთხილება"
 
 #: libs_arm/wx/lib/docview.py:651 libs64/wx/lib/docview.py:651
 #: libs/wx/lib/docview.py:654
@@ -143,7 +143,7 @@ msgstr ""
 #: libs/wx/lib/docview.py:2175
 #, python-format
 msgid "All|*.*|%s"
-msgstr ""
+msgstr "ყველა|*.*|%s"
 
 #: libs_arm/wx/lib/docview.py:2173 libs64/wx/lib/docview.py:2173
 msgid "*.*"
@@ -162,7 +162,7 @@ msgstr ""
 #: libs_arm/wx/lib/docview.py:2240 libs64/wx/lib/docview.py:2240
 #: libs/wx/lib/docview.py:2244
 msgid "Documents"
-msgstr ""
+msgstr "დოკუმენტები"
 
 #: libs_arm/wx/lib/docview.py:2270 libs64/wx/lib/docview.py:2270
 #: libs/wx/lib/docview.py:2274
@@ -172,17 +172,17 @@ msgstr ""
 #: libs_arm/wx/lib/docview.py:2271 libs64/wx/lib/docview.py:2271
 #: libs/wx/lib/docview.py:2275
 msgid "Views"
-msgstr ""
+msgstr "ხედები"
 
 #: libs_arm/wx/lib/docview.py:3045 libs64/wx/lib/docview.py:3045
 #: libs/wx/lib/docview.py:3049
 msgid "Ctrl+Z"
-msgstr ""
+msgstr "Ctrl+Z"
 
 #: libs_arm/wx/lib/docview.py:3046 libs64/wx/lib/docview.py:3046
 #: libs/wx/lib/docview.py:3050
 msgid "Ctrl+Y"
-msgstr ""
+msgstr "Ctrl+Y"
 
 #: libs_arm/wx/lib/docview.py:3153 libs64/wx/lib/docview.py:3153
 msgid "&Undo "
@@ -192,7 +192,7 @@ msgstr ""
 #: libs/wx/tools/Editra/src/ed_menu.py:578 libs/wx/lib/docview.py:3157
 #: libs/wx/lib/docview.py:3161
 msgid "&Undo"
-msgstr ""
+msgstr "დაბრ&უნება"
 
 #: libs_arm/wx/lib/docview.py:3159 libs64/wx/lib/docview.py:3159
 msgid "&Redo "
@@ -201,7 +201,7 @@ msgstr ""
 #: libs_arm/wx/lib/docview.py:3161 libs64/wx/lib/docview.py:3161
 #: libs/wx/lib/docview.py:3163 libs/wx/lib/docview.py:3165
 msgid "&Redo"
-msgstr ""
+msgstr "გამეო&რება"
 
 #: libs_arm/wx/lib/pydocview.py:84 libs64/wx/lib/pydocview.py:84
 #: libs/wx/lib/pydocview.py:87
@@ -229,7 +229,7 @@ msgstr ""
 #: libs64/wx/lib/pydocview.py:86 libs64/wx/lib/agw/fmcustomizedlg.py:204
 #: libs/wx/lib/pydocview.py:89 libs/wx/lib/agw/fmcustomizedlg.py:206
 msgid "&Close"
-msgstr ""
+msgstr "და&ხურვა"
 
 #: libs_arm/wx/lib/pydocview.py:86 libs64/wx/lib/pydocview.py:86
 #: libs/wx/lib/pydocview.py:89
@@ -312,7 +312,7 @@ msgstr ""
 #: libs_arm/wx/lib/pydocview.py:101 libs64/wx/lib/pydocview.py:101
 #: libs/wx/lib/pydocview.py:104
 msgid "&Quit"
-msgstr ""
+msgstr "&გასვლა"
 
 #: libs_arm/wx/lib/pydocview.py:101 libs_arm/wx/lib/pydocview.py:103
 #: libs64/wx/lib/pydocview.py:101 libs64/wx/lib/pydocview.py:103
@@ -323,7 +323,7 @@ msgstr ""
 #: libs_arm/wx/lib/pydocview.py:103 libs64/wx/lib/pydocview.py:103
 #: libs/wx/tools/Editra/src/ed_menu.py:566 libs/wx/lib/pydocview.py:106
 msgid "E&xit"
-msgstr ""
+msgstr "გა&სვლა"
 
 #: libs_arm/wx/lib/pydocview.py:106 libs_arm/wx/lib/pydocview.py:2558
 #: timelinelib/wxgui/frames/mainframe/mainframe.py:170
@@ -381,7 +381,7 @@ msgstr ""
 #: libs_arm/wx/lib/pydocview.py:124 libs64/wx/lib/pydocview.py:124
 #: libs/wx/lib/pydocview.py:127
 msgid "&Delete"
-msgstr ""
+msgstr "&წაშლა"
 
 #: libs_arm/wx/lib/pydocview.py:124 libs64/wx/lib/pydocview.py:124
 #: libs/wx/lib/pydocview.py:127
@@ -409,7 +409,7 @@ msgstr "ჩასწორ&ება"
 #: libs_arm/wx/lib/pydocview.py:137 libs64/wx/lib/pydocview.py:137
 #: libs/wx/tools/Editra/src/ed_menu.py:708 libs/wx/lib/pydocview.py:140
 msgid "&Toolbar"
-msgstr ""
+msgstr "&ხელსაწყოთა პანელი"
 
 #: libs_arm/wx/lib/pydocview.py:137 libs64/wx/lib/pydocview.py:137
 #: libs/wx/lib/pydocview.py:140
@@ -431,7 +431,7 @@ msgstr ""
 #: libs64/wx/lib/pydocview.py:143 libs/wx/tools/Editra/src/ed_menu.py:712
 #: libs/wx/lib/pydocview.py:146
 msgid "&View"
-msgstr ""
+msgstr "&ხედი"
 
 #: libs_arm/wx/lib/pydocview.py:146 libs64/wx/lib/pydocview.py:146
 #: libs/wx/lib/pydocview.py:149
@@ -450,7 +450,7 @@ msgstr ""
 #: libs/wx/tools/Editra/src/ed_menu.py:845 libs/wx/lib/pydocview.py:150
 #: libs/wx/lib/pydocview.py:2914
 msgid "&Help"
-msgstr ""
+msgstr "&დახმარება"
 
 #: libs_arm/wx/lib/pydocview.py:173 libs64/wx/lib/pydocview.py:173
 #: libs/wx/tools/Editra/src/ed_toolbar.py:77
@@ -523,7 +523,7 @@ msgstr "გამეორება"
 #: libs_arm/wx/lib/pydocview.py:248 libs64/wx/lib/pydocview.py:248
 #: libs/wx/lib/pydocview.py:251
 msgid "Ready"
-msgstr ""
+msgstr "მზადაა"
 
 #: libs_arm/wx/lib/pydocview.py:902 libs64/wx/lib/pydocview.py:902
 #: libs/wx/lib/pydocview.py:905
@@ -546,17 +546,17 @@ msgstr ""
 #: libs/wx/tools/Editra/src/ed_menu.py:822 libs/wx/lib/pydocview.py:1408
 #: libs/wx/lib/pydocview.py:1415
 msgid "&Tools"
-msgstr ""
+msgstr "&ხელსაწყოები"
 
 #: libs_arm/wx/lib/pydocview.py:1411 libs64/wx/lib/pydocview.py:1411
 #: libs/wx/lib/pydocview.py:1414
 msgid "&Format"
-msgstr ""
+msgstr "&ფორმატი"
 
 #: libs_arm/wx/lib/pydocview.py:1416 libs64/wx/lib/pydocview.py:1416
 #: libs/wx/lib/pydocview.py:1419
 msgid "&Options..."
-msgstr ""
+msgstr "მ&ორგება..."
 
 #: libs_arm/wx/lib/pydocview.py:1416 libs64/wx/lib/pydocview.py:1416
 #: libs/wx/lib/pydocview.py:1419
@@ -614,17 +614,17 @@ msgstr ""
 #: libs/wx/tools/Editra/src/prefdlg.py:964 libs/wx/lib/pydocview.py:1635
 #: libs/wx/lib/pydocview.py:2722
 msgid "General"
-msgstr ""
+msgstr "ზოგადი"
 
 #: libs_arm/wx/lib/pydocview.py:2522 libs64/wx/lib/pydocview.py:2522
 #: libs/wx/lib/pydocview.py:2525
 msgid "About "
-msgstr ""
+msgstr "შესახებ "
 
 #: libs_arm/wx/lib/pydocview.py:2561 libs64/wx/lib/pydocview.py:2561
 #: libs/wx/lib/pydocview.py:2564
 msgid "&Properties"
-msgstr ""
+msgstr "&თვისებები"
 
 #: libs_arm/wx/lib/pydocview.py:2561 libs64/wx/lib/pydocview.py:2561
 #: libs/wx/lib/pydocview.py:2564
@@ -639,12 +639,12 @@ msgstr ""
 #: libs_arm/wx/lib/pydocview.py:2689 libs64/wx/lib/pydocview.py:2689
 #: libs/wx/lib/pydocview.py:2692
 msgid "Filename:"
-msgstr ""
+msgstr "ფაილის სახელი:"
 
 #: libs_arm/wx/lib/pydocview.py:2692 libs64/wx/lib/pydocview.py:2692
 #: libs/wx/lib/pydocview.py:2695
 msgid "Location:"
-msgstr ""
+msgstr "მდებარეობა:"
 
 #: libs_arm/wx/lib/pydocview.py:2695 libs64/wx/lib/pydocview.py:2695
 #: libs/wx/lib/pydocview.py:2698
@@ -654,22 +654,22 @@ msgstr "ზომა:"
 #: libs_arm/wx/lib/pydocview.py:2697 libs64/wx/lib/pydocview.py:2697
 #: libs/wx/lib/pydocview.py:2700
 msgid "bytes"
-msgstr ""
+msgstr "ბაიტი"
 
 #: libs_arm/wx/lib/pydocview.py:2703 libs64/wx/lib/pydocview.py:2703
 #: libs/wx/lib/pydocview.py:2706
 msgid "Created:"
-msgstr ""
+msgstr "შექმნის დრო:"
 
 #: libs_arm/wx/lib/pydocview.py:2707 libs64/wx/lib/pydocview.py:2707
 #: libs/wx/lib/pydocview.py:2710
 msgid "Modified:"
-msgstr ""
+msgstr "ცვლილების დრო:"
 
 #: libs_arm/wx/lib/pydocview.py:2711 libs64/wx/lib/pydocview.py:2711
 #: libs/wx/lib/pydocview.py:2714
 msgid "Accessed:"
-msgstr ""
+msgstr "წვდომის დრო:"
 
 #: libs_arm/wx/lib/pydocview.py:2887 libs64/wx/lib/pydocview.py:2887
 #: libs/wx/lib/pydocview.py:2890
@@ -720,7 +720,7 @@ msgstr ""
 #: libs/wx/lib/agw/aui/tabmdi.py:205 libs/wx/lib/agw/aui/tabmdi.py:216
 #: libs/wx/lib/agw/aui/tabmdi.py:218
 msgid "&Window"
-msgstr ""
+msgstr "ფან&ჯარა"
 
 #: libs_arm/wx/lib/pydocview.py:3034 libs64/wx/lib/pydocview.py:3034
 #: libs/wx/lib/pydocview.py:3037
@@ -761,37 +761,37 @@ msgstr ""
 #: libs64/wx/lib/colourchooser/pycolourchooser.py:194
 #: libs/wx/lib/colourchooser/pycolourchooser.py:194
 msgid "H:"
-msgstr ""
+msgstr "H:"
 
 #: libs_arm/wx/lib/colourchooser/pycolourchooser.py:197
 #: libs64/wx/lib/colourchooser/pycolourchooser.py:197
 #: libs/wx/lib/colourchooser/pycolourchooser.py:197
 msgid "S:"
-msgstr ""
+msgstr "S:"
 
 #: libs_arm/wx/lib/colourchooser/pycolourchooser.py:200
 #: libs64/wx/lib/colourchooser/pycolourchooser.py:200
 #: libs/wx/lib/colourchooser/pycolourchooser.py:200
 msgid "V:"
-msgstr ""
+msgstr "V:"
 
 #: libs_arm/wx/lib/colourchooser/pycolourchooser.py:210
 #: libs64/wx/lib/colourchooser/pycolourchooser.py:210
 #: libs/wx/lib/colourchooser/pycolourchooser.py:210
 msgid "R:"
-msgstr ""
+msgstr "R:"
 
 #: libs_arm/wx/lib/colourchooser/pycolourchooser.py:213
 #: libs64/wx/lib/colourchooser/pycolourchooser.py:213
 #: libs/wx/lib/colourchooser/pycolourchooser.py:213
 msgid "G:"
-msgstr ""
+msgstr "G:"
 
 #: libs_arm/wx/lib/colourchooser/pycolourchooser.py:216
 #: libs64/wx/lib/colourchooser/pycolourchooser.py:216
 #: libs/wx/lib/colourchooser/pycolourchooser.py:216
 msgid "B:"
-msgstr ""
+msgstr "B:"
 
 #: libs_arm/wx/lib/agw/shortcuteditor.py:473
 msgid "New accelerator..."
@@ -908,7 +908,7 @@ msgstr ""
 #: libs/wx/lib/agw/multidirdialog.py:474
 #: libs/wx/lib/agw/genericmessagedialog.py:821
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: libs_arm/wx/lib/agw/shortcuteditor.py:2259
 #: libs_arm/wx/lib/agw/multidirdialog.py:504
@@ -939,7 +939,7 @@ msgstr ""
 
 #: libs_arm/wx/lib/agw/flatmenu.py:3591 libs/wx/tools/Editra/src/ed_menu.py:472
 msgid "Customize..."
-msgstr ""
+msgstr "მორგება..."
 
 #: libs_arm/wx/lib/agw/infobar.py:382
 msgid "Hide this notification message."
@@ -948,7 +948,7 @@ msgstr ""
 #: libs_arm/wx/lib/agw/pybusyinfo.py:256 libs64/wx/lib/agw/pybusyinfo.py:209
 #: libs/wx/lib/agw/pybusyinfo.py:211
 msgid "Busy"
-msgstr ""
+msgstr "დაკავებულია"
 
 #: libs_arm/wx/lib/agw/multidirdialog.py:300
 #: libs64/wx/lib/agw/multidirdialog.py:270
@@ -966,7 +966,7 @@ msgstr ""
 #: libs64/wx/lib/agw/multidirdialog.py:397
 #: libs/wx/lib/agw/multidirdialog.py:399
 msgid "Folder:"
-msgstr ""
+msgstr "საქაღალდე:"
 
 #: libs_arm/wx/lib/agw/multidirdialog.py:500
 #: libs64/wx/lib/agw/multidirdialog.py:470
@@ -1090,7 +1090,7 @@ msgstr "ნაგულისხმევი"
 #: libs_arm/wx/lib/agw/artmanager.py:2068 libs64/wx/lib/agw/artmanager.py:1946
 #: libs/wx/lib/agw/artmanager.py:1944
 msgid "Dark"
-msgstr ""
+msgstr "მუქი"
 
 #: libs_arm/wx/lib/agw/artmanager.py:2069 libs64/wx/lib/agw/artmanager.py:1947
 #: libs/wx/lib/agw/artmanager.py:1945
@@ -1100,20 +1100,20 @@ msgstr ""
 #: libs_arm/wx/lib/agw/artmanager.py:2070 libs64/wx/lib/agw/artmanager.py:1948
 #: libs/wx/lib/agw/artmanager.py:1946
 msgid "Generic"
-msgstr ""
+msgstr "საერთო"
 
 #: libs_arm/wx/lib/agw/fmcustomizedlg.py:169
 #: libs64/wx/lib/agw/fmcustomizedlg.py:169
 #: libs/wx/tools/Editra/src/ed_cmdbar.py:119
 #: libs/wx/lib/agw/fmcustomizedlg.py:171
 msgid "Customize"
-msgstr ""
+msgstr "მორგება"
 
 #: libs_arm/wx/lib/agw/fmcustomizedlg.py:213
 #: libs64/wx/lib/agw/fmcustomizedlg.py:213
 #: libs/wx/lib/agw/fmcustomizedlg.py:215
 msgid "Menus"
-msgstr ""
+msgstr "მენიუები"
 
 #: libs_arm/wx/lib/agw/fmcustomizedlg.py:282
 #: libs64/wx/lib/agw/fmcustomizedlg.py:282
@@ -1131,7 +1131,7 @@ msgstr ""
 #: libs64/wx/lib/agw/fmcustomizedlg.py:321
 #: libs/wx/lib/agw/fmcustomizedlg.py:323
 msgid "Metallic"
-msgstr ""
+msgstr "ლითონური"
 
 #: libs_arm/wx/lib/agw/fmcustomizedlg.py:322
 #: libs64/wx/lib/agw/fmcustomizedlg.py:322
@@ -1184,30 +1184,30 @@ msgstr ""
 #: libs64/wx/lib/agw/aui/aui_switcherdialog.py:1178
 #: libs/wx/lib/agw/aui/aui_switcherdialog.py:1179
 msgid "\"><b>"
-msgstr ""
+msgstr "\"><b>"
 
 #: libs_arm/wx/lib/agw/aui/aui_switcherdialog.py:1177
 #: libs64/wx/lib/agw/aui/aui_switcherdialog.py:1178
 #: libs/wx/lib/agw/aui/aui_switcherdialog.py:1179
 msgid "</b>"
-msgstr ""
+msgstr "</b>"
 
 #: libs_arm/wx/lib/agw/aui/aui_switcherdialog.py:1180
 #: libs64/wx/lib/agw/aui/aui_switcherdialog.py:1181
 #: libs/wx/lib/agw/aui/aui_switcherdialog.py:1182
 msgid "<p>"
-msgstr ""
+msgstr "<p>"
 
 #: libs_arm/wx/lib/agw/aui/aui_switcherdialog.py:1183
 #: libs64/wx/lib/agw/aui/aui_switcherdialog.py:1184
 #: libs/wx/lib/agw/aui/aui_switcherdialog.py:1185
 msgid "</body>"
-msgstr ""
+msgstr "</body>"
 
 #: libs_arm/wx/lib/agw/aui/tabmdi.py:32 libs64/wx/lib/agw/aui/tabmdi.py:32
 #: libs/wx/lib/agw/aui/tabmdi.py:34
 msgid "Cl&ose"
-msgstr ""
+msgstr "დახ&ურვა"
 
 #: libs_arm/wx/lib/agw/aui/tabmdi.py:33 libs64/wx/lib/agw/aui/tabmdi.py:33
 #: libs/wx/tools/Editra/src/ed_editv.py:234 libs/wx/lib/agw/aui/tabmdi.py:35
@@ -1217,12 +1217,12 @@ msgstr ""
 #: libs_arm/wx/lib/agw/aui/tabmdi.py:35 libs64/wx/lib/agw/aui/tabmdi.py:35
 #: libs/wx/lib/agw/aui/tabmdi.py:37
 msgid "&Next"
-msgstr ""
+msgstr "&შემდეგი"
 
 #: libs_arm/wx/lib/agw/aui/tabmdi.py:36 libs64/wx/lib/agw/aui/tabmdi.py:36
 #: libs/wx/lib/agw/aui/tabmdi.py:38
 msgid "&Previous"
-msgstr ""
+msgstr "&წინა"
 
 #: libs_arm/wx/lib/agw/aui/framemanager.py:10133
 #, python-format
@@ -2162,12 +2162,12 @@ msgstr ""
 #: libs/wx/tools/Editra/src/eclib/finddlg.py:767
 #: libs/wx/tools/Editra/src/eclib/finddlg.py:843
 msgid "Find"
-msgstr ""
+msgstr "ძებნა"
 
 #: timelinelib/config/shortcut.py:68
 #: timelinelib/wxgui/dialogs/preferences/view.py:140
 msgid "Preferences"
-msgstr ""
+msgstr "მორგება"
 
 #: timelinelib/config/shortcut.py:69
 msgid "Shortcuts"
@@ -2308,7 +2308,7 @@ msgstr ""
 
 #: timelinelib/wxgui/utils.py:196 timelinelib/wxgui/utils.py:202
 msgid "Question"
-msgstr ""
+msgstr "კითხვა"
 
 #: timelinelib/wxgui/frames/mainframe/mainframe.py:195
 msgid "Create a new timeline"
@@ -2345,7 +2345,7 @@ msgstr ""
 
 #: timelinelib/wxgui/frames/mainframe/mainframe.py:317
 msgid "&Legend"
-msgstr ""
+msgstr "&ლეგენდა"
 
 #: timelinelib/wxgui/frames/mainframe/mainframe.py:319
 msgid "&Balloons on hover"
@@ -2425,7 +2425,7 @@ msgstr ""
 
 #: timelinelib/wxgui/frames/mainframe/mainframe.py:463
 msgid "&Timeline"
-msgstr ""
+msgstr "&ქრონოლოგია"
 
 #: timelinelib/wxgui/frames/mainframe/mainframe.py:505
 msgid "Find &First Event"
@@ -2441,7 +2441,7 @@ msgstr ""
 
 #: timelinelib/wxgui/frames/mainframe/mainframe.py:515
 msgid "&Navigate"
-msgstr ""
+msgstr "&ნავიგაცია"
 
 #: timelinelib/wxgui/frames/mainframe/mainframe.py:538
 #: libs/wx/tools/Editra/src/ed_menu.py:841
@@ -2511,7 +2511,7 @@ msgstr ""
 
 #: timelinelib/wxgui/frames/mainframe/mainframe.py:747
 msgid "read-only"
-msgstr ""
+msgstr "მხოლოდ-წაკითხვადი"
 
 #: timelinelib/wxgui/frames/mainframe/mainframe.py:902
 #: timelinelib/wxgui/frames/mainframe/mainframe.py:993
@@ -2944,11 +2944,11 @@ msgstr ""
 
 #: timelinelib/wxgui/dialogs/preferences/view.py:133
 msgid "Monday"
-msgstr ""
+msgstr "ორშაბათი"
 
 #: timelinelib/wxgui/dialogs/preferences/view.py:133
 msgid "Sunday"
-msgstr ""
+msgstr "კვირა"
 
 #: timelinelib/wxgui/dialogs/preferences/view.py:134
 msgid "Fonts"
@@ -3725,7 +3725,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/ed_cmdbar.py:410
 msgid "Command"
-msgstr ""
+msgstr "ბრძანება"
 
 #: libs/wx/tools/Editra/src/ed_cmdbar.py:440
 msgid "Goto Line"
@@ -3747,7 +3747,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/ed_cmdbar.py:874
 msgid "cwd: "
-msgstr ""
+msgstr "cwd: "
 
 #: libs/wx/tools/Editra/src/updater.py:147
 msgid "Unable to retrieve version info"
@@ -3964,7 +3964,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/style_editor.py:132 libs/wx/lib/docview.py:1573
 msgid "Preview"
-msgstr ""
+msgstr "მინიატურა"
 
 #: libs/wx/tools/Editra/src/style_editor.py:176
 msgid "Syntax Files"
@@ -4199,7 +4199,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/ed_main.py:143
 msgid "Perspectives"
-msgstr ""
+msgstr "პერსპექტივები"
 
 #: libs/wx/tools/Editra/src/ed_main.py:464
 msgid "Editra: Open"
@@ -4248,7 +4248,7 @@ msgstr ""
 #: libs/wx/tools/Editra/src/ed_main.py:749
 #: libs/wx/tools/Editra/src/ed_menu.py:547
 msgid "Profile"
-msgstr ""
+msgstr "პროფილი"
 
 #: libs/wx/tools/Editra/src/ed_main.py:733
 #, python-format
@@ -4344,7 +4344,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/ed_main.py:1540
 msgid "Homepage"
-msgstr ""
+msgstr "საწყისი გვერდი"
 
 #: libs/wx/tools/Editra/src/ed_main.py:1541
 msgid "Platform Info"
@@ -4356,7 +4356,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/ed_main.py:1548
 msgid "Copyright"
-msgstr ""
+msgstr "საავტორო უფლებები"
 
 #: libs/wx/tools/Editra/src/ed_editv.py:189
 #, python-format
@@ -4450,7 +4450,7 @@ msgstr ""
 #: libs/wx/tools/Editra/src/util.py:357
 #: libs/wx/tools/Editra/src/eclib/infodlg.py:294
 msgid "Folder"
-msgstr ""
+msgstr "საქაღალდე"
 
 #: libs/wx/tools/Editra/src/util.py:361
 msgid "Text Document"
@@ -4622,7 +4622,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/ed_menu.py:481
 msgid "Lexers"
-msgstr ""
+msgstr "ლექსერები"
 
 #: libs/wx/tools/Editra/src/ed_menu.py:483
 msgid "Manually Set a Lexer/Syntax"
@@ -4646,7 +4646,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/ed_menu.py:518
 msgid "&Open"
-msgstr ""
+msgstr "გახს&ნა"
 
 #: libs/wx/tools/Editra/src/ed_menu.py:521
 msgid "Recently Opened Files"
@@ -4674,7 +4674,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/ed_menu.py:530
 msgid "&Save"
-msgstr ""
+msgstr "&შენახვა"
 
 #: libs/wx/tools/Editra/src/ed_menu.py:531
 msgid "Save &As"
@@ -4734,7 +4734,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/ed_menu.py:556
 msgid "Sessions"
-msgstr ""
+msgstr "სესიები"
 
 #: libs/wx/tools/Editra/src/ed_menu.py:557
 msgid "Load and save custom sessions."
@@ -4750,7 +4750,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/ed_menu.py:564
 msgid "&Print"
-msgstr ""
+msgstr "დაბე&ჭდვა"
 
 #: libs/wx/tools/Editra/src/ed_menu.py:566
 msgid "Exit the Program"
@@ -4758,15 +4758,15 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/ed_menu.py:581
 msgid "Cu&t"
-msgstr ""
+msgstr "ამო&ჭრა"
 
 #: libs/wx/tools/Editra/src/ed_menu.py:583
 msgid "&Copy"
-msgstr ""
+msgstr "&კოპირება"
 
 #: libs/wx/tools/Editra/src/ed_menu.py:585
 msgid "&Paste"
-msgstr ""
+msgstr "&ჩასმა"
 
 #: libs/wx/tools/Editra/src/ed_menu.py:587
 msgid "P&aste After"
@@ -5874,7 +5874,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/eclib/infodlg.py:60
 msgid "Info"
-msgstr ""
+msgstr "ინფორმაცია"
 
 #: libs/wx/tools/Editra/src/eclib/infodlg.py:117
 msgid "File Stat Failed"
@@ -5883,11 +5883,11 @@ msgstr ""
 #: libs/wx/tools/Editra/src/eclib/infodlg.py:165
 #: libs/wx/tools/Editra/src/eclib/infodlg.py:197
 msgid "Modified"
-msgstr ""
+msgstr "შეიცვალა"
 
 #: libs/wx/tools/Editra/src/eclib/infodlg.py:184
 msgid "Kind"
-msgstr ""
+msgstr "სახეობა"
 
 #: libs/wx/tools/Editra/src/eclib/infodlg.py:193
 msgid "Where"
@@ -5895,11 +5895,11 @@ msgstr "სად"
 
 #: libs/wx/tools/Editra/src/eclib/infodlg.py:195
 msgid "Created"
-msgstr ""
+msgstr "შეიქმნა"
 
 #: libs/wx/tools/Editra/src/eclib/infodlg.py:199
 msgid "Permissions"
-msgstr ""
+msgstr "წვდომები"
 
 #: libs/wx/tools/Editra/src/eclib/ecpickers.py:83
 msgid "Set Font"
@@ -5908,7 +5908,7 @@ msgstr ""
 #: libs/wx/tools/Editra/src/eclib/finddlg.py:635
 #: libs/wx/tools/Editra/src/eclib/finddlg.py:844
 msgid "Replace"
-msgstr ""
+msgstr "ჩანაცვლება"
 
 #: libs/wx/tools/Editra/src/eclib/finddlg.py:712
 msgid "Current Document"
@@ -5944,11 +5944,11 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/eclib/finddlg.py:804
 msgid "Up"
-msgstr ""
+msgstr "მაღლა"
 
 #: libs/wx/tools/Editra/src/eclib/finddlg.py:806
 msgid "Down"
-msgstr ""
+msgstr "დაბლა"
 
 #: libs/wx/tools/Editra/src/eclib/finddlg.py:812
 msgid "Find Options"
@@ -5976,7 +5976,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/eclib/finddlg.py:845
 msgid "Count"
-msgstr ""
+msgstr "რაოდენობა"
 
 #: libs/wx/tools/Editra/src/eclib/finddlg.py:847
 msgid "Replace All"
@@ -5992,7 +5992,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/eclib/errdlg.py:323
 msgid "Abort"
-msgstr ""
+msgstr "შეწყვეტა"
 
 #: libs/wx/tools/Editra/src/eclib/errdlg.py:324
 msgid "Exit the application"
@@ -6047,7 +6047,7 @@ msgstr ""
 
 #: libs/wx/lib/docview.py:1897
 msgid "Reload "
-msgstr ""
+msgstr "თავიდან ჩატვირთვა "
 
 #: libs/wx/lib/docview.py:1897
 msgid " from file system?"
@@ -6096,3 +6096,7 @@ msgstr "იბეჭდება"
 #: timelinelib/wxgui/dialogs/eventeditor.py:668
 msgid "Test"
 msgstr "შემოწმება"
+
+#: wx/lib/pydocview.py:149
+msgid "&About"
+msgstr "შეს&ახებ"
