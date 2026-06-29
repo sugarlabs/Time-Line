@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-21 12:51+1100\n"
-"PO-Revision-Date: 2026-06-29 11:53+0000\n"
+"PO-Revision-Date: 2026-06-29 12:11+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/timeline/ka/>\n"
@@ -1897,7 +1897,7 @@ msgstr ""
 #: timelinelib/wxgui/frames/mainframe/mainframe.py:181
 #: libs/wx/tools/Editra/src/style_editor.py:143
 msgid "Export"
-msgstr ""
+msgstr "გატანა"
 
 #: timelinelib/plugin/plugins/eventboxdrawers/defaulteventboxdrawer.py:44
 msgid "Default Event box drawer"
@@ -3774,7 +3774,7 @@ msgstr "მიმდინარეობს გადმოწერა"
 
 #: libs/wx/tools/Editra/src/updater.py:647
 msgid "Canceled"
-msgstr ""
+msgstr "გაუქმებულია"
 
 #: libs/wx/tools/Editra/src/updater.py:675
 #, python-format
@@ -3787,7 +3787,7 @@ msgstr "დასრულდა"
 
 #: libs/wx/tools/Editra/src/updater.py:685
 msgid "Failed"
-msgstr ""
+msgstr "ჩავარდა"
 
 #: libs/wx/tools/Editra/src/ed_statbar.py:62
 #: libs/wx/tools/Editra/src/ed_statbar.py:64
@@ -4012,31 +4012,31 @@ msgstr "ფერი"
 
 #: libs/wx/tools/Editra/src/style_editor.py:644
 msgid "Foreground"
-msgstr ""
+msgstr "წინა პლანი"
 
 #: libs/wx/tools/Editra/src/style_editor.py:656
 msgid "Background"
-msgstr ""
+msgstr "ფონი"
 
 #: libs/wx/tools/Editra/src/style_editor.py:667
 msgid "Attributes"
-msgstr ""
+msgstr "ატრიბუტები"
 
 #: libs/wx/tools/Editra/src/style_editor.py:671
 msgid "bold"
-msgstr ""
+msgstr "სქელი"
 
 #: libs/wx/tools/Editra/src/style_editor.py:672
 msgid "eol"
-msgstr ""
+msgstr "eol"
 
 #: libs/wx/tools/Editra/src/style_editor.py:673
 msgid "italic"
-msgstr ""
+msgstr "კურსივი"
 
 #: libs/wx/tools/Editra/src/style_editor.py:674
 msgid "underline"
-msgstr ""
+msgstr "ხაზგასმული"
 
 #: libs/wx/tools/Editra/src/style_editor.py:683
 msgid "Font Settings"
@@ -4044,7 +4044,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/style_editor.py:688
 msgid "Font"
-msgstr ""
+msgstr "ფონტი"
 
 #: libs/wx/tools/Editra/src/style_editor.py:704
 #: libs/wx/tools/Editra/src/eclib/infodlg.py:191
@@ -5788,7 +5788,7 @@ msgstr "ფერი/თეთრი"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:2153
 msgid "Color/Default"
-msgstr ""
+msgstr "ფერი/ნაგულისხმევი"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:2154
 msgid "Inverse"
