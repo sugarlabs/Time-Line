@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-21 12:51+1100\n"
-"PO-Revision-Date: 2026-06-29 09:41+0000\n"
+"PO-Revision-Date: 2026-06-29 10:13+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/timeline/ka/>\n"
@@ -331,7 +331,7 @@ msgstr ""
 #: libs/wx/tools/Editra/src/ed_menu.py:569 libs/wx/lib/pydocview.py:109
 #: libs/wx/lib/pydocview.py:2561
 msgid "&File"
-msgstr ""
+msgstr "&ფაილი"
 
 #: libs_arm/wx/lib/pydocview.py:109 libs_arm/wx/lib/pydocview.py:184
 #: libs64/wx/lib/pydocview.py:109 libs64/wx/lib/pydocview.py:184
@@ -404,7 +404,7 @@ msgstr ""
 #: libs/wx/tools/Editra/src/ed_menu.py:647 libs/wx/lib/pydocview.py:134
 #: libs/wx/lib/pydocview.py:1925
 msgid "&Edit"
-msgstr ""
+msgstr "ჩასწორ&ება"
 
 #: libs_arm/wx/lib/pydocview.py:137 libs64/wx/lib/pydocview.py:137
 #: libs/wx/tools/Editra/src/ed_menu.py:708 libs/wx/lib/pydocview.py:140
@@ -487,7 +487,7 @@ msgstr ""
 #: libs64/wx/lib/pydocview.py:178 libs/wx/tools/Editra/src/ed_toolbar.py:80
 #: libs/wx/lib/pydocview.py:181
 msgid "Print"
-msgstr ""
+msgstr "ბეჭდვა"
 
 #: libs_arm/wx/lib/pydocview.py:181 libs64/wx/lib/pydocview.py:181
 #: libs/wx/tools/Editra/src/ed_toolbar.py:86
@@ -1245,11 +1245,11 @@ msgstr ""
 
 #: timelinelib/help/pages.py:62
 msgid "Concepts"
-msgstr ""
+msgstr "იდეები"
 
 #: timelinelib/help/pages.py:62
 msgid "Tasks"
-msgstr ""
+msgstr "ამოცანები"
 
 #: timelinelib/help/pages.py:66
 msgid "Where is the save button?"
@@ -1314,7 +1314,7 @@ msgstr ""
 
 #: timelinelib/help/pages.py:126 timelinelib/config/shortcut.py:52
 msgid "Timeline"
-msgstr ""
+msgstr "ქრონოლოგია"
 
 #: timelinelib/help/pages.py:133
 msgid ""
@@ -1372,7 +1372,7 @@ msgstr ""
 #: timelinelib/plugin/plugins/exporters/timelineexporter.py:78
 #: timelinelib/wxgui/dialogs/export/view.py:62
 msgid "Events"
-msgstr ""
+msgstr "მოვლენები"
 
 #: timelinelib/help/pages.py:186
 msgid ""
@@ -1426,7 +1426,7 @@ msgstr ""
 #: timelinelib/plugin/plugins/exporters/timelineexporter.py:84
 #: timelinelib/wxgui/dialogs/export/view.py:63
 msgid "Categories"
-msgstr ""
+msgstr "კატეგორიები"
 
 #: timelinelib/help/pages.py:240
 msgid ""
@@ -1631,7 +1631,7 @@ msgstr ""
 #: timelinelib/help/pages.py:446 timelinelib/config/shortcut.py:93
 #: timelinelib/wxgui/components/errorpanel.py:47
 msgid "Contact"
-msgstr ""
+msgstr "კონტაქტი"
 
 #: timelinelib/help/pages.py:452
 msgid ""
@@ -1673,7 +1673,7 @@ msgstr ""
 
 #: timelinelib/dataimport/tutorial.py:32
 msgid "Welcome"
-msgstr ""
+msgstr "მოგესალმებით"
 
 #: timelinelib/dataimport/tutorial.py:34
 msgid "Welcome to Timeline"
@@ -1681,7 +1681,7 @@ msgstr ""
 
 #: timelinelib/dataimport/tutorial.py:37
 msgid "Intro"
-msgstr ""
+msgstr "შესავალი"
 
 #: timelinelib/dataimport/tutorial.py:39
 msgid "This event has hyperlinks"
@@ -1701,11 +1701,11 @@ msgstr ""
 
 #: timelinelib/dataimport/tutorial.py:48
 msgid "Features"
-msgstr ""
+msgstr "ფუნქციები"
 
 #: timelinelib/dataimport/tutorial.py:50
 msgid "Scroll"
-msgstr ""
+msgstr "ჩოჩია"
 
 #: timelinelib/dataimport/tutorial.py:51
 msgid ""
@@ -1765,7 +1765,7 @@ msgstr ""
 
 #: timelinelib/dataimport/tutorial.py:89
 msgid "Zoom"
-msgstr ""
+msgstr "გადიდება"
 
 #: timelinelib/dataimport/tutorial.py:90
 msgid ""
@@ -1811,7 +1811,7 @@ msgstr ""
 #: timelinelib/dataimport/tutorial.py:124
 #: timelinelib/dataimport/tutorial.py:126
 msgid "Saving"
-msgstr ""
+msgstr "მიმდინარეობს შენახვა"
 
 #: timelinelib/dataimport/tutorial.py:127
 msgid ""
@@ -1913,27 +1913,27 @@ msgstr ""
 
 #: timelinelib/calendar/weekdaynames.py:22 specs/WeekdayNames.py:28
 msgid "Mon"
-msgstr ""
+msgstr "ორშ"
 
 #: timelinelib/calendar/weekdaynames.py:23
 msgid "Tue"
-msgstr ""
+msgstr "სამშ"
 
 #: timelinelib/calendar/weekdaynames.py:24
 msgid "Wed"
-msgstr ""
+msgstr "ოთხშ"
 
 #: timelinelib/calendar/weekdaynames.py:25
 msgid "Thu"
-msgstr ""
+msgstr "ხუთშ"
 
 #: timelinelib/calendar/weekdaynames.py:26
 msgid "Fri"
-msgstr ""
+msgstr "პარ"
 
 #: timelinelib/calendar/weekdaynames.py:27
 msgid "Sat"
-msgstr ""
+msgstr "შაბ"
 
 #: timelinelib/calendar/weekdaynames.py:28 specs/WeekdayNames.py:33
 msgid "Sun"
@@ -1945,27 +1945,27 @@ msgstr "იანვ"
 
 #: timelinelib/calendar/monthnames.py:39
 msgid "Feb"
-msgstr ""
+msgstr "თებ"
 
 #: timelinelib/calendar/monthnames.py:40
 msgid "Mar"
-msgstr ""
+msgstr "მარ"
 
 #: timelinelib/calendar/monthnames.py:41
 msgid "Apr"
-msgstr ""
+msgstr "აპრ"
 
 #: timelinelib/calendar/monthnames.py:42
 msgid "May"
-msgstr ""
+msgstr "მაი"
 
 #: timelinelib/calendar/monthnames.py:43
 msgid "Jun"
-msgstr ""
+msgstr "ივნ"
 
 #: timelinelib/calendar/monthnames.py:44
 msgid "Jul"
-msgstr ""
+msgstr "ივლ"
 
 #: timelinelib/calendar/monthnames.py:45 specs/PyTimeType.py:56
 #: specs/WxTimeType.py:82
@@ -1974,15 +1974,15 @@ msgstr "აგვ"
 
 #: timelinelib/calendar/monthnames.py:46
 msgid "Sep"
-msgstr ""
+msgstr "სექტ"
 
 #: timelinelib/calendar/monthnames.py:47
 msgid "Oct"
-msgstr ""
+msgstr "ოქტ"
 
 #: timelinelib/calendar/monthnames.py:48
 msgid "Nov"
-msgstr ""
+msgstr "ნოე"
 
 #: timelinelib/calendar/monthnames.py:49 specs/MonthNames.py:48
 msgid "Dec"
@@ -2534,7 +2534,7 @@ msgstr ""
 
 #: timelinelib/wxgui/frames/mainframe/mainframe.py:964
 msgid "Information"
-msgstr ""
+msgstr "ინფორმაცია"
 
 #: timelinelib/wxgui/frames/mainframe/mainframe.py:980
 msgid "Open Timeline"
@@ -2652,11 +2652,11 @@ msgstr ""
 #: timelinelib/wxgui/dialogs/eraeditor/view.py:68
 #: timelinelib/wxgui/dialogs/editcontainer/view.py:46
 msgid "Name:"
-msgstr ""
+msgstr "სახელი:"
 
 #: timelinelib/wxgui/dialogs/editcategory/view.py:58
 msgid "Color:"
-msgstr ""
+msgstr "ფერი:"
 
 #: timelinelib/wxgui/dialogs/editcategory/view.py:59
 msgid "Progress Color:"
@@ -2672,7 +2672,7 @@ msgstr ""
 
 #: timelinelib/wxgui/dialogs/editcategory/view.py:62
 msgid "Parent:"
-msgstr ""
+msgstr "მშობელი:"
 
 #: timelinelib/wxgui/dialogs/editcategory/view.py:107
 #, python-format
@@ -2691,24 +2691,24 @@ msgstr ""
 #: timelinelib/wxgui/dialogs/duplicateevent/view.py:85
 #: timelinelib/wxgui/dialogs/editevent/view.py:185
 msgid "Period"
-msgstr ""
+msgstr "პერიოდი"
 
 #: timelinelib/wxgui/dialogs/duplicateevent/view.py:86
 #: libs/wx/tools/Editra/src/eclib/finddlg.py:802
 msgid "Direction"
-msgstr ""
+msgstr "მიმართულება"
 
 #: timelinelib/wxgui/dialogs/duplicateevent/view.py:88
 msgid "Frequency:"
-msgstr ""
+msgstr "სიხშირე:"
 
 #: timelinelib/wxgui/dialogs/duplicateevent/view.py:89
 msgid "Backward"
-msgstr ""
+msgstr "უკან"
 
 #: timelinelib/wxgui/dialogs/duplicateevent/view.py:89
 msgid "Both"
-msgstr ""
+msgstr "ორივე"
 
 #: timelinelib/wxgui/dialogs/duplicateevent/view.py:90
 msgid "Duplicate Event"
@@ -2852,12 +2852,12 @@ msgstr ""
 #: timelinelib/wxgui/dialogs/editevent/view.py:184
 #: timelinelib/wxgui/components/propertyeditors/alerteditor.py:71
 msgid "When:"
-msgstr ""
+msgstr "როდის:"
 
 #: timelinelib/wxgui/dialogs/eraeditor/view.py:71
 #: timelinelib/wxgui/dialogs/editevent/view.py:190
 msgid "to"
-msgstr ""
+msgstr "სადამდე"
 
 #: timelinelib/wxgui/dialogs/eraeditor/controller.py:65
 #: timelinelib/wxgui/dialogs/editcontainer/controller.py:83
@@ -2968,11 +2968,11 @@ msgstr ""
 
 #: timelinelib/wxgui/dialogs/editevent/view.py:187
 msgid "Fuzzy"
-msgstr ""
+msgstr "გაურკვეველი"
 
 #: timelinelib/wxgui/dialogs/editevent/view.py:188
 msgid "Locked"
-msgstr ""
+msgstr "ჩაკეტილი"
 
 #: timelinelib/wxgui/dialogs/editevent/view.py:189
 msgid "Ends today"
@@ -2986,15 +2986,15 @@ msgstr "ტექსტი:"
 #: timelinelib/wxgui/dialogs/editevent/view.py:192
 #: timelinelib/wxgui/dialogs/editcontainer/view.py:47
 msgid "Category:"
-msgstr ""
+msgstr "კატეგორია:"
 
 #: timelinelib/wxgui/dialogs/editevent/view.py:193
 msgid "Container:"
-msgstr ""
+msgstr "კონტეინერი:"
 
 #: timelinelib/wxgui/dialogs/editevent/view.py:195
 msgid "Icon"
-msgstr ""
+msgstr "ხატულა"
 
 #: timelinelib/wxgui/dialogs/editevent/view.py:196
 msgid "Alert"
@@ -3002,7 +3002,7 @@ msgstr "ალერტი"
 
 #: timelinelib/wxgui/dialogs/editevent/view.py:197
 msgid "Hyperlink"
-msgstr ""
+msgstr "ჰიპერბმული"
 
 #: timelinelib/wxgui/dialogs/editevent/view.py:198
 msgid "Progress"
@@ -3159,11 +3159,11 @@ msgstr ""
 
 #: timelinelib/wxgui/components/categorytree.py:195
 msgid "Edit..."
-msgstr ""
+msgstr "ჩასწორება..."
 
 #: timelinelib/wxgui/components/categorytree.py:199
 msgid "Add..."
-msgstr ""
+msgstr "დამატება..."
 
 #: timelinelib/wxgui/components/categorytree.py:203
 #: timelinelib/wxgui/components/canvas/timelinecanvascontroller.py:249
@@ -3279,7 +3279,7 @@ msgstr ""
 
 #: timelinelib/wxgui/components/canvas/timelinecanvascontroller.py:254
 msgid "Duplicate..."
-msgstr ""
+msgstr "დუბლირება..."
 
 #: timelinelib/wxgui/components/canvas/timelinecanvascontroller.py:257
 msgid "Select Category..."
@@ -3295,7 +3295,7 @@ msgstr ""
 
 #: timelinelib/wxgui/components/canvas/timelinecanvascontroller.py:477
 msgid "Center"
-msgstr ""
+msgstr "დაცენტრება"
 
 #: timelinelib/wxgui/components/canvas/timelinecanvascontroller.py:540
 #, python-format
@@ -3325,7 +3325,7 @@ msgstr ""
 
 #: timelinelib/wxgui/components/propertyeditors/hyperlinkeditor.py:68
 msgid "URL:"
-msgstr ""
+msgstr "URL:"
 
 #: timelinelib/wxgui/components/propertyeditors/progresseditor.py:33
 msgid "Progress %:"
@@ -3429,7 +3429,7 @@ msgstr "დღე"
 #: specs/WxTimeType.py:142 specs/WxTimeType.py:158 specs/WxTimeType.py:162
 #: specs/WxTimeType.py:166
 msgid "hour"
-msgstr ""
+msgstr "საათი"
 
 #: timelinelib/time/gregoriantime.py:129 specs/PyTimeType.py:126
 #: specs/PyTimeType.py:150 specs/PyTimeType.py:154 specs/PyTimeType.py:158
@@ -3516,19 +3516,19 @@ msgstr ""
 
 #: timelinelib/time/numtime.py:128
 msgid "1-period"
-msgstr ""
+msgstr "1-პერიოდი"
 
 #: timelinelib/time/numtime.py:129
 msgid "10-period"
-msgstr ""
+msgstr "10-პერიოდი"
 
 #: timelinelib/time/numtime.py:130
 msgid "100-period"
-msgstr ""
+msgstr "100-პერიოდი"
 
 #: timelinelib/time/numtime.py:131
 msgid "1000-period"
-msgstr ""
+msgstr "1000-პერიოდი"
 
 #: timelinelib/time/numtime.py:185
 msgid "Go to Time"
@@ -6088,3 +6088,11 @@ msgstr ""
 #: timelinelib/editors/event.py:250
 msgid "Text"
 msgstr "ტექსტი"
+
+#: timelinelib/printing.py:100
+msgid "Printing"
+msgstr "იბეჭდება"
+
+#: timelinelib/wxgui/dialogs/eventeditor.py:668
+msgid "Test"
+msgstr "შემოწმება"
