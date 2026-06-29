@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-21 12:51+1100\n"
-"PO-Revision-Date: 2026-06-29 07:38+0000\n"
+"PO-Revision-Date: 2026-06-29 08:07+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/timeline/ka/>\n"
@@ -3422,7 +3422,7 @@ msgstr ""
 #: specs/WxTimeType.py:174 specs/WxTimeType.py:178 specs/WxTimeType.py:182
 #: specs/WxTimeType.py:186 specs/WxTimeType.py:192
 msgid "days"
-msgstr ""
+msgstr "დღე"
 
 #: timelinelib/time/gregoriantime.py:127 specs/PyTimeType.py:122
 #: specs/PyTimeType.py:138 specs/PyTimeType.py:142 specs/PyTimeType.py:146
@@ -3437,7 +3437,7 @@ msgstr ""
 #: specs/WxTimeType.py:174 specs/WxTimeType.py:178 specs/WxTimeType.py:182
 #: specs/WxTimeType.py:186
 msgid "hours"
-msgstr ""
+msgstr "საათი"
 
 #: timelinelib/time/gregoriantime.py:131 specs/PyTimeType.py:114
 #: specs/PyTimeType.py:138 specs/PyTimeType.py:158 specs/WxTimeType.py:134
@@ -3449,7 +3449,7 @@ msgstr ""
 #: specs/PyTimeType.py:142 specs/PyTimeType.py:162 specs/WxTimeType.py:138
 #: specs/WxTimeType.py:162 specs/WxTimeType.py:182
 msgid "minutes"
-msgstr ""
+msgstr "წუთი"
 
 #: timelinelib/time/gregoriantime.py:140
 msgid "can't be before year 10"
