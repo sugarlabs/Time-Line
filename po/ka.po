@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-21 12:51+1100\n"
-"PO-Revision-Date: 2026-06-22 06:20+0000\n"
+"PO-Revision-Date: 2026-06-29 06:56+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/timeline/ka/>\n"
@@ -1085,7 +1085,7 @@ msgstr ""
 #: libs64/wx/lib/agw/fmcustomizedlg.py:504 libs/wx/lib/agw/artmanager.py:620
 #: libs/wx/lib/agw/artmanager.py:1943 libs/wx/lib/agw/fmcustomizedlg.py:506
 msgid "Default"
-msgstr ""
+msgstr "ნაგულისხმევი"
 
 #: libs_arm/wx/lib/agw/artmanager.py:2068 libs64/wx/lib/agw/artmanager.py:1946
 #: libs/wx/lib/agw/artmanager.py:1944
@@ -2981,7 +2981,7 @@ msgstr ""
 #: timelinelib/wxgui/dialogs/editevent/view.py:191
 #: timelinelib/wxgui/components/propertyeditors/alerteditor.py:72
 msgid "Text:"
-msgstr ""
+msgstr "ტექსტი:"
 
 #: timelinelib/wxgui/dialogs/editevent/view.py:192
 #: timelinelib/wxgui/dialogs/editcontainer/view.py:47
@@ -4272,7 +4272,7 @@ msgstr ""
 #: libs/wx/tools/Editra/src/ed_main.py:773
 #: libs/wx/tools/Editra/src/ed_main.py:800
 msgid "Session"
-msgstr ""
+msgstr "სესია"
 
 #: libs/wx/tools/Editra/src/ed_main.py:788
 #, python-format
@@ -5692,7 +5692,7 @@ msgstr "მორგება"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:1343
 msgid "Update"
-msgstr ""
+msgstr "განახლება"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:1376
 msgid "Proxy Settings"
@@ -5760,7 +5760,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/prefdlg.py:1799
 msgid "None"
-msgstr ""
+msgstr "არცერთი"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:1900
 msgid "New Profile"
