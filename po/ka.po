@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-21 12:51+1100\n"
-"PO-Revision-Date: 2026-06-29 11:24+0000\n"
+"PO-Revision-Date: 2026-06-29 11:53+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/timeline/ka/>\n"
@@ -2792,7 +2792,7 @@ msgstr ""
 #: timelinelib/wxgui/dialogs/categoryfinder/view.py:47
 #: libs/wx/tools/Editra/src/prefdlg.py:1529
 msgid "Check"
-msgstr ""
+msgstr "შემოწმება"
 
 #: timelinelib/wxgui/dialogs/categoryfinder/view.py:48
 msgid "Uncheck"
@@ -3592,7 +3592,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/ed_shelf.py:117
 msgid "Shelf"
-msgstr ""
+msgstr "თარო"
 
 #: libs/wx/tools/Editra/src/ed_shelf.py:118
 msgid "Put an item on the Shelf"
@@ -3770,7 +3770,7 @@ msgstr ""
 #: libs/wx/tools/Editra/src/updater.py:606
 #: libs/wx/tools/Editra/src/plugdlg.py:597
 msgid "Downloading"
-msgstr ""
+msgstr "მიმდინარეობს გადმოწერა"
 
 #: libs/wx/tools/Editra/src/updater.py:647
 msgid "Canceled"
@@ -3818,7 +3818,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/perspective.py:76
 msgid "Automatic"
-msgstr ""
+msgstr "ავტომატური"
 
 #: libs/wx/tools/Editra/src/perspective.py:77
 msgid "Automatically save/use window state from last session"
@@ -3878,7 +3878,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/generator.py:117
 msgid "Generator"
-msgstr ""
+msgstr "გენერატორი"
 
 #: libs/wx/tools/Editra/src/generator.py:118
 msgid "Generate Code and Documents"
@@ -3950,7 +3950,7 @@ msgstr ""
 #: libs/wx/tools/Editra/src/ed_search.py:149
 #: libs/wx/tools/Editra/src/ed_search.py:153
 msgid "Find/Replace"
-msgstr ""
+msgstr "ძებნა/ჩანაცვლება"
 
 #: libs/wx/tools/Editra/src/ed_toolbar.py:95
 #: libs/wx/tools/Editra/src/ed_menu.py:633
@@ -4068,23 +4068,23 @@ msgstr "უცნობი"
 #: libs/wx/tools/Editra/src/plugdlg.py:121
 #: libs/wx/tools/Editra/src/plugdlg.py:958
 msgid "Configure"
-msgstr ""
+msgstr "მორგება"
 
 #: libs/wx/tools/Editra/src/plugdlg.py:122
 #: libs/wx/tools/Editra/src/plugdlg.py:462
 #: libs/wx/tools/Editra/src/plugdlg.py:1110
 #: libs/wx/tools/Editra/src/prefdlg.py:1524
 msgid "Download"
-msgstr ""
+msgstr "გადმოწერა"
 
 #: libs/wx/tools/Editra/src/plugdlg.py:123
 #: libs/wx/tools/Editra/src/plugdlg.py:765
 msgid "Install"
-msgstr ""
+msgstr "დაყენება"
 
 #: libs/wx/tools/Editra/src/plugdlg.py:131
 msgid "Errors"
-msgstr ""
+msgstr "შეცდომები"
 
 #: libs/wx/tools/Editra/src/plugdlg.py:180
 msgid "Downloads are incomplete"
@@ -4112,7 +4112,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/plugdlg.py:485
 msgid "Downloaded"
-msgstr ""
+msgstr "გადმოწერილი"
 
 #: libs/wx/tools/Editra/src/plugdlg.py:488
 msgid "Finished downloading plugins"
@@ -4176,11 +4176,11 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/plugdlg.py:951
 msgid "Enable"
-msgstr ""
+msgstr "ჩართვა"
 
 #: libs/wx/tools/Editra/src/plugdlg.py:954
 msgid "Uninstall"
-msgstr ""
+msgstr "წაშლა"
 
 #: libs/wx/tools/Editra/src/plugdlg.py:1062
 #, python-format
@@ -4906,7 +4906,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/ed_menu.py:628
 msgid "Bookmarks"
-msgstr ""
+msgstr "სანიშნეები"
 
 #: libs/wx/tools/Editra/src/ed_menu.py:629
 msgid "Add and remove bookmarks"
@@ -4914,11 +4914,11 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/ed_menu.py:631
 msgid "&Find"
-msgstr ""
+msgstr "&ძებნა"
 
 #: libs/wx/tools/Editra/src/ed_menu.py:632
 msgid "Find/R&eplace"
-msgstr ""
+msgstr "ძებნა/ჩანაცვლ&ება"
 
 #: libs/wx/tools/Editra/src/ed_menu.py:634
 msgid "&Quick Find"
@@ -4954,7 +4954,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/ed_menu.py:643
 msgid "Pr&eferences"
-msgstr ""
+msgstr "მორგ&ება"
 
 #: libs/wx/tools/Editra/src/ed_menu.py:644
 msgid "Edit Preferences / Settings"
@@ -5017,7 +5017,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/ed_menu.py:675
 msgid "Editor"
-msgstr ""
+msgstr "რედაქტორი"
 
 #: libs/wx/tools/Editra/src/ed_menu.py:676
 msgid "Toggle Editor View Options"
@@ -5118,7 +5118,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/ed_menu.py:721
 msgid "&Font"
-msgstr ""
+msgstr "&ფონტი"
 
 #: libs/wx/tools/Editra/src/ed_menu.py:722
 msgid "Change Font Settings"
@@ -5150,7 +5150,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/ed_menu.py:733
 msgid "Uppercase"
-msgstr ""
+msgstr "დიდი ასოები"
 
 #: libs/wx/tools/Editra/src/ed_menu.py:734
 msgid "Convert selected text to all uppercase letters"
@@ -5158,7 +5158,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/ed_menu.py:735
 msgid "Lowercase"
-msgstr ""
+msgstr "პატარა ასოები"
 
 #: libs/wx/tools/Editra/src/ed_menu.py:736
 msgid "Convert selected text to all lowercase letters"
@@ -5207,7 +5207,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/ed_menu.py:753
 msgid "Whitespace"
-msgstr ""
+msgstr "თეთრი ჰარე"
 
 #: libs/wx/tools/Editra/src/ed_menu.py:754
 msgid "Whitespace formating commands"
@@ -5242,12 +5242,12 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/ed_menu.py:771
 msgid "F&ormat"
-msgstr ""
+msgstr "ფ&ორმატი"
 
 #: libs/wx/tools/Editra/src/ed_menu.py:780
 #: libs/wx/tools/Editra/src/prefdlg.py:940
 msgid "Auto-Completion"
-msgstr ""
+msgstr "ავტოდასრულება"
 
 #: libs/wx/tools/Editra/src/ed_menu.py:781
 msgid "Use Auto Completion when available"
@@ -5256,7 +5256,7 @@ msgstr ""
 #: libs/wx/tools/Editra/src/ed_menu.py:782
 #: libs/wx/tools/Editra/src/prefdlg.py:950
 msgid "Auto-Indent"
-msgstr ""
+msgstr "ავტოსწორება"
 
 #: libs/wx/tools/Editra/src/ed_menu.py:783
 msgid "Toggle Auto-Indentation functionality"
@@ -5287,7 +5287,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/ed_menu.py:795
 msgid "&Settings"
-msgstr ""
+msgstr "მო&რგება"
 
 #: libs/wx/tools/Editra/src/ed_menu.py:806
 msgid "Editor Command"
@@ -5307,7 +5307,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/ed_menu.py:831
 msgid "&About..."
-msgstr ""
+msgstr "შეს&ახებ..."
 
 #: libs/wx/tools/Editra/src/ed_menu.py:833
 msgid "Project Homepage..."
@@ -5374,19 +5374,19 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/prefdlg.py:193
 msgid "Appearance"
-msgstr ""
+msgstr "გარეგნობა"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:195
 msgid "Document"
-msgstr ""
+msgstr "დოკუმენტი"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:197
 msgid "Network"
-msgstr ""
+msgstr "ქსელი"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:199
 msgid "Advanced"
-msgstr ""
+msgstr "დამატებით"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:284
 msgid ""
@@ -5396,7 +5396,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/prefdlg.py:306
 msgid "Startup"
-msgstr ""
+msgstr "გაშვება"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:307
 #: libs/wx/tools/Editra/src/eclib/filemgrdlg.py:220
@@ -5507,7 +5507,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/prefdlg.py:570
 msgid "Dictionary"
-msgstr ""
+msgstr "ლექსიკონი"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:580
 msgid "Enchant Path"
@@ -5528,7 +5528,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/prefdlg.py:678
 msgid "Code"
-msgstr ""
+msgstr "კოდი"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:726
 msgid "Tab Width"
@@ -5556,7 +5556,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/prefdlg.py:765
 msgid "AntiAliasing"
-msgstr ""
+msgstr "მოგლუვება"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:775
 msgid "Turn off for better performance"
@@ -5574,7 +5574,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/prefdlg.py:794
 msgid "Format"
-msgstr ""
+msgstr "ფორმატი"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:802
 msgid "View Options"
@@ -5672,15 +5672,15 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/prefdlg.py:1220
 msgid "Icons"
-msgstr ""
+msgstr "ხატულები"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:1225
 msgid "Layout"
-msgstr ""
+msgstr "განლაგება"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:1233
 msgid "Transparency"
-msgstr ""
+msgstr "გამჭვირვალობა"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:1239
 msgid "Display Font"
@@ -5712,7 +5712,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/prefdlg.py:1398
 msgid "Username"
-msgstr ""
+msgstr "მომხმარებლის სახელი"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:1405
 msgid "Password"
@@ -5728,7 +5728,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/prefdlg.py:1617
 msgid "Keybindings"
-msgstr ""
+msgstr "კლავიატურის მალსახმობები"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:1702
 msgid "Key Profile"
@@ -5736,7 +5736,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/prefdlg.py:1715
 msgid "Menu"
-msgstr ""
+msgstr "მენიუ"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:1725
 msgid "Modifier 1"
@@ -5748,15 +5748,15 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/prefdlg.py:1733
 msgid "Key"
-msgstr ""
+msgstr "ღილაკი"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:1737
 msgid "Binding"
-msgstr ""
+msgstr "ასახვა"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:1763
 msgid "Apply"
-msgstr ""
+msgstr "გადატარება"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:1799
 msgid "None"
@@ -5772,7 +5772,7 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/prefdlg.py:2038
 msgid "Lexer"
-msgstr ""
+msgstr "ლექსერი"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:2040
 msgid "Extensions (space separated, no dots)"
@@ -5780,11 +5780,11 @@ msgstr ""
 
 #: libs/wx/tools/Editra/src/prefdlg.py:2151
 msgid "Black/White"
-msgstr ""
+msgstr "შავი/თეთრი"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:2152
 msgid "Color/White"
-msgstr ""
+msgstr "ფერი/თეთრი"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:2153
 msgid "Color/Default"
