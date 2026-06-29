@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-21 12:51+1100\n"
-"PO-Revision-Date: 2026-06-29 06:56+0000\n"
+"PO-Revision-Date: 2026-06-29 07:38+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/timeline/ka/>\n"
@@ -528,7 +528,7 @@ msgstr ""
 #: libs_arm/wx/lib/pydocview.py:902 libs64/wx/lib/pydocview.py:902
 #: libs/wx/lib/pydocview.py:905
 msgid "Close"
-msgstr ""
+msgstr "დახურვა"
 
 #: libs_arm/wx/lib/pydocview.py:908 libs64/wx/lib/pydocview.py:908
 #: libs/wx/lib/pydocview.py:911
@@ -2446,7 +2446,7 @@ msgstr ""
 #: timelinelib/wxgui/frames/mainframe/mainframe.py:538
 #: libs/wx/tools/Editra/src/ed_menu.py:841
 msgid "Feedback"
-msgstr ""
+msgstr "უკუკავშირი"
 
 #: timelinelib/wxgui/frames/mainframe/mainframe.py:552
 msgid "&Contents\tF1"
@@ -5366,7 +5366,7 @@ msgstr ""
 #: libs/wx/tools/Editra/src/ed_log.py:172
 #: libs/wx/tools/Editra/src/ed_log.py:247
 msgid "All"
-msgstr ""
+msgstr "ყველა"
 
 #: libs/wx/tools/Editra/src/prefdlg.py:109
 msgid "Preferences - Editra"
