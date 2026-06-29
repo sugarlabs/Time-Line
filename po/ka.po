@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-21 12:51+1100\n"
-"PO-Revision-Date: 2026-06-29 08:07+0000\n"
+"PO-Revision-Date: 2026-06-29 09:41+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/timeline/ka/>\n"
@@ -1941,7 +1941,7 @@ msgstr "მზე"
 
 #: timelinelib/calendar/monthnames.py:38 specs/MonthNames.py:33
 msgid "Jan"
-msgstr ""
+msgstr "იანვ"
 
 #: timelinelib/calendar/monthnames.py:39
 msgid "Feb"
@@ -1970,7 +1970,7 @@ msgstr ""
 #: timelinelib/calendar/monthnames.py:45 specs/PyTimeType.py:56
 #: specs/WxTimeType.py:82
 msgid "Aug"
-msgstr ""
+msgstr "აგვ"
 
 #: timelinelib/calendar/monthnames.py:46
 msgid "Sep"
@@ -1986,7 +1986,7 @@ msgstr ""
 
 #: timelinelib/calendar/monthnames.py:49 specs/MonthNames.py:48
 msgid "Dec"
-msgstr ""
+msgstr "დეკ"
 
 #: timelinelib/calendar/bosparanian_weekdaynames.py:22
 msgid "Wind"
@@ -3414,7 +3414,7 @@ msgstr ""
 #: specs/PyTimeType.py:130 specs/PyTimeType.py:146 specs/PyTimeType.py:150
 #: specs/WxTimeType.py:150 specs/WxTimeType.py:166 specs/WxTimeType.py:170
 msgid "day"
-msgstr ""
+msgstr "დღე"
 
 #: timelinelib/time/gregoriantime.py:125 specs/PyTimeType.py:134
 #: specs/PyTimeType.py:154 specs/PyTimeType.py:158 specs/PyTimeType.py:162
@@ -3443,7 +3443,7 @@ msgstr "საათი"
 #: specs/PyTimeType.py:138 specs/PyTimeType.py:158 specs/WxTimeType.py:134
 #: specs/WxTimeType.py:158 specs/WxTimeType.py:178
 msgid "minute"
-msgstr ""
+msgstr "წუთი"
 
 #: timelinelib/time/gregoriantime.py:133 specs/PyTimeType.py:118
 #: specs/PyTimeType.py:142 specs/PyTimeType.py:162 specs/WxTimeType.py:138
